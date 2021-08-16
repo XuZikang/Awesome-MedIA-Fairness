@@ -1,6 +1,8 @@
 # Awesome-Medical-Image-Analysis-Fairness
 A collection of papers in fairness of medical image analysis
 
+![Fairness Roadmap](https://github.com/XuZikang/Awesome-MedIA-Fairness/blob/33a4798ddd72a0d04f5c084b180440b63b9db4fb/Fairness%20in%20MedIA%20Roadmap.png)
+
 ## Paper and Code
 |   Date   |                                                           Title                                                           |                                    Conf./Journal                                    |                                    Code                                    |
 |:--------:|:-------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------:|:--------------------------------------------------------------------------:|
