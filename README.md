@@ -1,28 +1,15 @@
 # Awesome-Medical-Image-Analysis-Fairness
 A collection of papers in fairness of medical image analysis
 
-![Fairness Roadmap](https://github.com/XuZikang/Awesome-MedIA-Fairness/blob/33a4798ddd72a0d04f5c084b180440b63b9db4fb/Fairness%20in%20MedIA%20Roadmap.png)
+For more details, please refer to our recent survey on fairness in medical image analysis [A Survey of Fairness in Medical Image Analysis: Concepts, Algorithms, Evaluations, and Challenges](https://arxiv.org/abs/2209.13177)
 
-## Paper and Code
-|   Date   |                                                           Title                                                           |                                    Conf./Journal                                    |                                    Code                                    |
-|:--------:|:-------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------:|:--------------------------------------------------------------------------:|
-|  201906  |                                       (De)Constructing Bias on Skin Lesion Datasets                                       |             [CVPRW 2019](https://ieeexplore.ieee.org/document/9025695/)             | [PyTorch](https://github.com/alceubissoto/deconstructing-bias-skin-lesion) |
-| 20210413 |                       Age-Related Heterochronicity Of Brain Morphometry May Bias Voxelwise Findings                       |              [ISBI 2018](https://ieeexplore.ieee.org/document/9433909/)             |                                                                            |
-|  202006  |                                   Debiasing Skin Lesion Datasets and Models? Not So Fast                                  |             [CVPRW 2020](https://ieeexplore.ieee.org/document/9150714/)             |                                                                            |
-| 20200609 |           Gender imbalance in medical imaging datasets produces biased classifiers for computer-aided diagnosis           |            [PNAS](http://www.pnas.org/lookup/doi/10.1073/pnas.1919012117)           |           [Keras](https://github.com/N-Nieto/GenderBias_CheXNet)           |
-| 20201015 |                                 CheXclusion: Fairness gaps in deep chest X-ray classifiers                                | [Pacific Symposium on Biocomputing 2021 (PSB2021)](http://arxiv.org/abs/2003.00827) |            [PyTorch](https://github.com/LalehSeyyed/CheXclusion)           |
-| 20210121 |                                 Supervised Transfer Learning at Scale for Medical Imaging                                 |                       [Arxiv](http://arxiv.org/abs/2101.05913)                      |                                                                            |
-| 20210511 |                                Estimating and Improving Fairness with Adversarial Learning                                |                       [Arxiv](http://arxiv.org/abs/2103.04243)                      |                                                                            |
-| 20210701 | Fairness in Cardiac MR Image Analysis: An Investigation of Bias Due to Data Imbalance in Deep Learning Based Segmentation |                    [MICCAI 2021](http://arxiv.org/abs/2106.12387)                   |                                                                            |
-| 20201004 |                                           Fairness in Machine Learning: A Survey                                          |                       [Arxiv](http://arxiv.org/abs/2010.04053)                      |                                                                            |
-| 20181010 |       Mitigating Bias in Gender, Age and Ethnicity Classification: A Multi-task Convolution Neural Network Approach       |         [ECCVW 2018](http://link.springer.com/10.1007/978-3-030-11009-3_35)         |                                                                            |
-| 20200319 |                                   Fairness in Deep Learning: A Computational Perspective                                  |       [IEEE Intelligent System](https://ieeexplore.ieee.org/document/9113719/)      |                                                                            |
-| 20201120 |                           Representation Learning with Statistical Independence to Mitigate Bias                          |                     [WACV 2021](http://arxiv.org/abs/1910.03676)                    |                                                                            |
-| 20200617 |                            Risk of Training Diagnostic Algorithms on Data with Demographic Bias                           |                       [Arxiv](http://arxiv.org/abs/2005.10050)                      |                                                                            |
-| 20210212 |                                   Technical Challenges for Training Fair Neural Networks                                  |                       [Arxiv](http://arxiv.org/abs/2102.06764)                      |                                                                            |
-| 20210401 |                        Model Selection's Disparate Impact in Real-World Deep Learning Applications                        |                    [ICLRW 2021](http://arxiv.org/abs/2104.00606)                    |                                                                            |
-| 20201126 |                           Training confounder-free deep learning models for medical applications                          |      [Nature Communications](http://www.nature.com/articles/s41467-020-19784-9)     |                [Keras](https://github.com/QingyuZhao/BR-Net)               |
-|  202101  |                                Detect and Correct Bias in Multi-Site Neuroimaging Datasets                                |                        [MIA](http://arxiv.org/abs/2002.05049)                       |                                                                            |
-|   2020   |                                  Fairness of Classifiers Across Skin Tones in Dermatology                                 |        [MICCAI 2020](https://link.springer.com/10.1007/978-3-030-59725-2_31)        |                                                                            |
-| 20210301 |               Towards Unbiased COVID-19 Lesion Localisation and Segmentation via Weakly Supervised Learning               |                       [ArXiv](http://arxiv.org/abs/2103.00780)                      |                                                                            |
-|   2020   |                       On the Fairness of Privacy-Preserving Representations in Medical Applications                       |        [MICCAIW 2020](https://link.springer.com/10.1007/978-3-030-60548-3_14)       |                                                                            |             |                                                                            |
+## Algorithms
+
+
+## Datasets
+
+### Classification
+
+### Segmentation
+
+### Detection
