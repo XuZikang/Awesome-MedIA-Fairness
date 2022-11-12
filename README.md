@@ -30,7 +30,7 @@ For more details, please refer to our recent survey on fairness in medical image
 ## Omissive papers in FAIR-MEDIA
 
 | Task         |  Name |  Modality  | Body Part | Sensitive Attribute | Link                |
-|--------------|-------|------------|-----------|---------------------|---------------------|
+|:------------:|:-----:|:----------:|:---------:|:-------------------:|---------------------|
 |Classification|derm7pt| Dermoscope |Skin       |Sex                  |http://derm.cs.sfu.ca|
 
 ---
