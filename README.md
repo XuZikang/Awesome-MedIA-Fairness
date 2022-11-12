@@ -25,6 +25,6 @@ For more details, please refer to our recent survey on fairness in medical image
 ## Fairess papers in MdeIA that have not included in the survey paper
 
 - [Detecting Shortcuts in Medical Images-A Case Study in Chest X-rays](https://arxiv.org/pdf/2211.04279.pdf)
-- [Improving Fairness in Image Classification via Sketching](https://arxiv.org/pdf/2211.00168.pdf)
+- [Improving Fairness in Image Classification via Sketching (NeurIPS 2022 Workshop)](https://arxiv.org/pdf/2211.00168.pdf)
 ---
 If your paper is not included in the lists, please feel free to pull requests or contact me at zikangxu@mail.ustc.edu.cn
