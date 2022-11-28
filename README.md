@@ -14,6 +14,7 @@ For more details, please refer to our recent survey on fairness in medical image
 
 - [Detecting Shortcuts in Medical Images-A Case Study in Chest X-rays](https://arxiv.org/pdf/2211.04279.pdf)
 - [Improving Fairness in Image Classification via Sketching (NeurIPS 2022 Workshop)](https://arxiv.org/pdf/2211.00168.pdf)
+- [Improving the Fairness of Chest X-ray Classifiers](https://arxiv.org/pdf/2203.12609.pdf)
 
 ### Omissive Datasets in FAIR-MEDIA
 
