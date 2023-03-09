@@ -9,11 +9,31 @@ Notes: We may miss some relevant papers in the list. If you have any suggestions
 
 ## Fairness Papers in Medical Image Analysis
 ### Fairness Evaluation
+#### Unfairness Existence
 
-### Unfairness Mitigation
-#### Pre-processing Methods
-#### In-processing Methods
-#### Post-processing Methods
+#### Fairness & Data Distribution
+
+#### Fairness Benchmarking
+
+#### Fairness & Uncertainty
+
+#### Fairness & Model Selection
+
+### Unfairness Mitigation via Pre-processing Methods
+#### Data Resampling
+#### Data Synthesis
+#### Data Aggregation
+#### Data Embellishment
+
+### Unfairness Mitigation via In-processing Methods
+#### Representation Learniing
+#### Disentanglement Learning
+#### Contrastive Learning
+#### Universal Learning
+#### Federated Learning
+
+### Unfairness Mitigation via Post-processing Methods
+#### Network Pruning
 
 ## Medical Datasets with Sensitive Attributes
 
