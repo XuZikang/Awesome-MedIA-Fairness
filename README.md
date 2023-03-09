@@ -1,12 +1,10 @@
-# Awesome-Medical-Image-Analysis-Fairness
+# Awesome-Medical-Image-Analysis-Fairness[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 A collection of papers in fairness of medical image analysis
 
-For more details, please refer to our recent survey on fairness in medical image analysis.
-
-[A Survey of Fairness in Medical Image Analysis: Concepts, Algorithms, Evaluations, and Challenges](https://arxiv.org/abs/2209.13177)
-
-Notes: We may miss some relevant papers in the list. If you have any suggestions or would like to add some papers, please submit a pull request or email me at zikangxu@mail.ustc.edu.cn. Your contribution is much appreciated!
-
+> For more details, please refer to our recent survey on fairness in medical image analysis.
+> [A Survey of Fairness in Medical Image Analysis: Concepts, Algorithms, Evaluations, and Challenges](https://arxiv.org/abs/2209.13177)
+> Notes: We may miss some relevant papers in the list. If you have any suggestions or would like to add some papers, please submit a pull request or email me at zikangxu@mail.ustc.edu.cn. Your contribution is much appreciated!
+---
 ## Fairness Papers in Medical Image Analysis
 ### Fairness Evaluation
 #### Unfairness Existence
@@ -14,7 +12,6 @@ Notes: We may miss some relevant papers in the list. If you have any suggestions
 2. Ribeiro F, Shumovskaia V, Davies T, Ktena I. 2022. How fair is your graph? exploring fairness concerns in neuroimaging studies
 3. Seyyed-Kalantari L, Zhang H, McDermott MB, Chen IY, Ghassemi M. 2021. Underdiagnosis bias of artificial intelligence algorithms applied to chest radiographs in under-served patient populations. Nature medicine 27(12):2176–2182
 4. Puyol-Antón E, Ruijsink B, Mariscal Harana J, Piechnik SK, Neubauer S, et al. 2022. Fairness in cardiac magnetic resonance imaging: assessing sex and racial bias in deep learning-based segmentation. Frontiers in Cardiovascular Medicine :664
-
 #### Fairness & Data Distribution
 1. Larrazabal AJ, Nieto N, Peterson V, Milone DH, Ferrante E. 2020. Gender imbalance in medical imaging datasets produces biased classifiers for computer-aided diagnosis. Proceedings of the National Academy of Sciences 117(23):12592–12594
 2. Glocker B, Winzeck S. 2021. Algorithmic encoding of protected characteristics and its implications on disparities across subgroups. arXiv preprint arXiv:2110.14755
@@ -27,6 +24,7 @@ Notes: We may miss some relevant papers in the list. If you have any suggestions
 1. Lu C, Lemay A, Hoebel K, Kalpathy-Cramer J. 2021. Evaluating subgroup disparity using epistemic uncertainty in mammography. arXiv preprint arXiv:2107.02716
 #### Fairness & Model Selection
 1. Forde JZ, Cooper AF, Kwegyir-Aggrey K, De Sa C, Littman M. 2021. Model selection’s disparate impact in real-world deep learning applications. arXiv preprint arXiv:2104.00606
+---
 ### Unfairness Mitigation via Pre-processing Methods
 #### Data Resampling
 1. Puyol-Antón E, Ruijsink B, Piechnik SK, Neubauer S, Petersen SE, et al. 2021. Fairness in cardiac mr image analysis: An investigation of bias due to data imbalance in deep learning based segmentation. In International Conference on Medical Image Computing and Computer-Assisted Intervention, pp. 413–423. Springer
@@ -40,6 +38,7 @@ Notes: We may miss some relevant papers in the list. If you have any suggestions
 #### Data Embellishment
 1. Yao R, Cui Z, Li X, Gu L. 2022. Improving fairness in image classification via sketching. arXiv preprint arXiv:2211.00168
 2. Kinyanjui NM, Odonga T, Cintas C, Codella NC, Panda R, et al. 2020. Fairness of classifiers across skin tones in dermatology. In International Conference on Medical Image Computing and Computer-Assisted Intervention, pp. 320–329. Springer
+---
 ### Unfairness Mitigation via In-processing Methods
 #### Representation Learning
 Zhao Q, Adeli E, Pohl KM. 2020. Training confounder-free deep learning models for medical applications. Nature communications 11(1):1–9
@@ -60,6 +59,7 @@ on Applications of Computer Vision, pp. 2513–2523
 ### Unfairness Mitigation via Post-processing Methods
 #### Network Pruning
 1. Wu Y, Zeng D, Xu X, Shi Y, Hu J. 2022. Fairprune: Achieving fairness through pruning for dermatological disease diagnosis. arXiv preprint arXiv:2203.02110
+---
 ## Medical Datasets with Sensitive Attributes
 
 ## MISC
@@ -97,5 +97,3 @@ on Applications of Computer Vision, pp. 2513–2523
 ## Algorithms
 ![Algorithms](https://github.com/XuZikang/Awesome-MedIA-Fairness/blob/main/algorithm.png)
  -->
----
-If your paper is not included in the lists, please feel free to pull requests or contact me 
