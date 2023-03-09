@@ -1,8 +1,8 @@
-# Awesome-Medical-Image-Analysis-Fairness[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+# Awesome-Medical-Image-Analysis-Fairness [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 A collection of papers in fairness of medical image analysis
 
-> For more details, please refer to our recent survey on fairness in medical image analysis.
-> [A Survey of Fairness in Medical Image Analysis: Concepts, Algorithms, Evaluations, and Challenges](https://arxiv.org/abs/2209.13177)
+> For more details, please refer to our recent [survey on fairness in medical image analysis](https://arxiv.org/abs/2209.13177)
+> 
 > Notes: We may miss some relevant papers in the list. If you have any suggestions or would like to add some papers, please submit a pull request or email me at zikangxu@mail.ustc.edu.cn. Your contribution is much appreciated!
 ---
 ## Fairness Papers in Medical Image Analysis
