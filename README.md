@@ -5,7 +5,20 @@ For more details, please refer to our recent survey on fairness in medical image
 
 [A Survey of Fairness in Medical Image Analysis: Concepts, Algorithms, Evaluations, and Challenges](https://arxiv.org/abs/2209.13177)
 
-## New Updates
+Notes: We may miss some relevant papers in the list. If you have any suggestions or would like to add some papers, please submit a pull request or email me at zikangxu@mail.ustc.edu.cn. Your contribution is much appreciated!
+
+## Fairness Papers in Medical Image Analysis
+### Fairness Evaluation
+
+### Unfairness Mitigation
+#### Pre-processing Methods
+#### In-processing Methods
+#### Post-processing Methods
+
+## Medical Datasets with Sensitive Attributes
+
+## MISC
+<!-- ## New Updates
 
 ### Open Source Codes
 - [MEDFAIR](https://github.com/ys-zong/MEDFAIR) a benchmarking framework for analyzing fairness in medical images
@@ -35,6 +48,6 @@ For more details, please refer to our recent survey on fairness in medical image
 
 ## Algorithms
 ![Algorithms](https://github.com/XuZikang/Awesome-MedIA-Fairness/blob/main/algorithm.png)
-
+ -->
 ---
-If your paper is not included in the lists, please feel free to pull requests or contact me at zikangxu@mail.ustc.edu.cn
+If your paper is not included in the lists, please feel free to pull requests or contact me 
