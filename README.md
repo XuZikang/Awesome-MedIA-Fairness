@@ -58,21 +58,21 @@ Training confounder-free deep learning models for medical applications. Nat. Com
 
 #### Disentanglement Learning
 1. On the fairness of privacy-preserving representations in medical applications. MICCAI-DART, 2020. ([paper](https://www.springerprofessional.de/on-the-fairness-of-privacy-preserving-representations-in-medical/18418170))
-2. Deng W, Zhong Y, Dou Q, Li X. 2023. On fairness of medical image classification with multiple sensitive attributes via learning orthogonal representations. arXiv preprint arXiv:2301.01481
-3. Pakzad A, Abhishek K, Hamarneh G. 2022. CIRCLe: Color Invariant Representation Learning for Unbiased Classification of Skin Lesions. In Proceedings of the 17th European Conference on Computer Vision (ECCV) - ISIC Skin Image Analysis Workshop
+2. On fairness of medical image classification with multiple sensitive attributes via learning orthogonal representations. IPMI, 2023. ([paper](https://arxiv.org/pdf/2301.01481))
+3. CIRCLe: Color Invariant Representation Learning for Unbiased Classification of Skin Lesions. ECCV-ISIC Workshop, 2022. ([paper](https://link.springer.com/chapter/10.1007/978-3-031-25069-9_14), [code](https://github.com/sfu-mial/CIRCLe))
 
 #### Contrastive Learning
-1. Du S, Hers B, Bayasi N, Harmaneh G, Garbi R. 2022. FairDisCo: Fairer AI in Dermatology via Disentanglement Contrastive Learning. In Proceedings of the 17th European Conference on Computer Vision Workshops (ECCVW 2022)
+1. FairDisCo: Fairer AI in Dermatology via Disentanglement Contrastive Learning. ECCVW, 2022. ([paper](https://arxiv.org/pdf/2208.10013), [code](https://github.com/siyi-wind/FairDisCo))
 
 #### Universal Learning
-1. FairAdaBN: Mitigating unfairness with adaptive batch normalization and its application to dermatological disease classification. Arxiv, 2023. ([paper](https://arxiv.org/pdf/2303.08325))
+1. FairAdaBN: Mitigating unfairness with adaptive batch normalization and its application to dermatological disease classification. ArXiv, 2023. ([paper](https://arxiv.org/pdf/2303.08325))
 
 #### Federated Learning
-1. Fan D, Wu Y, Li X. 2021. On the fairness of swarm learning in skin lesion classification. In Clinical Image-Based Procedures, Distributed and Collaborative Learning, Artificial Intelligence for Combating COVID-19 and Secure and Privacy-Preserving Machine Learning. Springer
+1. On the fairness of swarm learning in skin lesion classification. MICCAI Workshop, 2021. ([paper](https://link.springer.com/chapter/10.1007/978-3-030-90874-4_12))
 
 ### Unfairness Mitigation via Post-processing Methods
 #### Network Pruning
-1. Wu Y, Zeng D, Xu X, Shi Y, Hu J. 2022. Fairprune: Achieving fairness through pruning for dermatological disease diagnosis. arXiv preprint arXiv:2203.02110
+1. Fairprune: Achieving fairness through pruning for dermatological disease diagnosis. MICCAI, 2022. ([paper](https://link.springer.com/chapter/10.1007/978-3-031-16431-6_70))
 
 ---
 ## Medical Datasets with Sensitive Attributes
