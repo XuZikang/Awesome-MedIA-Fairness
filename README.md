@@ -73,6 +73,7 @@ Training confounder-free deep learning models for medical applications. Nat. Com
 ### Unfairness Mitigation via Post-processing Methods
 #### Network Pruning
 1. Fairprune: Achieving fairness through pruning for dermatological disease diagnosis. MICCAI, 2022. ([paper](https://link.springer.com/chapter/10.1007/978-3-031-16431-6_70))
+2. Debiasing Deep Chest X-Ray Classifiers using Intra- and Post-processing Methods. ML4HC, 2022. ([paper](https://proceedings.mlr.press/v182/marcinkevics22a.html), [code](https://github.com/i6092467/diff-bias-proxies))
 
 ---
 ## Medical Datasets with Sensitive Attributes
