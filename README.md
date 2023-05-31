@@ -22,6 +22,7 @@ A collection of papers in fairness of medical image analysis
 #### Fairness Benchmarking
 1. Improving the Fairness of Chest X-ray Classifiers. PCHIL, 2022. ([paper](https://proceedings.mlr.press/v174/zhang22a/zhang22a.pdf))
 2. Medfair: Benchmarking fairness for medical imaging. ICLR, 2023. ([paper](https://arxiv.org/abs/2210.01725), [code](https://github.com/ys-zong/MEDFAIR))
+3. Detecting Melanoma Fairly: Skin Tone Detection and Debiasing for Skin Lesion Classification. MICCAI-DART, 2021. ([paper](https://arxiv.org/pdf/2202.02832.pdf), [code](https://github.com/pbevan1/Detecting-Melanoma-Fairly))
 
 #### Fairness & Uncertainty
 1. Evaluating subgroup disparity using epistemic uncertainty in mammography. ArXiv, 2021. ([paper](https://arxiv.org/abs/2107.02716))
@@ -49,7 +50,7 @@ A collection of papers in fairness of medical image analysis
 
 ---
 ### Unfairness Mitigation via In-processing Methods
-#### Representation Learning
+#### Adversarial Learning
 Training confounder-free deep learning models for medical applications. Nat. Com, 2020. ([paper](https://pubmed.ncbi.nlm.nih.gov/33243992/))
 1. Representation learning with statistical independence to mitigate bias. WACV, 2021. ([paper](https://openaccess.thecvf.com/content/WACV2021/papers/Adeli_Representation_Learning_With_Statistical_Independence_to_Mitigate_Bias_WACV_2021_paper.pdf))
 2. Risk of training diagnostic algorithms on data with demographic bias. IAELMIC, 2020. Springer ([paper](https://dl.acm.org/doi/abs/10.1007/978-3-030-61166-8_20))
