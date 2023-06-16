@@ -30,6 +30,8 @@ A collection of papers in fairness of medical image analysis
 #### Fairness & Model Selection
 1. Model selection’s disparate impact in real-world deep learning applications. ArXiv, 2021. ([paper](https://arxiv.org/abs/2104.00606))
 
+#### Fairness Dataset
+1. Harvard Glaucoma Fairness: A Retinal Nerve Disease Dataset for Fairness Learning and Fair Identity Normalization. ArXiv, 2023. ([paper](https://arxiv.org/pdf/2306.09264.pdf), [code](https://github.com/luoyan407/Harvard-GF))
 ---
 ### Unfairness Mitigation via Pre-processing Methods
 #### Data Resampling
