@@ -7,6 +7,7 @@ from scripts.build_catalog import norm
 from scripts.catalog_editorial import annotate
 from scripts.literature_pipeline.analysis import fetch_evidence, review_fingerprint
 from scripts.render_catalog import main as render_catalog
+from scripts.screening_policy import paper_version
 
 
 def same_record(left, right):
@@ -45,29 +46,31 @@ def sync_catalog(db, root, approval_file=None):
             failures += 1
             notes += ['## '+paper['title'],'','审核对应的证据版本已变化，需重新确认。','']
             continue
-        eligible = fp == review_fingerprint(paper, result.get('model',''), result.get('provider',''))
-        eligible = eligible and result.get('decision') == 'suggest_include' and result.get('evidence_level') == 'full_text'
-        eligible = eligible and all(result.get('criteria',{}).get(key,{}).get('met') for key in ('medical','algorithm','fairness','groups','evaluation'))
-        if not eligible:
+        current = result['paper_version']==paper_version(paper) if result.get('paper_version') else fp == review_fingerprint(paper, result.get('model',''), result.get('provider',''))
+        if not current:
             failures += 1
-            notes += ['## '+paper['title'],'','人工已通过，但当前全文或范围证据尚不齐全／已更新，需补核后再收录。','']
+            notes += ['## '+paper['title'],'','人工审核后模型或证据版本已更新，需核对后再收录。','']
             continue
         try:
             evidence = fetch_evidence(paper)
-            if evidence['level'] != 'full_text': raise ValueError('Primary full text unavailable for catalog annotation')
+            if not evidence['text'].strip(): raise ValueError('Primary abstract/full text unavailable for catalog annotation')
             annotation = annotate(paper, evidence['text'])
             publication_date = str(paper.get('published') or paper['year'])[:10]
             metadata = {key:list(value) for key,value in result['metadata'].items()}
             metadata['Assets'] = ['Paper only']
+            metadata['Evidence'] = ['Primary full text' if evidence['level']=='full_text' else 'Primary abstract']
             metadata['Stage'] = ['Evaluation' if annotation['method']=='Fairness Evaluation' else 'Not verified' if annotation['method']=='Stage pending' else annotation['method']]
             record = {key:paper[key] for key in ('title','doi','arxiv_id','pmid','authors') if paper.get(key)}
             record.update(year=publication_date[:4], publication_date=publication_date,
-                          venue='arXiv' if paper.get('arxiv_id') else 'Paper', kind='main',
+                          venue='arXiv' if paper.get('arxiv_id') else 'Paper', kind='survey' if result.get('article_type') in {'review','commentary'} else 'main',
                           links={'Paper':paper['url']}, metadata=metadata, method=annotation['method'],
                           tldr_en=annotation['tldr_en'], verified=True,
                           sources=[{'url':evidence['url'], 'section':'Automated full-text screening'}])
+            record['sources'][0]['section']='Human-approved '+('full-text' if evidence['level']=='full_text' else 'abstract')+' review'
+            if result.get('article_type')=='commentary':record['publication_type']='Commentary'
             records.append(record);added += 1
-            record['human_review']={'decision':'approve','review_fingerprint':fp,'note':approval.get('note','')}
+            record['human_review']={'decision':'approve','review_fingerprint':fp,'note':approval.get('note',''),
+                                    'overrides_machine_screening':result.get('decision')!='suggest_include'}
             notes += ['## '+paper['title'], '', annotation['reason_zh'], '',
                       '初筛理由：'+result['reason_zh'], '', '证据：']
             notes += ['- '+name+'：'+item['quote'] for name,item in result['criteria'].items()]

@@ -1,0 +1,428 @@
+{
+  "p-064ee08a8e0905727f10": {
+    "decision": "reject",
+    "fingerprint": "921bf3fb658250b93f508f4756085ddc7a20ed18db644d590eb8494ea197679b",
+    "note": "综述内容如果不是完全相关 medical fairness，只是提及，则不纳入。",
+    "paper_version": "7ca9dda5c99bf9f0c80142e14279fc80c7dd691cc8429055aba713adb3f4d4c5",
+    "title": "Transforming one health antimicrobial resistance surveillance in resource-limited countries (RLCs): From point-of-care diagnostics to AI-driven decision support.",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-07c67a5b12c0019428e7": {
+    "decision": "reject",
+    "fingerprint": "3217d6a68594f5bbdf68aa3bc829b809ce549318bec4f6fdb775894badc2a045",
+    "note": "非 medical fairness",
+    "paper_version": "0cbff6e8e961ed93202457ef7dcf8a91ea2dfe077b6ef21bf6816e7927ce49c9",
+    "title": "Institutional Governance Authenticity and Student Responses to Artificial Intelligence Assessment Guidelines in Higher Education",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-103ada15cebbb7f64a8f": {
+    "decision": "reject",
+    "fingerprint": "b4a9caa2757ec3f9fe2d879d29848e8a855f0bf6a826e3974b86bba8edb834f3",
+    "note": "同第一条的理由",
+    "paper_version": "6ae3524670c083b34a4a47cc3350285f60e0e3a09836c10974e30c0d1462f76c",
+    "title": "The Role of Artificial Intelligence in PET Imaging.",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-104fdea547833123c665": {
+    "decision": "reject",
+    "fingerprint": "443ccca3402d91cd75d9391a32df0bd55fea0431a2af4c864ff5c1b830d29057",
+    "note": "非 medical fairness",
+    "paper_version": "663fe0d7659a86dccb31748e837a842a492dc232af1726df38f1c79c1cc61b40",
+    "title": "Rethinking Intellectual Property in the Age of Generative AI: Ethics, Rights and Accountability",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-11a0ba65de9fc94bbcd8": {
+    "decision": "pending",
+    "fingerprint": "待取得有效分析",
+    "note": "",
+    "paper_version": "8f6d283e574d27244125c3370a98846204a0acccd4068c8d8d4ef10fb9151be1",
+    "title": "Navigating the cultural iceberg: Addressing algorithmic bias, hallucination, and semantic flattening in AI-assisted qualitative thematic analysis.",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-1607ccec012a87a0fdca": {
+    "decision": "reject",
+    "fingerprint": "1a31d5b4b55ae8d47a3712a6e3001c4aad1d6bfb151eb43e761c8ab523550dfe",
+    "note": "同第一条理由，综述中仅泛提算法偏倚与公平性问题，未开展实证评估。",
+    "paper_version": "5199a3662a43e2bf7f9403b831705d56a946ad37674cbbf416bd9ff0fa55b2de",
+    "title": "Precision Lipid Management in the Era of Biotechnology and Artificial Intelligence: From Gene Editing to Smart Drug Delivery.",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-2ace6f04876029d3419e": {
+    "decision": "reject",
+    "fingerprint": "58aca21ad834d21a0aa9f93c5a05a74e5442b34fff94532c4e8de3cb4bdfb845",
+    "note": "非 medical fairness",
+    "paper_version": "b32527b9f3ed7d977a1ed51d72ab2303221bb5607516b40c18637be8e39a73e7",
+    "title": "BiasLab: A multilingual dual-framing framework for LLM bias measurement, applied to workplace and HR contexts.",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-2c91ef57a53bcafa21e4": {
+    "decision": "reject",
+    "fingerprint": "4c183b292569db63e2787ecdf0e8a37839937b4e0ab1ab2fb918967f609695f9",
+    "note": "同第一条理由",
+    "paper_version": "f9643d52467caa2f896fdb3c2a42cf100e42ffd01e9c8ce4622536f22f6a5404",
+    "title": "Governing Artificial Intelligence in University Mental Health Services: A Population Health Intelligence Framework for Preventing Algorithmic Stratification",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-2d3bf73fccc4912dddf5": {
+    "decision": "reject",
+    "fingerprint": "9e3cc85715623621725191f7b7ce3d2a62a66a668059d8f26ae32b61a4257060",
+    "note": "not medical fairness",
+    "paper_version": "9d599243c4de4511b8b1dd6a2cba280012957fdcf9fb39aa9d0bef5f5fff4241",
+    "title": "A longitudinal case study of practice and policy gaps in responsible AI adoption across Ukrainian higher education from 2023 to 2025",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-2d408dda7b908686a6ac": {
+    "decision": "reject",
+    "fingerprint": "1b81c7fb722d634f09fd328b7f5819591b9899e98a2c8110ab02dc8f8892e88f",
+    "note": "同第一条理由",
+    "paper_version": "f1c8a040289823bdcb434b142a3a8d32547c5e54537fb40fb613351c99e54862",
+    "title": "Can You See It? Diagnostic Blind Spots in Pigmented Skin: A Review of the Literature in Plastic Surgery and Burns.",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-2e2b2ef426e2412e7968": {
+    "decision": "reject",
+    "fingerprint": "ea6b561790ac4ecbecd4b1895c85c9b2fe0d5e5610aac69d14fb4d101e992b22",
+    "note": "not fairness",
+    "paper_version": "9ad7f8aacb4047e192cabd36c03e9b9f1b7b55577817e251051a9d90385fafaa",
+    "title": "A clinical decision support system for ECG diagnosis: Surpassing commercial standards through dual-stream feature fusion.",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-2e9873c464054f991ee6": {
+    "decision": "reject",
+    "fingerprint": "a6dac238300c5d3e2abfa7d6d4c2454015fc0878b0c26f7aa92352487bef2684",
+    "note": "没提及公平性测量或分组分析，且仅为摘要级证据，故不纳入。",
+    "paper_version": "ff2c51ba4c4270f0065e06cc8212aef78c1753be63d36d2b1d9b5d347e30acfa",
+    "title": "Artificial Intelligence-Based Assessment of Pathologic Response to Neoadjuvant Chemoimmunotherapy in Non-Small Cell Lung Cancer: An International Multicenter Cohort Study.",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-2ffe88b3f5427706252d": {
+    "decision": "hold",
+    "fingerprint": "2419b47bd05c87d94772f8cdfcd21c28734c9d778364041a2794b5c015525a99",
+    "note": "需要你确定一下内容是否与 fairness 相关",
+    "paper_version": "10d39b13948e22089fe89fea5732fcd1a49df79c2ff3c3f34637721041a11af1",
+    "title": "Explainable Machine Learning for 30-Day Hospital Readmission Risk Prediction in Patients with Diabetes: A Comparative Analysis of Model Performance and Algorithmic Fairness",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7",
+    "followup_zh": "已核查Research Square全文§7.2与Table 2，明确比较race/gender/age的recall gap，范围相关；模型偏差并未被消除，仍等你决定。详见 held-scope-audit-2026-11-04.md。"
+  },
+  "p-39172eeeef221e79bbcc": {
+    "decision": "reject",
+    "fingerprint": "c085796225ccaab938c8f67cdfae275f24a5ff536bd30de9c11ce7897124e6bb",
+    "note": "同第一条理由",
+    "paper_version": "03d076677b36f179eac4e64243cb8e39d27701cd45e40119c50705e29de0acb8",
+    "title": "A Scoping Review of Artificial Intelligence and Machine Learning for Spatio-temporal Infectious Disease Forecasting",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-3afb8c155e44c9705fd1": {
+    "decision": "reject",
+    "fingerprint": "8056cdb5a1db897620813035fd6e18608d180e0533ebf74fb8e94cbbb8ea6286",
+    "note": "同第一条理由",
+    "paper_version": "8b8e8c853535d17b03d76fc911e2c59d32dc9e24792f3aa1c8179a753e304fb2",
+    "title": "AI-Driven Multiomics Biomarkers for Precision Oncology: Navigating the Translational Gap and Regulatory Hurdles.",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-3e28ee0d19df84b9f3d4": {
+    "decision": "reject",
+    "fingerprint": "ba49e38c18e3aaf354b033d0c4412430e28c4392d480b538347f8365198551f5",
+    "note": "同第一条理由",
+    "paper_version": "3ea3a5e249883fe1a4c43e6e60be60229c055be9918e0bf01afc91fd5ece1b87",
+    "title": "Artificial intelligence integration in allied health professions: A comprehensive review of educational, research, and clinical applications.",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-3e7581d5cf989529b639": {
+    "decision": "reject",
+    "fingerprint": "a7a7774ada483e41aa35976505ccea857c02489682812bce4194652ab5f6dba3",
+    "note": "同第一条理由",
+    "paper_version": "ada24eeeea01b9aed8b7f7c231a95c84660f8ac69141ead90fb18043a9827d40",
+    "title": "Governing artificial intelligence in Australian healthcare organisations - a qualitative study of staff perspectives.",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-41c2f5e12d24a76bab3e": {
+    "decision": "reject",
+    "fingerprint": "72b5c6c3b5a5590b0295ecbf24d8bb69429c0437024f5f09aafb5486bdfec8ec",
+    "note": "同第一条理由",
+    "paper_version": "aeb7ebe668cf9c82a9b0d3a0ef908ca4aaee0cf010f36d6a718dab5b1a599911",
+    "title": "AI integration for transforming care of patients with liver diseases.",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-4271f40bb01045bc8aab": {
+    "decision": "reject",
+    "fingerprint": "619000b5835440bc44db3d06279540d97aa07f934d2c747e51311343a9f675d2",
+    "note": "同第一条理由",
+    "paper_version": "51fa1e4a802b8d12055726c5551f1e889f1a3b4b6422c9537486ffcceb3cc681",
+    "title": "Artificial intelligence-driven pharmacovigilance: transforming signal detection, real-world drug safety monitoring, and regulatory decision-making.",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-4cdbb2df2923fd9ce2c7": {
+    "decision": "reject",
+    "fingerprint": "976c4ee74a43ddc13eb3c58a8fafc5bc498019b41229cd15fb2bdc81dbcb3f84",
+    "note": "not medical fairness",
+    "paper_version": "c52209df1cec4c22d339780dd06276193b91ac4481844097fa55c06e6657b982",
+    "title": "Creative Assignments and Who Gets Left Behind: A Systematic Review of Inclusion Readiness in Generative AI Teaching Practices in Business and Technology Higher Education",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-59d12037c0f5cd6ad9d2": {
+    "decision": "reject",
+    "fingerprint": "41486aa9bc8d0b30e6972e3c46b9e51f5e05a66ffd08d70edf9d5dfccf48227b",
+    "note": "not medical fairness",
+    "paper_version": "252bf23dc446ea806b9ee02fe2fc8fa972b0117ce25471ec4f6f2df62d61f056",
+    "title": "Responsible Credit-Line Increase: A Fairness-Aware, Explainable, and Governed Machine-Learning Framework for Socio-Technical Lending Systems",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-5c95d2dbcd135df1a0e0": {
+    "decision": "reject",
+    "fingerprint": "4dfe93c73ff545f434af12b72e8c50a3cbf11e81c038e45842b995611392d575",
+    "note": "同第一条理由",
+    "paper_version": "300b075735f6c7edad8e6d2d955983219541eb5fca47259ad93cd744b168fc77",
+    "title": "Artificial intelligence in dedicated forensic-science journals: A bibliometric and science-mapping analysis (1991-2026).",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-5f6af5fefa6890d56a13": {
+    "decision": "reject",
+    "fingerprint": "81d9809aaa5ec9ac2b1e47b5088111754a680593f47821119ad595c7c43bae7b",
+    "note": "同第一条理由",
+    "paper_version": "3a564aae4d746c04f25e798cece3d95cb9bf328edc9d8b1cc5c1b74ab46a5bda",
+    "title": "MRI radiomics for predicting pathological complete response in breast cancer: a systematic review of current evidence and limitations.",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-645868c25d38e8ad956f": {
+    "decision": "approve",
+    "fingerprint": "9583eb2479a79f86e91f4d91d2ad50009f4eb9b3aaa10818367563a5f5e85f65",
+    "note": "fairness evaluation and mitigation in pediatric ICU;",
+    "paper_version": "1253b74bbab6870853392af170dd2f776a8b048d422433f96cb805815ddf2cf9",
+    "title": "The pediatric transfer gap: How adult-ICU-trained machine-learning models degrade on pediatric intensive care patients.",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-719d950501ac09bbdb7d": {
+    "decision": "approve",
+    "fingerprint": "980513207e5c3889cc789d5963296192f96e34e12d8bfb3b302e1e4289b30db5",
+    "note": "Fairness evaluation framework In cardiovascular AI;",
+    "paper_version": "1a5343d06eb74eccb2061d599b439a48ee6c13b8cd7d71c6aa0a18ba242db485",
+    "title": "Sex, gender and artificial intelligence in cardiovascular medicine 4.0.",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-747c407c5696b151b802": {
+    "decision": "reject",
+    "fingerprint": "963ae12529e62023ba98c3f859bc6b7c1c3f756099032be4851a2d0836e92f39",
+    "note": "同第一条理由",
+    "paper_version": "697d0f40b35220a698391750c397f050e6b2b93c62bb85b2f190847146ca4ca9",
+    "title": "Ethical and legal challenges of integrating artificial intelligence into paediatric surgery.",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-791ad6693c5fab805032": {
+    "decision": "reject",
+    "fingerprint": "e54a6f4905f31a41898751218a2eb6edba795db1fe6637245bfdcdd296f9c4ee",
+    "note": "同第一条理由",
+    "paper_version": "8f06a9603d5a77ea0dcc61c773b81d878f589c66e451d416efbae6ebd93e3836",
+    "title": "Technology Matters: Emerging technologies in clinical informatics to support child and adolescent mental healthcare safety.",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-79db3e55e911174329df": {
+    "decision": "reject",
+    "fingerprint": "d8021c543902d1d0c18bef3d4c9f97422bd576519f7267e6cc2113fd723275bb",
+    "note": "同第一条理由",
+    "paper_version": "c2114571483fc0cd53380787449966b7282d5b07d17c0af66fc420256b00aa22",
+    "title": "Deep Learning for Cervical Cytology Screening: Methods, Algorithms, Challenges and Prospects",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-7f1b929f13b08962e27b": {
+    "decision": "reject",
+    "fingerprint": "待取得有效分析",
+    "note": "comment",
+    "paper_version": "d43b49647bfbdd8cda1430a3cda729a21b3eac0e3a88c0be76efe854499d29c7",
+    "title": "Comment on \"Artificial Intelligence in Health Care: A Rallying Cry for Critical Clinical Research and Ethical Thinking\".",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-84cbd12dbfc944d49f87": {
+    "decision": "reject",
+    "fingerprint": "8dfefb81336cbc9fc3141baff630a9b09d1c065ed82324cecba6b734af2b1af3",
+    "note": "not medical fairness",
+    "paper_version": "1a9977f6a933a404d23460cf7a30971a6801bb334a9cb340a67052e0c45f46cd",
+    "title": "Sources of Risk in AI Systems Revisited: FCAIR-O, a Faceted Causal Framework and Lightweight Ontology for Risk Management and Assurance",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-90cc3b587e16a8a6abd1": {
+    "decision": "approve",
+    "fingerprint": "552f254b4360e291f2aecec4be4c937e229bf5eda138a8043e6935831db1a0c3",
+    "note": "fairness evaluation in ChatGPT for HIV counseling;",
+    "paper_version": "7d081aad8587d81dc9b70d3b1c8ca4990081f41b31e9ce2e77aa3502bcfdd006",
+    "title": "Assessing Variability in ChatGPT Responses: A Case Study on Simulating Online User Inputs.",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-9be6ed0d8b3a561dd390": {
+    "decision": "reject",
+    "fingerprint": "b5ab65e70ec67ce89ef76117f4f57f2a8af8812726b4fcc3fefc55673619c766",
+    "note": "同第一条理由",
+    "paper_version": "5a54c64a01bad1cf00255f7e72fbb6672eb2852b2bdd88a447060189818abd84",
+    "title": "The application of artificial intelligence in healthcare practice: A mapping review of systematic reviews.",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-a71fdd3bd3bf63d2ba2a": {
+    "decision": "reject",
+    "fingerprint": "45298e9e391c2049cfc7fb4e76265c6df27a5113c12d4d6f367c6bf791957a6b",
+    "note": "同第一条理由",
+    "paper_version": "0945dbd7a888e121015cb6e04e2cab41a5f03b6fe03b0c96b9070f1b43ca856b",
+    "title": "Artificial intelligence in medical education: a narrative review across four functional domains.",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-ab58f18226651ba5545c": {
+    "decision": "approve",
+    "fingerprint": "5be9027dad6da04c7afa964b6bafc7c8a9ab70e507c995a4af3872cecffdb2b8",
+    "note": "fairness evaluation in rotator cuff retear prediction;",
+    "paper_version": "3d3568c15aa7bb1347d2ba2bbf6d1da6bc067039437387d4187ebe7daf45ecd1",
+    "title": "Editorial Commentary: Calling Balls and Strikes: For Artificial Intelligence Models to Accurately Predict Rotator Cuff Retear, We Must Carefully Define the Strike Zone.",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-bbc3b6330d6af062be13": {
+    "decision": "reject",
+    "fingerprint": "27bce0cfcbf3ab16e79e85199ea7b99113f7dc1c5aee98f9b85fcf653dba25d5",
+    "note": "not fairness",
+    "paper_version": "bef8af678fe520744eb0b6909d416d98ac59fc1f39fdbac969d6f8795d4cd12d",
+    "title": "Toward multimodal physiological assessment of clinical performance in simulation-based medical education: a machine learning approach.",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-ca287a15e23f038adaf1": {
+    "decision": "reject",
+    "fingerprint": "31304c7c419df2d41f113ee0b5be492f536acad0e0c1ea996a6ba642ff027dd6",
+    "note": "同第一条理由",
+    "paper_version": "8ee982ecdb61a06b21e146884546d8af4232ebf4c014dab46deeec165607ec1a",
+    "title": "Patient attitudes toward artificial intelligence-driven dermatology.",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-ca8d7d03e55f918b8e65": {
+    "decision": "reject",
+    "fingerprint": "de0d25ffd40bf3aea14ce5a63f857c92c802314220a246fe274a82af9a58a85f",
+    "note": "not medical",
+    "paper_version": "c71a20d99c3c6b8f063d4cf69f2ca4cd70e2b052bc33047459ac5abc811dda92",
+    "title": "Risk-Oriented Differentiated Governance for Ambiguous Information.",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-cb6eb929d7f879132fb0": {
+    "decision": "hold",
+    "fingerprint": "9c068a07f1efc2318b8bee6b1a89d2f8b8ef985f5a68de1c1cc4bc0e9fdc1326",
+    "note": "你确认一下是否与 medical 相关",
+    "paper_version": "f28bcae72cc50c9201cbd606846bdabc72e064acd0e300f2d3560304df13bd24",
+    "title": "Fairness-Aware Design for Contextual Experiments: Guaranteeing Reliability and Equity in Heterogeneous Subgroups",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7",
+    "followup_zh": "已核查arXiv全文；有临床试验数据，但奖励为试验研究结果是否发布，而非患者临床结局，属于边界相关方法学，继续暂缓。详见 held-scope-audit-2026-11-04.md。"
+  },
+  "p-cd61ff429b4e8948cce1": {
+    "decision": "approve",
+    "fingerprint": "d66dce36c533e52e152994fc0b21988ba5a4182fce49f595d95e983958c8c92d",
+    "note": "fairness evaluation and mitigation in perioperative infection prediction;",
+    "paper_version": "ae15957a77265bc2273984aa15eb5fbcc9b8989359c90a49e8ce3b65a2548f2a",
+    "title": "Subgroup deployment-readiness audit of calibration and clinical utility in perioperative infection prediction.",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-ceb7d989076bafad0d24": {
+    "decision": "reject",
+    "fingerprint": "2abd15802a6d0b0706a91add3f77b5dc51657d57a379ae9740695b04854ac420",
+    "note": "同第一条理由",
+    "paper_version": "7cbd291c0a2f841a16c1b9ea063ace694e6524d27116bf00a5fe2847d554e030",
+    "title": "Public evaluations of AI-mediated healthcare when considering people with diverse access and support needs: a mixed-methods survey.",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-cf9833bc80232d798aba": {
+    "decision": "reject",
+    "fingerprint": "07651b9f37c857e42e488b833cddfbb3df5867b4f9037419f401edf3d9c60785",
+    "note": "同第一条理由",
+    "paper_version": "de23ef370658928498bee6f3e9a0b583c85640d7c9e91b2f50531ba841870458",
+    "title": "AI algorithms and external validation: promises, pitfalls, and a practical blueprint.",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-d393349a30ba59457dea": {
+    "decision": "reject",
+    "fingerprint": "09af521a0e2a03df78264b1cb71264559778c04c6d73b6c1d68fab23cebfd001",
+    "note": "not medical",
+    "paper_version": "a936f7438c374ca9454342c528cb7639930219eabbf2e159e2471fbaf1552099",
+    "title": "Artificial intelligence, work, and structural inequality: Why human-centric AI requires institutional architecture, not just ethics.",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-d39e326704b43f57948f": {
+    "decision": "reject",
+    "fingerprint": "82f9f4c6c0d4f0387fde51c270b4cefffa92f213e9145561b965f55977e8e1f6",
+    "note": "同第一条理由",
+    "paper_version": "7deb4c653f9836c8602fdfa266f2cac0aab25ba6c6997e507814433aae11856a",
+    "title": "Artificial intelligence-based nurse scheduling in healthcare: A scoping review of functional features and empirical outcomes.",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-d3fdee71565e6c28bc07": {
+    "decision": "reject",
+    "fingerprint": "6843ee39ab18de18d542d38ad4855b26319e837588054a6d787d14b1e8d95257",
+    "note": "not medical",
+    "paper_version": "0d51d07e661f6ea6948367a18cc5b69fe05d83ebcf79de6b560678a02ca0280b",
+    "title": "Responsible AI in Academic Research: A Systematic Review of Ethical Principles, Challenges, and Future Directions",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-e63a02248d4e14119359": {
+    "decision": "approve",
+    "fingerprint": "a5cedd09863627437b3b37b9848b34cda5e9f5828b3f147efbd3dabdd105122d",
+    "note": "fairness framework and evaluation in acute stroke management;",
+    "paper_version": "15af2e0b116f6a82f9b6575fa91a5312cd203535e8d64e420ee67d50c34871ae",
+    "title": "Responsible AI for Acute Stroke Management.",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-e76f08abf1081b362cba": {
+    "decision": "reject",
+    "fingerprint": "c0cefd6113c062cc7a29db2c603f619e86be880803fd7b44e5cfa3c168694a72",
+    "note": "not about fairness",
+    "paper_version": "6cb6a41351c3475af592c6c22024df0ae8cb5d35443b0484b88bd530f8d52aa1",
+    "title": "Interpretable models for scRNA-seq data embedding with multi-scale structure preservation.",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-ecc70724990e28b4c271": {
+    "decision": "reject",
+    "fingerprint": "8d6534cffb7c974aa518217668b715b6ea532293c2bc9c5526d18dc28d1acd67",
+    "note": "同第一条理由",
+    "paper_version": "4e224ee69dd9b23e03b02e977b8d2ee6d9f254bbbe4d16bc2c53c8483f9310cf",
+    "title": "Using Generative AI for Behavioural Research Effectively and Responsibly: a BR-UK Statement",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-f2c8f82e8af197e219f9": {
+    "decision": "reject",
+    "fingerprint": "d79b80832bee1727892e6a30592c64629d82c1f19e9057b0e94185c4f2339123",
+    "note": "not medical",
+    "paper_version": "ff551376862b1296aa6d42c28cfcdababcdd6d4dc699ed14592a46f2b508f3ae",
+    "title": "The Age of AI Strategic Decision-Making: The Business Analytics in the Corporate Divisions as the Competitive Advantage",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-f51c76f9a365032f9da6": {
+    "decision": "reject",
+    "fingerprint": "8fcd0f67b5a35248f07ec366bfd378ee9a9fa579fb45ce17e3a75c86a98da6d4",
+    "note": "同第一条理由",
+    "paper_version": "fec6fb3bccdd44f2dbe606f3d136e4f78f623bb6b2f17e1872f9c25c65a90e87",
+    "title": "The symbiotic shift: How AI is reshaping rehabilitation and the future of work.",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-f65a2a15eb4c53ba6488": {
+    "decision": "reject",
+    "fingerprint": "a8e1c989aebc3cef1c35813d599c9cb97fdbcf80d60e7c0618f3a2229872eba6",
+    "note": "not medical",
+    "paper_version": "24fc72734d5e216dd8a6fe187d2fc193a0988507cb1add0c565bba7a6b7ca373",
+    "title": "Algorithmic Bias Concerns and Acceptance of AI Supported Legal Decision Making in Bangladesh",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-f729e9411f9f1a7cc891": {
+    "decision": "reject",
+    "fingerprint": "32494c8cdc2732a289b297c102aec9ea27f5456882bf2cb454a5b7b0b82784f1",
+    "note": "同第一条理由",
+    "paper_version": "75afb06b0f3017c3a8118ca3aad7ff42c0593cad8c5b314adfb4929ddd325bd6",
+    "title": "Artificial Intelligence in Dietary Management and Nutritional Interventions: A Narrative Review of Current Evidence, Applications, and Translational Challenges.",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-fafce843d0071edb38ce": {
+    "decision": "reject",
+    "fingerprint": "cf076947dc090cd27a76fa00b64d35c66009cf7080f9a05bc279d10408a3d117",
+    "note": "同第一条理由",
+    "paper_version": "5814e84e8d6e58d0a6daf282e1d6192d6f0e10696afd725093299ae7bbec9514",
+    "title": "Investigating Patient Trust and Intention to Act in AI-Supported Clinical Decisions: Cross-Sectional Survey.",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  },
+  "p-fda1af6a735d35a7ab7d": {
+    "decision": "approve",
+    "fingerprint": "e859fc8ae7ae830c7224eaefc894278af7935735e4acfe83e231141bdd85e0d6",
+    "note": "fairness evaluation on skin color representation in orthopedic literature;",
+    "paper_version": "58ebba66295dcdd09d806f5a94380815f23606a9c3cd37b15f0aa3431df3f95a",
+    "title": "Skin color representation in orthopedic literature.",
+    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+  }
+}

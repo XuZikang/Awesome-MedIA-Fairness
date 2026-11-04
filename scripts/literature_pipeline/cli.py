@@ -173,7 +173,7 @@ def seed_catalog(db, path, day):
         ingest(db, paper, day, seeded=True)
 
 
-def review_pending(db, day, limit, full_text):
+def review_pending(db, day, limit, full_text, decisions=None):
     endpoint = os.environ.get("LITERATURE_LLM_ENDPOINT", "")
     model = os.environ.get("LITERATURE_LLM_MODEL", "")
     key = os.environ.get("LITERATURE_LLM_API_KEY", "")
@@ -190,6 +190,9 @@ def review_pending(db, day, limit, full_text):
     count = failures = 0
     for paper in papers:
         if paper.get("seeded") or not paper.get("abstract"):
+            continue
+        from scripts.screening_policy import current_human_decision
+        if current_human_decision(paper,decisions or {}).get('decision') in {'reject','approve'}:
             continue
         fingerprint = review_fingerprint(paper, model, provider)
         previous = db.execute("SELECT fingerprint,payload FROM analyses WHERE paper_id=?", (paper["id"],)).fetchone()
@@ -222,11 +225,15 @@ def markdown(text):
     return str(text).replace("\n", " ").replace("<", "&lt;").replace(">", "&gt;").replace("[", "\\[").replace("]", "\\]")
 
 
-def render(db, output, day, statuses, review_status):
+def render(db, output, day, statuses, review_status, decisions=None, catalog_records=None):
     output = Path(output)
     papers = [json.loads(row[0]) for row in db.execute("SELECT payload FROM papers")]
     analyses = {pid: (fp, json.loads(payload)) for pid, fp, payload in db.execute("SELECT paper_id,fingerprint,payload FROM analyses")}
     candidates = sorted((p for p in papers if not p.get("seeded")), key=lambda p: (-route(p)["priority"], p["id"]))
+    from scripts.screening_policy import current_human_decision
+    from scripts.publish_catalog import same_record
+    candidates=[p for p in candidates if current_human_decision(p,decisions or {}).get('decision')!='reject'
+                and not any(same_record(p,q) for q in (catalog_records or []))]
     def current_analysis(paper):
         entry = analyses.get(paper["id"])
         if entry and entry[0] == review_fingerprint(paper, entry[1].get("model", ""), entry[1].get("provider", "")):
@@ -384,9 +391,13 @@ def main(argv=None):
                         status["error"] = type(exc).__name__ + ": source query failed; retry retained"
                     statuses.append(status)
                     print(f"  {status.get('records', 0)} records; complete={status['complete']}" + (f"; {status['error']}" if status.get("error") else ""), flush=True)
-        review_status = {"mode": "metadata_only", "reviewed": 0, "failures": 0} if args.metadata_only else review_pending(db, day, limit, not args.no_full_text)
+        ledger_file=args.catalog.parent/'data/curation-decisions.json'
+        decisions=json.loads(ledger_file.read_text()) if ledger_file.exists() else {}
+        review_status = {"mode": "metadata_only", "reviewed": 0, "failures": 0} if args.metadata_only else review_pending(db, day, limit, not args.no_full_text, decisions)
         export_state(db, args.state)
-        candidates, changed = render(db, args.output, day, statuses, review_status)
+        catalog_data=args.catalog.parent/'data/catalog.json'
+        records=json.loads(catalog_data.read_text()) if catalog_data.exists() else []
+        candidates, changed = render(db, args.output, day, statuses, review_status, decisions, records)
         publication = {"added": 0, "failures": 0}
         if args.publish_root:
             from scripts.publish_catalog import sync_catalog

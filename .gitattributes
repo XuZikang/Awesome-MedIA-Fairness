@@ -1,2 +1,4 @@
 # Frozen original catalog: preserve its pre-existing line-ending whitespace.
 docs/legacy-catalog.md whitespace=-blank-at-eol
+# Preserve the submitted review packet byte-for-byte for its recorded SHA-256.
+reports/review-approval-50b463591dfd.md whitespace=-blank-at-eof

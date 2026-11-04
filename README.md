@@ -4,11 +4,13 @@ A collection of research on **medical algorithm fairness**, covering medical ima
 
 [![Catalog validation](https://github.com/XuZikang/Awesome-MedIA-Fairness/actions/workflows/validate-catalog.yml/badge.svg)](https://github.com/XuZikang/Awesome-MedIA-Fairness/actions/workflows/validate-catalog.yml) [![Link health](https://github.com/XuZikang/Awesome-MedIA-Fairness/actions/workflows/check-links.yml/badge.svg)](https://github.com/XuZikang/Awesome-MedIA-Fairness/actions/workflows/check-links.yml)
 
-**109 papers**, including surveys and perspectives, organized by methodology. Each paper has one primary placement; secondary contributions remain in its metadata and TLDR.
+**116 papers**, including surveys and perspectives, organized by methodology. Each paper has one primary placement; secondary contributions remain in its metadata and TLDR.
 
 ## 🎯 Scope
 
 Studies must address algorithmic fairness, subgroup disparities, bias mechanisms, fairness measurement or mitigation in a medical task. Negative findings are eligible. Predicting a protected attribute does not by itself establish downstream discrimination. General fairness foundations are listed separately.
+
+Original methodology and empirical fairness audits take priority. New reviews and commentaries must analyze fairness in a specific medical disease or task in depth; incidental mentions of bias, ethics or fairness are insufficient. See the [screening policy](docs/screening-policy.md).
 
 ## 📌 Contents
 
@@ -53,6 +55,17 @@ Title badges use distinct colors for methodology, domain, focus, attributes, ava
 
 ##### 2026-11
 
+- (*Archives of Orthopaedic and Trauma Surgery'26*) **Skin color representation in orthopedic literature.** ![Fairness Evaluation](assets/badges/fairness-evaluation-fairness-evaluation.svg) ![Medical imaging](assets/badges/domain-medical-imaging.svg) ![Evaluation + Dataset](assets/badges/focus-evaluation-dataset.svg) ![Skin tone](assets/badges/attributes-skin-tone.svg) ![Paper only](assets/badges/assets-paper-only.svg) ![Primary abstract](assets/badges/evidence-primary-abstract.svg)
+
+  [[Paper](https://pubmed.ncbi.nlm.nih.gov/42975702/)]
+
+  **Metadata:** `Domain: Medical imaging` · `Focus: Evaluation + Dataset` · `Stage: Evaluation` · `Attributes: Skin tone` · `Assets: Paper only` · `Evidence: Primary abstract`
+
+  **TLDR:** This study audits skin-color representation in images from open-access orthopedic journals. It uses a GPT-4o labeling pipeline with human agreement checks to analyze skin presence, figure type and Fitzpatrick skin type across subspecialties. The abstract reports substantial underrepresentation of darker skin; this is an audit of educational-image representation rather than a test of clinical prediction-model fairness.
+
+  **Date:** 2026-11-03
+
+
 - (*arXiv'26*) **Fairness Metrics based on the AUC in Clinical Predictive AI** ![Fairness Evaluation](assets/badges/fairness-evaluation-fairness-evaluation.svg) ![EHR and clinical prediction](assets/badges/domain-ehr-and-clinical-prediction.svg) ![Evaluation + Theory and measurement](assets/badges/focus-evaluation-theory-and-measurement.svg) ![Sex and gender](assets/badges/attributes-sex-and-gender.svg) ![Paper only](assets/badges/assets-paper-only.svg) ![Primary full text](assets/badges/evidence-primary-full-text.svg)
 
   [[Paper](https://arxiv.org/abs/2611.05222)]
@@ -66,6 +79,17 @@ Title badges use distinct colors for methodology, domain, focus, attributes, ava
 
 ##### 2026-10
 
+- (*Journal of the American Medical Informatics Association'26*) **Subgroup deployment-readiness audit of calibration and clinical utility in perioperative infection prediction.** ![Fairness Evaluation](assets/badges/fairness-evaluation-fairness-evaluation.svg) ![EHR and clinical prediction](assets/badges/domain-ehr-and-clinical-prediction.svg) ![Evaluation + Mitigation](assets/badges/focus-evaluation-mitigation.svg) ![Sex and gender + Age + Other](assets/badges/attributes-sex-and-gender-age-other.svg) ![Paper only](assets/badges/assets-paper-only.svg) ![Primary abstract](assets/badges/evidence-primary-abstract.svg)
+
+  [[Paper](https://pubmed.ncbi.nlm.nih.gov/42962674/)]
+
+  **Metadata:** `Domain: EHR and clinical prediction` · `Focus: Evaluation + Mitigation` · `Stage: Evaluation` · `Attributes: Sex and gender + Age + Other` · `Assets: Paper only` · `Evidence: Primary abstract`
+
+  **TLDR:** This study audits subgroup readiness for deployment of a perioperative infection-prediction model. It evaluates discrimination, calibration, threshold errors and decision-curve utility across sex, age and physiological-reserve strata, comparing recalibration and a refit without SMOTE. The abstract reports that aggregate discrimination can mask subgroup miscalibration and that outcome ascertainment affects utility interpretation, so prospective validation remains necessary.
+
+  **Date:** 2026-10-30
+
+
 - (*arXiv'26*) **Disparity Laundering: Consensus Without Fairness in Clinical Multi-Agent Systems** ![Fairness Evaluation](assets/badges/fairness-evaluation-fairness-evaluation.svg) ![Clinical NLP and foundation models](assets/badges/domain-clinical-nlp-and-foundation-models.svg) ![Evaluation + Bias mechanisms + Mitigation](assets/badges/focus-evaluation-bias-mechanisms-mitigation.svg) ![Race and ethnicity + Sex and gender](assets/badges/attributes-race-and-ethnicity-sex-and-gender.svg) ![Paper only](assets/badges/assets-paper-only.svg) ![Primary full text](assets/badges/evidence-primary-full-text.svg)
 
   [[Paper](https://arxiv.org/abs/2610.38215)]
@@ -75,6 +99,56 @@ Title badges use distinct colors for methodology, domain, focus, attributes, ava
   **TLDR:** This study audits demographic disparities in clinical multi-agent language-model systems. It evaluates five model families and four aggregation topologies on emergency cases with counterfactual demographic swaps. The abstract reports that aggregation does not neutralize the disparity and that apparently corrective late-stage interventions can leave it unchanged or amplify it.
 
   **Date:** 2026-10-28
+
+
+##### 2026-09
+
+- (*Stroke'26*) **Responsible AI for Acute Stroke Management.** ![Fairness Evaluation](assets/badges/fairness-evaluation-fairness-evaluation.svg) ![Survey](assets/badges/survey-survey.svg) ![Medical imaging](assets/badges/domain-medical-imaging.svg) ![Evaluation + Bias mechanisms](assets/badges/focus-evaluation-bias-mechanisms.svg) ![Race and ethnicity + Socioeconomic status](assets/badges/attributes-race-and-ethnicity-socioeconomic-status.svg) ![Paper only](assets/badges/assets-paper-only.svg) ![Primary abstract](assets/badges/evidence-primary-abstract.svg)
+
+  [[Paper](https://pubmed.ncbi.nlm.nih.gov/42751787/)]
+
+  **Metadata:** `Domain: Medical imaging` · `Focus: Evaluation + Bias mechanisms` · `Stage: Evaluation` · `Attributes: Race and ethnicity + Socioeconomic status` · `Assets: Paper only` · `Evidence: Primary abstract`
+
+  **TLDR:** This review examines explainability and fairness in AI for acute stroke management. It synthesizes evidence across large-vessel occlusion detection, ASPECTS scoring and functional-outcome prediction, including racial and socioeconomic disparities. It identifies limited demographic metadata and missing stroke-specific fairness criteria as barriers and recommends jointly evaluating explainability, fairness and generalizability.
+
+  **Date:** 2026-09-17
+
+
+- (*Arthroscopy'26*) **Editorial Commentary: Calling Balls and Strikes: For Artificial Intelligence Models to Accurately Predict Rotator Cuff Retear, We Must Carefully Define the Strike Zone.** ![Fairness Evaluation](assets/badges/fairness-evaluation-fairness-evaluation.svg) ![Commentary](assets/badges/commentary-commentary.svg) ![Medical imaging](assets/badges/domain-medical-imaging.svg) ![Bias mechanisms](assets/badges/focus-bias-mechanisms.svg) ![Not specified](assets/badges/attributes-not-specified.svg) ![Paper only](assets/badges/assets-paper-only.svg) ![Primary abstract](assets/badges/evidence-primary-abstract.svg)
+
+  [[Paper](https://pubmed.ncbi.nlm.nih.gov/42701888/)]
+
+  **Metadata:** `Domain: Medical imaging` · `Focus: Bias mechanisms` · `Stage: Evaluation` · `Attributes: Not specified` · `Assets: Paper only` · `Evidence: Primary abstract`
+
+  **TLDR:** This editorial commentary discusses bias and trust in AI prediction of early rotator cuff retear. It examines subjective image labels, interrater reliability and generalization problems associated with models trained on a single surgeon dataset. It argues for clearer labeling and governance standards, but the accessible abstract does not report a protected-group fairness experiment.
+
+  **Date:** 2026-09-06
+
+
+##### 2026-08
+
+- (*Maturitas'26*) **Sex, gender and artificial intelligence in cardiovascular medicine 4.0.** ![Fairness Evaluation](assets/badges/fairness-evaluation-fairness-evaluation.svg) ![Survey](assets/badges/survey-survey.svg) ![EHR and clinical prediction](assets/badges/domain-ehr-and-clinical-prediction.svg) ![Bias mechanisms + Theory and measurement](assets/badges/focus-bias-mechanisms-theory-and-measurement.svg) ![Sex and gender](assets/badges/attributes-sex-and-gender.svg) ![Paper only](assets/badges/assets-paper-only.svg) ![Primary abstract](assets/badges/evidence-primary-abstract.svg)
+
+  [[Paper](https://pubmed.ncbi.nlm.nih.gov/42721913/)]
+
+  **Metadata:** `Domain: EHR and clinical prediction` · `Focus: Bias mechanisms + Theory and measurement` · `Stage: Evaluation` · `Attributes: Sex and gender` · `Assets: Paper only` · `Evidence: Primary abstract`
+
+  **TLDR:** This review examines sex- and gender-related algorithmic bias in cardiovascular AI. It analyzes six interacting bias categories and the risks of binary sex stratification, then proposes an operational framework for gender-aware prompts and responsible AI interaction. The contribution is a task-specific conceptual framework and governance agenda rather than a new quantitative subgroup-performance experiment.
+
+  **Date:** 2026-08-29
+
+
+##### 2026-07
+
+- (*International Journal of Medical Informatics'26*) **The pediatric transfer gap: How adult-ICU-trained machine-learning models degrade on pediatric intensive care patients.** ![Fairness Evaluation](assets/badges/fairness-evaluation-fairness-evaluation.svg) ![EHR and clinical prediction](assets/badges/domain-ehr-and-clinical-prediction.svg) ![Evaluation + Mitigation](assets/badges/focus-evaluation-mitigation.svg) ![Age](assets/badges/attributes-age.svg) ![Paper only](assets/badges/assets-paper-only.svg) ![Primary abstract](assets/badges/evidence-primary-abstract.svg)
+
+  [[Paper](https://pubmed.ncbi.nlm.nih.gov/42447641/)]
+
+  **Metadata:** `Domain: EHR and clinical prediction` · `Focus: Evaluation + Mitigation` · `Stage: Evaluation` · `Attributes: Age` · `Assets: Paper only` · `Evidence: Primary abstract`
+
+  **TLDR:** This study audits how mortality-prediction models trained on adults or older children transfer to younger pediatric intensive-care patients. It compares discrimination and calibration across age groups in PIC and MIMIC-IV data and evaluates target-cohort retraining and calibration-only updates. The abstract reports the largest degradation in neonates and shows that target-domain retraining improves discrimination and calibration, whereas calibration-only updating cannot restore discrimination.
+
+  **Date:** 2026-07-09
 
 
 #### 2025
@@ -88,6 +162,17 @@ Title badges use distinct colors for methodology, domain, focus, attributes, ava
   **TLDR:** This study tests for race bias in deep learning-based prostate MRI segmentation. It varies White and Black representation across training datasets and evaluates models on matched clinical subjects. The abstract reports the best performance for both groups with race-balanced training and a relationship between training representation and the measured segmentation gap.
 
   **Date:** 2025-12-06
+
+
+- (*Journal of the Association of Nurses in AIDS Care'25*) **Assessing Variability in ChatGPT Responses: A Case Study on Simulating Online User Inputs.** ![Fairness Evaluation](assets/badges/fairness-evaluation-fairness-evaluation.svg) ![Clinical NLP and foundation models](assets/badges/domain-clinical-nlp-and-foundation-models.svg) ![Evaluation](assets/badges/focus-evaluation.svg) ![Race and ethnicity + Sex and gender + Other](assets/badges/attributes-race-and-ethnicity-sex-and-gender-other.svg) ![Paper only](assets/badges/assets-paper-only.svg) ![Primary abstract](assets/badges/evidence-primary-abstract.svg)
+
+  [[Paper](https://pubmed.ncbi.nlm.nih.gov/40298212/)]
+
+  **Metadata:** `Domain: Clinical NLP and foundation models` · `Focus: Evaluation` · `Stage: Evaluation` · `Attributes: Race and ethnicity + Sex and gender + Other` · `Assets: Paper only` · `Evidence: Primary abstract`
+
+  **TLDR:** This study evaluates demographic differences in ChatGPT responses to HIV counseling questions. It uses structured prompts and simulated first interactions to compare two ChatGPT versions across race, gender and sexual-orientation variables. The abstract reports that some groups received less comprehensive advice and that social determinants and culturally sensitive resources were rarely addressed.
+
+  **Date:** 2025-04-29
 
 
 - (*npj Digital Medicine'25*) **Bias recognition and mitigation strategies in artificial intelligence healthcare applications** ![Fairness Evaluation](assets/badges/fairness-evaluation-fairness-evaluation.svg) ![Survey](assets/badges/survey-survey.svg) ![Medical imaging](assets/badges/domain-medical-imaging.svg) ![Mitigation](assets/badges/focus-mitigation.svg) ![Not specified](assets/badges/attributes-not-specified.svg) ![Paper only](assets/badges/assets-paper-only.svg) ![Primary abstract](assets/badges/evidence-primary-abstract.svg)

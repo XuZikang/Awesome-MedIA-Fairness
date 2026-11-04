@@ -1,13 +1,13 @@
 {
   "analysis": {
-    "available_reviews": 54,
+    "available_reviews": 1,
     "failures": 0,
     "mode": "model",
     "pending": 2,
     "reviewed": 1
   },
-  "candidates": 56,
-  "changed_today": 56,
+  "candidates": 3,
+  "changed_today": 3,
   "date": "2026-11-04",
   "sources": [
     {
@@ -64,5 +64,11 @@
       "total": 3,
       "until": "2026-11-04"
     }
-  ]
+  ],
+  "policy_validation": {
+    "cases": 3,
+    "validated_model_analyses": 2,
+    "failed_quote_validation": 1,
+    "failed_case_resolution": "Manual full-text check; human hold retained"
+  }
 }

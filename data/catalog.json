@@ -6199,5 +6199,437 @@
       "It characterizes eight metrics through within-group and cross-group AUC decomposition and illustrates their behavior using EuroSCORE II-based simulations.",
       "The analysis highlights that subgroup and overall AUC are not directly comparable in the way some fairness interpretations assume."
     ]
+  },
+  {
+    "title": "The pediatric transfer gap: How adult-ICU-trained machine-learning models degrade on pediatric intensive care patients.",
+    "year": "2026",
+    "publication_date": "2026-07-09",
+    "venue": "International Journal of Medical Informatics",
+    "doi": "10.1016/j.ijmedinf.2026.106597",
+    "pmid": "42447641",
+    "authors": [
+      "Ji-Young Yeo",
+      "Eun Sun So",
+      "Sungkwan Youm"
+    ],
+    "kind": "main",
+    "publication_type": "Original research",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This study audits how mortality-prediction models trained on adults or older children transfer to younger pediatric intensive-care patients.",
+      "It compares discrimination and calibration across age groups in PIC and MIMIC-IV data and evaluates target-cohort retraining and calibration-only updates.",
+      "The abstract reports the largest degradation in neonates and shows that target-domain retraining improves discrimination and calibration, whereas calibration-only updating cannot restore discrimination."
+    ],
+    "verified": true,
+    "links": {
+      "Paper": "https://pubmed.ncbi.nlm.nih.gov/42447641/"
+    },
+    "metadata": {
+      "Domain": [
+        "EHR and clinical prediction"
+      ],
+      "Focus": [
+        "Evaluation",
+        "Mitigation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Age"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42447641/",
+        "section": "Human-approved literature review"
+      }
+    ],
+    "human_review": {
+      "decision": "approve",
+      "review_fingerprint": "9583eb2479a79f86e91f4d91d2ad50009f4eb9b3aaa10818367563a5f5e85f65",
+      "note": "fairness evaluation and mitigation in pediatric ICU;",
+      "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7",
+      "overrides_machine_screening": true
+    }
+  },
+  {
+    "title": "Sex, gender and artificial intelligence in cardiovascular medicine 4.0.",
+    "year": "2026",
+    "publication_date": "2026-08-29",
+    "venue": "Maturitas",
+    "doi": "10.1016/j.maturitas.2026.109107",
+    "pmid": "42721913",
+    "authors": [
+      "Federica Moscucci",
+      "Susanna Sciomer",
+      "Savina Nodari",
+      "Stefania Paolillo",
+      "Giulia Renda",
+      "Sabina Gallina",
+      "Anna Vittoria Mattioli"
+    ],
+    "kind": "survey",
+    "publication_type": "Review",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This review examines sex- and gender-related algorithmic bias in cardiovascular AI.",
+      "It analyzes six interacting bias categories and the risks of binary sex stratification, then proposes an operational framework for gender-aware prompts and responsible AI interaction.",
+      "The contribution is a task-specific conceptual framework and governance agenda rather than a new quantitative subgroup-performance experiment."
+    ],
+    "verified": true,
+    "links": {
+      "Paper": "https://pubmed.ncbi.nlm.nih.gov/42721913/"
+    },
+    "metadata": {
+      "Domain": [
+        "EHR and clinical prediction"
+      ],
+      "Focus": [
+        "Bias mechanisms",
+        "Theory and measurement"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Sex and gender"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42721913/",
+        "section": "Human-approved literature review"
+      }
+    ],
+    "human_review": {
+      "decision": "approve",
+      "review_fingerprint": "980513207e5c3889cc789d5963296192f96e34e12d8bfb3b302e1e4289b30db5",
+      "note": "Fairness evaluation framework In cardiovascular AI;",
+      "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7",
+      "overrides_machine_screening": true
+    }
+  },
+  {
+    "title": "Assessing Variability in ChatGPT Responses: A Case Study on Simulating Online User Inputs.",
+    "year": "2025",
+    "publication_date": "2025-04-29",
+    "venue": "Journal of the Association of Nurses in AIDS Care",
+    "doi": "10.1097/JNC.0000000000000545",
+    "pmid": "40298212",
+    "authors": [
+      "Yulin Hswen",
+      "Thu Nguyen"
+    ],
+    "kind": "main",
+    "publication_type": "Original research",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This study evaluates demographic differences in ChatGPT responses to HIV counseling questions.",
+      "It uses structured prompts and simulated first interactions to compare two ChatGPT versions across race, gender and sexual-orientation variables.",
+      "The abstract reports that some groups received less comprehensive advice and that social determinants and culturally sensitive resources were rarely addressed."
+    ],
+    "verified": true,
+    "links": {
+      "Paper": "https://pubmed.ncbi.nlm.nih.gov/40298212/"
+    },
+    "metadata": {
+      "Domain": [
+        "Clinical NLP and foundation models"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Race and ethnicity",
+        "Sex and gender",
+        "Other"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40298212/",
+        "section": "Human-approved literature review"
+      }
+    ],
+    "human_review": {
+      "decision": "approve",
+      "review_fingerprint": "552f254b4360e291f2aecec4be4c937e229bf5eda138a8043e6935831db1a0c3",
+      "note": "fairness evaluation in ChatGPT for HIV counseling;",
+      "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7",
+      "overrides_machine_screening": true
+    }
+  },
+  {
+    "title": "Editorial Commentary: Calling Balls and Strikes: For Artificial Intelligence Models to Accurately Predict Rotator Cuff Retear, We Must Carefully Define the Strike Zone.",
+    "year": "2026",
+    "publication_date": "2026-09-06",
+    "venue": "Arthroscopy",
+    "doi": "10.1002/arj.70483",
+    "pmid": "42701888",
+    "authors": [
+      "Krish S Sardesai",
+      "Kyle N Kunze"
+    ],
+    "kind": "survey",
+    "publication_type": "Commentary",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This editorial commentary discusses bias and trust in AI prediction of early rotator cuff retear.",
+      "It examines subjective image labels, interrater reliability and generalization problems associated with models trained on a single surgeon dataset.",
+      "It argues for clearer labeling and governance standards, but the accessible abstract does not report a protected-group fairness experiment."
+    ],
+    "verified": true,
+    "links": {
+      "Paper": "https://pubmed.ncbi.nlm.nih.gov/42701888/"
+    },
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Bias mechanisms"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42701888/",
+        "section": "Human-approved literature review"
+      }
+    ],
+    "human_review": {
+      "decision": "approve",
+      "review_fingerprint": "5be9027dad6da04c7afa964b6bafc7c8a9ab70e507c995a4af3872cecffdb2b8",
+      "note": "fairness evaluation in rotator cuff retear prediction;",
+      "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7",
+      "overrides_machine_screening": true
+    }
+  },
+  {
+    "title": "Subgroup deployment-readiness audit of calibration and clinical utility in perioperative infection prediction.",
+    "year": "2026",
+    "publication_date": "2026-10-30",
+    "venue": "Journal of the American Medical Informatics Association",
+    "doi": "10.1093/jamia/ocag184",
+    "pmid": "42962674",
+    "authors": [
+      "Hugo Guillen-Ramirez",
+      "Katharina Lucia Lucas",
+      "Yves Max Wintsch",
+      "Tobias Ueli Blatter",
+      "Karen Triep",
+      "Olga Endrich",
+      "Guido Beldi"
+    ],
+    "kind": "main",
+    "publication_type": "Original research",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This study audits subgroup readiness for deployment of a perioperative infection-prediction model.",
+      "It evaluates discrimination, calibration, threshold errors and decision-curve utility across sex, age and physiological-reserve strata, comparing recalibration and a refit without SMOTE.",
+      "The abstract reports that aggregate discrimination can mask subgroup miscalibration and that outcome ascertainment affects utility interpretation, so prospective validation remains necessary."
+    ],
+    "verified": true,
+    "links": {
+      "Paper": "https://pubmed.ncbi.nlm.nih.gov/42962674/"
+    },
+    "metadata": {
+      "Domain": [
+        "EHR and clinical prediction"
+      ],
+      "Focus": [
+        "Evaluation",
+        "Mitigation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Sex and gender",
+        "Age",
+        "Other"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42962674/",
+        "section": "Human-approved literature review"
+      }
+    ],
+    "human_review": {
+      "decision": "approve",
+      "review_fingerprint": "d66dce36c533e52e152994fc0b21988ba5a4182fce49f595d95e983958c8c92d",
+      "note": "fairness evaluation and mitigation in perioperative infection prediction;",
+      "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7",
+      "overrides_machine_screening": true
+    }
+  },
+  {
+    "title": "Responsible AI for Acute Stroke Management.",
+    "year": "2026",
+    "publication_date": "2026-09-17",
+    "venue": "Stroke",
+    "doi": "10.1161/STROKEAHA.126.053795",
+    "pmid": "42751787",
+    "authors": [
+      "Joanna Lin",
+      "Mumu Aktar",
+      "Hakim Baazaoui",
+      "Susanne Wegener",
+      "Roberto Souza",
+      "Leticia Rittner",
+      "Johanna Ospel",
+      "Mariana Bento"
+    ],
+    "kind": "survey",
+    "publication_type": "Review",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This review examines explainability and fairness in AI for acute stroke management.",
+      "It synthesizes evidence across large-vessel occlusion detection, ASPECTS scoring and functional-outcome prediction, including racial and socioeconomic disparities.",
+      "It identifies limited demographic metadata and missing stroke-specific fairness criteria as barriers and recommends jointly evaluating explainability, fairness and generalizability."
+    ],
+    "verified": true,
+    "links": {
+      "Paper": "https://pubmed.ncbi.nlm.nih.gov/42751787/"
+    },
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation",
+        "Bias mechanisms"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Race and ethnicity",
+        "Socioeconomic status"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42751787/",
+        "section": "Human-approved literature review"
+      }
+    ],
+    "human_review": {
+      "decision": "approve",
+      "review_fingerprint": "a5cedd09863627437b3b37b9848b34cda5e9f5828b3f147efbd3dabdd105122d",
+      "note": "fairness framework and evaluation in acute stroke management;",
+      "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7",
+      "overrides_machine_screening": true
+    }
+  },
+  {
+    "title": "Skin color representation in orthopedic literature.",
+    "year": "2026",
+    "publication_date": "2026-11-03",
+    "venue": "Archives of Orthopaedic and Trauma Surgery",
+    "doi": "10.1007/s00402-026-06561-4",
+    "pmid": "42975702",
+    "authors": [
+      "Rahul K Goyal",
+      "Akin A Adio",
+      "Hari Nadiminti",
+      "Eric M Black",
+      "Adam Z Khan",
+      "John G Horneff",
+      "Brian W Hill",
+      "Joseph A Abboud"
+    ],
+    "kind": "main",
+    "publication_type": "Representation audit",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This study audits skin-color representation in images from open-access orthopedic journals.",
+      "It uses a GPT-4o labeling pipeline with human agreement checks to analyze skin presence, figure type and Fitzpatrick skin type across subspecialties.",
+      "The abstract reports substantial underrepresentation of darker skin; this is an audit of educational-image representation rather than a test of clinical prediction-model fairness."
+    ],
+    "verified": true,
+    "links": {
+      "Paper": "https://pubmed.ncbi.nlm.nih.gov/42975702/"
+    },
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation",
+        "Dataset"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Skin tone"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42975702/",
+        "section": "Human-approved literature review"
+      }
+    ],
+    "human_review": {
+      "decision": "approve",
+      "review_fingerprint": "e859fc8ae7ae830c7224eaefc894278af7935735e4acfe83e231141bdd85e0d6",
+      "note": "fairness evaluation on skin color representation in orthopedic literature;",
+      "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7",
+      "overrides_machine_screening": true
+    }
   }
 ]

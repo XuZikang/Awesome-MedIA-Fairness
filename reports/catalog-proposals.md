@@ -2,65 +2,23 @@
 
 机器建议及中文证据，仅供审核；必须由维护者明确通过后才加入主 README。请填写 review-latest.md 或按文章编号回复助手。
 
-## Disparity Laundering: Consensus Without Fairness in Clinical Multi-Agent Systems
+## Explainable Machine Learning for 30-Day Hospital Readmission Risk Prediction in Patients with Diabetes: A Comparative Analysis of Model Performance and Algorithmic Fairness
 
-年度：2026；主题：Fairness Evaluation and Benchmarking、Bias Mechanisms and Measurement、Pre-processing Mitigation、Post-processing Mitigation、Clinical NLP and Foundation Models、EHR, Physiological Signals and Healthcare
+年度：2026；主题：Fairness Evaluation and Benchmarking、Bias Mechanisms and Measurement、EHR, Physiological Signals and Healthcare
 
 ```markdown
-- (*arXiv'26*) **Disparity Laundering: Consensus Without Fairness in Clinical Multi-Agent Systems**
-  [[📝 Paper](https://arxiv.org/abs/2610.38215)]
-  **Metadata:** `Domain: Clinical NLP and foundation models` · `Focus: Evaluation + Bias mechanisms + Mitigation` · `Stage: Pre-processing` · `Attributes: Race and ethnicity + Sex and gender` · `Assets: Paper only` · `Evidence: Primary full text`
-  > **Why it qualifies:** 全文报告了临床多智能体LLM的公平性实证审计与缓解：包含急诊分诊任务、模型与拓扑评估、种族和性别反事实组以及20格实证测量，满足五项纳入标准。
+- (*Paper'26*) **Explainable Machine Learning for 30-Day Hospital Readmission Risk Prediction in Patients with Diabetes: A Comparative Analysis of Model Performance and Algorithmic Fairness**
+  [[📝 Paper](https://europepmc.org/article/PPR/PPR1351995)]
+  **Metadata:** `Domain: EHR and clinical prediction` · `Focus: Evaluation` · `Stage: Evaluation` · `Attributes: Race and ethnicity + Sex and gender + Age` · `Assets: Paper only` · `Evidence: Primary full text`
+  > **Why it qualifies:** 全文为原始研究，完成糖尿病30天再入院机器学习预测，并按种族、性别和年龄报告召回差距，符合任务特定公平性评估的纳入标准。
 ```
 
 ### 方法证据
 
-- algorithm：five model families and four aggregation topologies
-- evaluation：We ran the ensemble in all 20 cells
-- fairness：the disparity is relocated, never removed
-- groups：Race and sex enter the experiments as single explicit tokens
-- medical：You are an emergency medicine physician evaluating a patient in the ED
+- medical：predict which diabetic inpatients are most likely to be readmitted within 30 days
+- algorithm：We tested baseline Logistic Regression, tuned Logistic Regression, tuned Decision Tree, and tuned Random Forest in this project.
+- fairness：We audited model performance across race, gender, and age groups because these are sensitive attributes directly related to fairness.
+- groups：across race, gender, and age groups
+- evaluation：Table 2 shows recall gaps across race, gender, and age groups.
 
-[全文证据](https://arxiv.org/html/2610.38215v1)
-
-## A Framework for Task-Agnostic Counterfactual Fairness in Transformers through Activation Steering
-
-年度：2026；主题：Bias Mechanisms and Measurement、In-processing Mitigation、EHR, Physiological Signals and Healthcare
-
-```markdown
-- (*arXiv'26*) **A Framework for Task-Agnostic Counterfactual Fairness in Transformers through Activation Steering**
-  [[📝 Paper](https://arxiv.org/abs/2611.00298)]
-  **Metadata:** `Domain: EHR and clinical prediction` · `Focus: Bias mechanisms + Evaluation + Mitigation` · `Stage: In-processing` · `Attributes: Race and ethnicity` · `Assets: Paper only` · `Evidence: Primary full text`
-  > **Why it qualifies:** 全文包含临床 UTI 预测任务、TabPFN 算法、反事实公平问题、种族敏感属性和实证测量，五个纳入证据均具备，故建议纳入。
-```
-
-### 方法证据
-
-- algorithm：We instantiate the framework on a single-estimator classifier, TabPFN v2
-- evaluation：We evaluate on two real-world tabular benchmarks with distinct domains
-- fairness：We propose a framework, Mechanistic Interpretability for Counterfactual Fairness (MICF)
-- groups：a binary race variable as the sensitive feature
-- medical：UTICalc, a clinical urinary tract infection risk model shown to have significant racial bias
-
-[全文证据](https://arxiv.org/html/2611.00298v1)
-
-## Fairness Metrics based on the AUC in Clinical Predictive AI
-
-年度：2026；主题：Fairness Evaluation and Benchmarking、Bias Mechanisms and Measurement
-
-```markdown
-- (*arXiv'26*) **Fairness Metrics based on the AUC in Clinical Predictive AI**
-  [[📝 Paper](https://arxiv.org/abs/2611.05222)]
-  **Metadata:** `Domain: EHR and clinical prediction` · `Focus: Evaluation + Theory and measurement` · `Stage: Evaluation` · `Attributes: Sex and gender` · `Assets: Paper only` · `Evidence: Primary full text`
-  > **Why it qualifies:** 该文针对临床预测AI的AUC公平性指标开展正式分析与模拟测量，明确以性别定义亚组并比较组内/跨组差异，满足临床任务、算法评估、公平性问题和实证评价五项标准。
-```
-
-### 方法证据
-
-- algorithm：Clinical prediction models using artificial intelligence (AI)
-- evaluation：We then illustrate their behaviour using simulations based on the EuroSCORE II
-- fairness：We examine eight AUC-based fairness metrics proposed in the literature
-- groups：defined by patient sex at birth (binary sensitive attribute)
-- medical：clinical prediction models for binary outcomes
-
-[全文证据](https://arxiv.org/html/2611.05222v1)
+[全文证据](https://www.researchsquare.com/article/rs-11517784/v1.pdf)

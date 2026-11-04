@@ -18,3 +18,5 @@ git diff --check
 ```
 
 Do not upload patient data, private documents, credentials or third-party full papers. New catalog annotations are CC BY 4.0; automation code is MIT. Source works retain their own rights.
+
+Screening prioritizes original methodology and task-specific fairness audits. Reviews and commentaries require a concrete medical disease/task and detailed fairness analysis; incidental fairness mentions are insufficient. See [screening-policy.md](docs/screening-policy.md).

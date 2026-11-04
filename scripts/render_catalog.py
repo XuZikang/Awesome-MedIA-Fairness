@@ -11,7 +11,7 @@ from scripts.catalog_editorial import METHODS, validate_annotation
 ROOT = Path(__file__).resolve().parents[1]
 REPO = 'https://github.com/XuZikang/Awesome-MedIA-Fairness'
 COLORS = {'Fairness Evaluation':'2563eb','Pre-processing':'b45309','In-processing':'9333ea','Post-processing':'15803d','Stage pending':'64748b',
-          'Domain':'0369a1','Focus':'0e7490','Attributes':'be185d','Assets':'0f766e','Evidence':'475569','Survey':'92400e'}
+          'Domain':'0369a1','Focus':'0e7490','Attributes':'be185d','Assets':'0f766e','Evidence':'475569','Survey':'92400e','Commentary':'92400e'}
 
 
 def md(value):
@@ -32,7 +32,9 @@ def entry(p):
     method=p['method'];m=p['metadata']
     venue=re.sub(r"[^\w .&/+-]",'',p.get('venue','Paper'))[:65].strip() or 'Paper'
     tags=[badge(method,method)]
-    if p.get('kind')=='survey':tags.append(badge('Survey','Survey'))
+    if p.get('kind')=='survey':
+        label='Commentary' if p.get('publication_type')=='Commentary' else 'Survey'
+        tags.append(badge(label,label))
     for field in ('Domain','Focus','Attributes','Assets','Evidence'):
         tags.append(badge(' + '.join(m[field]),field))
     labels={'Paper':'Paper','Code':'Code','Weights':'Weights','Project':'Project','Data':'Data'}
@@ -78,6 +80,7 @@ def main(root=None):
         f"**{len(records)} papers**, including surveys and perspectives, organized by methodology. Each paper has one primary placement; secondary contributions remain in its metadata and TLDR.",'',
         '## 🎯 Scope','',
         'Studies must address algorithmic fairness, subgroup disparities, bias mechanisms, fairness measurement or mitigation in a medical task. Negative findings are eligible. Predicting a protected attribute does not by itself establish downstream discrimination. General fairness foundations are listed separately.','',
+        'Original methodology and empirical fairness audits take priority. New reviews and commentaries must analyze fairness in a specific medical disease or task in depth; incidental mentions of bias, ethics or fairness are insufficient. See the [screening policy](docs/screening-policy.md).','',
         '## 📌 Contents','',
         '- [Taxonomy](#-taxonomy)\n- [Papers](#-papers)\n  - [Fairness Evaluation](#fairness-evaluation)\n  - [Pre-processing](#unfairness-mitigation-pre-processing)\n  - [In-processing](#unfairness-mitigation-in-processing)\n  - [Post-processing](#unfairness-mitigation-post-processing)\n- [Datasets, Benchmarks and Toolkits](#-datasets-benchmarks-and-toolkits)\n- [Contributing](#-contributing)','',
         '## 🧬 Taxonomy','',

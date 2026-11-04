@@ -11,6 +11,31 @@ from scripts.publish_catalog import same_record, sync_catalog
 
 
 class PublicationTests(unittest.TestCase):
+    def test_human_approved_abstract_override_preserves_real_evidence_level(self):
+        from tests.test_literature_pipeline import record,analysis
+        with tempfile.TemporaryDirectory() as d:
+            root=Path(d);(root/'data').mkdir();(root/'reports').mkdir()
+            (root/'data/catalog.json').write_text('[]')
+            db=connect(root/'state.sqlite3')
+            try:
+                pid,_=ingest(db,record(),'2026-11-04')
+                p=json.loads(db.execute('SELECT payload FROM papers').fetchone()[0])
+                r=analysis();r.update(decision='related',evidence_level='abstract')
+                r['metadata']['Evidence']=['Primary abstract']
+                fp=review_fingerprint(p)
+                db.execute('INSERT INTO analyses VALUES (?,?,?)',(pid,fp,json.dumps(r)));db.commit()
+                approval=root/'human.md';approval.write_text('## '+pid+'\n\n审核决定：纳入\n审核备注：确认该具体临床任务的公平性分析。\n证据版本：'+fp+'\n')
+                editorial={'tldr_en':['This study audits a clinical prediction task.', 'It compares models across patient subgroups.', 'The abstract reports differences between the groups.'],
+                           'method':'Fairness Evaluation','reason_zh':'具体任务的公平性评估。','evidence_quotes':[]}
+                with patch('scripts.publish_catalog.fetch_evidence',return_value={'level':'abstract','text':'Original abstract evidence.','url':p['url']}), \
+                     patch('scripts.publish_catalog.annotate',return_value=editorial),patch('scripts.publish_catalog.render_catalog'):
+                    self.assertEqual(sync_catalog(db,root,approval)['added'],1)
+                q=json.loads((root/'data/catalog.json').read_text())[0]
+                self.assertEqual(q['metadata']['Evidence'],['Primary abstract'])
+                self.assertTrue(q['human_review']['overrides_machine_screening'])
+                self.assertNotIn('full-text',q['sources'][0]['section'])
+            finally:db.close()
+
     def test_publication_refuses_missing_human_approval(self):
         with self.assertRaisesRegex(ValueError,'human-reviewed'):
             sync_catalog(None,Path('.'))
@@ -26,7 +51,7 @@ class PublicationTests(unittest.TestCase):
         with self.assertRaises(ValueError):validate_annotation({**good,'tldr_en':good['tldr_en'][:2]},'patient subgroups')
         with self.assertRaises(ValueError):validate_annotation(good,'unrelated abstract')
 
-    def test_direct_publication_requires_current_full_text_review_and_deduplicates(self):
+    def test_publication_requires_explicit_approval_and_current_evidence_and_deduplicates(self):
         with tempfile.TemporaryDirectory() as d:
             root=Path(d);(root/'data').mkdir();(root/'reports').mkdir()
             (root/'data/catalog.json').write_text('[]')
@@ -41,7 +66,7 @@ class PublicationTests(unittest.TestCase):
                                     'Attributes':['Sex and gender'],'Evidence':['Primary full text']},
                         'criteria':{k:{'met':True,'quote':'patient subgroups evaluation'} for k in ('medical','algorithm','fairness','groups','evaluation')}}
                 approval_file=root/'approved.md'
-                approval_file.write_text('## '+pid+'\n\n审核决定：通过\n审核备注：人工确认测试。\n证据版本：'+review_fingerprint(paper)+'\n')
+                approval_file.write_text('## '+pid+'\n\n审核决定：待审核\n审核备注：人工确认测试。\n证据版本：'+review_fingerprint(paper)+'\n')
                 def save(r,fp=None):
                     db.execute('INSERT OR REPLACE INTO analyses VALUES (?,?,?)',(pid,fp or review_fingerprint(paper),json.dumps(r)));db.commit()
                 editorial={'tldr_en':['This paper measures clinical model fairness.', 'It compares explicitly defined patient subgroups.', 'The analysis reports subgroup performance differences.'],
@@ -50,6 +75,7 @@ class PublicationTests(unittest.TestCase):
                      patch('scripts.publish_catalog.annotate',return_value=editorial), patch('scripts.publish_catalog.render_catalog'):
                     save({**result,'evidence_level':'abstract'})
                     self.assertEqual(sync_catalog(db,root,approval_file)['added'],0)
+                    approval_file.write_text(approval_file.read_text().replace('审核决定：待审核','审核决定：通过'))
                     save(result,fp='stale')
                     self.assertEqual(sync_catalog(db,root,approval_file)['added'],0)
                     save(result)

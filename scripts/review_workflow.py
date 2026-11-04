@@ -2,10 +2,12 @@
 from __future__ import annotations
 import json
 import re
+import hashlib
 from pathlib import Path
 from scripts.literature_pipeline.analysis import review_fingerprint
+from scripts.screening_policy import paper_version, current_human_decision
 
-DECISIONS = {'待审核':'pending','通过':'approve','排除':'reject','暂缓':'hold',
+DECISIONS = {'待审核':'pending','通过':'approve','纳入':'approve','排除':'reject','暂缓':'hold',
              'pending':'pending','approve':'approve','reject':'reject','hold':'hold'}
 
 
@@ -25,11 +27,35 @@ def read_decisions(path):
     return decisions
 
 
+def import_human_decisions(review_file, state_file, ledger_file):
+    """Explicitly import a maintainer-submitted packet; never called by the timer."""
+    decisions=read_decisions(review_file)
+    state=json.loads(Path(state_file).read_text())
+    papers={p['id']:p for p in state['papers']}
+    analyses={pid:fp for pid,fp,result in state['analyses']}
+    ledger_path=Path(ledger_file)
+    ledger=json.loads(ledger_path.read_text()) if ledger_path.exists() else {}
+    source_hash=hashlib.sha256(Path(review_file).read_bytes()).hexdigest()
+    for pid,decision in decisions.items():
+        if pid not in papers:raise ValueError('Unknown paper ID in human review: '+pid)
+        if decision['decision']=='approve' and pid not in analyses:
+            raise ValueError('Approved paper has no reviewed evidence version: '+pid)
+        if decision['decision']!='pending' and pid in analyses and decision['fingerprint']!=analyses[pid]:
+            raise ValueError('Human decision refers to a different analysis version: '+pid)
+    for pid,decision in decisions.items():
+        ledger[pid]={**decision,'paper_version':paper_version(papers[pid]),'title':papers[pid]['title'],
+                     'source_review_sha256':source_hash}
+    ledger_path.write_text(json.dumps(ledger,ensure_ascii=False,indent=2)+'\n')
+    return ledger
+
+
 def write_review_packet(db, output, day, catalog):
     from scripts.publish_catalog import same_record
     output=Path(output);output.mkdir(parents=True,exist_ok=True)
     source=Path(catalog).parent/'data/catalog.json'
     records=json.loads(source.read_text()) if source.exists() else []
+    ledger_file=source.parent/'curation-decisions.json'
+    ledger=json.loads(ledger_file.read_text()) if ledger_file.exists() else {}
     analyses={pid:(fp,json.loads(payload)) for pid,fp,payload in db.execute('SELECT paper_id,fingerprint,payload FROM analyses')}
     path=output/('review-'+day+'.md')
     prior=read_decisions(path) if path.exists() else {}
@@ -40,11 +66,14 @@ def write_review_packet(db, output, day, catalog):
     for (payload,) in db.execute('SELECT payload FROM papers ORDER BY id'):
         p=json.loads(payload)
         if p.get('seeded') or any(same_record(p,q) for q in records):continue
+        human=current_human_decision(p,ledger)
+        if human.get('decision')=='reject':continue
         old=analyses.get(p['id']);result=None
         if old and old[0]==review_fingerprint(p,old[1].get('model',''),old[1].get('provider','')):result=old[1]
         fp=old[0] if result else '待取得有效分析'
-        saved=prior.get(p['id'],{})
+        saved=human or prior.get(p['id'],{})
         decision=saved.get('decision','pending') if saved.get('fingerprint')==fp else 'pending'
+        if human.get('decision')=='hold':decision='hold'
         labels={'pending':'待审核','approve':'通过','reject':'排除','hold':'暂缓'}
         lines += ['## '+p['id'],'',
                   '文章：['+p['title'].replace('\n',' ')+']('+p['url']+')','',
@@ -55,6 +84,8 @@ def write_review_packet(db, output, day, catalog):
                       '建议分类：'+', '.join(result['metadata']['Stage']),'', '证据：']
             lines += ['- '+name+'：'+item['quote'] for name,item in result['criteria'].items()]
             lines += ['', '[分析原文]('+result['evidence_url']+')','']
+        if human.get('followup_zh'):
+            lines += ['人工原文补查：'+human['followup_zh'],'']
     path.write_text('\n'.join(lines)+'\n')
     (output/'review-latest.md').write_text('\n'.join(lines)+'\n')
     return path

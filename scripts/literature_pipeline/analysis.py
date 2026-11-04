@@ -12,6 +12,7 @@ import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
 
 from scripts.catalog_schema import ALLOWED, TOPICS
+from scripts.screening_policy import POLICY_VERSION, POLICY_PROMPT, priority_adjustment, paper_version
 
 ROUTING = {
     TOPICS[0]: r"fair|bias|dispar|subgroup|benchmark",
@@ -22,7 +23,7 @@ ROUTING = {
     TOPICS[5]: r"language.model|clinical.text|clinical.nlp|multimodal|vision.language",
     TOPICS[6]: r"health.record|clinical.predict|electro|ecg|eeg|healthcare.operation",
 }
-REVIEW_VERSION = "1"
+REVIEW_VERSION = POLICY_VERSION
 
 
 def normalize(text):
@@ -34,7 +35,7 @@ def route(paper):
     topics = [topic for topic, pattern in ROUTING.items() if re.search(pattern, text)]
     name = bool(re.search(r"fairness|algorithmic.bias|demographic.bias|subgroup.dispar", text))
     dynamics = bool(re.search(r"evaluat|mitigat|debias|equalized|equal.opportunity|calibrat", text))
-    return {"topics": topics, "priority": 2 * int(name) + int(dynamics) + int(bool(topics))}
+    return {"topics": topics, "priority": 2 * int(name) + int(dynamics) + int(bool(topics)) + priority_adjustment(paper)}
 
 
 class TextParser(HTMLParser):
@@ -113,6 +114,8 @@ def review(paper, evidence, endpoint, model, key, timeout=90):
         "limitations_zh": "证据限制，不超过180字",
         "decision": "suggest_include | related | hold | exclude",
         "reason_zh": "有据可查的判断理由",
+        "article_type": "methodology | evaluation | review | commentary | other",
+        "review_scope": {name: {"met": False, "quote": "exact source span, or empty"} for name in ('specific_task','detailed_fairness')},
         "topics": TOPICS,
         "metadata": {field: sorted(values) for field, values in ALLOWED.items() if field not in {"Assets", "Evidence"}},
         "criteria": {name: {"met": True, "quote": "verbatim short evidence from supplied text"}
@@ -128,7 +131,7 @@ def review(paper, evidence, endpoint, model, key, timeout=90):
         "Bias mechanisms, fairness datasets with subgroup baselines, negative/null results and fairness benchmarks are eligible. "
         "Predicting race/sex does not alone prove downstream inequity; describe encoding evidence separately from performance disparity. "
         "Generic robustness, imbalanced disease classes, domain adaptation or healthcare inequality without an algorithmic fairness question are insufficient. "
-        "Surveys, perspectives, ethics and general fairness theory are related; insufficient access means hold, not evidence of absence. "
+        + POLICY_PROMPT + " "
         "Include medical imaging as the main domain, plus explicit EHR/clinical prediction, clinical NLP/foundation models, signals and healthcare operations. "
         "Human clinical validation and a positive fairness gain are not prerequisites. No winner or clinical benefit may be inferred from titles. "
         "Each criterion has Boolean met and a SHORT EXACT CONTIGUOUS quote, ideally 8-20 words, at least 4 words (or 8 Chinese characters), preferably under 180 characters, hard limit 240. "
@@ -188,16 +191,33 @@ def review(paper, evidence, endpoint, model, key, timeout=90):
                 raise
             time.sleep(2 ** attempt)
     # Persist only the validated review schema, never arbitrary provider fields.
-    result = {name: result[name] for name in ("summary_zh", "limitations_zh", "decision", "reason_zh", "topics", "metadata", "criteria")}
+    result = {name: result[name] for name in ("summary_zh", "limitations_zh", "decision", "reason_zh", "topics", "metadata", "criteria", "article_type", "review_scope") if name in result}
     result["metadata"] = {field: result["metadata"][field] for field in ("Domain", "Focus", "Stage", "Attributes")}
     result["metadata"]["Evidence"] = ["Primary full text" if evidence["level"] == "full_text" else "Primary abstract"]
     result["criteria"] = {name: {"met": value["met"], "quote": value["quote"]} for name, value in result["criteria"].items()}
+    result['review_scope']={name:{'met':value['met'],'quote':value['quote']} for name,value in result['review_scope'].items()}
     result.update(evidence_level=evidence["level"], evidence_url=evidence["url"], model=model,
+                  paper_version=paper_version(paper), policy_version=REVIEW_VERSION,
                   text_truncated=len(normalize(evidence["text"])) > len(text), warning=evidence["warning"])
     return result
 
 
 def validate_review(result, text, level):
+    if 'article_type' not in result or 'review_scope' not in result:
+        raise ValueError('article_type and review_scope evidence are required')
+    if 'article_type' in result:
+        if result['article_type'] not in {'methodology','evaluation','review','commentary','other'}:
+            raise ValueError('Invalid article_type')
+        scope=result.get('review_scope',{})
+        if set(scope)!={'specific_task','detailed_fairness'}:raise ValueError('Missing review relevance criteria')
+        for name,item in scope.items():
+            quote=item.get('quote')
+            if type(item.get('met')) is not bool or not isinstance(quote,str) or len(quote)>240:
+                raise ValueError('Invalid review scope evidence: '+name)
+            if quote and normalize(quote) not in text:raise ValueError('Unverifiable review scope: '+name)
+            if item['met'] and (len(quote.split())<4 or not quote.strip()):raise ValueError('Missing detailed review evidence: '+name)
+        if result['article_type'] in {'review','commentary'} and result.get('decision') in {'suggest_include','related'} and not all(item['met'] for item in scope.values()):
+            raise ValueError('Reviews require a specific medical task and detailed fairness analysis')
     if result.get("decision") not in {"suggest_include", "related", "hold", "exclude"}:
         raise ValueError("invalid decision: choose exactly suggest_include, related, hold or exclude")
     for name in ("summary_zh", "limitations_zh", "reason_zh"):

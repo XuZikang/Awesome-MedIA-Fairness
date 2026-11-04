@@ -59,3 +59,7 @@ Public files: `data/catalog.json`, `data/literature-state.json`, `reports/latest
 ## Maintainer review
 
 See [the Chinese review guide](review-workflow.md). Open `reports/review-latest.md`; reply in chat with stable paper IDs and approve/reject/hold decisions, or edit the decision and comment lines in the Markdown file and provide it to the assistant. The weekly job never passes an approval file. Default pending and model suggestions are not approval.
+
+## Screening priority and review scope
+
+The [maintainer screening policy](screening-policy.md) prioritizes original methodology and empirical fairness audits. Reviews/commentaries are down-ranked and need both a specific medical disease/task and substantive detailed fairness analysis, each supported by source evidence. Incidental mentions are excluded from recommendations. The policy version invalidates machine caches without erasing stable human decisions. Explicit human approvals may override machine scope suggestions, with evidence level and article type recorded honestly. Unchanged rejected papers are skipped in model review and future review packets.
