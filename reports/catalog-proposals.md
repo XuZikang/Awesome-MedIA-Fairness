@@ -1,6 +1,6 @@
 # 主目录筛选判断证据
 
-全文证据支持的机器筛选记录；周更流程会将合格新文章直接整理进主 README，以下保留中文理由供追加复核。
+机器建议及中文证据，仅供审核；必须由维护者明确通过后才加入主 README。请填写 review-latest.md 或按文章编号回复助手。
 
 ## Disparity Laundering: Consensus Without Fairness in Clinical Multi-Agent Systems
 

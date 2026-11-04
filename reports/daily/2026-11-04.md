@@ -4,7 +4,7 @@
 
 候选库：56 篇；当日发现、更新或完成分析：56 篇。
 
-已有有效中文分析：53 篇；待分析或缺少摘要证据：3 篇。
+已有有效中文分析：54 篇；待分析或缺少摘要证据：2 篇。
 
 ## 检索覆盖
 
@@ -14,8 +14,6 @@
 - europepmc / 查询 b614de0bf8b6：0 条；完整
 - pubmed / 查询 29bd77c2182f：34 条；完整
 - pubmed / 查询 d4312ff2e61d：3 条；完整
-
-模型分析失败 1 次，保留候选并等待重试。
 
 ## 当日候选
 
@@ -574,8 +572,16 @@ BiasLab 提出多语言双框架提示对方法，配合随机包装扰动、固
 ### [Risk-Oriented Differentiated Governance for Ambiguous Information.](https://pubmed.ncbi.nlm.nih.gov/42973283/)
 
 - 标识：`p-ca8d7d03e55f918b8e65`；发表：2026；发现：2026-11-04
-- 主题：Fairness Evaluation and Benchmarking、Bias Mechanisms and Measurement（规则建议）
-- 状态：待模型分析／人工核验
+- 主题：待分类
+- 状态：机器建议排除，待抽查
+
+提出面向模糊信息的风险导向分层治理框架，结合语义不确定性与传播特征构建风险函数，划分风险等级并模拟差异化治理策略，讨论公平与伦理。
+
+限制：仅摘要级证据，未报告临床验证、代码或数据；主题为生成式AI虚假信息治理，非医疗算法公平性研究，摘要中的公平仅作伦理讨论。
+
+判断：未涉及任何生物医学或临床任务、患者数据或医疗AI算法；公平仅作为治理策略的伦理讨论，没有明确的算法公平性测量或分组差异评估，且仅有摘要不足以纳入。
+
+证据层级：abstract；[来源](https://pubmed.ncbi.nlm.nih.gov/42973283/)；模型：qoder-cn/dfmodel。
 
 ### [Fairness-Aware Design for Contextual Experiments: Guaranteeing Reliability and Equity in Heterogeneous Subgroups](https://arxiv.org/abs/2611.01867)
 

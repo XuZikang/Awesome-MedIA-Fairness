@@ -948,9 +948,26 @@
 
 审核决定：待审核
 审核备注：
-证据版本：待取得有效分析
+证据版本：de0d25ffd40bf3aea14ce5a63f857c92c802314220a246fe274a82af9a58a85f
 
-模型建议：待分析／原分析已过期
+模型建议：exclude
+
+中文概述：提出面向模糊信息的风险导向分层治理框架，结合语义不确定性与传播特征构建风险函数，划分风险等级并模拟差异化治理策略，讨论公平与伦理。
+
+纳入判断：未涉及任何生物医学或临床任务、患者数据或医疗AI算法；公平仅作为治理策略的伦理讨论，没有明确的算法公平性测量或分组差异评估，且仅有摘要不足以纳入。
+
+限制：仅摘要级证据，未报告临床验证、代码或数据；主题为生成式AI虚假信息治理，非医疗算法公平性研究，摘要中的公平仅作伦理讨论。
+
+建议分类：Not applicable
+
+证据：
+- algorithm：we quantify epistemic uncertainty via multi-level semantic features, combine it with network propagation features
+- evaluation：we simulate differentiated governance strategies across risk levels of ambiguous information
+- fairness：
+- groups：
+- medical：
+
+[分析原文](https://pubmed.ncbi.nlm.nih.gov/42973283/)
 
 ## p-cb6eb929d7f879132fb0
 

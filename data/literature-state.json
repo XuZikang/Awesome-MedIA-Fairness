@@ -3722,7 +3722,7 @@
     ],
     [
       "p-ca8d7d03e55f918b8e65",
-      "f6c12fe2243637e7497667cea3161e196c481e23fd3fb44a50016fd24ca7f55d",
+      "de0d25ffd40bf3aea14ce5a63f857c92c802314220a246fe274a82af9a58a85f",
       {
         "criteria": {
           "algorithm": {
@@ -3731,7 +3731,7 @@
           },
           "evaluation": {
             "met": true,
-            "quote": "we simulate differentiated governance strategies across risk levels of ambiguous information, systematically assess governance effectiveness"
+            "quote": "we simulate differentiated governance strategies across risk levels of ambiguous information"
           },
           "fairness": {
             "met": false,
@@ -3749,27 +3749,29 @@
         "decision": "exclude",
         "evidence_level": "abstract",
         "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/42973283/",
-        "limitations_zh": "仅有摘要：非医学/临床任务，无患者数据与临床终点；公平与伦理仅作比较性讨论，未定义受保护群体或公平度量，也未做公平性实证测量；摘要未提及代码或数据。",
+        "limitations_zh": "仅摘要级证据，未报告临床验证、代码或数据；主题为生成式AI虚假信息治理，非医疗算法公平性研究，摘要中的公平仅作伦理讨论。",
         "metadata": {
           "Attributes": [
             "Not specified"
           ],
-          "Domain": [],
+          "Domain": [
+            "Other biomedical"
+          ],
           "Evidence": [
             "Primary abstract"
           ],
           "Focus": [
-            "Mitigation"
+            "Theory and measurement"
           ],
           "Stage": [
-            "Not verified"
+            "Not applicable"
           ]
         },
         "model": "qoder-cn/dfmodel",
         "provider": "qoder-cn-medical-fairness",
-        "reason_zh": "该文研究生成式AI虚假信息的分级风险治理，缺少生物医学/临床任务这一必要条件，也没有针对模型开展明确的算法公平性、偏倚或分组差异的实证测量；公平仅停留在讨论层面，故不属于本综述范围。",
+        "reason_zh": "未涉及任何生物医学或临床任务、患者数据或医疗AI算法；公平仅作为治理策略的伦理讨论，没有明确的算法公平性测量或分组差异评估，且仅有摘要不足以纳入。",
         "reviewed_on": "2026-11-04",
-        "summary_zh": "提出面向模糊信息的风险导向分级治理框架：用多层级语义特征量化认知不确定性，结合传播特征构建风险函数，设定风险边界分级并设计分级治理策略（中风险采用转发限流），通过仿真比较治理效果并就公平与伦理展开讨论。",
+        "summary_zh": "提出面向模糊信息的风险导向分层治理框架，结合语义不确定性与传播特征构建风险函数，划分风险等级并模拟差异化治理策略，讨论公平与伦理。",
         "text_truncated": false,
         "topics": [],
         "warning": ""

@@ -1,16 +1,12 @@
 {
   "analysis": {
-    "available_reviews": 53,
-    "failures": 1,
+    "available_reviews": 54,
+    "failures": 0,
     "mode": "model",
-    "pending": 3,
-    "reviewed": 0
+    "pending": 2,
+    "reviewed": 1
   },
   "candidates": 56,
-  "catalog_publication": {
-    "added": 0,
-    "failures": 0
-  },
   "changed_today": 56,
   "date": "2026-11-04",
   "sources": [
