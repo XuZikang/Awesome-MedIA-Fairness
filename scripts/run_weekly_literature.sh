@@ -1,82 +1,51 @@
 #!/usr/bin/env bash
-# This script runs on the user's existing server. Credentials stay in Magpie/gh.
+# Run with existing Magpie/gh credentials; publish English catalog and Chinese evidence to main.
 set -euo pipefail
 REPO_ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$REPO_ROOT"
 mkdir -p .local
 exec 9>.local/weekly.lock
 flock -n 9 || { echo "Another literature update is running"; exit 1; }
-
-# Refuse to overwrite a locally modified code checkout. Generated outputs use
-# a different worktree, so the production source checkout stays clean.
 test -z "$(git status --porcelain --untracked-files=no)"
-# The service refreshes main with ExecStartPre, before Bash opens this script.
-# This avoids replacing a running shell script during a code update.
 python3 -m unittest discover -s tests -q
 python3 scripts/validate_catalog.py
 
-OUTPUT_TREE="${LITERATURE_OUTPUT_TREE:-$REPO_ROOT/../output}"
-git ls-remote --heads origin refs/heads/literature-data > .local/output-ref
-if [ -d "$OUTPUT_TREE" ]; then
-  test -z "$(git -C "$OUTPUT_TREE" status --porcelain)"
-  if [ -s .local/output-ref ]; then
-    git fetch origin refs/heads/literature-data:refs/remotes/origin/literature-data
-    git -C "$OUTPUT_TREE" merge --ff-only refs/remotes/origin/literature-data
-  fi
-elif [ -s .local/output-ref ]; then
-  git fetch origin refs/heads/literature-data:refs/remotes/origin/literature-data
-  git worktree prune --expire now
-  git worktree add --detach "$OUTPUT_TREE" refs/remotes/origin/literature-data
-else
-  git worktree prune --expire now
-  git worktree add --detach "$OUTPUT_TREE" HEAD
-fi
-
-# Build in a staging directory. A failed model/source run must not leave the
-# persistent output worktree dirty or mistake an old marker for a fresh run.
-RUN_OUTPUT="$(mktemp -d "$REPO_ROOT/.local/weekly-run.XXXXXX")"
-mkdir -p "$RUN_OUTPUT/data"
-if [ -f "$OUTPUT_TREE/data/literature-state.json" ]; then
-  cp "$OUTPUT_TREE/data/literature-state.json" "$RUN_OUTPUT/data/"
-fi
-if [ -d "$OUTPUT_TREE/reports" ]; then
-  cp -R "$OUTPUT_TREE/reports" "$RUN_OUTPUT/reports"
-fi
-python3 - "$RUN_OUTPUT" <<'PY'
-from pathlib import Path
-import sys
-marker = Path(sys.argv[1]) / 'reports/run-status.json'
-if marker.exists():
-    marker.unlink()
-PY
+git fetch origin refs/heads/main:refs/remotes/origin/main
+# The service updates source code before opening this shell script.
+test "$(git rev-parse HEAD)" = "$(git rev-parse origin/main)"
+PUBLICATION_TREE="$(mktemp -d "$REPO_ROOT/.local/publication.XXXXXX")"
+rmdir "$PUBLICATION_TREE"
+git worktree prune --expire now
+git worktree add --detach "$PUBLICATION_TREE" origin/main
+rm -f "$PUBLICATION_TREE/reports/run-status.json"
 set +e
 python3 -u -m scripts.literature_pipeline.cli --require-model \
-  --state "$RUN_OUTPUT/data/literature-state.json" \
-  --output "$RUN_OUTPUT/reports"
+  --catalog "$PUBLICATION_TREE/README.md" \
+  --state "$PUBLICATION_TREE/data/literature-state.json" \
+  --output "$PUBLICATION_TREE/reports" \
+  --publish-root "$PUBLICATION_TREE"
 PIPELINE_STATUS=$?
 set -e
-test -f "$RUN_OUTPUT/reports/run-status.json"
-test -f "$RUN_OUTPUT/data/literature-state.json"
-mkdir -p "$OUTPUT_TREE/data" "$OUTPUT_TREE/reports"
-cp "$RUN_OUTPUT/data/literature-state.json" "$OUTPUT_TREE/data/"
-cp -R "$RUN_OUTPUT/reports/." "$OUTPUT_TREE/reports/"
-git -C "$OUTPUT_TREE" config user.name "Medical Fairness Literature Bot"
-git -C "$OUTPUT_TREE" config user.email "medical-fairness-literature@users.noreply.github.com"
-git -C "$OUTPUT_TREE" add data/literature-state.json reports
-if ! git -C "$OUTPUT_TREE" diff --cached --quiet; then
-  git -C "$OUTPUT_TREE" commit -m "docs: update Chinese literature digest and screening"
-fi
-git -C "$OUTPUT_TREE" -c 'credential.helper=!gh auth git-credential' push origin HEAD:refs/heads/literature-data
-if [ "$PIPELINE_STATUS" -eq 0 ]; then
-  python3 - "$RUN_OUTPUT" <<'PY'
+# No stale marker can authorize publication after a fatal error.
+test -f "$PUBLICATION_TREE/reports/run-status.json"
+python3 - "$PUBLICATION_TREE" <<'PY'
+import json,sys
 from pathlib import Path
-import shutil
-import sys
-directory = Path(sys.argv[1]).resolve()
-if directory.parent == Path('.local').resolve() and directory.name.startswith('weekly-run.'):
-    shutil.rmtree(directory)
-else:
-    raise SystemExit('Unexpected staging directory; refusing cleanup')
+from scripts.validate_catalog import CatalogValidator,IssueFormValidator
+root=Path(sys.argv[1]);text=(root/'README.md').read_text()
+errors=CatalogValidator(text).validate()+IssueFormValidator(text,(root/'.github/ISSUE_TEMPLATE/01-paper-suggestion.yml').read_text()).validate()
+if errors:raise SystemExit('\n'.join(errors))
+status=json.loads((root/'reports/run-status.json').read_text())
+if 'catalog_publication' not in status:raise SystemExit('Catalog publication did not complete')
 PY
+git -C "$PUBLICATION_TREE" config user.name "Medical Fairness Literature Bot"
+git -C "$PUBLICATION_TREE" config user.email "medical-fairness-literature@users.noreply.github.com"
+git -C "$PUBLICATION_TREE" add README.md assets/badges data/catalog.json data/literature-state.json reports
+if ! git -C "$PUBLICATION_TREE" diff --cached --quiet; then
+  git -C "$PUBLICATION_TREE" diff --cached --check
+  git -C "$PUBLICATION_TREE" commit -m "docs: update English fairness catalog and Chinese screening evidence"
 fi
+git -C "$PUBLICATION_TREE" -c 'credential.helper=!gh auth git-credential' push origin HEAD:refs/heads/main
+# Remove only this clean, successfully published transient worktree.
+git worktree remove "$PUBLICATION_TREE"
 exit "$PIPELINE_STATUS"

@@ -30,3 +30,9 @@ Sixteen review-reference entries now link directly to DOI records after independ
 ## Version-lineage hold
 
 arXiv:2110.14755 and DOI 10.1016/j.ebiom.2023.104467 share the same four authors and closely related encoding questions. The [author publication page](https://wp.doc.ic.ac.uk/bglocker/publications/) lists the journal article, while retrieved arXiv metadata supplies no journal reference or DOI tying the versions together. They are retained as separately identified bibliographic records pending explicit lineage confirmation, not claimed as independent methods or replications.
+
+## Methodology and presentation revision
+
+The current README merges the 106 historical bibliographic records and three full-text-screened discoveries into 109 entries. Surveys retain a Survey badge and share the evaluation/mitigation methodology rather than a separate list. Primary placements are 69 evaluation, 14 pre-processing, 22 in-processing and four post-processing; secondary contributions remain in metadata. Every title has local colored badges, a separate metadata paragraph and three English TLDR sentences. Dates preserve source precision; the latest year has month subsections. Chinese editorial reasoning is in reports/catalog-review.md. The four remaining reference-only entries now use verified primary PMLR/arXiv records, including RFIB arXiv:2203.04950, with matching title and authors.
+
+Thirty-seven annotations were completed through the configured Qoder DeepSeek endpoint before it reported usage exhaustion. The remaining entries were edited from inspected primary abstracts, original bibliographic records and review methodology; missing outcome evidence is disclosed in the TLDR rather than filled with invented gains. These annotations are summaries, not 109 full-text audits. The production publication target is now main; literature-data is a historical archive.

@@ -50,7 +50,7 @@
 
 - [ ] I read the abstract and relevant methods or documentation rather than classifying from the title alone.
 - [ ] I searched the README for duplicate titles, DOIs, arXiv identifiers, and PubMed IDs.
-- [ ] I added the full entry to the correct year and concise copies to every applicable **By Topic** section.
+- [ ] I updated data/catalog.json with one primary methodology, the original publication date, and rerendered README.
 - [ ] The six metadata fields use only the controlled vocabulary in `scripts/catalog_schema.py`.
 - [ ] The Assets value matches the Code, Weights, Project, and Data links in the entry.
-- [ ] The entry includes one factual **Why it qualifies** note and preserves evidence limitations.
+- [ ] The entry includes exactly three factual English TLDR sentences and preserves evidence limitations.

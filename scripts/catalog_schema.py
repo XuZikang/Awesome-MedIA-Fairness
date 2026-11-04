@@ -1,5 +1,5 @@
 """Controlled vocabulary for medical algorithm fairness; shared by CI and review."""
-MAIN_HEADING = "## 📝 Fairness Papers"
+MAIN_HEADING = "## 📝 Papers"
 TOPIC_HEADING = "## 🧭 By Topic"
 RESOURCE_HEADING = "## 🧰 Datasets, Benchmarks and Toolkits"
 ALLOWED = {

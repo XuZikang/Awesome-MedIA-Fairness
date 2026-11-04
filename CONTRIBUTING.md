@@ -1,26 +1,20 @@
 # Contributing
 
-Use the [paper-suggestion form](https://github.com/XuZikang/Awesome-MedIA-Fairness/issues/new?template=01-paper-suggestion.yml) or open a pull request. Main-list additions need a medical task, an identifiable algorithm, an explicit fairness/bias question, group definitions, a subgroup-discovery protocol or an individual/counterfactual fairness definition, and evaluated evidence.
+Submit a paper suggestion or pull request with the original paper record and official resource links. Medical algorithm fairness studies require a medical task, an algorithm, an explicit fairness question, defined groups or a counterfactual/individual fairness protocol, and evaluated evidence. Null findings are welcome. Reviews and perspectives share the main methodology catalog and carry a Survey badge; general nonmedical fairness theory stays in Cross-References.
 
-Read the primary abstract and relevant methods. State what was evaluated, rather than assuming a positive fairness gain, causality or clinical benefit. Sensitive-attribute encoding is not by itself proof of downstream discrimination. Generic class imbalance, domain shift and health inequality do not qualify without an algorithmic fairness question. Reviews and perspectives belong in Survey Papers, and general nonmedical fairness theory in Cross-References.
+Edit `data/catalog.json`, then run `python3 -m scripts.render_catalog`. Do not edit generated README entries directly. Preserve original titles and identifiers, the available publication-date precision and original code/data links. Check DOI, arXiv, PMID and normalized title for duplicates. Version lineage needs explicit evidence; similar titles or matching authors alone are insufficient.
 
-Use the controlled labels in `scripts/catalog_schema.py`. Add one full entry under the correct publication year and concise copies under all applicable By Topic sections. Preserve provenance and official code/data links. Search titles, DOI, arXiv and PMID before submitting; preprint and journal versions may share a work, but genuine extensions are not automatically merged.
+Choose one primary methodology from Fairness Evaluation, Pre-processing, In-processing or Post-processing, following the 2024 systematic review. Use Stage pending if a mitigation intervention is not established. Keep secondary contributions in metadata, with only the controlled labels from `scripts/catalog_schema.py`. Read the primary abstract and relevant methods; do not infer clinical benefit, positive gains, intersectionality or predictor freezing from a title.
 
-```markdown
-- (*Venue'26*) **Paper title**
-  [[📝 Paper](https://example.org/paper)] [[💻 Code](https://github.com/org/repo)]
-  **Metadata:** `Domain: Medical imaging` · `Focus: Evaluation + Mitigation` · `Stage: In-processing` · `Attributes: Sex and gender` · `Assets: Code` · `Evidence: Primary full text`
-  > **Why it qualifies:** Names the medical algorithm, protected-group question, intervention and evaluated evidence, including negative or limited results.
-```
-
-The sample URLs are placeholders, never valid catalog links. Evidence labels describe retrieved sources: primary bibliographic metadata is not a methods audit. Only mark Primary full text after inspecting the paper. A reviewer must check that mitigation-stage labels match the actual procedure, especially whether post-processing freezes the base predictor. Do not infer intersectional evaluation from the presence of several separately evaluated attributes.
+Supply `tldr_en` as exactly three English sentences: the problem, the method/study design, and the supported result or interpretation. Explain evidence limitations honestly. The generated README is entirely English, has colored title badges, a separate metadata paragraph, and newest-first dates with month subheadings in the latest year. Chinese classification evidence and maintainer judgments belong in `reports/`.
 
 Run:
 
 ```bash
+python3 -m scripts.render_catalog
 python3 scripts/validate_catalog.py
-python3 -m unittest discover -s tests -v
+python3 -m unittest discover -s tests -q
 git diff --check
 ```
 
-Dataset/toolkit descriptions must link to the authors' official resources and describe access restrictions honestly. Do not upload patient data, private documents, API credentials or third-party full papers. New annotations/docs are CC BY 4.0; automation is MIT. Source works retain their own rights.
+Do not upload patient data, private documents, credentials or third-party full papers. New catalog annotations are CC BY 4.0; automation code is MIT. Source works retain their own rights.

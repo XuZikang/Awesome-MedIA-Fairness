@@ -5,7 +5,7 @@ from __future__ import annotations
 
 import re
 import sys
-from collections import Counter, defaultdict
+from collections import defaultdict
 from dataclasses import dataclass
 from pathlib import Path
 from urllib.parse import unquote
@@ -13,7 +13,7 @@ from urllib.parse import unquote
 if __package__ in {None, ""}:
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from scripts.catalog_schema import ALLOWED, MAIN_HEADING, RESOURCE_HEADING, TOPIC_HEADING, TOPICS
+from scripts.catalog_schema import ALLOWED, MAIN_HEADING, RESOURCE_HEADING, TOPICS
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -22,8 +22,33 @@ ISSUE_FORM = ROOT / ".github" / "ISSUE_TEMPLATE" / "01-paper-suggestion.yml"
 
 METADATA_FIELDS = ("Domain", "Focus", "Stage", "Attributes", "Assets", "Evidence")
 RESOURCE_CATEGORIES = ("Datasets", "Benchmarks", "Toolkits")
+METHOD_CATEGORIES = (
+    "Fairness Evaluation",
+    "Unfairness Mitigation: Pre-processing",
+    "Unfairness Mitigation: In-processing",
+    "Unfairness Mitigation: Post-processing",
+    "Unfairness Mitigation: Stage pending",
+)
+METHOD_LEGEND_LABELS = (
+    "Fairness Evaluation",
+    "Pre-processing",
+    "In-processing",
+    "Post-processing",
+)
+METHOD_STAGES = {
+    "Unfairness Mitigation: Pre-processing": "Pre-processing",
+    "Unfairness Mitigation: In-processing": "In-processing",
+    "Unfairness Mitigation: Post-processing": "Post-processing",
+}
+LEGACY_TOPIC_HEADING = "## 🧭 By Topic"
 
-ENTRY_RE = re.compile(r"^- \(\*.*?\*\) \*\*(.*?)\*\*", re.MULTILINE)
+# The title line deliberately allows the badge suffix to be checked separately;
+# entries() is also used by seed_catalog() on the archived pre-migration format.
+ENTRY_RE = re.compile(r"^- \(\*.*?\*\) \*\*(.*?)\*\*(.*)$", re.MULTILINE)
+ENTRY_LINE_RE = re.compile(
+    r"^- \(\*(?P<venue>.*?)\*\) \*\*(?P<title>.*?)\*\*(?P<suffix>.*)$"
+)
+BADGE_RE = re.compile(r"!\[[^\]]+\]\((assets/badges/[^)\s]+\.svg)\)")
 METADATA_RE = re.compile(
     r"^  \*\*Metadata:\*\* "
     r"`Domain: ([^`]+)` · "
@@ -34,7 +59,11 @@ METADATA_RE = re.compile(
     r"`Evidence: ([^`]+)`$",
     re.MULTILINE,
 )
-LINK_RE = re.compile(r"\[[^\]]+\]\(([^)\s]+)(?:\s+\"[^\"]*\")?\)")
+TLDR_RE = re.compile(r"^  \*\*TLDR:\*\* (.+)$", re.MULTILINE)
+DATE_RE = re.compile(r"^  \*\*Date:\*\* (\d{4}(?:-\d{2}(?:-\d{2})?)?)$", re.MULTILINE)
+# Ignore Markdown images (the local SVG badges) while collecting paper/resource links.
+LINK_RE = re.compile(r"(?<!!)\[[^\]]+\]\(([^)\s]+)(?:\s+\"[^\"]*\")?\)")
+LINK_LABEL_RE = re.compile(r"\[\[([^\]]+)\]\(([^)\s]+)")
 PLACEHOLDER_LINKS = {"https://example.org/paper", "https://github.com/org/repo"}
 
 
@@ -43,6 +72,8 @@ class Entry:
     title: str
     block: str
     section: str
+    category: str = ""
+    month: str = ""
 
 
 def _normal_title(title: str) -> str:
@@ -52,6 +83,15 @@ def _normal_title(title: str) -> str:
 
 def _parts(raw_value: str) -> list[str]:
     return [part.strip() for part in raw_value.split(" + ")]
+
+
+def _line_index(block: str, match: re.Match[str]) -> int:
+    return block[: match.start()].count("\n")
+
+
+def _sentences(text: str) -> list[str]:
+    """Split simple English prose at terminal punctuation for the TLDR contract."""
+    return [part.strip() for part in re.findall(r"[^.!?]+[.!?](?=\s|$)", text.strip())]
 
 
 class CatalogValidator:
@@ -66,7 +106,7 @@ class CatalogValidator:
 
     def section_between(self, start: str, end: str) -> str:
         start_index = self.text.find(start)
-        end_index = self.text.find(end)
+        end_index = self.text.find(end, start_index + len(start)) if start_index >= 0 else -1
         if start_index < 0:
             self.error(f"Missing section heading: {start}")
             return ""
@@ -86,24 +126,44 @@ class CatalogValidator:
 
     @staticmethod
     def entries(section: str) -> list[Entry]:
-        """Parse complete entries while retaining their nearest ``###`` heading."""
+        """Parse entries under old or new headings while retaining their context.
+
+        The old ``### YYYY`` form is intentionally accepted here for the state
+        seeder's migration fixture. Full README validation requires the new
+        category/``#### YYYY`` hierarchy.
+        """
         entries: list[Entry] = []
-        current_heading = ""
+        category = ""
+        year = ""
+        month = ""
         current_lines: list[str] = []
 
         def flush() -> None:
+            nonlocal current_lines
             if not current_lines:
                 return
             block = "\n".join(current_lines).strip()
             match = ENTRY_RE.search(block)
             if match:
-                entries.append(Entry(match.group(1).strip(), block, current_heading))
-            current_lines.clear()
+                entries.append(Entry(match.group(1).strip(), block, year, category, month))
+            current_lines = []
 
         for line in section.splitlines():
             if re.match(r"^###\s+", line):
                 flush()
-                current_heading = line[4:].strip()
+                heading = line[4:].strip()
+                if re.fullmatch(r"\d{4}", heading):
+                    year, category, month = heading, "", ""
+                else:
+                    category, year, month = heading, "", ""
+                continue
+            if re.match(r"^####\s+", line):
+                flush()
+                year, month = line[5:].strip(), ""
+                continue
+            if re.match(r"^#####\s+", line):
+                flush()
+                month = line[6:].strip()
                 continue
             if ENTRY_RE.match(line):
                 flush()
@@ -115,21 +175,18 @@ class CatalogValidator:
         return entries
 
     def validate(self) -> list[str]:
-        main = self.section_between(MAIN_HEADING, TOPIC_HEADING)
-        topics = self.section_between(TOPIC_HEADING, RESOURCE_HEADING)
+        main = self.section_between(MAIN_HEADING, RESOURCE_HEADING)
         resources = self.section_after(RESOURCE_HEADING)
         taxonomy = self.section_between("## 🧬 Taxonomy", MAIN_HEADING)
 
         main_entries = self.entries(main)
-        topic_entries = self.entries(topics)
-
         self.validate_taxonomy(taxonomy)
-        self.validate_years(main)
+        self.validate_categories(main)
+        self.validate_hierarchy(main)
         self.validate_main_entries(main_entries)
-        self.validate_topics(main_entries, topic_entries, topics)
         self.validate_resources(resources)
         self.validate_duplicate_identifiers(main_entries)
-        self.validate_links(main_entries + topic_entries)
+        self.validate_links(main_entries)
         return self.errors
 
     def validate_taxonomy(self, taxonomy: str) -> None:
@@ -154,15 +211,78 @@ class CatalogValidator:
                     f"README={sorted(parsed[field])}, schema={sorted(allowed)}"
                 )
 
-    def validate_years(self, main: str) -> None:
-        years = [int(year) for year in re.findall(r"^### (\d{4})$", main, re.MULTILINE)]
-        if not years:
-            self.error(f"No year headings found in {MAIN_HEADING}")
+        for label in METHOD_LEGEND_LABELS:
+            if label not in taxonomy:
+                self.error(f"Taxonomy method legend is missing: {label}")
+
+    def validate_categories(self, main: str) -> None:
+        headings = re.findall(r"^### (.+)$", main, re.MULTILINE)
+        required = list(METHOD_CATEGORIES[:-1])
+        valid = headings == required or (
+            len(headings) == len(required) + 1 and headings == required + [METHOD_CATEGORIES[-1]]
+        )
+        if not valid:
+            self.error(
+                "Method category headings differ from the required order (Stage pending is optional): "
+                f"README={headings}, required={required} or {required + [METHOD_CATEGORIES[-1]]}"
+            )
+        if LEGACY_TOPIC_HEADING in main:
+            self.error("Legacy By Topic section is not allowed in the main catalog")
+
+    def validate_hierarchy(self, main: str) -> None:
+        years_by_category: dict[str, list[int]] = defaultdict(list)
+        months_by_year: dict[tuple[str, int], list[str]] = defaultdict(list)
+        category = ""
+        year = 0
+        max_year = 0
+
+        for line in main.splitlines():
+            match = re.match(r"^### (.+)$", line)
+            if match:
+                category = match.group(1)
+                year = 0
+                continue
+            match = re.match(r"^#### (\d{4})$", line)
+            if match:
+                year = int(match.group(1))
+                max_year = max(max_year, year)
+                if category not in METHOD_CATEGORIES:
+                    self.error(f"Year heading {year} is outside a method category")
+                years_by_category[category].append(year)
+                continue
+            match = re.match(r"^##### (.+)$", line)
+            if match:
+                value = match.group(1)
+                if not year:
+                    self.error(f"Month heading '{value}' is outside a year heading")
+                    continue
+                if value != "Month unverified" and not re.fullmatch(r"\d{4}-\d{2}", value):
+                    self.error(f"Invalid month heading: {value}")
+                if value != "Month unverified" and not value.startswith(f"{year:04d}-"):
+                    self.error(f"Month heading '{value}' does not match year {year}")
+                months_by_year[(category, year)].append(value)
+
+        all_years = [year for years in years_by_category.values() for year in years]
+        if not all_years:
+            self.error(f"No four-digit year headings found under {MAIN_HEADING}")
             return
-        if len(years) != len(set(years)):
-            self.error(f"Duplicate year headings: {years}")
-        if years != sorted(years, reverse=True):
-            self.error(f"Year headings must be in descending order: {years}")
+        for category, years in years_by_category.items():
+            if years != sorted(years, reverse=True):
+                self.error(f"Year headings must be in descending order in '{category}': {years}")
+            if len(years) != len(set(years)):
+                self.error(f"Duplicate year heading in '{category}': {years}")
+
+        for (category, heading_year), months in months_by_year.items():
+            if heading_year != max(all_years):
+                self.error(
+                    f"Month headings are allowed only under latest global year {max(all_years)}: "
+                    f"'{category}' {heading_year}"
+                )
+            numeric = [month for month in months if month != "Month unverified"]
+            if numeric != sorted(numeric, reverse=True):
+                self.error(f"Month headings must be in descending order in '{category}' {heading_year}: {months}")
+            if "Month unverified" in months and months[-1] != "Month unverified":
+                self.error(f"Month unverified must be last in '{category}' {heading_year}: {months}")
 
     def validate_main_entries(self, entries: list[Entry]) -> None:
         if not entries:
@@ -177,29 +297,53 @@ class CatalogValidator:
                 self.error(f"Duplicate main-list title: {sorted(titles)}")
 
         for entry in entries:
+            if entry.category not in METHOD_CATEGORIES:
+                self.error(f"{entry.title}: entry is not under a method category")
             self.validate_entry_year(entry)
             self.validate_metadata(entry)
-            qualification_count = entry.block.count("> **Why it qualifies:**")
-            if qualification_count != 1:
-                self.error(
-                    f"{entry.title}: expected one Why it qualifies note, found {qualification_count}"
-                )
+            self.validate_entry_layout(entry)
+            self.validate_tldr(entry)
+            self.validate_date(entry)
+            self.validate_category_stage(entry)
 
     def validate_entry_year(self, entry: Entry) -> None:
-        if len(entry.section) != 4 or not entry.section.isdigit():
+        if not re.fullmatch(r"\d{4}", entry.section):
             self.error(f"{entry.title}: entry is not under a four-digit year heading")
             return
         first_line = entry.block.splitlines()[0] if entry.block.splitlines() else ""
-        venue_year = re.search(r"(?:19|20)\d{2}|\b\d{2}\b", first_line)
+        match = ENTRY_LINE_RE.match(first_line)
+        if not match:
+            self.error(f"{entry.title}: malformed entry title line")
+            return
+        venue_year = re.search(r"(?:19|20)\d{2}|\b\d{2}\b", match.group("venue"))
         if not venue_year:
             self.error(f"{entry.title}: venue label must include a publication year")
             return
         value = venue_year.group(0)
         expected = entry.section if len(value) == 4 else entry.section[-2:]
         if value != expected:
-            self.error(
-                f"{entry.title}: venue year '{value}' does not match section {entry.section}"
-            )
+            self.error(f"{entry.title}: venue year '{value}' does not match section {entry.section}")
+
+    def validate_entry_layout(self, entry: Entry) -> None:
+        lines = entry.block.splitlines()
+        if not lines:
+            self.error(f"{entry.title}: empty entry")
+            return
+        title_line = ENTRY_LINE_RE.match(lines[0])
+        if not title_line:
+            self.error(f"{entry.title}: malformed entry title line")
+        elif not BADGE_RE.findall(lines[0]):
+            self.error(f"{entry.title}: title must have at least one local SVG badge")
+        elif "https://" in lines[0] or "http://" in lines[0]:
+            self.error(f"{entry.title}: badges must be local assets/badges SVG files")
+
+        if len(lines) < 3 or lines[1] != "" or not lines[2].startswith("  "):
+            self.error(f"{entry.title}: title and links must be separated by a blank line")
+        elif not LINK_LABEL_RE.search(lines[2]):
+            self.error(f"{entry.title}: links line is missing the double-bracket paper/resource links")
+
+        if "Provenance" in entry.block or "Why it qualifies" in entry.block:
+            self.error(f"{entry.title}: legacy Provenance/Why it qualifies text is not allowed")
 
     def validate_metadata(self, entry: Entry) -> None:
         matches = list(METADATA_RE.finditer(entry.block))
@@ -207,7 +351,13 @@ class CatalogValidator:
             self.error(f"{entry.title}: expected one exact Metadata line, found {len(matches)}")
             return
 
-        values = dict(zip(METADATA_FIELDS, matches[0].groups()))
+        match = matches[0]
+        lines = entry.block.splitlines()
+        index = _line_index(entry.block, match)
+        if index == 0 or lines[index - 1] != "" or index + 1 >= len(lines) or lines[index + 1] != "":
+            self.error(f"{entry.title}: Metadata must be on its own line with blank lines around it")
+
+        values = dict(zip(METADATA_FIELDS, match.groups()))
         for field, raw_value in values.items():
             parts = _parts(raw_value)
             if not parts or any(not part for part in parts):
@@ -221,53 +371,69 @@ class CatalogValidator:
             if field in {"Domain", "Evidence"} and len(parts) != 1:
                 self.error(f"{entry.title}: {field} must contain exactly one value")
 
-        expected_assets: list[str] = []
-        for asset in ("Code", "Weights", "Project", "Data"):
-            if re.search(rf"\[[^\]]*\b{re.escape(asset)}\]", entry.block):
-                expected_assets.append(asset)
+        labels = [label for label, _ in LINK_LABEL_RE.findall(entry.block)]
+        expected_assets = [
+            asset for asset in ("Code", "Weights", "Project", "Data")
+            if any(re.search(rf"\b{re.escape(asset)}\b", label) for label in labels)
+        ]
         if not expected_assets:
             expected_assets.append("Paper only")
         expected = " + ".join(expected_assets)
         if values["Assets"] != expected:
-            self.error(
-                f"{entry.title}: Assets is '{values['Assets']}', expected '{expected}' from links"
-            )
+            self.error(f"{entry.title}: Assets is '{values['Assets']}', expected '{expected}' from links")
+        if not any(re.search(r"\bPaper\b", label) for label in labels):
+            self.error(f"{entry.title}: entry must include a Paper link")
 
-    def validate_topics(
-        self, main_entries: list[Entry], topic_entries: list[Entry], topics: str
-    ) -> None:
-        headings = set(re.findall(r"^### (.+)$", topics, re.MULTILINE))
-        if headings != set(TOPICS):
-            self.error(
-                "By Topic headings differ from the schema: "
-                f"README={sorted(headings)}, schema={sorted(TOPICS)}"
-            )
+    def validate_tldr(self, entry: Entry) -> None:
+        matches = list(TLDR_RE.finditer(entry.block))
+        if len(matches) != 1:
+            self.error(f"{entry.title}: expected one TLDR line, found {len(matches)}")
+            return
+        match = matches[0]
+        lines = entry.block.splitlines()
+        index = _line_index(entry.block, match)
+        if index == 0 or lines[index - 1] != "":
+            self.error(f"{entry.title}: TLDR must follow a blank line")
+        text = match.group(1).strip()
+        if re.search(r"[\u3400-\u9fff]", text):
+            self.error(f"{entry.title}: TLDR must be English prose")
+        sentences = _sentences(text)
+        if len(sentences) != 3 or " ".join(sentences) != text:
+            self.error(f"{entry.title}: TLDR must contain exactly three complete English sentences")
+        if index + 1 >= len(lines) or lines[index + 1] != "":
+            self.error(f"{entry.title}: Date must be separated from TLDR by a blank line")
 
-        main_titles = {_normal_title(entry.title) for entry in main_entries}
-        topic_titles = {_normal_title(entry.title) for entry in topic_entries}
-        for title in sorted(main_titles - topic_titles):
-            self.error(f"Main-list paper missing from By Topic: {title}")
-        for title in sorted(topic_titles - main_titles):
-            self.error(f"By Topic paper missing from main list: {title}")
+    def validate_date(self, entry: Entry) -> None:
+        matches = list(DATE_RE.finditer(entry.block))
+        if len(matches) != 1:
+            self.error(f"{entry.title}: expected one Date line, found {len(matches)}")
+            return
+        value = matches[0].group(1)
+        if value[:4] != entry.section:
+            self.error(f"{entry.title}: Date '{value}' does not match section {entry.section}")
+        if entry.month == "Month unverified" and len(value) != 4:
+            self.error(f"{entry.title}: Month unverified entries must use year-only Date precision")
+        if re.fullmatch(r"\d{4}-\d{2}", entry.month) and not value.startswith(entry.month):
+            self.error(f"{entry.title}: Date '{value}' does not match month heading {entry.month}")
 
-        by_section: dict[str, list[str]] = defaultdict(list)
-        for entry in topic_entries:
-            by_section[entry.section].append(_normal_title(entry.title))
-            if "**Metadata:**" in entry.block or "Why it qualifies" in entry.block:
-                self.error(f"{entry.title}: topic entries must stay concise")
-
-        for section, titles in by_section.items():
-            duplicates = [title for title, count in Counter(titles).items() if count > 1]
-            for title in duplicates:
-                self.error(f"Duplicate title in topic '{section}': {title}")
+    def validate_category_stage(self, entry: Entry) -> None:
+        match = METADATA_RE.search(entry.block)
+        if not match:
+            return
+        stage = set(_parts(match.group(3)))
+        if entry.category == "Unfairness Mitigation: Stage pending":
+            if not stage.intersection({"Not verified", "Not applicable"}):
+                self.error(f"{entry.title}: Stage pending entries require Not verified or Not applicable stage")
+            return
+        expected = METHOD_STAGES.get(entry.category)
+        if expected and not stage.intersection({expected, "Multi-stage", "Not verified", "Not applicable"}):
+            self.error(f"{entry.title}: stage metadata does not match category {entry.category}")
 
     def validate_duplicate_identifiers(self, entries: list[Entry]) -> None:
         owners: dict[str, set[str]] = defaultdict(set)
         patterns = {
-            "arXiv": re.compile(r"arxiv\.org/(?:abs|pdf)/(\d{4}\.\d{4,5})(?:v\d+)?", re.IGNORECASE),
-            "DOI": re.compile(
-                r"(?:doi\.org/|doi:\s*)(10\.\d{4,9}/[-._;()/:A-Z0-9]+)", re.IGNORECASE
-            ),
+            "arXiv": re.compile(r"arxiv\.org/(?:abs|pdf|html)/(\d{4}\.\d{4,5})(?:v\d+)?", re.IGNORECASE),
+            "DOI": re.compile(r"(?:doi\.org/|doi:\s*)(10\.\d{4,9}/[-._;()/:A-Z0-9]+)", re.IGNORECASE),
             "PubMed": re.compile(r"pubmed\.ncbi\.nlm\.nih\.gov/(\d+)", re.IGNORECASE),
         }
         for entry in entries:
@@ -365,32 +531,28 @@ class IssueFormValidator:
                 continue
             actual_type, block = fields[field_id]
             if actual_type != expected_type:
-                self.error(
-                    f"field '{field_id}' has type '{actual_type}', expected '{expected_type}'"
-                )
+                self.error(f"field '{field_id}' has type '{actual_type}', expected '{expected_type}'")
             if field_id not in self.OPTIONAL_FIELDS and field_id != "confirmation":
                 if not re.search(r"^    validations:\n      required: true$", block, re.MULTILINE):
                     self.error(f"field '{field_id}' must be required")
 
         for field_id in self.MULTISELECT_FIELDS:
-            if field_id in fields and not re.search(
-                r"^      multiple: true$", fields[field_id][1], re.MULTILINE
-            ):
+            if field_id in fields and not re.search(r"^      multiple: true$", fields[field_id][1], re.MULTILINE):
                 self.error(f"field '{field_id}' must allow multiple selections")
 
         for field_id in self.SINGLE_SELECT_FIELDS:
-            if field_id in fields and re.search(
-                r"^      multiple: true$", fields[field_id][1], re.MULTILINE
-            ):
+            if field_id in fields and re.search(r"^      multiple: true$", fields[field_id][1], re.MULTILINE):
                 self.error(f"field '{field_id}' must be single-select")
 
+        # Topics are a controlled internal routing vocabulary, not a README
+        # section: removing the old By Topic index must not break the form.
         expected_options = {
             "domain": ALLOWED["Domain"],
             "focus": ALLOWED["Focus"],
             "stage": ALLOWED["Stage"],
             "attributes": ALLOWED["Attributes"],
             "evidence": ALLOWED["Evidence"],
-            "topics": self.readme_topics(),
+            "topics": set(TOPICS),
         }
         for field_id, expected in expected_options.items():
             if field_id not in fields:
@@ -402,22 +564,15 @@ class IssueFormValidator:
                     f"form={sorted(options)}, schema={sorted(expected)}"
                 )
 
-        if "confirmation" in fields and not re.search(
-            r"^          required: true$", fields["confirmation"][1], re.MULTILINE
-        ):
+        if "confirmation" in fields and not re.search(r"^          required: true$", fields["confirmation"][1], re.MULTILINE):
             self.error("confirmation checkbox must be required")
 
         return self.errors
 
+    # Kept as a compatibility helper for callers that used the old API; it no
+    # longer inspects README headings.
     def readme_topics(self) -> set[str]:
-        try:
-            topic_section = self.readme.split(TOPIC_HEADING, 1)[1].split(
-                RESOURCE_HEADING, 1
-            )[0]
-        except IndexError:
-            self.error("cannot read topic headings from README")
-            return set()
-        return set(re.findall(r"^### (.+)$", topic_section, re.MULTILINE))
+        return set(TOPICS)
 
 
 def main() -> int:
@@ -438,16 +593,12 @@ def main() -> int:
             print(f"- {error}", file=sys.stderr)
         return 1
 
-    main_entries = CatalogValidator.entries(
-        text.split(MAIN_HEADING, 1)[1].split(TOPIC_HEADING, 1)[0]
-    )
-    topic_entries = CatalogValidator.entries(
-        text.split(TOPIC_HEADING, 1)[1].split(RESOURCE_HEADING, 1)[0]
-    )
+    main_text = text.split(MAIN_HEADING, 1)[1].split(RESOURCE_HEADING, 1)[0]
+    entries = CatalogValidator.entries(main_text)
+    categories = {entry.category for entry in entries}
     print(
-        f"Catalog validation passed: {len(main_entries)} main-list papers, "
-        f"{len({_normal_title(entry.title) for entry in topic_entries})} unique topic entries, "
-        "and a synchronized paper-suggestion form."
+        f"Catalog validation passed: {len(entries)} papers across "
+        f"{len(categories)} method categories and a synchronized paper-suggestion form."
     )
     return 0
 

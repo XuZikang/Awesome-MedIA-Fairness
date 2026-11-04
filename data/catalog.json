@@ -43,8 +43,18 @@
     "pmid": "36046104",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "authors": [
+      "Emma A. M. Stanley",
+      "Matthias Wilms",
+      "Pauline Mouches",
+      "Nils D. Forkert"
+    ],
+    "publication_date": "2022-08-26",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "The study examines how sociodemographic-related confounders affect deep learning classifier performance and explainability in brain MRI analysis.",
+      "A convolutional neural network was trained to predict biological sex from T1-weighted brain MRI scans of 4547 adolescents in the ABCD study, and performance disparities and subgroup saliency maps were analyzed by race and sex.",
+      "The model showed significant accuracy differences between White and Black male children and subgroup-specific saliency differences in puberty-related brain regions, supporting the interpretation that unfair models can produce different XAI results across subgroups."
     ]
   },
   {
@@ -89,8 +99,12 @@
     "origin": "legacy",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "publication_date": "2022",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "The paper addresses fairness concerns in graph-related neuroimaging studies.",
+      "Its method is title-indicated as an exploration of fairness concerns in neuroimaging graphs, with no abstract or method evidence supplied.",
+      "Results cannot be established from the available record, which provides only the title and systematic-review context."
     ]
   },
   {
@@ -143,8 +157,19 @@
     "pmid": "34893776",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "authors": [
+      "Laleh Seyyed-Kalantari",
+      "Haoran Zhang",
+      "Matthew B. A. McDermott",
+      "Irene Y. Chen",
+      "Marzyeh Ghassemi"
+    ],
+    "publication_date": "2021-12",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "Chest X-ray pathology classifiers may underdiagnose diseases in under-served patient populations, raising concerns about unequal access to care.",
+      "The study evaluates algorithmic underdiagnosis in chest X-ray pathology classification across three large chest X-ray datasets and one multi-source dataset, focusing on classifiers built with state-of-the-art computer vision techniques.",
+      "It finds that classifiers consistently and selectively underdiagnosed under-served patient populations, with higher underdiagnosis rates for intersectional groups such as Hispanic female patients."
     ]
   },
   {
@@ -200,8 +225,23 @@
     "pmid": "35463778",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "authors": [
+      "Esther Puyol-Antón",
+      "Bram Ruijsink",
+      "Jorge Mariscal Harana",
+      "Stefan K. Piechnik",
+      "Stefan Neubauer",
+      "Steffen E. Petersen",
+      "Reza Razavi",
+      "Phil Chowienczyk",
+      "Andrew P. King"
+    ],
+    "publication_date": "2022-04-07",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "The paper assesses sex and racial bias in deep learning-based cine cardiac magnetic resonance segmentation for biventricular structure and functional quantification.",
+      "Using short-axis end-diastole and end-systole images from 5,903 UK Biobank subjects, it compares Dice scores and volumetric and functional measurement errors across race and sex groups, with multivariate linear regression and ANCOVA to examine potential confounders.",
+      "The analysis reports statistically significant racial differences in Dice scores and measurement errors, with minority ethnic groups showing lower agreement, and concludes that racial bias can exist when training data are sex-balanced but not race-balanced."
     ]
   },
   {
@@ -252,8 +292,19 @@
     "pmid": "32457147",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "authors": [
+      "Agostina J. Larrazabal",
+      "Nicolás Nieto",
+      "Victoria Peterson",
+      "Diego H. Milone",
+      "Enzo Ferrante"
+    ],
+    "publication_date": "2020-05-26",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "The study examines whether gender imbalance in medical imaging training data produces biased classifiers for computer-aided diagnosis.",
+      "It reports a large-scale empirical evaluation using three deep neural network architectures and two public chest X-ray datasets for thoracic disease diagnosis under different gender-imbalance conditions.",
+      "The abstract reports a consistent performance decrease for underrepresented genders when a minimum balance is not met and calls for explicit gender-balance guidance and robustness methods."
     ]
   },
   {
@@ -293,11 +344,20 @@
     "origin": "legacy",
     "arxiv_id": "2110.14755",
     "verified": true,
-    "kind": "main",
-    "topics": [
-      "Fairness Evaluation and Benchmarking",
-      "Bias Mechanisms and Measurement"
-    ]
+    "authors": [
+      "Ben Glocker",
+      "Charles Jones",
+      "Melanie Bernhardt",
+      "Stefan Winzeck"
+    ],
+    "publication_date": "2021-10-27",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "The study asks how protected characteristics such as race and biological sex become encoded in image-based disease detection models and whether that encoding drives subgroup performance disparities.",
+      "Using the public chest X-ray datasets CheXpert and MIMIC-CXR, the authors combine test-set resampling, transfer learning, multitask learning, and model inspection to assess subgroup performance and representation encoding.",
+      "They find subgroup disparities in shifted true and false positive rates that are partially reduced after correcting for population and prevalence shifts, and they conclude that the tested transfer-learning method is insufficient for establishing whether specific patient information is used."
+    ],
+    "kind": "main"
   },
   {
     "title": "Feature Robustness and Sex Differences in Medical Imaging: A Case Study in MRI-Based Alzheimer’s Disease Detection",
@@ -347,8 +407,21 @@
     "kind": "main",
     "doi": "10.1007/978-3-031-16431-6_9",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "authors": [
+      "Eike Petersen",
+      "Aasa Feragen",
+      "Maria Luise da Costa Zemsch",
+      "Anders Henriksen",
+      "Oskar Eiler Wiese Christensen",
+      "Melanie Ganz",
+      ""
+    ],
+    "publication_date": "2022",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This case study investigates robustness and sex-related performance differences in MRI-based Alzheimer’s disease detection under changes to dataset splits and training-set sex composition.",
+      "The authors compare a logistic regression model using manually selected volumetric features with a convolutional neural network trained on 3D MRI data from the ADNI dataset, then assess both models across varying splits, sex compositions, and disease stages.",
+      "The abstract reports no clear pattern of majority-group advantage, finds that the logistic regression model is robust to dataset composition, and notes that CNN performance improves for both male and female subjects when more female subjects are included in training."
     ]
   },
   {
@@ -386,8 +459,7 @@
         "Evaluation"
       ],
       "Stage": [
-        "Evaluation",
-        "Pre-processing"
+        "Evaluation"
       ],
       "Attributes": [
         "Skin tone"
@@ -403,9 +475,21 @@
     "kind": "main",
     "doi": "10.1007/978-3-030-59725-2_31",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking",
-      "Pre-processing Mitigation"
+    "authors": [
+      "Newton M. Kinyanjui",
+      "Timothy Odonga",
+      "Celia Cintas",
+      "Noel C. F. Codella",
+      "Rameswar Panda",
+      "Prasanna Sattigeri",
+      "Kush R. Varshney"
+    ],
+    "publication_date": "2020",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "The paper Fairness of Classifiers Across Skin Tones in Dermatology examines whether dermatology image classifiers perform fairly across skin tones.",
+      "It is a fairness benchmarking study that evaluates classifiers on the ISIC and SD-198 dermatology datasets using skin tone as the sensitive attribute and AP as the metric.",
+      "The systematic review reports that this study did not find an observable trend between model utility and skin tone, so the available evidence supports a limited or null discrepancy finding rather than a mitigation benefit."
     ]
   },
   {
@@ -447,7 +531,7 @@
         "Mitigation"
       ],
       "Stage": [
-        "Not verified"
+        "Evaluation"
       ],
       "Attributes": [
         "Race and ethnicity",
@@ -463,9 +547,12 @@
     "origin": "legacy",
     "kind": "main",
     "verified": false,
-    "topics": [
-      "Fairness Evaluation and Benchmarking",
-      "Mitigation with Unverified Stage"
+    "publication_date": "2022",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This study examines fairness gaps in chest X-ray classification.",
+      "It benchmarks prediction performance and bias-mitigation strategies across patient subgroups.",
+      "The systematic review reports that the evaluated mitigation methods did not consistently outperform the baseline with statistical significance."
     ]
   },
   {
@@ -524,9 +611,17 @@
     "arxiv_id": "2210.01725",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking",
-      "Mitigation with Unverified Stage"
+    "authors": [
+      "Yongshuo Zong",
+      "Yongxin Yang",
+      "Timothy Hospedales"
+    ],
+    "publication_date": "2023",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "Comparing bias mitigation methods for medical imaging is difficult because fairness criteria are inconsistent and experimental settings differ.",
+      "MEDFAIR benchmarks eleven algorithms across nine imaging datasets and three model selection criteria.",
+      "The benchmark finds that model selection criteria can significantly affect fairness outcomes, while the evaluated bias mitigation algorithms did not significantly improve fairness over empirical risk minimization in in-distribution and out-of-distribution settings."
     ]
   },
   {
@@ -573,9 +668,16 @@
     "arxiv_id": "2202.02832",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking",
-      "In-processing Mitigation"
+    "authors": [
+      "Peter J. Bevan",
+      "Amir Atapour-Abarghouei"
+    ],
+    "publication_date": "2021",
+    "method": "In-processing",
+    "tldr_en": [
+      "Convolutional neural networks for melanoma and skin lesion classification can show performance disparities across skin tones that should be addressed before widespread deployment.",
+      "The paper proposes an automated skin tone labelling algorithm for lesion images, applies it to annotate the ISIC benchmark, and uses the resulting labels as targets for two leading bias unlearning techniques to mitigate skin tone bias.",
+      "The primary abstract reports that the skin tone detection algorithm outperforms existing solutions and that unlearning skin tone may improve generalisation and reduce the performance disparity between melanoma detection in lighter and darker skin tones."
     ]
   },
   {
@@ -620,8 +722,18 @@
     "arxiv_id": "2107.02716",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "authors": [
+      "Charles Lu",
+      "Andreanne Lemay",
+      "Katharina Hoebel",
+      "Jayashree Kalpathy-Cramer"
+    ],
+    "publication_date": "2021-07-06",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "The study examines whether epistemic uncertainty can reveal race and scanner subgroup disparities in mammography-based breast density assessment.",
+      "Using 108,190 mammograms from 33 clinical sites, it compares uncertainty quantification metrics across demographic and data-acquisition subgroups while considering aggregate performance.",
+      "The abstract reports that aggregate performance can be comparable even when subgroup-level findings depend on the chosen uncertainty quantification metric."
     ]
   },
   {
@@ -660,10 +772,21 @@
     "origin": "legacy",
     "arxiv_id": "2104.00606",
     "verified": true,
-    "kind": "main",
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
-    ]
+    "authors": [
+      "Jessica Zosa Forde",
+      "A. Feder Cooper",
+      "Kweku Kwegyir-Aggrey",
+      "Chris De Sa",
+      "Michael Littman"
+    ],
+    "publication_date": "2021-04-01",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "The paper Model Selection's Disparate Impact in Real-World Deep Learning Applications examines how human preferences in model selection can produce disparate impact across demographic groups.",
+      "Using a deep learning model trained on real-world medical imaging data, the authors empirically test whether the choice of metric for model comparison, especially metrics that do not account for variability, biases model selection outcomes.",
+      "The authors argue that such metric choice can significantly bias model selection outcomes, indicating that fairness evaluation should consider model-selection practices as well as biased training data."
+    ],
+    "kind": "main"
   },
   {
     "title": "Harvard Glaucoma Fairness: A Retinal Nerve Disease Dataset for Fairness Learning and Fair Identity Normalization",
@@ -705,10 +828,24 @@
     "origin": "legacy",
     "arxiv_id": "2306.09264",
     "verified": true,
-    "kind": "main",
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
-    ]
+    "authors": [
+      "Yan Luo",
+      "Yu Tian",
+      "Min Shi",
+      "Louis R. Pasquale",
+      "Lucy Q. Shen",
+      "Nazlee Zebardast",
+      "Tobias Elze",
+      "Mengyu Wang"
+    ],
+    "publication_date": "2023-06-15",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "The paper addresses the scarcity of dedicated public medical imaging datasets for fairness learning in glaucoma detection.",
+      "It introduces Harvard-GF, a 2D/3D retinal nerve disease dataset with balanced racial groups, and proposes an equity-scaled performance measure while evaluating a fair identity normalization approach.",
+      "The abstract reports that the fair identity normalization approach showed superior performance against several fairness learning methods across racial, gender, and ethnicity tasks, supporting the dataset's utility for fairness comparisons."
+    ],
+    "kind": "main"
   },
   {
     "title": "Fairness in Cardiac MR Image Analysis: An Investigation of Bias Due to Data Imbalance in Deep Learning Based Segmentation",
@@ -754,8 +891,6 @@
         "Mitigation"
       ],
       "Stage": [
-        "Evaluation",
-        "In-processing",
         "Pre-processing"
       ],
       "Attributes": [
@@ -773,10 +908,21 @@
     "doi": "10.1007/978-3-030-87199-4_39",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking",
-      "Pre-processing Mitigation",
-      "In-processing Mitigation"
+    "authors": [
+      "Esther Puyol-Antón",
+      "Bram Ruijsink",
+      "Stefan K. Piechnik",
+      "Stefan Neubauer",
+      "Steffen E. Petersen",
+      "Reza Razavi",
+      "Andrew P. King"
+    ],
+    "publication_date": "2021",
+    "method": "Pre-processing",
+    "tldr_en": [
+      "For deep-learning segmentation of cardiac magnetic resonance images, the study examines fairness gaps associated with training-data imbalance across race and sex groups.",
+      "The review extraction reports that stratified batch resampling was applied to a baseline segmentation model, with an adversarial in-processing branch also indexed.",
+      "The review reports that stratified batch resampling was associated with a significant fairness improvement, although effect sizes and full experimental details cannot be established from the available record."
     ]
   },
   {
@@ -805,8 +951,7 @@
         "Evaluation"
       ],
       "Stage": [
-        "Evaluation",
-        "Pre-processing"
+        "In-processing"
       ],
       "Attributes": [
         "Not specified"
@@ -823,10 +968,20 @@
     "verified": true,
     "doi": "10.1038/s41467-023-39902-7",
     "kind": "main",
-    "topics": [
-      "Fairness Evaluation and Benchmarking",
-      "Bias Mechanisms and Measurement",
-      "Pre-processing Mitigation"
+    "authors": [
+      "Alexander Brown",
+      "Nenad Tomasev",
+      "Jan Freyberg",
+      "Yuan Liu",
+      "Alan Karthikesalingam",
+      "Jessica Schrouff"
+    ],
+    "publication_date": "2022-07-21",
+    "method": "In-processing",
+    "tldr_en": [
+      "Clinical machine learning models may learn shortcut correlations in training data and produce unfair subgroup performance, so the task is to detect and prevent shortcut learning in medical AI.",
+      "The authors propose a multi-task-learning shortcut-testing method for assessing and mitigating shortcut learning as part of fairness assessment and demonstrate it on radiology and dermatology tasks.",
+      "The abstract reports that the approach reveals cases where shortcutting is not responsible for unfairness, supporting a holistic view of mitigation, while quantitative results cannot be established from the available record."
     ]
   },
   {
@@ -872,9 +1027,16 @@
     "arxiv_id": "2104.01109",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking",
-      "Pre-processing Mitigation"
+    "authors": [
+      "Neil Joshi",
+      "Phil Burlina"
+    ],
+    "publication_date": "2021-03-15",
+    "method": "Pre-processing",
+    "tldr_en": [
+      "The paper AI Fairness via Domain Adaptation addresses fairness risks in deep learning diagnostic AI for age-related macular degeneration when training data are imbalanced.",
+      "Its method uses domain adaptation through training-set enhancement, namely generative models that synthesize additional training samples for underrepresented populations.",
+      "The abstract reports improved fairness from an originally biased AMD diagnostic model, but effect sizes and statistical details cannot be established from the available record."
     ]
   },
   {
@@ -917,8 +1079,7 @@
         "Mitigation"
       ],
       "Stage": [
-        "In-processing",
-        "Pre-processing"
+        "In-processing"
       ],
       "Attributes": [
         "Skin tone"
@@ -934,9 +1095,17 @@
     "doi": "10.1007/978-3-031-25069-9_14",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Pre-processing Mitigation",
-      "In-processing Mitigation"
+    "authors": [
+      "Arezou Pakzad",
+      "Kumar Abhishek",
+      "Ghassan Hamarneh"
+    ],
+    "publication_date": "2023",
+    "method": "In-processing",
+    "tldr_en": [
+      "CIRCLe targets skin-color-related bias in skin lesion classification.",
+      "It combines color-based data synthesis with contrastive representation learning to encourage color-invariant features.",
+      "The method links training-data variation to learned invariance, with the main representation-learning intervention placed under in-processing."
     ]
   },
   {
@@ -972,8 +1141,7 @@
         "Mitigation"
       ],
       "Stage": [
-        "Evaluation",
-        "Pre-processing"
+        "Evaluation"
       ],
       "Attributes": [
         "Age",
@@ -984,16 +1152,19 @@
         "Paper only"
       ],
       "Evidence": [
-        "Reviewed source"
+        "Primary abstract"
       ]
     },
     "origin": "legacy",
     "pmid": "33691020",
     "kind": "main",
     "verified": false,
-    "topics": [
-      "Fairness Evaluation and Benchmarking",
-      "Pre-processing Mitigation"
+    "publication_date": "2021-01-01",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "The study examines whether deep chest X-ray classifiers trained for diagnostic labels show performance disparities across protected patient attributes.",
+      "It trains convolutional neural networks to predict 14 diagnostic labels on MIMIC-CXR, Chest-Xray8, CheXpert, and a multi-site aggregation, then compares true positive rates by sex, age, race, and insurance type.",
+      "The paper reports true positive rate disparities across all datasets, clinical tasks, and subgroups, with the smallest disparities in the multi-source dataset and no significant correlation between disparities and subgroup disease burden."
     ]
   },
   {
@@ -1024,7 +1195,7 @@
         "Mitigation"
       ],
       "Stage": [
-        "Pre-processing"
+        "Evaluation"
       ],
       "Attributes": [
         "Age",
@@ -1042,10 +1213,25 @@
     "arxiv_id": "2111.11665",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking",
-      "Pre-processing Mitigation",
-      "EHR, Physiological Signals and Healthcare"
+    "authors": [
+      "Yuyin Zhou",
+      "Shih-Cheng Huang",
+      "Jason Alan Fries",
+      "Alaa Youssef",
+      "Timothy J. Amrhein",
+      "Marcello Chang",
+      "Imon Banerjee",
+      "Daniel Rubin",
+      "Lei Xing",
+      "Nigam Shah",
+      "Matthew P. Lungren"
+    ],
+    "publication_date": "2021-11-23",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "RadFusion addresses the lack of multimodal medical imaging benchmarks that combine CT scans with EHR context for pulmonary embolism detection and fairness assessment across demographic subgroups.",
+      "The study introduces a 1,794-patient benchmark dataset with EHR data and high-resolution CT scans labeled for pulmonary embolism and evaluates several representative multimodal fusion models for performance and fairness across gender, race/ethnicity, and age.",
+      "The supplied abstract reports that integrating imaging and EHR data can improve classification performance and robustness without introducing large true positive rate disparities between population groups."
     ]
   },
   {
@@ -1091,8 +1277,12 @@
     "origin": "legacy",
     "kind": "main",
     "verified": false,
-    "topics": [
-      "Pre-processing Mitigation"
+    "publication_date": "2022",
+    "method": "Pre-processing",
+    "tldr_en": [
+      "The paper addresses subgroup fairness disparities in medical image classification by harmonizing input images through sketching.",
+      "The reviewed record describes a language-guided sketching model that transforms input images into sketches before classification, which is a pre-processing intervention rather than a change to training objectives or a post-hoc adjustment.",
+      "The reviewed record reports less disparity among subgroups, suggesting a potential fairness benefit from sketching-based harmonization, but detailed quantitative results cannot be established from the available record."
     ]
   },
   {
@@ -1140,9 +1330,17 @@
     "doi": "10.1038/s41467-020-19784-9",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking",
-      "In-processing Mitigation"
+    "authors": [
+      "Qingyu Zhao",
+      "Ehsan Adeli",
+      "Kilian M. Pohl"
+    ],
+    "publication_date": "2020-11-26",
+    "method": "In-processing",
+    "tldr_en": [
+      "Deep learning models for medical imaging can learn spurious associations when confounders such as age or sex affect the relationship between images and outcomes.",
+      "The paper introduces an end-to-end training approach that derives features invariant to confounders while accounting for correlations between confounders and prediction outcomes, evaluated on HIV diagnosis from MRI, adolescent sex differences in NCANDA, and pediatric bone age from X-ray images.",
+      "The abstract reports that the method predicted accurately while reducing confounder-associated bias, but the available abstract does not provide quantitative effect sizes or statistical comparisons."
     ]
   },
   {
@@ -1181,7 +1379,7 @@
         "Paper only"
       ],
       "Evidence": [
-        "Primary metadata"
+        "Primary abstract"
       ]
     },
     "origin": "legacy",
@@ -1189,8 +1387,21 @@
     "pmid": "34522832",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "In-processing Mitigation"
+    "authors": [
+      "Ehsan Adeli",
+      "Qingyu Zhao",
+      "Adolf Pfefferbaum",
+      "Edith V. Sullivan",
+      "Li Fei-Fei",
+      "Juan Carlos Niebles",
+      "Kilian M. Pohl"
+    ],
+    "publication_date": "2021-01",
+    "method": "In-processing",
+    "tldr_en": [
+      "The paper addresses bias in learned representations for prediction tasks, including medical imaging, where dataset or task bias can undermine fair model behavior.",
+      "It proposes an adversarial training model with two competing objectives and a new adversarial loss that encourages learned features to be maximally task-discriminative while minimally dependent on protected bias variables.",
+      "In reported evaluations on synthetic data, medical images with task bias, and a gender classification dataset with dataset bias, the learned features yielded superior prediction performance and were described as unbiased."
     ]
   },
   {
@@ -1224,7 +1435,6 @@
         "Mitigation"
       ],
       "Stage": [
-        "Evaluation",
         "In-processing"
       ],
       "Attributes": [
@@ -1242,9 +1452,19 @@
     "doi": "10.1007/978-3-030-61166-8_20",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking",
-      "In-processing Mitigation"
+    "authors": [
+      "Samaneh Abbasi-Sureshjani",
+      "Ralf Raumanns",
+      "Britt E. J. Michels",
+      "Gerard Schouten",
+      "Veronika Cheplygina"
+    ],
+    "publication_date": "2020",
+    "method": "In-processing",
+    "tldr_en": [
+      "The paper addresses the risk that diagnostic algorithms trained on demographically biased medical data will learn and reproduce demographic disparities.",
+      "The available record classifies the work as an adversarial in-processing mitigation approach on dermatology images with age and sex attributes, but the supplied evidence does not include an abstract or full method.",
+      "Results and practical effects cannot be established from the available record, which contains only title-level and tabular classification evidence."
     ]
   },
   {
@@ -1290,8 +1510,12 @@
     "origin": "legacy",
     "kind": "main",
     "verified": false,
-    "topics": [
-      "In-processing Mitigation"
+    "publication_date": "2021",
+    "method": "In-processing",
+    "tldr_en": [
+      "The paper addresses estimating and improving fairness in medical imaging models for sensitive attributes such as age, sex and gender, and skin tone.",
+      "The supplied review evidence places it in an adversarial in-processing approach, where an adversarial branch reduces sensitive information in latent representations and an added branch predicts fairness on test data without sensitive attributes.",
+      "No result evidence is available in the supplied record, so performance improvements or clinical benefits cannot be established from it."
     ]
   },
   {
@@ -1338,9 +1562,19 @@
     "arxiv_id": "2102.06764",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking",
-      "In-processing Mitigation"
+    "authors": [
+      "Valeriia Cherepanova",
+      "Vedant Nanda",
+      "Micah Goldblum",
+      "John P. Dickerson",
+      "Tom Goldstein"
+    ],
+    "publication_date": "2021-02-12",
+    "method": "In-processing",
+    "tldr_en": [
+      "Fairness constraints for deep neural networks remain poorly understood in high-stakes settings such as facial recognition and medical imaging.",
+      "The study empirically tests state-of-the-art architectures on facial recognition and automated medical diagnosis datasets to examine how fairness objectives affect training.",
+      "The abstract reports that large models overfit to fairness objectives and produce unintended consequences, while specific numerical results and clinical implications cannot be established from the available record."
     ]
   },
   {
@@ -1378,11 +1612,14 @@
     },
     "origin": "legacy",
     "verified": false,
-    "kind": "main",
-    "topics": [
-      "Fairness Evaluation and Benchmarking",
-      "In-processing Mitigation"
-    ]
+    "publication_date": "2020",
+    "method": "In-processing",
+    "tldr_en": [
+      "This study examines the fairness of privacy-preserving representations in medical applications.",
+      "The systematic review places its representation-learning approach among training-time fairness methods.",
+      "The available bibliographic record does not establish whether privacy protection improves downstream subgroup performance."
+    ],
+    "kind": "main"
   },
   {
     "title": "On Fairness of Medical Image Classification with Multiple Sensitive Attributes via Learning Orthogonal Representations",
@@ -1429,9 +1666,18 @@
     "arxiv_id": "2301.01481",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking",
-      "In-processing Mitigation"
+    "authors": [
+      "Wenlong Deng",
+      "Yuan Zhong",
+      "Qi Dou",
+      "Xiaoxiao Li"
+    ],
+    "publication_date": "2023-01-04",
+    "method": "In-processing",
+    "tldr_en": [
+      "The paper addresses fairness in medical image classification when patients have multiple sensitive attributes.",
+      "It proposes fair representation learning that seeks independence between target and multi-sensitive representations through column-space and row-space orthogonality constraints.",
+      "The method's effectiveness is reported through experiments on CheXpert, but specific fairness or performance gains cannot be established from the available record."
     ]
   },
   {
@@ -1477,8 +1723,19 @@
     "arxiv_id": "2208.10013",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "In-processing Mitigation"
+    "authors": [
+      "Siyi Du",
+      "Ben Hers",
+      "Nourhan Bayasi",
+      "Ghassan Hamarneh",
+      "Rafeef Garbi"
+    ],
+    "publication_date": "2022-08-22",
+    "method": "In-processing",
+    "tldr_en": [
+      "Deep learning models for skin lesion diagnosis can show ethnic disparity, with lesions on darker skin types underrepresented and diagnosed less accurately.",
+      "FairDisCo is a disentanglement deep learning framework with contrastive learning that uses an additional network branch to remove skin-type information from representations and another contrastive branch to enhance feature extraction, and it is compared with resampling, reweighting, and attribute-aware fairness methods on Fitzpatrick17k and Diverse Dermatology Images.",
+      "The abstract reports fairer and superior skin lesion classification performance for FairDisCo, but exact gains and statistical significance cannot be established from the available record."
     ]
   },
   {
@@ -1524,8 +1781,19 @@
     "arxiv_id": "2303.08325",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "In-processing Mitigation"
+    "authors": [
+      "Zikang Xu",
+      "Shang Zhao",
+      "Quan Quan",
+      "Qingsong Yao",
+      "S. Kevin Zhou"
+    ],
+    "publication_date": "2023-03-15",
+    "method": "In-processing",
+    "tldr_en": [
+      "Dermatological disease classification models can show performance disparities across demographic subgroups.",
+      "FairAdaBN adapts batch normalization to the sensitive attribute, adds a mini-batch statistical parity loss, and introduces Fairness-Accuracy Trade-off Efficiency to measure fairness improvement relative to accuracy loss.",
+      "Experiments on two dermatological datasets reported better fairness criteria and FATE than other methods."
     ]
   },
   {
@@ -1572,9 +1840,17 @@
     "doi": "10.1007/978-3-030-90874-4_12",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking",
-      "In-processing Mitigation"
+    "authors": [
+      "Di Fan",
+      "Yifan Wu",
+      "Xiaoxiao Li"
+    ],
+    "publication_date": "2021",
+    "method": "In-processing",
+    "tldr_en": [
+      "The paper addresses fairness in swarm learning for skin lesion classification with respect to age and sex.",
+      "The study examines a federated swarm-learning setup in which each client contains only samples sharing the same sensitive attribute, evaluated on ISIC and Fitzpatrick-17k dermatology data with demographic parity and equalized odds.",
+      "The available record does not provide target-paper results, so whether this setup improves fairness and by how much cannot be established."
     ]
   },
   {
@@ -1620,8 +1896,19 @@
     "doi": "10.1007/978-3-031-16431-6_70",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Post-processing Mitigation"
+    "authors": [
+      "Yawen Wu",
+      "Dewen Zeng",
+      "Xiaowei Xu",
+      "Yiyu Shi",
+      "Jingtong Hu"
+    ],
+    "publication_date": "2022",
+    "method": "Post-processing",
+    "tldr_en": [
+      "FairPrune studies how neural network pruning can address unfairness in dermatological disease diagnosis.",
+      "Its main intervention modifies a trained network through pruning rather than changing the original dataset.",
+      "The review places this approach under post-processing, while the available bibliographic record does not establish quantitative gains."
     ]
   },
   {
@@ -1672,8 +1959,12 @@
     "origin": "legacy",
     "kind": "main",
     "verified": false,
-    "topics": [
-      "Post-processing Mitigation"
+    "publication_date": "2022",
+    "method": "Post-processing",
+    "tldr_en": [
+      "Deep chest X-ray classifiers can carry race and sex biases, so the paper targets debiasing for chest X-ray classification.",
+      "The title names intra-processing and post-processing, while the supplied review context links the work to a pruning strategy for unfairness when the sensitive attribute is unknown.",
+      "The review positions it as post-pruning mitigation on MIMIC-CXR with race and sex attributes and demographic parity/equalized odds metrics, but numerical results cannot be established from the available record."
     ]
   },
   {
@@ -1725,8 +2016,19 @@
     "origin": "review",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "authors": [
+      "Stefanos Ioannou",
+      "Hana Chockler",
+      "Alexander Hammers",
+      "Andrew P. King",
+      ""
+    ],
+    "publication_date": "2022",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "The study examines demographic bias in CNN-based brain MR segmentation, focusing on race and sex differences in segmentation performance.",
+      "The available systematic review describes a fairness evaluation that compares average Dice similarity coefficient at each spatial location in ADNI brain MRI segmentation.",
+      "The review reports severe unfairness in some spatial regions but little or no disparity in others, supporting component-wise fairness evaluation rather than only overall utility."
     ]
   },
   {
@@ -1782,8 +2084,20 @@
     "origin": "review",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "authors": [
+      "Tiarna Lee",
+      "Esther Puyol-Antón",
+      "Bram Ruijsink",
+      "Keana Aitcheson",
+      "Miaojing Shi",
+      "Andrew P. King"
+    ],
+    "publication_date": "2023",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "The paper investigates how deep learning model choice affects sex and race bias in cardiac MR segmentation.",
+      "The available record places it in fairness evaluation benchmarking for cardiac MR segmentation on UK Biobank, with race and sex as sensitive attributes and Dice similarity coefficient disparity as the reported metric.",
+      "The available evidence does not report result details, so specific performance or bias findings cannot be established from the available record."
     ]
   },
   {
@@ -1825,10 +2139,22 @@
     },
     "origin": "review",
     "verified": true,
-    "kind": "main",
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
-    ]
+    "authors": [
+      "Thorsten Kalb",
+      "Kaisar Kushibar",
+      "Celia Cintas",
+      "Karim Lekadir",
+      "Oliver Diaz",
+      "Richard Osuala"
+    ],
+    "publication_date": "2023",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "Dermatological lesion classifiers may perform unevenly across skin tones, making fairness evaluation important for clinical imaging.",
+      "The paper is indexed in a systematic review as a fairness benchmarking study for dermatological lesion classification on ISIC data with skin tone as the sensitive attribute and balanced-accuracy disparity as the recorded metric.",
+      "The available record does not provide a directly extractable result for this paper, so its empirical findings cannot be established from this evidence alone."
+    ],
+    "kind": "main"
   },
   {
     "title": "Algorithmic encoding of protected characteristics in chest X-ray disease detection models",
@@ -1874,15 +2200,24 @@
         "Paper only"
       ],
       "Evidence": [
-        "Primary metadata"
+        "Primary abstract"
       ]
     },
     "origin": "review",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking",
-      "Bias Mechanisms and Measurement"
+    "authors": [
+      "Ben Glocker",
+      "Charles Jones",
+      "Mélanie Bernhardt",
+      "Stefan Winzeck"
+    ],
+    "publication_date": "2023-03",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "Chest X-ray disease detection models may encode protected characteristics such as race and biological sex, raising concerns about subgroup performance disparities.",
+      "Using CheXpert and MIMIC-CXR, the study combines test-set resampling, transfer learning, multitask learning, and model inspection to probe whether protected characteristics are encoded and used by deep learning models.",
+      "The paper reports shifted true and false positive rates that are partly reduced after correcting for population and prevalence shifts, and finds transfer learning alone insufficient for determining whether patient information is used."
     ]
   },
   {
@@ -1925,10 +2260,19 @@
     },
     "origin": "review",
     "verified": true,
-    "kind": "main",
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
-    ]
+    "authors": [
+      "Chenxi Yuan",
+      "Kristin A. Linn",
+      "Rebecca A. Hubbard"
+    ],
+    "publication_date": "2023-11-07",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "The study examines whether machine learning models for predicting progression to mild cognitive impairment and Alzheimer disease perform fairly across sex, ethnicity, and race groups using neuropsychological, MRI, PET, and cerebrospinal fluid predictors.",
+      "It is a prognostic study evaluating logistic regression, support vector machine, and recurrent neural network models in Alzheimer Disease Neuroimaging Initiative participants with equal opportunity, equalized odds, and demographic parity metrics.",
+      "The models were accurate in aggregate but failed to satisfy fairness metrics, with lower sensitivity for Hispanic participants than non-Hispanic participants and lower sensitivity for Black and Asian participants than non-Hispanic White participants in several predictions, while sex differences were generally not significant except for some transitions."
+    ],
+    "kind": "main"
   },
   {
     "title": "An Investigation into Race Bias in Random Forest Models Based on Breast DCE-MRI Derived Radiomics Features",
@@ -1968,14 +2312,24 @@
         "Paper only"
       ],
       "Evidence": [
-        "Primary metadata"
+        "Primary abstract"
       ]
     },
     "origin": "review",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "authors": [
+      "Mohamed Huti",
+      "Tiarna Lee",
+      "Elinor Sawyer",
+      "Andrew P. King"
+    ],
+    "publication_date": "2023",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "The study investigates whether random forest models using radiomics features from breast dynamic contrast-enhanced MRI show race bias when predicting tumour molecular subtype.",
+      "It measures race-identifiable information in the radiomics features and evaluates subgroup performance of subtype models trained on race-imbalanced data.",
+      "The authors report that race could be predicted from radiomics features with 60-70% accuracy for some feature subsets and that subtype models appeared biased toward the race represented in training."
     ]
   },
   {
@@ -2019,10 +2373,23 @@
     },
     "origin": "review",
     "verified": true,
-    "kind": "main",
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
-    ]
+    "authors": [
+      "Vien Ngoc Dang",
+      "Adrià Casamitjana",
+      "Martijn P. A. Starmans",
+      "Carlos Martín-Isla",
+      "Jerónimo Hernández-González",
+      "Karim Lekadir",
+      "for the Alzheimer’s Disease Neuroimaging Initiative"
+    ],
+    "publication_date": "2023",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "The paper addresses auditing unfair biases in CNN-based diagnosis of Alzheimer’s disease using medical imaging.",
+      "The title-indicated study design is a fairness evaluation and benchmarking audit of CNN diagnostic models across sex and gender, age, and race and ethnicity, with no mitigation pipeline supported by the record.",
+      "No result evidence is available in the record, so the audit's empirical findings and practical interpretation cannot be established from the available record."
+    ],
+    "kind": "main"
   },
   {
     "title": "From Head and Neck Tumour and Lymph Node Segmentation to Survival Prediction on PET/CT: An End-to-End Framework Featuring Uncertainty, Fairness, and Multi-Region Multi-Modal Radiomics",
@@ -2064,10 +2431,23 @@
     },
     "origin": "review",
     "verified": true,
-    "kind": "main",
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
-    ]
+    "authors": [
+      "Zohaib Salahuddin",
+      "Yi Chen",
+      "Xian Zhong",
+      "Henry C. Woodruff",
+      "Nastaran Mohammadian Rad",
+      "Shruti Atul Mali",
+      "Philippe Lambin"
+    ],
+    "publication_date": "2023-03-23",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This study combines head-and-neck tumor and lymph-node segmentation with recurrence-free survival prediction from PET and CT.",
+      "It uses segmentation uncertainty, multimodal radiomics and bias evaluation across age, sex, treatment, HPV status and lesion size.",
+      "The abstract reports segmentation and survival-prediction results, but those aggregate results alone do not establish equal performance across subgroups."
+    ],
+    "kind": "main"
   },
   {
     "title": "Higher performance for women than men in MRI-based Alzheimer’s disease detection",
@@ -2113,8 +2493,21 @@
     "origin": "review",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "authors": [
+      "Malte Klingenberg",
+      "Didem Stark",
+      "Fabian Eitel",
+      "Céline Budding",
+      "Mohamad Habes",
+      "Kerstin Ritter",
+      ""
+    ],
+    "publication_date": "2023-04-20",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This study tests whether an MRI-based Alzheimer disease classifier has sex and age biases despite balanced training data.",
+      "A convolutional network is evaluated across repeated train-validation-test splits and interpreted with layer-wise relevance propagation.",
+      "The reported higher performance for women shows that demographic balance in training does not automatically ensure equal subgroup performance."
     ]
   },
   {
@@ -2155,10 +2548,14 @@
     },
     "origin": "review",
     "verified": false,
-    "kind": "main",
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
-    ]
+    "publication_date": "2023",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This work investigates biases embedded in chest X-ray datasets.",
+      "Generative adversarial networks are used to visualize differences associated with demographic characteristics.",
+      "The resulting visualizations support bias-source investigation rather than establishing that a downstream classifier has been debiased."
+    ],
+    "kind": "main"
   },
   {
     "title": "The role of subgroup separability in group-fair medical image classification",
@@ -2201,10 +2598,19 @@
     },
     "origin": "review",
     "verified": true,
-    "kind": "main",
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
-    ]
+    "authors": [
+      "Charles Jones",
+      "Mélanie Roschewitz",
+      "Ben Glocker"
+    ],
+    "publication_date": "2023",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This study examines the relationship between subgroup separability and fairness in medical image classification.",
+      "It investigates whether the ability to distinguish demographic groups is related to differences in diagnostic performance.",
+      "The review identifies subgroup separability as relevant to disparity, without treating sensitive-attribute encoding alone as proof of discrimination."
+    ],
+    "kind": "main"
   },
   {
     "title": "Are sex-based physiological differences the cause of gender bias for chest X-ray diagnosis?",
@@ -2244,10 +2650,20 @@
     },
     "origin": "review",
     "verified": true,
-    "kind": "main",
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
-    ]
+    "authors": [
+      "Nina Weng",
+      "Siavash Bigdeli",
+      "Eike Petersen",
+      "Aasa Feragen"
+    ],
+    "publication_date": "2023",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This study asks whether sex-related physiological differences explain gender bias in chest X-ray diagnosis.",
+      "It tests a proposed connection between breast-related image differences and unequal model performance.",
+      "The systematic review reports that the results do not support this particular explanation, motivating further investigation of other bias mechanisms."
+    ],
+    "kind": "main"
   },
   {
     "title": "Bias in unsupervised anomaly detection in brain MRI",
@@ -2288,10 +2704,22 @@
     },
     "origin": "review",
     "verified": true,
-    "kind": "main",
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
-    ]
+    "authors": [
+      "Cosmin I. Bercea",
+      "Esther Puyol-Antón",
+      "Benedikt Wiestler",
+      "Daniel Rueckert",
+      "Julia A. Schnabel",
+      "Andrew P. King"
+    ],
+    "publication_date": "2023",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This work investigates bias in unsupervised anomaly detection using brain MRI.",
+      "It extends fairness assessment beyond supervised diagnostic classification to anomaly-detection models.",
+      "The available record identifies the task and fairness question but does not establish a specific mitigation effect or numerical disparity."
+    ],
+    "kind": "main"
   },
   {
     "title": "Detecting shortcuts in medical images-a case study in chest x-rays",
@@ -2332,20 +2760,29 @@
     },
     "origin": "review",
     "verified": true,
-    "kind": "main",
-    "topics": [
-      "Fairness Evaluation and Benchmarking",
-      "Bias Mechanisms and Measurement"
-    ]
+    "authors": [
+      "Amelia Jiménez-Sánchez",
+      "Dovile Juodelyte",
+      "Bethany Chamberlain",
+      "Veronika Cheplygina"
+    ],
+    "publication_date": "2023-04-18",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This study investigates shortcut learning in chest X-ray analysis.",
+      "It examines image cues such as drainage devices that may influence diagnostic predictions.",
+      "The review uses this case to illustrate how clinically incidental visual features can contribute to unfair model behavior."
+    ],
+    "kind": "main"
   },
   {
     "title": "Evaluating the fairness of deep learning uncertainty estimates in medical image analysis",
-    "year": "2023",
-    "venue": "Referenced study",
+    "year": "2024",
+    "venue": "MIDL",
     "doi": "",
     "pmid": "",
     "links": {
-      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR12"
+      "Paper": "https://proceedings.mlr.press/v227/mehta24a.html"
     },
     "sources": [
       {
@@ -2372,15 +2809,25 @@
         "Paper only"
       ],
       "Evidence": [
-        "Reviewed source"
+        "Primary abstract"
       ]
     },
     "origin": "review",
     "verified": false,
-    "kind": "main",
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
-    ]
+    "arxiv_id": "2303.03242",
+    "authors": [
+      "Raghav Mehta",
+      "Changjian Shui",
+      "Tal Arbel"
+    ],
+    "publication_date": "2024-07",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This study evaluates whether fairer medical imaging predictions also have reliable uncertainty estimates.",
+      "It compares fairness interventions on skin lesion classification, brain tumor segmentation and Alzheimer disease score regression.",
+      "The abstract reports that improvements in subgroup prediction performance can come at the cost of poorer uncertainty estimates."
+    ],
+    "kind": "main"
   },
   {
     "title": "A comparative study of fairness in medical machine learning",
@@ -2416,9 +2863,7 @@
         "Mitigation"
       ],
       "Stage": [
-        "In-processing",
-        "Post-processing",
-        "Pre-processing"
+        "Evaluation"
       ],
       "Attributes": [
         "Age",
@@ -2434,10 +2879,20 @@
     "origin": "review",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Pre-processing Mitigation",
-      "In-processing Mitigation",
-      "Post-processing Mitigation"
+    "authors": [
+      "Tochi Oguguo",
+      "Ghada Zamzmi",
+      "Sivaramakrishnan Rajaraman",
+      "Feng Yang",
+      "Zhiyun Xue",
+      "Sameer Antani"
+    ],
+    "publication_date": "2023-04-18",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This study compares fairness approaches in medical machine learning.",
+      "The review records interventions spanning data redistribution, training constraints and post-training calibration.",
+      "Its comparative contribution is placed under fairness evaluation rather than arbitrarily assigning the whole study to a single mitigation stage."
     ]
   },
   {
@@ -2478,10 +2933,20 @@
     },
     "origin": "review",
     "verified": true,
-    "kind": "main",
-    "topics": [
-      "Pre-processing Mitigation"
-    ]
+    "authors": [
+      "Alceu Bissoto",
+      "Michel Fornaciali",
+      "Eduardo Valle",
+      "Sandra Avila"
+    ],
+    "publication_date": "2019-06",
+    "method": "Pre-processing",
+    "tldr_en": [
+      "This paper investigates how bias is constructed in skin lesion datasets.",
+      "The systematic review discusses the work in the context of data-level harmonization before model training.",
+      "The available record supports a focus on dataset bias but does not establish the magnitude of any downstream fairness improvement."
+    ],
+    "kind": "main"
   },
   {
     "title": "Debiasing skin lesion datasets and models? Not so fast",
@@ -2521,10 +2986,19 @@
     },
     "origin": "review",
     "verified": true,
-    "kind": "main",
-    "topics": [
-      "Pre-processing Mitigation"
-    ]
+    "authors": [
+      "Alceu Bissoto",
+      "Eduardo Valle",
+      "Sandra Avila"
+    ],
+    "publication_date": "2020-06",
+    "method": "Pre-processing",
+    "tldr_en": [
+      "This study questions whether apparently debiased skin lesion datasets and models are actually free of bias.",
+      "It examines data-level debiasing, with the systematic review placing the work under preprocessing and harmonization.",
+      "The title and review classification warrant caution about debiasing claims, while detailed empirical conclusions require the original methods and results."
+    ],
+    "kind": "main"
   },
   {
     "title": "Detect and correct bias in multi-site neuroimaging datasets",
@@ -2559,15 +3033,24 @@
         "Paper only"
       ],
       "Evidence": [
-        "Primary metadata"
+        "Primary abstract"
       ]
     },
     "origin": "review",
     "verified": true,
-    "kind": "main",
-    "topics": [
-      "Pre-processing Mitigation"
-    ]
+    "authors": [
+      "Christian Wachinger",
+      "Anna Rieckmann",
+      "Sebastian Pölsterl"
+    ],
+    "publication_date": "2021-01",
+    "method": "Pre-processing",
+    "tldr_en": [
+      "This study examines biases introduced when neuroimaging scans are pooled across independent studies.",
+      "It analyzes dataset identifiability and latent confounding before presenting methods for dataset harmonization.",
+      "The abstract reports strong dataset-identification performance, demonstrating that combining larger datasets does not automatically remove study-specific information."
+    ],
+    "kind": "main"
   },
   {
     "title": "De-identification and obfuscation of gender attributes from retinal scans",
@@ -2607,10 +3090,28 @@
     },
     "origin": "review",
     "verified": true,
-    "kind": "main",
-    "topics": [
-      "Pre-processing Mitigation"
-    ]
+    "authors": [
+      "Chenwei Wu",
+      "Xiyu Yang",
+      "Emil Ghitman Gilkes",
+      "Hanwen Cui",
+      "Jiheon Choi",
+      "Na Sun",
+      "Ziqian Liao",
+      "Bo Fan",
+      "Mauricio Santillana",
+      "Leo Celi",
+      "Paolo Silva",
+      "Luis Nakayama"
+    ],
+    "publication_date": "2023",
+    "method": "Pre-processing",
+    "tldr_en": [
+      "This study addresses gender-related information in retinal scans.",
+      "It investigates de-identification and attribute obfuscation, which the systematic review treats as data-level harmonization.",
+      "Removing identifiable attribute information is a distinct objective from proving equal downstream diagnostic performance."
+    ],
+    "kind": "main"
   },
   {
     "title": "EdgeMixup: embarrassingly simple data alteration to improve Lyme disease lesion segmentation and diagnosis fairness",
@@ -2650,10 +3151,24 @@
     },
     "origin": "review",
     "verified": true,
-    "kind": "main",
-    "topics": [
-      "Pre-processing Mitigation"
-    ]
+    "authors": [
+      "Haolin Yuan",
+      "John Aucott",
+      "Armin Hadzic",
+      "William Paul",
+      "Marcia Villegas de Flores",
+      "Philip Mathew",
+      "Philippe Burlina",
+      "Yinzhi Cao"
+    ],
+    "publication_date": "2023",
+    "method": "Pre-processing",
+    "tldr_en": [
+      "EdgeMixup addresses fairness in Lyme disease lesion segmentation and diagnosis.",
+      "Its intervention alters training data through an edge-based mixing strategy.",
+      "The available record identifies a data-level mitigation approach but does not establish the size or statistical reliability of its fairness gains."
+    ],
+    "kind": "main"
   },
   {
     "title": "Bias in machine learning models can be significantly mitigated by careful training: Evidence from neuroimaging studies",
@@ -2700,8 +3215,17 @@
     "origin": "review",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Pre-processing Mitigation"
+    "authors": [
+      "Rongguang Wang",
+      "Pratik Chaudhari",
+      "Christos Davatzikos"
+    ],
+    "publication_date": "2023-01-30",
+    "method": "Pre-processing",
+    "tldr_en": [
+      "This study tests whether carefully trained neuroimaging models necessarily exhibit demographic bias.",
+      "It evaluates Alzheimer disease, schizophrenia and autism models across multiple MRI studies and demographic subgroups.",
+      "The abstract reports well-generalizing models with low measured bias, showing that unequal performance is not an inevitable outcome of medical machine learning."
     ]
   },
   {
@@ -2733,7 +3257,6 @@
         "Mitigation"
       ],
       "Stage": [
-        "Evaluation",
         "Pre-processing"
       ],
       "Attributes": [
@@ -2743,15 +3266,25 @@
         "Paper only"
       ],
       "Evidence": [
-        "Primary metadata"
+        "Primary abstract"
       ]
     },
     "origin": "review",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking",
-      "Pre-processing Mitigation"
+    "authors": [
+      "Philippe Burlina",
+      "Neil Joshi",
+      "William Paul",
+      "Katia D. Pacheco",
+      "Neil M. Bressler"
+    ],
+    "publication_date": "2021-02-11",
+    "method": "Pre-processing",
+    "tldr_en": [
+      "This study examines diagnostic bias caused by retinal-image training imbalance and domain generalization.",
+      "It constructs an imbalanced diabetic-retinopathy training scenario and compares baseline models with generative data augmentation.",
+      "The design tests whether synthetic training examples can reduce a deliberately introduced diagnostic gap rather than assuming augmentation guarantees fairness."
     ]
   },
   {
@@ -2788,15 +3321,28 @@
         "Paper only"
       ],
       "Evidence": [
-        "Primary metadata"
+        "Primary abstract"
       ]
     },
     "origin": "review",
     "verified": true,
-    "kind": "main",
-    "topics": [
-      "Pre-processing Mitigation"
-    ]
+    "authors": [
+      "Guilherme Pombo",
+      "Robert Gray",
+      "M. Jorge Cardoso",
+      "Sebastien Ourselin",
+      "Geraint Rees",
+      "John Ashburner",
+      "Parashkev Nachev"
+    ],
+    "publication_date": "2023-02",
+    "method": "Pre-processing",
+    "tldr_en": [
+      "CounterSynth addresses inequitable brain-imaging predictions associated with imbalance and confounding.",
+      "It generates morphologically constrained counterfactual MRI augmentations and evaluates them using UK Biobank and OASIS data.",
+      "The abstract reports improvements in predictive fidelity and equity under the tested imbalance and confounding scenarios."
+    ],
+    "kind": "main"
   },
   {
     "title": "Disproportionate subgroup impacts and other challenges of fairness in artificial intelligence for medical image analysis",
@@ -2836,10 +3382,19 @@
     },
     "origin": "review",
     "verified": true,
-    "kind": "main",
-    "topics": [
-      "In-processing Mitigation"
-    ]
+    "authors": [
+      "Emma A. M. Stanley",
+      "Matthias Wilms",
+      "Nils D. Forkert"
+    ],
+    "publication_date": "2022",
+    "method": "In-processing",
+    "tldr_en": [
+      "This work addresses disproportionate subgroup impacts in medical image analysis.",
+      "The systematic review includes it among training-time adversarial approaches to unfairness mitigation.",
+      "The available record supports this intervention category but does not establish numerical gains, clinical benefits or a universally preferred fairness criterion."
+    ],
+    "kind": "main"
   },
   {
     "title": "A Systematic Review of ‘Fair’ AI Model Development for Image Classification and Prediction",
@@ -2865,7 +3420,7 @@
         "Mitigation"
       ],
       "Stage": [
-        "In-processing"
+        "Evaluation"
       ],
       "Attributes": [
         "Race and ethnicity"
@@ -2880,8 +3435,21 @@
     "origin": "review",
     "verified": true,
     "kind": "survey",
-    "topics": [
-      "In-processing Mitigation"
+    "authors": [
+      "Ramon Correa",
+      "Mahtab Shaan",
+      "Hari Trivedi",
+      "Bhavik Patel",
+      "Leo Anthony G. Celi",
+      "Judy W. Gichoya",
+      "Imon Banerjee"
+    ],
+    "publication_date": "2022-10-15",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This systematic review examines fair AI model development for image classification and prediction.",
+      "It synthesizes methodological approaches rather than presenting a single new mitigation algorithm.",
+      "It serves as a methodological reference, with applicability to a specific medical task requiring assessment of the underlying studies."
     ]
   },
   {
@@ -2922,10 +3490,21 @@
     },
     "origin": "review",
     "verified": true,
-    "kind": "main",
-    "topics": [
-      "In-processing Mitigation"
-    ]
+    "authors": [
+      "Luyang Luo",
+      "Dunyuan Xu",
+      "Hao Chen",
+      "Tien-Tsin Wong",
+      "Pheng-Ann Heng"
+    ],
+    "publication_date": "2022",
+    "method": "In-processing",
+    "tldr_en": [
+      "This study targets biased chest X-ray classification through pseudo bias-balanced learning.",
+      "It changes the learning procedure to account for bias when explicit balanced training conditions are not assured.",
+      "The systematic review classifies the approach as training-time mitigation, while the available record does not establish quantitative improvement."
+    ],
+    "kind": "main"
   },
   {
     "title": "Rényi fair information bottleneck for image classification",
@@ -2934,7 +3513,7 @@
     "doi": "",
     "pmid": "",
     "links": {
-      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR121"
+      "Paper": "https://arxiv.org/abs/2203.04950"
     },
     "sources": [
       {
@@ -2960,15 +3539,27 @@
         "Paper only"
       ],
       "Evidence": [
-        "Reviewed source"
+        "Primary abstract"
       ]
     },
     "origin": "review",
     "verified": false,
-    "kind": "main",
-    "topics": [
-      "In-processing Mitigation"
-    ]
+    "arxiv_id": "2203.04950",
+    "authors": [
+      "Adam Gronowski",
+      "William Paul",
+      "Fady Alajaji",
+      "Bahman Gharesifard",
+      "Philippe Burlina"
+    ],
+    "publication_date": "2022-03-09",
+    "method": "In-processing",
+    "tldr_en": [
+      "RFIB addresses the joint objectives of predictive utility, fairness and compact representation learning.",
+      "It derives a variational loss using tunable Renyi divergence and evaluates demographic-parity and equalized-odds constraints on EyePACS classification.",
+      "The abstract reports favorable utility-fairness metrics relative to compared methods on this medical imaging dataset."
+    ],
+    "kind": "main"
   },
   {
     "title": "Improving model fairness in image-based computer-aided diagnosis",
@@ -3019,8 +3610,26 @@
     "origin": "review",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "In-processing Mitigation"
+    "authors": [
+      "Mingquan Lin",
+      "Tianhao Li",
+      "Yifan Yang",
+      "Gregory Holste",
+      "Ying Ding",
+      "Sarah H. Van Tassel",
+      "Kyle Kovacs",
+      "George Shih",
+      "Zhangyang Wang",
+      "Zhiyong Lu",
+      "Fei Wang",
+      "Yifan Peng"
+    ],
+    "publication_date": "2023-10-06",
+    "method": "In-processing",
+    "tldr_en": [
+      "This study seeks to improve fairness in image-based computer-aided diagnosis without substantially reducing overall discrimination.",
+      "It introduces a learning algorithm based on marginal pairwise equal opportunity and evaluates it on four tasks and independent cohorts.",
+      "The abstract reports reduced fairness differences for individual and intersectional subgroups while typically changing AUC by less than one percent."
     ]
   },
   {
@@ -3047,7 +3656,7 @@
         "Mitigation"
       ],
       "Stage": [
-        "In-processing"
+        "Pre-processing"
       ],
       "Attributes": [
         "Age"
@@ -3056,15 +3665,25 @@
         "Paper only"
       ],
       "Evidence": [
-        "Primary metadata"
+        "Primary abstract"
       ]
     },
     "origin": "review",
     "verified": true,
-    "kind": "main",
-    "topics": [
-      "In-processing Mitigation"
-    ]
+    "authors": [
+      "Shammi More",
+      "Simon B. Eickhoff",
+      "Julian Caspers",
+      "Kaustubh R. Patil"
+    ],
+    "publication_date": "2021",
+    "method": "Pre-processing",
+    "tldr_en": [
+      "This study investigates how confound removal and normalization affect neuroimaging-based sex prediction.",
+      "It compares whole-data and cross-validated confound regression together with Z-score normalization across alternative pipelines.",
+      "The key fairness-related concern is whether preprocessing choices distort generalization estimates or leave confounding information in the analysis."
+    ],
+    "kind": "main"
   },
   {
     "title": "A Penalty Approach for Normalizing Feature Distributions to Build Confounder-Free Models",
@@ -3100,15 +3719,26 @@
         "Paper only"
       ],
       "Evidence": [
-        "Primary metadata"
+        "Primary abstract"
       ]
     },
     "origin": "review",
     "verified": true,
-    "kind": "main",
-    "topics": [
-      "In-processing Mitigation"
-    ]
+    "authors": [
+      "Anthony Vento",
+      "Qingyu Zhao",
+      "Robert Paul",
+      "Kilian M. Pohl",
+      "Ehsan Adeli"
+    ],
+    "publication_date": "2022",
+    "method": "In-processing",
+    "tldr_en": [
+      "This paper addresses confounding effects in features learned for clinical machine learning.",
+      "It extends metadata normalization with a penalty-based approximation to a bilevel optimization problem.",
+      "The method targets more stable confounder-aware feature learning than minibatch-dependent closed-form normalization."
+    ],
+    "kind": "main"
   },
   {
     "title": "Conditional VAEs for confound removal and normative modelling of neurodegenerative diseases",
@@ -3148,10 +3778,20 @@
     },
     "origin": "review",
     "verified": true,
-    "kind": "main",
-    "topics": [
-      "In-processing Mitigation"
-    ]
+    "authors": [
+      "Ana Lawry Aguila",
+      "James Chapman",
+      "Mohammed Janahi",
+      "Andre Altmann"
+    ],
+    "publication_date": "2022",
+    "method": "In-processing",
+    "tldr_en": [
+      "This work addresses confounding in normative models of neurodegenerative disease.",
+      "It uses conditional variational autoencoders for confound removal and normative modeling.",
+      "The available record identifies the representation-learning intervention but does not establish a particular subgroup fairness gain."
+    ],
+    "kind": "main"
   },
   {
     "title": "Fairness by learning orthogonal disentangled representations",
@@ -3160,7 +3800,7 @@
     "doi": "",
     "pmid": "",
     "links": {
-      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR83"
+      "Paper": "https://arxiv.org/abs/2003.05707"
     },
     "sources": [
       {
@@ -3187,15 +3827,26 @@
         "Paper only"
       ],
       "Evidence": [
-        "Reviewed source"
+        "Primary abstract"
       ]
     },
     "origin": "review",
     "verified": false,
-    "kind": "main",
-    "topics": [
-      "In-processing Mitigation"
-    ]
+    "arxiv_id": "2003.05707",
+    "authors": [
+      "Mhd Hasan Sarhan",
+      "Nassir Navab",
+      "Abouzar Eslami",
+      "Shadi Albarqouni"
+    ],
+    "publication_date": "2022",
+    "method": "In-processing",
+    "tldr_en": [
+      "This study learns task-relevant representations that are invariant to sensitive or nuisance attributes.",
+      "It combines orthogonality-based disentanglement with entropy maximization to separate meaningful and sensitive information.",
+      "The abstract reports competitive performance across five datasets, while downstream fairness remains dependent on the evaluated task and constraints."
+    ],
+    "kind": "main"
   },
   {
     "title": "Fairtune: Optimizing parameter efficient fine tuning for fairness in medical image analysis",
@@ -3204,7 +3855,7 @@
     "doi": "",
     "pmid": "",
     "links": {
-      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR89"
+      "Paper": "https://arxiv.org/abs/2310.05055"
     },
     "sources": [
       {
@@ -3232,15 +3883,26 @@
         "Paper only"
       ],
       "Evidence": [
-        "Reviewed source"
+        "Primary abstract"
       ]
     },
     "origin": "review",
     "verified": false,
-    "kind": "main",
-    "topics": [
-      "In-processing Mitigation"
-    ]
+    "arxiv_id": "2310.05055",
+    "authors": [
+      "Raman Dutt",
+      "Ondrej Bohdal",
+      "Sotirios A. Tsaftaris",
+      "Timothy Hospedales"
+    ],
+    "publication_date": "2024",
+    "method": "In-processing",
+    "tldr_en": [
+      "FairTune addresses the fairness generalization gap when adapting pretrained models to medical imaging tasks.",
+      "It uses validation fairness to optimize parameter-efficient fine-tuning choices through bilevel optimization.",
+      "The approach treats the amount and location of model adaptation as fairness-relevant training decisions rather than assuming perfect training fairness will transfer to test data."
+    ],
+    "kind": "main"
   },
   {
     "title": "Mitigating bias in MRI-based Alzheimer’s disease classifiers through pruning of deep neural networks",
@@ -3281,10 +3943,20 @@
     },
     "origin": "review",
     "verified": true,
-    "kind": "main",
-    "topics": [
-      "Post-processing Mitigation"
-    ]
+    "authors": [
+      "Yun-Yang Huang",
+      "Venesia Chiuwanara",
+      "Chao-Hsuan Lin",
+      "Po-Chih Kuo"
+    ],
+    "publication_date": "2023",
+    "method": "Post-processing",
+    "tldr_en": [
+      "This study targets bias in MRI-based Alzheimer disease classification.",
+      "It applies neural network pruning as the main intervention on an already trained classifier.",
+      "The systematic review places the work under post-processing, while the available record does not establish quantitative gains or whether every model component remains fixed."
+    ],
+    "kind": "main"
   },
   {
     "title": "Fairness in Deep Learning: A Computational Perspective",
@@ -3322,8 +3994,12 @@
     "origin": "faimi",
     "kind": "survey",
     "verified": false,
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "publication_date": "2020",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This work examines fairness in deep learning from a computational perspective.",
+      "It provides a general methodological discussion rather than a single medical-imaging intervention.",
+      "Its role in this catalog is background for evaluating fairness assumptions, with medical applicability determined by the specific downstream setting."
     ]
   },
   {
@@ -3363,8 +4039,19 @@
     "doi": "10.1145/3457607",
     "kind": "survey",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "authors": [
+      "Ninareh Mehrabi",
+      "Fred Morstatter",
+      "Nripsuta Saxena",
+      "Kristina Lerman",
+      "Aram Galstyan"
+    ],
+    "publication_date": "2021-07-13",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This survey examines bias and fairness across machine-learning applications.",
+      "It organizes sources of bias, mathematical fairness definitions and technical mitigation approaches.",
+      "It provides general methodological background for medical fairness research rather than new evidence of a clinical subgroup disparity."
     ]
   },
   {
@@ -3397,15 +4084,29 @@
         "Paper only"
       ],
       "Evidence": [
-        "Primary metadata"
+        "Primary abstract"
       ]
     },
     "origin": "faimi",
     "doi": "10.1038/s41551-023-01056-8",
     "kind": "survey",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "authors": [
+      "Richard J. Chen",
+      "Judy J. Wang",
+      "Drew F. K. Williamson",
+      "Tiffany Y. Chen",
+      "Jana Lipkova",
+      "Ming Y. Lu",
+      "Sharifa Sahai",
+      "Faisal Mahmood"
+    ],
+    "publication_date": "2023-06-28",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This perspective considers how insufficiently fair AI systems can undermine equitable healthcare.",
+      "It connects clinical workflow biases to subgroup inequalities and reviews approaches including disentanglement, federated learning and explainability.",
+      "The discussion emphasizes that fairness assessment and mitigation must be interpreted in the context of clinical data and deployment."
     ]
   },
   {
@@ -3445,8 +4146,20 @@
     "doi": "10.1038/s41746-024-01276-5",
     "kind": "survey",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "authors": [
+      "Zikang Xu",
+      "Jun Li",
+      "Qingsong Yao",
+      "Han Li",
+      "Mingyue Zhao",
+      "S. Kevin Zhou"
+    ],
+    "publication_date": "2024-10-17",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This systematic review examines methodological approaches to fairness in deep learning-based medical image analysis.",
+      "It organizes the literature into fairness evaluation and unfairness mitigation through pre-processing, in-processing and post-processing.",
+      "The review identifies open methodological and clinical challenges and supplies the organizing framework used by this catalog."
     ]
   },
   {
@@ -3470,7 +4183,7 @@
         "Mitigation"
       ],
       "Stage": [
-        "Not verified"
+        "Evaluation"
       ],
       "Attributes": [
         "Not specified"
@@ -3479,15 +4192,27 @@
         "Paper only"
       ],
       "Evidence": [
-        "Primary metadata"
+        "Primary abstract"
       ]
     },
     "origin": "faimi",
     "doi": "10.1038/s41746-025-01503-7",
     "kind": "survey",
     "verified": true,
-    "topics": [
-      "Mitigation with Unverified Stage"
+    "authors": [
+      "Fereshteh Hasanzadeh",
+      "Colin B. Josephson",
+      "Gabriella Waters",
+      "Demilade Adedinsewo",
+      "Zahra Azizi",
+      "James A. White"
+    ],
+    "publication_date": "2025-03-11",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This review examines the origins of bias in healthcare AI and strategies for recognizing and mitigating it.",
+      "It discusses stakeholder responsibilities and bias-management activities across the model lifecycle.",
+      "The central recommendation is to assess bias from conception through deployment and longitudinal surveillance rather than at a single development stage."
     ]
   },
   {
@@ -3527,8 +4252,16 @@
     "doi": "10.1093/jamiaopen/ooae149",
     "kind": "survey",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "authors": [
+      "Joshua W Anderson",
+      "Shyam Visweswaran"
+    ],
+    "publication_date": "2024-12-26",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This scoping review examines algorithmic individual fairness and its use in healthcare.",
+      "It searches multiple bibliographic databases for fairness metrics, mitigation methods and healthcare applications.",
+      "It complements group-based fairness analyses by focusing on how algorithms treat comparable individuals."
     ]
   },
   {
@@ -3568,9 +4301,18 @@
     "doi": "10.1126/science.aax2342",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking",
-      "EHR, Physiological Signals and Healthcare"
+    "authors": [
+      "Ziad Obermeyer",
+      "Brian Powers",
+      "Christine Vogeli",
+      "Sendhil Mullainathan"
+    ],
+    "publication_date": "2019-10-25",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This study investigates racial bias in a commercial algorithm used to identify patients for additional care.",
+      "It compares health needs at the same assigned risk and examines healthcare costs as the algorithmic target.",
+      "The authors trace the disparity to unequal spending as a proxy for need and report that reformulating the target removes the measured prediction bias."
     ]
   },
   {
@@ -3610,8 +4352,19 @@
     "arxiv_id": "1808.00023",
     "kind": "survey",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "authors": [
+      "Sam Corbett-Davies",
+      "Johann D. Gaebler",
+      "Hamed Nilforoshan",
+      "Ravi Shroff",
+      "Sharad Goel"
+    ],
+    "publication_date": "2018-07-31",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This study examines whether widely used mathematical fairness definitions support the outcomes they aim to protect.",
+      "It groups definitions into constraints on decision effects and constraints on protected-attribute effects, then analyzes the resulting policies.",
+      "The abstract shows that satisfying formal constraints can produce Pareto-dominated decisions, motivating explicit attention to the intended social objective."
     ]
   },
   {
@@ -3644,15 +4397,26 @@
         "Paper only"
       ],
       "Evidence": [
-        "Primary metadata"
+        "Primary abstract"
       ]
     },
     "origin": "faimi",
     "doi": "10.7326/m18-1990",
     "kind": "survey",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "authors": [
+      "Alvin Rajkomar",
+      "Michaela Hardt",
+      "Michael D. Howell",
+      "Greg Corrado",
+      "Marshall H. Chin"
+    ],
+    "publication_date": "2018-12-18",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This article examines how clinical machine learning can be designed to advance health equity.",
+      "It connects model design, historical data bias and clinical interactions to distributive-justice principles.",
+      "It argues for choosing patient-outcome, model-performance or resource-allocation fairness objectives according to the clinical purpose."
     ]
   },
   {
@@ -3692,8 +4456,18 @@
     "doi": "10.1016/s2589-7500(20)30065-0",
     "kind": "survey",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "authors": [
+      "Melissa D McCradden",
+      "Shalmali Joshi",
+      "Mjaye Mazwi",
+      "James A Anderson"
+    ],
+    "publication_date": "2020-05",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This work discusses ethical limitations of technical algorithmic fairness solutions in healthcare.",
+      "It examines fairness as a normative problem that cannot be resolved by a model metric alone.",
+      "The available record supports an ethical framing, while specific clinical or empirical conclusions require the original article."
     ]
   },
   {
@@ -3733,8 +4507,19 @@
     "doi": "10.1145/3442188.3445896",
     "kind": "survey",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "authors": [
+      "Nithya Sambasivan",
+      "Erin Arnesen",
+      "Ben Hutchinson",
+      "Tulsee Doshi",
+      "Vinodkumar Prabhakaran"
+    ],
+    "publication_date": "2021-03",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This work considers how algorithmic fairness should be understood in India and other settings beyond dominant research contexts.",
+      "Its contribution is a contextual examination of fairness assumptions rather than a medical mitigation experiment.",
+      "It is retained as methodological background for interpreting fairness across social and geographic contexts."
     ]
   },
   {
@@ -3773,8 +4558,12 @@
     "origin": "faimi",
     "kind": "survey",
     "verified": false,
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "publication_date": "2021",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This article addresses the assessment of bias in medical AI.",
+      "It focuses on evaluating the assumptions and evidence behind claims of fair model behavior.",
+      "The available bibliographic record does not establish a specific empirical result or mitigation protocol."
     ]
   },
   {
@@ -3814,8 +4603,17 @@
     "doi": "10.1038/s41467-022-32186-3",
     "kind": "survey",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "authors": [
+      "María Agustina Ricci Lara",
+      "Rodrigo Echeveste",
+      "Enzo Ferrante"
+    ],
+    "publication_date": "2022-08-06",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This work addresses fairness concerns in AI systems for medical imaging.",
+      "It provides a broad discussion of the problem rather than identifying a single intervention stage in the available record.",
+      "Its value here is to frame fairness assessment, while detailed recommendations require consultation of the original article."
     ]
   },
   {
@@ -3848,15 +4646,25 @@
         "Paper only"
       ],
       "Evidence": [
-        "Primary metadata"
+        "Primary abstract"
       ]
     },
     "origin": "faimi",
     "doi": "10.1016/j.patter.2023.100790",
     "kind": "survey",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "authors": [
+      "Eike Petersen",
+      "Sune Holm",
+      "Melanie Ganz",
+      "Aasa Feragen"
+    ],
+    "publication_date": "2023-07",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This article distinguishes causes of unequal performance between patient groups in medical machine learning.",
+      "It separates avoidable model underperformance from differences in the best achievable performance caused by task difficulty.",
+      "The authors argue that leveling up performance requires diagnosing these mechanisms alongside representation, selection and label biases."
     ]
   },
   {
@@ -3896,8 +4704,29 @@
     "doi": "10.1145/3593013.3594096",
     "kind": "survey",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "authors": [
+      "Melissa Mccradden",
+      "Oluwadara Odusi",
+      "Shalmali Joshi",
+      "Ismail Akrout",
+      "Kagiso Ndlovu",
+      "Ben Glocker",
+      "Gabriel Maicas",
+      "Xiaoxuan Liu",
+      "Mjaye Mazwi",
+      "Tee Garnett",
+      "Lauren Oakden-Rayner",
+      "Myrtede Alfred",
+      "Irvine Sihlahla",
+      "Oswa Shafei",
+      "Anna Goldenberg"
+    ],
+    "publication_date": "2023-06-12",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "JustEFAB addresses the ethical integration of clinical machine learning.",
+      "It proposes a framework connecting medical ethics and social justice to practical fairness decisions.",
+      "The available record identifies an ethical framework rather than evidence that a particular model intervention improves subgroup performance."
     ]
   },
   {
@@ -3931,16 +4760,25 @@
         "Paper only"
       ],
       "Evidence": [
-        "Primary metadata"
+        "Primary abstract"
       ]
     },
     "origin": "faimi",
     "doi": "10.1016/j.ebiom.2024.105501",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking",
-      "Bias Mechanisms and Measurement"
+    "authors": [
+      "Emma A.M. Stanley",
+      "Raissa Souza",
+      "Matthias Wilms",
+      "Nils D. Forkert"
+    ],
+    "publication_date": "2025-01",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This study investigates where and how medical-image biases are encoded within convolutional networks.",
+      "It uses synthetic brain MRI with controlled disease, morphology and intensity effects to analyze layer-wise feature encoding.",
+      "The abstract reports that stronger bias encoding need not imply shortcut use and that intensity-related effects can have a stronger influence than morphological effects."
     ]
   },
   {
@@ -3981,9 +4819,18 @@
     "doi": "10.1007/978-3-031-72787-0_1",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking",
-      "Bias Mechanisms and Measurement"
+    "authors": [
+      "Vincent Olesen",
+      "Nina Weng",
+      "Aasa Feragen",
+      "Eike Petersen"
+    ],
+    "publication_date": "2024-10-13",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This study investigates performance gaps in medical image analysis using slice discovery.",
+      "Its approach examines data subsets that can reveal failures hidden by aggregate evaluation.",
+      "The available record identifies bias discovery as the contribution but does not establish the size or causes of the reported gaps."
     ]
   },
   {
@@ -4032,9 +4879,22 @@
     "doi": "10.1093/ehjdh/ztaf008",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking",
-      "Bias Mechanisms and Measurement"
+    "authors": [
+      "Tiarna Lee",
+      "Esther Puyol-Antón",
+      "Bram Ruijsink",
+      "Sebastien Roujol",
+      "Theodore Barfoot",
+      "Shaheim Ogbomo-Harmitt",
+      "Miaojing Shi",
+      "Andrew King"
+    ],
+    "publication_date": "2025-02-24",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This study investigates the sources of race bias in cine cardiac MRI segmentation.",
+      "It compares race predictability from images and segmentations and uses interpretability and heart-centered cropping.",
+      "The abstract reports that non-heart image regions strongly contribute to race recognition, motivating closer examination of the image context used by segmentation models."
     ]
   },
   {
@@ -4067,7 +4927,7 @@
         "Mitigation"
       ],
       "Stage": [
-        "Not verified"
+        "Pre-processing"
       ],
       "Attributes": [
         "Not specified"
@@ -4083,9 +4943,23 @@
     "doi": "10.59275/j.melba.2025-6747",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Bias Mechanisms and Measurement",
-      "Mitigation with Unverified Stage"
+    "authors": [
+      "Tiarna Lee",
+      "Esther Puyol-Anton",
+      "Bram Ruijsink",
+      "Pier-Giorgio Masci",
+      "Louise Keehn",
+      "Phil Chowienczyk",
+      "Emily Haseler",
+      "Miaojing Shi",
+      "Andrew King"
+    ],
+    "publication_date": "2025-12-30",
+    "method": "Pre-processing",
+    "tldr_en": [
+      "This study examines mitigation of ethnicity bias in cardiac MRI segmentation.",
+      "It compares oversampling, importance reweighting, Group DRO and combinations of these approaches, including experiments on heart-cropped images.",
+      "The abstract reports that oversampling can mitigate the tested bias, while the broader design also examines how training-time methods interact with data-level interventions."
     ]
   },
   {
@@ -4126,9 +5000,21 @@
     "doi": "10.1038/s42256-020-00257-z",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking",
-      "Bias Mechanisms and Measurement"
+    "authors": [
+      "Robert Geirhos",
+      "Jörn-Henrik Jacobsen",
+      "Claudio Michaelis",
+      "Richard Zemel",
+      "Wieland Brendel",
+      "Matthias Bethge",
+      "Felix A. Wichmann"
+    ],
+    "publication_date": "2020-11-10",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This work examines shortcut learning in deep neural networks.",
+      "It describes how models can exploit predictive cues that do not reflect the intended task solution.",
+      "It supplies a general mechanism for interpreting medical AI failures without by itself demonstrating a particular protected-group disparity."
     ]
   },
   {
@@ -4163,16 +5049,29 @@
         "Paper only"
       ],
       "Evidence": [
-        "Primary metadata"
+        "Primary abstract"
       ]
     },
     "origin": "faimi",
     "doi": "10.1007/s10140-021-01953-y",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking",
-      "Bias Mechanisms and Measurement"
+    "authors": [
+      "Paul H. Yi",
+      "Jinchi Wei",
+      "Tae Kyung Kim",
+      "Jiwon Shin",
+      "Haris I. Sair",
+      "Ferdinand K. Hui",
+      "Gregory D. Hager",
+      "Cheng Ting Lin"
+    ],
+    "publication_date": "2021-06-05",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This study tests whether age and sex can be inferred from chest radiographs.",
+      "It fine-tunes convolutional networks for demographic classification and evaluates them in American and Chinese populations.",
+      "The reported demographic predictability establishes that such information is encoded in radiographs, not that a disease classifier necessarily discriminates against a group."
     ]
   },
   {
@@ -4213,9 +5112,37 @@
     "doi": "10.1016/s2589-7500(22)00063-2",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking",
-      "Bias Mechanisms and Measurement"
+    "authors": [
+      "Judy Wawira Gichoya",
+      "Imon Banerjee",
+      "Ananth Reddy Bhimireddy",
+      "John L Burns",
+      "Leo Anthony Celi",
+      "Li-Ching Chen",
+      "Ramon Correa",
+      "Natalie Dullerud",
+      "Marzyeh Ghassemi",
+      "Shih-Cheng Huang",
+      "Po-Chih Kuo",
+      "Matthew P Lungren",
+      "Lyle J Palmer",
+      "Brandon J Price",
+      "Saptarshi Purkayastha",
+      "Ayis T Pyrros",
+      "Lauren Oakden-Rayner",
+      "Chima Okechukwu",
+      "Laleh Seyyed-Kalantari",
+      "Hari Trivedi",
+      "Ryan Wang",
+      "Zachary Zaiman",
+      "Haoran Zhang"
+    ],
+    "publication_date": "2022-06",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This modeling study investigates whether patient race can be recognized from medical images.",
+      "It treats sensitive-attribute predictability as an empirical question across medical imaging inputs.",
+      "This encoding question is relevant to fairness audits but is distinct from establishing unequal diagnostic error rates."
     ]
   },
   {
@@ -4256,9 +5183,18 @@
     "doi": "10.1126/science.adh4260",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking",
-      "Bias Mechanisms and Measurement"
+    "authors": [
+      "James Zou",
+      "Judy Wawira Gichoya",
+      "Daniel E. Ho",
+      "Ziad Obermeyer"
+    ],
+    "publication_date": "2023-07-14",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This article discusses the implications of predicting race variables from medical images.",
+      "It considers both risks and research opportunities associated with AI-derived race information.",
+      "The available abstract frames a health-disparities discussion rather than demonstrating that a race-predictive model is clinically fair or unfair."
     ]
   },
   {
@@ -4291,15 +5227,25 @@
         "Paper only"
       ],
       "Evidence": [
-        "Primary metadata"
+        "Primary abstract"
       ]
     },
     "origin": "faimi",
     "doi": "10.1148/ryai.230060",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "authors": [
+      "Ben Glocker",
+      "Charles Jones",
+      "Mélanie Roschewitz",
+      "Stefan Winzeck"
+    ],
+    "publication_date": "2023-11-01",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This study evaluates sex- and race-related bias in a chest radiography foundation model.",
+      "It compares feature-distribution shifts with disease-detection disparities using CheXpert radiographs and a baseline deep learning model.",
+      "The design distinguishes demographic differences in learned features from the subgroup performance consequences that must be measured separately."
     ]
   },
   {
@@ -4339,8 +5285,18 @@
     "doi": "10.1007/978-3-031-45249-9_10",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "authors": [
+      "Yuning Du",
+      "Yuyang Xue",
+      "Rohan Dharmakumar",
+      "Sotirios A. Tsaftaris"
+    ],
+    "publication_date": "2023",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This work investigates fairness in deep learning-based brain MRI reconstruction.",
+      "It extends subgroup assessment from diagnostic classification to the image reconstruction stage.",
+      "The available record identifies reconstruction bias as the research question but does not establish a particular error disparity or mitigation effect."
     ]
   },
   {
@@ -4380,8 +5336,33 @@
     "doi": "10.1126/sciadv.abq6147",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "authors": [
+      "Roxana Daneshjou",
+      "Kailas Vodrahalli",
+      "Roberto A. Novoa",
+      "Melissa Jenkins",
+      "Weixin Liang",
+      "Veronica Rotemberg",
+      "Justin Ko",
+      "Susan M. Swetter",
+      "Elizabeth E. Bailey",
+      "Olivier Gevaert",
+      "Pritam Mukherjee",
+      "Michelle Phung",
+      "Kiana Yekrang",
+      "Bradley Fong",
+      "Rachna Sahasrabudhe",
+      "Johan A. C. Allerup",
+      "Utako Okata-Karigane",
+      "James Zou",
+      "Albert S. Chiou"
+    ],
+    "publication_date": "2022-08-12",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This study evaluates dermatology AI on diverse skin tones and uncommon diseases.",
+      "It introduces the pathologically confirmed Diverse Dermatology Images dataset and tests existing models and dermatologists.",
+      "The abstract reports poorer performance on dark skin and uncommon conditions and shows that fine-tuning on diverse images can close the measured skin-tone performance gap."
     ]
   },
   {
@@ -4419,16 +5400,26 @@
         "Paper only"
       ],
       "Evidence": [
-        "Primary metadata"
+        "Primary abstract"
       ]
     },
     "origin": "faimi",
     "doi": "10.1016/j.cmpb.2024.108044",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking",
-      "Bias Mechanisms and Measurement"
+    "authors": [
+      "Marin Benčević",
+      "Marija Habijan",
+      "Irena Galić",
+      "Danilo Babin",
+      "Aleksandra Pižurica"
+    ],
+    "publication_date": "2024-03",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This study investigates skin-color bias in deep learning-based skin lesion segmentation.",
+      "It evaluates U-Net-based models using three skin-color grouping approaches, including Fitzpatrick estimates, Individual Typology Angle and manual grouping.",
+      "The design treats skin-color estimation itself as part of the fairness measurement problem rather than assuming one demographic annotation is definitive."
     ]
   },
   {
@@ -4452,7 +5443,7 @@
         "Evaluation"
       ],
       "Stage": [
-        "Evaluation"
+        "Pre-processing"
       ],
       "Attributes": [
         "Not specified"
@@ -4461,15 +5452,28 @@
         "Paper only"
       ],
       "Evidence": [
-        "Primary metadata"
+        "Primary abstract"
       ]
     },
     "origin": "faimi",
     "doi": "10.1016/j.media.2026.103950",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "authors": [
+      "Gelei Xu",
+      "Yuying Duan",
+      "Jun Xia",
+      "Ching-Hao Chiu",
+      "Michael Lemmon",
+      "Wei Jin",
+      "Yiyu Shi"
+    ],
+    "publication_date": "2026-03",
+    "method": "Pre-processing",
+    "tldr_en": [
+      "This paper reframes medical imaging fairness as maximizing diagnostic accuracy for each patient group.",
+      "It introduces SPARE, a data-reweighting algorithm that uses sample utility and group similarity when training group-specific models.",
+      "The approach explicitly uses additional modeling resources to pursue group-specific performance rather than accepting a single-model accuracy-fairness compromise."
     ]
   },
   {
@@ -4514,8 +5518,19 @@
     "doi": "10.1007/978-3-031-23443-9_22",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "authors": [
+      "Tiarna Lee",
+      "Esther Puyol-Antón",
+      "Bram Ruijsink",
+      "Miaojing Shi",
+      "Andrew P. King"
+    ],
+    "publication_date": "2022",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This study evaluates race and sex bias in convolutional-network cardiac MRI segmentation.",
+      "It examines subgroup performance in an image segmentation setting rather than only diagnostic classification.",
+      "The available record establishes the audit scope but does not support a specific numerical disparity or causal explanation."
     ]
   },
   {
@@ -4548,15 +5563,34 @@
         "Paper only"
       ],
       "Evidence": [
-        "Primary metadata"
+        "Primary abstract"
       ]
     },
     "origin": "faimi",
     "doi": "10.1038/s41591-024-02885-z",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "authors": [
+      "Anurag Vaidya",
+      "Richard J. Chen",
+      "Drew F. K. Williamson",
+      "Andrew H. Song",
+      "Guillaume Jaume",
+      "Yuzhe Yang",
+      "Thomas Hartvigsen",
+      "Emma C. Dyer",
+      "Ming Y. Lu",
+      "Jana Lipkova",
+      "Muhammad Shaban",
+      "Tiffany Y. Chen",
+      "Faisal Mahmood"
+    ],
+    "publication_date": "2024-04",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This study examines demographic disparities in computational pathology diagnosis.",
+      "It evaluates whole-slide classification for breast and lung cancer subtyping and glioma mutation prediction using public and internal data.",
+      "The abstract reports substantial race-associated AUC gaps across tasks, demonstrating that strong overall pathology performance can coexist with subgroup misdiagnosis disparities."
     ]
   },
   {
@@ -4596,8 +5630,19 @@
     "doi": "10.1007/978-3-031-45249-9_26",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "authors": [
+      "Nicolás Gaggion",
+      "Rodrigo Echeveste",
+      "Lucas Mansilla",
+      "Diego H. Milone",
+      "Enzo Ferrante"
+    ],
+    "publication_date": "2023",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This work addresses bias discovery in medical image segmentation without relying on a fully specified supervised bias label.",
+      "It studies an unsupervised approach to identifying relevant failures or subgroups.",
+      "The available record identifies discovery as the main contribution but does not establish quantitative disparities or a validated mitigation benefit."
     ]
   },
   {
@@ -4623,7 +5668,7 @@
         "Evaluation"
       ],
       "Stage": [
-        "Evaluation"
+        "In-processing"
       ],
       "Attributes": [
         "Not specified"
@@ -4639,8 +5684,20 @@
     "arxiv_id": "2311.02189",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "authors": [
+      "Yu Tian",
+      "Min Shi",
+      "Yan Luo",
+      "Ava Kouhana",
+      "Tobias Elze",
+      "Mengyu Wang"
+    ],
+    "publication_date": "2024",
+    "method": "In-processing",
+    "tldr_en": [
+      "FairSeg addresses the lack of medical image segmentation datasets designed for fairness research.",
+      "It introduces Harvard-FairSeg and a fair error-bound scaling approach that reweights SAM training losses across identity groups.",
+      "The contribution combines a subgroup-aware benchmark with an explicit training-time mitigation method targeting hard cases."
     ]
   },
   {
@@ -4680,8 +5737,29 @@
     "doi": "10.1038/s41598-024-66873-6",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "authors": [
+      "Ismaeel A. Siddiqui",
+      "Nickolas Littlefield",
+      "Luke A. Carlson",
+      "Matthew Gong",
+      "Avani Chhabra",
+      "Zoe Menezes",
+      "George M. Mastorakos",
+      "Sakshi Mehul Thakar",
+      "Mehrnaz Abedian",
+      "Ines Lohse",
+      "Kurt R. Weiss",
+      "Johannes F. Plate",
+      "Hamidreza Moradi",
+      "Soheyla Amirian",
+      "Ahmad P. Tafti"
+    ],
+    "publication_date": "2024-07-12",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This study examines bias in AI-based segmentation of hip and knee bony anatomy.",
+      "It focuses on plain radiographs and evaluates potential sources of unequal segmentation performance alongside mitigation strategies.",
+      "The accessible abstract establishes an orthopedic fairness assessment but does not fully specify which intervention stage drives the reported mitigation."
     ]
   },
   {
@@ -4721,8 +5799,23 @@
     "doi": "10.1038/s41598-025-26189-5",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "authors": [
+      "Maram Alqarni",
+      "Emma-Louise Jones",
+      "Luis Ribeiro",
+      "Hema Verma",
+      "Sian Cooper",
+      "Vinod Mullassery",
+      "Stephen Morris",
+      "Teresa Guerrero Urbano",
+      "Andrew P. King"
+    ],
+    "publication_date": "2025-12-06",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This study tests for race bias in deep learning-based prostate MRI segmentation.",
+      "It varies White and Black representation across training datasets and evaluates models on matched clinical subjects.",
+      "The abstract reports the best performance for both groups with race-balanced training and a relationship between training representation and the measured segmentation gap."
     ]
   },
   {
@@ -4762,8 +5855,31 @@
     "arxiv_id": "2202.01034",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "authors": [
+      "Jessica Schrouff",
+      "Natalie Harris",
+      "Oluwasanmi Koyejo",
+      "Ibrahim Alabdulmohsin",
+      "Eva Schnider",
+      "Krista Opsahl-Ong",
+      "Alex Brown",
+      "Subhrajit Roy",
+      "Diana Mincu",
+      "Christina Chen",
+      "Awa Dieng",
+      "Yuan Liu",
+      "Vivek Natarajan",
+      "Alan Karthikesalingam",
+      "Katherine Heller",
+      "Silvia Chiappa",
+      "Alexander D'Amour"
+    ],
+    "publication_date": "2022-02-02",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This paper investigates why model fairness can fail to transfer across real-world medical distribution shifts.",
+      "It uses a causal framework and conditional-independence tests to characterize shifts in two medical applications.",
+      "The results show that identifying the structure of the shift is necessary for selecting an appropriate fairness remedy."
     ]
   },
   {
@@ -4803,8 +5919,18 @@
     "doi": "10.1007/978-3-031-45249-9_13",
     "kind": "main",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "authors": [
+      "María Agustina Ricci Lara",
+      "Candelaria Mosquera",
+      "Enzo Ferrante",
+      "Rodrigo Echeveste"
+    ],
+    "publication_date": "2023",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This work examines calibration-related biases in medical image analysis.",
+      "It treats the relationship between predicted confidence and observed outcomes as a fairness-assessment problem.",
+      "The available record identifies calibration bias as the topic but does not establish a particular post-training calibration intervention or numerical result."
     ]
   },
   {
@@ -4844,8 +5970,20 @@
     "arxiv_id": "2307.16526",
     "kind": "survey",
     "verified": true,
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "authors": [
+      "Charles Jones",
+      "Daniel C. Castro",
+      "Fabio De Sousa Ribeiro",
+      "Ozan Oktay",
+      "Melissa McCradden",
+      "Ben Glocker"
+    ],
+    "publication_date": "2023-07-31",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "No Fair Lunch examines why different medical-imaging dataset biases may require different mitigation strategies.",
+      "It distinguishes causal mechanisms related to prevalence, presentation and annotation and provides a three-step reasoning framework.",
+      "The abstract argues that apparently similar observed disparities can arise from different mechanisms, limiting one-size-fits-all fairness corrections."
     ]
   },
   {
@@ -4886,9 +6024,180 @@
     "origin": "faimi",
     "arxiv_id": "2407.00983",
     "verified": true,
+    "authors": [
+      "Ruinan Jin",
+      "Zikang Xu",
+      "Yuan Zhong",
+      "Qiongsong Yao",
+      "Qi Dou",
+      "S. Kevin Zhou",
+      "Xiaoxiao Li"
+    ],
+    "publication_date": "2024-07-01",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "FairMedFM benchmarks fairness in medical imaging foundation models.",
+      "It provides a standardized evaluation pipeline across multiple imaging datasets, model families and adaptation strategies.",
+      "The benchmark makes subgroup fairness comparisons more systematic without implying that one foundation model is universally fair across tasks and populations."
+    ],
+    "kind": "main"
+  },
+  {
+    "title": "Disparity Laundering: Consensus Without Fairness in Clinical Multi-Agent Systems",
+    "year": "2026",
+    "arxiv_id": "2610.38215",
     "kind": "main",
-    "topics": [
-      "Fairness Evaluation and Benchmarking"
+    "venue": "arXiv",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2610.38215"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2610.38215",
+        "section": "Automated full-text screening"
+      }
+    ],
+    "metadata": {
+      "Attributes": [
+        "Race and ethnicity",
+        "Sex and gender"
+      ],
+      "Domain": [
+        "Clinical NLP and foundation models"
+      ],
+      "Evidence": [
+        "Primary full text"
+      ],
+      "Focus": [
+        "Evaluation",
+        "Bias mechanisms",
+        "Mitigation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Assets": [
+        "Paper only"
+      ]
+    },
+    "verified": true,
+    "screening_id": "p-2fcb4e34b5f7daab4c8d",
+    "authors": [
+      "Xiaoyang Wang",
+      "Tianrui Wang",
+      "Christopher C. Yang"
+    ],
+    "publication_date": "2026-10-28",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This study audits demographic disparities in clinical multi-agent language-model systems.",
+      "It evaluates five model families and four aggregation topologies on emergency cases with counterfactual demographic swaps.",
+      "The abstract reports that aggregation does not neutralize the disparity and that apparently corrective late-stage interventions can leave it unchanged or amplify it."
+    ]
+  },
+  {
+    "title": "A Framework for Task-Agnostic Counterfactual Fairness in Transformers through Activation Steering",
+    "year": "2026",
+    "arxiv_id": "2611.00298",
+    "kind": "main",
+    "venue": "arXiv",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2611.00298"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.00298",
+        "section": "Automated full-text screening"
+      }
+    ],
+    "metadata": {
+      "Attributes": [
+        "Race and ethnicity"
+      ],
+      "Domain": [
+        "EHR and clinical prediction"
+      ],
+      "Evidence": [
+        "Primary full text"
+      ],
+      "Focus": [
+        "Bias mechanisms",
+        "Evaluation",
+        "Mitigation"
+      ],
+      "Stage": [
+        "Post-processing"
+      ],
+      "Assets": [
+        "Paper only"
+      ]
+    },
+    "verified": true,
+    "screening_id": "p-3d7d2c77176c61d55abc",
+    "authors": [
+      "Joshua Wolff Anderson",
+      "Yanshan Wang",
+      "Shyam Visweswaran"
+    ],
+    "publication_date": "2026-10-30",
+    "method": "Post-processing",
+    "tldr_en": [
+      "This paper studies counterfactual fairness interventions in transformer activations.",
+      "It introduces MICF, a mechanistic-interpretability framework for identifying sensitive mechanisms and steering activations, including a clinical prediction application.",
+      "The intervention targets a pretrained model at inference time rather than optimizing a new fairness training objective."
+    ]
+  },
+  {
+    "title": "Fairness Metrics based on the AUC in Clinical Predictive AI",
+    "year": "2026",
+    "arxiv_id": "2611.05222",
+    "kind": "main",
+    "venue": "arXiv",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2611.05222"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2611.05222",
+        "section": "Automated full-text screening"
+      }
+    ],
+    "metadata": {
+      "Attributes": [
+        "Sex and gender"
+      ],
+      "Domain": [
+        "EHR and clinical prediction"
+      ],
+      "Evidence": [
+        "Primary full text"
+      ],
+      "Focus": [
+        "Evaluation",
+        "Theory and measurement"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Assets": [
+        "Paper only"
+      ]
+    },
+    "verified": true,
+    "screening_id": "p-5903974910ebbe7950d2",
+    "authors": [
+      "João Matos",
+      "Ben Van Calster",
+      "Richard D. Riley",
+      "Paula Dhiman",
+      "Gary S. Collins"
+    ],
+    "publication_date": "2026-11-03",
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This study examines how AUC-based fairness metrics should be interpreted in clinical prediction.",
+      "It characterizes eight metrics through within-group and cross-group AUC decomposition and illustrates their behavior using EuroSCORE II-based simulations.",
+      "The analysis highlights that subgroup and overall AUC are not directly comparable in the way some fairness interpretations assume."
     ]
   }
 ]

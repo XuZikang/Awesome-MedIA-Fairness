@@ -11,7 +11,7 @@ from scripts.literature_pipeline.analysis import TOPICS, fetch_evidence, review,
 from scripts.literature_pipeline.cli import ROOT, connect, export_state, import_state, ingest, main, review_pending, seed_catalog
 from scripts.validate_catalog import CatalogValidator
 
-CATALOG_COUNT = len(CatalogValidator.entries((ROOT / "README.md").read_text().split("## 📝 Fairness Papers", 1)[1].split("## 🧭 By Topic", 1)[0]))
+CATALOG_COUNT = len(json.loads((ROOT / "data/catalog.json").read_text()))
 
 
 def record(**changes):

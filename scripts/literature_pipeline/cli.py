@@ -150,8 +150,18 @@ def ingest(db, incoming, day, seeded=False):
 
 
 def seed_catalog(db, path, day):
+    structured = Path(path).parent / 'data/catalog.json'
+    if structured.exists():
+        for record in json.loads(structured.read_text()):
+            paper = {key:record[key] for key in ('title','year','doi','arxiv_id','pmid','authors') if record.get(key)}
+            paper.update(url=record['links']['Paper'], source='catalog', published=record.get('publication_date',record['year']))
+            ingest(db, paper, day, seeded=True)
+        return
     text = Path(path).read_text(encoding="utf-8")
-    main = text.split("## 📝 Fairness Papers", 1)[1].split("## 🧭 By Topic", 1)[0]
+    if '## 📝 Papers' in text:
+        main = text.split('## 📝 Papers',1)[1].split('## 🧰 Datasets, Benchmarks and Toolkits',1)[0]
+    else:
+        main = text.split("## 📝 Fairness Papers", 1)[1].split("## 🧭 By Topic", 1)[0]
     for entry in CatalogValidator.entries(main):
         urls = re.findall(r"\]\((https://.*?)\)\]", entry.block)
         def find(pattern):
@@ -272,7 +282,7 @@ def render(db, output, day, statuses, review_status):
                 weekly += ["  " + markdown(result["summary_zh"])]
         weekly += [""]
     write_atomic(output / "weekly.md", "\n".join(weekly))
-    proposals = ["# 目录更新草稿", "", "仅含全文证据支持的机器纳入建议。人工审核后，再同步年度目录与 By Topic；本程序不改写 README。", ""]
+    proposals = ["# 主目录筛选判断证据", "", "全文证据支持的机器筛选记录；周更流程会将合格新文章直接整理进主 README，以下保留中文理由供追加复核。", ""]
     for paper in candidates:
         result = current_analysis(paper)
         if not result or result["decision"] != "suggest_include":
@@ -301,6 +311,7 @@ def main(argv=None):
     parser.add_argument("--state", type=Path, default=ROOT / "data/literature-state.json")
     parser.add_argument("--output", type=Path, default=ROOT / "reports")
     parser.add_argument("--catalog", type=Path, default=ROOT / "README.md")
+    parser.add_argument("--publish-root", type=Path, help="Render eligible discoveries directly into this checkout's English README and catalog")
     parser.add_argument("--since", type=date.fromisoformat)
     parser.add_argument("--until", type=date.fromisoformat, default=datetime.now(timezone(timedelta(hours=8))).date())
     parser.add_argument("--sources", nargs="+", choices=["arxiv", "europepmc", "pubmed"])
@@ -373,9 +384,17 @@ def main(argv=None):
         review_status = {"mode": "metadata_only", "reviewed": 0, "failures": 0} if args.metadata_only else review_pending(db, day, limit, not args.no_full_text)
         export_state(db, args.state)
         candidates, changed = render(db, args.output, day, statuses, review_status)
+        publication = {"added": 0, "failures": 0}
+        if args.publish_root:
+            from scripts.publish_catalog import sync_catalog
+            publication = sync_catalog(db, args.publish_root)
+            marker = args.output / 'run-status.json'
+            status = json.loads(marker.read_text())
+            status['catalog_publication'] = publication
+            write_atomic(marker, stable_json(status))
         print(f"Literature run: {candidates} candidates; {changed} changed/reviewed today; mode={review_status['mode']}.")
         print(f"Reports: {args.output.resolve()}")
-        return 2 if any(not status["complete"] for status in statuses) or review_status["failures"] else 0
+        return 2 if any(not status["complete"] for status in statuses) or review_status["failures"] or publication['failures'] else 0
     finally:
         db.close()
 

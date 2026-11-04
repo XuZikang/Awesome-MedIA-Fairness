@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import unittest
 
-from scripts.catalog_schema import ALLOWED, TOPICS
+from scripts.catalog_schema import ALLOWED, MAIN_HEADING, RESOURCE_HEADING, TOPICS
 from scripts.validate_catalog import CatalogValidator, IssueFormValidator
 
 
@@ -10,19 +10,35 @@ def _taxonomy() -> str:
     rows = []
     for field, values in ALLOWED.items():
         rows.append(f"| **{field}** | " + ", ".join(f"`{value}`" for value in sorted(values)) + " |")
+    legend = "\n".join(
+        [
+            "Directory categories: Fairness Evaluation; Pre-processing;",
+            "In-processing; Post-processing.",
+        ]
+    )
     return "\n".join(
         [
             "## 🧬 Taxonomy",
             "",
-            "| Field | Values | Meaning |",
-            "|---|---|---|",
+            "| Field | Values |",
+            "|---|---|",
             *rows,
+            "",
+            legend,
             "",
         ]
     )
 
 
-def _entry(title: str, year: int, doi: str, assets: str = "Paper only") -> str:
+def _entry(
+    title: str,
+    year: int,
+    doi: str,
+    stage: str,
+    badge: str,
+    assets: str = "Paper only",
+    date: str | None = None,
+) -> str:
     links = [f"[[📝 Paper](https://doi.org/{doi})]"]
     if "Code" in assets:
         links.append("[[💻 Code](https://github.com/example/code)]")
@@ -31,42 +47,47 @@ def _entry(title: str, year: int, doi: str, assets: str = "Paper only") -> str:
     if "Project" in assets:
         links.append("[[🌐 Project](https://example.org/project)]")
     if "Data" in assets:
-        links.append("[[🌐 Data](https://example.org/data)]")
+        links.append("[[📊 Data](https://example.org/data)]")
+    focus = "Evaluation" if stage == "Evaluation" else "Mitigation"
     return "\n".join(
         [
-            f"- (*Journal'{str(year)[-2:]}*) **{title}**",
+            f"- (*Journal'{str(year)[-2:]}*) **{title}** ![method](assets/badges/{badge}.svg)",
+            "",
             "  " + " ".join(links),
-            "  **Metadata:** `Domain: Medical imaging` · `Focus: Evaluation + Mitigation` · "
-            "`Stage: Evaluation` · `Attributes: Sex and gender` · "
-            f"`Assets: {assets}` · `Evidence: Primary abstract`",
-            "  > **Why it qualifies:** The paper measures subgroup disparities and evaluates a fairness intervention.",
+            "",
+            "  **Metadata:** `Domain: Medical imaging` · "
+            f"`Focus: {focus}` · `Stage: {stage}` · "
+            "`Attributes: Sex and gender` · "
+            f"`Assets: {assets}` · `Evidence: Primary full text`",
+            "",
+            "  **TLDR:** This paper studies a medical fairness method. It compares subgroup outcomes. It reports an evaluated result.",
+            "",
+            f"  **Date:** {date or str(year)}",
         ]
     )
 
 
-def _topic_entry(title: str, year: int, doi: str) -> str:
-    return "\n".join(
+def _readme(include_pending: bool = True) -> str:
+    evaluation = "\n\n".join(
         [
-            f"- (*Journal'{str(year)[-2:]}*) **{title}**",
-            f"  [[📝 Paper](https://doi.org/{doi})]",
+            "### Fairness Evaluation\n\n#### 2025\n\n##### 2025-11\n\n"
+            + _entry("Fairness Evaluation Example", 2025, "10.1000/fairness-a", "Evaluation", "evaluation", "Code + Data", "2025-11-04"),
+            "##### 2025-10\n\n"
+            + _entry("Fairness Evaluation Second", 2025, "10.1000/fairness-b", "Evaluation", "evaluation", date="2025-10"),
         ]
     )
-
-
-def _readme() -> str:
-    main_entries = [
-        _entry("Fairness Evaluation Example", 2025, "10.1000/fairness-a", "Code + Data"),
-        _entry("Bias Mitigation Example", 2024, "10.1000/fairness-b"),
-    ]
-    topic_blocks = []
-    for index, topic in enumerate(TOPICS):
-        # The first paper intentionally appears in two topics; cross-topic references are valid.
-        titles = [
-            _topic_entry("Fairness Evaluation Example", 2025, "10.1000/fairness-a"),
-        ]
-        if index == 1:
-            titles.append(_topic_entry("Bias Mitigation Example", 2024, "10.1000/fairness-b"))
-        topic_blocks.append(f"### {topic}\n\n" + "\n\n".join(titles))
+    preprocessing = "### Unfairness Mitigation: Pre-processing\n\n#### 2024\n\n" + _entry(
+        "Pre-processing Example", 2024, "10.1000/fairness-c", "Pre-processing", "preprocessing", date="2024"
+    )
+    inprocessing = "### Unfairness Mitigation: In-processing\n\n#### 2023\n\n" + _entry(
+        "In-processing Example", 2023, "10.1000/fairness-d", "In-processing", "inprocessing", date="2023"
+    )
+    postprocessing = "### Unfairness Mitigation: Post-processing\n\n#### 2022\n\n" + _entry(
+        "Post-processing Example", 2022, "10.1000/fairness-e", "Post-processing", "postprocessing", date="2022"
+    )
+    pending = "### Unfairness Mitigation: Stage pending\n\n#### 2025\n\n##### Month unverified\n\n" + _entry(
+        "Stage Pending Example", 2025, "10.1000/fairness-f", "Not verified", "pending", date="2025"
+    )
     resources = "\n\n".join(
         [
             "### Datasets\n\n| **Example data** | [Data](https://example.org/dataset) |",
@@ -77,15 +98,9 @@ def _readme() -> str:
     return (
         "# Fairness catalog\n\n"
         + _taxonomy()
-        + "\n## 📝 Fairness Papers\n\n"
-        + "> Entries are sorted by year in descending order.\n\n"
-        + "### 2025\n\n"
-        + main_entries[0]
-        + "\n\n### 2024\n\n"
-        + main_entries[1]
-        + "\n\n## 🧭 By Topic\n\n"
-        + "\n\n".join(topic_blocks)
-        + "\n\n## 🧰 Datasets, Benchmarks and Toolkits\n\n"
+        + f"\n{MAIN_HEADING}\n\n"
+        + "\n\n".join([evaluation, preprocessing, inprocessing, postprocessing] + ([pending] if include_pending else []))
+        + f"\n\n{RESOURCE_HEADING}\n\n"
         + resources
         + "\n"
     )
@@ -95,115 +110,101 @@ def _issue_form() -> str:
     def options(values: set[str] | list[str]) -> str:
         return "\n".join(f"        - {value}" for value in sorted(values))
 
-    return "\n".join(
-        [
-            "name: Suggest a fairness paper",
-            "description: Propose a paper or resource for the fairness catalog.",
-            'title: "[Paper]: "',
-            "labels: []",
-            "assignees: []",
-            "",
-            "body:",
-            "  - type: markdown",
-            "    attributes:",
-            "      value: |",
-            "        Use primary-source evidence and search for duplicate titles and identifiers.",
-            "",
-            "  - type: input",
-            "    id: paper_title",
-            "    attributes:",
-            "      label: Paper title",
-            "    validations:",
-            "      required: true",
-            "",
-            "  - type: input",
-            "    id: paper_url",
-            "    attributes:",
-            "      label: Primary paper URL",
-            "    validations:",
-            "      required: true",
-            "",
-            "  - type: input",
-            "    id: venue_year",
-            "    attributes:",
-            "      label: Venue and year",
-            "    validations:",
-            "      required: true",
-            "",
+    fields = [
+        "name: Suggest a fairness paper",
+        "description: Propose a paper or resource for the fairness catalog.",
+        'title: "[Paper]: "',
+        "labels: []",
+        "assignees: []",
+        "",
+        "body:",
+        "  - type: markdown",
+        "    attributes:",
+        "      value: |",
+        "        Use primary-source evidence and search for duplicate titles and identifiers.",
+        "",
+    ]
+    for field_id, field_type, multiple, required in [
+        ("paper_title", "input", False, True),
+        ("paper_url", "input", False, True),
+        ("venue_year", "input", False, True),
+        ("publication_status", "dropdown", False, True),
+    ]:
+        fields += [f"  - type: {field_type}", f"    id: {field_id}", "    attributes:", f"      label: {field_id}"]
+        if field_id == "publication_status":
+            fields += [
+                "      options:",
+                "        - Peer-reviewed and published",
+                "        - Accepted or in press",
+                "        - Public conference or workshop submission",
+                "        - Preprint",
+            ]
+        if required:
+            fields += ["    validations:", "      required: true"]
+        fields.append("")
+    for field_id, schema_field in [
+        ("domain", "Domain"),
+        ("focus", "Focus"),
+        ("stage", "Stage"),
+        ("attributes", "Attributes"),
+        ("evidence", "Evidence"),
+    ]:
+        multiple = field_id in {"focus", "stage", "attributes"}
+        fields += [
             "  - type: dropdown",
-            "    id: publication_status",
+            f"    id: {field_id}",
             "    attributes:",
-            "      label: Publication status",
-            "      options:",
-            "        - Peer-reviewed and published",
-            "        - Accepted or in press",
-            "        - Public conference or workshop submission",
-            "        - Preprint",
-            "    validations:",
-            "      required: true",
-            "",
+            f"      label: {schema_field}",
         ]
-        + sum(
-            [
-                [
-                    f"  - type: dropdown",
-                    f"    id: {field.lower()}",
-                    "    attributes:",
-                    f"      label: {field}",
-                    *(["      multiple: true"] if field not in {"Domain", "Evidence"} else []),
-                    "      options:",
-                    options(values),
-                    "    validations:",
-                    "      required: true",
-                    "",
-                ]
-                for field, values in (
-                    ("Domain", ALLOWED["Domain"]),
-                    ("Focus", ALLOWED["Focus"]),
-                    ("Stage", ALLOWED["Stage"]),
-                    ("Attributes", ALLOWED["Attributes"]),
-                    ("Evidence", ALLOWED["Evidence"]),
-                )
-            ],
-            [],
-        )
-        + [
-            "  - type: textarea",
-            "    id: qualification",
-            "    attributes:",
-            "      label: Why it qualifies",
-            "    validations:",
-            "      required: true",
-            "",
-            "  - type: dropdown",
-            "    id: topics",
-            "    attributes:",
-            "      label: Topic sections",
-            "      multiple: true",
-            "      options:",
-            options(set(TOPICS)),
-            "    validations:",
-            "      required: true",
-            "",
-            "  - type: textarea",
-            "    id: resources",
-            "    attributes:",
-            "      label: Code, weights, project, or data links",
-            "",
-            "  - type: checkboxes",
-            "    id: confirmation",
-            "    attributes:",
-            "      label: Submission confirmation",
-            "      options:",
-            "        - label: I searched for duplicate titles and identifiers and used primary evidence.",
-            "          required: true",
-        ]
-    )
+        if multiple:
+            fields.append("      multiple: true")
+        fields += ["      options:", options(ALLOWED[schema_field]), "    validations:", "      required: true", ""]
+    fields += [
+        "  - type: textarea",
+        "    id: qualification",
+        "    attributes:",
+        "      label: Why it qualifies",
+        "    validations:",
+        "      required: true",
+        "",
+        "  - type: dropdown",
+        "    id: topics",
+        "    attributes:",
+        "      label: Internal topic routing",
+        "      multiple: true",
+        "      options:",
+        options(set(TOPICS)),
+        "    validations:",
+        "      required: true",
+        "",
+        "  - type: textarea",
+        "    id: resources",
+        "    attributes:",
+        "      label: Code, weights, project, or data links",
+        "",
+        "  - type: checkboxes",
+        "    id: confirmation",
+        "    attributes:",
+        "      label: Submission confirmation",
+        "      options:",
+        "        - label: I searched for duplicate titles and identifiers and used primary evidence.",
+        "          required: true",
+    ]
+    return "\n".join(fields)
 
 
 class CatalogValidatorTests(unittest.TestCase):
     def test_valid_fixture(self) -> None:
         self.assertEqual(CatalogValidator(_readme()).validate(), [])
+
+    def test_pending_category_is_optional_when_no_pending_entry_exists(self) -> None:
+        self.assertEqual(CatalogValidator(_readme(include_pending=False)).validate(), [])
+
+    def test_legacy_entries_parser_remains_available_for_seed_fixtures(self) -> None:
+        entries = CatalogValidator.entries(
+            "### 2022\n\n- (*Journal'22*) **Legacy**\n  [[📝 Paper](https://doi.org/10.1000/legacy)]\n"
+        )
+        self.assertEqual([(entry.title, entry.section) for entry in entries], [("Legacy", "2022")])
 
     def test_missing_metadata_is_reported(self) -> None:
         mutated = _readme().replace("  **Metadata:**", "  **Removed metadata:**", 1)
@@ -233,15 +234,41 @@ class CatalogValidatorTests(unittest.TestCase):
         self.assertTrue(any("does not match section 2025" in error for error in errors))
 
     def test_duplicate_identifier_is_reported(self) -> None:
-        mutated = _readme().replace("10.1000/fairness-b", "10.1000/fairness-a", 1)
+        mutated = _readme().replace("10.1000/fairness-f", "10.1000/fairness-a", 1)
         errors = CatalogValidator(mutated).validate()
         self.assertTrue(any("Duplicate identifier DOI:10.1000/fairness-a" in error for error in errors))
 
-    def test_topic_set_drift_is_reported(self) -> None:
-        mutated = _readme().replace("Bias Mitigation Example", "Topic-only title", 1)
+    def test_required_method_categories_are_reported(self) -> None:
+        mutated = _readme().replace("### Fairness Evaluation", "### Legacy category", 1)
         errors = CatalogValidator(mutated).validate()
-        self.assertTrue(any("missing from By Topic" in error for error in errors))
-        self.assertTrue(any("missing from main list" in error for error in errors))
+        self.assertTrue(any("Method category headings differ" in error for error in errors))
+
+    def test_legacy_by_topic_is_rejected(self) -> None:
+        mutated = _readme().replace(RESOURCE_HEADING, "## 🧭 By Topic\n\n" + RESOURCE_HEADING, 1)
+        errors = CatalogValidator(mutated).validate()
+        self.assertTrue(any("Legacy By Topic" in error for error in errors))
+
+    def test_badge_must_be_local_svg(self) -> None:
+        mutated = _readme().replace("![method](assets/badges/evaluation.svg)", "![method](https://example.org/badge.svg)", 1)
+        errors = CatalogValidator(mutated).validate()
+        self.assertTrue(any("local SVG badge" in error for error in errors))
+
+    def test_tldr_requires_three_english_sentences(self) -> None:
+        mutated = _readme().replace(" It reports an evaluated result.", "", 1)
+        errors = CatalogValidator(mutated).validate()
+        self.assertTrue(any("exactly three complete English sentences" in error for error in errors))
+
+    def test_date_must_match_month_precision(self) -> None:
+        mutated = _readme().replace("**Date:** 2025-11-04", "**Date:** 2025-10-04", 1)
+        errors = CatalogValidator(mutated).validate()
+        self.assertTrue(any("does not match month heading 2025-11" in error for error in errors))
+
+    def test_pending_stage_requires_unknown_stage_value(self) -> None:
+        mutated = _readme().replace(
+            "`Stage: Not verified`", "`Stage: Evaluation`", 1
+        )
+        errors = CatalogValidator(mutated).validate()
+        self.assertTrue(any("Stage pending entries require" in error for error in errors))
 
     def test_missing_resource_category_is_reported(self) -> None:
         mutated = _readme().replace("### Toolkits", "### Tools", 1)
@@ -252,16 +279,16 @@ class CatalogValidatorTests(unittest.TestCase):
 
 class IssueFormValidatorTests(unittest.TestCase):
     def test_valid_fixture(self) -> None:
-        self.assertEqual(IssueFormValidator(_readme(), _issue_form()).validate(), [])
+        self.assertEqual(IssueFormValidator("README without topic headings", _issue_form()).validate(), [])
 
     def test_schema_option_drift_is_reported(self) -> None:
         mutated = _issue_form().replace("        - Medical imaging", "        - Galaxy", 1)
-        errors = IssueFormValidator(_readme(), mutated).validate()
+        errors = IssueFormValidator("README without topic headings", mutated).validate()
         self.assertTrue(any("field 'domain' options differ" in error for error in errors))
 
     def test_missing_required_field_is_reported(self) -> None:
         mutated = _issue_form().replace("    id: qualification", "    id: removed_qualification", 1)
-        errors = IssueFormValidator(_readme(), mutated).validate()
+        errors = IssueFormValidator("README without topic headings", mutated).validate()
         self.assertTrue(any("missing field 'qualification'" in error for error in errors))
 
 

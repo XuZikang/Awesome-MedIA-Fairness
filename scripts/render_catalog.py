@@ -1,49 +1,123 @@
-"""Render annual and topic views from the reviewed, source-traceable inventory."""
+"""Render the English methodology catalog from public structured records only."""
 from __future__ import annotations
+import html
 import json
 import re
-from collections import Counter
 from pathlib import Path
-from scripts.build_catalog import ROOT, topics, norm, apply_primary_links
-from scripts.catalog_schema import ALLOWED, TOPICS
+from scripts.build_catalog import norm
+from scripts.catalog_schema import ALLOWED, MAIN_HEADING
+from scripts.catalog_editorial import METHODS, validate_annotation
 
-REPO='https://github.com/XuZikang/Awesome-MedIA-Fairness'
+ROOT = Path(__file__).resolve().parents[1]
+REPO = 'https://github.com/XuZikang/Awesome-MedIA-Fairness'
+COLORS = {'Fairness Evaluation':'2563eb','Pre-processing':'b45309','In-processing':'9333ea','Post-processing':'15803d','Stage pending':'64748b',
+          'Domain':'0369a1','Focus':'0e7490','Attributes':'be185d','Assets':'0f766e','Evidence':'475569','Survey':'92400e'}
 
-def md(value):return str(value).replace('\n',' ').replace('<','&lt;').replace('>','&gt;').replace('[','\\[').replace(']','\\]')
 
-def prepare(p):
-    p=dict(p);p.setdefault('kind','main');m={k:list(v) for k,v in p['metadata'].items()}
-    assets=[name for name in ['Code','Weights','Project','Data'] if name in p['links']]
-    m['Assets']=assets or ['Paper only'];p['metadata']=m;p['topics']=topics(m)
-    return p
+def md(value):
+    return str(value).replace('\n',' ').replace('<','&lt;').replace('>','&gt;').replace('[','\\[').replace(']','\\]')
 
-def entry(p,full=True):
+
+def badge(label, family):
+    slug = re.sub('[^a-z0-9]+','-', (family+'-'+label).lower()).strip('-')
+    path = ROOT/'assets/badges'/f'{slug}.svg'
+    path.parent.mkdir(parents=True, exist_ok=True)
+    width = max(40, int(len(label)*6.4+16))
+    color = COLORS.get(family, '64748b')
+    path.write_text(f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="20" role="img" aria-label="{html.escape(label, quote=True)}"><title>{html.escape(label)}</title><rect width="{width}" height="20" rx="4" fill="#{color}"/><text x="{width/2}" y="14" text-anchor="middle" fill="white" font-family="Verdana,Arial,sans-serif" font-size="11">{html.escape(label)}</text></svg>\n')
+    return f'![{md(label)}](assets/badges/{slug}.svg)'
+
+
+def entry(p):
+    method=p['method'];m=p['metadata']
     venue=re.sub(r"[^\w .&/+-]",'',p.get('venue','Paper'))[:65].strip() or 'Paper'
-    if venue.lower()=='faimi resource':venue='FAIMI-listed'
-    if venue.lower()=='referenced study':venue='Review-listed'
-    label={'Paper':'📝 Paper','Code':'💻 Code','Weights':'🌐 Weights','Project':'🌐 Project','Data':'📊 Data'}
-    reference_only='nature.com/articles/s41746-024-01276-5#ref-' in p['links'].get('Paper','')
-    if reference_only:label['Paper']='📚 Reference listing'
-    lines=[f"- (*{venue}'{p['year'][-2:]}*) **{md(p['title'])}**",'  '+' '.join(f"[[{label[k]}]({v})]" for k,v in p['links'].items() if k in label)]
-    if full:
-        lines += ['  **Metadata:** '+' · '.join(f"`{k}: {' + '.join(p['metadata'][k])}`" for k in ALLOWED)]
-        section=p['sources'][0].get('section','source list')
-        lines += ['  > **Why it qualifies:** '+('Primary paper link pending; ' if reference_only else '')+'Reference-listed medical fairness work; source category: '+md(section)+'. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.']
-        refs=[]
-        for source in p['sources']:
-            target=source['url']
-            legacy=target.startswith('docs/')
-            if legacy:target=REPO+'/blob/main/docs/legacy-catalog.md'
-            label_source='Original catalog' if legacy else ('2024 review' if 'nature.com' in target else 'FAIMI')
-            item=f'[{label_source}]({target})'
-            if item not in refs:refs.append(item)
-        lines+=['  > **Provenance:** '+' · '.join(refs)]
-        if p.get('arxiv_id')=='2110.14755' or p.get('doi')=='10.1016/j.ebiom.2023.104467':
-            lines+=['  > **Version note:** Possible preprint/journal lineage; see the [source audit]('+REPO+'/blob/main/docs/source-audit-2026-11-04.md). Not counted as independently evaluated methods.']
-    elif p.get('kind')=='survey':
-        refs=sorted({source['url'] if not source['url'].startswith('docs/') else REPO+'/blob/main/docs/legacy-catalog.md' for source in p['sources']})
-        lines+=['  > **Provenance:** '+' · '.join(f'[Source {i+1}]({url})' for i,url in enumerate(refs))]
+    tags=[badge(method,method)]
+    if p.get('kind')=='survey':tags.append(badge('Survey','Survey'))
+    for field in ('Domain','Focus','Attributes','Assets','Evidence'):
+        tags.append(badge(' + '.join(m[field]),field))
+    labels={'Paper':'Paper','Code':'Code','Weights':'Weights','Project':'Project','Data':'Data'}
+    links=' '.join(f'[[{labels[k]}]({v})]' for k,v in p['links'].items() if k in labels)
+    lines=[f"- (*{venue}'{p['year'][-2:]}*) **{md(p['title'])}** "+' '.join(tags), '', '  '+links, '',
+           '  **Metadata:** '+' · '.join(f"`{k}: {' + '.join(m[k])}`" for k in ALLOWED), '',
+           '  **TLDR:** '+' '.join(md(sentence) for sentence in p['tldr_en']), '',
+           '  **Date:** '+p['publication_date'], '']
     return '\n'.join(lines)
+
+
+def sort_key(p):
+    # Unknown month/day sorts after known dates in the same year, never invented.
+    return p['publication_date'].ljust(10,'0'), p['title'].casefold()
+
+
+def validate_records(records):
+    seen=set()
+    for p in records:
+        key=norm(p['title'])
+        if key in seen:raise ValueError('Duplicate paper title: '+p['title'])
+        seen.add(key)
+        if p.get('method') not in METHODS:raise ValueError('Missing primary methodology: '+p['title'])
+        validate_annotation({'tldr_en':p.get('tldr_en'),'method':p['method'],'reason_zh':'分类验证','evidence_quotes':[]},'')
+        if not re.fullmatch(r'\d{4}(?:-\d{2}(?:-\d{2})?)?',p.get('publication_date','')) or p['publication_date'][:4]!=p['year']:
+            raise ValueError('Invalid publication date: '+p['title'])
+        if len(p['publication_date'])>=7 and not 1<=int(p['publication_date'][5:7])<=12:raise ValueError('Invalid month')
+        for field,allowed in ALLOWED.items():
+            if not p['metadata'].get(field) or not set(p['metadata'][field])<=allowed:raise ValueError('Invalid '+field+': '+p['title'])
+        if not p['links']['Paper'].startswith('https://'):raise ValueError('Missing primary record')
+
+
+def main(root=None):
+    global ROOT
+    if root is not None:ROOT=Path(root)
+    records=json.loads((ROOT/'data/catalog.json').read_text())
+    validate_records(records)
+    latest=max(p['year'] for p in records)
+    lines=['# Awesome-MedIA-Fairness','',
+        'A collection of research on **medical algorithm fairness**, covering medical imaging, clinical prediction, physiological signals and clinical foundation models.','',
+        '[![Catalog validation]('+REPO+'/actions/workflows/validate-catalog.yml/badge.svg)]('+REPO+'/actions/workflows/validate-catalog.yml) '+
+        '[![Link health]('+REPO+'/actions/workflows/check-links.yml/badge.svg)]('+REPO+'/actions/workflows/check-links.yml)','',
+        f"**{len(records)} papers**, including surveys and perspectives, organized by methodology. Each paper has one primary placement; secondary contributions remain in its metadata and TLDR.",'',
+        '## 🎯 Scope','',
+        'Studies must address algorithmic fairness, subgroup disparities, bias mechanisms, fairness measurement or mitigation in a medical task. Negative findings are eligible. Predicting a protected attribute does not by itself establish downstream discrimination. General fairness foundations are listed separately.','',
+        '## 📌 Contents','',
+        '- [Taxonomy](#-taxonomy)\n- [Papers](#-papers)\n  - [Fairness Evaluation](#fairness-evaluation)\n  - [Pre-processing](#unfairness-mitigation-pre-processing)\n  - [In-processing](#unfairness-mitigation-in-processing)\n  - [Post-processing](#unfairness-mitigation-post-processing)\n- [Datasets, Benchmarks and Toolkits](#-datasets-benchmarks-and-toolkits)\n- [Contributing](#-contributing)','',
+        '## 🧬 Taxonomy','',
+        'The methodology follows [Addressing fairness issues in deep learning-based medical image analysis: a systematic review](https://doi.org/10.1038/s41746-024-01276-5). Surveys and empirical studies share the same taxonomy; surveys carry an additional badge.','',
+        '| Method | Definition |\n|---|---|',
+        '| '+badge('Fairness Evaluation','Fairness Evaluation')+' | Benchmarking, subgroup comparisons, bias source tracing, mechanism discovery and fairness measurement. |',
+        '| '+badge('Pre-processing','Pre-processing')+' | Interventions on training data, sampling, augmentation or data transformation. |',
+        '| '+badge('In-processing','In-processing')+' | Interventions on learning objectives, representations, model training or optimization. |',
+        '| '+badge('Post-processing','Post-processing')+' | Interventions after model training, such as output adjustment, calibration or reviewed model adaptation; predictor freezing must be established from the specific protocol. |','',
+        '`Stage pending` is an evidence-status bucket for mitigation records whose intervention stage is not yet established, not an additional methodology. Within each category, records run newest to oldest. The latest catalog year is divided by month; missing months remain explicitly unverified. Dates retain the precision supplied by the original record, rather than the discovery date.','',
+        '| Field | Controlled values |\n|---|---|']
+    for field,values in ALLOWED.items():
+        lines.append('| **'+field+'** | '+', '.join(badge(v,v if v in METHODS else field)+' `'+v+'`' for v in sorted(values))+' |')
+    lines+=['','Title badges use distinct colors for methodology, domain, focus, attributes, available assets and evidence level. Metadata and evidence labels describe the available record; a metadata or abstract check is not a full-methods audit.','',MAIN_HEADING,'']
+    for method in METHODS:
+        group=[p for p in records if p['method']==method]
+        if not group and method=='Stage pending':continue
+        heading=method if method=='Fairness Evaluation' else 'Unfairness Mitigation: '+method
+        lines+=['### '+heading,'']
+        for year in sorted({p['year'] for p in group},reverse=True):
+            lines+=['#### '+year,'']
+            month=None
+            for p in sorted((p for p in group if p['year']==year),key=sort_key,reverse=True):
+                current=p['publication_date'][:7] if len(p['publication_date'])>=7 else 'Month unverified'
+                if year==latest and current!=month:
+                    lines+=['##### '+current,''];month=current
+                lines+=[entry(p),'']
+    lines += [resources(),'## 🔗 Related Repositories','',
+        '- [MEDFAIR](https://github.com/ys-zong/MEDFAIR)\n- [FairMedFM](https://github.com/FairMedFM/FairMedFM)\n- [AI Fairness 360](https://github.com/Trusted-AI/AIF360)','',
+        '## 🔀 Cross-References','', 'General fairness foundations, outside the medical catalog:','']
+    index=json.loads((ROOT/'data/source-index.json').read_text())
+    for p in index['foundations']:lines += [f"- [{md(p['title'])}]({p['links']['Paper']})"]
+    lines+=['','## 📣 Community and Updates','',
+        '- [FAIMI](https://faimi-workshop.github.io/) · [Resources](https://faimi-workshop.github.io/resources/)\n- [FAIMI programme discovery leads](docs/workshop-candidates.md)\n- [Chinese screening evidence](reports/latest.md) · [screening decisions](reports/catalog-proposals.md)\n- [Source audit](docs/source-audit-2026-11-04.md) · [original catalog archive](docs/legacy-catalog.md)\n- [Weekly automation guide](docs/literature-automation.md): eligible discoveries update this README directly every Sunday at 10:07 Asia/Shanghai.','',
+        '## ⚖️ License','', 'New catalog annotations: [CC BY 4.0](LICENSE-CONTENT). Automation code: [MIT](LICENSE). Referenced papers and original materials retain their own rights.','',
+        '## 📖 Citation','', 'Please cite the [systematic review](https://doi.org/10.1038/s41746-024-01276-5) when using its taxonomy, and [CITATION.cff](CITATION.cff) for this catalog.','',
+        '## 🤝 Contributing','', 'Read [CONTRIBUTING.md](CONTRIBUTING.md). Supply an original paper record, publication date, three English TLDR sentences and evidence for the methodology label. Chinese screening notes belong in reports.','',
+        '## ✉️ Contact','', 'Zikang Xu · zikangxu@mail.ustc.edu.cn','']
+    (ROOT/'README.md').write_text('\n'.join(lines))
+    print(f'Rendered {len(records)} papers using the review methodology')
 
 def resources():
     result = '''## 🧰 Datasets, Benchmarks and Toolkits
@@ -81,85 +155,5 @@ These resources are entry points, not claims that one metric or mitigation metho
 '''
     return re.sub(r'(?m)^\| (?!Resource \||Toolkit \||---)([^|]+) \|', r'| **\1** |', result)
 
-def main():
-    if (ROOT/'.local/inventory.json').exists():
-        x=json.loads((ROOT/'.local/inventory.json').read_text())
-    else:
-        x=json.loads((ROOT/'data/source-index.json').read_text())
-        x['records']=json.loads((ROOT/'data/catalog.json').read_text())
-    records=[prepare(p) for p in apply_primary_links(x['records'])]
-    main=[p for p in records if p.get('kind','main')!='survey'];surveys=[p for p in records if p.get('kind')=='survey']
-    lines=['# Awesome-MedIA-Fairness','',
-        'A curated, source-traceable collection on **medical algorithm fairness**, with medical imaging as its historical core and explicit coverage of EHR, clinical language/foundation models, physiological signals and healthcare algorithms.','',
-        '[![Catalog validation]('+REPO+'/actions/workflows/validate-catalog.yml/badge.svg)]('+REPO+'/actions/workflows/validate-catalog.yml) '+
-        '[![Link health]('+REPO+'/actions/workflows/check-links.yml/badge.svg)]('+REPO+'/actions/workflows/check-links.yml)','',
-        f"**Catalog:** {len(main)} main-list papers and {len(surveys)} surveys/perspectives. **Evidence is recorded per entry:** importing a cited study is not an independent methods audit or reproduction.",'',
-        'Built from the [original catalog](docs/legacy-catalog.md), [Xu et al., npj Digital Medicine 2024](https://doi.org/10.1038/s41746-024-01276-5), and [FAIMI resources](https://faimi-workshop.github.io/resources/). See the [source and migration audit](docs/source-audit-2026-11-04.md).','',
-        'Weekly Qoder DeepSeek updates: [Chinese digest]('+REPO+'/blob/literature-data/reports/latest.md) · [weekly topic index]('+REPO+'/blob/literature-data/reports/weekly.md) · [screening proposals]('+REPO+'/blob/literature-data/reports/catalog-proposals.md). [Automation guide](docs/literature-automation.md).','',
-        '## 🎯 Scope','',
-        'We collect studies that examine **algorithmic fairness, protected-group disparities, bias mechanisms, mitigation, or fairness measurement** in an explicit medical/biomedical task. Null findings and unsuccessful mitigation are relevant; a positive fairness gain is not required.','',
-        '### Inclusion and evidence','',
-        'New machine inclusion proposals require all five: (1) a medical task, (2) an identifiable algorithm or model, (3) an explicit fairness/bias question, (4) defined groups/attributes, a subgroup-discovery protocol, or an explicit individual/counterfactual fairness definition, and (5) implemented evaluation with source-grounded evidence. Full-text verification is required before a machine inclusion proposal.','',
-        'Static accuracy differences between disease classes, generic domain adaptation, ordinary imbalance, and health inequality without an algorithmic fairness question are insufficient. Protected-attribute predictability is evidence of encoding, not by itself proof of downstream discrimination. Reviews, perspectives, broad ethical frameworks and generic fairness theory are separated below.','',
-        'Historical and reference-list imports remain visible with provenance and evidence labels. **Primary metadata/abstract means that source was retrieved, not that all classifications or findings have been independently re-audited.** Inherited mitigation-stage labels can require correction; post-processing is not assumed to freeze a predictor unless the primary protocol establishes it.','',
-        '## 📌 Contents','',
-        '- [Taxonomy](#-taxonomy)\n- [Survey Papers](#-survey-papers)\n- [Fairness Papers](#-fairness-papers)\n- [By Topic](#-by-topic)\n- [Datasets, Benchmarks and Toolkits](#-datasets-benchmarks-and-toolkits)\n- [Related Repositories](#-related-repositories)\n- [Cross-References](#-cross-references)\n- [Community and Calls](#-community-and-calls)\n- [Contributing](#-contributing)','',
-        '## 🧬 Taxonomy','',
-        '| Field | Controlled values |\n|---|---|']
-    for field,values in ALLOWED.items():lines.append('| **'+field+'** | '+', '.join('`'+v+'`' for v in sorted(values))+' |')
-    lines+=['','Use the smallest directly supported set. `Sex and gender` is a navigation label, not an assertion that the constructs or measurements are interchangeable. `Intersectional` requires joint-group analysis; multiple separate attributes alone are insufficient.','', '## 📚 Survey Papers','']
-    for p in sorted(surveys,key=lambda p:(-int(p['year']),p['title'])):lines += [entry(p,False),'']
-    lines+=['## 📝 Fairness Papers','', '> Annual entries are bibliographic records after exact-title/identifier deduplication, not independent experiments. Possible preprint/journal lineage is documented in the source audit; records are not merged solely from similar titles or shared authors. Source year and eventual publication year may differ.','']
-    for year in sorted({p['year'] for p in main},reverse=True):
-        lines+=['### '+year,'']
-        for p in sorted((p for p in main if p['year']==year),key=lambda p:p['title'].lower()):lines += [entry(p),'']
-    lines+=['## 🧭 By Topic','', '> A complementary index; a paper may appear in multiple topics.','']
-    for topic in TOPICS:
-        lines+=['### '+topic,'']
-        for p in sorted((p for p in main if topic in p['topics']),key=lambda p:(-int(p['year']),p['title'])):lines += [entry(p,False),'']
-    lines += [resources(),'## 🔗 Related Repositories','',
-        '- [MEDFAIR](https://github.com/ys-zong/MEDFAIR)\n- [FairMedFM](https://github.com/FairMedFM/FairMedFM)\n- [AI Fairness 360](https://github.com/Trusted-AI/AIF360)','',
-        '## 🔀 Cross-References','',
-        'General fairness theory supports the medical literature but is not counted as medical empirical evidence:','']
-    for p in x['foundations']:lines+=[f"- [{md(p['title'])}]({p['links']['Paper']}) · source: [FAIMI]({p['sources'][0]['url']})"]
-    lines+=['','## 📣 Community and Calls','',
-        '- [FAIMI](https://faimi-workshop.github.io/) · [Resources](https://faimi-workshop.github.io/resources/)\n- [FAIMI 2023–2026 programme leads](docs/workshop-candidates.md): official listings are discovery leads, not independent publication or scope verification.','',
-        '## ⚖️ License','',
-        'New catalog annotations and documentation: [CC BY 4.0](LICENSE-CONTENT). Automation code: [MIT](LICENSE). Referenced papers, source-site annotations and original illustrations retain their own rights; the legacy list is preserved with attribution.','',
-        '## 📖 Citation','',
-        'Please cite the [2024 systematic review](https://doi.org/10.1038/s41746-024-01276-5) when using its taxonomy or literature analysis, and use [CITATION.cff](CITATION.cff) for this maintained catalog.','',
-        '## 🤝 Contributing','',
-        'Read [CONTRIBUTING.md](CONTRIBUTING.md). Provide a primary source, medical task, algorithm, fairness question, group definition and evaluated evidence. Source-list membership alone is not a scientific quality guarantee.','',
-        '## ✉️ Contact','', 'Zikang Xu · zikangxu@mail.ustc.edu.cn','']
-    (ROOT/'README.md').write_text('\n'.join(lines))
-    # Public inventory has provenance and source verification, never full abstracts.
-    public=[]
-    for p in records:
-        q={k:v for k,v in p.items() if k!='abstract'};public.append(q)
-    (ROOT/'data/catalog.json').write_text(json.dumps(public,ensure_ascii=False,indent=2)+'\n')
-    leads=['# FAIMI programme discovery leads','', 'Fetched 2026-11-04. These titles come from official programme pages; unlinked papers and the tentative 2026 programme are not treated as verified publications or automatically promoted.','']
-    existing={norm(p['title']) for p in records}
-    for year in ['2026','2025','2024','2023']:
-        leads += ['## '+year,'']
-        for p in x['workshop_candidates']:
-            if p['year']==year:leads += [f"- {md(p['title'])} · [official listing]({p['sources'][0]['url']})"+(' · already represented in catalog' if norm(p['title']) in existing else ' · publication/scope verification pending')]
-        leads += ['']
-    (ROOT/'docs/workshop-candidates.md').write_text('\n'.join(leads))
-    audit=['# Source and migration audit · 2026-11-04','',
-        'This is a targeted, source-traceable catalog rebuild, not a new systematic review or reproduction.','',
-        f"Original lines parsed: {x['counts']['legacy_rows']}. The review Table 2 yields {x['counts']['review_table_rows']} citation occurrences (63 unique reference identifiers); its article-wide search-count prose is not used as a current catalog count. Selected medical/review/toolkit references from FAIMI yielded {x['counts']['faimi_rows']} reference occurrences. Exact titles and DOI/arXiv/PMID links were merged before rendering.",'',
-        f"Rendered: {len(main)} unique main-list papers; {len(surveys)} surveys/perspectives. Retrieved primary bibliographic metadata for {sum(p.get('verified',False) for p in records)} records; other entries explicitly retain source-list/legacy evidence. Abstract availability is recorded separately from independent scientific verification.",'',
-        '## Sources','',
-        '- [Original catalog](legacy-catalog.md), commit `7ecc995`, preserved verbatim.\n- [Xu et al. 2024, Table 2](https://www.nature.com/articles/s41746-024-01276-5/tables/2), extracted through its [PMC full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC11487181/).\n- [FAIMI resources](https://faimi-workshop.github.io/resources/), including its medical studies, reviews, toolkits and dataset pointers.\n- Official 2023–2026 FAIMI programme pages; all extracted title leads are archived in [workshop-candidates.md](workshop-candidates.md).','',
-        '## Decisions and limits','',
-        '- Preserved original code/data links and original source categories; duplicate entries are consolidated in the annual view and repeated only in topic navigation.\n- Corrected DOI parsing to preserve parentheses in Elsevier identifiers. Bibliographic metadata is checked against the cited title before replacement.\n- Review articles found inside a reference table are moved to Survey Papers. Nonmedical general fairness works are retained as cross-references.\n- Programme titles without an accessible primary record remain discovery leads, including the explicitly tentative 2026 poster programme.\n- Inherited metadata can need correction: source classification is not an independent test of model freezing, subgroup definitions or fairness gains.\n- Primary-method review is performed for new machine inclusion proposals, with exact evidence spans. No claim of exhaustive coverage, widespread unfairness, method superiority or first-benchmark novelty is made.','',
-        'Sixteen review-reference entries now link directly to DOI records after independent title and author checks against Crossref. The reproducible mappings and metadata endpoints are in [primary-link-resolutions.json](../data/primary-link-resolutions.json). Original display titles are preserved to avoid creating duplicate historical seeds.','',
-        '## Unresolved bibliographic checks','']
-    for p in records:
-        if p.get('verification_warning'):audit += ['- '+md(p['title'])+' · '+p['verification_warning']+'; source-listed metadata retained.']
-    audit+=['','## Version-lineage hold','',
-        'arXiv:2110.14755 and DOI 10.1016/j.ebiom.2023.104467 share the same four authors and closely related encoding questions. The [author publication page](https://wp.doc.ic.ac.uk/bglocker/publications/) lists the journal article, while retrieved arXiv metadata supplies no journal reference or DOI tying the versions together. They are retained as separately identified bibliographic records pending explicit lineage confirmation, not claimed as independent methods or replications.','']
-    (ROOT/'docs/source-audit-2026-11-04.md').write_text('\n'.join(audit).rstrip()+'\n')
-    print(f'Rendered {len(main)} main papers, {len(surveys)} surveys, {len(x["workshop_candidates"])} programme leads')
 
 if __name__=='__main__':main()

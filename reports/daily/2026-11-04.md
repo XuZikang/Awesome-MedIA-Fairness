@@ -2,17 +2,17 @@
 
 机器整理的候选与收录建议；未代表人工审核或实验复现。
 
-候选库：38 篇；当日发现、更新或完成分析：38 篇。
+候选库：56 篇；当日发现、更新或完成分析：56 篇。
 
-已有有效中文分析：36 篇；待分析或缺少摘要证据：2 篇。
+已有有效中文分析：54 篇；待分析或缺少摘要证据：2 篇。
 
 ## 检索覆盖
 
-- arxiv / 查询 4744eb3faccd：2 条；完整
+- arxiv / 查询 4744eb3faccd：5 条；完整
 - arxiv / 查询 42b91404506f：0 条；完整
-- europepmc / 查询 249ba7c65421：5 条；完整
+- europepmc / 查询 249ba7c65421：18 条；完整
 - europepmc / 查询 b614de0bf8b6：0 条；完整
-- pubmed / 查询 29bd77c2182f：29 条；完整
+- pubmed / 查询 29bd77c2182f：34 条；完整
 - pubmed / 查询 d4312ff2e61d：3 条；完整
 
 ## 当日候选
@@ -73,6 +73,20 @@ BiasLab 提出多语言双框架提示对方法，配合随机包装扰动、固
 
 证据层级：abstract；[来源](https://pubmed.ncbi.nlm.nih.gov/42434887/)；模型：qoder-cn/dfmodel。
 
+### [Disparity Laundering: Consensus Without Fairness in Clinical Multi-Agent Systems](https://arxiv.org/abs/2610.38215)
+
+- 标识：`p-2fcb4e34b5f7daab4c8d`；发表：2026-10-28；发现：2026-11-04
+- 主题：Fairness Evaluation and Benchmarking、Bias Mechanisms and Measurement、Pre-processing Mitigation、Post-processing Mitigation、Clinical NLP and Foundation Models、EHR, Physiological Signals and Healthcare
+- 状态：建议纳入，待审核
+
+研究临床多智能体大模型中的“差异洗白”：在120例MIMIC-IV急诊病例、5个模型家族×4种聚合拓扑及种族/性别反事实替换下，所有配置均未消除差异；事后公平指令与人口学遮蔽无效，自我去偏反而扩大差距；让各智能体看到不同人口学版本并汇聚可将差异降低67%–94%。
+
+限制：证据来自单一急诊来源、120例及每格3个种子，部分结果为描述性点估计；仅使用源数据中存在的种族类别和二分类性别，未覆盖交叉身份；团队为同模型五实例；多样化视角集成属于沙盒审计性缓解，未做临床验证。
+
+判断：全文报告了临床多智能体LLM的公平性实证审计与缓解：包含急诊分诊任务、模型与拓扑评估、种族和性别反事实组以及20格实证测量，满足五项纳入标准。
+
+证据层级：full_text；[来源](https://arxiv.org/html/2610.38215v1)；模型：qoder-cn/dfmodel。
+
 ### [A Scoping Review of Artificial Intelligence and Machine Learning for Spatio-temporal Infectious Disease Forecasting](https://europepmc.org/article/PPR/PPR1356097)
 
 - 标识：`p-39172eeeef221e79bbcc`；发表：2026-11-03；发现：2026-11-04
@@ -101,6 +115,20 @@ BiasLab 提出多语言双框架提示对方法，配合随机包装扰动、固
 
 证据层级：abstract；[来源](https://pubmed.ncbi.nlm.nih.gov/42560117/)；模型：qoder-cn/dfmodel。
 
+### [A Framework for Task-Agnostic Counterfactual Fairness in Transformers through Activation Steering](https://arxiv.org/abs/2611.00298)
+
+- 标识：`p-3d7d2c77176c61d55abc`；发表：2026-10-30；发现：2026-11-04
+- 主题：Bias Mechanisms and Measurement、In-processing Mitigation、EHR, Physiological Signals and Healthcare
+- 状态：建议纳入，待审核
+
+提出 MICF 框架，将反事实公平约束重述为 Transformer 激活层面的分析与干预：用激活补丁定位敏感属性相关层，分解直接与间接效应，并在推理时通过激活转向降低种族偏差；在 UTICalc 临床预测和 COMPAS 表格任务上评估。
+
+限制：仅覆盖 TabPFN、两个表格任务和二元种族属性，主要优化总效应；部分转向设置伴随准确率下降，作者也强调结果不构成通用公平性保证或临床部署依据。
+
+判断：全文包含临床 UTI 预测任务、TabPFN 算法、反事实公平问题、种族敏感属性和实证测量，五个纳入证据均具备，故建议纳入。
+
+证据层级：full_text；[来源](https://arxiv.org/html/2611.00298v1)；模型：qoder-cn/dfmodel。
+
 ### [Governing artificial intelligence in Australian healthcare organisations - a qualitative study of staff perspectives.](https://europepmc.org/article/MED/42906928)
 
 - 标识：`p-3e7581d5cf989529b639`；发表：2026-11-01；发现：2026-11-04
@@ -128,6 +156,34 @@ BiasLab 提出多语言双框架提示对方法，配合随机包装扰动、固
 判断：摘要显示该文为综述，涉及不良事件检测这一生物医学任务及机器学习等方法，并提及算法偏倚，但未定义受保护群体、未设计亚组发现协议，也未实施任何公平性实证或测量评估，不满足纳入所需的五项证据要求；按综述类文献归为相关。
 
 证据层级：abstract；[来源](https://pubmed.ncbi.nlm.nih.gov/42975625/)；模型：qoder-cn/dfmodel。
+
+### [Fairness Metrics based on the AUC in Clinical Predictive AI](https://arxiv.org/abs/2611.05222)
+
+- 标识：`p-5903974910ebbe7950d2`；发表：2026-11-03；发现：2026-11-04
+- 主题：Fairness Evaluation and Benchmarking、Bias Mechanisms and Measurement
+- 状态：建议纳入，待审核
+
+该文系统分析临床预测模型中八种基于AUC的公平性指标，阐明AUC不可折叠性对指标解释的影响，并以EuroSCORE II为例用模拟展示亚组与跨组AUC差异，建议报告完整AUC矩阵并优先采用组内AUC parity。
+
+限制：证据主要来自方法学分析与EuroSCORE II模拟，仅涉及二分类结局和男女两个亚组；未评估真实世界多中心数据的公平性，也未深入验证校准公平性及干预效果。
+
+判断：该文针对临床预测AI的AUC公平性指标开展正式分析与模拟测量，明确以性别定义亚组并比较组内/跨组差异，满足临床任务、算法评估、公平性问题和实证评价五项标准。
+
+证据层级：full_text；[来源](https://arxiv.org/html/2611.05222v1)；模型：qoder-cn/dfmodel。
+
+### [Responsible Credit-Line Increase: A Fairness-Aware, Explainable, and Governed Machine-Learning Framework for Socio-Technical Lending Systems](https://europepmc.org/article/PPR/PPR1353923)
+
+- 标识：`p-59d12037c0f5cd6ad9d2`；发表：2026-10-30；发现：2026-11-04
+- 主题：Post-processing Mitigation、Fairness Evaluation and Benchmarking
+- 状态：机器建议排除，待抽查
+
+提出面向信贷额度主动上调（CLI）的公平性感知、可解释且可治理的机器学习框架：在组合预期损失预算与显式公平容忍度下最大化增量利润，将问题归约为经校准、可审计的阈值策略，并在不改变已验证模型的前提下做群体级重校准以控制差异影响。评估基于6万账户的合成组合，并在一公开信贷基准上复核。
+
+限制：仅有摘要级证据，未说明代码或数据可得性；实验数据为合成信贷组合与公开信贷基准，任务与场景均属金融信贷，不涉及任何生物医学或临床数据、影像、病历或信号，超出本综述的医学算法范围。
+
+判断：摘要显示研究对象为消费信贷额度上调决策，属金融风控场景，缺少生物医学/临床任务这一必要条件；其余算法、公平性、受保护群体与实证评估虽具备，但领域不符，故判为范围外。
+
+证据层级：abstract；[来源](https://europepmc.org/article/PPR/PPR1353923)；模型：qoder-cn/dfmodel。
 
 ### [Artificial intelligence in dedicated forensic-science journals: A bibliometric and science-mapping analysis (1991-2026).](https://pubmed.ncbi.nlm.nih.gov/42617285/)
 
@@ -213,6 +269,20 @@ BiasLab 提出多语言双框架提示对方法，配合随机包装扰动、固
 
 证据层级：abstract；[来源](https://pubmed.ncbi.nlm.nih.gov/42701888/)；模型：qoder-cn/dfmodel。
 
+### [Toward multimodal physiological assessment of clinical performance in simulation-based medical education: a machine learning approach.](https://europepmc.org/article/MED/42955499)
+
+- 标识：`p-bbc3b6330d6af062be13`；发表：2026-10-29；发现：2026-11-04
+- 主题：EHR, Physiological Signals and Healthcare
+- 状态：相关综述／资源
+
+该研究用 Empatica E4 腕带同步采集皮肤电、心率与皮温等多模态生理信号，结合遗传算法特征选择与神经网络，对高保真模拟教学中医师评定的“新手/胜任”表现分级进行二分类，内部验证平衡准确率约 84-85%，属生理信号驱动的教育评估模型。
+
+限制：仅有摘要：未报告代码或数据可用性；无任何分组公平性指标、亚组分析或偏差测量，公平性仅在结论中列为未来工作；评分类标签效度与跨机构泛化性未验证；无法据此判断全文是否另有分析。
+
+判断：纳入生理信号并用机器学习分类临床模拟表现，属生物医学算法评估，但研究问题是分类性能与不平衡稳健性，未定义受保护群体、未做亚组或偏差测量，公平性仅作为后续工作提及，不满足公平性问题的证据要求。
+
+证据层级：abstract；[来源](https://europepmc.org/article/MED/42955499)；模型：qoder-cn/dfmodel。
+
 ### [Public evaluations of AI-mediated healthcare when considering people with diverse access and support needs: a mixed-methods survey.](https://pubmed.ncbi.nlm.nih.gov/42472498/)
 
 - 标识：`p-ceb7d989076bafad0d24`；发表：2026-07-17；发现：2026-11-04
@@ -226,6 +296,20 @@ BiasLab 提出多语言双框架提示对方法，配合随机包装扰动、固
 判断：该文为公众态度问卷研究，讨论AI医疗的可及性、责任与公平担忧（含“不公平分类”主题），但未评估具体算法、未对定义群体开展公平性测量，仅属医疗AI公平议题的相关背景文献，不满足五项纳入证据标准。
 
 证据层级：abstract；[来源](https://pubmed.ncbi.nlm.nih.gov/42472498/)；模型：qoder-cn/dfmodel。
+
+### [AI algorithms and external validation: promises, pitfalls, and a practical blueprint.](https://pubmed.ncbi.nlm.nih.gov/42961821/)
+
+- 标识：`p-cf9833bc80232d798aba`；发表：2026-10-30；发现：2026-11-04
+- 主题：Fairness Evaluation and Benchmarking、Bias Mechanisms and Measurement
+- 状态：相关综述／资源
+
+文章提出临床AI外部验证的实践蓝图，强调预注册、多中心代表性队列、避免患者与时间重叠、校准和净获益评估、预设亚组与公平性审计，并连接部署后漂移监测和模型更新。
+
+限制：仅有摘要，属方法学蓝图/观点性文本；未报告实际数据、敏感属性定义、亚组发现协议或经验性公平性测量结果，无法验证公平性收益。
+
+判断：讨论临床AI外部验证并明确提及亚组差异和公平性审计，但摘要级方法框架未定义受保护群体，也未实施经验性公平性评估，不满足纳入的五项证据标准。
+
+证据层级：abstract；[来源](https://pubmed.ncbi.nlm.nih.gov/42961821/)；模型：qoder-cn/dfmodel。
 
 ### [Artificial intelligence-based nurse scheduling in healthcare: A scoping review of functional features and empirical outcomes.](https://pubmed.ncbi.nlm.nih.gov/42600237/)
 
@@ -254,6 +338,34 @@ BiasLab 提出多语言双框架提示对方法，配合随机包装扰动、固
 判断：摘要显示其为综述性文章，系统总结卒中AI中的算法偏见与公平评估缺口，符合算法公平议题但无原始实证评估，且仅有摘要证据，故列为相关而非纳入。
 
 证据层级：abstract；[来源](https://pubmed.ncbi.nlm.nih.gov/42751787/)；模型：qoder-cn/dfmodel。
+
+### [Interpretable models for scRNA-seq data embedding with multi-scale structure preservation.](https://europepmc.org/article/MED/42950829)
+
+- 标识：`p-e76f08abf1081b362cba`；发表：2026-10-28；发现：2026-11-04
+- 主题：Fairness Evaluation and Benchmarking
+- 状态：待核验
+
+摘要提出ViScore评分框架与ViVAE深度嵌入模型，用于单细胞转录组数据的多尺度结构保持与可解释降维，并称评分框架兼顾可扩展性与公平性。
+
+限制：仅有摘要；未给出敏感属性、受保护群体、公平性指标定义或分组结果，无法核验公平性实证；需全文确认。
+
+判断：摘要仅笼统提及评分框架关注公平性，未建立明确的算法公平性测量问题或分组证据；摘要级证据不足以纳入，需全文核验。
+
+证据层级：abstract；[来源](https://europepmc.org/article/MED/42950829)；模型：qoder-cn/dfmodel。
+
+### [Using Generative AI for Behavioural Research Effectively and Responsibly: a BR-UK Statement](https://europepmc.org/article/PPR/PPR1351821)
+
+- 标识：`p-ecc70724990e28b4c271`；发表：2026-10-28；发现：2026-11-04
+- 主题：Bias Mechanisms and Measurement
+- 状态：相关综述／资源
+
+该文是BR-UK关于行为研究中有效且负责任使用生成式AI的开放声明，提出伦理诚信、人类在环、严格评估和多方协同四项主张，并为七类利益相关者提供建议与工具。
+
+限制：仅有摘要，未报告具体医学或临床任务、被评估算法、分组公平性指标或实证测量；属伦理与政策声明，不能支持纳入证据。
+
+判断：属伦理和政策声明，仅泛提算法偏见风险；缺少生物医学任务、具体AI算法公平性评估、受保护群体或实证测量，五项标准均未满足，且摘要不足以纳入。
+
+证据层级：abstract；[来源](https://europepmc.org/article/PPR/PPR1351821)；模型：qoder-cn/dfmodel。
 
 ### [The symbiotic shift: How AI is reshaping rehabilitation and the future of work.](https://pubmed.ncbi.nlm.nih.gov/42804281/)
 
@@ -297,11 +409,53 @@ BiasLab 提出多语言双框架提示对方法，配合随机包装扰动、固
 
 证据层级：abstract；[来源](https://pubmed.ncbi.nlm.nih.gov/42810525/)；模型：qoder-cn/dfmodel。
 
+### [Institutional Governance Authenticity and Student Responses to Artificial Intelligence Assessment Guidelines in Higher Education](https://europepmc.org/article/PPR/PPR1353709)
+
+- 标识：`p-07c67a5b12c0019428e7`；发表：2026-10-30；发现：2026-11-04
+- 主题：待分类
+- 状态：机器建议排除，待抽查
+
+文章讨论高校生成式AI评估指南的“制度真实性”，基于程序正义与中性化理论提出研究议程，关注公平感知、道德中性化与合规意向，非医学算法公平研究。
+
+限制：仅提供摘要，未报告医学任务、算法公平性测量或实证结果；研究对象为高等教育政策，属范围外。
+
+判断：摘要显示为高等教育AI评估政策研究议程，无生物医学/临床任务与AI算法公平性实证评估，故不纳入。
+
+证据层级：abstract；[来源](https://europepmc.org/article/PPR/PPR1353709)；模型：qoder-cn/dfmodel。
+
 ### [Navigating the cultural iceberg: Addressing algorithmic bias, hallucination, and semantic flattening in AI-assisted qualitative thematic analysis.](https://pubmed.ncbi.nlm.nih.gov/42721502/)
 
 - 标识：`p-11a0ba65de9fc94bbcd8`；发表：2026-09-08；发现：2026-11-04
 - 主题：Fairness Evaluation and Benchmarking（规则建议）
 - 状态：待模型分析／人工核验
+
+### [Governing Artificial Intelligence in University Mental Health Services: A Population Health Intelligence Framework for Preventing Algorithmic Stratification](https://europepmc.org/article/PPR/PPR1352995)
+
+- 标识：`p-2c91ef57a53bcafa21e4`；发表：2026-10-29；发现：2026-11-04
+- 主题：Bias Mechanisms and Measurement、Mitigation with Unverified Stage
+- 状态：相关综述／资源
+
+提出面向大学心理健康服务的SAFE-STUDENT治理框架，基于人群健康智能（PHI）视角，识别隐私与监控张力、学生发展阶段、数字原住民假设的公平影响、机构照护责任与学生自主权四大挑战，给出11项原则及跨七个PHI阶段的实施指标与利益相关方指引，旨在防止算法分层。
+
+限制：仅有摘要可查，属概念性文献综述与框架构建，未实现或评估任何具体算法，未定义受保护属性或亚组发现协议，也未报告实证测量结果；作者自述需三阶段研究议程进行实证验证。
+
+判断：该文讨论AI心理健康工具可能造成的算法分层，涉及公平治理议题，但为概念性治理框架，缺少被评估的具体算法、明确的群体/属性定义与实证测量评估，不满足五条证据标准，故列为相关文献而非纳入。
+
+证据层级：abstract；[来源](https://europepmc.org/article/PPR/PPR1352995)；模型：qoder-cn/dfmodel。
+
+### [A longitudinal case study of practice and policy gaps in responsible AI adoption across Ukrainian higher education from 2023 to 2025](https://europepmc.org/article/PPR/PPR1352081)
+
+- 标识：`p-2d3bf73fccc4912dddf5`；发表：2026-10-28；发现：2026-11-04
+- 主题：待分类
+- 状态：机器建议排除，待抽查
+
+该文基于乌克兰高校2023年与2024年两次教师问卷调查，构建“实践—政策”保真度矩阵，将问卷条目映射到欧盟可信AI七项原则及学术诚信这一补充维度，并比较2023—2025年乌克兰高校负责任AI采纳与国家政策之间的差距。
+
+限制：仅有摘要，未见具体方法、代码或数据；研究对象为高等教育机构的GenAI使用与治理政策，不涉及临床任务、医疗算法或患者群体，也未开展任何模型层面的公平性评测。
+
+判断：研究主题是乌克兰高校生成式AI采纳与政策治理的纵向案例研究，缺乏生物医学/临床任务与被评估的AI算法，不满足医学算法公平性纳入标准。文中虽提及“多样性、非歧视与公平”原则，但仅为政策维度映射，并非对算法的偏差、编码或缓解进行实证测量。
+
+证据层级：abstract；[来源](https://europepmc.org/article/PPR/PPR1352081)；模型：qoder-cn/dfmodel。
 
 ### [Artificial Intelligence-Based Assessment of Pathologic Response to Neoadjuvant Chemoimmunotherapy in Non-Small Cell Lung Cancer: An International Multicenter Cohort Study.](https://pubmed.ncbi.nlm.nih.gov/42715648/)
 
@@ -317,6 +471,20 @@ BiasLab 提出多语言双框架提示对方法，配合随机包装扰动、固
 
 证据层级：abstract；[来源](https://pubmed.ncbi.nlm.nih.gov/42715648/)；模型：qoder-cn/dfmodel。
 
+### [Explainable Machine Learning for 30-Day Hospital Readmission Risk Prediction in Patients with Diabetes: A Comparative Analysis of Model Performance and Algorithmic Fairness](https://europepmc.org/article/PPR/PPR1351995)
+
+- 标识：`p-2ffe88b3f5427706252d`；发表：2026-10-28；发现：2026-11-04
+- 主题：EHR, Physiological Signals and Healthcare
+- 状态：待核验
+
+该摘要描述利用机器学习预测糖尿病患者30天再入院风险，拟作为辅助工具帮助识别需额外随访或出院指导的高风险患者；摘要仅给出背景与目标，未报告数据、模型细节或结果。
+
+限制：仅有摘要，缺少数据来源、模型方法、评价指标与结果；正文未出现公平性分析内容，标题中的公平性比较无法核实，也不能推断临床获益或代码数据可用性。
+
+判断：摘要确立糖尿病再入院预测的临床机器学习任务，并提及低收入、少数族裔等属性；但正文未报告公平性测量或实证评价，摘要级证据不足以建议纳入，故暂置。
+
+证据层级：abstract；[来源](https://europepmc.org/article/PPR/PPR1351995)；模型：qoder-cn/dfmodel。
+
 ### [Artificial intelligence integration in allied health professions: A comprehensive review of educational, research, and clinical applications.](https://pubmed.ncbi.nlm.nih.gov/42865081/)
 
 - 标识：`p-3e28ee0d19df84b9f3d4`；发表：2026-10-12；发现：2026-11-04
@@ -330,6 +498,48 @@ BiasLab 提出多语言双框架提示对方法，配合随机包装扰动、固
 判断：文章为联合健康AI应用综述，仅在实施挑战中提及算法偏见与公平可及性，未提出明确公平性问题、群体定义或实证评估，故列为相关而非纳入。
 
 证据层级：abstract；[来源](https://pubmed.ncbi.nlm.nih.gov/42865081/)；模型：qoder-cn/dfmodel。
+
+### [AI integration for transforming care of patients with liver diseases.](https://europepmc.org/article/MED/42957964)
+
+- 标识：`p-41c2f5e12d24a76bab3e`；发表：2026-10-29；发现：2026-11-04
+- 主题：Bias Mechanisms and Measurement、EHR, Physiological Signals and Healthcare
+- 状态：相关综述／资源
+
+该文综述人工智能在肝病诊断、风险分层、临床优先级和肝移植中的应用，指出传统评分可能造成漏诊并跨人口学亚组引入偏倚，同时讨论可解释性、泛化性和临床整合等挑战。
+
+限制：仅有摘要，属综述而非原始实证研究；未定义具体人口学分组，也未报告任何公平性测量或缓解评估。
+
+判断：摘要明确为肝病AI综述，虽提及算法偏倚和人口学亚组，但未开展可核验的公平性实证评估，且属综述，故仅判为相关。
+
+证据层级：abstract；[来源](https://europepmc.org/article/MED/42957964)；模型：qoder-cn/dfmodel。
+
+### [Creative Assignments and Who Gets Left Behind: A Systematic Review of Inclusion Readiness in Generative AI Teaching Practices in Business and Technology Higher Education](https://europepmc.org/article/PPR/PPR1352692)
+
+- 标识：`p-4cdbb2df2923fd9ce2c7`；发表：2026-10-28；发现：2026-11-04
+- 主题：待分类
+- 状态：机器建议排除，待抽查
+
+该综述按PRISMA筛查191项研究，审计生成式AI教学作业在可及性、公平性、伦理与残障包容方面的准备度，并构建0–5包容准备度指数；结果显示免费访问、非AI替代和残障支持等措施很少。
+
+限制：仅有摘要，未提供全文方法、编码细节或原始数据；研究对象为高等教育生成式AI教学，非临床算法或医疗人群，不能支持医学算法公平性结论。
+
+判断：该文是商科与技术高等教育中生成式AI教学作业的系统综述，聚焦教学包容性与可及性，不涉及生物医学或临床任务，也未评估医疗算法的公平性。
+
+证据层级：abstract；[来源](https://europepmc.org/article/PPR/PPR1352692)；模型：qoder-cn/dfmodel。
+
+### [Sources of Risk in AI Systems Revisited: FCAIR-O, a Faceted Causal Framework and Lightweight Ontology for Risk Management and Assurance](https://europepmc.org/article/PPR/PPR1352914)
+
+- 标识：`p-84cbd12dbfc944d49f87`；发表：2026-10-29；发现：2026-11-04
+- 主题：待分类
+- 状态：相关综述／资源
+
+提出FCAIR-O：面向AI风险管理的分面因果本体与概念框架，将公平等属性重新分配至因果、伤害、控制、证据或规范角色；以Uber Tempe等案例说明框架，但明确不构成实证验证。
+
+限制：仅见摘要；为概念综合与本体构建，未提供医学场景、算法公平性测量或实证评估，公平仅作为风险属性被重新归类。
+
+判断：摘要显示其为通用AI风险本体与理论框架，非医学算法公平性实证研究；不满足医学任务、算法评估、公平性问题和实证评价等纳入标准，且摘要证据不能建议纳入，故列为相关。
+
+证据层级：abstract；[来源](https://europepmc.org/article/PPR/PPR1352914)；模型：qoder-cn/dfmodel。
 
 ### [Assessing Variability in ChatGPT Responses: A Case Study on Simulating Online User Inputs.](https://pubmed.ncbi.nlm.nih.gov/40298212/)
 
@@ -417,6 +627,34 @@ Full-text access failed (HTTPError); abstract retained.
 
 证据层级：abstract；[来源](https://europepmc.org/article/PPR/PPR1356467)；模型：qoder-cn/dfmodel。
 
+### [The Age of AI Strategic Decision-Making: The Business Analytics in the Corporate Divisions as the Competitive Advantage](https://europepmc.org/article/PPR/PPR1353951)
+
+- 标识：`p-f2c8f82e8af197e219f9`；发表：2026-10-30；发现：2026-11-04
+- 主题：待分类
+- 状态：机器建议排除，待抽查
+
+本文为综述性研究，基于近十年的学术文献、行业报告与从业者案例，探讨企业如何用人工智能与业务分析提升营销、财务、人力资源与运营等职能的决策质量与速度，并指出数据孤岛、遗留系统、数据质量与人才等障碍，以及隐私、算法偏见、透明度与合规等治理议题。
+
+限制：仅有摘要，无方法细节、数据集、评价指标或结果数值；全文未涉及任何临床或生物医学任务，也未对具体算法开展公平性测量；摘要提到算法偏见仅属治理层面的泛泛讨论，不能据此推断论文缺少相关实证。
+
+判断：主题为企业战略决策与业务分析的文献综述，缺少生物医学/临床任务，也未对具体AI/算法开展显式的公平性、偏倚或缓解评估，且无群体定义与实证测量，不符合纳入所需的五项证据标准。
+
+证据层级：abstract；[来源](https://europepmc.org/article/PPR/PPR1353951)；模型：qoder-cn/dfmodel。
+
+### [Algorithmic Bias Concerns and Acceptance of AI Supported Legal Decision Making in Bangladesh](https://europepmc.org/article/PPR/PPR1352698)
+
+- 标识：`p-f65a2a15eb4c53ba6488`；发表：2026-10-28；发现：2026-11-04
+- 主题：待分类
+- 状态：机器建议排除，待抽查
+
+该研究基于385名孟加拉国法律AI调查受访者，报告86.8%担忧训练数据偏见、82.3%支持定期审计、85.2%支持复核或申诉权；偏见担忧与感知有用性相关很弱（ρ=.075）。研究整合技术接受与程序正义框架，提出审计、人工复核与可申诉机制建议。
+
+限制：仅摘要级证据。研究场景为法律决策支持而非临床或生物医学；为自报告态度调查，未评估任何具体算法，无分组性能或编码测量，作者亦指出其不能证明系统公平性或因果效应。
+
+判断：研究属法律AI的公众态度调查，缺乏生物医学/临床任务、被评估的具体AI算法以及分组公平性实证测量，五项证据标准均未满足，超出本综述范围。
+
+证据层级：abstract；[来源](https://europepmc.org/article/PPR/PPR1352698)；模型：qoder-cn/dfmodel。
+
 ### [Artificial Intelligence in Dietary Management and Nutritional Interventions: A Narrative Review of Current Evidence, Applications, and Translational Challenges.](https://europepmc.org/article/MED/42970338)
 
 - 标识：`p-f729e9411f9f1a7cc891`；发表：2026-11-02；发现：2026-11-04
@@ -486,6 +724,20 @@ Full-text access failed (HTTPError); abstract retained.
 判断：文章讨论皮肤科AI信任及跨肤色性能公平问题，但核心是患者态度综述，不是算法公平性实证评估；且仅有摘要，不能建议纳入。
 
 证据层级：abstract；[来源](https://pubmed.ncbi.nlm.nih.gov/42969910/)；模型：qoder-cn/dfmodel。
+
+### [Subgroup deployment-readiness audit of calibration and clinical utility in perioperative infection prediction.](https://pubmed.ncbi.nlm.nih.gov/42962674/)
+
+- 标识：`p-cd61ff429b4e8948cce1`；发表：2026-10-30；发现：2026-11-04
+- 主题：Fairness Evaluation and Benchmarking、Bias Mechanisms and Measurement、Post-processing Mitigation、EHR, Physiological Signals and Healthcare
+- 状态：待核验
+
+摘要报告对围手术期术后感染预测模型开展亚组部署就绪审计，按性别、年龄及生理储备代理分层，评估判别力、校准、阈值误差与决策曲线净获益，并比较通用与分组重校准及去除过采样的影响。
+
+限制：仅有摘要，无全文、代码或数据链接可核验；事件数有限，生理储备非衰弱层仅六例事件不可估计；二〇一八年以前感染编码基本缺失，患病率相关结论受限；尚无前瞻性验证。
+
+判断：仅摘要证据不足以满足全文五项标准，无法核验模型细节、缓解阶段与完整评估，故暂缓而非纳入。
+
+证据层级：abstract；[来源](https://pubmed.ncbi.nlm.nih.gov/42962674/)；模型：qoder-cn/dfmodel。
 
 ### [Can You See It? Diagnostic Blind Spots in Pigmented Skin: A Review of the Literature in Plastic Surgery and Burns.](https://pubmed.ncbi.nlm.nih.gov/42748034/)
 

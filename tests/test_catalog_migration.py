@@ -27,9 +27,10 @@ class MigrationTests(unittest.TestCase):
 
     def test_unknown_mitigation_stage_does_not_claim_in_processing(self):
         for row in json.loads((ROOT/'data/catalog.json').read_text()):
-            if 'Mitigation' in row['metadata']['Focus'] and not set(row['metadata']['Stage']) & {'Pre-processing','In-processing','Post-processing','Multi-stage'}:
-                self.assertNotIn('In-processing Mitigation',row['topics'])
-                self.assertIn('Mitigation with Unverified Stage',row['topics'])
+            if row['method']=='Stage pending':
+                self.assertEqual(row['metadata']['Stage'],['Not verified'])
+            elif row['method'] in {'Pre-processing','In-processing','Post-processing'}:
+                self.assertIn(row['method'],row['metadata']['Stage'])
 
     def test_all_original_occurrences_have_preserved_provenance(self):
         rows=json.loads((ROOT/'data/catalog.json').read_text())
