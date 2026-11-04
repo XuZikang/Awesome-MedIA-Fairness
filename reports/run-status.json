@@ -1,21 +1,22 @@
 {
   "analysis": {
-    "available_reviews": 51,
+    "available_reviews": 54,
     "failures": 0,
     "mode": "model",
     "pending": 2,
-    "reviewed": 15
+    "reviewed": 3
   },
-  "candidates": 53,
-  "changed_today": 53,
+  "candidates": 56,
+  "changed_today": 56,
   "date": "2026-11-04",
   "sources": [
     {
-      "complete": false,
-      "error": "SourceError: source query failed; retry retained",
+      "complete": true,
       "query_id": "4744eb3faccd",
+      "records": 5,
       "since": "2026-10-28",
       "source": "arxiv",
+      "total": 5,
       "until": "2026-11-04"
     },
     {

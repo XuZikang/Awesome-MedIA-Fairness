@@ -61,12 +61,24 @@
       "p-6f28fb186e3dcea2f8ba"
     ],
     [
+      "arxiv_id:2610.38215",
+      "p-2fcb4e34b5f7daab4c8d"
+    ],
+    [
+      "arxiv_id:2611.00298",
+      "p-3d7d2c77176c61d55abc"
+    ],
+    [
       "arxiv_id:2611.01730",
       "p-79db3e55e911174329df"
     ],
     [
       "arxiv_id:2611.01867",
       "p-cb6eb929d7f879132fb0"
+    ],
+    [
+      "arxiv_id:2611.05222",
+      "p-5903974910ebbe7950d2"
     ],
     [
       "doi:10.1001/jamanetworkopen.2023.42203",
@@ -85,12 +97,20 @@
       "p-cc4517a07c255f7aef9e"
     ],
     [
+      "doi:10.1007/978-3-030-67670-4_1",
+      "p-ee9da62bcc69b571843b"
+    ],
+    [
       "doi:10.1007/978-3-030-87199-4_39",
       "p-b0022b70abf7688961de"
     ],
     [
       "doi:10.1007/978-3-030-90874-4_12",
       "p-eb9d63530da3d7022d2e"
+    ],
+    [
+      "doi:10.1007/978-3-031-16431-6_41",
+      "p-8ef760f25f37a5cc39f8"
     ],
     [
       "doi:10.1007/978-3-031-16431-6_70",
@@ -105,8 +125,16 @@
       "p-d2aa9572dd44b68fe757"
     ],
     [
+      "doi:10.1007/978-3-031-16452-1_59",
+      "p-7b78e7da9520f970f8b5"
+    ],
+    [
       "doi:10.1007/978-3-031-17899-3_2",
       "p-d1761e58ca3ff1f83075"
+    ],
+    [
+      "doi:10.1007/978-3-031-23223-7_2",
+      "p-c1f81933cbe9215f7955"
     ],
     [
       "doi:10.1007/978-3-031-23443-9_22",
@@ -117,12 +145,36 @@
       "p-227739094eb90f0b2b64"
     ],
     [
+      "doi:10.1007/978-3-031-43898-1_18",
+      "p-60d03e0aeb58b08b606a"
+    ],
+    [
+      "doi:10.1007/978-3-031-43901-8_36",
+      "p-596fcba5556044d734d9"
+    ],
+    [
       "doi:10.1007/978-3-031-45249-9_10",
       "p-d7063a0be23dfa17e896"
     ],
     [
+      "doi:10.1007/978-3-031-45249-9_12",
+      "p-4bfee64cd1b099c5c2f9"
+    ],
+    [
       "doi:10.1007/978-3-031-45249-9_13",
       "p-e11d797e4fd0560d8a23"
+    ],
+    [
+      "doi:10.1007/978-3-031-45249-9_14",
+      "p-e20c46a354ba0b6a0c47"
+    ],
+    [
+      "doi:10.1007/978-3-031-45249-9_16",
+      "p-557ecb9be13061835458"
+    ],
+    [
+      "doi:10.1007/978-3-031-45249-9_17",
+      "p-b67b84cbf7e763e4e6fe"
     ],
     [
       "doi:10.1007/978-3-031-45249-9_21",
@@ -133,8 +185,16 @@
       "p-9bff17b5f000bfaf6cd0"
     ],
     [
+      "doi:10.1007/978-3-031-45249-9_24",
+      "p-73b4c436c2f8486b0686"
+    ],
+    [
       "doi:10.1007/978-3-031-45249-9_26",
       "p-1d0701210feb2d522305"
+    ],
+    [
+      "doi:10.1007/978-3-031-45249-9_9",
+      "p-47aaa78fdadbf24875f3"
     ],
     [
       "doi:10.1007/978-3-031-72787-0_1",
@@ -323,6 +383,22 @@
     [
       "doi:10.1097/sap.0000000000004878",
       "p-2d408dda7b908686a6ac"
+    ],
+    [
+      "doi:10.1109/cvprw.2019.00335",
+      "p-c4b0259f97938448cae4"
+    ],
+    [
+      "doi:10.1109/cvprw50498.2020.00378",
+      "p-189371b813dc53a1b7e1"
+    ],
+    [
+      "doi:10.1109/isbi53787.2023.10230368",
+      "p-072376756f04472b70e4"
+    ],
+    [
+      "doi:10.1109/isbi53787.2023.10230572",
+      "p-a86be289be4b793ca3eb"
     ],
     [
       "doi:10.1109/wacv48630.2021.00256",
@@ -645,6 +721,10 @@
       "p-a48dad97ccd708c5de68"
     ],
     [
+      "title:aframeworkfortaskagnosticcounterfactualfairnessintransformersthroughactivationsteering",
+      "p-3d7d2c77176c61d55abc"
+    ],
+    [
       "title:aialgorithmsandexternalvalidationpromisespitfallsandapracticalblueprint",
       "p-cf9833bc80232d798aba"
     ],
@@ -853,6 +933,10 @@
       "p-8a8350f01b3748b8c1b6"
     ],
     [
+      "title:disparitylaunderingconsensuswithoutfairnessinclinicalmultiagentsystems",
+      "p-2fcb4e34b5f7daab4c8d"
+    ],
+    [
       "title:disproportionatesubgroupimpactsandotherchallengesoffairnessinartificialintelligenceformedicalimageanalysis",
       "p-c1f81933cbe9215f7955"
     ],
@@ -923,6 +1007,10 @@
     [
       "title:fairnessincardiacmrimageanalysisaninvestigationofbiasduetodataimbalanceindeeplearningbasedsegmentation",
       "p-b0022b70abf7688961de"
+    ],
+    [
+      "title:fairnessmetricsbasedontheaucinclinicalpredictiveai",
+      "p-5903974910ebbe7950d2"
     ],
     [
       "title:fairnessofclassifiersacrossskintonesindermatology",
@@ -1856,6 +1944,73 @@
       }
     ],
     [
+      "p-2fcb4e34b5f7daab4c8d",
+      "b61a3e2fa72ef67528b6c0e359f1f3a6e7e7705fc6a1797c5331cba70d03c4ad",
+      {
+        "criteria": {
+          "algorithm": {
+            "met": true,
+            "quote": "five model families and four aggregation topologies"
+          },
+          "evaluation": {
+            "met": true,
+            "quote": "We ran the ensemble in all 20 cells"
+          },
+          "fairness": {
+            "met": true,
+            "quote": "the disparity is relocated, never removed"
+          },
+          "groups": {
+            "met": true,
+            "quote": "Race and sex enter the experiments as single explicit tokens"
+          },
+          "medical": {
+            "met": true,
+            "quote": "You are an emergency medicine physician evaluating a patient in the ED"
+          }
+        },
+        "decision": "suggest_include",
+        "evidence_level": "full_text",
+        "evidence_url": "https://arxiv.org/html/2610.38215v1",
+        "limitations_zh": "证据来自单一急诊来源、120例及每格3个种子，部分结果为描述性点估计；仅使用源数据中存在的种族类别和二分类性别，未覆盖交叉身份；团队为同模型五实例；多样化视角集成属于沙盒审计性缓解，未做临床验证。",
+        "metadata": {
+          "Attributes": [
+            "Race and ethnicity",
+            "Sex and gender"
+          ],
+          "Domain": [
+            "Clinical NLP and foundation models"
+          ],
+          "Evidence": [
+            "Primary full text"
+          ],
+          "Focus": [
+            "Evaluation",
+            "Bias mechanisms",
+            "Mitigation"
+          ],
+          "Stage": [
+            "Pre-processing"
+          ]
+        },
+        "model": "qoder-cn/dfmodel",
+        "provider": "qoder-cn-medical-fairness",
+        "reason_zh": "全文报告了临床多智能体LLM的公平性实证审计与缓解：包含急诊分诊任务、模型与拓扑评估、种族和性别反事实组以及20格实证测量，满足五项纳入标准。",
+        "reviewed_on": "2026-11-04",
+        "summary_zh": "研究临床多智能体大模型中的“差异洗白”：在120例MIMIC-IV急诊病例、5个模型家族×4种聚合拓扑及种族/性别反事实替换下，所有配置均未消除差异；事后公平指令与人口学遮蔽无效，自我去偏反而扩大差距；让各智能体看到不同人口学版本并汇聚可将差异降低67%–94%。",
+        "text_truncated": false,
+        "topics": [
+          "Fairness Evaluation and Benchmarking",
+          "Bias Mechanisms and Measurement",
+          "Pre-processing Mitigation",
+          "Post-processing Mitigation",
+          "Clinical NLP and Foundation Models",
+          "EHR, Physiological Signals and Healthcare"
+        ],
+        "warning": ""
+      }
+    ],
+    [
       "p-2ffe88b3f5427706252d",
       "2419b47bd05c87d94772f8cdfcd21c28734c9d778364041a2794b5c015525a99",
       {
@@ -2029,6 +2184,69 @@
         "text_truncated": false,
         "topics": [
           "Bias Mechanisms and Measurement"
+        ],
+        "warning": ""
+      }
+    ],
+    [
+      "p-3d7d2c77176c61d55abc",
+      "b5e4a92fd65f9198fd6eb22a6aac0b26b314ad03e366d6253dde7297421def2e",
+      {
+        "criteria": {
+          "algorithm": {
+            "met": true,
+            "quote": "We instantiate the framework on a single-estimator classifier, TabPFN v2"
+          },
+          "evaluation": {
+            "met": true,
+            "quote": "We evaluate on two real-world tabular benchmarks with distinct domains"
+          },
+          "fairness": {
+            "met": true,
+            "quote": "We propose a framework, Mechanistic Interpretability for Counterfactual Fairness (MICF)"
+          },
+          "groups": {
+            "met": true,
+            "quote": "a binary race variable as the sensitive feature"
+          },
+          "medical": {
+            "met": true,
+            "quote": "UTICalc, a clinical urinary tract infection risk model shown to have significant racial bias"
+          }
+        },
+        "decision": "suggest_include",
+        "evidence_level": "full_text",
+        "evidence_url": "https://arxiv.org/html/2611.00298v1",
+        "limitations_zh": "仅覆盖 TabPFN、两个表格任务和二元种族属性，主要优化总效应；部分转向设置伴随准确率下降，作者也强调结果不构成通用公平性保证或临床部署依据。",
+        "metadata": {
+          "Attributes": [
+            "Race and ethnicity"
+          ],
+          "Domain": [
+            "EHR and clinical prediction"
+          ],
+          "Evidence": [
+            "Primary full text"
+          ],
+          "Focus": [
+            "Bias mechanisms",
+            "Evaluation",
+            "Mitigation"
+          ],
+          "Stage": [
+            "In-processing"
+          ]
+        },
+        "model": "qoder-cn/dfmodel",
+        "provider": "qoder-cn-medical-fairness",
+        "reason_zh": "全文包含临床 UTI 预测任务、TabPFN 算法、反事实公平问题、种族敏感属性和实证测量，五个纳入证据均具备，故建议纳入。",
+        "reviewed_on": "2026-11-04",
+        "summary_zh": "提出 MICF 框架，将反事实公平约束重述为 Transformer 激活层面的分析与干预：用激活补丁定位敏感属性相关层，分解直接与间接效应，并在推理时通过激活转向降低种族偏差；在 UTICalc 临床预测和 COMPAS 表格任务上评估。",
+        "text_truncated": false,
+        "topics": [
+          "Bias Mechanisms and Measurement",
+          "In-processing Mitigation",
+          "EHR, Physiological Signals and Healthcare"
         ],
         "warning": ""
       }
@@ -2321,6 +2539,67 @@
         "summary_zh": "该综述按PRISMA筛查191项研究，审计生成式AI教学作业在可及性、公平性、伦理与残障包容方面的准备度，并构建0–5包容准备度指数；结果显示免费访问、非AI替代和残障支持等措施很少。",
         "text_truncated": false,
         "topics": [],
+        "warning": ""
+      }
+    ],
+    [
+      "p-5903974910ebbe7950d2",
+      "6d02f1927ba552a51160979054ccc4023a202eb3ffb3b5984afe61d5c7a74b62",
+      {
+        "criteria": {
+          "algorithm": {
+            "met": true,
+            "quote": "Clinical prediction models using artificial intelligence (AI)"
+          },
+          "evaluation": {
+            "met": true,
+            "quote": "We then illustrate their behaviour using simulations based on the EuroSCORE II"
+          },
+          "fairness": {
+            "met": true,
+            "quote": "We examine eight AUC-based fairness metrics proposed in the literature"
+          },
+          "groups": {
+            "met": true,
+            "quote": "defined by patient sex at birth (binary sensitive attribute)"
+          },
+          "medical": {
+            "met": true,
+            "quote": "clinical prediction models for binary outcomes"
+          }
+        },
+        "decision": "suggest_include",
+        "evidence_level": "full_text",
+        "evidence_url": "https://arxiv.org/html/2611.05222v1",
+        "limitations_zh": "证据主要来自方法学分析与EuroSCORE II模拟，仅涉及二分类结局和男女两个亚组；未评估真实世界多中心数据的公平性，也未深入验证校准公平性及干预效果。",
+        "metadata": {
+          "Attributes": [
+            "Sex and gender"
+          ],
+          "Domain": [
+            "EHR and clinical prediction"
+          ],
+          "Evidence": [
+            "Primary full text"
+          ],
+          "Focus": [
+            "Evaluation",
+            "Theory and measurement"
+          ],
+          "Stage": [
+            "Evaluation"
+          ]
+        },
+        "model": "qoder-cn/dfmodel",
+        "provider": "qoder-cn-medical-fairness",
+        "reason_zh": "该文针对临床预测AI的AUC公平性指标开展正式分析与模拟测量，明确以性别定义亚组并比较组内/跨组差异，满足临床任务、算法评估、公平性问题和实证评价五项标准。",
+        "reviewed_on": "2026-11-04",
+        "summary_zh": "该文系统分析临床预测模型中八种基于AUC的公平性指标，阐明AUC不可折叠性对指标解释的影响，并以EuroSCORE II为例用模拟展示亚组与跨组AUC差异，建议报告完整AUC矩阵并优先采用组内AUC parity。",
+        "text_truncated": false,
+        "topics": [
+          "Fairness Evaluation and Benchmarking",
+          "Bias Mechanisms and Measurement"
+        ],
         "warning": ""
       }
     ],
@@ -4242,8 +4521,6 @@
     "arxiv:4744eb3faccd": "2026-11-04",
     "europepmc:249ba7c65421": "2026-11-04",
     "europepmc:b614de0bf8b6": "2026-11-04",
-    "pending-end:arxiv:4744eb3faccd": "2026-11-04",
-    "pending-start:arxiv:4744eb3faccd": "2026-10-28",
     "pubmed:29bd77c2182f": "2026-11-04",
     "pubmed:d4312ff2e61d": "2026-11-04"
   },
@@ -4322,7 +4599,7 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
-      "doi": "",
+      "doi": "10.1109/isbi53787.2023.10230368",
       "first_seen": "2026-11-04",
       "id": "p-072376756f04472b70e4",
       "last_changed": "2026-11-04",
@@ -4506,7 +4783,7 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
-      "doi": "",
+      "doi": "10.1109/cvprw50498.2020.00378",
       "first_seen": "2026-11-04",
       "id": "p-189371b813dc53a1b7e1",
       "last_changed": "2026-11-04",
@@ -4894,6 +5171,36 @@
       "year": "2026"
     },
     {
+      "abstract_hash": "59739ed509304d9085ed8f6c1b842107c31fde644b311a886fb6b518dccfe207",
+      "abstract_source": "arxiv",
+      "abstract_updated": "2026-10-28T03:10:28Z",
+      "arxiv_id": "2610.38215",
+      "authors": [
+        "Xiaoyang Wang",
+        "Tianrui Wang",
+        "Christopher C. Yang"
+      ],
+      "doi": "",
+      "first_seen": "2026-11-04",
+      "id": "p-2fcb4e34b5f7daab4c8d",
+      "is_open_access": true,
+      "last_changed": "2026-11-04",
+      "pmcid": "",
+      "pmid": "",
+      "published": "2026-10-28",
+      "seeded": false,
+      "source": "arxiv",
+      "source_id": "2610.38215",
+      "sources": [
+        "arxiv"
+      ],
+      "title": "Disparity Laundering: Consensus Without Fairness in Clinical Multi-Agent Systems",
+      "updated": "2026-10-28T03:10:28Z",
+      "url": "https://arxiv.org/abs/2610.38215",
+      "version": "1",
+      "year": "2026"
+    },
+    {
       "abstract_hash": "38d9fd8187ebd0bf1f51e108d3c7c89f620a91c91bf2ffd2732a52e23e71f228",
       "abstract_source": "europepmc",
       "abstract_updated": "2026-10-29",
@@ -5044,6 +5351,36 @@
       "url": "https://doi.org/10.1117/1.jmi.9.6.061102",
       "version": "",
       "year": "2022"
+    },
+    {
+      "abstract_hash": "94404f5d3d756e10708f38edad39bed2eb737a05670430f186d35bc764dce7d1",
+      "abstract_source": "arxiv",
+      "abstract_updated": "2026-10-30T19:22:10Z",
+      "arxiv_id": "2611.00298",
+      "authors": [
+        "Joshua Wolff Anderson",
+        "Yanshan Wang",
+        "Shyam Visweswaran"
+      ],
+      "doi": "",
+      "first_seen": "2026-11-04",
+      "id": "p-3d7d2c77176c61d55abc",
+      "is_open_access": true,
+      "last_changed": "2026-11-04",
+      "pmcid": "",
+      "pmid": "",
+      "published": "2026-10-30",
+      "seeded": false,
+      "source": "arxiv",
+      "source_id": "2611.00298",
+      "sources": [
+        "arxiv"
+      ],
+      "title": "A Framework for Task-Agnostic Counterfactual Fairness in Transformers through Activation Steering",
+      "updated": "2026-10-30T19:22:10Z",
+      "url": "https://arxiv.org/abs/2611.00298",
+      "version": "1",
+      "year": "2026"
     },
     {
       "abstract_hash": "c345e3798fefa0edd1defea9926377178832fd893f8e01c55ef8077446f44728",
@@ -5219,7 +5556,7 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
-      "doi": "",
+      "doi": "10.1007/978-3-031-45249-9_9",
       "first_seen": "2026-11-04",
       "id": "p-47aaa78fdadbf24875f3",
       "last_changed": "2026-11-04",
@@ -5238,7 +5575,7 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
-      "doi": "",
+      "doi": "10.1007/978-3-031-45249-9_12",
       "first_seen": "2026-11-04",
       "id": "p-4bfee64cd1b099c5c2f9",
       "last_changed": "2026-11-04",
@@ -5304,7 +5641,7 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
-      "doi": "",
+      "doi": "10.1007/978-3-031-45249-9_16",
       "first_seen": "2026-11-04",
       "id": "p-557ecb9be13061835458",
       "last_changed": "2026-11-04",
@@ -5378,9 +5715,41 @@
       "year": "2022"
     },
     {
+      "abstract_hash": "efc2993927bfe65068cdde95d45d54dd43664285050947a33f496f78355cdc19",
+      "abstract_source": "arxiv",
+      "abstract_updated": "2026-11-03T17:07:56Z",
+      "arxiv_id": "2611.05222",
+      "authors": [
+        "João Matos",
+        "Ben Van Calster",
+        "Richard D. Riley",
+        "Paula Dhiman",
+        "Gary S. Collins"
+      ],
+      "doi": "",
+      "first_seen": "2026-11-04",
+      "id": "p-5903974910ebbe7950d2",
+      "is_open_access": true,
+      "last_changed": "2026-11-04",
+      "pmcid": "",
+      "pmid": "",
+      "published": "2026-11-03",
+      "seeded": false,
+      "source": "arxiv",
+      "source_id": "2611.05222",
+      "sources": [
+        "arxiv"
+      ],
+      "title": "Fairness Metrics based on the AUC in Clinical Predictive AI",
+      "updated": "2026-11-03T17:07:56Z",
+      "url": "https://arxiv.org/abs/2611.05222",
+      "version": "1",
+      "year": "2026"
+    },
+    {
       "abstract_hash": "",
       "arxiv_id": "",
-      "doi": "",
+      "doi": "10.1007/978-3-031-43901-8_36",
       "first_seen": "2026-11-04",
       "id": "p-596fcba5556044d734d9",
       "last_changed": "2026-11-04",
@@ -5514,7 +5883,7 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
-      "doi": "",
+      "doi": "10.1007/978-3-031-43898-1_18",
       "first_seen": "2026-11-04",
       "id": "p-60d03e0aeb58b08b606a",
       "last_changed": "2026-11-04",
@@ -5673,7 +6042,7 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
-      "doi": "",
+      "doi": "10.1007/978-3-031-45249-9_24",
       "first_seen": "2026-11-04",
       "id": "p-73b4c436c2f8486b0686",
       "last_changed": "2026-11-04",
@@ -5836,7 +6205,7 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
-      "doi": "",
+      "doi": "10.1007/978-3-031-16452-1_59",
       "first_seen": "2026-11-04",
       "id": "p-7b78e7da9520f970f8b5",
       "last_changed": "2026-11-04",
@@ -5969,7 +6338,7 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
-      "doi": "",
+      "doi": "10.1007/978-3-031-16431-6_41",
       "first_seen": "2026-11-04",
       "id": "p-8ef760f25f37a5cc39f8",
       "last_changed": "2026-11-04",
@@ -6229,7 +6598,7 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
-      "doi": "",
+      "doi": "10.1109/isbi53787.2023.10230572",
       "first_seen": "2026-11-04",
       "id": "p-a86be289be4b793ca3eb",
       "last_changed": "2026-11-04",
@@ -6315,7 +6684,7 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
-      "doi": "",
+      "doi": "10.1007/978-3-031-45249-9_17",
       "first_seen": "2026-11-04",
       "id": "p-b67b84cbf7e763e4e6fe",
       "last_changed": "2026-11-04",
@@ -6488,7 +6857,7 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
-      "doi": "",
+      "doi": "10.1007/978-3-031-23223-7_2",
       "first_seen": "2026-11-04",
       "id": "p-c1f81933cbe9215f7955",
       "last_changed": "2026-11-04",
@@ -6564,7 +6933,7 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
-      "doi": "",
+      "doi": "10.1109/cvprw.2019.00335",
       "first_seen": "2026-11-04",
       "id": "p-c4b0259f97938448cae4",
       "last_changed": "2026-11-04",
@@ -7090,7 +7459,7 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
-      "doi": "",
+      "doi": "10.1007/978-3-031-45249-9_14",
       "first_seen": "2026-11-04",
       "id": "p-e20c46a354ba0b6a0c47",
       "last_changed": "2026-11-04",
@@ -7345,7 +7714,7 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
-      "doi": "",
+      "doi": "10.1007/978-3-030-67670-4_1",
       "first_seen": "2026-11-04",
       "id": "p-ee9da62bcc69b571843b",
       "last_changed": "2026-11-04",

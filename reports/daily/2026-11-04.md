@@ -2,13 +2,13 @@
 
 机器整理的候选与收录建议；未代表人工审核或实验复现。
 
-候选库：53 篇；当日发现、更新或完成分析：53 篇。
+候选库：56 篇；当日发现、更新或完成分析：56 篇。
 
-已有有效中文分析：51 篇；待分析或缺少摘要证据：2 篇。
+已有有效中文分析：54 篇；待分析或缺少摘要证据：2 篇。
 
 ## 检索覆盖
 
-- arxiv / 查询 4744eb3faccd：0 条；不完整，进度未推进；SourceError: source query failed; retry retained
+- arxiv / 查询 4744eb3faccd：5 条；完整
 - arxiv / 查询 42b91404506f：0 条；完整
 - europepmc / 查询 249ba7c65421：18 条；完整
 - europepmc / 查询 b614de0bf8b6：0 条；完整
@@ -73,6 +73,20 @@ BiasLab 提出多语言双框架提示对方法，配合随机包装扰动、固
 
 证据层级：abstract；[来源](https://pubmed.ncbi.nlm.nih.gov/42434887/)；模型：qoder-cn/dfmodel。
 
+### [Disparity Laundering: Consensus Without Fairness in Clinical Multi-Agent Systems](https://arxiv.org/abs/2610.38215)
+
+- 标识：`p-2fcb4e34b5f7daab4c8d`；发表：2026-10-28；发现：2026-11-04
+- 主题：Fairness Evaluation and Benchmarking、Bias Mechanisms and Measurement、Pre-processing Mitigation、Post-processing Mitigation、Clinical NLP and Foundation Models、EHR, Physiological Signals and Healthcare
+- 状态：建议纳入，待审核
+
+研究临床多智能体大模型中的“差异洗白”：在120例MIMIC-IV急诊病例、5个模型家族×4种聚合拓扑及种族/性别反事实替换下，所有配置均未消除差异；事后公平指令与人口学遮蔽无效，自我去偏反而扩大差距；让各智能体看到不同人口学版本并汇聚可将差异降低67%–94%。
+
+限制：证据来自单一急诊来源、120例及每格3个种子，部分结果为描述性点估计；仅使用源数据中存在的种族类别和二分类性别，未覆盖交叉身份；团队为同模型五实例；多样化视角集成属于沙盒审计性缓解，未做临床验证。
+
+判断：全文报告了临床多智能体LLM的公平性实证审计与缓解：包含急诊分诊任务、模型与拓扑评估、种族和性别反事实组以及20格实证测量，满足五项纳入标准。
+
+证据层级：full_text；[来源](https://arxiv.org/html/2610.38215v1)；模型：qoder-cn/dfmodel。
+
 ### [A Scoping Review of Artificial Intelligence and Machine Learning for Spatio-temporal Infectious Disease Forecasting](https://europepmc.org/article/PPR/PPR1356097)
 
 - 标识：`p-39172eeeef221e79bbcc`；发表：2026-11-03；发现：2026-11-04
@@ -101,6 +115,20 @@ BiasLab 提出多语言双框架提示对方法，配合随机包装扰动、固
 
 证据层级：abstract；[来源](https://pubmed.ncbi.nlm.nih.gov/42560117/)；模型：qoder-cn/dfmodel。
 
+### [A Framework for Task-Agnostic Counterfactual Fairness in Transformers through Activation Steering](https://arxiv.org/abs/2611.00298)
+
+- 标识：`p-3d7d2c77176c61d55abc`；发表：2026-10-30；发现：2026-11-04
+- 主题：Bias Mechanisms and Measurement、In-processing Mitigation、EHR, Physiological Signals and Healthcare
+- 状态：建议纳入，待审核
+
+提出 MICF 框架，将反事实公平约束重述为 Transformer 激活层面的分析与干预：用激活补丁定位敏感属性相关层，分解直接与间接效应，并在推理时通过激活转向降低种族偏差；在 UTICalc 临床预测和 COMPAS 表格任务上评估。
+
+限制：仅覆盖 TabPFN、两个表格任务和二元种族属性，主要优化总效应；部分转向设置伴随准确率下降，作者也强调结果不构成通用公平性保证或临床部署依据。
+
+判断：全文包含临床 UTI 预测任务、TabPFN 算法、反事实公平问题、种族敏感属性和实证测量，五个纳入证据均具备，故建议纳入。
+
+证据层级：full_text；[来源](https://arxiv.org/html/2611.00298v1)；模型：qoder-cn/dfmodel。
+
 ### [Governing artificial intelligence in Australian healthcare organisations - a qualitative study of staff perspectives.](https://europepmc.org/article/MED/42906928)
 
 - 标识：`p-3e7581d5cf989529b639`；发表：2026-11-01；发现：2026-11-04
@@ -128,6 +156,20 @@ BiasLab 提出多语言双框架提示对方法，配合随机包装扰动、固
 判断：摘要显示该文为综述，涉及不良事件检测这一生物医学任务及机器学习等方法，并提及算法偏倚，但未定义受保护群体、未设计亚组发现协议，也未实施任何公平性实证或测量评估，不满足纳入所需的五项证据要求；按综述类文献归为相关。
 
 证据层级：abstract；[来源](https://pubmed.ncbi.nlm.nih.gov/42975625/)；模型：qoder-cn/dfmodel。
+
+### [Fairness Metrics based on the AUC in Clinical Predictive AI](https://arxiv.org/abs/2611.05222)
+
+- 标识：`p-5903974910ebbe7950d2`；发表：2026-11-03；发现：2026-11-04
+- 主题：Fairness Evaluation and Benchmarking、Bias Mechanisms and Measurement
+- 状态：建议纳入，待审核
+
+该文系统分析临床预测模型中八种基于AUC的公平性指标，阐明AUC不可折叠性对指标解释的影响，并以EuroSCORE II为例用模拟展示亚组与跨组AUC差异，建议报告完整AUC矩阵并优先采用组内AUC parity。
+
+限制：证据主要来自方法学分析与EuroSCORE II模拟，仅涉及二分类结局和男女两个亚组；未评估真实世界多中心数据的公平性，也未深入验证校准公平性及干预效果。
+
+判断：该文针对临床预测AI的AUC公平性指标开展正式分析与模拟测量，明确以性别定义亚组并比较组内/跨组差异，满足临床任务、算法评估、公平性问题和实证评价五项标准。
+
+证据层级：full_text；[来源](https://arxiv.org/html/2611.05222v1)；模型：qoder-cn/dfmodel。
 
 ### [Responsible Credit-Line Increase: A Fairness-Aware, Explainable, and Governed Machine-Learning Framework for Socio-Technical Lending Systems](https://europepmc.org/article/PPR/PPR1353923)
 
@@ -655,6 +697,20 @@ Full-text access failed (HTTPError); abstract retained.
 
 证据层级：abstract；[来源](https://pubmed.ncbi.nlm.nih.gov/42447641/)；模型：qoder-cn/dfmodel。
 
+### [Deep Learning for Cervical Cytology Screening: Methods, Algorithms, Challenges and Prospects](https://arxiv.org/abs/2611.01730)
+
+- 标识：`p-79db3e55e911174329df`；发表：2026-11-01；发现：2026-11-04
+- 主题：Fairness Evaluation and Benchmarking、Bias Mechanisms and Measurement、Clinical NLP and Foundation Models
+- 状态：相关综述／资源
+
+本文综述宫颈细胞学筛查的深度学习进展，按数据尺度、任务和监督方式分类，比较数据集与模型性能，并讨论临床转化、可信AI及公平性缺口。
+
+限制：证据来自叙述性综述全文；公平性讨论停留在年龄、HPV状态、扫描仪和地区等亚组差异未被量化及报告建议，未提供原始数据上的公平性测量、缓解或基准实验，无法支持纳入。
+
+判断：文章是宫颈细胞学影像深度学习综述，明确提及公平性/亚组报告缺口，但没有实施公平性测量、缓解或基准评估，符合相关综述而非可纳入的实证研究。
+
+证据层级：full_text；[来源](https://arxiv.org/html/2611.01730v1)；模型：qoder-cn/dfmodel。
+
 ### [Patient attitudes toward artificial intelligence-driven dermatology.](https://pubmed.ncbi.nlm.nih.gov/42969910/)
 
 - 标识：`p-ca287a15e23f038adaf1`；发表：2026-11-02；发现：2026-11-04
@@ -724,20 +780,6 @@ Full-text access failed (HTTPError); abstract retained.
 判断：摘要显示其为骨科教育图像肤色代表性审计，使用GPT-4o作测量工具；虽有肤色分组和经验统计，但未评估临床AI/ML算法的公平性，且仅有摘要证据，故不满足纳入标准。
 
 证据层级：abstract；[来源](https://pubmed.ncbi.nlm.nih.gov/42975702/)；模型：qoder-cn/dfmodel。
-
-### [Deep Learning for Cervical Cytology Screening: Methods, Algorithms, Challenges and Prospects](https://arxiv.org/abs/2611.01730)
-
-- 标识：`p-79db3e55e911174329df`；发表：2026-11-01；发现：2026-11-04
-- 主题：Fairness Evaluation and Benchmarking、Bias Mechanisms and Measurement、Clinical NLP and Foundation Models
-- 状态：相关综述／资源
-
-本文综述宫颈细胞学筛查的深度学习进展，按数据尺度、任务和监督方式分类，比较数据集与模型性能，并讨论临床转化、可信AI及公平性缺口。
-
-限制：证据来自叙述性综述全文；公平性讨论停留在年龄、HPV状态、扫描仪和地区等亚组差异未被量化及报告建议，未提供原始数据上的公平性测量、缓解或基准实验，无法支持纳入。
-
-判断：文章是宫颈细胞学影像深度学习综述，明确提及公平性/亚组报告缺口，但没有实施公平性测量、缓解或基准评估，符合相关综述而非可纳入的实证研究。
-
-证据层级：full_text；[来源](https://arxiv.org/html/2611.01730v1)；模型：qoder-cn/dfmodel。
 
 ### [Comment on "Artificial Intelligence in Health Care: A Rallying Cry for Critical Clinical Research and Ethical Thinking".](https://pubmed.ncbi.nlm.nih.gov/42727424/)
 

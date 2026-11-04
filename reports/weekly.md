@@ -8,8 +8,14 @@
   该文综述AI在PET成像临床流程中的应用，包括自动预约与协议、深度学习重建、病灶检测及大语言模型报告，并讨论算法偏倚、数据漂移和监管等实施挑战。
 - [BiasLab: A multilingual dual-framing framework for LLM bias measurement, applied to workplace and HR contexts.](https://pubmed.ncbi.nlm.nih.gov/42434887/) · 相关综述／资源 · `p-2ace6f04876029d3419e`
   BiasLab 提出多语言双框架提示对方法，配合随机包装扰动、固定选项约束与极性对齐打分，量化 LLM 在六个职场/HR 议题（性别领导力、就业空档、年龄招聘等）上的方向性输出偏好；对十个模型、十二种语言生成 43,200 条回答，发现一致的方向偏好与“拒斥强于赞同”的不对称模式。
+- [Disparity Laundering: Consensus Without Fairness in Clinical Multi-Agent Systems](https://arxiv.org/abs/2610.38215) · 建议纳入，待审核 · `p-2fcb4e34b5f7daab4c8d`
+  研究临床多智能体大模型中的“差异洗白”：在120例MIMIC-IV急诊病例、5个模型家族×4种聚合拓扑及种族/性别反事实替换下，所有配置均未消除差异；事后公平指令与人口学遮蔽无效，自我去偏反而扩大差距；让各智能体看到不同人口学版本并汇聚可将差异降低67%–94%。
 - [AI-Driven Multiomics Biomarkers for Precision Oncology: Navigating the Translational Gap and Regulatory Hurdles.](https://pubmed.ncbi.nlm.nih.gov/42560117/) · 相关综述／资源 · `p-3afb8c155e44c9705fd1`
   该文为精准肿瘤学多组学AI生物标志物的综述，梳理从数据生成、整合、标志物发现、验证到监管落地的五阶段路线，并提及异质性、可重复性、算法偏倚与伦理监管等转化障碍。
+- [A Framework for Task-Agnostic Counterfactual Fairness in Transformers through Activation Steering](https://arxiv.org/abs/2611.00298) · 建议纳入，待审核 · `p-3d7d2c77176c61d55abc`
+  提出 MICF 框架，将反事实公平约束重述为 Transformer 激活层面的分析与干预：用激活补丁定位敏感属性相关层，分解直接与间接效应，并在推理时通过激活转向降低种族偏差；在 UTICalc 临床预测和 COMPAS 表格任务上评估。
+- [Fairness Metrics based on the AUC in Clinical Predictive AI](https://arxiv.org/abs/2611.05222) · 建议纳入，待审核 · `p-5903974910ebbe7950d2`
+  该文系统分析临床预测模型中八种基于AUC的公平性指标，阐明AUC不可折叠性对指标解释的影响，并以EuroSCORE II为例用模拟展示亚组与跨组AUC差异，建议报告完整AUC矩阵并优先采用组内AUC parity。
 - [MRI radiomics for predicting pathological complete response in breast cancer: a systematic review of current evidence and limitations.](https://pubmed.ncbi.nlm.nih.gov/42541995/) · 相关综述／资源 · `p-5f6af5fefa6890d56a13`
   该系统综述汇总35项MRI影像组学预测乳腺癌新辅助治疗病理完全缓解（pCR）的研究，采用METRICS评分与改良QUADAS-2框架评估方法学质量、偏倚风险及亚组表现，报告合并AUC 0.813，并指出样本量普遍不足、外部验证少见、亚组分析仅占14%，限制了公平性能的评估。
 - [Ethical and legal challenges of integrating artificial intelligence into paediatric surgery.](https://pubmed.ncbi.nlm.nih.gov/41725549/) · 相关综述／资源 · `p-747c407c5696b151b802`
@@ -42,6 +48,8 @@
   该文按PRISMA 2020系统综述2015至2025年学术研究中负责任AI的伦理原则、挑战与治理建议，归纳算法偏见、数据治理与透明性等议题，并提出五原则对应五阶段的整合框架。
 - [The pediatric transfer gap: How adult-ICU-trained machine-learning models degrade on pediatric intensive care patients.](https://pubmed.ncbi.nlm.nih.gov/42447641/) · 待核验 · `p-645868c25d38e8ad956f`
   该研究基于PIC与MIMIC-IV重症监护数据，评估成人或年长儿数据训练的机器学习死亡预测模型在低龄儿科患者中的迁移差距，发现判别力下降与校准恶化，并比较目标域重训练与仅校准更新的缓解效果。
+- [Deep Learning for Cervical Cytology Screening: Methods, Algorithms, Challenges and Prospects](https://arxiv.org/abs/2611.01730) · 相关综述／资源 · `p-79db3e55e911174329df`
+  本文综述宫颈细胞学筛查的深度学习进展，按数据尺度、任务和监督方式分类，比较数据集与模型性能，并讨论临床转化、可信AI及公平性缺口。
 - [Patient attitudes toward artificial intelligence-driven dermatology.](https://pubmed.ncbi.nlm.nih.gov/42969910/) · 相关综述／资源 · `p-ca287a15e23f038adaf1`
   该文系统综述患者对皮肤科人工智能的态度，发现患者有条件支持，但更倾向由皮肤科医生监督的AI；信任受临床问责、解释与不确定性说明、隐私保护及跨肤色性能可靠性影响，并建议按肤色、诊断和诊疗场景分层评估与报告。
 - [Subgroup deployment-readiness audit of calibration and clinical utility in perioperative infection prediction.](https://pubmed.ncbi.nlm.nih.gov/42962674/) · 待核验 · `p-cd61ff429b4e8948cce1`
@@ -52,11 +60,11 @@
   该文为心血管医学人工智能中性别与性别偏倚的框架性论文，梳理六类相互作用的偏倚机制，讨论机器学习中二元性别分层的认识论风险，并提出包含性别感知临床提示工程、三阶段负责任人工智能互动模型以及数据治理、算法设计、临床教育与监管议程的操作框架。
 - [Skin color representation in orthopedic literature.](https://pubmed.ncbi.nlm.nih.gov/42975702/) · 相关综述／资源 · `p-fda1af6a735d35a7ab7d`
   研究用GPT-4o流程分析14种开放获取骨科期刊的40,674幅图，在2,025幅含皮肤图中发现浅肤色占65.6%、深肤色仅4.8%，相对人群基准显著不足。
-- [Deep Learning for Cervical Cytology Screening: Methods, Algorithms, Challenges and Prospects](https://arxiv.org/abs/2611.01730) · 相关综述／资源 · `p-79db3e55e911174329df`
-  本文综述宫颈细胞学筛查的深度学习进展，按数据尺度、任务和监督方式分类，比较数据集与模型性能，并讨论临床转化、可信AI及公平性缺口。
 
 ## Clinical NLP and Foundation Models
 
+- [Disparity Laundering: Consensus Without Fairness in Clinical Multi-Agent Systems](https://arxiv.org/abs/2610.38215) · 建议纳入，待审核 · `p-2fcb4e34b5f7daab4c8d`
+  研究临床多智能体大模型中的“差异洗白”：在120例MIMIC-IV急诊病例、5个模型家族×4种聚合拓扑及种族/性别反事实替换下，所有配置均未消除差异；事后公平指令与人口学遮蔽无效，自我去偏反而扩大差距；让各智能体看到不同人口学版本并汇聚可将差异降低67%–94%。
 - [Artificial intelligence-driven pharmacovigilance: transforming signal detection, real-world drug safety monitoring, and regulatory decision-making.](https://pubmed.ncbi.nlm.nih.gov/42975625/) · 相关综述／资源 · `p-4271f40bb01045bc8aab`
   本文为药物警戒领域的AI应用综述，梳理机器学习、深度学习、自然语言处理在不良事件检测、文献挖掘、信号优先级排序以及EHR和社交媒体数据分析中的应用，并讨论大语言模型、联邦学习、区块链、数字孪生与IoT等新兴技术；同时指出可解释性、数据质量、网络安全、算法偏倚与监管验证等落地障碍。
 - [Technology Matters: Emerging technologies in clinical informatics to support child and adolescent mental healthcare safety.](https://pubmed.ncbi.nlm.nih.gov/41937617/) · 相关综述／资源 · `p-791ad6693c5fab805032`
@@ -67,13 +75,17 @@
   研究用结构化提问模拟首次交互，测试ChatGPT 3.5与4.0在种族、性别和性取向等社会变量下的HIV咨询回答差异，发现部分群体获得的建议较不全面，提示潜在偏见。
 - [Artificial Intelligence in Dietary Management and Nutritional Interventions: A Narrative Review of Current Evidence, Applications, and Translational Challenges.](https://europepmc.org/article/MED/42970338) · 相关综述／资源 · `p-f729e9411f9f1a7cc891`
   该叙述性综述总结AI在饮食评估、精准营养、餐后血糖预测和LLM饮食咨询中的应用，并讨论外部验证不足、算法偏见、隐私与监管等转化挑战。
-- [Sex, gender and artificial intelligence in cardiovascular medicine 4.0.](https://pubmed.ncbi.nlm.nih.gov/42721913/) · 相关综述／资源 · `p-719d950501ac09bbdb7d`
-  该文为心血管医学人工智能中性别与性别偏倚的框架性论文，梳理六类相互作用的偏倚机制，讨论机器学习中二元性别分层的认识论风险，并提出包含性别感知临床提示工程、三阶段负责任人工智能互动模型以及数据治理、算法设计、临床教育与监管议程的操作框架。
 - [Deep Learning for Cervical Cytology Screening: Methods, Algorithms, Challenges and Prospects](https://arxiv.org/abs/2611.01730) · 相关综述／资源 · `p-79db3e55e911174329df`
   本文综述宫颈细胞学筛查的深度学习进展，按数据尺度、任务和监督方式分类，比较数据集与模型性能，并讨论临床转化、可信AI及公平性缺口。
+- [Sex, gender and artificial intelligence in cardiovascular medicine 4.0.](https://pubmed.ncbi.nlm.nih.gov/42721913/) · 相关综述／资源 · `p-719d950501ac09bbdb7d`
+  该文为心血管医学人工智能中性别与性别偏倚的框架性论文，梳理六类相互作用的偏倚机制，讨论机器学习中二元性别分层的认识论风险，并提出包含性别感知临床提示工程、三阶段负责任人工智能互动模型以及数据治理、算法设计、临床教育与监管议程的操作框架。
 
 ## EHR, Physiological Signals and Healthcare
 
+- [Disparity Laundering: Consensus Without Fairness in Clinical Multi-Agent Systems](https://arxiv.org/abs/2610.38215) · 建议纳入，待审核 · `p-2fcb4e34b5f7daab4c8d`
+  研究临床多智能体大模型中的“差异洗白”：在120例MIMIC-IV急诊病例、5个模型家族×4种聚合拓扑及种族/性别反事实替换下，所有配置均未消除差异；事后公平指令与人口学遮蔽无效，自我去偏反而扩大差距；让各智能体看到不同人口学版本并汇聚可将差异降低67%–94%。
+- [A Framework for Task-Agnostic Counterfactual Fairness in Transformers through Activation Steering](https://arxiv.org/abs/2611.00298) · 建议纳入，待审核 · `p-3d7d2c77176c61d55abc`
+  提出 MICF 框架，将反事实公平约束重述为 Transformer 激活层面的分析与干预：用激活补丁定位敏感属性相关层，分解直接与间接效应，并在推理时通过激活转向降低种族偏差；在 UTICalc 临床预测和 COMPAS 表格任务上评估。
 - [Artificial intelligence-driven pharmacovigilance: transforming signal detection, real-world drug safety monitoring, and regulatory decision-making.](https://pubmed.ncbi.nlm.nih.gov/42975625/) · 相关综述／资源 · `p-4271f40bb01045bc8aab`
   本文为药物警戒领域的AI应用综述，梳理机器学习、深度学习、自然语言处理在不良事件检测、文献挖掘、信号优先级排序以及EHR和社交媒体数据分析中的应用，并讨论大语言模型、联邦学习、区块链、数字孪生与IoT等新兴技术；同时指出可解释性、数据质量、网络安全、算法偏倚与监管验证等落地障碍。
 - [Technology Matters: Emerging technologies in clinical informatics to support child and adolescent mental healthcare safety.](https://pubmed.ncbi.nlm.nih.gov/41937617/) · 相关综述／资源 · `p-791ad6693c5fab805032`
@@ -101,8 +113,12 @@
 
 - [BiasLab: A multilingual dual-framing framework for LLM bias measurement, applied to workplace and HR contexts.](https://pubmed.ncbi.nlm.nih.gov/42434887/) · 相关综述／资源 · `p-2ace6f04876029d3419e`
   BiasLab 提出多语言双框架提示对方法，配合随机包装扰动、固定选项约束与极性对齐打分，量化 LLM 在六个职场/HR 议题（性别领导力、就业空档、年龄招聘等）上的方向性输出偏好；对十个模型、十二种语言生成 43,200 条回答，发现一致的方向偏好与“拒斥强于赞同”的不对称模式。
+- [Disparity Laundering: Consensus Without Fairness in Clinical Multi-Agent Systems](https://arxiv.org/abs/2610.38215) · 建议纳入，待审核 · `p-2fcb4e34b5f7daab4c8d`
+  研究临床多智能体大模型中的“差异洗白”：在120例MIMIC-IV急诊病例、5个模型家族×4种聚合拓扑及种族/性别反事实替换下，所有配置均未消除差异；事后公平指令与人口学遮蔽无效，自我去偏反而扩大差距；让各智能体看到不同人口学版本并汇聚可将差异降低67%–94%。
 - [A Scoping Review of Artificial Intelligence and Machine Learning for Spatio-temporal Infectious Disease Forecasting](https://europepmc.org/article/PPR/PPR1356097) · 相关综述／资源 · `p-39172eeeef221e79bbcc`
   该文为时空传染病预测AI/ML的范围综述，纳入93项研究，总结模型、误差指标、外部验证、代码共享及公平性分析等评估缺口，指出仅1项研究开展公平性分析。
+- [Fairness Metrics based on the AUC in Clinical Predictive AI](https://arxiv.org/abs/2611.05222) · 建议纳入，待审核 · `p-5903974910ebbe7950d2`
+  该文系统分析临床预测模型中八种基于AUC的公平性指标，阐明AUC不可折叠性对指标解释的影响，并以EuroSCORE II为例用模拟展示亚组与跨组AUC差异，建议报告完整AUC矩阵并优先采用组内AUC parity。
 - [Responsible Credit-Line Increase: A Fairness-Aware, Explainable, and Governed Machine-Learning Framework for Socio-Technical Lending Systems](https://europepmc.org/article/PPR/PPR1353923) · 机器建议排除，待抽查 · `p-59d12037c0f5cd6ad9d2`
   提出面向信贷额度主动上调（CLI）的公平性感知、可解释且可治理的机器学习框架：在组合预期损失预算与显式公平容忍度下最大化增量利润，将问题归约为经校准、可审计的阈值策略，并在不改变已验证模型的前提下做群体级重校准以控制差异影响。评估基于6万账户的合成组合，并在一公开信贷基准上复核。
 - [MRI radiomics for predicting pathological complete response in breast cancer: a systematic review of current evidence and limitations.](https://pubmed.ncbi.nlm.nih.gov/42541995/) · 相关综述／资源 · `p-5f6af5fefa6890d56a13`
@@ -122,6 +138,8 @@
   提出F-CTSD算法，在异质亚组情境实验中兼顾子组公平与样本效率，给出公平-效率权衡、样本复杂度及治疗效应估计的理论保证，并在数值实验中报告子组公平违规下降4.95%。
 - [The pediatric transfer gap: How adult-ICU-trained machine-learning models degrade on pediatric intensive care patients.](https://pubmed.ncbi.nlm.nih.gov/42447641/) · 待核验 · `p-645868c25d38e8ad956f`
   该研究基于PIC与MIMIC-IV重症监护数据，评估成人或年长儿数据训练的机器学习死亡预测模型在低龄儿科患者中的迁移差距，发现判别力下降与校准恶化，并比较目标域重训练与仅校准更新的缓解效果。
+- [Deep Learning for Cervical Cytology Screening: Methods, Algorithms, Challenges and Prospects](https://arxiv.org/abs/2611.01730) · 相关综述／资源 · `p-79db3e55e911174329df`
+  本文综述宫颈细胞学筛查的深度学习进展，按数据尺度、任务和监督方式分类，比较数据集与模型性能，并讨论临床转化、可信AI及公平性缺口。
 - [Patient attitudes toward artificial intelligence-driven dermatology.](https://pubmed.ncbi.nlm.nih.gov/42969910/) · 相关综述／资源 · `p-ca287a15e23f038adaf1`
   该文系统综述患者对皮肤科人工智能的态度，发现患者有条件支持，但更倾向由皮肤科医生监督的AI；信任受临床问责、解释与不确定性说明、隐私保护及跨肤色性能可靠性影响，并建议按肤色、诊断和诊疗场景分层评估与报告。
 - [Subgroup deployment-readiness audit of calibration and clinical utility in perioperative infection prediction.](https://pubmed.ncbi.nlm.nih.gov/42962674/) · 待核验 · `p-cd61ff429b4e8948cce1`
@@ -130,11 +148,11 @@
   该叙述性综述综合塑料外科与烧伤领域因肤色不同而产生的诊断盲点，涵盖临床评估、彩色摄影、浅层与深层成像及人工智能，指出深色皮肤验证不足和AI性能分层，呼吁按肤色分层验证并更新培训。
 - [Skin color representation in orthopedic literature.](https://pubmed.ncbi.nlm.nih.gov/42975702/) · 相关综述／资源 · `p-fda1af6a735d35a7ab7d`
   研究用GPT-4o流程分析14种开放获取骨科期刊的40,674幅图，在2,025幅含皮肤图中发现浅肤色占65.6%、深肤色仅4.8%，相对人群基准显著不足。
-- [Deep Learning for Cervical Cytology Screening: Methods, Algorithms, Challenges and Prospects](https://arxiv.org/abs/2611.01730) · 相关综述／资源 · `p-79db3e55e911174329df`
-  本文综述宫颈细胞学筛查的深度学习进展，按数据尺度、任务和监督方式分类，比较数据集与模型性能，并讨论临床转化、可信AI及公平性缺口。
 
 ## In-processing Mitigation
 
+- [A Framework for Task-Agnostic Counterfactual Fairness in Transformers through Activation Steering](https://arxiv.org/abs/2611.00298) · 建议纳入，待审核 · `p-3d7d2c77176c61d55abc`
+  提出 MICF 框架，将反事实公平约束重述为 Transformer 激活层面的分析与干预：用激活补丁定位敏感属性相关层，分解直接与间接效应，并在推理时通过激活转向降低种族偏差；在 UTICalc 临床预测和 COMPAS 表格任务上评估。
 - [The pediatric transfer gap: How adult-ICU-trained machine-learning models degrade on pediatric intensive care patients.](https://pubmed.ncbi.nlm.nih.gov/42447641/) · 待核验 · `p-645868c25d38e8ad956f`
   该研究基于PIC与MIMIC-IV重症监护数据，评估成人或年长儿数据训练的机器学习死亡预测模型在低龄儿科患者中的迁移差距，发现判别力下降与校准恶化，并比较目标域重训练与仅校准更新的缓解效果。
 
@@ -145,12 +163,19 @@
 
 ## Post-processing Mitigation
 
+- [Disparity Laundering: Consensus Without Fairness in Clinical Multi-Agent Systems](https://arxiv.org/abs/2610.38215) · 建议纳入，待审核 · `p-2fcb4e34b5f7daab4c8d`
+  研究临床多智能体大模型中的“差异洗白”：在120例MIMIC-IV急诊病例、5个模型家族×4种聚合拓扑及种族/性别反事实替换下，所有配置均未消除差异；事后公平指令与人口学遮蔽无效，自我去偏反而扩大差距；让各智能体看到不同人口学版本并汇聚可将差异降低67%–94%。
 - [Responsible Credit-Line Increase: A Fairness-Aware, Explainable, and Governed Machine-Learning Framework for Socio-Technical Lending Systems](https://europepmc.org/article/PPR/PPR1353923) · 机器建议排除，待抽查 · `p-59d12037c0f5cd6ad9d2`
   提出面向信贷额度主动上调（CLI）的公平性感知、可解释且可治理的机器学习框架：在组合预期损失预算与显式公平容忍度下最大化增量利润，将问题归约为经校准、可审计的阈值策略，并在不改变已验证模型的前提下做群体级重校准以控制差异影响。评估基于6万账户的合成组合，并在一公开信贷基准上复核。
 - [The pediatric transfer gap: How adult-ICU-trained machine-learning models degrade on pediatric intensive care patients.](https://pubmed.ncbi.nlm.nih.gov/42447641/) · 待核验 · `p-645868c25d38e8ad956f`
   该研究基于PIC与MIMIC-IV重症监护数据，评估成人或年长儿数据训练的机器学习死亡预测模型在低龄儿科患者中的迁移差距，发现判别力下降与校准恶化，并比较目标域重训练与仅校准更新的缓解效果。
 - [Subgroup deployment-readiness audit of calibration and clinical utility in perioperative infection prediction.](https://pubmed.ncbi.nlm.nih.gov/42962674/) · 待核验 · `p-cd61ff429b4e8948cce1`
   摘要报告对围手术期术后感染预测模型开展亚组部署就绪审计，按性别、年龄及生理储备代理分层，评估判别力、校准、阈值误差与决策曲线净获益，并比较通用与分组重校准及去除过采样的影响。
+
+## Pre-processing Mitigation
+
+- [Disparity Laundering: Consensus Without Fairness in Clinical Multi-Agent Systems](https://arxiv.org/abs/2610.38215) · 建议纳入，待审核 · `p-2fcb4e34b5f7daab4c8d`
+  研究临床多智能体大模型中的“差异洗白”：在120例MIMIC-IV急诊病例、5个模型家族×4种聚合拓扑及种族/性别反事实替换下，所有配置均未消除差异；事后公平指令与人口学遮蔽无效，自我去偏反而扩大差距；让各智能体看到不同人口学版本并汇聚可将差异降低67%–94%。
 
 ## 待分类
 
