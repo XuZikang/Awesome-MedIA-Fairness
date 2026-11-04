@@ -19,7 +19,7 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
-      - name: Discover, annotate and publish directly to main
+      - name: Discover papers and publish human review packets
         env:
           GH_TOKEN: ${{ github.token }}
           LITERATURE_LLM_ENDPOINT: ${{ vars.LITERATURE_LLM_ENDPOINT }}

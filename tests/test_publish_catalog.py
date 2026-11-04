@@ -11,6 +11,10 @@ from scripts.publish_catalog import same_record, sync_catalog
 
 
 class PublicationTests(unittest.TestCase):
+    def test_publication_refuses_missing_human_approval(self):
+        with self.assertRaisesRegex(ValueError,'human-reviewed'):
+            sync_catalog(None,Path('.'))
+
     def test_identifier_dedup_preserves_original_title(self):
         self.assertTrue(same_record({'title':'Original title','doi':'10.1/ABC'}, {'title':'Publisher variation','doi':'10.1/abc'}))
         self.assertFalse(same_record({'title':'Different study'}, {'title':'Original study'}))
@@ -36,6 +40,8 @@ class PublicationTests(unittest.TestCase):
                         'metadata':{'Domain':['Medical imaging'],'Focus':['Evaluation'],'Stage':['Evaluation'],
                                     'Attributes':['Sex and gender'],'Evidence':['Primary full text']},
                         'criteria':{k:{'met':True,'quote':'patient subgroups evaluation'} for k in ('medical','algorithm','fairness','groups','evaluation')}}
+                approval_file=root/'approved.md'
+                approval_file.write_text('## '+pid+'\n\n审核决定：通过\n审核备注：人工确认测试。\n证据版本：'+review_fingerprint(paper)+'\n')
                 def save(r,fp=None):
                     db.execute('INSERT OR REPLACE INTO analyses VALUES (?,?,?)',(pid,fp or review_fingerprint(paper),json.dumps(r)));db.commit()
                 editorial={'tldr_en':['This paper measures clinical model fairness.', 'It compares explicitly defined patient subgroups.', 'The analysis reports subgroup performance differences.'],
@@ -43,12 +49,15 @@ class PublicationTests(unittest.TestCase):
                 with patch('scripts.publish_catalog.fetch_evidence',return_value={'level':'full_text','text':'paper text','url':p['url']}), \
                      patch('scripts.publish_catalog.annotate',return_value=editorial), patch('scripts.publish_catalog.render_catalog'):
                     save({**result,'evidence_level':'abstract'})
-                    self.assertEqual(sync_catalog(db,root)['added'],0)
+                    self.assertEqual(sync_catalog(db,root,approval_file)['added'],0)
                     save(result,fp='stale')
-                    self.assertEqual(sync_catalog(db,root)['added'],0)
+                    self.assertEqual(sync_catalog(db,root,approval_file)['added'],0)
                     save(result)
-                    self.assertEqual(sync_catalog(db,root),{'added':1,'failures':0})
-                    self.assertEqual(sync_catalog(db,root)['added'],0)
+                    approval_file.write_text(approval_file.read_text().replace('审核决定：通过','审核决定：暂缓'))
+                    self.assertEqual(sync_catalog(db,root,approval_file)['added'],0)
+                    approval_file.write_text(approval_file.read_text().replace('审核决定：暂缓','审核决定：通过'))
+                    self.assertEqual(sync_catalog(db,root,approval_file),{'added':1,'failures':0})
+                    self.assertEqual(sync_catalog(db,root,approval_file)['added'],0)
                 published=json.loads((root/'data/catalog.json').read_text())
                 self.assertEqual(published[0]['title'],p['title'])
                 self.assertEqual(len(published[0]['tldr_en']),3)

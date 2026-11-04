@@ -1,6 +1,7 @@
 """Promote current full-text-supported discoveries into the main English catalog."""
 from __future__ import annotations
 import json
+import hashlib
 from pathlib import Path
 from scripts.build_catalog import norm
 from scripts.catalog_editorial import annotate
@@ -14,22 +15,43 @@ def same_record(left, right):
         for key in ('doi', 'arxiv_id', 'pmid'))
 
 
-def sync_catalog(db, root):
+def sync_catalog(db, root, approval_file=None):
+    if approval_file is None:
+        raise ValueError('An explicit human-reviewed approval file is required')
+    from scripts.review_workflow import read_decisions
+    approvals=read_decisions(approval_file)
     root = Path(root)
     path = root/'data/catalog.json'
     records = json.loads(path.read_text())
+    approval_text=Path(approval_file).read_text()
+    archive=root/'reports'/('review-approval-'+hashlib.sha256(approval_text.encode()).hexdigest()[:12]+'.md')
+    archive.parent.mkdir(parents=True,exist_ok=True)
+    archive.write_text(approval_text)
     analyses = {pid: (fp, json.loads(payload)) for pid, fp, payload in db.execute('SELECT paper_id,fingerprint,payload FROM analyses')}
     added = failures = 0
     notes = []
     for (payload,) in db.execute('SELECT payload FROM papers ORDER BY id'):
         paper = json.loads(payload)
         if any(same_record(paper, existing) for existing in records): continue
+        approval=approvals.get(paper['id'],{})
+        if approval.get('decision')!='approve':continue
         previous = analyses.get(paper['id'])
-        if not previous: continue
+        if not previous:
+            failures += 1
+            notes += ['## '+paper['title'],'','人工已通过，但尚缺有效分析，需先补核原文。','']
+            continue
         fp, result = previous
-        if fp != review_fingerprint(paper, result.get('model',''), result.get('provider','')): continue
-        if result.get('decision') != 'suggest_include' or result.get('evidence_level') != 'full_text': continue
-        if not all(result.get('criteria',{}).get(key,{}).get('met') for key in ('medical','algorithm','fairness','groups','evaluation')): continue
+        if approval.get('fingerprint')!=fp:
+            failures += 1
+            notes += ['## '+paper['title'],'','审核对应的证据版本已变化，需重新确认。','']
+            continue
+        eligible = fp == review_fingerprint(paper, result.get('model',''), result.get('provider',''))
+        eligible = eligible and result.get('decision') == 'suggest_include' and result.get('evidence_level') == 'full_text'
+        eligible = eligible and all(result.get('criteria',{}).get(key,{}).get('met') for key in ('medical','algorithm','fairness','groups','evaluation'))
+        if not eligible:
+            failures += 1
+            notes += ['## '+paper['title'],'','人工已通过，但当前全文或范围证据尚不齐全／已更新，需补核后再收录。','']
+            continue
         try:
             evidence = fetch_evidence(paper)
             if evidence['level'] != 'full_text': raise ValueError('Primary full text unavailable for catalog annotation')
@@ -45,6 +67,7 @@ def sync_catalog(db, root):
                           tldr_en=annotation['tldr_en'], verified=True,
                           sources=[{'url':evidence['url'], 'section':'Automated full-text screening'}])
             records.append(record);added += 1
+            record['human_review']={'decision':'approve','review_fingerprint':fp,'note':approval.get('note','')}
             notes += ['## '+paper['title'], '', annotation['reason_zh'], '',
                       '初筛理由：'+result['reason_zh'], '', '证据：']
             notes += ['- '+name+'：'+item['quote'] for name,item in result['criteria'].items()]
@@ -59,6 +82,6 @@ def sync_catalog(db, root):
     render_catalog(root)
     if notes:
         report = root/'reports/catalog-screening.md'
-        previous = report.read_text() if report.exists() else '# 主目录自动收录判断证据\n\n机器判断可由维护者追加复核；英文条目直接进入 README。\n\n'
+        previous = report.read_text() if report.exists() else '# 主目录人工审核与收录证据\n\n仅将明确通过且证据版本匹配的文章加入 README。\n\n'
         report.write_text(previous+'\n'.join(notes)+'\n')
     return {'added':added, 'failures':failures}

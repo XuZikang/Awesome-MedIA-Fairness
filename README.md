@@ -1373,9 +1373,9 @@ General fairness foundations, outside the medical catalog:
 
 - [FAIMI](https://faimi-workshop.github.io/) · [Resources](https://faimi-workshop.github.io/resources/)
 - [FAIMI programme discovery leads](docs/workshop-candidates.md)
-- [Chinese screening evidence](reports/latest.md) · [screening decisions](reports/catalog-proposals.md)
+- [Weekly review packet](reports/review-latest.md) · [review instructions](docs/review-workflow.md) · [Chinese screening evidence](reports/latest.md)
 - [Source audit](docs/source-audit-2026-11-04.md) · [original catalog archive](docs/legacy-catalog.md)
-- [Weekly automation guide](docs/literature-automation.md): eligible discoveries update this README directly every Sunday at 10:07 Asia/Shanghai.
+- [Weekly automation guide](docs/literature-automation.md): candidate review packets update every Sunday at 10:07 Asia/Shanghai; new papers enter this README only after explicit maintainer approval.
 
 ## ⚖️ License
 

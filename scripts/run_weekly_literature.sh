@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Run with existing Magpie/gh credentials; publish English catalog and Chinese evidence to main.
+# Weekly discovery publishes Chinese review packets only; README additions require human approval.
 set -euo pipefail
 REPO_ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$REPO_ROOT"
@@ -22,8 +22,7 @@ set +e
 python3 -u -m scripts.literature_pipeline.cli --require-model \
   --catalog "$PUBLICATION_TREE/README.md" \
   --state "$PUBLICATION_TREE/data/literature-state.json" \
-  --output "$PUBLICATION_TREE/reports" \
-  --publish-root "$PUBLICATION_TREE"
+  --output "$PUBLICATION_TREE/reports"
 PIPELINE_STATUS=$?
 set -e
 # No stale marker can authorize publication after a fatal error.
@@ -36,14 +35,15 @@ root=Path(sys.argv[1]);text=(root/'README.md').read_text()
 errors=CatalogValidator(text).validate()+IssueFormValidator(text,(root/'.github/ISSUE_TEMPLATE/01-paper-suggestion.yml').read_text()).validate()
 if errors:raise SystemExit('\n'.join(errors))
 status=json.loads((root/'reports/run-status.json').read_text())
-if 'catalog_publication' not in status:raise SystemExit('Catalog publication did not complete')
+if not (root/'reports/review-latest.md').exists():raise SystemExit('Review packet missing')
 PY
 git -C "$PUBLICATION_TREE" config user.name "Medical Fairness Literature Bot"
 git -C "$PUBLICATION_TREE" config user.email "medical-fairness-literature@users.noreply.github.com"
-git -C "$PUBLICATION_TREE" add README.md assets/badges data/catalog.json data/literature-state.json reports
+test -z "$(git -C "$PUBLICATION_TREE" diff -- README.md data/catalog.json assets/badges)"
+git -C "$PUBLICATION_TREE" add data/literature-state.json reports
 if ! git -C "$PUBLICATION_TREE" diff --cached --quiet; then
   git -C "$PUBLICATION_TREE" diff --cached --check
-  git -C "$PUBLICATION_TREE" commit -m "docs: update English fairness catalog and Chinese screening evidence"
+  git -C "$PUBLICATION_TREE" commit -m "docs: update literature candidates for human review"
 fi
 git -C "$PUBLICATION_TREE" -c 'credential.helper=!gh auth git-credential' push origin HEAD:refs/heads/main
 # Remove only this clean, successfully published transient worktree.

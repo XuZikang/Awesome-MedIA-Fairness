@@ -282,7 +282,7 @@ def render(db, output, day, statuses, review_status):
                 weekly += ["  " + markdown(result["summary_zh"])]
         weekly += [""]
     write_atomic(output / "weekly.md", "\n".join(weekly))
-    proposals = ["# 主目录筛选判断证据", "", "全文证据支持的机器筛选记录；周更流程会将合格新文章直接整理进主 README，以下保留中文理由供追加复核。", ""]
+    proposals = ["# 主目录筛选判断证据", "", "机器建议及中文证据，仅供审核；必须由维护者明确通过后才加入主 README。请填写 review-latest.md 或按文章编号回复助手。", ""]
     for paper in candidates:
         result = current_analysis(paper)
         if not result or result["decision"] != "suggest_include":
@@ -312,6 +312,7 @@ def main(argv=None):
     parser.add_argument("--output", type=Path, default=ROOT / "reports")
     parser.add_argument("--catalog", type=Path, default=ROOT / "README.md")
     parser.add_argument("--publish-root", type=Path, help="Render eligible discoveries directly into this checkout's English README and catalog")
+    parser.add_argument("--approval-file", type=Path, help="Markdown review packet with explicit human approvals and matching evidence versions")
     parser.add_argument("--since", type=date.fromisoformat)
     parser.add_argument("--until", type=date.fromisoformat, default=datetime.now(timezone(timedelta(hours=8))).date())
     parser.add_argument("--sources", nargs="+", choices=["arxiv", "europepmc", "pubmed"])
@@ -322,6 +323,8 @@ def main(argv=None):
     parser.add_argument("--metadata-only", action="store_true", help="Never call the model or full-text endpoints")
     parser.add_argument("--require-model", action="store_true", help="Fail rather than silently producing metadata-only output")
     args = parser.parse_args(argv)
+    if args.publish_root and not args.approval_file:
+        parser.error('--publish-root requires --approval-file with explicit human decisions')
     if args.since and args.since > args.until:
         parser.error("--since must be <= --until")
     if args.require_model and (args.metadata_only or not os.environ.get("LITERATURE_LLM_ENDPOINT") or not os.environ.get("LITERATURE_LLM_MODEL")):
@@ -387,11 +390,13 @@ def main(argv=None):
         publication = {"added": 0, "failures": 0}
         if args.publish_root:
             from scripts.publish_catalog import sync_catalog
-            publication = sync_catalog(db, args.publish_root)
+            publication = sync_catalog(db, args.publish_root, args.approval_file)
             marker = args.output / 'run-status.json'
             status = json.loads(marker.read_text())
             status['catalog_publication'] = publication
             write_atomic(marker, stable_json(status))
+        from scripts.review_workflow import write_review_packet
+        write_review_packet(db, args.output, day, args.catalog)
         print(f"Literature run: {candidates} candidates; {changed} changed/reviewed today; mode={review_status['mode']}.")
         print(f"Reports: {args.output.resolve()}")
         return 2 if any(not status["complete"] for status in statuses) or review_status["failures"] or publication['failures'] else 0
