@@ -4,7 +4,7 @@ import json
 import re
 from collections import Counter
 from pathlib import Path
-from scripts.build_catalog import ROOT, topics, norm
+from scripts.build_catalog import ROOT, topics, norm, apply_primary_links
 from scripts.catalog_schema import ALLOWED, TOPICS
 
 REPO='https://github.com/XuZikang/Awesome-MedIA-Fairness'
@@ -87,7 +87,7 @@ def main():
     else:
         x=json.loads((ROOT/'data/source-index.json').read_text())
         x['records']=json.loads((ROOT/'data/catalog.json').read_text())
-    records=[prepare(p) for p in x['records']]
+    records=[prepare(p) for p in apply_primary_links(x['records'])]
     main=[p for p in records if p.get('kind','main')!='survey'];surveys=[p for p in records if p.get('kind')=='survey']
     lines=['# Awesome-MedIA-Fairness','',
         'A curated, source-traceable collection on **medical algorithm fairness**, with medical imaging as its historical core and explicit coverage of EHR, clinical language/foundation models, physiological signals and healthcare algorithms.','',
@@ -153,6 +153,7 @@ def main():
         '- [Original catalog](legacy-catalog.md), commit `7ecc995`, preserved verbatim.\n- [Xu et al. 2024, Table 2](https://www.nature.com/articles/s41746-024-01276-5/tables/2), extracted through its [PMC full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC11487181/).\n- [FAIMI resources](https://faimi-workshop.github.io/resources/), including its medical studies, reviews, toolkits and dataset pointers.\n- Official 2023–2026 FAIMI programme pages; all extracted title leads are archived in [workshop-candidates.md](workshop-candidates.md).','',
         '## Decisions and limits','',
         '- Preserved original code/data links and original source categories; duplicate entries are consolidated in the annual view and repeated only in topic navigation.\n- Corrected DOI parsing to preserve parentheses in Elsevier identifiers. Bibliographic metadata is checked against the cited title before replacement.\n- Review articles found inside a reference table are moved to Survey Papers. Nonmedical general fairness works are retained as cross-references.\n- Programme titles without an accessible primary record remain discovery leads, including the explicitly tentative 2026 poster programme.\n- Inherited metadata can need correction: source classification is not an independent test of model freezing, subgroup definitions or fairness gains.\n- Primary-method review is performed for new machine inclusion proposals, with exact evidence spans. No claim of exhaustive coverage, widespread unfairness, method superiority or first-benchmark novelty is made.','',
+        'Sixteen review-reference entries now link directly to DOI records after independent title and author checks against Crossref. The reproducible mappings and metadata endpoints are in [primary-link-resolutions.json](../data/primary-link-resolutions.json). Original display titles are preserved to avoid creating duplicate historical seeds.','',
         '## Unresolved bibliographic checks','']
     for p in records:
         if p.get('verification_warning'):audit += ['- '+md(p['title'])+' · '+p['verification_warning']+'; source-listed metadata retained.']

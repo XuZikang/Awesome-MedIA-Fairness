@@ -237,6 +237,22 @@ def enrich(p):
     except Exception as exc:p['verification_warning']=type(exc).__name__
     return p
 
+def apply_primary_links(records):
+    """Apply independently checked reference-to-DOI mappings without renaming seeds."""
+    mappings=json.loads((ROOT/'data/primary-link-resolutions.json').read_text())
+    by_reference={p['reference']:p for p in mappings}
+    for p in records:
+        for source in p['sources']:
+            match=by_reference.get(source.get('reference'))
+            if not match or norm(p['title'])!=norm(match['title']):continue
+            p['doi']=match['doi'].lower()
+            p['links']['Paper']='https://doi.org/'+p['doi']
+            p['venue']=match['verified_venue']
+            p['verified']=True
+            if p['metadata']['Evidence']!=['Primary abstract']:
+                p['metadata']['Evidence']=['Primary metadata']
+    return records
+
 def main():
     if not (CACHE/'review.xml').exists():
         CACHE.mkdir(parents=True,exist_ok=True)
@@ -272,6 +288,7 @@ def main():
         if p.get('doi') and not p.get('verification_warning'):p['links']['Paper']='https://doi.org/'+p['doi']
         elif p.get('arxiv_id'):p['links']['Paper']='https://arxiv.org/abs/'+p['arxiv_id']
         elif p.get('pmid'):p['links']['Paper']='https://pubmed.ncbi.nlm.nih.gov/'+p['pmid']+'/'
+    records=apply_primary_links(records)
     out={'sources':{'legacy':'7ecc995','review':SURVEY_URL,'faimi':FAIMI_URL},'records':records,'foundations':foundations,'workshop_candidates':workshop,
          'counts':{'legacy_rows':len(legacy()),'review_table_rows':len(survey()),'faimi_rows':len(f)+1,'unique_catalog_records':len(records),'primary_metadata_verified':sum(p['verified'] for p in records)}}
     (ROOT/'data').mkdir(exist_ok=True)

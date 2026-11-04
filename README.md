@@ -197,10 +197,10 @@ Use the smallest directly supported set. `Sex and gender` is a navigation label,
 
 ### 2023
 
-- (*Review-listed'23*) **A comparative study of fairness in medical machine learning**
-  [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR61)]
-  **Metadata:** `Domain: Medical imaging` · `Focus: Mitigation` · `Stage: In-processing + Post-processing + Pre-processing` · `Attributes: Age + Skin tone` · `Assets: Paper only` · `Evidence: Reviewed source`
-  > **Why it qualifies:** Primary paper link pending; Reference-listed medical fairness work; source category: UM-pre-re-distribution. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
+- (*2023 IEEE 20th International Symposium on Biomedical Imaging ISBI'23*) **A comparative study of fairness in medical machine learning**
+  [[📝 Paper](https://doi.org/10.1109/isbi53787.2023.10230368)]
+  **Metadata:** `Domain: Medical imaging` · `Focus: Mitigation` · `Stage: In-processing + Post-processing + Pre-processing` · `Attributes: Age + Skin tone` · `Assets: Paper only` · `Evidence: Primary metadata`
+  > **Why it qualifies:** Reference-listed medical fairness work; source category: UM-pre-re-distribution. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
   > **Provenance:** [2024 review](https://www.nature.com/articles/s41746-024-01276-5/tables/2)
 
 - (*eBioMedicine'23*) **Algorithmic encoding of protected characteristics in chest X-ray disease detection models**
@@ -228,16 +228,16 @@ Use the smallest directly supported set. `Sex and gender` is a navigation label,
   > **Why it qualifies:** Reference-listed medical fairness work; source category: FE-benchmarking. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
   > **Provenance:** [2024 review](https://www.nature.com/articles/s41746-024-01276-5/tables/2) · [FAIMI](https://faimi-workshop.github.io/resources/)
 
-- (*Review-listed'23*) **Are sex-based physiological differences the cause of gender bias for chest X-ray diagnosis?**
-  [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR59)]
-  **Metadata:** `Domain: Medical imaging` · `Focus: Evaluation` · `Stage: Evaluation` · `Attributes: Sex and gender` · `Assets: Paper only` · `Evidence: Reviewed source`
-  > **Why it qualifies:** Primary paper link pending; Reference-listed medical fairness work; source category: FE-discovery. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
+- (*Lecture Notes in Computer Science'23*) **Are sex-based physiological differences the cause of gender bias for chest X-ray diagnosis?**
+  [[📝 Paper](https://doi.org/10.1007/978-3-031-45249-9_14)]
+  **Metadata:** `Domain: Medical imaging` · `Focus: Evaluation` · `Stage: Evaluation` · `Attributes: Sex and gender` · `Assets: Paper only` · `Evidence: Primary metadata`
+  > **Why it qualifies:** Reference-listed medical fairness work; source category: FE-discovery. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
   > **Provenance:** [2024 review](https://www.nature.com/articles/s41746-024-01276-5/tables/2)
 
-- (*Review-listed'23*) **Auditing unfair biases in CNN-based diagnosis of Alzheimer’s disease**
-  [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR42)]
-  **Metadata:** `Domain: Medical imaging` · `Focus: Benchmark + Evaluation` · `Stage: Evaluation` · `Attributes: Sex and gender + Age + Race and ethnicity` · `Assets: Paper only` · `Evidence: Reviewed source`
-  > **Why it qualifies:** Primary paper link pending; Reference-listed medical fairness work; source category: FE-benchmarking. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
+- (*Lecture Notes in Computer Science'23*) **Auditing unfair biases in CNN-based diagnosis of Alzheimer’s disease**
+  [[📝 Paper](https://doi.org/10.1007/978-3-031-45249-9_17)]
+  **Metadata:** `Domain: Medical imaging` · `Focus: Benchmark + Evaluation` · `Stage: Evaluation` · `Attributes: Sex and gender + Age + Race and ethnicity` · `Assets: Paper only` · `Evidence: Primary metadata`
+  > **Why it qualifies:** Reference-listed medical fairness work; source category: FE-benchmarking. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
   > **Provenance:** [2024 review](https://www.nature.com/articles/s41746-024-01276-5/tables/2)
 
 - (*Proceedings of the National Academy of Sciences'23*) **Bias in machine learning models can be significantly mitigated by careful training: Evidence from neuroimaging studies**
@@ -246,10 +246,10 @@ Use the smallest directly supported set. `Sex and gender` is a navigation label,
   > **Why it qualifies:** Reference-listed medical fairness work; source category: UM-pre-aggregation. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
   > **Provenance:** [2024 review](https://www.nature.com/articles/s41746-024-01276-5/tables/2) · [FAIMI](https://faimi-workshop.github.io/resources/)
 
-- (*Review-listed'23*) **Bias in unsupervised anomaly detection in brain MRI**
-  [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR40)]
-  **Metadata:** `Domain: Medical imaging` · `Focus: Evaluation` · `Stage: Evaluation` · `Attributes: Sex and gender + Race and ethnicity` · `Assets: Paper only` · `Evidence: Reviewed source`
-  > **Why it qualifies:** Primary paper link pending; Reference-listed medical fairness work; source category: FE-discovery. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
+- (*Lecture Notes in Computer Science'23*) **Bias in unsupervised anomaly detection in brain MRI**
+  [[📝 Paper](https://doi.org/10.1007/978-3-031-45249-9_12)]
+  **Metadata:** `Domain: Medical imaging` · `Focus: Evaluation` · `Stage: Evaluation` · `Attributes: Sex and gender + Race and ethnicity` · `Assets: Paper only` · `Evidence: Primary metadata`
+  > **Why it qualifies:** Reference-listed medical fairness work; source category: FE-discovery. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
   > **Provenance:** [2024 review](https://www.nature.com/articles/s41746-024-01276-5/tables/2)
 
 - (*Lecture Notes in Computer Science'23*) **CIRCLe: Color Invariant Representation Learning for Unbiased Classification of Skin Lesions**
@@ -258,22 +258,22 @@ Use the smallest directly supported set. `Sex and gender` is a navigation label,
   > **Why it qualifies:** Reference-listed medical fairness work; source category: Data Synthesis. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
   > **Provenance:** [Original catalog](https://github.com/XuZikang/Awesome-MedIA-Fairness/blob/main/docs/legacy-catalog.md) · [2024 review](https://www.nature.com/articles/s41746-024-01276-5/tables/2) · [FAIMI](https://faimi-workshop.github.io/resources/)
 
-- (*Review-listed'23*) **De-identification and obfuscation of gender attributes from retinal scans**
-  [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR66)]
-  **Metadata:** `Domain: Medical imaging` · `Focus: Mitigation` · `Stage: Pre-processing` · `Attributes: Sex and gender` · `Assets: Paper only` · `Evidence: Reviewed source`
-  > **Why it qualifies:** Primary paper link pending; Reference-listed medical fairness work; source category: UM-pre-harmonization. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
+- (*Lecture Notes in Computer Science'23*) **De-identification and obfuscation of gender attributes from retinal scans**
+  [[📝 Paper](https://doi.org/10.1007/978-3-031-45249-9_9)]
+  **Metadata:** `Domain: Medical imaging` · `Focus: Mitigation` · `Stage: Pre-processing` · `Attributes: Sex and gender` · `Assets: Paper only` · `Evidence: Primary metadata`
+  > **Why it qualifies:** Reference-listed medical fairness work; source category: UM-pre-harmonization. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
   > **Provenance:** [2024 review](https://www.nature.com/articles/s41746-024-01276-5/tables/2)
 
-- (*Review-listed'23*) **Detecting shortcuts in medical images-a case study in chest x-rays**
-  [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR57)]
-  **Metadata:** `Domain: Medical imaging` · `Focus: Bias mechanisms + Evaluation` · `Stage: Evaluation` · `Attributes: Sex and gender` · `Assets: Paper only` · `Evidence: Reviewed source`
-  > **Why it qualifies:** Primary paper link pending; Reference-listed medical fairness work; source category: FE-discovery. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
+- (*2023 IEEE 20th International Symposium on Biomedical Imaging ISBI'23*) **Detecting shortcuts in medical images-a case study in chest x-rays**
+  [[📝 Paper](https://doi.org/10.1109/isbi53787.2023.10230572)]
+  **Metadata:** `Domain: Medical imaging` · `Focus: Bias mechanisms + Evaluation` · `Stage: Evaluation` · `Attributes: Sex and gender` · `Assets: Paper only` · `Evidence: Primary metadata`
+  > **Why it qualifies:** Reference-listed medical fairness work; source category: FE-discovery. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
   > **Provenance:** [2024 review](https://www.nature.com/articles/s41746-024-01276-5/tables/2)
 
-- (*Review-listed'23*) **EdgeMixup: embarrassingly simple data alteration to improve Lyme disease lesion segmentation and diagnosis fairness**
-  [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR64)]
-  **Metadata:** `Domain: Medical imaging` · `Focus: Mitigation` · `Stage: Pre-processing` · `Attributes: Skin tone` · `Assets: Paper only` · `Evidence: Reviewed source`
-  > **Why it qualifies:** Primary paper link pending; Reference-listed medical fairness work; source category: UM-pre-harmonization. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
+- (*Lecture Notes in Computer Science'23*) **EdgeMixup: embarrassingly simple data alteration to improve Lyme disease lesion segmentation and diagnosis fairness**
+  [[📝 Paper](https://doi.org/10.1007/978-3-031-43901-8_36)]
+  **Metadata:** `Domain: Medical imaging` · `Focus: Mitigation` · `Stage: Pre-processing` · `Attributes: Skin tone` · `Assets: Paper only` · `Evidence: Primary metadata`
+  > **Why it qualifies:** Reference-listed medical fairness work; source category: UM-pre-harmonization. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
   > **Provenance:** [2024 review](https://www.nature.com/articles/s41746-024-01276-5/tables/2)
 
 - (*Medical Image Analysis'23*) **Equitable modelling of brain imaging by counterfactual augmentation with morphologically constrained 3D deep generative models**
@@ -330,10 +330,10 @@ Use the smallest directly supported set. `Sex and gender` is a navigation label,
   > **Why it qualifies:** Reference-listed medical fairness work; source category: Fairness Benchmarking. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
   > **Provenance:** [Original catalog](https://github.com/XuZikang/Awesome-MedIA-Fairness/blob/main/docs/legacy-catalog.md) · [2024 review](https://www.nature.com/articles/s41746-024-01276-5/tables/2) · [FAIMI](https://faimi-workshop.github.io/resources/)
 
-- (*Review-listed'23*) **Mitigating bias in MRI-based Alzheimer’s disease classifiers through pruning of deep neural networks**
-  [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR91)]
-  **Metadata:** `Domain: Medical imaging` · `Focus: Mitigation` · `Stage: Post-processing` · `Attributes: Sex and gender + Age` · `Assets: Paper only` · `Evidence: Reviewed source`
-  > **Why it qualifies:** Primary paper link pending; Reference-listed medical fairness work; source category: UM-post-pruning. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
+- (*Lecture Notes in Computer Science'23*) **Mitigating bias in MRI-based Alzheimer’s disease classifiers through pruning of deep neural networks**
+  [[📝 Paper](https://doi.org/10.1007/978-3-031-45249-9_16)]
+  **Metadata:** `Domain: Medical imaging` · `Focus: Mitigation` · `Stage: Post-processing` · `Attributes: Sex and gender + Age` · `Assets: Paper only` · `Evidence: Primary metadata`
+  > **Why it qualifies:** Reference-listed medical fairness work; source category: UM-post-pruning. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
   > **Provenance:** [2024 review](https://www.nature.com/articles/s41746-024-01276-5/tables/2)
 
 - (*IPMI 2023'23*) **On Fairness of Medical Image Classification with Multiple Sensitive Attributes via Learning Orthogonal Representations**
@@ -342,10 +342,10 @@ Use the smallest directly supported set. `Sex and gender` is a navigation label,
   > **Why it qualifies:** Reference-listed medical fairness work; source category: Disentanglement Learning. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
   > **Provenance:** [Original catalog](https://github.com/XuZikang/Awesome-MedIA-Fairness/blob/main/docs/legacy-catalog.md) · [2024 review](https://www.nature.com/articles/s41746-024-01276-5/tables/2)
 
-- (*Review-listed'23*) **Revisiting skin tone fairness in dermatological lesion classification**
-  [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR48)]
-  **Metadata:** `Domain: Medical imaging` · `Focus: Benchmark + Evaluation` · `Stage: Evaluation` · `Attributes: Skin tone` · `Assets: Paper only` · `Evidence: Reviewed source`
-  > **Why it qualifies:** Primary paper link pending; Reference-listed medical fairness work; source category: FE-benchmarking. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
+- (*Lecture Notes in Computer Science'23*) **Revisiting skin tone fairness in dermatological lesion classification**
+  [[📝 Paper](https://doi.org/10.1007/978-3-031-45249-9_24)]
+  **Metadata:** `Domain: Medical imaging` · `Focus: Benchmark + Evaluation` · `Stage: Evaluation` · `Attributes: Skin tone` · `Assets: Paper only` · `Evidence: Primary metadata`
+  > **Why it qualifies:** Reference-listed medical fairness work; source category: FE-benchmarking. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
   > **Provenance:** [2024 review](https://www.nature.com/articles/s41746-024-01276-5/tables/2)
 
 - (*Radiology Artificial Intelligence'23*) **Risk of Bias in Chest Radiography Deep Learning Foundation                     Models**
@@ -354,10 +354,10 @@ Use the smallest directly supported set. `Sex and gender` is a navigation label,
   > **Why it qualifies:** Reference-listed medical fairness work; source category: AI fairness for chest x-rays. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
   > **Provenance:** [FAIMI](https://faimi-workshop.github.io/resources/)
 
-- (*Review-listed'23*) **The role of subgroup separability in group-fair medical image classification**
-  [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR58)]
-  **Metadata:** `Domain: Medical imaging` · `Focus: Evaluation` · `Stage: Evaluation` · `Attributes: Sex and gender + Age + Race and ethnicity + Skin tone` · `Assets: Paper only` · `Evidence: Reviewed source`
-  > **Why it qualifies:** Primary paper link pending; Reference-listed medical fairness work; source category: FE-discovery. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
+- (*Lecture Notes in Computer Science'23*) **The role of subgroup separability in group-fair medical image classification**
+  [[📝 Paper](https://doi.org/10.1007/978-3-031-43898-1_18)]
+  **Metadata:** `Domain: Medical imaging` · `Focus: Evaluation` · `Stage: Evaluation` · `Attributes: Sex and gender + Age + Race and ethnicity + Skin tone` · `Assets: Paper only` · `Evidence: Primary metadata`
+  > **Why it qualifies:** Reference-listed medical fairness work; source category: FE-discovery. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
   > **Provenance:** [2024 review](https://www.nature.com/articles/s41746-024-01276-5/tables/2)
 
 - (*Lecture Notes in Computer Science'23*) **Towards Unraveling Calibration Biases in Medical Image Analysis**
@@ -410,10 +410,10 @@ Use the smallest directly supported set. `Sex and gender` is a navigation label,
   > **Why it qualifies:** Reference-listed medical fairness work; source category: Shortcut learning, models recognizing sensitive patient attributes, and fairness in medical AI. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
   > **Provenance:** [FAIMI](https://faimi-workshop.github.io/resources/)
 
-- (*Review-listed'22*) **Conditional VAEs for confound removal and normative modelling of neurodegenerative diseases**
-  [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR86)]
-  **Metadata:** `Domain: Medical imaging` · `Focus: Mitigation` · `Stage: In-processing` · `Attributes: Age` · `Assets: Paper only` · `Evidence: Reviewed source`
-  > **Why it qualifies:** Primary paper link pending; Reference-listed medical fairness work; source category: UM-in-disentanglement. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
+- (*Lecture Notes in Computer Science'22*) **Conditional VAEs for confound removal and normative modelling of neurodegenerative diseases**
+  [[📝 Paper](https://doi.org/10.1007/978-3-031-16431-6_41)]
+  **Metadata:** `Domain: Medical imaging` · `Focus: Mitigation` · `Stage: In-processing` · `Attributes: Age` · `Assets: Paper only` · `Evidence: Primary metadata`
+  > **Why it qualifies:** Reference-listed medical fairness work; source category: UM-in-disentanglement. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
   > **Provenance:** [2024 review](https://www.nature.com/articles/s41746-024-01276-5/tables/2)
 
 - (*ML4HC 2022'22*) **Debiasing Deep Chest X-Ray Classifiers using Intra- and Post-processing Methods**
@@ -440,10 +440,10 @@ Use the smallest directly supported set. `Sex and gender` is a navigation label,
   > **Why it qualifies:** Reference-listed medical fairness work; source category: AI fairness for dermatology images. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
   > **Provenance:** [FAIMI](https://faimi-workshop.github.io/resources/)
 
-- (*Review-listed'22*) **Disproportionate subgroup impacts and other challenges of fairness in artificial intelligence for medical image analysis**
-  [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR78)]
-  **Metadata:** `Domain: Medical imaging` · `Focus: Mitigation` · `Stage: In-processing` · `Attributes: Race and ethnicity` · `Assets: Paper only` · `Evidence: Reviewed source`
-  > **Why it qualifies:** Primary paper link pending; Reference-listed medical fairness work; source category: UM-in-adversarial. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
+- (*Lecture Notes in Computer Science'22*) **Disproportionate subgroup impacts and other challenges of fairness in artificial intelligence for medical image analysis**
+  [[📝 Paper](https://doi.org/10.1007/978-3-031-23223-7_2)]
+  **Metadata:** `Domain: Medical imaging` · `Focus: Mitigation` · `Stage: In-processing` · `Attributes: Race and ethnicity` · `Assets: Paper only` · `Evidence: Primary metadata`
+  > **Why it qualifies:** Reference-listed medical fairness work; source category: UM-in-adversarial. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
   > **Provenance:** [2024 review](https://www.nature.com/articles/s41746-024-01276-5/tables/2)
 
 - (*ECCVW 2022'22*) **FairDisCo: Fairer AI in Dermatology via Disentanglement Contrastive Learning**
@@ -500,10 +500,10 @@ Use the smallest directly supported set. `Sex and gender` is a navigation label,
   > **Why it qualifies:** Reference-listed medical fairness work; source category: Fairness Benchmarking. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
   > **Provenance:** [Original catalog](https://github.com/XuZikang/Awesome-MedIA-Fairness/blob/main/docs/legacy-catalog.md) · [2024 review](https://www.nature.com/articles/s41746-024-01276-5/tables/2) · [FAIMI](https://faimi-workshop.github.io/resources/)
 
-- (*Review-listed'22*) **Pseudo bias-balanced learning for debiased chest x-ray classification**
-  [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR80)]
-  **Metadata:** `Domain: Medical imaging` · `Focus: Mitigation` · `Stage: In-processing` · `Attributes: Sex and gender` · `Assets: Paper only` · `Evidence: Reviewed source`
-  > **Why it qualifies:** Primary paper link pending; Reference-listed medical fairness work; source category: UM-in-constraints. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
+- (*Lecture Notes in Computer Science'22*) **Pseudo bias-balanced learning for debiased chest x-ray classification**
+  [[📝 Paper](https://doi.org/10.1007/978-3-031-16452-1_59)]
+  **Metadata:** `Domain: Medical imaging` · `Focus: Mitigation` · `Stage: In-processing` · `Attributes: Sex and gender` · `Assets: Paper only` · `Evidence: Primary metadata`
+  > **Why it qualifies:** Reference-listed medical fairness work; source category: UM-in-constraints. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
   > **Provenance:** [2024 review](https://www.nature.com/articles/s41746-024-01276-5/tables/2)
 
 - (*Review-listed'22*) **Rényi fair information bottleneck for image classification**
@@ -539,10 +539,10 @@ Use the smallest directly supported set. `Sex and gender` is a navigation label,
   > **Why it qualifies:** Reference-listed medical fairness work; source category: Data Aggregation. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
   > **Provenance:** [Original catalog](https://github.com/XuZikang/Awesome-MedIA-Fairness/blob/main/docs/legacy-catalog.md) · [2024 review](https://www.nature.com/articles/s41746-024-01276-5/tables/2)
 
-- (*Review-listed'21*) **Confound removal and normalization in practice: a neuroimaging based sex prediction case study**
-  [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR85)]
-  **Metadata:** `Domain: Medical imaging` · `Focus: Mitigation` · `Stage: In-processing` · `Attributes: Age` · `Assets: Paper only` · `Evidence: Reviewed source`
-  > **Why it qualifies:** Primary paper link pending; Reference-listed medical fairness work; source category: UM-in-disentanglement. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
+- (*Lecture Notes in Computer Science'21*) **Confound removal and normalization in practice: a neuroimaging based sex prediction case study**
+  [[📝 Paper](https://doi.org/10.1007/978-3-030-67670-4_1)]
+  **Metadata:** `Domain: Medical imaging` · `Focus: Mitigation` · `Stage: In-processing` · `Attributes: Age` · `Assets: Paper only` · `Evidence: Primary metadata`
+  > **Why it qualifies:** Reference-listed medical fairness work; source category: UM-in-disentanglement. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
   > **Provenance:** [2024 review](https://www.nature.com/articles/s41746-024-01276-5/tables/2)
 
 - (*Medical Image Analysis'21*) **Detect and correct bias in multi-site neuroimaging datasets**
@@ -619,10 +619,10 @@ Use the smallest directly supported set. `Sex and gender` is a navigation label,
 
 ### 2020
 
-- (*Review-listed'20*) **Debiasing skin lesion datasets and models? Not so fast**
-  [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR63)]
-  **Metadata:** `Domain: Medical imaging` · `Focus: Mitigation` · `Stage: Pre-processing` · `Attributes: Skin tone` · `Assets: Paper only` · `Evidence: Reviewed source`
-  > **Why it qualifies:** Primary paper link pending; Reference-listed medical fairness work; source category: UM-pre-harmonization. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
+- (*2020 IEEE/CVF Conference on Computer Vision and Pattern Recogniti'20*) **Debiasing skin lesion datasets and models? Not so fast**
+  [[📝 Paper](https://doi.org/10.1109/cvprw50498.2020.00378)]
+  **Metadata:** `Domain: Medical imaging` · `Focus: Mitigation` · `Stage: Pre-processing` · `Attributes: Skin tone` · `Assets: Paper only` · `Evidence: Primary metadata`
+  > **Why it qualifies:** Reference-listed medical fairness work; source category: UM-pre-harmonization. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
   > **Provenance:** [2024 review](https://www.nature.com/articles/s41746-024-01276-5/tables/2)
 
 - (*Lecture Notes in Computer Science'20*) **Fairness of Classifiers Across Skin Tones in Dermatology**
@@ -663,10 +663,10 @@ Use the smallest directly supported set. `Sex and gender` is a navigation label,
 
 ### 2019
 
-- (*Review-listed'19*) **(De) Constructing bias on skin lesion datasets**
-  [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR62)]
-  **Metadata:** `Domain: Medical imaging` · `Focus: Mitigation` · `Stage: Pre-processing` · `Attributes: Skin tone` · `Assets: Paper only` · `Evidence: Reviewed source`
-  > **Why it qualifies:** Primary paper link pending; Reference-listed medical fairness work; source category: UM-pre-harmonization. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
+- (*2019 IEEE/CVF Conference on Computer Vision and Pattern Recogniti'19*) **(De) Constructing bias on skin lesion datasets**
+  [[📝 Paper](https://doi.org/10.1109/cvprw.2019.00335)]
+  **Metadata:** `Domain: Medical imaging` · `Focus: Mitigation` · `Stage: Pre-processing` · `Attributes: Skin tone` · `Assets: Paper only` · `Evidence: Primary metadata`
+  > **Why it qualifies:** Reference-listed medical fairness work; source category: UM-pre-harmonization. Imported classifications are traceable to the listed sources; no independent reproduction or new fairness-gain claim is implied.
   > **Provenance:** [2024 review](https://www.nature.com/articles/s41746-024-01276-5/tables/2)
 
 - (*Science'19*) **Dissecting racial bias in an algorithm used to manage the health of populations**
@@ -723,17 +723,17 @@ Use the smallest directly supported set. `Sex and gender` is a navigation label,
 - (*Lecture Notes in Computer Science'23*) **An Investigation into the Impact of Deep Learning Model Choice on Sex and Race Bias in Cardiac MR Segmentation**
   [[📝 Paper](https://doi.org/10.1007/978-3-031-45249-9_21)]
 
-- (*Review-listed'23*) **Are sex-based physiological differences the cause of gender bias for chest X-ray diagnosis?**
-  [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR59)]
+- (*Lecture Notes in Computer Science'23*) **Are sex-based physiological differences the cause of gender bias for chest X-ray diagnosis?**
+  [[📝 Paper](https://doi.org/10.1007/978-3-031-45249-9_14)]
 
-- (*Review-listed'23*) **Auditing unfair biases in CNN-based diagnosis of Alzheimer’s disease**
-  [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR42)]
+- (*Lecture Notes in Computer Science'23*) **Auditing unfair biases in CNN-based diagnosis of Alzheimer’s disease**
+  [[📝 Paper](https://doi.org/10.1007/978-3-031-45249-9_17)]
 
-- (*Review-listed'23*) **Bias in unsupervised anomaly detection in brain MRI**
-  [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR40)]
+- (*Lecture Notes in Computer Science'23*) **Bias in unsupervised anomaly detection in brain MRI**
+  [[📝 Paper](https://doi.org/10.1007/978-3-031-45249-9_12)]
 
-- (*Review-listed'23*) **Detecting shortcuts in medical images-a case study in chest x-rays**
-  [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR57)]
+- (*2023 IEEE 20th International Symposium on Biomedical Imaging ISBI'23*) **Detecting shortcuts in medical images-a case study in chest x-rays**
+  [[📝 Paper](https://doi.org/10.1109/isbi53787.2023.10230572)]
 
 - (*Review-listed'23*) **Evaluating the fairness of deep learning uncertainty estimates in medical image analysis**
   [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR12)]
@@ -756,14 +756,14 @@ Use the smallest directly supported set. `Sex and gender` is a navigation label,
 - (*IPMI 2023'23*) **On Fairness of Medical Image Classification with Multiple Sensitive Attributes via Learning Orthogonal Representations**
   [[📝 Paper](https://arxiv.org/abs/2301.01481)]
 
-- (*Review-listed'23*) **Revisiting skin tone fairness in dermatological lesion classification**
-  [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR48)]
+- (*Lecture Notes in Computer Science'23*) **Revisiting skin tone fairness in dermatological lesion classification**
+  [[📝 Paper](https://doi.org/10.1007/978-3-031-45249-9_24)]
 
 - (*Radiology Artificial Intelligence'23*) **Risk of Bias in Chest Radiography Deep Learning Foundation                     Models**
   [[📝 Paper](https://doi.org/10.1148/ryai.230060)]
 
-- (*Review-listed'23*) **The role of subgroup separability in group-fair medical image classification**
-  [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR58)]
+- (*Lecture Notes in Computer Science'23*) **The role of subgroup separability in group-fair medical image classification**
+  [[📝 Paper](https://doi.org/10.1007/978-3-031-43898-1_18)]
 
 - (*Lecture Notes in Computer Science'23*) **Towards Unraveling Calibration Biases in Medical Image Analysis**
   [[📝 Paper](https://doi.org/10.1007/978-3-031-45249-9_13)]
@@ -890,8 +890,8 @@ Use the smallest directly supported set. `Sex and gender` is a navigation label,
 - (*eBioMedicine'23*) **Algorithmic encoding of protected characteristics in chest X-ray disease detection models**
   [[📝 Paper](https://doi.org/10.1016/j.ebiom.2023.104467)]
 
-- (*Review-listed'23*) **Detecting shortcuts in medical images-a case study in chest x-rays**
-  [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR57)]
+- (*2023 IEEE 20th International Symposium on Biomedical Imaging ISBI'23*) **Detecting shortcuts in medical images-a case study in chest x-rays**
+  [[📝 Paper](https://doi.org/10.1109/isbi53787.2023.10230572)]
 
 - (*Science'23*) **Implications of predicting race variables from medical images**
   [[📝 Paper](https://doi.org/10.1126/science.adh4260)]
@@ -913,8 +913,8 @@ Use the smallest directly supported set. `Sex and gender` is a navigation label,
 
 ### Pre-processing Mitigation
 
-- (*Review-listed'23*) **A comparative study of fairness in medical machine learning**
-  [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR61)]
+- (*2023 IEEE 20th International Symposium on Biomedical Imaging ISBI'23*) **A comparative study of fairness in medical machine learning**
+  [[📝 Paper](https://doi.org/10.1109/isbi53787.2023.10230368)]
 
 - (*Proceedings of the National Academy of Sciences'23*) **Bias in machine learning models can be significantly mitigated by careful training: Evidence from neuroimaging studies**
   [[📝 Paper](https://doi.org/10.1073/pnas.2211613120)]
@@ -922,11 +922,11 @@ Use the smallest directly supported set. `Sex and gender` is a navigation label,
 - (*Lecture Notes in Computer Science'23*) **CIRCLe: Color Invariant Representation Learning for Unbiased Classification of Skin Lesions**
   [[📝 Paper](https://doi.org/10.1007/978-3-031-25069-9_14)] [[💻 Code](https://github.com/sfu-mial/CIRCLe)]
 
-- (*Review-listed'23*) **De-identification and obfuscation of gender attributes from retinal scans**
-  [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR66)]
+- (*Lecture Notes in Computer Science'23*) **De-identification and obfuscation of gender attributes from retinal scans**
+  [[📝 Paper](https://doi.org/10.1007/978-3-031-45249-9_9)]
 
-- (*Review-listed'23*) **EdgeMixup: embarrassingly simple data alteration to improve Lyme disease lesion segmentation and diagnosis fairness**
-  [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR64)]
+- (*Lecture Notes in Computer Science'23*) **EdgeMixup: embarrassingly simple data alteration to improve Lyme disease lesion segmentation and diagnosis fairness**
+  [[📝 Paper](https://doi.org/10.1007/978-3-031-43901-8_36)]
 
 - (*Medical Image Analysis'23*) **Equitable modelling of brain imaging by counterfactual augmentation with morphologically constrained 3D deep generative models**
   [[📝 Paper](https://doi.org/10.1016/j.media.2022.102723)]
@@ -955,22 +955,22 @@ Use the smallest directly supported set. `Sex and gender` is a navigation label,
 - (*ArXiv 2021'21*) **RadFusion: Benchmarking Performance and Fairness for Multimodal Pulmonary Embolism Detection from CT and EHR**
   [[📝 Paper](https://arxiv.org/abs/2111.11665)]
 
-- (*Review-listed'20*) **Debiasing skin lesion datasets and models? Not so fast**
-  [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR63)]
+- (*2020 IEEE/CVF Conference on Computer Vision and Pattern Recogniti'20*) **Debiasing skin lesion datasets and models? Not so fast**
+  [[📝 Paper](https://doi.org/10.1109/cvprw50498.2020.00378)]
 
 - (*Lecture Notes in Computer Science'20*) **Fairness of Classifiers Across Skin Tones in Dermatology**
   [[📝 Paper](https://doi.org/10.1007/978-3-030-59725-2_31)]
 
-- (*Review-listed'19*) **(De) Constructing bias on skin lesion datasets**
-  [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR62)]
+- (*2019 IEEE/CVF Conference on Computer Vision and Pattern Recogniti'19*) **(De) Constructing bias on skin lesion datasets**
+  [[📝 Paper](https://doi.org/10.1109/cvprw.2019.00335)]
 
 ### In-processing Mitigation
 
 - (*Review-listed'24*) **Fairtune: Optimizing parameter efficient fine tuning for fairness in medical image analysis**
   [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR89)]
 
-- (*Review-listed'23*) **A comparative study of fairness in medical machine learning**
-  [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR61)]
+- (*2023 IEEE 20th International Symposium on Biomedical Imaging ISBI'23*) **A comparative study of fairness in medical machine learning**
+  [[📝 Paper](https://doi.org/10.1109/isbi53787.2023.10230368)]
 
 - (*Lecture Notes in Computer Science'23*) **CIRCLe: Color Invariant Representation Learning for Unbiased Classification of Skin Lesions**
   [[📝 Paper](https://doi.org/10.1007/978-3-031-25069-9_14)] [[💻 Code](https://github.com/sfu-mial/CIRCLe)]
@@ -987,11 +987,11 @@ Use the smallest directly supported set. `Sex and gender` is a navigation label,
 - (*Lecture Notes in Computer Science'22*) **A Penalty Approach for Normalizing Feature Distributions to Build Confounder-Free Models**
   [[📝 Paper](https://doi.org/10.1007/978-3-031-16437-8_37)]
 
-- (*Review-listed'22*) **Conditional VAEs for confound removal and normative modelling of neurodegenerative diseases**
-  [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR86)]
+- (*Lecture Notes in Computer Science'22*) **Conditional VAEs for confound removal and normative modelling of neurodegenerative diseases**
+  [[📝 Paper](https://doi.org/10.1007/978-3-031-16431-6_41)]
 
-- (*Review-listed'22*) **Disproportionate subgroup impacts and other challenges of fairness in artificial intelligence for medical image analysis**
-  [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR78)]
+- (*Lecture Notes in Computer Science'22*) **Disproportionate subgroup impacts and other challenges of fairness in artificial intelligence for medical image analysis**
+  [[📝 Paper](https://doi.org/10.1007/978-3-031-23223-7_2)]
 
 - (*ECCVW 2022'22*) **FairDisCo: Fairer AI in Dermatology via Disentanglement Contrastive Learning**
   [[📝 Paper](https://arxiv.org/abs/2208.10013)] [[💻 Code](https://github.com/siyi-wind/FairDisCo)]
@@ -999,14 +999,14 @@ Use the smallest directly supported set. `Sex and gender` is a navigation label,
 - (*Review-listed'22*) **Fairness by learning orthogonal disentangled representations**
   [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR83)]
 
-- (*Review-listed'22*) **Pseudo bias-balanced learning for debiased chest x-ray classification**
-  [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR80)]
+- (*Lecture Notes in Computer Science'22*) **Pseudo bias-balanced learning for debiased chest x-ray classification**
+  [[📝 Paper](https://doi.org/10.1007/978-3-031-16452-1_59)]
 
 - (*Review-listed'22*) **Rényi fair information bottleneck for image classification**
   [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR121)]
 
-- (*Review-listed'21*) **Confound removal and normalization in practice: a neuroimaging based sex prediction case study**
-  [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR85)]
+- (*Lecture Notes in Computer Science'21*) **Confound removal and normalization in practice: a neuroimaging based sex prediction case study**
+  [[📝 Paper](https://doi.org/10.1007/978-3-030-67670-4_1)]
 
 - (*MICCAI-DART 2021'21*) **Detecting Melanoma Fairly: Skin Tone Detection and Debiasing for Skin Lesion Classification**
   [[📝 Paper](https://arxiv.org/abs/2202.02832)] [[💻 Code](https://github.com/pbevan1/Detecting-Melanoma-Fairly)]
@@ -1037,11 +1037,11 @@ Use the smallest directly supported set. `Sex and gender` is a navigation label,
 
 ### Post-processing Mitigation
 
-- (*Review-listed'23*) **A comparative study of fairness in medical machine learning**
-  [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR61)]
+- (*2023 IEEE 20th International Symposium on Biomedical Imaging ISBI'23*) **A comparative study of fairness in medical machine learning**
+  [[📝 Paper](https://doi.org/10.1109/isbi53787.2023.10230368)]
 
-- (*Review-listed'23*) **Mitigating bias in MRI-based Alzheimer’s disease classifiers through pruning of deep neural networks**
-  [[📚 Reference listing](https://www.nature.com/articles/s41746-024-01276-5#ref-CR91)]
+- (*Lecture Notes in Computer Science'23*) **Mitigating bias in MRI-based Alzheimer’s disease classifiers through pruning of deep neural networks**
+  [[📝 Paper](https://doi.org/10.1007/978-3-031-45249-9_16)]
 
 - (*ML4HC 2022'22*) **Debiasing Deep Chest X-Ray Classifiers using Intra- and Post-processing Methods**
   [[📝 Paper](https://proceedings.mlr.press/v182/marcinkevics22a.html)] [[💻 Code](https://github.com/i6092467/diff-bias-proxies)]

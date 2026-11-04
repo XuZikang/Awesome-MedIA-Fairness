@@ -4,12 +4,23 @@ import re
 import unittest
 import tempfile
 from pathlib import Path
-from scripts.build_catalog import identity
+from scripts.build_catalog import identity, apply_primary_links
 from scripts.literature_pipeline.cli import connect, seed_catalog
 
 ROOT=Path(__file__).resolve().parents[1]
 
 class MigrationTests(unittest.TestCase):
+    def test_primary_link_mapping_requires_reference_and_matching_title(self):
+        mapping=json.loads((ROOT/'data/primary-link-resolutions.json').read_text())[0]
+        def row(title):
+            return {'title':title,'sources':[{'reference':mapping['reference']}],
+                    'links':{'Paper':'https://example.org/reference'},
+                    'metadata':{'Evidence':['Reviewed source']}}
+        valid,wrong=apply_primary_links([row(mapping['title']),row('Different paper')])
+        self.assertEqual(valid['doi'],mapping['doi'].lower())
+        self.assertEqual(valid['metadata']['Evidence'],['Primary metadata'])
+        self.assertNotIn('doi',wrong)
+
     def test_inventory_kinds_are_explicit(self):
         for row in json.loads((ROOT/'data/catalog.json').read_text()):
             self.assertIn(row.get('kind'),{'main','survey'})

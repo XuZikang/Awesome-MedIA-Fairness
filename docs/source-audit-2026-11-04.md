@@ -4,7 +4,7 @@ This is a targeted, source-traceable catalog rebuild, not a new systematic revie
 
 Original lines parsed: 35. The review Table 2 yields 69 citation occurrences (63 unique reference identifiers); its article-wide search-count prose is not used as a current catalog count. Selected medical/review/toolkit references from FAIMI yielded 74 reference occurrences. Exact titles and DOI/arXiv/PMID links were merged before rendering.
 
-Rendered: 90 unique main-list papers; 16 surveys/perspectives. Retrieved primary bibliographic metadata for 77 records; other entries explicitly retain source-list/legacy evidence. Abstract availability is recorded separately from independent scientific verification.
+Rendered: 90 unique main-list papers; 16 surveys/perspectives. Retrieved primary bibliographic metadata for 93 records; other entries explicitly retain source-list/legacy evidence. Abstract availability is recorded separately from independent scientific verification.
 
 ## Sources
 
@@ -21,6 +21,8 @@ Rendered: 90 unique main-list papers; 16 surveys/perspectives. Retrieved primary
 - Programme titles without an accessible primary record remain discovery leads, including the explicitly tentative 2026 poster programme.
 - Inherited metadata can need correction: source classification is not an independent test of model freezing, subgroup definitions or fairness gains.
 - Primary-method review is performed for new machine inclusion proposals, with exact evidence spans. No claim of exhaustive coverage, widespread unfairness, method superiority or first-benchmark novelty is made.
+
+Sixteen review-reference entries now link directly to DOI records after independent title and author checks against Crossref. The reproducible mappings and metadata endpoints are in [primary-link-resolutions.json](../data/primary-link-resolutions.json). Original display titles are preserved to avoid creating duplicate historical seeds.
 
 ## Unresolved bibliographic checks
 

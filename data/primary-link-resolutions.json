@@ -1,0 +1,130 @@
+[
+  {
+    "reference": "CR40",
+    "title": "Bias in unsupervised anomaly detection in brain MRI",
+    "doi": "10.1007/978-3-031-45249-9_12",
+    "verified_title": "Bias in Unsupervised Anomaly Detection in Brain MRI",
+    "verified_venue": "Lecture Notes in Computer Science",
+    "verification_source": "https://api.crossref.org/works/10.1007%2F978-3-031-45249-9_12"
+  },
+  {
+    "reference": "CR42",
+    "title": "Auditing unfair biases in CNN-based diagnosis of Alzheimer’s disease",
+    "doi": "10.1007/978-3-031-45249-9_17",
+    "verified_title": "Auditing Unfair Biases in CNN-Based Diagnosis of Alzheimer’s Disease",
+    "verified_venue": "Lecture Notes in Computer Science",
+    "verification_source": "https://api.crossref.org/works/10.1007%2F978-3-031-45249-9_17"
+  },
+  {
+    "reference": "CR48",
+    "title": "Revisiting skin tone fairness in dermatological lesion classification",
+    "doi": "10.1007/978-3-031-45249-9_24",
+    "verified_title": "Revisiting Skin Tone Fairness in Dermatological Lesion Classification",
+    "verified_venue": "Lecture Notes in Computer Science",
+    "verification_source": "https://api.crossref.org/works/10.1007%2F978-3-031-45249-9_24"
+  },
+  {
+    "reference": "CR57",
+    "title": "Detecting shortcuts in medical images-a case study in chest x-rays",
+    "doi": "10.1109/ISBI53787.2023.10230572",
+    "verified_title": "Detecting Shortcuts in Medical Images - A Case Study in Chest X-Rays",
+    "verified_venue": "2023 IEEE 20th International Symposium on Biomedical Imaging (ISBI)",
+    "verification_source": "https://api.crossref.org/works/10.1109%2FISBI53787.2023.10230572"
+  },
+  {
+    "reference": "CR58",
+    "title": "The role of subgroup separability in group-fair medical image classification",
+    "doi": "10.1007/978-3-031-43898-1_18",
+    "verified_title": "The Role of Subgroup Separability in Group-Fair Medical Image Classification",
+    "verified_venue": "Lecture Notes in Computer Science",
+    "verification_source": "https://api.crossref.org/works/10.1007%2F978-3-031-43898-1_18"
+  },
+  {
+    "reference": "CR59",
+    "title": "Are sex-based physiological differences the cause of gender bias for chest X-ray diagnosis?",
+    "doi": "10.1007/978-3-031-45249-9_14",
+    "verified_title": "Are Sex-Based Physiological Differences the Cause of Gender Bias for Chest X-Ray Diagnosis?",
+    "verified_venue": "Lecture Notes in Computer Science",
+    "verification_source": "https://api.crossref.org/works/10.1007%2F978-3-031-45249-9_14"
+  },
+  {
+    "reference": "CR61",
+    "title": "A comparative study of fairness in medical machine learning",
+    "doi": "10.1109/ISBI53787.2023.10230368",
+    "verified_title": "A Comparative Study of Fairness in Medical Machine Learning",
+    "verified_venue": "2023 IEEE 20th International Symposium on Biomedical Imaging (ISBI)",
+    "verification_source": "https://api.crossref.org/works/10.1109%2FISBI53787.2023.10230368"
+  },
+  {
+    "reference": "CR62",
+    "title": "(De) Constructing bias on skin lesion datasets",
+    "doi": "10.1109/CVPRW.2019.00335",
+    "verified_title": "(De) Constructing Bias on Skin Lesion Datasets",
+    "verified_venue": "2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
+    "verification_source": "https://api.crossref.org/works/10.1109%2FCVPRW.2019.00335"
+  },
+  {
+    "reference": "CR63",
+    "title": "Debiasing skin lesion datasets and models? Not so fast",
+    "doi": "10.1109/CVPRW50498.2020.00378",
+    "verified_title": "Debiasing Skin Lesion Datasets and Models? Not So Fast",
+    "verified_venue": "2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
+    "verification_source": "https://api.crossref.org/works/10.1109%2FCVPRW50498.2020.00378"
+  },
+  {
+    "reference": "CR64",
+    "title": "EdgeMixup: embarrassingly simple data alteration to improve Lyme disease lesion segmentation and diagnosis fairness",
+    "doi": "10.1007/978-3-031-43901-8_36",
+    "verified_title": "EdgeMixup: Embarrassingly Simple Data Alteration to Improve Lyme Disease Lesion Segmentation and Diagnosis Fairness",
+    "verified_venue": "Lecture Notes in Computer Science",
+    "verification_source": "https://api.crossref.org/works/10.1007%2F978-3-031-43901-8_36"
+  },
+  {
+    "reference": "CR66",
+    "title": "De-identification and obfuscation of gender attributes from retinal scans",
+    "doi": "10.1007/978-3-031-45249-9_9",
+    "verified_title": "De-identification and Obfuscation of Gender Attributes from Retinal Scans",
+    "verified_venue": "Lecture Notes in Computer Science",
+    "verification_source": "https://api.crossref.org/works/10.1007%2F978-3-031-45249-9_9"
+  },
+  {
+    "reference": "CR78",
+    "title": "Disproportionate subgroup impacts and other challenges of fairness in artificial intelligence for medical image analysis",
+    "doi": "10.1007/978-3-031-23223-7_2",
+    "verified_title": "Disproportionate Subgroup Impacts and Other Challenges of Fairness in Artificial Intelligence for Medical Image Analysis",
+    "verified_venue": "Lecture Notes in Computer Science",
+    "verification_source": "https://api.crossref.org/works/10.1007%2F978-3-031-23223-7_2"
+  },
+  {
+    "reference": "CR80",
+    "title": "Pseudo bias-balanced learning for debiased chest x-ray classification",
+    "doi": "10.1007/978-3-031-16452-1_59",
+    "verified_title": "Pseudo Bias-Balanced Learning for Debiased Chest X-Ray Classification",
+    "verified_venue": "Lecture Notes in Computer Science",
+    "verification_source": "https://api.crossref.org/works/10.1007%2F978-3-031-16452-1_59"
+  },
+  {
+    "reference": "CR85",
+    "title": "Confound removal and normalization in practice: a neuroimaging based sex prediction case study",
+    "doi": "10.1007/978-3-030-67670-4_1",
+    "verified_title": "Confound Removal and Normalization in Practice: A Neuroimaging Based Sex Prediction Case Study",
+    "verified_venue": "Lecture Notes in Computer Science",
+    "verification_source": "https://api.crossref.org/works/10.1007%2F978-3-030-67670-4_1"
+  },
+  {
+    "reference": "CR86",
+    "title": "Conditional VAEs for confound removal and normative modelling of neurodegenerative diseases",
+    "doi": "10.1007/978-3-031-16431-6_41",
+    "verified_title": "Conditional VAEs for Confound Removal and Normative Modelling of Neurodegenerative Diseases",
+    "verified_venue": "Lecture Notes in Computer Science",
+    "verification_source": "https://api.crossref.org/works/10.1007%2F978-3-031-16431-6_41"
+  },
+  {
+    "reference": "CR91",
+    "title": "Mitigating bias in MRI-based Alzheimer’s disease classifiers through pruning of deep neural networks",
+    "doi": "10.1007/978-3-031-45249-9_16",
+    "verified_title": "Mitigating Bias in MRI-Based Alzheimer’s Disease Classifiers Through Pruning of Deep Neural Networks",
+    "verified_venue": "Lecture Notes in Computer Science",
+    "verification_source": "https://api.crossref.org/works/10.1007%2F978-3-031-45249-9_16"
+  }
+]

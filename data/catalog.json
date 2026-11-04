@@ -1789,11 +1789,11 @@
   {
     "title": "Revisiting skin tone fairness in dermatological lesion classification",
     "year": "2023",
-    "venue": "Referenced study",
-    "doi": "",
+    "venue": "Lecture Notes in Computer Science",
+    "doi": "10.1007/978-3-031-45249-9_24",
     "pmid": "",
     "links": {
-      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR48"
+      "Paper": "https://doi.org/10.1007/978-3-031-45249-9_24"
     },
     "sources": [
       {
@@ -1820,11 +1820,11 @@
         "Paper only"
       ],
       "Evidence": [
-        "Reviewed source"
+        "Primary metadata"
       ]
     },
     "origin": "review",
-    "verified": false,
+    "verified": true,
     "kind": "main",
     "topics": [
       "Fairness Evaluation and Benchmarking"
@@ -1981,11 +1981,11 @@
   {
     "title": "Auditing unfair biases in CNN-based diagnosis of Alzheimer’s disease",
     "year": "2023",
-    "venue": "Referenced study",
-    "doi": "",
+    "venue": "Lecture Notes in Computer Science",
+    "doi": "10.1007/978-3-031-45249-9_17",
     "pmid": "",
     "links": {
-      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR42"
+      "Paper": "https://doi.org/10.1007/978-3-031-45249-9_17"
     },
     "sources": [
       {
@@ -2014,11 +2014,11 @@
         "Paper only"
       ],
       "Evidence": [
-        "Reviewed source"
+        "Primary metadata"
       ]
     },
     "origin": "review",
-    "verified": false,
+    "verified": true,
     "kind": "main",
     "topics": [
       "Fairness Evaluation and Benchmarking"
@@ -2163,11 +2163,11 @@
   {
     "title": "The role of subgroup separability in group-fair medical image classification",
     "year": "2023",
-    "venue": "Referenced study",
-    "doi": "",
+    "venue": "Lecture Notes in Computer Science",
+    "doi": "10.1007/978-3-031-43898-1_18",
     "pmid": "",
     "links": {
-      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR58"
+      "Paper": "https://doi.org/10.1007/978-3-031-43898-1_18"
     },
     "sources": [
       {
@@ -2196,11 +2196,11 @@
         "Paper only"
       ],
       "Evidence": [
-        "Reviewed source"
+        "Primary metadata"
       ]
     },
     "origin": "review",
-    "verified": false,
+    "verified": true,
     "kind": "main",
     "topics": [
       "Fairness Evaluation and Benchmarking"
@@ -2209,11 +2209,11 @@
   {
     "title": "Are sex-based physiological differences the cause of gender bias for chest X-ray diagnosis?",
     "year": "2023",
-    "venue": "Referenced study",
-    "doi": "",
+    "venue": "Lecture Notes in Computer Science",
+    "doi": "10.1007/978-3-031-45249-9_14",
     "pmid": "",
     "links": {
-      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR59"
+      "Paper": "https://doi.org/10.1007/978-3-031-45249-9_14"
     },
     "sources": [
       {
@@ -2239,11 +2239,11 @@
         "Paper only"
       ],
       "Evidence": [
-        "Reviewed source"
+        "Primary metadata"
       ]
     },
     "origin": "review",
-    "verified": false,
+    "verified": true,
     "kind": "main",
     "topics": [
       "Fairness Evaluation and Benchmarking"
@@ -2252,11 +2252,11 @@
   {
     "title": "Bias in unsupervised anomaly detection in brain MRI",
     "year": "2023",
-    "venue": "Referenced study",
-    "doi": "",
+    "venue": "Lecture Notes in Computer Science",
+    "doi": "10.1007/978-3-031-45249-9_12",
     "pmid": "",
     "links": {
-      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR40"
+      "Paper": "https://doi.org/10.1007/978-3-031-45249-9_12"
     },
     "sources": [
       {
@@ -2283,11 +2283,11 @@
         "Paper only"
       ],
       "Evidence": [
-        "Reviewed source"
+        "Primary metadata"
       ]
     },
     "origin": "review",
-    "verified": false,
+    "verified": true,
     "kind": "main",
     "topics": [
       "Fairness Evaluation and Benchmarking"
@@ -2296,11 +2296,11 @@
   {
     "title": "Detecting shortcuts in medical images-a case study in chest x-rays",
     "year": "2023",
-    "venue": "Referenced study",
-    "doi": "",
+    "venue": "2023 IEEE 20th International Symposium on Biomedical Imaging (ISBI)",
+    "doi": "10.1109/isbi53787.2023.10230572",
     "pmid": "",
     "links": {
-      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR57"
+      "Paper": "https://doi.org/10.1109/isbi53787.2023.10230572"
     },
     "sources": [
       {
@@ -2327,11 +2327,11 @@
         "Paper only"
       ],
       "Evidence": [
-        "Reviewed source"
+        "Primary metadata"
       ]
     },
     "origin": "review",
-    "verified": false,
+    "verified": true,
     "kind": "main",
     "topics": [
       "Fairness Evaluation and Benchmarking",
@@ -2385,11 +2385,11 @@
   {
     "title": "A comparative study of fairness in medical machine learning",
     "year": "2023",
-    "venue": "Referenced study",
-    "doi": "",
+    "venue": "2023 IEEE 20th International Symposium on Biomedical Imaging (ISBI)",
+    "doi": "10.1109/isbi53787.2023.10230368",
     "pmid": "",
     "links": {
-      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR61"
+      "Paper": "https://doi.org/10.1109/isbi53787.2023.10230368"
     },
     "sources": [
       {
@@ -2428,12 +2428,12 @@
         "Paper only"
       ],
       "Evidence": [
-        "Reviewed source"
+        "Primary metadata"
       ]
     },
     "origin": "review",
     "kind": "main",
-    "verified": false,
+    "verified": true,
     "topics": [
       "Pre-processing Mitigation",
       "In-processing Mitigation",
@@ -2443,11 +2443,11 @@
   {
     "title": "(De) Constructing bias on skin lesion datasets",
     "year": "2019",
-    "venue": "Referenced study",
-    "doi": "",
+    "venue": "2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
+    "doi": "10.1109/cvprw.2019.00335",
     "pmid": "",
     "links": {
-      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR62"
+      "Paper": "https://doi.org/10.1109/cvprw.2019.00335"
     },
     "sources": [
       {
@@ -2473,11 +2473,11 @@
         "Paper only"
       ],
       "Evidence": [
-        "Reviewed source"
+        "Primary metadata"
       ]
     },
     "origin": "review",
-    "verified": false,
+    "verified": true,
     "kind": "main",
     "topics": [
       "Pre-processing Mitigation"
@@ -2486,11 +2486,11 @@
   {
     "title": "Debiasing skin lesion datasets and models? Not so fast",
     "year": "2020",
-    "venue": "Referenced study",
-    "doi": "",
+    "venue": "2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
+    "doi": "10.1109/cvprw50498.2020.00378",
     "pmid": "",
     "links": {
-      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR63"
+      "Paper": "https://doi.org/10.1109/cvprw50498.2020.00378"
     },
     "sources": [
       {
@@ -2516,11 +2516,11 @@
         "Paper only"
       ],
       "Evidence": [
-        "Reviewed source"
+        "Primary metadata"
       ]
     },
     "origin": "review",
-    "verified": false,
+    "verified": true,
     "kind": "main",
     "topics": [
       "Pre-processing Mitigation"
@@ -2572,11 +2572,11 @@
   {
     "title": "De-identification and obfuscation of gender attributes from retinal scans",
     "year": "2023",
-    "venue": "Referenced study",
-    "doi": "",
+    "venue": "Lecture Notes in Computer Science",
+    "doi": "10.1007/978-3-031-45249-9_9",
     "pmid": "",
     "links": {
-      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR66"
+      "Paper": "https://doi.org/10.1007/978-3-031-45249-9_9"
     },
     "sources": [
       {
@@ -2602,11 +2602,11 @@
         "Paper only"
       ],
       "Evidence": [
-        "Reviewed source"
+        "Primary metadata"
       ]
     },
     "origin": "review",
-    "verified": false,
+    "verified": true,
     "kind": "main",
     "topics": [
       "Pre-processing Mitigation"
@@ -2615,11 +2615,11 @@
   {
     "title": "EdgeMixup: embarrassingly simple data alteration to improve Lyme disease lesion segmentation and diagnosis fairness",
     "year": "2023",
-    "venue": "Referenced study",
-    "doi": "",
+    "venue": "Lecture Notes in Computer Science",
+    "doi": "10.1007/978-3-031-43901-8_36",
     "pmid": "",
     "links": {
-      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR64"
+      "Paper": "https://doi.org/10.1007/978-3-031-43901-8_36"
     },
     "sources": [
       {
@@ -2645,11 +2645,11 @@
         "Paper only"
       ],
       "Evidence": [
-        "Reviewed source"
+        "Primary metadata"
       ]
     },
     "origin": "review",
-    "verified": false,
+    "verified": true,
     "kind": "main",
     "topics": [
       "Pre-processing Mitigation"
@@ -2801,11 +2801,11 @@
   {
     "title": "Disproportionate subgroup impacts and other challenges of fairness in artificial intelligence for medical image analysis",
     "year": "2022",
-    "venue": "Referenced study",
-    "doi": "",
+    "venue": "Lecture Notes in Computer Science",
+    "doi": "10.1007/978-3-031-23223-7_2",
     "pmid": "",
     "links": {
-      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR78"
+      "Paper": "https://doi.org/10.1007/978-3-031-23223-7_2"
     },
     "sources": [
       {
@@ -2831,11 +2831,11 @@
         "Paper only"
       ],
       "Evidence": [
-        "Reviewed source"
+        "Primary metadata"
       ]
     },
     "origin": "review",
-    "verified": false,
+    "verified": true,
     "kind": "main",
     "topics": [
       "In-processing Mitigation"
@@ -2887,11 +2887,11 @@
   {
     "title": "Pseudo bias-balanced learning for debiased chest x-ray classification",
     "year": "2022",
-    "venue": "Referenced study",
-    "doi": "",
+    "venue": "Lecture Notes in Computer Science",
+    "doi": "10.1007/978-3-031-16452-1_59",
     "pmid": "",
     "links": {
-      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR80"
+      "Paper": "https://doi.org/10.1007/978-3-031-16452-1_59"
     },
     "sources": [
       {
@@ -2917,11 +2917,11 @@
         "Paper only"
       ],
       "Evidence": [
-        "Reviewed source"
+        "Primary metadata"
       ]
     },
     "origin": "review",
-    "verified": false,
+    "verified": true,
     "kind": "main",
     "topics": [
       "In-processing Mitigation"
@@ -3026,11 +3026,11 @@
   {
     "title": "Confound removal and normalization in practice: a neuroimaging based sex prediction case study",
     "year": "2021",
-    "venue": "Referenced study",
-    "doi": "",
+    "venue": "Lecture Notes in Computer Science",
+    "doi": "10.1007/978-3-030-67670-4_1",
     "pmid": "",
     "links": {
-      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR85"
+      "Paper": "https://doi.org/10.1007/978-3-030-67670-4_1"
     },
     "sources": [
       {
@@ -3056,11 +3056,11 @@
         "Paper only"
       ],
       "Evidence": [
-        "Reviewed source"
+        "Primary metadata"
       ]
     },
     "origin": "review",
-    "verified": false,
+    "verified": true,
     "kind": "main",
     "topics": [
       "In-processing Mitigation"
@@ -3113,11 +3113,11 @@
   {
     "title": "Conditional VAEs for confound removal and normative modelling of neurodegenerative diseases",
     "year": "2022",
-    "venue": "Referenced study",
-    "doi": "",
+    "venue": "Lecture Notes in Computer Science",
+    "doi": "10.1007/978-3-031-16431-6_41",
     "pmid": "",
     "links": {
-      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR86"
+      "Paper": "https://doi.org/10.1007/978-3-031-16431-6_41"
     },
     "sources": [
       {
@@ -3143,11 +3143,11 @@
         "Paper only"
       ],
       "Evidence": [
-        "Reviewed source"
+        "Primary metadata"
       ]
     },
     "origin": "review",
-    "verified": false,
+    "verified": true,
     "kind": "main",
     "topics": [
       "In-processing Mitigation"
@@ -3245,11 +3245,11 @@
   {
     "title": "Mitigating bias in MRI-based Alzheimer’s disease classifiers through pruning of deep neural networks",
     "year": "2023",
-    "venue": "Referenced study",
-    "doi": "",
+    "venue": "Lecture Notes in Computer Science",
+    "doi": "10.1007/978-3-031-45249-9_16",
     "pmid": "",
     "links": {
-      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR91"
+      "Paper": "https://doi.org/10.1007/978-3-031-45249-9_16"
     },
     "sources": [
       {
@@ -3276,11 +3276,11 @@
         "Paper only"
       ],
       "Evidence": [
-        "Reviewed source"
+        "Primary metadata"
       ]
     },
     "origin": "review",
-    "verified": false,
+    "verified": true,
     "kind": "main",
     "topics": [
       "Post-processing Mitigation"
