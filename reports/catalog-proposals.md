@@ -1,6 +1,6 @@
-# 目录更新草稿
+# 主目录筛选判断证据
 
-全文支持的三篇新增文献已整理进主 README；此处保留原始中文判断与证据，便于维护者追加复核。
+全文证据支持的机器筛选记录；周更流程会将合格新文章直接整理进主 README，以下保留中文理由供追加复核。
 
 ## Disparity Laundering: Consensus Without Fairness in Clinical Multi-Agent Systems
 

@@ -42,6 +42,7 @@
   研究用结构化提问模拟首次交互，测试ChatGPT 3.5与4.0在种族、性别和性取向等社会变量下的HIV咨询回答差异，发现部分群体获得的建议较不全面，提示潜在偏见。
 - [The application of artificial intelligence in healthcare practice: A mapping review of systematic reviews.](https://pubmed.ncbi.nlm.nih.gov/42492159/) · 相关综述／资源 · `p-9be6ed0d8b3a561dd390`
   该文为医疗AI系统综述的映射综述，汇总368篇综述，覆盖影像、EHR、诊断预后治疗等应用，并报告隐私、准确性、数据与算法偏倚及可解释性等伦理关注；未开展具体算法的公平性测量或缓解评估。
+- [Risk-Oriented Differentiated Governance for Ambiguous Information.](https://pubmed.ncbi.nlm.nih.gov/42973283/) · 待分析／证据不足 · `p-ca8d7d03e55f918b8e65`
 - [Artificial intelligence, work, and structural inequality: Why human-centric AI requires institutional architecture, not just ethics.](https://pubmed.ncbi.nlm.nih.gov/42550915/) · 相关综述／资源 · `p-d393349a30ba59457dea`
   文章为制度与政策分析，主张AI嵌入劳动市场、移民治理与社会保护后，单靠伦理框架不足，需以制度架构、可争议机制和可执行监督来应对结构性不平等。
 - [Responsible AI in Academic Research: A Systematic Review of Ethical Principles, Challenges, and Future Directions](https://europepmc.org/article/PPR/PPR1356467) · 相关综述／资源 · `p-d3fdee71565e6c28bc07`
@@ -134,6 +135,7 @@
 - [Navigating the cultural iceberg: Addressing algorithmic bias, hallucination, and semantic flattening in AI-assisted qualitative thematic analysis.](https://pubmed.ncbi.nlm.nih.gov/42721502/) · 待分析／证据不足 · `p-11a0ba65de9fc94bbcd8`
 - [Assessing Variability in ChatGPT Responses: A Case Study on Simulating Online User Inputs.](https://pubmed.ncbi.nlm.nih.gov/40298212/) · 待核验 · `p-90cc3b587e16a8a6abd1`
   研究用结构化提问模拟首次交互，测试ChatGPT 3.5与4.0在种族、性别和性取向等社会变量下的HIV咨询回答差异，发现部分群体获得的建议较不全面，提示潜在偏见。
+- [Risk-Oriented Differentiated Governance for Ambiguous Information.](https://pubmed.ncbi.nlm.nih.gov/42973283/) · 待分析／证据不足 · `p-ca8d7d03e55f918b8e65`
 - [Fairness-Aware Design for Contextual Experiments: Guaranteeing Reliability and Equity in Heterogeneous Subgroups](https://arxiv.org/abs/2611.01867) · 待核验 · `p-cb6eb929d7f879132fb0`
   提出F-CTSD算法，在异质亚组情境实验中兼顾子组公平与样本效率，给出公平-效率权衡、样本复杂度及治疗效应估计的理论保证，并在数值实验中报告子组公平违规下降4.95%。
 - [The pediatric transfer gap: How adult-ICU-trained machine-learning models degrade on pediatric intensive care patients.](https://pubmed.ncbi.nlm.nih.gov/42447641/) · 待核验 · `p-645868c25d38e8ad956f`
@@ -197,8 +199,6 @@
   该综述按PRISMA筛查191项研究，审计生成式AI教学作业在可及性、公平性、伦理与残障包容方面的准备度，并构建0–5包容准备度指数；结果显示免费访问、非AI替代和残障支持等措施很少。
 - [Sources of Risk in AI Systems Revisited: FCAIR-O, a Faceted Causal Framework and Lightweight Ontology for Risk Management and Assurance](https://europepmc.org/article/PPR/PPR1352914) · 相关综述／资源 · `p-84cbd12dbfc944d49f87`
   提出FCAIR-O：面向AI风险管理的分面因果本体与概念框架，将公平等属性重新分配至因果、伤害、控制、证据或规范角色；以Uber Tempe等案例说明框架，但明确不构成实证验证。
-- [Risk-Oriented Differentiated Governance for Ambiguous Information.](https://pubmed.ncbi.nlm.nih.gov/42973283/) · 机器建议排除，待抽查 · `p-ca8d7d03e55f918b8e65`
-  提出面向模糊信息的风险导向分级治理框架：用多层级语义特征量化认知不确定性，结合传播特征构建风险函数，设定风险边界分级并设计分级治理策略（中风险采用转发限流），通过仿真比较治理效果并就公平与伦理展开讨论。
 - [The Age of AI Strategic Decision-Making: The Business Analytics in the Corporate Divisions as the Competitive Advantage](https://europepmc.org/article/PPR/PPR1353951) · 机器建议排除，待抽查 · `p-f2c8f82e8af197e219f9`
   本文为综述性研究，基于近十年的学术文献、行业报告与从业者案例，探讨企业如何用人工智能与业务分析提升营销、财务、人力资源与运营等职能的决策质量与速度，并指出数据孤岛、遗留系统、数据质量与人才等障碍，以及隐私、算法偏见、透明度与合规等治理议题。
 - [Algorithmic Bias Concerns and Acceptance of AI Supported Legal Decision Making in Bangladesh](https://europepmc.org/article/PPR/PPR1352698) · 机器建议排除，待抽查 · `p-f65a2a15eb4c53ba6488`

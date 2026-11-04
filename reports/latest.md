@@ -4,16 +4,18 @@
 
 候选库：56 篇；当日发现、更新或完成分析：56 篇。
 
-已有有效中文分析：54 篇；待分析或缺少摘要证据：2 篇。
+已有有效中文分析：53 篇；待分析或缺少摘要证据：3 篇。
 
 ## 检索覆盖
 
 - arxiv / 查询 4744eb3faccd：5 条；完整
 - arxiv / 查询 42b91404506f：0 条；完整
-- europepmc / 查询 249ba7c65421：18 条；完整
+- europepmc / 查询 249ba7c65421：19 条；完整
 - europepmc / 查询 b614de0bf8b6：0 条；完整
 - pubmed / 查询 29bd77c2182f：34 条；完整
 - pubmed / 查询 d4312ff2e61d：3 条；完整
+
+模型分析失败 1 次，保留候选并等待重试。
 
 ## 当日候选
 
@@ -572,16 +574,8 @@ BiasLab 提出多语言双框架提示对方法，配合随机包装扰动、固
 ### [Risk-Oriented Differentiated Governance for Ambiguous Information.](https://pubmed.ncbi.nlm.nih.gov/42973283/)
 
 - 标识：`p-ca8d7d03e55f918b8e65`；发表：2026；发现：2026-11-04
-- 主题：待分类
-- 状态：机器建议排除，待抽查
-
-提出面向模糊信息的风险导向分级治理框架：用多层级语义特征量化认知不确定性，结合传播特征构建风险函数，设定风险边界分级并设计分级治理策略（中风险采用转发限流），通过仿真比较治理效果并就公平与伦理展开讨论。
-
-限制：仅有摘要：非医学/临床任务，无患者数据与临床终点；公平与伦理仅作比较性讨论，未定义受保护群体或公平度量，也未做公平性实证测量；摘要未提及代码或数据。
-
-判断：该文研究生成式AI虚假信息的分级风险治理，缺少生物医学/临床任务这一必要条件，也没有针对模型开展明确的算法公平性、偏倚或分组差异的实证测量；公平仅停留在讨论层面，故不属于本综述范围。
-
-证据层级：abstract；[来源](https://pubmed.ncbi.nlm.nih.gov/42973283/)；模型：qoder-cn/dfmodel。
+- 主题：Fairness Evaluation and Benchmarking、Bias Mechanisms and Measurement（规则建议）
+- 状态：待模型分析／人工核验
 
 ### [Fairness-Aware Design for Contextual Experiments: Guaranteeing Reliability and Equity in Heterogeneous Subgroups](https://arxiv.org/abs/2611.01867)
 

@@ -1,6 +1,14 @@
 {
   "aliases": [
     [
+      "arxiv_id:1808.00023",
+      "p-e7ad35abb038556134fd"
+    ],
+    [
+      "arxiv_id:2003.05707",
+      "p-58b0e0a2cdcc06b0a540"
+    ],
+    [
       "arxiv_id:2102.06764",
       "p-f61c97067acca5d12da0"
     ],
@@ -33,6 +41,18 @@
       "p-e8ce57010438f7f62ec9"
     ],
     [
+      "arxiv_id:2203.04950",
+      "p-28764d10539b6fe0cf0c"
+    ],
+    [
+      "arxiv_id:2204.01737",
+      "p-c3ff0dcccd35b47eaa4a"
+    ],
+    [
+      "arxiv_id:2207.10384",
+      "p-fe3f282659e3d683a6ff"
+    ],
+    [
       "arxiv_id:2208.10013",
       "p-3f3defe66b2fe9067f26"
     ],
@@ -45,12 +65,24 @@
       "p-243b39c22c7e075aafd5"
     ],
     [
+      "arxiv_id:2303.03242",
+      "p-28fe81739e86a8e0363b"
+    ],
+    [
       "arxiv_id:2303.08325",
       "p-87c021d98d1e53acfd80"
     ],
     [
       "arxiv_id:2306.09264",
       "p-e14f7d43a72fe9b902c4"
+    ],
+    [
+      "arxiv_id:2307.16526",
+      "p-4e96bc702a9820d2af09"
+    ],
+    [
+      "arxiv_id:2310.05055",
+      "p-5f3a723fd3915f9dac07"
     ],
     [
       "arxiv_id:2311.02189",
@@ -217,6 +249,10 @@
       "p-41c2f5e12d24a76bab3e"
     ],
     [
+      "doi:10.1007/s40846-022-00754-z",
+      "p-d4c9bab2e3d07b37e52f"
+    ],
+    [
       "doi:10.1007/s43441-026-01033-8",
       "p-1607ccec012a87a0fdca"
     ],
@@ -305,8 +341,16 @@
       "p-064ee08a8e0905727f10"
     ],
     [
+      "doi:10.1016/j.patter.2023.100790",
+      "p-3e0c5f9b847a8ac26a68"
+    ],
+    [
       "doi:10.1016/j.rcl.2026.07.010",
       "p-103ada15cebbb7f64a8f"
+    ],
+    [
+      "doi:10.1016/s2589-7500(20)30065-0",
+      "p-e07898d7a8f61daede07"
     ],
     [
       "doi:10.1016/s2589-7500(22)00063-2",
@@ -317,12 +361,20 @@
       "p-c12e599b0a2f6f675632"
     ],
     [
+      "doi:10.1038/s41467-022-32186-3",
+      "p-4edf9408d9b0ca5bac59"
+    ],
+    [
       "doi:10.1038/s41467-023-39902-7",
       "p-fe3f282659e3d683a6ff"
     ],
     [
       "doi:10.1038/s41467-023-41974-4",
       "p-05ce6d87457d2db0fe6f"
+    ],
+    [
+      "doi:10.1038/s41551-023-01056-8",
+      "p-123de5164235acbb085c"
     ],
     [
       "doi:10.1038/s41591-021-01595-0",
@@ -339,6 +391,14 @@
     [
       "doi:10.1038/s41598-025-26189-5",
       "p-ec64204b49e11845429b"
+    ],
+    [
+      "doi:10.1038/s41746-024-01276-5",
+      "p-21e427cb86622249579c"
+    ],
+    [
+      "doi:10.1038/s41746-025-01503-7",
+      "p-09bfed64bef4c8072b37"
     ],
     [
       "doi:10.1038/s42256-020-00257-z",
@@ -375,6 +435,10 @@
     [
       "doi:10.1093/jamia/ocag184",
       "p-cd61ff429b4e8948cce1"
+    ],
+    [
+      "doi:10.1093/jamiaopen/ooae149",
+      "p-0a43c9ea840cd9f5bb23"
     ],
     [
       "doi:10.1097/jnc.0000000000000545",
@@ -427,6 +491,18 @@
     [
       "doi:10.1126/science.adh4260",
       "p-6310a3781d361d1fa812"
+    ],
+    [
+      "doi:10.1145/3442188.3445896",
+      "p-1a1fd9e1c9b840dc0638"
+    ],
+    [
+      "doi:10.1145/3457607",
+      "p-0742328f5c319c42435e"
+    ],
+    [
+      "doi:10.1145/3593013.3594096",
+      "p-9655b13245a51f06cf0d"
     ],
     [
       "doi:10.1148/ryai.230060",
@@ -537,6 +613,10 @@
       "p-ebade3496d18caa2dcf0"
     ],
     [
+      "doi:10.7326/m18-1990",
+      "p-e7410f72deb1013bd6de"
+    ],
+    [
       "pmcid:10439178",
       "p-fda1af6a735d35a7ab7d"
     ],
@@ -553,8 +633,76 @@
       "p-747c407c5696b151b802"
     ],
     [
+      "pmid:32457147",
+      "p-a73769be7a443ee19328"
+    ],
+    [
+      "pmid:33152602",
+      "p-741efaed93788885d74e"
+    ],
+    [
+      "pmid:33243992",
+      "p-c12e599b0a2f6f675632"
+    ],
+    [
       "pmid:33691020",
       "p-55874d3bef0d86319d1b"
+    ],
+    [
+      "pmid:34003898",
+      "p-a48dad97ccd708c5de68"
+    ],
+    [
+      "pmid:34522832",
+      "p-bbc3b4510635ce49b275"
+    ],
+    [
+      "pmid:34893776",
+      "p-c1a38ddedddd2f52121f"
+    ],
+    [
+      "pmid:35463778",
+      "p-26f10a837eb94581328d"
+    ],
+    [
+      "pmid:36046104",
+      "p-3b2166fdea4fbc0199d4"
+    ],
+    [
+      "pmid:36331278",
+      "p-d2aa9572dd44b68fe757"
+    ],
+    [
+      "pmid:36542907",
+      "p-9ba48983f91dcf1acbe4"
+    ],
+    [
+      "pmid:36716365",
+      "p-c32f29e50aca8640eddf"
+    ],
+    [
+      "pmid:36791660",
+      "p-ae73465d34942c7b2090"
+    ],
+    [
+      "pmid:37046593",
+      "p-de521ec2dd4e703a5e45"
+    ],
+    [
+      "pmid:37081528",
+      "p-938fa8c0c293b242a146"
+    ],
+    [
+      "pmid:37803009",
+      "p-05ce6d87457d2db0fe6f"
+    ],
+    [
+      "pmid:37934495",
+      "p-b8ace73b67a9418cd0ad"
+    ],
+    [
+      "pmid:39404661",
+      "p-9bff17b5f000bfaf6cd0"
     ],
     [
       "pmid:40298212",
@@ -721,6 +869,14 @@
       "p-a48dad97ccd708c5de68"
     ],
     [
+      "title:addressingfairnessinartificialintelligenceformedicalimaging",
+      "p-4edf9408d9b0ca5bac59"
+    ],
+    [
+      "title:addressingfairnessissuesindeeplearningbasedmedicalimageanalysisasystematicreview",
+      "p-21e427cb86622249579c"
+    ],
+    [
       "title:aframeworkfortaskagnosticcounterfactualfairnessintransformersthroughactivationsteering",
       "p-3d7d2c77176c61d55abc"
     ],
@@ -757,8 +913,16 @@
       "p-99b632c94149de773fbb"
     ],
     [
+      "title:algorithmicfairnessinartificialintelligenceformedicineandhealthcare",
+      "p-123de5164235acbb085c"
+    ],
+    [
       "title:algorithmicfairnessofmachinelearningmodelsforalzheimerdiseaseprogression",
       "p-b8ace73b67a9418cd0ad"
+    ],
+    [
+      "title:algorithmicindividualfairnessandhealthcareascopingreview",
+      "p-0a43c9ea840cd9f5bb23"
     ],
     [
       "title:alongitudinalcasestudyofpracticeandpolicygapsinresponsibleaiadoptionacrossukrainianhighereducationfrom2023to2025",
@@ -829,12 +993,24 @@
       "p-39172eeeef221e79bbcc"
     ],
     [
+      "title:assessingbiasinmedicalai",
+      "p-213864c90f27192cf8ad"
+    ],
+    [
       "title:assessingvariabilityinchatgptresponsesacasestudyonsimulatingonlineuserinputs",
       "p-90cc3b587e16a8a6abd1"
     ],
     [
       "title:astudyofdemographicbiasincnnbasedbrainmrsegmentation",
       "p-d1761e58ca3ff1f83075"
+    ],
+    [
+      "title:asurveyonbiasandfairnessinmachinelearning",
+      "p-0742328f5c319c42435e"
+    ],
+    [
+      "title:asystematicreviewoffairaimodeldevelopmentforimageclassificationandprediction",
+      "p-d4c9bab2e3d07b37e52f"
     ],
     [
       "title:asystematicstudyofraceandsexbiasincnnbasedcardiacmrsegmentation",
@@ -855,6 +1031,10 @@
     [
       "title:biaslabamultilingualdualframingframeworkforllmbiasmeasurementappliedtoworkplaceandhrcontexts",
       "p-2ace6f04876029d3419e"
+    ],
+    [
+      "title:biasrecognitionandmitigationstrategiesinartificialintelligencehealthcareapplications",
+      "p-09bfed64bef4c8072b37"
     ],
     [
       "title:canyouseeitdiagnosticblindspotsinpigmentedskinareviewoftheliteratureinplasticsurgeryandburns",
@@ -953,6 +1133,10 @@
       "p-ab58f18226651ba5545c"
     ],
     [
+      "title:ensuringfairnessinmachinelearningtoadvancehealthequity",
+      "p-e7410f72deb1013bd6de"
+    ],
+    [
       "title:equitablemodellingofbrainimagingbycounterfactualaugmentationwithmorphologicallyconstrained3ddeepgenerativemodels",
       "p-9ba48983f91dcf1acbe4"
     ],
@@ -963,6 +1147,10 @@
     [
       "title:ethicalandlegalchallengesofintegratingartificialintelligenceintopaediatricsurgery",
       "p-747c407c5696b151b802"
+    ],
+    [
+      "title:ethicallimitationsofalgorithmicfairnesssolutionsinhealthcaremachinelearning",
+      "p-e07898d7a8f61daede07"
     ],
     [
       "title:evaluatingsubgroupdisparityusingepistemicuncertaintyinmammography",
@@ -1007,6 +1195,10 @@
     [
       "title:fairnessincardiacmrimageanalysisaninvestigationofbiasduetodataimbalanceindeeplearningbasedsegmentation",
       "p-b0022b70abf7688961de"
+    ],
+    [
+      "title:fairnessindeeplearningacomputationalperspective",
+      "p-222516ae6954587ada1e"
     ],
     [
       "title:fairnessmetricsbasedontheaucinclinicalpredictiveai",
@@ -1113,6 +1305,10 @@
       "p-11a0ba65de9fc94bbcd8"
     ],
     [
+      "title:nofairlunchacausalperspectiveondatasetbiasinmachinelearningformedicalimaging",
+      "p-4e96bc702a9820d2af09"
+    ],
+    [
       "title:onfairnessofmedicalimageclassificationwithmultiplesensitiveattributesvialearningorthogonalrepresentations",
       "p-243b39c22c7e075aafd5"
     ],
@@ -1147,6 +1343,10 @@
     [
       "title:radiologyforensicsdeterminationofageandsexfromchestradiographsusingdeeplearning",
       "p-e57fec541d02d9ab897e"
+    ],
+    [
+      "title:reimaginingalgorithmicfairnessinindiaandbeyond",
+      "p-1a1fd9e1c9b840dc0638"
     ],
     [
       "title:representationlearningwithstatisticalindependencetomitigatebias",
@@ -1233,6 +1433,14 @@
       "p-9be6ed0d8b3a561dd390"
     ],
     [
+      "title:themeasureandmismeasureoffairness",
+      "p-e7ad35abb038556134fd"
+    ],
+    [
+      "title:thepathtowardequalperformanceinmedicalmachinelearning",
+      "p-3e0c5f9b847a8ac26a68"
+    ],
+    [
       "title:thepediatrictransfergaphowadulticutrainedmachinelearningmodelsdegradeonpediatricintensivecarepatients",
       "p-645868c25d38e8ad956f"
     ],
@@ -1291,6 +1499,10 @@
     [
       "title:visualizingchestxraydatasetbiasesusinggans",
       "p-103f68f94a2d8f3acdd1"
+    ],
+    [
+      "title:whatsfairisfairpresentingjustefabanethicalframeworkforoperationalizingmedicalethicsandsocialjusticeintheintegrationofclinicalmachinelearning",
+      "p-9655b13245a51f06cf0d"
     ],
     [
       "title:wherewhyandhowisbiaslearnedinmedicalimageanalysismodelsastudyofbiasencodingwithinconvolutionalnetworksusingsyntheticdata",
@@ -4529,11 +4741,26 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Mingquan Lin",
+        "Tianhao Li",
+        "Yifan Yang",
+        "Gregory Holste",
+        "Ying Ding",
+        "Sarah H. Van Tassel",
+        "Kyle Kovacs",
+        "George Shih",
+        "Zhangyang Wang",
+        "Zhiyong Lu",
+        "Fei Wang",
+        "Yifan Peng"
+      ],
       "doi": "10.1038/s41467-023-41974-4",
       "first_seen": "2026-11-04",
       "id": "p-05ce6d87457d2db0fe6f",
       "last_changed": "2026-11-04",
-      "pmid": "",
+      "pmid": "37803009",
+      "published": "2023-10-06",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -4580,11 +4807,19 @@
     {
       "abstract_hash": "",
       "arxiv_id": "2104.00606",
+      "authors": [
+        "Jessica Zosa Forde",
+        "A. Feder Cooper",
+        "Kweku Kwegyir-Aggrey",
+        "Chris De Sa",
+        "Michael Littman"
+      ],
       "doi": "",
       "first_seen": "2026-11-04",
       "id": "p-06f34cb52b6a9b1288c8",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2021-04-01",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -4599,11 +4834,20 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Tochi Oguguo",
+        "Ghada Zamzmi",
+        "Sivaramakrishnan Rajaraman",
+        "Feng Yang",
+        "Zhiyun Xue",
+        "Sameer Antani"
+      ],
       "doi": "10.1109/isbi53787.2023.10230368",
       "first_seen": "2026-11-04",
       "id": "p-072376756f04472b70e4",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2023-04-18",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -4614,6 +4858,31 @@
       "url": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR61",
       "version": "",
       "year": "2023"
+    },
+    {
+      "abstract_hash": "",
+      "authors": [
+        "Ninareh Mehrabi",
+        "Fred Morstatter",
+        "Nripsuta Saxena",
+        "Kristina Lerman",
+        "Aram Galstyan"
+      ],
+      "doi": "10.1145/3457607",
+      "first_seen": "2026-11-04",
+      "id": "p-0742328f5c319c42435e",
+      "last_changed": "2026-11-04",
+      "published": "2021-07-13",
+      "seeded": true,
+      "source": "catalog",
+      "sources": [
+        "catalog"
+      ],
+      "title": "A Survey on Bias and Fairness in Machine Learning",
+      "updated": "",
+      "url": "https://doi.org/10.1145/3457607",
+      "version": "",
+      "year": "2021"
     },
     {
       "abstract_hash": "a4f988a457b1b1335bd1a9049e84fbb3ac424e51adf813d1eacf32d557b8ec38",
@@ -4643,6 +4912,54 @@
       "url": "https://europepmc.org/article/PPR/PPR1353709",
       "version": "",
       "year": "2026"
+    },
+    {
+      "abstract_hash": "",
+      "authors": [
+        "Fereshteh Hasanzadeh",
+        "Colin B. Josephson",
+        "Gabriella Waters",
+        "Demilade Adedinsewo",
+        "Zahra Azizi",
+        "James A. White"
+      ],
+      "doi": "10.1038/s41746-025-01503-7",
+      "first_seen": "2026-11-04",
+      "id": "p-09bfed64bef4c8072b37",
+      "last_changed": "2026-11-04",
+      "published": "2025-03-11",
+      "seeded": true,
+      "source": "catalog",
+      "sources": [
+        "catalog"
+      ],
+      "title": "Bias recognition and mitigation strategies in artificial intelligence healthcare applications",
+      "updated": "",
+      "url": "https://doi.org/10.1038/s41746-025-01503-7",
+      "version": "",
+      "year": "2025"
+    },
+    {
+      "abstract_hash": "",
+      "authors": [
+        "Joshua W Anderson",
+        "Shyam Visweswaran"
+      ],
+      "doi": "10.1093/jamiaopen/ooae149",
+      "first_seen": "2026-11-04",
+      "id": "p-0a43c9ea840cd9f5bb23",
+      "last_changed": "2026-11-04",
+      "published": "2024-12-26",
+      "seeded": true,
+      "source": "catalog",
+      "sources": [
+        "catalog"
+      ],
+      "title": "Algorithmic individual fairness and healthcare: a scoping review",
+      "updated": "",
+      "url": "https://doi.org/10.1093/jamiaopen/ooae149",
+      "version": "",
+      "year": "2024"
     },
     {
       "abstract_hash": "cfbb267ec1b8ca2cd52a95d01416b9c2eb52068c0cfb5b671dd0b20b65a12dcd",
@@ -4685,6 +5002,7 @@
       "id": "p-103f68f94a2d8f3acdd1",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2023",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -4753,6 +5071,34 @@
       "year": "2026"
     },
     {
+      "abstract_hash": "",
+      "authors": [
+        "Richard J. Chen",
+        "Judy J. Wang",
+        "Drew F. K. Williamson",
+        "Tiffany Y. Chen",
+        "Jana Lipkova",
+        "Ming Y. Lu",
+        "Sharifa Sahai",
+        "Faisal Mahmood"
+      ],
+      "doi": "10.1038/s41551-023-01056-8",
+      "first_seen": "2026-11-04",
+      "id": "p-123de5164235acbb085c",
+      "last_changed": "2026-11-04",
+      "published": "2023-06-28",
+      "seeded": true,
+      "source": "catalog",
+      "sources": [
+        "catalog"
+      ],
+      "title": "Algorithmic fairness in artificial intelligence for medicine and healthcare",
+      "updated": "",
+      "url": "https://doi.org/10.1038/s41551-023-01056-8",
+      "version": "",
+      "year": "2023"
+    },
+    {
       "abstract_hash": "a8f5435c3315a59437cb30b0eff438c15d56f327c825e9b1720de706d4e94af7",
       "abstract_source": "pubmed",
       "abstract_updated": "2026-10-30",
@@ -4783,11 +5129,17 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Alceu Bissoto",
+        "Eduardo Valle",
+        "Sandra Avila"
+      ],
       "doi": "10.1109/cvprw50498.2020.00378",
       "first_seen": "2026-11-04",
       "id": "p-189371b813dc53a1b7e1",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2020-06",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -4801,12 +5153,44 @@
     },
     {
       "abstract_hash": "",
+      "authors": [
+        "Nithya Sambasivan",
+        "Erin Arnesen",
+        "Ben Hutchinson",
+        "Tulsee Doshi",
+        "Vinodkumar Prabhakaran"
+      ],
+      "doi": "10.1145/3442188.3445896",
+      "first_seen": "2026-11-04",
+      "id": "p-1a1fd9e1c9b840dc0638",
+      "last_changed": "2026-11-04",
+      "published": "2021-03",
+      "seeded": true,
+      "source": "catalog",
+      "sources": [
+        "catalog"
+      ],
+      "title": "Re-imagining Algorithmic Fairness in India and Beyond",
+      "updated": "",
+      "url": "https://doi.org/10.1145/3442188.3445896",
+      "version": "",
+      "year": "2021"
+    },
+    {
+      "abstract_hash": "",
       "arxiv_id": "2107.02716",
+      "authors": [
+        "Charles Lu",
+        "Andreanne Lemay",
+        "Katharina Hoebel",
+        "Jayashree Kalpathy-Cramer"
+      ],
       "doi": "",
       "first_seen": "2026-11-04",
       "id": "p-1bd0037a7755742084b5",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2021-07-06",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -4821,11 +5205,19 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Nicolás Gaggion",
+        "Rodrigo Echeveste",
+        "Lucas Mansilla",
+        "Diego H. Milone",
+        "Enzo Ferrante"
+      ],
       "doi": "10.1007/978-3-031-45249-9_26",
       "first_seen": "2026-11-04",
       "id": "p-1d0701210feb2d522305",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2023",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -4839,12 +5231,78 @@
     },
     {
       "abstract_hash": "",
+      "first_seen": "2026-11-04",
+      "id": "p-213864c90f27192cf8ad",
+      "last_changed": "2026-11-04",
+      "published": "2021",
+      "seeded": true,
+      "source": "catalog",
+      "sources": [
+        "catalog"
+      ],
+      "title": "Assessing Bias in Medical AI",
+      "updated": "",
+      "url": "https://www.cse.cuhk.edu.hk/~qdou/public/IMLH2021_files/64_CameraReady_ICML_2021_Interpretable_Machine_Learning_in_Healthcare_workshop.pdf",
+      "version": "",
+      "year": "2021"
+    },
+    {
+      "abstract_hash": "",
+      "authors": [
+        "Zikang Xu",
+        "Jun Li",
+        "Qingsong Yao",
+        "Han Li",
+        "Mingyue Zhao",
+        "S. Kevin Zhou"
+      ],
+      "doi": "10.1038/s41746-024-01276-5",
+      "first_seen": "2026-11-04",
+      "id": "p-21e427cb86622249579c",
+      "last_changed": "2026-11-04",
+      "published": "2024-10-17",
+      "seeded": true,
+      "source": "catalog",
+      "sources": [
+        "catalog"
+      ],
+      "title": "Addressing fairness issues in deep learning-based medical image analysis: a systematic review",
+      "updated": "",
+      "url": "https://doi.org/10.1038/s41746-024-01276-5",
+      "version": "",
+      "year": "2024"
+    },
+    {
+      "abstract_hash": "",
+      "first_seen": "2026-11-04",
+      "id": "p-222516ae6954587ada1e",
+      "last_changed": "2026-11-04",
+      "published": "2020",
+      "seeded": true,
+      "source": "catalog",
+      "sources": [
+        "catalog"
+      ],
+      "title": "Fairness in Deep Learning: A Computational Perspective",
+      "updated": "",
+      "url": "https://ieeexplore.ieee.org/document/9113719",
+      "version": "",
+      "year": "2020"
+    },
+    {
+      "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Arezou Pakzad",
+        "Kumar Abhishek",
+        "Ghassan Hamarneh"
+      ],
       "doi": "10.1007/978-3-031-25069-9_14",
       "first_seen": "2026-11-04",
       "id": "p-227739094eb90f0b2b64",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2023",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -4859,11 +5317,18 @@
     {
       "abstract_hash": "",
       "arxiv_id": "2301.01481",
+      "authors": [
+        "Wenlong Deng",
+        "Yuan Zhong",
+        "Qi Dou",
+        "Xiaoxiao Li"
+      ],
       "doi": "",
       "first_seen": "2026-11-04",
       "id": "p-243b39c22c7e075aafd5",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2023-01-04",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -4878,11 +5343,18 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Vincent Olesen",
+        "Nina Weng",
+        "Aasa Feragen",
+        "Eike Petersen"
+      ],
       "doi": "10.1007/978-3-031-72787-0_1",
       "first_seen": "2026-11-04",
       "id": "p-25ce5cd4c3eecee9cfb8",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2024-10-13",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -4897,11 +5369,23 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Esther Puyol-Antón",
+        "Bram Ruijsink",
+        "Jorge Mariscal Harana",
+        "Stefan K. Piechnik",
+        "Stefan Neubauer",
+        "Steffen E. Petersen",
+        "Reza Razavi",
+        "Phil Chowienczyk",
+        "Andrew P. King"
+      ],
       "doi": "10.3389/fcvm.2022.859310",
       "first_seen": "2026-11-04",
       "id": "p-26f10a837eb94581328d",
       "last_changed": "2026-11-04",
-      "pmid": "",
+      "pmid": "35463778",
+      "published": "2022-04-07",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -4915,12 +5399,20 @@
     },
     {
       "abstract_hash": "",
-      "arxiv_id": "",
+      "arxiv_id": "2203.04950",
+      "authors": [
+        "Adam Gronowski",
+        "William Paul",
+        "Fady Alajaji",
+        "Bahman Gharesifard",
+        "Philippe Burlina"
+      ],
       "doi": "",
       "first_seen": "2026-11-04",
       "id": "p-28764d10539b6fe0cf0c",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2022-03-09",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -4934,12 +5426,18 @@
     },
     {
       "abstract_hash": "",
-      "arxiv_id": "",
+      "arxiv_id": "2303.03242",
+      "authors": [
+        "Raghav Mehta",
+        "Changjian Shui",
+        "Tal Arbel"
+      ],
       "doi": "",
       "first_seen": "2026-11-04",
       "id": "p-28fe81739e86a8e0363b",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2024-07",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -4954,11 +5452,18 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Ziad Obermeyer",
+        "Brian Powers",
+        "Christine Vogeli",
+        "Sendhil Mullainathan"
+      ],
       "doi": "10.1126/science.aax2342",
       "first_seen": "2026-11-04",
       "id": "p-2a514fe6279dfa7ab04f",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2019-10-25",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -5192,7 +5697,8 @@
       "source": "arxiv",
       "source_id": "2610.38215",
       "sources": [
-        "arxiv"
+        "arxiv",
+        "catalog"
       ],
       "title": "Disparity Laundering: Consensus Without Fairness in Clinical Multi-Agent Systems",
       "updated": "2026-10-28T03:10:28Z",
@@ -5236,6 +5742,7 @@
       "id": "p-36921b96996405aa8cf5",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2021",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -5282,11 +5789,21 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Gelei Xu",
+        "Yuying Duan",
+        "Jun Xia",
+        "Ching-Hao Chiu",
+        "Michael Lemmon",
+        "Wei Jin",
+        "Yiyu Shi"
+      ],
       "doi": "10.1016/j.media.2026.103950",
       "first_seen": "2026-11-04",
       "id": "p-39d299147a0aac11fcea",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2026-03",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -5336,11 +5853,18 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Emma A. M. Stanley",
+        "Matthias Wilms",
+        "Pauline Mouches",
+        "Nils D. Forkert"
+      ],
       "doi": "10.1117/1.jmi.9.6.061102",
       "first_seen": "2026-11-04",
       "id": "p-3b2166fdea4fbc0199d4",
       "last_changed": "2026-11-04",
-      "pmid": "",
+      "pmid": "36046104",
+      "published": "2022-08-26",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -5374,13 +5898,38 @@
       "source": "arxiv",
       "source_id": "2611.00298",
       "sources": [
-        "arxiv"
+        "arxiv",
+        "catalog"
       ],
       "title": "A Framework for Task-Agnostic Counterfactual Fairness in Transformers through Activation Steering",
       "updated": "2026-10-30T19:22:10Z",
       "url": "https://arxiv.org/abs/2611.00298",
       "version": "1",
       "year": "2026"
+    },
+    {
+      "abstract_hash": "",
+      "authors": [
+        "Eike Petersen",
+        "Sune Holm",
+        "Melanie Ganz",
+        "Aasa Feragen"
+      ],
+      "doi": "10.1016/j.patter.2023.100790",
+      "first_seen": "2026-11-04",
+      "id": "p-3e0c5f9b847a8ac26a68",
+      "last_changed": "2026-11-04",
+      "published": "2023-07",
+      "seeded": true,
+      "source": "catalog",
+      "sources": [
+        "catalog"
+      ],
+      "title": "The path toward equal performance in medical machine learning",
+      "updated": "",
+      "url": "https://doi.org/10.1016/j.patter.2023.100790",
+      "version": "",
+      "year": "2023"
     },
     {
       "abstract_hash": "c345e3798fefa0edd1defea9926377178832fd893f8e01c55ef8077446f44728",
@@ -5458,11 +6007,31 @@
     {
       "abstract_hash": "",
       "arxiv_id": "2202.01034",
+      "authors": [
+        "Jessica Schrouff",
+        "Natalie Harris",
+        "Oluwasanmi Koyejo",
+        "Ibrahim Alabdulmohsin",
+        "Eva Schnider",
+        "Krista Opsahl-Ong",
+        "Alex Brown",
+        "Subhrajit Roy",
+        "Diana Mincu",
+        "Christina Chen",
+        "Awa Dieng",
+        "Yuan Liu",
+        "Vivek Natarajan",
+        "Alan Karthikesalingam",
+        "Katherine Heller",
+        "Silvia Chiappa",
+        "Alexander D'Amour"
+      ],
       "doi": "",
       "first_seen": "2026-11-04",
       "id": "p-3efb42cffdfe3c8f1c57",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2022-02-02",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -5477,11 +6046,19 @@
     {
       "abstract_hash": "",
       "arxiv_id": "2208.10013",
+      "authors": [
+        "Siyi Du",
+        "Ben Hers",
+        "Nourhan Bayasi",
+        "Ghassan Hamarneh",
+        "Rafeef Garbi"
+      ],
       "doi": "",
       "first_seen": "2026-11-04",
       "id": "p-3f3defe66b2fe9067f26",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2022-08-22",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -5556,11 +6133,26 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Chenwei Wu",
+        "Xiyu Yang",
+        "Emil Ghitman Gilkes",
+        "Hanwen Cui",
+        "Jiheon Choi",
+        "Na Sun",
+        "Ziqian Liao",
+        "Bo Fan",
+        "Mauricio Santillana",
+        "Leo Celi",
+        "Paolo Silva",
+        "Luis Nakayama"
+      ],
       "doi": "10.1007/978-3-031-45249-9_9",
       "first_seen": "2026-11-04",
       "id": "p-47aaa78fdadbf24875f3",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2023",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -5575,11 +6167,20 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Cosmin I. Bercea",
+        "Esther Puyol-Antón",
+        "Benedikt Wiestler",
+        "Daniel Rueckert",
+        "Julia A. Schnabel",
+        "Andrew P. King"
+      ],
       "doi": "10.1007/978-3-031-45249-9_12",
       "first_seen": "2026-11-04",
       "id": "p-4bfee64cd1b099c5c2f9",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2023",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -5599,6 +6200,7 @@
       "id": "p-4c77b44405a5d33120f2",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2020",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -5640,12 +6242,68 @@
     },
     {
       "abstract_hash": "",
+      "arxiv_id": "2307.16526",
+      "authors": [
+        "Charles Jones",
+        "Daniel C. Castro",
+        "Fabio De Sousa Ribeiro",
+        "Ozan Oktay",
+        "Melissa McCradden",
+        "Ben Glocker"
+      ],
+      "first_seen": "2026-11-04",
+      "id": "p-4e96bc702a9820d2af09",
+      "last_changed": "2026-11-04",
+      "published": "2023-07-31",
+      "seeded": true,
+      "source": "catalog",
+      "sources": [
+        "catalog"
+      ],
+      "title": "No Fair Lunch: A Causal Perspective on Dataset Bias in Machine Learning for Medical Imaging",
+      "updated": "",
+      "url": "https://arxiv.org/abs/2307.16526",
+      "version": "",
+      "year": "2023"
+    },
+    {
+      "abstract_hash": "",
+      "authors": [
+        "María Agustina Ricci Lara",
+        "Rodrigo Echeveste",
+        "Enzo Ferrante"
+      ],
+      "doi": "10.1038/s41467-022-32186-3",
+      "first_seen": "2026-11-04",
+      "id": "p-4edf9408d9b0ca5bac59",
+      "last_changed": "2026-11-04",
+      "published": "2022-08-06",
+      "seeded": true,
+      "source": "catalog",
+      "sources": [
+        "catalog"
+      ],
+      "title": "Addressing fairness in artificial intelligence for medical imaging",
+      "updated": "",
+      "url": "https://doi.org/10.1038/s41467-022-32186-3",
+      "version": "",
+      "year": "2022"
+    },
+    {
+      "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Yun-Yang Huang",
+        "Venesia Chiuwanara",
+        "Chao-Hsuan Lin",
+        "Po-Chih Kuo"
+      ],
       "doi": "10.1007/978-3-031-45249-9_16",
       "first_seen": "2026-11-04",
       "id": "p-557ecb9be13061835458",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2023",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -5665,6 +6323,7 @@
       "id": "p-55874d3bef0d86319d1b",
       "last_changed": "2026-11-04",
       "pmid": "33691020",
+      "published": "2021-01-01",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -5679,11 +6338,20 @@
     {
       "abstract_hash": "",
       "arxiv_id": "2311.02189",
+      "authors": [
+        "Yu Tian",
+        "Min Shi",
+        "Yan Luo",
+        "Ava Kouhana",
+        "Tobias Elze",
+        "Mengyu Wang"
+      ],
       "doi": "",
       "first_seen": "2026-11-04",
       "id": "p-58a96f9e2fc6cad5d7f9",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2024",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -5697,12 +6365,19 @@
     },
     {
       "abstract_hash": "",
-      "arxiv_id": "",
+      "arxiv_id": "2003.05707",
+      "authors": [
+        "Mhd Hasan Sarhan",
+        "Nassir Navab",
+        "Abouzar Eslami",
+        "Shadi Albarqouni"
+      ],
       "doi": "",
       "first_seen": "2026-11-04",
       "id": "p-58b0e0a2cdcc06b0a540",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2022",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -5738,7 +6413,8 @@
       "source": "arxiv",
       "source_id": "2611.05222",
       "sources": [
-        "arxiv"
+        "arxiv",
+        "catalog"
       ],
       "title": "Fairness Metrics based on the AUC in Clinical Predictive AI",
       "updated": "2026-11-03T17:07:56Z",
@@ -5749,11 +6425,22 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Haolin Yuan",
+        "John Aucott",
+        "Armin Hadzic",
+        "William Paul",
+        "Marcia Villegas de Flores",
+        "Philip Mathew",
+        "Philippe Burlina",
+        "Yinzhi Cao"
+      ],
       "doi": "10.1007/978-3-031-43901-8_36",
       "first_seen": "2026-11-04",
       "id": "p-596fcba5556044d734d9",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2023",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -5829,12 +6516,19 @@
     },
     {
       "abstract_hash": "",
-      "arxiv_id": "",
+      "arxiv_id": "2310.05055",
+      "authors": [
+        "Raman Dutt",
+        "Ondrej Bohdal",
+        "Sotirios A. Tsaftaris",
+        "Timothy Hospedales"
+      ],
       "doi": "",
       "first_seen": "2026-11-04",
       "id": "p-5f3a723fd3915f9dac07",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2024",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -5883,11 +6577,17 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Charles Jones",
+        "Mélanie Roschewitz",
+        "Ben Glocker"
+      ],
       "doi": "10.1007/978-3-031-43898-1_18",
       "first_seen": "2026-11-04",
       "id": "p-60d03e0aeb58b08b606a",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2023",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -5902,11 +6602,18 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "James Zou",
+        "Judy Wawira Gichoya",
+        "Daniel E. Ho",
+        "Ziad Obermeyer"
+      ],
       "doi": "10.1126/science.adh4260",
       "first_seen": "2026-11-04",
       "id": "p-6310a3781d361d1fa812",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2023-07-14",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -5951,11 +6658,37 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Judy Wawira Gichoya",
+        "Imon Banerjee",
+        "Ananth Reddy Bhimireddy",
+        "John L Burns",
+        "Leo Anthony Celi",
+        "Li-Ching Chen",
+        "Ramon Correa",
+        "Natalie Dullerud",
+        "Marzyeh Ghassemi",
+        "Shih-Cheng Huang",
+        "Po-Chih Kuo",
+        "Matthew P Lungren",
+        "Lyle J Palmer",
+        "Brandon J Price",
+        "Saptarshi Purkayastha",
+        "Ayis T Pyrros",
+        "Lauren Oakden-Rayner",
+        "Chima Okechukwu",
+        "Laleh Seyyed-Kalantari",
+        "Hari Trivedi",
+        "Ryan Wang",
+        "Zachary Zaiman",
+        "Haoran Zhang"
+      ],
       "doi": "10.1016/s2589-7500(22)00063-2",
       "first_seen": "2026-11-04",
       "id": "p-6d07dc6c06181b7e7311",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2022-06",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -5970,11 +6703,21 @@
     {
       "abstract_hash": "",
       "arxiv_id": "2407.00983",
+      "authors": [
+        "Ruinan Jin",
+        "Zikang Xu",
+        "Yuan Zhong",
+        "Qiongsong Yao",
+        "Qi Dou",
+        "S. Kevin Zhou",
+        "Xiaoxiao Li"
+      ],
       "doi": "",
       "first_seen": "2026-11-04",
       "id": "p-6f28fb186e3dcea2f8ba",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2024-07-01",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -5989,11 +6732,19 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Yawen Wu",
+        "Dewen Zeng",
+        "Xiaowei Xu",
+        "Yiyu Shi",
+        "Jingtong Hu"
+      ],
       "doi": "10.1007/978-3-031-16431-6_70",
       "first_seen": "2026-11-04",
       "id": "p-6f34357851a4b1e72330",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2022",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -6042,11 +6793,20 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Thorsten Kalb",
+        "Kaisar Kushibar",
+        "Celia Cintas",
+        "Karim Lekadir",
+        "Oliver Diaz",
+        "Richard Osuala"
+      ],
       "doi": "10.1007/978-3-031-45249-9_24",
       "first_seen": "2026-11-04",
       "id": "p-73b4c436c2f8486b0686",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2023",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -6061,11 +6821,17 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Christian Wachinger",
+        "Anna Rieckmann",
+        "Sebastian Pölsterl"
+      ],
       "doi": "10.1016/j.media.2020.101879",
       "first_seen": "2026-11-04",
       "id": "p-741efaed93788885d74e",
       "last_changed": "2026-11-04",
-      "pmid": "",
+      "pmid": "33152602",
+      "published": "2021-01",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -6114,6 +6880,7 @@
       "id": "p-74db318deea8bfd85d95",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2022",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -6157,11 +6924,16 @@
     {
       "abstract_hash": "",
       "arxiv_id": "2104.01109",
+      "authors": [
+        "Neil Joshi",
+        "Phil Burlina"
+      ],
       "doi": "",
       "first_seen": "2026-11-04",
       "id": "p-79d16cda7aeba6a0c10d",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2021-03-15",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -6205,11 +6977,19 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Luyang Luo",
+        "Dunyuan Xu",
+        "Hao Chen",
+        "Tien-Tsin Wong",
+        "Pheng-Ann Heng"
+      ],
       "doi": "10.1007/978-3-031-16452-1_59",
       "first_seen": "2026-11-04",
       "id": "p-7b78e7da9520f970f8b5",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2022",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -6224,11 +7004,29 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Ismaeel A. Siddiqui",
+        "Nickolas Littlefield",
+        "Luke A. Carlson",
+        "Matthew Gong",
+        "Avani Chhabra",
+        "Zoe Menezes",
+        "George M. Mastorakos",
+        "Sakshi Mehul Thakar",
+        "Mehrnaz Abedian",
+        "Ines Lohse",
+        "Kurt R. Weiss",
+        "Johannes F. Plate",
+        "Hamidreza Moradi",
+        "Soheyla Amirian",
+        "Ahmad P. Tafti"
+      ],
       "doi": "10.1038/s41598-024-66873-6",
       "first_seen": "2026-11-04",
       "id": "p-7cec20e219a46c169e50",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2024-07-12",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -6300,11 +7098,19 @@
     {
       "abstract_hash": "",
       "arxiv_id": "2303.08325",
+      "authors": [
+        "Zikang Xu",
+        "Shang Zhao",
+        "Quan Quan",
+        "Qingsong Yao",
+        "S. Kevin Zhou"
+      ],
       "doi": "",
       "first_seen": "2026-11-04",
       "id": "p-87c021d98d1e53acfd80",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2023-03-15",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -6319,11 +7125,33 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Roxana Daneshjou",
+        "Kailas Vodrahalli",
+        "Roberto A. Novoa",
+        "Melissa Jenkins",
+        "Weixin Liang",
+        "Veronica Rotemberg",
+        "Justin Ko",
+        "Susan M. Swetter",
+        "Elizabeth E. Bailey",
+        "Olivier Gevaert",
+        "Pritam Mukherjee",
+        "Michelle Phung",
+        "Kiana Yekrang",
+        "Bradley Fong",
+        "Rachna Sahasrabudhe",
+        "Johan A. C. Allerup",
+        "Utako Okata-Karigane",
+        "James Zou",
+        "Albert S. Chiou"
+      ],
       "doi": "10.1126/sciadv.abq6147",
       "first_seen": "2026-11-04",
       "id": "p-8a8350f01b3748b8c1b6",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2022-08-12",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -6338,11 +7166,18 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Ana Lawry Aguila",
+        "James Chapman",
+        "Mohammed Janahi",
+        "Andre Altmann"
+      ],
       "doi": "10.1007/978-3-031-16431-6_41",
       "first_seen": "2026-11-04",
       "id": "p-8ef760f25f37a5cc39f8",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2022",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -6386,11 +7221,21 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Malte Klingenberg",
+        "Didem Stark",
+        "Fabian Eitel",
+        "Céline Budding",
+        "Mohamad Habes",
+        "Kerstin Ritter",
+        ""
+      ],
       "doi": "10.1186/s13195-023-01225-6",
       "first_seen": "2026-11-04",
       "id": "p-938fa8c0c293b242a146",
       "last_changed": "2026-11-04",
-      "pmid": "",
+      "pmid": "37081528",
+      "published": "2023-04-20",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -6404,12 +7249,58 @@
     },
     {
       "abstract_hash": "",
+      "authors": [
+        "Melissa Mccradden",
+        "Oluwadara Odusi",
+        "Shalmali Joshi",
+        "Ismail Akrout",
+        "Kagiso Ndlovu",
+        "Ben Glocker",
+        "Gabriel Maicas",
+        "Xiaoxuan Liu",
+        "Mjaye Mazwi",
+        "Tee Garnett",
+        "Lauren Oakden-Rayner",
+        "Myrtede Alfred",
+        "Irvine Sihlahla",
+        "Oswa Shafei",
+        "Anna Goldenberg"
+      ],
+      "doi": "10.1145/3593013.3594096",
+      "first_seen": "2026-11-04",
+      "id": "p-9655b13245a51f06cf0d",
+      "last_changed": "2026-11-04",
+      "published": "2023-06-12",
+      "seeded": true,
+      "source": "catalog",
+      "sources": [
+        "catalog"
+      ],
+      "title": "What's fair is… fair? Presenting JustEFAB, an ethical framework for operationalizing medical ethics and social justice in the integration of clinical machine learning",
+      "updated": "",
+      "url": "https://doi.org/10.1145/3593013.3594096",
+      "version": "",
+      "year": "2023"
+    },
+    {
+      "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Tiarna Lee",
+        "Esther Puyol-Antón",
+        "Bram Ruijsink",
+        "Sebastien Roujol",
+        "Theodore Barfoot",
+        "Shaheim Ogbomo-Harmitt",
+        "Miaojing Shi",
+        "Andrew King"
+      ],
       "doi": "10.1093/ehjdh/ztaf008",
       "first_seen": "2026-11-04",
       "id": "p-99a968e35b75af5ea543",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2025-02-24",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -6424,11 +7315,18 @@
     {
       "abstract_hash": "",
       "arxiv_id": "2110.14755",
+      "authors": [
+        "Ben Glocker",
+        "Charles Jones",
+        "Melanie Bernhardt",
+        "Stefan Winzeck"
+      ],
       "doi": "",
       "first_seen": "2026-11-04",
       "id": "p-99b632c94149de773fbb",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2021-10-27",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -6443,11 +7341,21 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Guilherme Pombo",
+        "Robert Gray",
+        "M. Jorge Cardoso",
+        "Sebastien Ourselin",
+        "Geraint Rees",
+        "John Ashburner",
+        "Parashkev Nachev"
+      ],
       "doi": "10.1016/j.media.2022.102723",
       "first_seen": "2026-11-04",
       "id": "p-9ba48983f91dcf1acbe4",
       "last_changed": "2026-11-04",
-      "pmid": "",
+      "pmid": "36542907",
+      "published": "2023-02",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -6462,11 +7370,21 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Newton M. Kinyanjui",
+        "Timothy Odonga",
+        "Celia Cintas",
+        "Noel C. F. Codella",
+        "Rameswar Panda",
+        "Prasanna Sattigeri",
+        "Kush R. Varshney"
+      ],
       "doi": "10.1007/978-3-030-59725-2_31",
       "first_seen": "2026-11-04",
       "id": "p-9bc081c3edad7cd8e980",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2020",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -6511,11 +7429,18 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Mohamed Huti",
+        "Tiarna Lee",
+        "Elinor Sawyer",
+        "Andrew P. King"
+      ],
       "doi": "10.1007/978-3-031-45249-9_22",
       "first_seen": "2026-11-04",
       "id": "p-9bff17b5f000bfaf6cd0",
       "last_changed": "2026-11-04",
-      "pmid": "",
+      "pmid": "39404661",
+      "published": "2023",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -6530,11 +7455,19 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Philippe Burlina",
+        "Neil Joshi",
+        "William Paul",
+        "Katia D. Pacheco",
+        "Neil M. Bressler"
+      ],
       "doi": "10.1167/tvst.10.2.13",
       "first_seen": "2026-11-04",
       "id": "p-a48dad97ccd708c5de68",
       "last_changed": "2026-11-04",
-      "pmid": "",
+      "pmid": "34003898",
+      "published": "2021-02-11",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -6579,11 +7512,19 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Agostina J. Larrazabal",
+        "Nicolás Nieto",
+        "Victoria Peterson",
+        "Diego H. Milone",
+        "Enzo Ferrante"
+      ],
       "doi": "10.1073/pnas.1919012117",
       "first_seen": "2026-11-04",
       "id": "p-a73769be7a443ee19328",
       "last_changed": "2026-11-04",
-      "pmid": "",
+      "pmid": "32457147",
+      "published": "2020-05-26",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -6598,11 +7539,18 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Amelia Jiménez-Sánchez",
+        "Dovile Juodelyte",
+        "Bethany Chamberlain",
+        "Veronika Cheplygina"
+      ],
       "doi": "10.1109/isbi53787.2023.10230572",
       "first_seen": "2026-11-04",
       "id": "p-a86be289be4b793ca3eb",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2023-04-18",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -6646,11 +7594,18 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Ben Glocker",
+        "Charles Jones",
+        "Mélanie Bernhardt",
+        "Stefan Winzeck"
+      ],
       "doi": "10.1016/j.ebiom.2023.104467",
       "first_seen": "2026-11-04",
       "id": "p-ae73465d34942c7b2090",
       "last_changed": "2026-11-04",
-      "pmid": "",
+      "pmid": "36791660",
+      "published": "2023-03",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -6665,11 +7620,21 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Esther Puyol-Antón",
+        "Bram Ruijsink",
+        "Stefan K. Piechnik",
+        "Stefan Neubauer",
+        "Steffen E. Petersen",
+        "Reza Razavi",
+        "Andrew P. King"
+      ],
       "doi": "10.1007/978-3-030-87199-4_39",
       "first_seen": "2026-11-04",
       "id": "p-b0022b70abf7688961de",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2021",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -6684,11 +7649,21 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Vien Ngoc Dang",
+        "Adrià Casamitjana",
+        "Martijn P. A. Starmans",
+        "Carlos Martín-Isla",
+        "Jerónimo Hernández-González",
+        "Karim Lekadir",
+        "for the Alzheimer’s Disease Neuroimaging Initiative"
+      ],
       "doi": "10.1007/978-3-031-45249-9_17",
       "first_seen": "2026-11-04",
       "id": "p-b67b84cbf7e763e4e6fe",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2023",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -6703,11 +7678,17 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Chenxi Yuan",
+        "Kristin A. Linn",
+        "Rebecca A. Hubbard"
+      ],
       "doi": "10.1001/jamanetworkopen.2023.42203",
       "first_seen": "2026-11-04",
       "id": "p-b8ace73b67a9418cd0ad",
       "last_changed": "2026-11-04",
-      "pmid": "",
+      "pmid": "37934495",
+      "published": "2023-11-07",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -6722,11 +7703,20 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Tiarna Lee",
+        "Esther Puyol-Antón",
+        "Bram Ruijsink",
+        "Keana Aitcheson",
+        "Miaojing Shi",
+        "Andrew P. King"
+      ],
       "doi": "10.1007/978-3-031-45249-9_21",
       "first_seen": "2026-11-04",
       "id": "p-bbadadc11dbe593639dd",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2023",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -6741,11 +7731,21 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Ehsan Adeli",
+        "Qingyu Zhao",
+        "Adolf Pfefferbaum",
+        "Edith V. Sullivan",
+        "Li Fei-Fei",
+        "Juan Carlos Niebles",
+        "Kilian M. Pohl"
+      ],
       "doi": "10.1109/wacv48630.2021.00256",
       "first_seen": "2026-11-04",
       "id": "p-bbc3b4510635ce49b275",
       "last_changed": "2026-11-04",
-      "pmid": "",
+      "pmid": "34522832",
+      "published": "2021-01",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -6800,11 +7800,27 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Anurag Vaidya",
+        "Richard J. Chen",
+        "Drew F. K. Williamson",
+        "Andrew H. Song",
+        "Guillaume Jaume",
+        "Yuzhe Yang",
+        "Thomas Hartvigsen",
+        "Emma C. Dyer",
+        "Ming Y. Lu",
+        "Jana Lipkova",
+        "Muhammad Shaban",
+        "Tiffany Y. Chen",
+        "Faisal Mahmood"
+      ],
       "doi": "10.1038/s41591-024-02885-z",
       "first_seen": "2026-11-04",
       "id": "p-c095518ae30e7b581d78",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2024-04",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -6819,11 +7835,17 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Qingyu Zhao",
+        "Ehsan Adeli",
+        "Kilian M. Pohl"
+      ],
       "doi": "10.1038/s41467-020-19784-9",
       "first_seen": "2026-11-04",
       "id": "p-c12e599b0a2f6f675632",
       "last_changed": "2026-11-04",
-      "pmid": "",
+      "pmid": "33243992",
+      "published": "2020-11-26",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -6838,11 +7860,19 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Laleh Seyyed-Kalantari",
+        "Haoran Zhang",
+        "Matthew B. A. McDermott",
+        "Irene Y. Chen",
+        "Marzyeh Ghassemi"
+      ],
       "doi": "10.1038/s41591-021-01595-0",
       "first_seen": "2026-11-04",
       "id": "p-c1a38ddedddd2f52121f",
       "last_changed": "2026-11-04",
-      "pmid": "",
+      "pmid": "34893776",
+      "published": "2021-12",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -6857,11 +7887,17 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Emma A. M. Stanley",
+        "Matthias Wilms",
+        "Nils D. Forkert"
+      ],
       "doi": "10.1007/978-3-031-23223-7_2",
       "first_seen": "2026-11-04",
       "id": "p-c1f81933cbe9215f7955",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2022",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -6881,6 +7917,7 @@
       "id": "p-c25e0e8971d68639b0ce",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2022",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -6895,11 +7932,17 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Rongguang Wang",
+        "Pratik Chaudhari",
+        "Christos Davatzikos"
+      ],
       "doi": "10.1073/pnas.2211613120",
       "first_seen": "2026-11-04",
       "id": "p-c32f29e50aca8640eddf",
       "last_changed": "2026-11-04",
-      "pmid": "",
+      "pmid": "36716365",
+      "published": "2023-01-30",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -6913,12 +7956,22 @@
     },
     {
       "abstract_hash": "",
-      "arxiv_id": "",
+      "arxiv_id": "2204.01737",
+      "authors": [
+        "Eike Petersen",
+        "Aasa Feragen",
+        "Maria Luise da Costa Zemsch",
+        "Anders Henriksen",
+        "Oskar Eiler Wiese Christensen",
+        "Melanie Ganz",
+        ""
+      ],
       "doi": "10.1007/978-3-031-16431-6_9",
       "first_seen": "2026-11-04",
       "id": "p-c3ff0dcccd35b47eaa4a",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2022",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -6933,11 +7986,18 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Alceu Bissoto",
+        "Michel Fornaciali",
+        "Eduardo Valle",
+        "Sandra Avila"
+      ],
       "doi": "10.1109/cvprw.2019.00335",
       "first_seen": "2026-11-04",
       "id": "p-c4b0259f97938448cae4",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2019-06",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -6983,8 +8043,8 @@
     },
     {
       "abstract_hash": "bda06a8542728b44fa7ff4c79425f698273d1c5acf9347d21510fae0b44c9c8e",
-      "abstract_source": "pubmed",
-      "abstract_updated": "2026-11-03",
+      "abstract_source": "europepmc",
+      "abstract_updated": "2026-11-04",
       "arxiv_id": "",
       "authors": [
         "Peikun Ni",
@@ -7003,10 +8063,11 @@
       "source": "pubmed",
       "source_id": "42973283",
       "sources": [
+        "europepmc",
         "pubmed"
       ],
       "title": "Risk-Oriented Differentiated Governance for Ambiguous Information.",
-      "updated": "2026-11-03",
+      "updated": "2026-11-04",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42973283/",
       "version": "",
       "year": "2026"
@@ -7048,11 +8109,19 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Samaneh Abbasi-Sureshjani",
+        "Ralf Raumanns",
+        "Britt E. J. Michels",
+        "Gerard Schouten",
+        "Veronika Cheplygina"
+      ],
       "doi": "10.1007/978-3-030-61166-8_20",
       "first_seen": "2026-11-04",
       "id": "p-cc4517a07c255f7aef9e",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2020",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -7101,11 +8170,21 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Robert Geirhos",
+        "Jörn-Henrik Jacobsen",
+        "Claudio Michaelis",
+        "Richard Zemel",
+        "Wieland Brendel",
+        "Matthias Bethge",
+        "Felix A. Wichmann"
+      ],
       "doi": "10.1038/s42256-020-00257-z",
       "first_seen": "2026-11-04",
       "id": "p-ce3d33590cf86aae18f9",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2020-11-10",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -7180,11 +8259,18 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Ben Glocker",
+        "Charles Jones",
+        "Mélanie Roschewitz",
+        "Stefan Winzeck"
+      ],
       "doi": "10.1148/ryai.230060",
       "first_seen": "2026-11-04",
       "id": "p-cfd3a56d56237ac61c14",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2023-11-01",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -7199,11 +8285,19 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Stefanos Ioannou",
+        "Hana Chockler",
+        "Alexander Hammers",
+        "Andrew P. King",
+        ""
+      ],
       "doi": "10.1007/978-3-031-17899-3_2",
       "first_seen": "2026-11-04",
       "id": "p-d1761e58ca3ff1f83075",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2022",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -7218,11 +8312,19 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Anthony Vento",
+        "Qingyu Zhao",
+        "Robert Paul",
+        "Kilian M. Pohl",
+        "Ehsan Adeli"
+      ],
       "doi": "10.1007/978-3-031-16437-8_37",
       "first_seen": "2026-11-04",
       "id": "p-d2aa9572dd44b68fe757",
       "last_changed": "2026-11-04",
-      "pmid": "",
+      "pmid": "36331278",
+      "published": "2022",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -7325,12 +8427,53 @@
     },
     {
       "abstract_hash": "",
+      "authors": [
+        "Ramon Correa",
+        "Mahtab Shaan",
+        "Hari Trivedi",
+        "Bhavik Patel",
+        "Leo Anthony G. Celi",
+        "Judy W. Gichoya",
+        "Imon Banerjee"
+      ],
+      "doi": "10.1007/s40846-022-00754-z",
+      "first_seen": "2026-11-04",
+      "id": "p-d4c9bab2e3d07b37e52f",
+      "last_changed": "2026-11-04",
+      "published": "2022-10-15",
+      "seeded": true,
+      "source": "catalog",
+      "sources": [
+        "catalog"
+      ],
+      "title": "A Systematic Review of ‘Fair’ AI Model Development for Image Classification and Prediction",
+      "updated": "",
+      "url": "https://doi.org/10.1007/s40846-022-00754-z",
+      "version": "",
+      "year": "2022"
+    },
+    {
+      "abstract_hash": "",
       "arxiv_id": "2111.11665",
+      "authors": [
+        "Yuyin Zhou",
+        "Shih-Cheng Huang",
+        "Jason Alan Fries",
+        "Alaa Youssef",
+        "Timothy J. Amrhein",
+        "Marcello Chang",
+        "Imon Banerjee",
+        "Daniel Rubin",
+        "Lei Xing",
+        "Nigam Shah",
+        "Matthew P. Lungren"
+      ],
       "doi": "",
       "first_seen": "2026-11-04",
       "id": "p-d4d966c75fdda268e9fd",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2021-11-23",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -7345,11 +8488,18 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Yuning Du",
+        "Yuyang Xue",
+        "Rohan Dharmakumar",
+        "Sotirios A. Tsaftaris"
+      ],
       "doi": "10.1007/978-3-031-45249-9_10",
       "first_seen": "2026-11-04",
       "id": "p-d7063a0be23dfa17e896",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2023",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -7364,11 +8514,21 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Zohaib Salahuddin",
+        "Yi Chen",
+        "Xian Zhong",
+        "Henry C. Woodruff",
+        "Nastaran Mohammadian Rad",
+        "Shruti Atul Mali",
+        "Philippe Lambin"
+      ],
       "doi": "10.3390/cancers15071932",
       "first_seen": "2026-11-04",
       "id": "p-de521ec2dd4e703a5e45",
       "last_changed": "2026-11-04",
-      "pmid": "",
+      "pmid": "37046593",
+      "published": "2023-03-23",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -7382,12 +8542,37 @@
     },
     {
       "abstract_hash": "",
+      "authors": [
+        "Melissa D McCradden",
+        "Shalmali Joshi",
+        "Mjaye Mazwi",
+        "James A Anderson"
+      ],
+      "doi": "10.1016/s2589-7500(20)30065-0",
+      "first_seen": "2026-11-04",
+      "id": "p-e07898d7a8f61daede07",
+      "last_changed": "2026-11-04",
+      "published": "2020-05",
+      "seeded": true,
+      "source": "catalog",
+      "sources": [
+        "catalog"
+      ],
+      "title": "Ethical limitations of algorithmic fairness solutions in health care machine learning",
+      "updated": "",
+      "url": "https://doi.org/10.1016/s2589-7500(20)30065-0",
+      "version": "",
+      "year": "2020"
+    },
+    {
+      "abstract_hash": "",
       "arxiv_id": "",
       "doi": "",
       "first_seen": "2026-11-04",
       "id": "p-e0916d82e6040623266f",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2022",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -7402,11 +8587,18 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "María Agustina Ricci Lara",
+        "Candelaria Mosquera",
+        "Enzo Ferrante",
+        "Rodrigo Echeveste"
+      ],
       "doi": "10.1007/978-3-031-45249-9_13",
       "first_seen": "2026-11-04",
       "id": "p-e11d797e4fd0560d8a23",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2023",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -7421,11 +8613,22 @@
     {
       "abstract_hash": "",
       "arxiv_id": "2306.09264",
+      "authors": [
+        "Yan Luo",
+        "Yu Tian",
+        "Min Shi",
+        "Louis R. Pasquale",
+        "Lucy Q. Shen",
+        "Nazlee Zebardast",
+        "Tobias Elze",
+        "Mengyu Wang"
+      ],
       "doi": "",
       "first_seen": "2026-11-04",
       "id": "p-e14f7d43a72fe9b902c4",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2023-06-15",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -7440,11 +8643,19 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Tiarna Lee",
+        "Esther Puyol-Antón",
+        "Bram Ruijsink",
+        "Miaojing Shi",
+        "Andrew P. King"
+      ],
       "doi": "10.1007/978-3-031-23443-9_22",
       "first_seen": "2026-11-04",
       "id": "p-e1bf5dabab2105987689",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2022",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -7459,11 +8670,18 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Nina Weng",
+        "Siavash Bigdeli",
+        "Eike Petersen",
+        "Aasa Feragen"
+      ],
       "doi": "10.1007/978-3-031-45249-9_14",
       "first_seen": "2026-11-04",
       "id": "p-e20c46a354ba0b6a0c47",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2023",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -7478,11 +8696,17 @@
     {
       "abstract_hash": "",
       "arxiv_id": "2210.01725",
+      "authors": [
+        "Yongshuo Zong",
+        "Yongxin Yang",
+        "Timothy Hospedales"
+      ],
       "doi": "",
       "first_seen": "2026-11-04",
       "id": "p-e46e3d980ab8216ae0f1",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2023",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -7497,11 +8721,22 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Paul H. Yi",
+        "Jinchi Wei",
+        "Tae Kyung Kim",
+        "Jiwon Shin",
+        "Haris I. Sair",
+        "Ferdinand K. Hui",
+        "Gregory D. Hager",
+        "Cheng Ting Lin"
+      ],
       "doi": "10.1007/s10140-021-01953-y",
       "first_seen": "2026-11-04",
       "id": "p-e57fec541d02d9ab897e",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2021-06-05",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -7549,6 +8784,31 @@
       "year": "2026"
     },
     {
+      "abstract_hash": "",
+      "authors": [
+        "Alvin Rajkomar",
+        "Michaela Hardt",
+        "Michael D. Howell",
+        "Greg Corrado",
+        "Marshall H. Chin"
+      ],
+      "doi": "10.7326/m18-1990",
+      "first_seen": "2026-11-04",
+      "id": "p-e7410f72deb1013bd6de",
+      "last_changed": "2026-11-04",
+      "published": "2018-12-18",
+      "seeded": true,
+      "source": "catalog",
+      "sources": [
+        "catalog"
+      ],
+      "title": "Ensuring Fairness in Machine Learning to Advance Health Equity",
+      "updated": "",
+      "url": "https://doi.org/10.7326/m18-1990",
+      "version": "",
+      "year": "2018"
+    },
+    {
       "abstract_hash": "419b8bef2e20e0edc20b78bb46e8f36a7c344cba48a2b49e0eabed634ef87ebb",
       "abstract_source": "europepmc",
       "abstract_updated": "2026-10-29",
@@ -7585,11 +8845,19 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Marin Benčević",
+        "Marija Habijan",
+        "Irena Galić",
+        "Danilo Babin",
+        "Aleksandra Pižurica"
+      ],
       "doi": "10.1016/j.cmpb.2024.108044",
       "first_seen": "2026-11-04",
       "id": "p-e77f7d8fe5b7a89359b0",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2024-03",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -7603,12 +8871,42 @@
     },
     {
       "abstract_hash": "",
+      "arxiv_id": "1808.00023",
+      "authors": [
+        "Sam Corbett-Davies",
+        "Johann D. Gaebler",
+        "Hamed Nilforoshan",
+        "Ravi Shroff",
+        "Sharad Goel"
+      ],
+      "first_seen": "2026-11-04",
+      "id": "p-e7ad35abb038556134fd",
+      "last_changed": "2026-11-04",
+      "published": "2018-07-31",
+      "seeded": true,
+      "source": "catalog",
+      "sources": [
+        "catalog"
+      ],
+      "title": "The Measure and Mismeasure of Fairness",
+      "updated": "",
+      "url": "https://arxiv.org/abs/1808.00023",
+      "version": "",
+      "year": "2018"
+    },
+    {
+      "abstract_hash": "",
       "arxiv_id": "2202.02832",
+      "authors": [
+        "Peter J. Bevan",
+        "Amir Atapour-Abarghouei"
+      ],
       "doi": "",
       "first_seen": "2026-11-04",
       "id": "p-e8ce57010438f7f62ec9",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2021",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -7623,11 +8921,17 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Di Fan",
+        "Yifan Wu",
+        "Xiaoxiao Li"
+      ],
       "doi": "10.1007/978-3-030-90874-4_12",
       "first_seen": "2026-11-04",
       "id": "p-eb9d63530da3d7022d2e",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2021",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -7642,11 +8946,23 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Tiarna Lee",
+        "Esther Puyol-Anton",
+        "Bram Ruijsink",
+        "Pier-Giorgio Masci",
+        "Louise Keehn",
+        "Phil Chowienczyk",
+        "Emily Haseler",
+        "Miaojing Shi",
+        "Andrew King"
+      ],
       "doi": "10.59275/j.melba.2025-6747",
       "first_seen": "2026-11-04",
       "id": "p-ebade3496d18caa2dcf0",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2025-12-30",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -7661,11 +8977,23 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Maram Alqarni",
+        "Emma-Louise Jones",
+        "Luis Ribeiro",
+        "Hema Verma",
+        "Sian Cooper",
+        "Vinod Mullassery",
+        "Stephen Morris",
+        "Teresa Guerrero Urbano",
+        "Andrew P. King"
+      ],
       "doi": "10.1038/s41598-025-26189-5",
       "first_seen": "2026-11-04",
       "id": "p-ec64204b49e11845429b",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2025-12-06",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -7714,11 +9042,18 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Shammi More",
+        "Simon B. Eickhoff",
+        "Julian Caspers",
+        "Kaustubh R. Patil"
+      ],
       "doi": "10.1007/978-3-030-67670-4_1",
       "first_seen": "2026-11-04",
       "id": "p-ee9da62bcc69b571843b",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2021",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -7797,11 +9132,19 @@
     {
       "abstract_hash": "",
       "arxiv_id": "2102.06764",
+      "authors": [
+        "Valeriia Cherepanova",
+        "Vedant Nanda",
+        "Micah Goldblum",
+        "John P. Dickerson",
+        "Tom Goldstein"
+      ],
       "doi": "",
       "first_seen": "2026-11-04",
       "id": "p-f61c97067acca5d12da0",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2021-02-12",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -7879,6 +9222,7 @@
       "id": "p-fa6447dcf00b87d3ef88",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2022",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -7962,12 +9306,21 @@
     },
     {
       "abstract_hash": "",
-      "arxiv_id": "",
+      "arxiv_id": "2207.10384",
+      "authors": [
+        "Alexander Brown",
+        "Nenad Tomasev",
+        "Jan Freyberg",
+        "Yuan Liu",
+        "Alan Karthikesalingam",
+        "Jessica Schrouff"
+      ],
       "doi": "10.1038/s41467-023-39902-7",
       "first_seen": "2026-11-04",
       "id": "p-fe3f282659e3d683a6ff",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2022-07-21",
       "seeded": true,
       "source": "catalog",
       "sources": [
@@ -7982,11 +9335,18 @@
     {
       "abstract_hash": "",
       "arxiv_id": "",
+      "authors": [
+        "Emma A.M. Stanley",
+        "Raissa Souza",
+        "Matthias Wilms",
+        "Nils D. Forkert"
+      ],
       "doi": "10.1016/j.ebiom.2024.105501",
       "first_seen": "2026-11-04",
       "id": "p-ff619d7d95379d8949ec",
       "last_changed": "2026-11-04",
       "pmid": "",
+      "published": "2025-01",
       "seeded": true,
       "source": "catalog",
       "sources": [

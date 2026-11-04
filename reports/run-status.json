@@ -1,12 +1,16 @@
 {
   "analysis": {
-    "available_reviews": 54,
-    "failures": 0,
+    "available_reviews": 53,
+    "failures": 1,
     "mode": "model",
-    "pending": 2,
-    "reviewed": 3
+    "pending": 3,
+    "reviewed": 0
   },
   "candidates": 56,
+  "catalog_publication": {
+    "added": 0,
+    "failures": 0
+  },
   "changed_today": 56,
   "date": "2026-11-04",
   "sources": [
@@ -31,10 +35,10 @@
     {
       "complete": true,
       "query_id": "249ba7c65421",
-      "records": 18,
+      "records": 19,
       "since": "2026-10-28",
       "source": "europepmc",
-      "total": 18,
+      "total": 19,
       "until": "2026-11-04"
     },
     {
