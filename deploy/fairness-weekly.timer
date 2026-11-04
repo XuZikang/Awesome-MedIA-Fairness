@@ -1,0 +1,10 @@
+[Unit]
+Description=Weekly medical algorithm fairness update (Sunday 10:07 Asia/Shanghai)
+
+[Timer]
+OnCalendar=Sun *-*-* 02:07:00 UTC
+Persistent=true
+Unit=fairness-weekly.service
+
+[Install]
+WantedBy=timers.target

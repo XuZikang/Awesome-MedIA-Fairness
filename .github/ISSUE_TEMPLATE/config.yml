@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Catalog and contribution guidance
+    url: https://github.com/XuZikang/Awesome-MedIA-Fairness/blob/main/README.md
+    about: Review the scope, controlled metadata vocabulary, and entry format before contributing.

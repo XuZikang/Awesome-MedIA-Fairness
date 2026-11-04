@@ -1,0 +1,3478 @@
+{
+  "sources": {
+    "legacy": "7ecc995",
+    "review": "https://www.nature.com/articles/s41746-024-01276-5",
+    "faimi": "https://faimi-workshop.github.io/resources/"
+  },
+  "foundations": [
+    {
+      "title": "Equality of Opportunity in Supervised Learning",
+      "year": "2016",
+      "venue": "FAIMI resource",
+      "links": {
+        "Paper": "https://dl.acm.org/doi/10.5555/3157382.3157469"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/resources/",
+          "section": "Seminal works on AI fairness"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "faimi",
+      "doi": "10.5555/3157382.3157469",
+      "kind": "foundation"
+    },
+    {
+      "title": "Fair Prediction with Disparate Impact: A Study of Bias in Recidivism Prediction Instruments",
+      "year": "2017",
+      "venue": "FAIMI resource",
+      "links": {
+        "Paper": "https://www.liebertpub.com/doi/10.1089/big.2016.0047"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/resources/",
+          "section": "Seminal works on AI fairness"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "faimi",
+      "doi": "10.1089/big.2016.0047",
+      "kind": "foundation"
+    },
+    {
+      "title": "Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification",
+      "year": "2018",
+      "venue": "FAIMI resource",
+      "links": {
+        "Paper": "https://proceedings.mlr.press/v81/buolamwini18a.html"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/resources/",
+          "section": "Seminal works on AI fairness"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Sex and gender",
+          "Intersectional"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "faimi",
+      "kind": "foundation"
+    },
+    {
+      "title": "Fairness and Machine Learning: Limitations and Opportunities",
+      "year": "2019",
+      "venue": "FAIMI resource",
+      "links": {
+        "Paper": "https://fairmlbook.org/index.html"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/resources/",
+          "section": "Seminal works on AI fairness"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "faimi",
+      "kind": "foundation"
+    },
+    {
+      "title": "The Problem of Infra-Marginality in Outcome Tests for Discrimination",
+      "year": "2017",
+      "venue": "FAIMI resource",
+      "links": {
+        "Paper": "https://dx.doi.org/10.2139/ssrn.2811449"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/resources/",
+          "section": "Miscellaneous"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "faimi",
+      "doi": "10.2139/ssrn.2811449",
+      "kind": "foundation"
+    },
+    {
+      "title": "Preventing Fairness Gerrymandering: Auditing and Learning for Subgroup Fairness",
+      "year": "2017",
+      "venue": "FAIMI resource",
+      "links": {
+        "Paper": "https://proceedings.mlr.press/v80/kearns18a.html"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/resources/",
+          "section": "Miscellaneous"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "faimi",
+      "kind": "foundation"
+    },
+    {
+      "title": "Unlocking Fairness: a Trade-off Revisited",
+      "year": "2019",
+      "venue": "FAIMI resource",
+      "links": {
+        "Paper": "https://papers.nips.cc/paper/2019/hash/373e4c5d8edfa8b74fd4b6791d0cf6dc-Abstract.html"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/resources/",
+          "section": "Miscellaneous"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "faimi",
+      "kind": "foundation"
+    },
+    {
+      "title": "Is There a Trade-Off Between Fairness and Accuracy? A Perspective Using Mismatched Hypothesis Testing",
+      "year": "2019",
+      "venue": "FAIMI resource",
+      "links": {
+        "Paper": "https://proceedings.mlr.press/v119/dutta20a.html"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/resources/",
+          "section": "Miscellaneous"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "faimi",
+      "kind": "foundation"
+    },
+    {
+      "title": "On Testing and Comparing Fair classifiers under Data Bias",
+      "year": "2019",
+      "venue": "FAIMI resource",
+      "links": {
+        "Paper": "https://arxiv.org/abs/2302.05906"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/resources/",
+          "section": "Miscellaneous"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "faimi",
+      "arxiv_id": "2302.05906",
+      "kind": "foundation"
+    },
+    {
+      "title": "A Possibility in Algorithmic Fairness: Can Calibration and Equal Error Rates be Reconciled?",
+      "year": "2020",
+      "venue": "FAIMI resource",
+      "links": {
+        "Paper": "https://drops.dagstuhl.de/opus/volltexte/2021/13872/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/resources/",
+          "section": "Miscellaneous"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "faimi",
+      "kind": "foundation"
+    },
+    {
+      "title": "Bias Preservation in Machine Learning: The Legality of Fairness Metrics Under EU Non-Discrimination Law",
+      "year": "2021",
+      "venue": "FAIMI resource",
+      "links": {
+        "Paper": "https://dx.doi.org/10.2139/ssrn.3792772"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/resources/",
+          "section": "Miscellaneous"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "faimi",
+      "doi": "10.2139/ssrn.3792772",
+      "kind": "foundation"
+    },
+    {
+      "title": "The Unfairness of Fair Machine Learning: Levelling Down and Strict Egalitarianism by Default",
+      "year": "2021",
+      "venue": "FAIMI resource",
+      "links": {
+        "Paper": "https://ssrn.com/abstract=4331652"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/resources/",
+          "section": "Miscellaneous"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "faimi",
+      "kind": "foundation"
+    },
+    {
+      "title": "Confounding Factors Need to be Accounted for in Assessing Bias by Machine Learning Algorithms",
+      "year": "2022",
+      "venue": "FAIMI resource",
+      "links": {
+        "Paper": "https://doi.org/10.1038/s41591-022-01847-7"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/resources/",
+          "section": "Miscellaneous"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "faimi",
+      "doi": "10.1038/s41591-022-01847-7",
+      "kind": "foundation"
+    },
+    {
+      "title": "Inherent Tradeoffs in Learning Fair Representations",
+      "year": "2022",
+      "venue": "FAIMI resource",
+      "links": {
+        "Paper": "https://jmlr.org/papers/v23/21-1427.html"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/resources/",
+          "section": "Miscellaneous"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "faimi",
+      "kind": "foundation"
+    },
+    {
+      "title": "On (Assessing) the Fairness of Risk Score Models",
+      "year": "2023",
+      "venue": "FAIMI resource",
+      "links": {
+        "Paper": "https://doi.org/10.1145/3593013.3594045"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/resources/",
+          "section": "Miscellaneous"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "faimi",
+      "doi": "10.1145/3593013.3594045",
+      "kind": "foundation"
+    }
+  ],
+  "workshop_candidates": [
+    {
+      "title": "De-identification and Obfuscation of Gender Attributes From Retinal Scans",
+      "year": "2023",
+      "venue": "FAIMI 2023 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2023-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2023-miccai/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Sex and gender"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Unveiling Fairness Biases in Deep Learning-Based Brain MRI Reconstruction",
+      "year": "2023",
+      "venue": "FAIMI 2023 listing",
+      "links": {
+        "Paper": "https://arxiv.org/pdf/2309.14392v1.pdf"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2023-miccai/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop",
+      "arxiv_id": "2309.14392"
+    },
+    {
+      "title": "Brain matters: Exploring bias in AI for neuroimaging research",
+      "year": "2023",
+      "venue": "FAIMI 2023 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2023-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2023-miccai/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Bias in Unsupervised Anomaly Detection in Brain MRI",
+      "year": "2023",
+      "venue": "FAIMI 2023 listing",
+      "links": {
+        "Paper": "https://arxiv.org/abs/2308.13861v1"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2023-miccai/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop",
+      "arxiv_id": "2308.13861"
+    },
+    {
+      "title": "Towards Unraveling Calibration Biases in Medical Image Analysis",
+      "year": "2023",
+      "venue": "FAIMI 2023 listing",
+      "links": {
+        "Paper": "https://arxiv.org/abs/2305.05101"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2023-miccai/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop",
+      "arxiv_id": "2305.05101"
+    },
+    {
+      "title": "Are Sex-based Physiological Differences the Cause of Gender Bias for Chest X-ray Diagnosis?",
+      "year": "2023",
+      "venue": "FAIMI 2023 listing",
+      "links": {
+        "Paper": "https://arxiv.org/pdf/2308.05129.pdf"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2023-miccai/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Sex and gender"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop",
+      "arxiv_id": "2308.05129"
+    },
+    {
+      "title": "Bayesian uncertainty-weighted loss for improved generalisability on polyp segmentation task",
+      "year": "2023",
+      "venue": "FAIMI 2023 listing",
+      "links": {
+        "Paper": "https://arxiv.org/abs/2309.06807v1"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2023-miccai/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop",
+      "arxiv_id": "2309.06807"
+    },
+    {
+      "title": "Mitigating Bias in MRI-Based Alzheimer’s Disease Classifiers through Pruning of Deep Neural Networks",
+      "year": "2023",
+      "venue": "FAIMI 2023 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2023-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2023-miccai/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Mitigation"
+        ],
+        "Stage": [
+          "Post-processing"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Auditing Unfair Biases in CNN-based Diagnosis of Alzheimer’s Disease",
+      "year": "2023",
+      "venue": "FAIMI 2023 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2023-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2023-miccai/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Distributionally Robust Optimization and Invariant Representation Learning for Addressing Subgroup Underrepresentation: Mechanisms and Limitations",
+      "year": "2023",
+      "venue": "FAIMI 2023 listing",
+      "links": {
+        "Paper": "https://arxiv.org/pdf/2308.06434.pdf"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2023-miccai/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Bias mechanisms",
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop",
+      "arxiv_id": "2308.06434"
+    },
+    {
+      "title": "Analysing race and sex bias in brain age prediction",
+      "year": "2023",
+      "venue": "FAIMI 2023 listing",
+      "links": {
+        "Paper": "https://arxiv.org/pdf/2309.10835.pdf"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2023-miccai/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Sex and gender",
+          "Age",
+          "Race and ethnicity"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop",
+      "arxiv_id": "2309.10835"
+    },
+    {
+      "title": "Studying the Effects of Sex-related Differences on Brain Age Prediction using brain MR Imaging",
+      "year": "2023",
+      "venue": "FAIMI 2023 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2023-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2023-miccai/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Sex and gender",
+          "Age"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "An investigation into the impact of deep learning model choice on sex and race bias in cardiac MR segmentation",
+      "year": "2023",
+      "venue": "FAIMI 2023 listing",
+      "links": {
+        "Paper": "https://arxiv.org/pdf/2308.13415.pdf"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2023-miccai/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Sex and gender",
+          "Race and ethnicity"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop",
+      "arxiv_id": "2308.13415"
+    },
+    {
+      "title": "An Investigation Into Race Bias in Random Forest Models Based on Breast DCE-MRI Derived Radiomics Features",
+      "year": "2023",
+      "venue": "FAIMI 2023 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2023-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2023-miccai/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Race and ethnicity"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "How You Split Matters: Data Leakage and Subject Characteristics Studies in Longitudinal Brain MRI Analysis",
+      "year": "2023",
+      "venue": "FAIMI 2023 listing",
+      "links": {
+        "Paper": "https://arxiv.org/abs/2309.00350"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2023-miccai/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop",
+      "arxiv_id": "2309.00350"
+    },
+    {
+      "title": "Revisiting Skin Tone Fairness in Dermatological Lesion Classification",
+      "year": "2023",
+      "venue": "FAIMI 2023 listing",
+      "links": {
+        "Paper": "https://arxiv.org/abs/2308.09640"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2023-miccai/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Skin tone"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop",
+      "arxiv_id": "2308.09640"
+    },
+    {
+      "title": "A Study of Age and Sex Bias in Multiple Instance Learning based Classification of Acute Myeloid Leukemia Subtypes",
+      "year": "2023",
+      "venue": "FAIMI 2023 listing",
+      "links": {
+        "Paper": "https://arxiv.org/pdf/2308.12675.pdf"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2023-miccai/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Sex and gender",
+          "Age"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop",
+      "arxiv_id": "2308.12675"
+    },
+    {
+      "title": "Unsupervised bias discovery in medical image segmentation",
+      "year": "2023",
+      "venue": "FAIMI 2023 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2023-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2023-miccai/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Debiasing Counterfactuals In the Presence of Spurious Correlations",
+      "year": "2023",
+      "venue": "FAIMI 2023 listing",
+      "links": {
+        "Paper": "https://arxiv.org/abs/2308.10984v1"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2023-miccai/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Mitigation"
+        ],
+        "Stage": [
+          "Not verified"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop",
+      "arxiv_id": "2308.10984"
+    },
+    {
+      "title": "On Biases in a UK Biobank-based Retinal Image Classification Model",
+      "year": "2024",
+      "venue": "FAIMI 2024 listing",
+      "links": {
+        "Paper": "https://arxiv.org/abs/2408.02676"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2024-miccai/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop",
+      "arxiv_id": "2408.02676"
+    },
+    {
+      "title": "Practical and Ethical Considerations for Generative AI in Medical Imaging",
+      "year": "2024",
+      "venue": "FAIMI 2024 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2024-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2024-miccai/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Positive-Sum Fairness: Leveraging Demographic Attributes to Achieve Fair AI Outcomes Without Sacrificing Group Gains",
+      "year": "2024",
+      "venue": "FAIMI 2024 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2024-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2024-miccai/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "All you need is a guiding hand: mitigating shortcut bias in deep learning models for medical imaging",
+      "year": "2024",
+      "venue": "FAIMI 2024 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2024-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2024-miccai/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Bias mechanisms",
+          "Mitigation"
+        ],
+        "Stage": [
+          "Not verified"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Investigating Gender Bias in Lymph-node Segmentation with Anatomical Priors",
+      "year": "2024",
+      "venue": "FAIMI 2024 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2024-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2024-miccai/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Sex and gender"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Quantifying the Impact of Population Shift Across Age and Sex for Abdominal Organ Segmentation",
+      "year": "2024",
+      "venue": "FAIMI 2024 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2024-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2024-miccai/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Sex and gender",
+          "Age"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Mitigating Overdiagnosis Bias in CNN-Based Alzheimer’s Disease Diagnosis for the Elderly",
+      "year": "2024",
+      "venue": "FAIMI 2024 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2024-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2024-miccai/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Mitigation"
+        ],
+        "Stage": [
+          "Not verified"
+        ],
+        "Attributes": [
+          "Age"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Exploring Fairness in State-of-the-Art Pulmonary Nodule Detection Algorithms",
+      "year": "2024",
+      "venue": "FAIMI 2024 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2024-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2024-miccai/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Cycle-GANs generated difference maps to interpret race prediction from medical images",
+      "year": "2024",
+      "venue": "FAIMI 2024 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2024-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2024-miccai/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Race and ethnicity"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Using Backbone Foundation Model for Evaluation Fairness Without Demographic Data in Chest Radiography",
+      "year": "2024",
+      "venue": "FAIMI 2024 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2024-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2024-miccai/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Slicing Through Bias: Explaining Performance Gaps in Medical Image Analysis using Slice Discovery Methods",
+      "year": "2024",
+      "venue": "FAIMI 2024 listing",
+      "links": {
+        "Paper": "https://arxiv.org/abs/2406.12142"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2024-miccai/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop",
+      "arxiv_id": "2406.12142"
+    },
+    {
+      "title": "Dataset Distribution Impacts Model Fairness: Single vs. Multi-Task Learning",
+      "year": "2024",
+      "venue": "FAIMI 2024 listing",
+      "links": {
+        "Paper": "https://arxiv.org/abs/2407.17543"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2024-miccai/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop",
+      "arxiv_id": "2407.17543"
+    },
+    {
+      "title": "Do sites benefit equally from distributed learning in medical image analysis?",
+      "year": "2024",
+      "venue": "FAIMI 2024 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2024-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2024-miccai/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "AI Fairness in Medical Imaging: Controlling for Disease Severity",
+      "year": "2024",
+      "venue": "FAIMI 2024 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2024-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2024-miccai/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "BMFT: Achieving Fairness via Bias-based Weight Masking Fine-tuning",
+      "year": "2024",
+      "venue": "FAIMI 2024 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2024-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2024-miccai/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Fair and Private CT Contrast Agent Detection",
+      "year": "2024",
+      "venue": "FAIMI 2024 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2024-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2024-miccai/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Age"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "How Fair Are Foundation Models? Exploring the Role of Covariate Bias in Histopathology",
+      "year": "2025",
+      "venue": "FAIMI 2025 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2025-miccai-workshop/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2025-miccai-workshop/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Invisible Attributes, Visible Biases: Exploring Demographic Shortcuts in MRI-based Alzheimer’s Disease Classification",
+      "year": "2025",
+      "venue": "FAIMI 2025 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2025-miccai-workshop/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2025-miccai-workshop/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Bias mechanisms",
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Assessing Annotator and Clinician Biases in an Open-Source-Based Tool Used to Generate Head CT Segmentations for Deep Learning Training",
+      "year": "2025",
+      "venue": "FAIMI 2025 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2025-miccai-workshop/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2025-miccai-workshop/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Bias mechanisms",
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "LTCXNet: Tackling Long-Tailed Multi-Label Classification and Racial Bias in Chest X-Ray Analysis",
+      "year": "2025",
+      "venue": "FAIMI 2025 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2025-miccai-workshop/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2025-miccai-workshop/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Race and ethnicity"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "meval: A Statistical Toolbox for Fine-Grained Model Performance Analysis",
+      "year": "2025",
+      "venue": "FAIMI 2025 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2025-miccai-workshop/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2025-miccai-workshop/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Exploring the interplay of label bias with subgroup size and separability: A case study in mammographic density classification",
+      "year": "2025",
+      "venue": "FAIMI 2025 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2025-miccai-workshop/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2025-miccai-workshop/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Fair Dermatological Disease Diagnosis through Auto-weighted Federated Learning and Performance-aware Personalization",
+      "year": "2025",
+      "venue": "FAIMI 2025 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2025-miccai-workshop/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2025-miccai-workshop/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "In-processing"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Fairness-Aware Data Augmentation for Cardiac MRI using Text-Conditioned Diffusion Models",
+      "year": "2025",
+      "venue": "FAIMI 2025 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2025-miccai-workshop/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2025-miccai-workshop/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Sex-based Bias Inherent in the Dice Similarity Coefficient: A Model Independent Analysis for Multiple Anatomical Structures",
+      "year": "2025",
+      "venue": "FAIMI 2025 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2025-miccai-workshop/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2025-miccai-workshop/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Sex and gender"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Identifying Gender-Specific Visual Bias Signals in Skin Lesion Classification",
+      "year": "2025",
+      "venue": "FAIMI 2025 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2025-miccai-workshop/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2025-miccai-workshop/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Sex and gender"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "The Cervix in Context: Bias Assessment in Preterm Birth Prediction",
+      "year": "2025",
+      "venue": "FAIMI 2025 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2025-miccai-workshop/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2025-miccai-workshop/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Disentanglement and Assessment of Shortcuts in Ophthalmological Retinal Imaging Exams",
+      "year": "2025",
+      "venue": "FAIMI 2025 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2025-miccai-workshop/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2025-miccai-workshop/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Bias mechanisms",
+          "Evaluation"
+        ],
+        "Stage": [
+          "In-processing"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "MIMM-X: Disentangeling Spurious Correlations for Medical Image Analysis",
+      "year": "2025",
+      "venue": "FAIMI 2025 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2025-miccai-workshop/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2025-miccai-workshop/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "The Impact of Skin Tone Label Granularity on the Performance and Fairness of AI Based Dermatology Image Classification Models",
+      "year": "2025",
+      "venue": "FAIMI 2025 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2025-miccai-workshop/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2025-miccai-workshop/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Skin tone"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Causal Representation Learning with Observational Grouping for CXR Classification",
+      "year": "2025",
+      "venue": "FAIMI 2025 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2025-miccai-workshop/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2025-miccai-workshop/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Robustness and sex differences in skin cancer detection: logistic regression vs CNNs",
+      "year": "2025",
+      "venue": "FAIMI 2025 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2025-miccai-workshop/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2025-miccai-workshop/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Sex and gender"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Predicting Patient Self-reported Race From Skin Histological Images with Deep Learning",
+      "year": "2025",
+      "venue": "FAIMI 2025 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2025-miccai-workshop/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2025-miccai-workshop/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Race and ethnicity"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Fairness and Robustness of CLIP-Based Models for Chest X-rays",
+      "year": "2025",
+      "venue": "FAIMI 2025 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2025-miccai-workshop/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2025-miccai-workshop/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Does a Rising Tide Lift All Boats? Bias Mitigation for AI-based CMR Segmentation",
+      "year": "2025",
+      "venue": "FAIMI 2025 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2025-miccai-workshop/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2025-miccai-workshop/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Mitigation"
+        ],
+        "Stage": [
+          "Not verified"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Revisiting the Evaluation Bias Introduced by Frame Sampling Strategies in Surgical Video Segmentation Using SAM2",
+      "year": "2025",
+      "venue": "FAIMI 2025 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2025-miccai-workshop/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2025-miccai-workshop/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "ShortCXR: Benchmarking Self-Supervised Learning Methods for Shortcut Mitigation in Chest X-Ray Interpretation",
+      "year": "2025",
+      "venue": "FAIMI 2025 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2025-miccai-workshop/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2025-miccai-workshop/",
+          "section": "Accepted papers"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Benchmark",
+          "Bias mechanisms",
+          "Mitigation"
+        ],
+        "Stage": [
+          "Not verified"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Contrast-Induced Class Overlap as a Fairness Bottleneck in Dermatological AI: Evidence from HAM10000",
+      "year": "2026",
+      "venue": "FAIMI 2026 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2026-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2026-miccai/",
+          "section": "Tentative poster programme"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "When Fairness Transfer Backfires: Dark-Skin Inversion in Dermatology Foundation Models and a Minimal In-Distribution",
+      "year": "2026",
+      "venue": "FAIMI 2026 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2026-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2026-miccai/",
+          "section": "Tentative poster programme"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Subgroup performance analysis of adaptation strategies for chest X-ray foundation models",
+      "year": "2026",
+      "venue": "FAIMI 2026 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2026-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2026-miccai/",
+          "section": "Tentative poster programme"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Beyond Predictive Fairness: Quantifying Attribution Consistency Across Demographic Groups in Diabetic Retinopathy Screening",
+      "year": "2026",
+      "venue": "FAIMI 2026 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2026-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2026-miccai/",
+          "section": "Tentative poster programme"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Understanding Sources of Demographic Predictability in Brain MRI via Disentangling Anatomy and Contrast",
+      "year": "2026",
+      "venue": "FAIMI 2026 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2026-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2026-miccai/",
+          "section": "Tentative poster programme"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Bias mechanisms",
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "An Intersectional Fairness-Aware Framework for Alzheimer’s Disease Detection Using Multimodal Data",
+      "year": "2026",
+      "venue": "FAIMI 2026 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2026-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2026-miccai/",
+          "section": "Tentative poster programme"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Intersectional"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Intersectional Disentangling of Temporal and Acquisition Bias in Fetal Ultrasound",
+      "year": "2026",
+      "venue": "FAIMI 2026 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2026-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2026-miccai/",
+          "section": "Tentative poster programme"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Intersectional"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Investigating Sex and Ethnicity Bias in Deep Learning-based Echocardiography Image Segmentation",
+      "year": "2026",
+      "venue": "FAIMI 2026 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2026-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2026-miccai/",
+          "section": "Tentative poster programme"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Sex and gender",
+          "Race and ethnicity"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "When Oracle Conditioning Misleads Deployment: Conditioning-Availability Bias in Echocardiographic Segmentation",
+      "year": "2026",
+      "venue": "FAIMI 2026 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2026-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2026-miccai/",
+          "section": "Tentative poster programme"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Marginal Coverage Hides a Reduced-Ejection-Fraction Reliability Gap: Severity-Conditional Conformal Intervals on Public Echocardiography",
+      "year": "2026",
+      "venue": "FAIMI 2026 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2026-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2026-miccai/",
+          "section": "Tentative poster programme"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Loss-Conditioned Utility-Fairness Boundary Modeling for Medical Imaging",
+      "year": "2026",
+      "venue": "FAIMI 2026 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2026-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2026-miccai/",
+          "section": "Tentative poster programme"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Multiple Shortcut Pathways in Mammography-Based Breast Cancer Risk Prediction",
+      "year": "2026",
+      "venue": "FAIMI 2026 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2026-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2026-miccai/",
+          "section": "Tentative poster programme"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Bias mechanisms",
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Look What the Probes Dragged In! Real-World Chest X-ray Shortcuts in MedCLIP",
+      "year": "2026",
+      "venue": "FAIMI 2026 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2026-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2026-miccai/",
+          "section": "Tentative poster programme"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Bias mechanisms",
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Counterfactual Stress Testing for Image Classification Models",
+      "year": "2026",
+      "venue": "FAIMI 2026 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2026-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2026-miccai/",
+          "section": "Tentative poster programme"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Hallucinations and constraints: Regulating surgical workflow recognition beyond accuracy",
+      "year": "2026",
+      "venue": "FAIMI 2026 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2026-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2026-miccai/",
+          "section": "Tentative poster programme"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Foundational values for foundation models",
+      "year": "2026",
+      "venue": "FAIMI 2026 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2026-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2026-miccai/",
+          "section": "Tentative poster programme"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Gradient Erasure and Contributory Injustice in Federated Medical Imaging AI",
+      "year": "2026",
+      "venue": "FAIMI 2026 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2026-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2026-miccai/",
+          "section": "Tentative poster programme"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "In-processing"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "What is AI to Us: Exploring Patient Values in Integrating AI for Epilepsy Management",
+      "year": "2026",
+      "venue": "FAIMI 2026 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2026-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2026-miccai/",
+          "section": "Tentative poster programme"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Futures Before Failures: Design Fictions for Anticipatory Fairness in Surgical AI",
+      "year": "2026",
+      "venue": "FAIMI 2026 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2026-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2026-miccai/",
+          "section": "Tentative poster programme"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Rethinking Explainability for Clinical Trust: A Task-Specific Communicative Layer",
+      "year": "2026",
+      "venue": "FAIMI 2026 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2026-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2026-miccai/",
+          "section": "Tentative poster programme"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "On Evaluating Subgroup Discovery in Medical Image Classification",
+      "year": "2026",
+      "venue": "FAIMI 2026 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2026-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2026-miccai/",
+          "section": "Tentative poster programme"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "From Fairness Findings to Fairness Claims: An Evidence Classification Scheme for Clinical AI",
+      "year": "2026",
+      "venue": "FAIMI 2026 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2026-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2026-miccai/",
+          "section": "Tentative poster programme"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "Equal Accuracy, Unequal Agreement: Auditing Clinician–AI Agreement Fairness in Lung Nodule CT",
+      "year": "2026",
+      "venue": "FAIMI 2026 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2026-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2026-miccai/",
+          "section": "Tentative poster programme"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    },
+    {
+      "title": "False Confidence: Automated Labels Confound Fairness Audits in Cervical Spine Segmentation",
+      "year": "2026",
+      "venue": "FAIMI 2026 listing",
+      "links": {
+        "Paper": "https://faimi-workshop.github.io/2026-miccai/"
+      },
+      "sources": [
+        {
+          "url": "https://faimi-workshop.github.io/2026-miccai/",
+          "section": "Tentative poster programme"
+        }
+      ],
+      "metadata": {
+        "Domain": [
+          "Medical imaging"
+        ],
+        "Focus": [
+          "Evaluation"
+        ],
+        "Stage": [
+          "Evaluation"
+        ],
+        "Attributes": [
+          "Not specified"
+        ],
+        "Assets": [
+          "Paper only"
+        ],
+        "Evidence": [
+          "Reviewed source"
+        ]
+      },
+      "origin": "workshop",
+      "kind": "workshop"
+    }
+  ],
+  "counts": {
+    "legacy_rows": 35,
+    "review_table_rows": 69,
+    "faimi_rows": 74,
+    "unique_catalog_records": 106,
+    "primary_metadata_verified": 77
+  }
+}

@@ -1,0 +1,2 @@
+# Frozen original catalog: preserve its pre-existing line-ending whitespace.
+docs/legacy-catalog.md whitespace=-blank-at-eol

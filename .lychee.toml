@@ -1,0 +1,23 @@
+verbose = "info"
+no_progress = true
+
+max_retries = 3
+retry_wait_time = 2
+timeout = 30
+max_redirects = 10
+max_concurrency = 16
+host_concurrency = 2
+host_request_interval = "250ms"
+
+user_agent = "Mozilla/5.0 (compatible; Awesome-MedIA-Fairness link checker; +https://github.com/XuZikang/Awesome-MedIA-Fairness)"
+method = "get"
+accept = ["200..=299", "429"]
+scheme = ["https", "file"]
+require_https = true
+
+# The verbatim legacy snapshot is historical evidence, not the maintained link index.
+exclude_path = ['(^|/)docs/legacy-catalog\.md$']
+
+exclude_all_private = true
+include_mail = false
+include_verbatim = false

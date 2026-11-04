@@ -1,0 +1,172 @@
+name: Suggest a fairness paper
+description: Propose a paper, benchmark, dataset, or mitigation method for the fairness catalog.
+title: "[Paper]: "
+labels: []
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing. Use the primary paper or dataset source, search the catalog for duplicate titles and identifiers, and describe evidence rather than inferring fairness claims from the title alone.
+
+  - type: input
+    id: paper_title
+    attributes:
+      label: Paper or resource title
+      placeholder: Full title as published
+    validations:
+      required: true
+
+  - type: input
+    id: paper_url
+    attributes:
+      label: Primary paper URL
+      description: Use a publisher, arXiv, PubMed, OpenReview, or other canonical primary source.
+      placeholder: https://...
+    validations:
+      required: true
+
+  - type: input
+    id: venue_year
+    attributes:
+      label: Venue and year
+      placeholder: "Example: MICCAI 2024 or arXiv 2024"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: publication_status
+    attributes:
+      label: Publication status
+      options:
+        - Peer-reviewed and published
+        - Accepted or in press
+        - Public conference or workshop submission
+        - Preprint
+        - Dataset or software resource
+    validations:
+      required: true
+
+  - type: dropdown
+    id: domain
+    attributes:
+      label: Primary domain
+      options:
+        - Clinical NLP and foundation models
+        - EHR and clinical prediction
+        - Healthcare operations
+        - Medical imaging
+        - Other biomedical
+        - Physiological signals
+    validations:
+      required: true
+
+  - type: dropdown
+    id: focus
+    attributes:
+      label: Fairness focus
+      multiple: true
+      options:
+        - Bias mechanisms
+        - Benchmark
+        - Dataset
+        - Evaluation
+        - Mitigation
+        - Theory and measurement
+    validations:
+      required: true
+
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Intervention or evaluation stage
+      multiple: true
+      options:
+        - Evaluation
+        - In-processing
+        - Multi-stage
+        - Not applicable
+        - Not verified
+        - Post-processing
+        - Pre-processing
+    validations:
+      required: true
+
+  - type: dropdown
+    id: attributes
+    attributes:
+      label: Sensitive attributes
+      description: Select only attributes supported by the primary source; use Not specified when the source does not identify one.
+      multiple: true
+      options:
+        - Age
+        - Disability
+        - Intersectional
+        - Other
+        - Race and ethnicity
+        - Site and geography
+        - Sex and gender
+        - Skin tone
+        - Socioeconomic status
+        - Not specified
+    validations:
+      required: true
+
+  - type: dropdown
+    id: evidence
+    attributes:
+      label: Evidence level
+      options:
+        - Legacy unverified
+        - Primary abstract
+        - Primary full text
+        - Primary metadata
+        - Reviewed source
+    validations:
+      required: true
+
+  - type: textarea
+    id: qualification
+    attributes:
+      label: Why it qualifies
+      description: State the fairness question, population or attribute, task, and evidence supporting the classification.
+      placeholder: The paper evaluates ... using ... and reports ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: topics
+    attributes:
+      label: Applicable topic sections
+      multiple: true
+      options:
+        - Bias Mechanisms and Measurement
+        - Clinical NLP and Foundation Models
+        - EHR, Physiological Signals and Healthcare
+        - Fairness Evaluation and Benchmarking
+        - In-processing Mitigation
+        - Mitigation with Unverified Stage
+        - Post-processing Mitigation
+        - Pre-processing Mitigation
+    validations:
+      required: true
+
+  - type: textarea
+    id: resources
+    attributes:
+      label: Official code, weights, project, or data links
+      description: Provide author-published resources and identify each role. Leave blank when none are public.
+      placeholder: |
+        Code: https://...
+        Weights: https://...
+        Project: https://...
+        Data: https://...
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Submission confirmation
+      options:
+        - label: I searched for duplicate titles and identifiers, used canonical sources, and classified this record from evidence rather than its title alone.
+          required: true

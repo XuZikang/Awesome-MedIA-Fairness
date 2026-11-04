@@ -1,0 +1,20 @@
+{
+  "initial_days": 30,
+  "overlap_days": 7,
+  "max_records_per_query": 500,
+  "max_analyses_per_run": 100,
+  "sources": {
+    "arxiv": [
+      "(ti:fairness OR abs:fairness OR ti:\"algorithmic bias\" OR ti:\"demographic bias\") AND (ti:medical OR abs:medical OR ti:clinical OR abs:clinical OR ti:healthcare OR abs:healthcare OR ti:radiology OR ti:dermatology)",
+      "(ti:\"subgroup disparity\" OR ti:\"equalized odds\" OR ti:\"bias mitigation\" OR ti:\"skin tone\") AND (all:medical OR all:clinical OR all:imaging OR all:healthcare)"
+    ],
+    "europepmc": [
+      "(TITLE_ABS:fairness OR TITLE_ABS:\"algorithmic bias\" OR TITLE_ABS:\"demographic bias\") AND (TITLE_ABS:\"machine learning\" OR TITLE_ABS:\"deep learning\" OR TITLE_ABS:\"artificial intelligence\" OR TITLE_ABS:\"language model\")",
+      "(TITLE_ABS:\"subgroup disparity\" OR TITLE_ABS:\"skin tone bias\" OR TITLE_ABS:\"racial bias\") AND (TITLE_ABS:\"machine learning\" OR TITLE_ABS:\"artificial intelligence\" OR TITLE_ABS:\"deep learning\")"
+    ],
+    "pubmed": [
+      "(fairness[Title/Abstract] OR \"algorithmic bias\"[Title/Abstract] OR \"demographic bias\"[Title/Abstract]) AND (\"machine learning\"[Title/Abstract] OR \"deep learning\"[Title/Abstract] OR \"artificial intelligence\"[Title/Abstract] OR \"language model\"[Title/Abstract])",
+      "(\"racial bias\"[Title/Abstract] OR \"skin tone\"[Title/Abstract]) AND (\"machine learning\"[Title/Abstract] OR \"artificial intelligence\"[Title/Abstract] OR \"deep learning\"[Title/Abstract])"
+    ]
+  }
+}

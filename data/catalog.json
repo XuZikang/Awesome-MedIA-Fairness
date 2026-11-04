@@ -1,0 +1,4894 @@
+[
+  {
+    "title": "Fairness-related performance and explainability effects in deep learning models for brain image analysis",
+    "year": "2022",
+    "venue": "Journal of Medical Imaging",
+    "links": {
+      "Paper": "https://doi.org/10.1117/1.jmi.9.6.061102"
+    },
+    "sources": [
+      {
+        "url": "docs/legacy-catalog.md",
+        "section": "Unfairness Existence"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "FE-benchmarking",
+        "reference": "CR1"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Benchmark",
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Race and ethnicity"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "legacy",
+    "doi": "10.1117/1.jmi.9.6.061102",
+    "pmid": "36046104",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "How fair is your graph? exploring fairness concerns in neuroimaging studies",
+    "year": "2022",
+    "venue": "MLHC",
+    "links": {
+      "Paper": "https://proceedings.mlr.press/v182/ribeiro22a.html"
+    },
+    "sources": [
+      {
+        "url": "docs/legacy-catalog.md",
+        "section": "Unfairness Existence"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "FE-benchmarking",
+        "reference": "CR7"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Benchmark",
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Sex and gender"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "legacy",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "Underdiagnosis bias of artificial intelligence algorithms applied to chest radiographs in under-served patient populations",
+    "year": "2021",
+    "venue": "Nature Medicine",
+    "links": {
+      "Paper": "https://doi.org/10.1038/s41591-021-01595-0"
+    },
+    "sources": [
+      {
+        "url": "docs/legacy-catalog.md",
+        "section": "Unfairness Existence"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "FE-benchmarking",
+        "reference": "CR2"
+      },
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness for chest x-rays"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Benchmark",
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Age",
+        "Race and ethnicity",
+        "Sex and gender"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "legacy",
+    "doi": "10.1038/s41591-021-01595-0",
+    "pmid": "34893776",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "Fairness in Cardiac Magnetic Resonance Imaging: Assessing Sex and Racial Bias in Deep Learning-Based Segmentation",
+    "year": "2022",
+    "venue": "Frontiers in Cardiovascular Medicine",
+    "links": {
+      "Paper": "https://doi.org/10.3389/fcvm.2022.859310"
+    },
+    "sources": [
+      {
+        "url": "docs/legacy-catalog.md",
+        "section": "Unfairness Existence"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "FE-benchmarking",
+        "reference": "CR4"
+      },
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness for cardiac MRI:"
+      },
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness for medical image segmentation:"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Benchmark",
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Race and ethnicity",
+        "Sex and gender"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "legacy",
+    "doi": "10.3389/fcvm.2022.859310",
+    "pmid": "35463778",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "Gender imbalance in medical imaging datasets produces biased classifiers for computer-aided diagnosis",
+    "year": "2020",
+    "venue": "Proceedings of the National Academy of Sciences",
+    "links": {
+      "Paper": "https://doi.org/10.1073/pnas.1919012117"
+    },
+    "sources": [
+      {
+        "url": "docs/legacy-catalog.md",
+        "section": "Fairness & Data Distribution"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "FE-benchmarking",
+        "reference": "CR13"
+      },
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness for chest x-rays"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Benchmark",
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Sex and gender"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "legacy",
+    "doi": "10.1073/pnas.1919012117",
+    "pmid": "32457147",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "Algorithmic encoding of protected characteristics in image-based models for disease detection",
+    "year": "2021",
+    "venue": "ArXiv, 2021",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2110.14755"
+    },
+    "sources": [
+      {
+        "url": "docs/legacy-catalog.md",
+        "section": "Fairness & Data Distribution"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Bias mechanisms",
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "legacy",
+    "arxiv_id": "2110.14755",
+    "verified": true,
+    "kind": "main",
+    "topics": [
+      "Fairness Evaluation and Benchmarking",
+      "Bias Mechanisms and Measurement"
+    ]
+  },
+  {
+    "title": "Feature Robustness and Sex Differences in Medical Imaging: A Case Study in MRI-Based Alzheimer’s Disease Detection",
+    "year": "2022",
+    "venue": "Lecture Notes in Computer Science",
+    "links": {
+      "Paper": "https://doi.org/10.1007/978-3-031-16431-6_9"
+    },
+    "sources": [
+      {
+        "url": "docs/legacy-catalog.md",
+        "section": "Fairness & Data Distribution"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "FE-benchmarking",
+        "reference": "CR9"
+      },
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness for brain MRI:"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Benchmark",
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Sex and gender"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "legacy",
+    "arxiv_id": "2204.01737",
+    "kind": "main",
+    "doi": "10.1007/978-3-031-16431-6_9",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "Fairness of Classifiers Across Skin Tones in Dermatology",
+    "year": "2020",
+    "venue": "Lecture Notes in Computer Science",
+    "links": {
+      "Paper": "https://doi.org/10.1007/978-3-030-59725-2_31"
+    },
+    "sources": [
+      {
+        "url": "docs/legacy-catalog.md",
+        "section": "Fairness & Data Distribution"
+      },
+      {
+        "url": "docs/legacy-catalog.md",
+        "section": "Data Embellishment"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "FE-benchmarking",
+        "reference": "CR47"
+      },
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness for dermatology images"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Benchmark",
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation",
+        "Pre-processing"
+      ],
+      "Attributes": [
+        "Skin tone"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "legacy",
+    "kind": "main",
+    "doi": "10.1007/978-3-030-59725-2_31",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking",
+      "Pre-processing Mitigation"
+    ]
+  },
+  {
+    "title": "Improving the Fairness of Chest X-ray Classifiers",
+    "year": "2022",
+    "venue": "PCHIL, 2022",
+    "links": {
+      "Paper": "https://proceedings.mlr.press/v174/zhang22a/zhang22a.pdf"
+    },
+    "sources": [
+      {
+        "url": "docs/legacy-catalog.md",
+        "section": "Fairness Benchmarking"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "FE-benchmarking",
+        "reference": "CR54"
+      },
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "Bias mitigation"
+      },
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "Quantitative comparisons"
+      },
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness for chest x-rays"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Benchmark",
+        "Mitigation"
+      ],
+      "Stage": [
+        "Not verified"
+      ],
+      "Attributes": [
+        "Race and ethnicity",
+        "Sex and gender"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Reviewed source"
+      ]
+    },
+    "origin": "legacy",
+    "kind": "main",
+    "verified": false,
+    "topics": [
+      "Fairness Evaluation and Benchmarking",
+      "Mitigation with Unverified Stage"
+    ]
+  },
+  {
+    "title": "MEDFAIR: Benchmarking Fairness for Medical Imaging",
+    "year": "2023",
+    "venue": "ICLR, 2023",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2210.01725",
+      "Code": "https://github.com/ys-zong/MEDFAIR"
+    },
+    "sources": [
+      {
+        "url": "docs/legacy-catalog.md",
+        "section": "Fairness Benchmarking"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "FE-benchmarking",
+        "reference": "CR53"
+      },
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "Bias mitigation"
+      },
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "Quantitative comparisons"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Benchmark",
+        "Evaluation",
+        "Mitigation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Age",
+        "Race and ethnicity",
+        "Sex and gender",
+        "Skin tone"
+      ],
+      "Assets": [
+        "Code"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "legacy",
+    "arxiv_id": "2210.01725",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking",
+      "Mitigation with Unverified Stage"
+    ]
+  },
+  {
+    "title": "Detecting Melanoma Fairly: Skin Tone Detection and Debiasing for Skin Lesion Classification",
+    "year": "2021",
+    "venue": "MICCAI-DART, 2021",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2202.02832",
+      "Code": "https://github.com/pbevan1/Detecting-Melanoma-Fairly"
+    },
+    "sources": [
+      {
+        "url": "docs/legacy-catalog.md",
+        "section": "Fairness Benchmarking"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-in-adversarial",
+        "reference": "CR75"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Benchmark",
+        "Mitigation"
+      ],
+      "Stage": [
+        "In-processing"
+      ],
+      "Attributes": [
+        "Skin tone"
+      ],
+      "Assets": [
+        "Code"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "legacy",
+    "arxiv_id": "2202.02832",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking",
+      "In-processing Mitigation"
+    ]
+  },
+  {
+    "title": "Evaluating subgroup disparity using epistemic uncertainty in mammography",
+    "year": "2021",
+    "venue": "ArXiv, 2021",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2107.02716"
+    },
+    "sources": [
+      {
+        "url": "docs/legacy-catalog.md",
+        "section": "Fairness & Uncertainty"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "FE-discovery",
+        "reference": "CR60"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Race and ethnicity"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "legacy",
+    "arxiv_id": "2107.02716",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "Model Selection's Disparate Impact in Real-World Deep Learning Applications",
+    "year": "2021",
+    "venue": "ArXiv, 2021",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2104.00606"
+    },
+    "sources": [
+      {
+        "url": "docs/legacy-catalog.md",
+        "section": "Fairness & Model Selection"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "legacy",
+    "arxiv_id": "2104.00606",
+    "verified": true,
+    "kind": "main",
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "Harvard Glaucoma Fairness: A Retinal Nerve Disease Dataset for Fairness Learning and Fair Identity Normalization",
+    "year": "2023",
+    "venue": "ArXiv, 2023",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2306.09264",
+      "Code": "https://github.com/luoyan407/Harvard-GF",
+      "Data": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/A4XMO1"
+    },
+    "sources": [
+      {
+        "url": "docs/legacy-catalog.md",
+        "section": "Fairness Dataset"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Dataset",
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Code",
+        "Data"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "legacy",
+    "arxiv_id": "2306.09264",
+    "verified": true,
+    "kind": "main",
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "Fairness in Cardiac MR Image Analysis: An Investigation of Bias Due to Data Imbalance in Deep Learning Based Segmentation",
+    "year": "2021",
+    "venue": "Lecture Notes in Computer Science",
+    "links": {
+      "Paper": "https://doi.org/10.1007/978-3-030-87199-4_39"
+    },
+    "sources": [
+      {
+        "url": "docs/legacy-catalog.md",
+        "section": "Data Resampling"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-pre-re-distribution",
+        "reference": "CR3"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-in-adversarial",
+        "reference": "CR3"
+      },
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "Bias mitigation"
+      },
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness for cardiac MRI:"
+      },
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness for medical image segmentation:"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation",
+        "Mitigation"
+      ],
+      "Stage": [
+        "Evaluation",
+        "In-processing",
+        "Pre-processing"
+      ],
+      "Attributes": [
+        "Race and ethnicity",
+        "Sex and gender"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "legacy",
+    "doi": "10.1007/978-3-030-87199-4_39",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking",
+      "Pre-processing Mitigation",
+      "In-processing Mitigation"
+    ]
+  },
+  {
+    "title": "Detecting and preventing shortcut learning for fair medical ai using shortcut testing (short)",
+    "year": "2022",
+    "venue": "ArXiv, 2022",
+    "links": {
+      "Paper": "https://doi.org/10.1038/s41467-023-39902-7"
+    },
+    "sources": [
+      {
+        "url": "docs/legacy-catalog.md",
+        "section": "Data Resampling"
+      },
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "Shortcut learning, models recognizing sensitive patient attributes, and fairness in medical AI"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Bias mechanisms",
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation",
+        "Pre-processing"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "legacy",
+    "arxiv_id": "2207.10384",
+    "verified": true,
+    "doi": "10.1038/s41467-023-39902-7",
+    "kind": "main",
+    "topics": [
+      "Fairness Evaluation and Benchmarking",
+      "Bias Mechanisms and Measurement",
+      "Pre-processing Mitigation"
+    ]
+  },
+  {
+    "title": "AI Fairness via Domain Adaptation",
+    "year": "2021",
+    "venue": "ArXiv, 2021",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2104.01109"
+    },
+    "sources": [
+      {
+        "url": "docs/legacy-catalog.md",
+        "section": "Data Synthesis"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-pre-synthesis",
+        "reference": "CR70"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation",
+        "Mitigation"
+      ],
+      "Stage": [
+        "Pre-processing"
+      ],
+      "Attributes": [
+        "Race and ethnicity"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "legacy",
+    "arxiv_id": "2104.01109",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking",
+      "Pre-processing Mitigation"
+    ]
+  },
+  {
+    "title": "CIRCLe: Color Invariant Representation Learning for Unbiased Classification of Skin Lesions",
+    "year": "2023",
+    "venue": "Lecture Notes in Computer Science",
+    "links": {
+      "Paper": "https://doi.org/10.1007/978-3-031-25069-9_14",
+      "Code": "https://github.com/sfu-mial/CIRCLe"
+    },
+    "sources": [
+      {
+        "url": "docs/legacy-catalog.md",
+        "section": "Data Synthesis"
+      },
+      {
+        "url": "docs/legacy-catalog.md",
+        "section": "Disentanglement Learning"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-pre-synthesis",
+        "reference": "CR19"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-in-contrastive",
+        "reference": "CR19"
+      },
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness for dermatology images"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Mitigation"
+      ],
+      "Stage": [
+        "In-processing",
+        "Pre-processing"
+      ],
+      "Attributes": [
+        "Skin tone"
+      ],
+      "Assets": [
+        "Code"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "legacy",
+    "doi": "10.1007/978-3-031-25069-9_14",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Pre-processing Mitigation",
+      "In-processing Mitigation"
+    ]
+  },
+  {
+    "title": "CheXclusion: Fairness gaps in deep chest X-ray classifiers",
+    "year": "2021",
+    "venue": "Proceedings of the Pacific Symposium, 2021",
+    "links": {
+      "Paper": "https://pubmed.ncbi.nlm.nih.gov/33691020/"
+    },
+    "sources": [
+      {
+        "url": "docs/legacy-catalog.md",
+        "section": "Data Aggregation"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "FE-benchmarking",
+        "reference": "CR5"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-pre-aggregation",
+        "reference": "CR5"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Benchmark",
+        "Evaluation",
+        "Mitigation"
+      ],
+      "Stage": [
+        "Evaluation",
+        "Pre-processing"
+      ],
+      "Attributes": [
+        "Age",
+        "Race and ethnicity",
+        "Sex and gender"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Reviewed source"
+      ]
+    },
+    "origin": "legacy",
+    "pmid": "33691020",
+    "kind": "main",
+    "verified": false,
+    "topics": [
+      "Fairness Evaluation and Benchmarking",
+      "Pre-processing Mitigation"
+    ]
+  },
+  {
+    "title": "RadFusion: Benchmarking Performance and Fairness for Multimodal Pulmonary Embolism Detection from CT and EHR",
+    "year": "2021",
+    "venue": "ArXiv, 2021",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2111.11665"
+    },
+    "sources": [
+      {
+        "url": "docs/legacy-catalog.md",
+        "section": "Data Aggregation"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-pre-aggregation",
+        "reference": "CR69"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "EHR and clinical prediction"
+      ],
+      "Focus": [
+        "Benchmark",
+        "Evaluation",
+        "Mitigation"
+      ],
+      "Stage": [
+        "Pre-processing"
+      ],
+      "Attributes": [
+        "Age",
+        "Race and ethnicity",
+        "Sex and gender"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "legacy",
+    "arxiv_id": "2111.11665",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking",
+      "Pre-processing Mitigation",
+      "EHR, Physiological Signals and Healthcare"
+    ]
+  },
+  {
+    "title": "Improving fairness in image classification via sketching",
+    "year": "2022",
+    "venue": "NeurIPS Workshop, 2022",
+    "links": {
+      "Paper": "https://openreview.net/forum?id=Rq2vt3tnAK9",
+      "Code": "https://github.com/ubc-tea/Improving-Fairness-in-Image-Classification-via-Sketching"
+    },
+    "sources": [
+      {
+        "url": "docs/legacy-catalog.md",
+        "section": "Data Embellishment"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-pre-harmonization",
+        "reference": "CR67"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Mitigation"
+      ],
+      "Stage": [
+        "Pre-processing"
+      ],
+      "Attributes": [
+        "Age",
+        "Sex and gender"
+      ],
+      "Assets": [
+        "Code"
+      ],
+      "Evidence": [
+        "Reviewed source"
+      ]
+    },
+    "origin": "legacy",
+    "kind": "main",
+    "verified": false,
+    "topics": [
+      "Pre-processing Mitigation"
+    ]
+  },
+  {
+    "title": "Training confounder-free deep learning models for medical applications",
+    "year": "2020",
+    "venue": "Nature Communications",
+    "links": {
+      "Paper": "https://doi.org/10.1038/s41467-020-19784-9"
+    },
+    "sources": [
+      {
+        "url": "docs/legacy-catalog.md",
+        "section": "Adversarial Learning"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-in-adversarial",
+        "reference": "CR73"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation",
+        "Mitigation"
+      ],
+      "Stage": [
+        "In-processing"
+      ],
+      "Attributes": [
+        "Age",
+        "Sex and gender"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "legacy",
+    "pmid": "33243992",
+    "doi": "10.1038/s41467-020-19784-9",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking",
+      "In-processing Mitigation"
+    ]
+  },
+  {
+    "title": "Representation Learning with Statistical Independence to Mitigate Bias",
+    "year": "2021",
+    "venue": "2021 IEEE Winter Conference on Applications of Computer Vision (WACV)",
+    "links": {
+      "Paper": "https://doi.org/10.1109/wacv48630.2021.00256"
+    },
+    "sources": [
+      {
+        "url": "docs/legacy-catalog.md",
+        "section": "Adversarial Learning"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-in-adversarial",
+        "reference": "CR15"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Mitigation"
+      ],
+      "Stage": [
+        "In-processing"
+      ],
+      "Attributes": [
+        "Age",
+        "Sex and gender"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "legacy",
+    "doi": "10.1109/wacv48630.2021.00256",
+    "pmid": "34522832",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "In-processing Mitigation"
+    ]
+  },
+  {
+    "title": "Risk of Training Diagnostic Algorithms on Data with Demographic Bias",
+    "year": "2020",
+    "venue": "Lecture Notes in Computer Science",
+    "links": {
+      "Paper": "https://doi.org/10.1007/978-3-030-61166-8_20"
+    },
+    "sources": [
+      {
+        "url": "docs/legacy-catalog.md",
+        "section": "Adversarial Learning"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-in-adversarial",
+        "reference": "CR74"
+      },
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness for dermatology images"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation",
+        "Mitigation"
+      ],
+      "Stage": [
+        "Evaluation",
+        "In-processing"
+      ],
+      "Attributes": [
+        "Age",
+        "Sex and gender"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "legacy",
+    "doi": "10.1007/978-3-030-61166-8_20",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking",
+      "In-processing Mitigation"
+    ]
+  },
+  {
+    "title": "Estimating and improving fairness with adversarial learning",
+    "year": "2021",
+    "venue": "ArXiv, 2021",
+    "links": {
+      "Paper": "https://oecd.ai/fr/catalogue/metric-use-cases/estimating-and-improving-fairness-with-adversarial-learning"
+    },
+    "sources": [
+      {
+        "url": "docs/legacy-catalog.md",
+        "section": "Adversarial Learning"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-in-adversarial",
+        "reference": "CR18"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Mitigation"
+      ],
+      "Stage": [
+        "In-processing"
+      ],
+      "Attributes": [
+        "Age",
+        "Sex and gender",
+        "Skin tone"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Reviewed source"
+      ]
+    },
+    "origin": "legacy",
+    "kind": "main",
+    "verified": false,
+    "topics": [
+      "In-processing Mitigation"
+    ]
+  },
+  {
+    "title": "Technical Challenges for Training Fair Neural Networks",
+    "year": "2021",
+    "venue": "ArXiv, 2021",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2102.06764"
+    },
+    "sources": [
+      {
+        "url": "docs/legacy-catalog.md",
+        "section": "Adversarial Learning"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-in-constraints",
+        "reference": "CR10"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation",
+        "Mitigation"
+      ],
+      "Stage": [
+        "In-processing"
+      ],
+      "Attributes": [
+        "Age",
+        "Sex and gender"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "legacy",
+    "arxiv_id": "2102.06764",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking",
+      "In-processing Mitigation"
+    ]
+  },
+  {
+    "title": "On the fairness of privacy-preserving representations in medical applications",
+    "year": "2020",
+    "venue": "MICCAI-DART, 2020",
+    "links": {
+      "Paper": "https://www.springerprofessional.de/on-the-fairness-of-privacy-preserving-representations-in-medical/18418170"
+    },
+    "sources": [
+      {
+        "url": "docs/legacy-catalog.md",
+        "section": "Disentanglement Learning"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "In-processing"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Legacy unverified"
+      ]
+    },
+    "origin": "legacy",
+    "verified": false,
+    "kind": "main",
+    "topics": [
+      "Fairness Evaluation and Benchmarking",
+      "In-processing Mitigation"
+    ]
+  },
+  {
+    "title": "On Fairness of Medical Image Classification with Multiple Sensitive Attributes via Learning Orthogonal Representations",
+    "year": "2023",
+    "venue": "IPMI, 2023",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2301.01481"
+    },
+    "sources": [
+      {
+        "url": "docs/legacy-catalog.md",
+        "section": "Disentanglement Learning"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-in-disentanglement",
+        "reference": "CR17"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation",
+        "Mitigation"
+      ],
+      "Stage": [
+        "In-processing"
+      ],
+      "Attributes": [
+        "Age",
+        "Race and ethnicity",
+        "Sex and gender"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "legacy",
+    "arxiv_id": "2301.01481",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking",
+      "In-processing Mitigation"
+    ]
+  },
+  {
+    "title": "FairDisCo: Fairer AI in Dermatology via Disentanglement Contrastive Learning",
+    "year": "2022",
+    "venue": "ECCVW, 2022",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2208.10013",
+      "Code": "https://github.com/siyi-wind/FairDisCo"
+    },
+    "sources": [
+      {
+        "url": "docs/legacy-catalog.md",
+        "section": "Contrastive Learning"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-in-contrastive",
+        "reference": "CR87"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Mitigation"
+      ],
+      "Stage": [
+        "In-processing"
+      ],
+      "Attributes": [
+        "Skin tone"
+      ],
+      "Assets": [
+        "Code"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "legacy",
+    "arxiv_id": "2208.10013",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "In-processing Mitigation"
+    ]
+  },
+  {
+    "title": "FairAdaBN: Mitigating unfairness with adaptive batch normalization and its application to dermatological disease classification",
+    "year": "2023",
+    "venue": "ArXiv, 2023",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2303.08325"
+    },
+    "sources": [
+      {
+        "url": "docs/legacy-catalog.md",
+        "section": "Universal Learning"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-In-MISC",
+        "reference": "CR11"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Mitigation"
+      ],
+      "Stage": [
+        "In-processing"
+      ],
+      "Attributes": [
+        "Sex and gender",
+        "Skin tone"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "legacy",
+    "arxiv_id": "2303.08325",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "In-processing Mitigation"
+    ]
+  },
+  {
+    "title": "On the Fairness of Swarm Learning in Skin Lesion Classification",
+    "year": "2021",
+    "venue": "Lecture Notes in Computer Science",
+    "links": {
+      "Paper": "https://doi.org/10.1007/978-3-030-90874-4_12"
+    },
+    "sources": [
+      {
+        "url": "docs/legacy-catalog.md",
+        "section": "Federated Learning"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-In-MISC",
+        "reference": "CR88"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation",
+        "Mitigation"
+      ],
+      "Stage": [
+        "In-processing"
+      ],
+      "Attributes": [
+        "Age",
+        "Sex and gender"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "legacy",
+    "doi": "10.1007/978-3-030-90874-4_12",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking",
+      "In-processing Mitigation"
+    ]
+  },
+  {
+    "title": "FairPrune: Achieving Fairness Through Pruning for Dermatological Disease Diagnosis",
+    "year": "2022",
+    "venue": "Lecture Notes in Computer Science",
+    "links": {
+      "Paper": "https://doi.org/10.1007/978-3-031-16431-6_70"
+    },
+    "sources": [
+      {
+        "url": "docs/legacy-catalog.md",
+        "section": "Network Pruning"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-post-pruning",
+        "reference": "CR90"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Mitigation"
+      ],
+      "Stage": [
+        "Post-processing"
+      ],
+      "Attributes": [
+        "Sex and gender",
+        "Skin tone"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "legacy",
+    "doi": "10.1007/978-3-031-16431-6_70",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Post-processing Mitigation"
+    ]
+  },
+  {
+    "title": "Debiasing Deep Chest X-Ray Classifiers using Intra- and Post-processing Methods",
+    "year": "2022",
+    "venue": "ML4HC, 2022",
+    "links": {
+      "Paper": "https://proceedings.mlr.press/v182/marcinkevics22a.html",
+      "Code": "https://github.com/i6092467/diff-bias-proxies"
+    },
+    "sources": [
+      {
+        "url": "docs/legacy-catalog.md",
+        "section": "Network Pruning"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-in-constraints",
+        "reference": "CR79"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-post-pruning",
+        "reference": "CR79"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Mitigation"
+      ],
+      "Stage": [
+        "Post-processing"
+      ],
+      "Attributes": [
+        "Race and ethnicity",
+        "Sex and gender"
+      ],
+      "Assets": [
+        "Code"
+      ],
+      "Evidence": [
+        "Reviewed source"
+      ]
+    },
+    "origin": "legacy",
+    "kind": "main",
+    "verified": false,
+    "topics": [
+      "Post-processing Mitigation"
+    ]
+  },
+  {
+    "title": "A Study of Demographic Bias in CNN-Based Brain MR Segmentation",
+    "year": "2022",
+    "venue": "Lecture Notes in Computer Science",
+    "doi": "10.1007/978-3-031-17899-3_2",
+    "pmid": "",
+    "links": {
+      "Paper": "https://doi.org/10.1007/978-3-031-17899-3_2"
+    },
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "FE-benchmarking",
+        "reference": "CR8"
+      },
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness for brain MRI:"
+      },
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness for medical image segmentation:"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Benchmark",
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Race and ethnicity",
+        "Sex and gender"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "review",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "An Investigation into the Impact of Deep Learning Model Choice on Sex and Race Bias in Cardiac MR Segmentation",
+    "year": "2023",
+    "venue": "Lecture Notes in Computer Science",
+    "doi": "10.1007/978-3-031-45249-9_21",
+    "pmid": "",
+    "links": {
+      "Paper": "https://doi.org/10.1007/978-3-031-45249-9_21"
+    },
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "FE-benchmarking",
+        "reference": "CR52"
+      },
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "Quantitative comparisons"
+      },
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness for cardiac MRI:"
+      },
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness for medical image segmentation:"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Benchmark",
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Race and ethnicity",
+        "Sex and gender"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "review",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "Revisiting skin tone fairness in dermatological lesion classification",
+    "year": "2023",
+    "venue": "Referenced study",
+    "doi": "",
+    "pmid": "",
+    "links": {
+      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR48"
+    },
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "FE-benchmarking",
+        "reference": "CR48"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Benchmark",
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Skin tone"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Reviewed source"
+      ]
+    },
+    "origin": "review",
+    "verified": false,
+    "kind": "main",
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "Algorithmic encoding of protected characteristics in chest X-ray disease detection models",
+    "year": "2023",
+    "venue": "eBioMedicine",
+    "doi": "10.1016/j.ebiom.2023.104467",
+    "pmid": "36791660",
+    "links": {
+      "Paper": "https://doi.org/10.1016/j.ebiom.2023.104467"
+    },
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "FE-benchmarking",
+        "reference": "CR6"
+      },
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "Investigations into the causes of bias"
+      },
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "Shortcut learning, models recognizing sensitive patient attributes, and fairness in medical AI"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Benchmark",
+        "Bias mechanisms",
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Race and ethnicity",
+        "Sex and gender"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "review",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking",
+      "Bias Mechanisms and Measurement"
+    ]
+  },
+  {
+    "title": "Algorithmic Fairness of Machine Learning Models for Alzheimer Disease Progression",
+    "year": "2023",
+    "venue": "JAMA Network Open",
+    "doi": "10.1001/jamanetworkopen.2023.42203",
+    "pmid": "37934495",
+    "links": {
+      "Paper": "https://doi.org/10.1001/jamanetworkopen.2023.42203"
+    },
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "FE-benchmarking",
+        "reference": "CR41"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Benchmark",
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Sex and gender",
+        "Race and ethnicity"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "review",
+    "verified": true,
+    "kind": "main",
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "An Investigation into Race Bias in Random Forest Models Based on Breast DCE-MRI Derived Radiomics Features",
+    "year": "2023",
+    "venue": "Lecture Notes in Computer Science",
+    "doi": "10.1007/978-3-031-45249-9_22",
+    "pmid": "39404661",
+    "links": {
+      "Paper": "https://doi.org/10.1007/978-3-031-45249-9_22"
+    },
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "FE-benchmarking",
+        "reference": "CR44"
+      },
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness for breast DCE-MRI:"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Benchmark",
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Race and ethnicity"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "review",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "Auditing unfair biases in CNN-based diagnosis of Alzheimer’s disease",
+    "year": "2023",
+    "venue": "Referenced study",
+    "doi": "",
+    "pmid": "",
+    "links": {
+      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR42"
+    },
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "FE-benchmarking",
+        "reference": "CR42"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Benchmark",
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Sex and gender",
+        "Age",
+        "Race and ethnicity"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Reviewed source"
+      ]
+    },
+    "origin": "review",
+    "verified": false,
+    "kind": "main",
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "From Head and Neck Tumour and Lymph Node Segmentation to Survival Prediction on PET/CT: An End-to-End Framework Featuring Uncertainty, Fairness, and Multi-Region Multi-Modal Radiomics",
+    "year": "2023",
+    "venue": "Cancers",
+    "doi": "10.3390/cancers15071932",
+    "pmid": "37046593",
+    "links": {
+      "Paper": "https://doi.org/10.3390/cancers15071932"
+    },
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "FE-benchmarking",
+        "reference": "CR46"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Benchmark",
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Sex and gender",
+        "Age"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "review",
+    "verified": true,
+    "kind": "main",
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "Higher performance for women than men in MRI-based Alzheimer’s disease detection",
+    "year": "2023",
+    "venue": "Alzheimer's Research &amp; Therapy",
+    "doi": "10.1186/s13195-023-01225-6",
+    "pmid": "37081528",
+    "links": {
+      "Paper": "https://doi.org/10.1186/s13195-023-01225-6"
+    },
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "FE-benchmarking",
+        "reference": "CR43"
+      },
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness for brain MRI:"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Benchmark",
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Sex and gender"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "review",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "Visualizing chest X-ray dataset biases using GANs",
+    "year": "2023",
+    "venue": "Referenced study",
+    "doi": "",
+    "pmid": "",
+    "links": {
+      "Paper": "https://openreview.net/forum?id=bFb3V8ALx4W"
+    },
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "FE-discovery",
+        "reference": "CR120"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Race and ethnicity"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Reviewed source"
+      ]
+    },
+    "origin": "review",
+    "verified": false,
+    "kind": "main",
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "The role of subgroup separability in group-fair medical image classification",
+    "year": "2023",
+    "venue": "Referenced study",
+    "doi": "",
+    "pmid": "",
+    "links": {
+      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR58"
+    },
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "FE-discovery",
+        "reference": "CR58"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Sex and gender",
+        "Age",
+        "Race and ethnicity",
+        "Skin tone"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Reviewed source"
+      ]
+    },
+    "origin": "review",
+    "verified": false,
+    "kind": "main",
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "Are sex-based physiological differences the cause of gender bias for chest X-ray diagnosis?",
+    "year": "2023",
+    "venue": "Referenced study",
+    "doi": "",
+    "pmid": "",
+    "links": {
+      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR59"
+    },
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "FE-discovery",
+        "reference": "CR59"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Sex and gender"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Reviewed source"
+      ]
+    },
+    "origin": "review",
+    "verified": false,
+    "kind": "main",
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "Bias in unsupervised anomaly detection in brain MRI",
+    "year": "2023",
+    "venue": "Referenced study",
+    "doi": "",
+    "pmid": "",
+    "links": {
+      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR40"
+    },
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "FE-discovery",
+        "reference": "CR40"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Sex and gender",
+        "Race and ethnicity"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Reviewed source"
+      ]
+    },
+    "origin": "review",
+    "verified": false,
+    "kind": "main",
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "Detecting shortcuts in medical images-a case study in chest x-rays",
+    "year": "2023",
+    "venue": "Referenced study",
+    "doi": "",
+    "pmid": "",
+    "links": {
+      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR57"
+    },
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "FE-discovery",
+        "reference": "CR57"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Bias mechanisms",
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Sex and gender"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Reviewed source"
+      ]
+    },
+    "origin": "review",
+    "verified": false,
+    "kind": "main",
+    "topics": [
+      "Fairness Evaluation and Benchmarking",
+      "Bias Mechanisms and Measurement"
+    ]
+  },
+  {
+    "title": "Evaluating the fairness of deep learning uncertainty estimates in medical image analysis",
+    "year": "2023",
+    "venue": "Referenced study",
+    "doi": "",
+    "pmid": "",
+    "links": {
+      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR12"
+    },
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "FE-discovery",
+        "reference": "CR12"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Sex and gender",
+        "Age"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Reviewed source"
+      ]
+    },
+    "origin": "review",
+    "verified": false,
+    "kind": "main",
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "A comparative study of fairness in medical machine learning",
+    "year": "2023",
+    "venue": "Referenced study",
+    "doi": "",
+    "pmid": "",
+    "links": {
+      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR61"
+    },
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-pre-re-distribution",
+        "reference": "CR61"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-in-constraints",
+        "reference": "CR61"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-post-calibration",
+        "reference": "CR61"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Mitigation"
+      ],
+      "Stage": [
+        "In-processing",
+        "Post-processing",
+        "Pre-processing"
+      ],
+      "Attributes": [
+        "Age",
+        "Skin tone"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Reviewed source"
+      ]
+    },
+    "origin": "review",
+    "kind": "main",
+    "verified": false,
+    "topics": [
+      "Pre-processing Mitigation",
+      "In-processing Mitigation",
+      "Post-processing Mitigation"
+    ]
+  },
+  {
+    "title": "(De) Constructing bias on skin lesion datasets",
+    "year": "2019",
+    "venue": "Referenced study",
+    "doi": "",
+    "pmid": "",
+    "links": {
+      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR62"
+    },
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-pre-harmonization",
+        "reference": "CR62"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Mitigation"
+      ],
+      "Stage": [
+        "Pre-processing"
+      ],
+      "Attributes": [
+        "Skin tone"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Reviewed source"
+      ]
+    },
+    "origin": "review",
+    "verified": false,
+    "kind": "main",
+    "topics": [
+      "Pre-processing Mitigation"
+    ]
+  },
+  {
+    "title": "Debiasing skin lesion datasets and models? Not so fast",
+    "year": "2020",
+    "venue": "Referenced study",
+    "doi": "",
+    "pmid": "",
+    "links": {
+      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR63"
+    },
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-pre-harmonization",
+        "reference": "CR63"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Mitigation"
+      ],
+      "Stage": [
+        "Pre-processing"
+      ],
+      "Attributes": [
+        "Skin tone"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Reviewed source"
+      ]
+    },
+    "origin": "review",
+    "verified": false,
+    "kind": "main",
+    "topics": [
+      "Pre-processing Mitigation"
+    ]
+  },
+  {
+    "title": "Detect and correct bias in multi-site neuroimaging datasets",
+    "year": "2021",
+    "venue": "Medical Image Analysis",
+    "doi": "10.1016/j.media.2020.101879",
+    "pmid": "33152602",
+    "links": {
+      "Paper": "https://doi.org/10.1016/j.media.2020.101879"
+    },
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-pre-harmonization",
+        "reference": "CR65"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Mitigation"
+      ],
+      "Stage": [
+        "Pre-processing"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "review",
+    "verified": true,
+    "kind": "main",
+    "topics": [
+      "Pre-processing Mitigation"
+    ]
+  },
+  {
+    "title": "De-identification and obfuscation of gender attributes from retinal scans",
+    "year": "2023",
+    "venue": "Referenced study",
+    "doi": "",
+    "pmid": "",
+    "links": {
+      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR66"
+    },
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-pre-harmonization",
+        "reference": "CR66"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Mitigation"
+      ],
+      "Stage": [
+        "Pre-processing"
+      ],
+      "Attributes": [
+        "Sex and gender"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Reviewed source"
+      ]
+    },
+    "origin": "review",
+    "verified": false,
+    "kind": "main",
+    "topics": [
+      "Pre-processing Mitigation"
+    ]
+  },
+  {
+    "title": "EdgeMixup: embarrassingly simple data alteration to improve Lyme disease lesion segmentation and diagnosis fairness",
+    "year": "2023",
+    "venue": "Referenced study",
+    "doi": "",
+    "pmid": "",
+    "links": {
+      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR64"
+    },
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-pre-harmonization",
+        "reference": "CR64"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Mitigation"
+      ],
+      "Stage": [
+        "Pre-processing"
+      ],
+      "Attributes": [
+        "Skin tone"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Reviewed source"
+      ]
+    },
+    "origin": "review",
+    "verified": false,
+    "kind": "main",
+    "topics": [
+      "Pre-processing Mitigation"
+    ]
+  },
+  {
+    "title": "Bias in machine learning models can be significantly mitigated by careful training: Evidence from neuroimaging studies",
+    "year": "2023",
+    "venue": "Proceedings of the National Academy of Sciences",
+    "doi": "10.1073/pnas.2211613120",
+    "pmid": "36716365",
+    "links": {
+      "Paper": "https://doi.org/10.1073/pnas.2211613120"
+    },
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-pre-aggregation",
+        "reference": "CR68"
+      },
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness for brain MRI:"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Mitigation"
+      ],
+      "Stage": [
+        "Pre-processing"
+      ],
+      "Attributes": [
+        "Age",
+        "Race and ethnicity",
+        "Sex and gender"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "review",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Pre-processing Mitigation"
+    ]
+  },
+  {
+    "title": "Addressing Artificial Intelligence Bias in Retinal Diagnostics",
+    "year": "2021",
+    "venue": "Translational Vision Science &amp; Technology",
+    "doi": "10.1167/tvst.10.2.13",
+    "pmid": "34003898",
+    "links": {
+      "Paper": "https://doi.org/10.1167/tvst.10.2.13"
+    },
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-pre-synthesis",
+        "reference": "CR71"
+      },
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness for ophthalmology:"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation",
+        "Mitigation"
+      ],
+      "Stage": [
+        "Evaluation",
+        "Pre-processing"
+      ],
+      "Attributes": [
+        "Skin tone"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "review",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking",
+      "Pre-processing Mitigation"
+    ]
+  },
+  {
+    "title": "Equitable modelling of brain imaging by counterfactual augmentation with morphologically constrained 3D deep generative models",
+    "year": "2023",
+    "venue": "Medical Image Analysis",
+    "doi": "10.1016/j.media.2022.102723",
+    "pmid": "36542907",
+    "links": {
+      "Paper": "https://doi.org/10.1016/j.media.2022.102723"
+    },
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-pre-synthesis",
+        "reference": "CR72"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Mitigation"
+      ],
+      "Stage": [
+        "Pre-processing"
+      ],
+      "Attributes": [
+        "Sex and gender",
+        "Age"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "review",
+    "verified": true,
+    "kind": "main",
+    "topics": [
+      "Pre-processing Mitigation"
+    ]
+  },
+  {
+    "title": "Disproportionate subgroup impacts and other challenges of fairness in artificial intelligence for medical image analysis",
+    "year": "2022",
+    "venue": "Referenced study",
+    "doi": "",
+    "pmid": "",
+    "links": {
+      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR78"
+    },
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-in-adversarial",
+        "reference": "CR78"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Mitigation"
+      ],
+      "Stage": [
+        "In-processing"
+      ],
+      "Attributes": [
+        "Race and ethnicity"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Reviewed source"
+      ]
+    },
+    "origin": "review",
+    "verified": false,
+    "kind": "main",
+    "topics": [
+      "In-processing Mitigation"
+    ]
+  },
+  {
+    "title": "A Systematic Review of ‘Fair’ AI Model Development for Image Classification and Prediction",
+    "year": "2022",
+    "venue": "Journal of Medical and Biological Engineering",
+    "doi": "10.1007/s40846-022-00754-z",
+    "pmid": "",
+    "links": {
+      "Paper": "https://doi.org/10.1007/s40846-022-00754-z"
+    },
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-in-adversarial",
+        "reference": "CR77"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Mitigation"
+      ],
+      "Stage": [
+        "In-processing"
+      ],
+      "Attributes": [
+        "Race and ethnicity"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "review",
+    "verified": true,
+    "kind": "survey",
+    "topics": [
+      "In-processing Mitigation"
+    ]
+  },
+  {
+    "title": "Pseudo bias-balanced learning for debiased chest x-ray classification",
+    "year": "2022",
+    "venue": "Referenced study",
+    "doi": "",
+    "pmid": "",
+    "links": {
+      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR80"
+    },
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-in-constraints",
+        "reference": "CR80"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Mitigation"
+      ],
+      "Stage": [
+        "In-processing"
+      ],
+      "Attributes": [
+        "Sex and gender"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Reviewed source"
+      ]
+    },
+    "origin": "review",
+    "verified": false,
+    "kind": "main",
+    "topics": [
+      "In-processing Mitigation"
+    ]
+  },
+  {
+    "title": "Rényi fair information bottleneck for image classification",
+    "year": "2022",
+    "venue": "Referenced study",
+    "doi": "",
+    "pmid": "",
+    "links": {
+      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR121"
+    },
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-in-constraints",
+        "reference": "CR121"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Mitigation"
+      ],
+      "Stage": [
+        "In-processing"
+      ],
+      "Attributes": [
+        "Skin tone"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Reviewed source"
+      ]
+    },
+    "origin": "review",
+    "verified": false,
+    "kind": "main",
+    "topics": [
+      "In-processing Mitigation"
+    ]
+  },
+  {
+    "title": "Improving model fairness in image-based computer-aided diagnosis",
+    "year": "2023",
+    "venue": "Nature Communications",
+    "doi": "10.1038/s41467-023-41974-4",
+    "pmid": "37803009",
+    "links": {
+      "Paper": "https://doi.org/10.1038/s41467-023-41974-4"
+    },
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-in-constraints",
+        "reference": "CR81"
+      },
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness for chest x-rays"
+      },
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness for ophthalmology:"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Mitigation"
+      ],
+      "Stage": [
+        "In-processing"
+      ],
+      "Attributes": [
+        "Age",
+        "Race and ethnicity",
+        "Sex and gender"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "review",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "In-processing Mitigation"
+    ]
+  },
+  {
+    "title": "Confound removal and normalization in practice: a neuroimaging based sex prediction case study",
+    "year": "2021",
+    "venue": "Referenced study",
+    "doi": "",
+    "pmid": "",
+    "links": {
+      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR85"
+    },
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-in-disentanglement",
+        "reference": "CR85"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Mitigation"
+      ],
+      "Stage": [
+        "In-processing"
+      ],
+      "Attributes": [
+        "Age"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Reviewed source"
+      ]
+    },
+    "origin": "review",
+    "verified": false,
+    "kind": "main",
+    "topics": [
+      "In-processing Mitigation"
+    ]
+  },
+  {
+    "title": "A Penalty Approach for Normalizing Feature Distributions to Build Confounder-Free Models",
+    "year": "2022",
+    "venue": "Lecture Notes in Computer Science",
+    "doi": "10.1007/978-3-031-16437-8_37",
+    "pmid": "36331278",
+    "links": {
+      "Paper": "https://doi.org/10.1007/978-3-031-16437-8_37"
+    },
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-in-disentanglement",
+        "reference": "CR84"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Mitigation"
+      ],
+      "Stage": [
+        "In-processing"
+      ],
+      "Attributes": [
+        "Sex and gender",
+        "Age"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "review",
+    "verified": true,
+    "kind": "main",
+    "topics": [
+      "In-processing Mitigation"
+    ]
+  },
+  {
+    "title": "Conditional VAEs for confound removal and normative modelling of neurodegenerative diseases",
+    "year": "2022",
+    "venue": "Referenced study",
+    "doi": "",
+    "pmid": "",
+    "links": {
+      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR86"
+    },
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-in-disentanglement",
+        "reference": "CR86"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Mitigation"
+      ],
+      "Stage": [
+        "In-processing"
+      ],
+      "Attributes": [
+        "Age"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Reviewed source"
+      ]
+    },
+    "origin": "review",
+    "verified": false,
+    "kind": "main",
+    "topics": [
+      "In-processing Mitigation"
+    ]
+  },
+  {
+    "title": "Fairness by learning orthogonal disentangled representations",
+    "year": "2022",
+    "venue": "Referenced study",
+    "doi": "",
+    "pmid": "",
+    "links": {
+      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR83"
+    },
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-in-disentanglement",
+        "reference": "CR83"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Mitigation"
+      ],
+      "Stage": [
+        "In-processing"
+      ],
+      "Attributes": [
+        "Sex and gender",
+        "Age"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Reviewed source"
+      ]
+    },
+    "origin": "review",
+    "verified": false,
+    "kind": "main",
+    "topics": [
+      "In-processing Mitigation"
+    ]
+  },
+  {
+    "title": "Fairtune: Optimizing parameter efficient fine tuning for fairness in medical image analysis",
+    "year": "2024",
+    "venue": "Referenced study",
+    "doi": "",
+    "pmid": "",
+    "links": {
+      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR89"
+    },
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-In-MISC",
+        "reference": "CR89"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Mitigation"
+      ],
+      "Stage": [
+        "In-processing"
+      ],
+      "Attributes": [
+        "Sex and gender",
+        "Age",
+        "Skin tone"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Reviewed source"
+      ]
+    },
+    "origin": "review",
+    "verified": false,
+    "kind": "main",
+    "topics": [
+      "In-processing Mitigation"
+    ]
+  },
+  {
+    "title": "Mitigating bias in MRI-based Alzheimer’s disease classifiers through pruning of deep neural networks",
+    "year": "2023",
+    "venue": "Referenced study",
+    "doi": "",
+    "pmid": "",
+    "links": {
+      "Paper": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR91"
+    },
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/s41746-024-01276-5/tables/2",
+        "section": "UM-post-pruning",
+        "reference": "CR91"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Mitigation"
+      ],
+      "Stage": [
+        "Post-processing"
+      ],
+      "Attributes": [
+        "Sex and gender",
+        "Age"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Reviewed source"
+      ]
+    },
+    "origin": "review",
+    "verified": false,
+    "kind": "main",
+    "topics": [
+      "Post-processing Mitigation"
+    ]
+  },
+  {
+    "title": "Fairness in Deep Learning: A Computational Perspective",
+    "year": "2020",
+    "venue": "FAIMI resource",
+    "links": {
+      "Paper": "https://ieeexplore.ieee.org/document/9113719"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "Review papers on AI fairness"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Reviewed source"
+      ]
+    },
+    "origin": "faimi",
+    "kind": "survey",
+    "verified": false,
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "A Survey on Bias and Fairness in Machine Learning",
+    "year": "2021",
+    "venue": "ACM Computing Surveys",
+    "links": {
+      "Paper": "https://doi.org/10.1145/3457607"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "Review papers on AI fairness"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "faimi",
+    "doi": "10.1145/3457607",
+    "kind": "survey",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "Algorithmic fairness in artificial intelligence for medicine and healthcare",
+    "year": "2023",
+    "venue": "Nature Biomedical Engineering",
+    "links": {
+      "Paper": "https://doi.org/10.1038/s41551-023-01056-8"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "Review papers on AI fairness"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "faimi",
+    "doi": "10.1038/s41551-023-01056-8",
+    "kind": "survey",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "Addressing fairness issues in deep learning-based medical image analysis: a systematic review",
+    "year": "2024",
+    "venue": "npj Digital Medicine",
+    "links": {
+      "Paper": "https://doi.org/10.1038/s41746-024-01276-5"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "Review papers on AI fairness"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "faimi",
+    "doi": "10.1038/s41746-024-01276-5",
+    "kind": "survey",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "Bias recognition and mitigation strategies in artificial intelligence healthcare applications",
+    "year": "2025",
+    "venue": "npj Digital Medicine",
+    "links": {
+      "Paper": "https://doi.org/10.1038/s41746-025-01503-7"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "Review papers on AI fairness"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Mitigation"
+      ],
+      "Stage": [
+        "Not verified"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "faimi",
+    "doi": "10.1038/s41746-025-01503-7",
+    "kind": "survey",
+    "verified": true,
+    "topics": [
+      "Mitigation with Unverified Stage"
+    ]
+  },
+  {
+    "title": "Algorithmic individual fairness and healthcare: a scoping review",
+    "year": "2024",
+    "venue": "JAMIA Open",
+    "links": {
+      "Paper": "https://doi.org/10.1093/jamiaopen/ooae149"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "Review papers on AI fairness"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "faimi",
+    "doi": "10.1093/jamiaopen/ooae149",
+    "kind": "survey",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "Dissecting racial bias in an algorithm used to manage the health of populations",
+    "year": "2019",
+    "venue": "Science",
+    "links": {
+      "Paper": "https://doi.org/10.1126/science.aax2342"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "Seminal works on AI fairness"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "EHR and clinical prediction"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Race and ethnicity"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "faimi",
+    "doi": "10.1126/science.aax2342",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking",
+      "EHR, Physiological Signals and Healthcare"
+    ]
+  },
+  {
+    "title": "The Measure and Mismeasure of Fairness",
+    "year": "2018",
+    "venue": "FAIMI resource",
+    "links": {
+      "Paper": "https://arxiv.org/abs/1808.00023"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "Perspectives on what constitutes AI fairness"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "faimi",
+    "arxiv_id": "1808.00023",
+    "kind": "survey",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "Ensuring Fairness in Machine Learning to Advance Health Equity",
+    "year": "2018",
+    "venue": "Annals of Internal Medicine",
+    "links": {
+      "Paper": "https://doi.org/10.7326/m18-1990"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "Perspectives on what constitutes AI fairness"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "faimi",
+    "doi": "10.7326/m18-1990",
+    "kind": "survey",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "Ethical limitations of algorithmic fairness solutions in health care machine learning",
+    "year": "2020",
+    "venue": "The Lancet Digital Health",
+    "links": {
+      "Paper": "https://doi.org/10.1016/s2589-7500(20)30065-0"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "Perspectives on what constitutes AI fairness"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "faimi",
+    "doi": "10.1016/s2589-7500(20)30065-0",
+    "kind": "survey",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "Re-imagining Algorithmic Fairness in India and Beyond",
+    "year": "2021",
+    "venue": "Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency",
+    "links": {
+      "Paper": "https://doi.org/10.1145/3442188.3445896"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "Perspectives on what constitutes AI fairness"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "faimi",
+    "doi": "10.1145/3442188.3445896",
+    "kind": "survey",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "Assessing Bias in Medical AI",
+    "year": "2021",
+    "venue": "FAIMI resource",
+    "links": {
+      "Paper": "https://www.cse.cuhk.edu.hk/~qdou/public/IMLH2021_files/64_CameraReady_ICML_2021_Interpretable_Machine_Learning_in_Healthcare_workshop.pdf"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "Perspectives on what constitutes AI fairness"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Reviewed source"
+      ]
+    },
+    "origin": "faimi",
+    "kind": "survey",
+    "verified": false,
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "Addressing fairness in artificial intelligence for medical imaging",
+    "year": "2022",
+    "venue": "Nature Communications",
+    "links": {
+      "Paper": "https://doi.org/10.1038/s41467-022-32186-3"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "Perspectives on what constitutes AI fairness"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "faimi",
+    "doi": "10.1038/s41467-022-32186-3",
+    "kind": "survey",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "The path toward equal performance in medical machine learning",
+    "year": "2023",
+    "venue": "Patterns",
+    "links": {
+      "Paper": "https://doi.org/10.1016/j.patter.2023.100790"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "Perspectives on what constitutes AI fairness"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "faimi",
+    "doi": "10.1016/j.patter.2023.100790",
+    "kind": "survey",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "What's fair is… fair? Presenting JustEFAB, an ethical framework for operationalizing medical ethics and social justice in the integration of clinical machine learning",
+    "year": "2023",
+    "venue": "2023 ACM Conference on Fairness, Accountability, and Transparency",
+    "links": {
+      "Paper": "https://doi.org/10.1145/3593013.3594096"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "Perspectives on what constitutes AI fairness"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "faimi",
+    "doi": "10.1145/3593013.3594096",
+    "kind": "survey",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "Where, why, and how is bias learned in medical image analysis models? A study of bias encoding within convolutional networks using synthetic data",
+    "year": "2025",
+    "venue": "eBioMedicine",
+    "links": {
+      "Paper": "https://doi.org/10.1016/j.ebiom.2024.105501"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "Investigations into the causes of bias"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Bias mechanisms",
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "faimi",
+    "doi": "10.1016/j.ebiom.2024.105501",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking",
+      "Bias Mechanisms and Measurement"
+    ]
+  },
+  {
+    "title": "Slicing Through Bias: Explaining Performance Gaps in Medical Image Analysis Using Slice Discovery Methods",
+    "year": "2024",
+    "venue": "Lecture Notes in Computer Science",
+    "links": {
+      "Paper": "https://doi.org/10.1007/978-3-031-72787-0_1"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "Investigations into the causes of bias"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Bias mechanisms",
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "faimi",
+    "doi": "10.1007/978-3-031-72787-0_1",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking",
+      "Bias Mechanisms and Measurement"
+    ]
+  },
+  {
+    "title": "An investigation into the causes of race bias in artificial intelligence–based cine cardiac magnetic resonance segmentation",
+    "year": "2025",
+    "venue": "European Heart Journal - Digital Health",
+    "links": {
+      "Paper": "https://doi.org/10.1093/ehjdh/ztaf008"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "Investigations into the causes of bias"
+      },
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness for cardiac MRI:"
+      },
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness for medical image segmentation:"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Bias mechanisms",
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Race and ethnicity"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "faimi",
+    "doi": "10.1093/ehjdh/ztaf008",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking",
+      "Bias Mechanisms and Measurement"
+    ]
+  },
+  {
+    "title": "Understanding-informed Bias Mitigation for Fair CMR Segmentation",
+    "year": "2025",
+    "venue": "Machine Learning for Biomedical Imaging",
+    "links": {
+      "Paper": "https://doi.org/10.59275/j.melba.2025-6747"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "Bias mitigation"
+      },
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness for cardiac MRI:"
+      },
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness for medical image segmentation:"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Bias mechanisms",
+        "Mitigation"
+      ],
+      "Stage": [
+        "Not verified"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "faimi",
+    "doi": "10.59275/j.melba.2025-6747",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Bias Mechanisms and Measurement",
+      "Mitigation with Unverified Stage"
+    ]
+  },
+  {
+    "title": "Shortcut learning in deep neural networks",
+    "year": "2020",
+    "venue": "Nature Machine Intelligence",
+    "links": {
+      "Paper": "https://doi.org/10.1038/s42256-020-00257-z"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "Shortcut learning, models recognizing sensitive patient attributes, and fairness in medical AI"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Bias mechanisms",
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "faimi",
+    "doi": "10.1038/s42256-020-00257-z",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking",
+      "Bias Mechanisms and Measurement"
+    ]
+  },
+  {
+    "title": "Radiology “forensics”: determination of age and sex from chest radiographs using deep learning",
+    "year": "2021",
+    "venue": "Emergency Radiology",
+    "links": {
+      "Paper": "https://doi.org/10.1007/s10140-021-01953-y"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "Shortcut learning, models recognizing sensitive patient attributes, and fairness in medical AI"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Bias mechanisms",
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Sex and gender",
+        "Age"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "faimi",
+    "doi": "10.1007/s10140-021-01953-y",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking",
+      "Bias Mechanisms and Measurement"
+    ]
+  },
+  {
+    "title": "AI recognition of patient race in medical imaging: a modelling study",
+    "year": "2022",
+    "venue": "The Lancet Digital Health",
+    "links": {
+      "Paper": "https://doi.org/10.1016/s2589-7500(22)00063-2"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "Shortcut learning, models recognizing sensitive patient attributes, and fairness in medical AI"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Bias mechanisms",
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Race and ethnicity"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "faimi",
+    "doi": "10.1016/s2589-7500(22)00063-2",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking",
+      "Bias Mechanisms and Measurement"
+    ]
+  },
+  {
+    "title": "Implications of predicting race variables from medical images",
+    "year": "2023",
+    "venue": "Science",
+    "links": {
+      "Paper": "https://doi.org/10.1126/science.adh4260"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "Shortcut learning, models recognizing sensitive patient attributes, and fairness in medical AI"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Bias mechanisms",
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Race and ethnicity"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "faimi",
+    "doi": "10.1126/science.adh4260",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking",
+      "Bias Mechanisms and Measurement"
+    ]
+  },
+  {
+    "title": "Risk of Bias in Chest Radiography Deep Learning Foundation                     Models",
+    "year": "2023",
+    "venue": "Radiology: Artificial Intelligence",
+    "links": {
+      "Paper": "https://doi.org/10.1148/ryai.230060"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness for chest x-rays"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "faimi",
+    "doi": "10.1148/ryai.230060",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "Unveiling Fairness Biases in Deep Learning-Based Brain MRI Reconstruction",
+    "year": "2023",
+    "venue": "Lecture Notes in Computer Science",
+    "links": {
+      "Paper": "https://doi.org/10.1007/978-3-031-45249-9_10"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness in image reconstruction"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "faimi",
+    "doi": "10.1007/978-3-031-45249-9_10",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "Disparities in dermatology AI performance on a diverse, curated clinical image set",
+    "year": "2022",
+    "venue": "Science Advances",
+    "links": {
+      "Paper": "https://doi.org/10.1126/sciadv.abq6147"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness for dermatology images"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "faimi",
+    "doi": "10.1126/sciadv.abq6147",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "Understanding skin color bias in deep learning-based skin lesion segmentation",
+    "year": "2024",
+    "venue": "Computer Methods and Programs in Biomedicine",
+    "links": {
+      "Paper": "https://doi.org/10.1016/j.cmpb.2024.108044"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness for dermatology images"
+      },
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness for medical image segmentation:"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Bias mechanisms",
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Skin tone"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "faimi",
+    "doi": "10.1016/j.cmpb.2024.108044",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking",
+      "Bias Mechanisms and Measurement"
+    ]
+  },
+  {
+    "title": "Rethinking fairness in medical imaging: Maximizing group-specific performance with application to skin disease diagnosis",
+    "year": "2026",
+    "venue": "Medical Image Analysis",
+    "links": {
+      "Paper": "https://doi.org/10.1016/j.media.2026.103950"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness for dermatology images"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "faimi",
+    "doi": "10.1016/j.media.2026.103950",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "A Systematic Study of Race and Sex Bias in CNN-Based Cardiac MR Segmentation",
+    "year": "2022",
+    "venue": "Lecture Notes in Computer Science",
+    "links": {
+      "Paper": "https://doi.org/10.1007/978-3-031-23443-9_22"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness for cardiac MRI:"
+      },
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness for medical image segmentation:"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Race and ethnicity",
+        "Sex and gender"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "faimi",
+    "doi": "10.1007/978-3-031-23443-9_22",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "Demographic bias in misdiagnosis by computational pathology models",
+    "year": "2024",
+    "venue": "Nature Medicine",
+    "links": {
+      "Paper": "https://doi.org/10.1038/s41591-024-02885-z"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness for histology:"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "faimi",
+    "doi": "10.1038/s41591-024-02885-z",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "Unsupervised Bias Discovery in Medical Image Segmentation",
+    "year": "2023",
+    "venue": "Lecture Notes in Computer Science",
+    "links": {
+      "Paper": "https://doi.org/10.1007/978-3-031-45249-9_26"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness for medical image segmentation:"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "faimi",
+    "doi": "10.1007/978-3-031-45249-9_26",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "FairSeg: A Large-Scale Medical Image Segmentation Dataset for Fairness Learning Using Segment Anything Model with Fair Error-Bound Scaling",
+    "year": "2024",
+    "venue": "ICLR",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2311.02189",
+      "Code": "https://github.com/Harvard-Ophthalmology-AI-Lab/FairSeg"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness for medical image segmentation:"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Dataset",
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Code"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "faimi",
+    "arxiv_id": "2311.02189",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "Fair AI-powered orthopedic image segmentation: addressing bias and promoting equitable healthcare",
+    "year": "2024",
+    "venue": "Scientific Reports",
+    "links": {
+      "Paper": "https://doi.org/10.1038/s41598-024-66873-6"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness for medical image segmentation:"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "faimi",
+    "doi": "10.1038/s41598-024-66873-6",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "An investigation of race bias in deep learning-based segmentation of prostate MRI images",
+    "year": "2025",
+    "venue": "Scientific Reports",
+    "links": {
+      "Paper": "https://doi.org/10.1038/s41598-025-26189-5"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "AI fairness for medical image segmentation:"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Race and ethnicity"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "faimi",
+    "doi": "10.1038/s41598-025-26189-5",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "Diagnosing failures of fairness transfer across distribution shift in real-world medical settings",
+    "year": "2022",
+    "venue": "FAIMI resource",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2202.01034"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "Miscellaneous"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "faimi",
+    "arxiv_id": "2202.01034",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "Towards Unraveling Calibration Biases in Medical Image Analysis",
+    "year": "2023",
+    "venue": "Lecture Notes in Computer Science",
+    "links": {
+      "Paper": "https://doi.org/10.1007/978-3-031-45249-9_13"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "Miscellaneous"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary metadata"
+      ]
+    },
+    "origin": "faimi",
+    "doi": "10.1007/978-3-031-45249-9_13",
+    "kind": "main",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "No Fair Lunch: A Causal Perspective on Dataset Bias in Machine Learning for Medical Imaging",
+    "year": "2023",
+    "venue": "FAIMI resource",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2307.16526"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "Miscellaneous"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "faimi",
+    "arxiv_id": "2307.16526",
+    "kind": "survey",
+    "verified": true,
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  },
+  {
+    "title": "FairMedFM: Fairness Benchmarking for Medical Imaging Foundation Models",
+    "year": "2024",
+    "venue": "NeurIPS Datasets and Benchmarks",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2407.00983",
+      "Code": "https://github.com/FairMedFM/FairMedFM"
+    },
+    "sources": [
+      {
+        "url": "https://faimi-workshop.github.io/resources/",
+        "section": "Software toolkits: FairMedFM"
+      }
+    ],
+    "metadata": {
+      "Domain": [
+        "Medical imaging"
+      ],
+      "Focus": [
+        "Benchmark",
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Code"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "origin": "faimi",
+    "arxiv_id": "2407.00983",
+    "verified": true,
+    "kind": "main",
+    "topics": [
+      "Fairness Evaluation and Benchmarking"
+    ]
+  }
+]

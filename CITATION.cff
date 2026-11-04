@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Cite this maintained catalog and the 2024 review when using its taxonomy or literature analysis."
+title: "Awesome MedIA Fairness: Medical Algorithm Fairness Literature and Evidence-Aware Updates"
+type: software
+authors:
+  - family-names: Xu
+    given-names: Zikang
+    orcid: "https://orcid.org/0000-0001-6615-4510"
+repository-code: "https://github.com/XuZikang/Awesome-MedIA-Fairness"
+url: "https://github.com/XuZikang/Awesome-MedIA-Fairness"
+date-released: "2026-11-04"
+license: MIT

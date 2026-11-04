@@ -1,0 +1,93 @@
+name: Literature discovery and digest
+
+on:
+  # Weekly production execution uses deploy/fairness-weekly.timer on IAI-61,
+  # where the existing Qoder/Magpie sign-in is available without exporting it.
+  workflow_dispatch:
+
+concurrency:
+  group: literature-discovery
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Restore persistent output branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          OUTPUT_TREE="$RUNNER_TEMP/literature-output"
+          git ls-remote --heads origin refs/heads/literature-data > "$RUNNER_TEMP/literature-ref"
+          if [ -s "$RUNNER_TEMP/literature-ref" ]; then
+            git fetch origin literature-data
+            git worktree add --detach "$OUTPUT_TREE" FETCH_HEAD
+            if [ -f "$OUTPUT_TREE/data/literature-state.json" ]; then
+              mkdir -p data
+              cp "$OUTPUT_TREE/data/literature-state.json" data/
+            fi
+            if [ -d "$OUTPUT_TREE/reports" ]; then
+              cp -R "$OUTPUT_TREE/reports" reports
+            fi
+          else
+            git worktree add --detach "$OUTPUT_TREE" HEAD
+          fi
+
+      - name: Validate pipeline
+        run: python -m unittest discover -s tests -v
+
+      - name: Discover and review papers
+        id: pipeline
+        continue-on-error: true
+        env:
+          LITERATURE_LLM_ENDPOINT: ${{ vars.LITERATURE_LLM_ENDPOINT }}
+          LITERATURE_LLM_MODEL: ${{ vars.LITERATURE_LLM_MODEL }}
+          LITERATURE_LLM_CACHE_NAMESPACE: ${{ vars.LITERATURE_LLM_CACHE_NAMESPACE }}
+          LITERATURE_LLM_API_KEY: ${{ secrets.LITERATURE_LLM_API_KEY }}
+          NCBI_EMAIL: ${{ vars.NCBI_EMAIL }}
+        run: |
+          python -c "from pathlib import Path; Path('reports/run-status.json').unlink(missing_ok=True)"
+          python -m scripts.literature_pipeline.cli --require-model
+
+      - name: Preserve diagnostic artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: literature-digest
+          path: |
+            reports/
+            data/literature-state.json
+          if-no-files-found: warn
+
+      - name: Update output branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f data/literature-state.json
+          test -f reports/run-status.json
+          OUTPUT_TREE="$RUNNER_TEMP/literature-output"
+          mkdir -p "$OUTPUT_TREE/data" "$OUTPUT_TREE/reports"
+          cp data/literature-state.json "$OUTPUT_TREE/data/"
+          cp -R reports/. "$OUTPUT_TREE/reports/"
+          git -C "$OUTPUT_TREE" config user.name "github-actions[bot]"
+          git -C "$OUTPUT_TREE" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git -C "$OUTPUT_TREE" add data/literature-state.json reports
+          if ! git -C "$OUTPUT_TREE" diff --cached --quiet; then
+            git -C "$OUTPUT_TREE" commit -m "docs: update literature candidates and digest"
+            git -C "$OUTPUT_TREE" push origin HEAD:refs/heads/literature-data
+          fi
+
+      - name: Report incomplete run
+        if: steps.pipeline.outcome == 'failure'
+        run: |
+          echo "Literature run incomplete. Inspect reports/run-status.json and retry; successful partial results were preserved."
+          exit 1

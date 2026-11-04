@@ -1,0 +1,16 @@
+[Unit]
+Description=Medical algorithm fairness literature search, Chinese review and GitHub update
+After=magpie.service
+StartLimitIntervalSec=6h
+StartLimitBurst=3
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/.local/share/medical-fairness-literature/repo
+EnvironmentFile=%h/.config/medical-fairness-literature.env
+ExecStartPre=/usr/bin/git fetch origin main
+ExecStartPre=/usr/bin/git merge --ff-only origin/main
+ExecStart=/bin/bash %h/.local/share/medical-fairness-literature/repo/scripts/run_weekly_literature.sh
+TimeoutStartSec=3h
+Restart=on-failure
+RestartSec=15min
