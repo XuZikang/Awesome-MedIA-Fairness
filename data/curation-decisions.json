@@ -96,12 +96,21 @@
     "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
   },
   "p-2ffe88b3f5427706252d": {
-    "decision": "hold",
-    "fingerprint": "2419b47bd05c87d94772f8cdfcd21c28734c9d778364041a2794b5c015525a99",
-    "note": "需要你确定一下内容是否与 fairness 相关",
+    "decision": "approve",
+    "fingerprint": "b3961054455fa87924d688109052482cfeb7bbedf5eb7cc5be2b12c8d9bd89b3",
+    "note": "用户明确纳入；全文已确认医疗任务、模型对比及种族、性别、年龄的召回差距审计。",
     "paper_version": "10d39b13948e22089fe89fea5732fcd1a49df79c2ff3c3f34637721041a11af1",
     "title": "Explainable Machine Learning for 30-Day Hospital Readmission Risk Prediction in Patients with Diabetes: A Comparative Analysis of Model Performance and Algorithmic Fairness",
-    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7",
+    "source_review_sha256": "852b2998a5b95e238f9d5dfa585e72fe0a7549bf100bc59d2563e41da7e6a176",
+    "reviewed_on": "2026-11-05",
+    "decision_history": [
+      {
+        "decision": "hold",
+        "fingerprint": "2419b47bd05c87d94772f8cdfcd21c28734c9d778364041a2794b5c015525a99",
+        "note": "需要你确定一下内容是否与 fairness 相关",
+        "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+      }
+    ],
     "followup_zh": "已核查Research Square全文§7.2与Table 2，明确比较race/gender/age的recall gap，范围相关；模型偏差并未被消除，仍等你决定。详见 held-scope-audit-2026-11-04.md。"
   },
   "p-39172eeeef221e79bbcc": {
@@ -297,12 +306,21 @@
     "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
   },
   "p-cb6eb929d7f879132fb0": {
-    "decision": "hold",
+    "decision": "reject",
     "fingerprint": "9c068a07f1efc2318b8bee6b1a89d2f8b8ef985f5a68de1c1cc4bc0e9fdc1326",
-    "note": "你确认一下是否与 medical 相关",
+    "note": "用户明确先排除；临床试验研究数据的奖励是研究结果是否发布，与患者级医疗结局的关联有限。",
     "paper_version": "f28bcae72cc50c9201cbd606846bdabc72e064acd0e300f2d3560304df13bd24",
     "title": "Fairness-Aware Design for Contextual Experiments: Guaranteeing Reliability and Equity in Heterogeneous Subgroups",
-    "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7",
+    "source_review_sha256": "852b2998a5b95e238f9d5dfa585e72fe0a7549bf100bc59d2563e41da7e6a176",
+    "reviewed_on": "2026-11-05",
+    "decision_history": [
+      {
+        "decision": "hold",
+        "fingerprint": "9c068a07f1efc2318b8bee6b1a89d2f8b8ef985f5a68de1c1cc4bc0e9fdc1326",
+        "note": "你确认一下是否与 medical 相关",
+        "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7"
+      }
+    ],
     "followup_zh": "已核查arXiv全文；有临床试验数据，但奖励为试验研究结果是否发布，而非患者临床结局，属于边界相关方法学，继续暂缓。详见 held-scope-audit-2026-11-04.md。"
   },
   "p-cd61ff429b4e8948cce1": {

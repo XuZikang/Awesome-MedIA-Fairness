@@ -6631,5 +6631,62 @@
       "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7",
       "overrides_machine_screening": true
     }
+  },
+  {
+    "title": "Explainable Machine Learning for 30-Day Hospital Readmission Risk Prediction in Patients with Diabetes: A Comparative Analysis of Model Performance and Algorithmic Fairness",
+    "year": "2026",
+    "publication_date": "2026-10-28",
+    "venue": "Research Square Preprint",
+    "doi": "10.21203/rs.3.rs-11517784/v1",
+    "authors": [
+      "Zisheng Liang"
+    ],
+    "kind": "main",
+    "publication_type": "Preprint",
+    "method": "Fairness Evaluation",
+    "metadata": {
+      "Attributes": [
+        "Race and ethnicity",
+        "Sex and gender",
+        "Age"
+      ],
+      "Domain": [
+        "EHR and clinical prediction"
+      ],
+      "Evidence": [
+        "Primary full text"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Assets": [
+        "Paper only"
+      ]
+    },
+    "verified": true,
+    "links": {
+      "Paper": "https://doi.org/10.21203/rs.3.rs-11517784/v1"
+    },
+    "sources": [
+      {
+        "url": "https://www.researchsquare.com/article/rs-11517784/v1.pdf",
+        "section": "Human-approved full-text review, Section 7.2 and Table 2"
+      }
+    ],
+    "tldr_en": [
+      "This study evaluates 30-day readmission prediction for diabetic inpatients and audits demographic differences in recall.",
+      "It compares logistic regression, decision tree and random forest models on a patient-aware and time-aware split of the UCI diabetes hospital dataset, reporting recall gaps across race, gender and age.",
+      "The tuned random forest has the highest recall but the largest reported race gap, illustrating a trade-off between overall detection and subgroup performance rather than demonstrating effective fairness mitigation."
+    ],
+    "human_review": {
+      "decision": "approve",
+      "reviewed_on": "2026-11-05",
+      "review_fingerprint": "b3961054455fa87924d688109052482cfeb7bbedf5eb7cc5be2b12c8d9bd89b3",
+      "note": "用户明确纳入；全文已确认医疗任务、模型对比及种族、性别、年龄的召回差距审计。",
+      "source_review_sha256": "852b2998a5b95e238f9d5dfa585e72fe0a7549bf100bc59d2563e41da7e6a176"
+    }
   }
 ]

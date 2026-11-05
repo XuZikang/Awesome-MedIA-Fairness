@@ -86,6 +86,6 @@ def write_review_packet(db, output, day, catalog):
             lines += ['', '[分析原文]('+result['evidence_url']+')','']
         if human.get('followup_zh'):
             lines += ['人工原文补查：'+human['followup_zh'],'']
-    path.write_text('\n'.join(lines)+'\n')
-    (output/'review-latest.md').write_text('\n'.join(lines)+'\n')
+    path.write_text('\n'.join(lines).rstrip()+'\n')
+    (output/'review-latest.md').write_text('\n'.join(lines).rstrip()+'\n')
     return path

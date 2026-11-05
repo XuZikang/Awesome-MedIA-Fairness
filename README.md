@@ -4,7 +4,7 @@ A collection of research on **medical algorithm fairness**, covering medical ima
 
 [![Catalog validation](https://github.com/XuZikang/Awesome-MedIA-Fairness/actions/workflows/validate-catalog.yml/badge.svg)](https://github.com/XuZikang/Awesome-MedIA-Fairness/actions/workflows/validate-catalog.yml) [![Link health](https://github.com/XuZikang/Awesome-MedIA-Fairness/actions/workflows/check-links.yml/badge.svg)](https://github.com/XuZikang/Awesome-MedIA-Fairness/actions/workflows/check-links.yml)
 
-**116 papers**, including surveys and perspectives, organized by methodology. Each paper has one primary placement; secondary contributions remain in its metadata and TLDR.
+**117 papers**, including surveys and perspectives, organized by methodology. Each paper has one primary placement; secondary contributions remain in its metadata and TLDR.
 
 ## 🎯 Scope
 
@@ -88,6 +88,17 @@ Title badges use distinct colors for methodology, domain, focus, attributes, ava
   **TLDR:** This study audits subgroup readiness for deployment of a perioperative infection-prediction model. It evaluates discrimination, calibration, threshold errors and decision-curve utility across sex, age and physiological-reserve strata, comparing recalibration and a refit without SMOTE. The abstract reports that aggregate discrimination can mask subgroup miscalibration and that outcome ascertainment affects utility interpretation, so prospective validation remains necessary.
 
   **Date:** 2026-10-30
+
+
+- (*Research Square Preprint'26*) **Explainable Machine Learning for 30-Day Hospital Readmission Risk Prediction in Patients with Diabetes: A Comparative Analysis of Model Performance and Algorithmic Fairness** ![Fairness Evaluation](assets/badges/fairness-evaluation-fairness-evaluation.svg) ![EHR and clinical prediction](assets/badges/domain-ehr-and-clinical-prediction.svg) ![Evaluation](assets/badges/focus-evaluation.svg) ![Race and ethnicity + Sex and gender + Age](assets/badges/attributes-race-and-ethnicity-sex-and-gender-age.svg) ![Paper only](assets/badges/assets-paper-only.svg) ![Primary full text](assets/badges/evidence-primary-full-text.svg)
+
+  [[Paper](https://doi.org/10.21203/rs.3.rs-11517784/v1)]
+
+  **Metadata:** `Domain: EHR and clinical prediction` · `Focus: Evaluation` · `Stage: Evaluation` · `Attributes: Race and ethnicity + Sex and gender + Age` · `Assets: Paper only` · `Evidence: Primary full text`
+
+  **TLDR:** This study evaluates 30-day readmission prediction for diabetic inpatients and audits demographic differences in recall. It compares logistic regression, decision tree and random forest models on a patient-aware and time-aware split of the UCI diabetes hospital dataset, reporting recall gaps across race, gender and age. The tuned random forest has the highest recall but the largest reported race gap, illustrating a trade-off between overall detection and subgroup performance rather than demonstrating effective fairness mitigation.
+
+  **Date:** 2026-10-28
 
 
 - (*arXiv'26*) **Disparity Laundering: Consensus Without Fairness in Clinical Multi-Agent Systems** ![Fairness Evaluation](assets/badges/fairness-evaluation-fairness-evaluation.svg) ![Clinical NLP and foundation models](assets/badges/domain-clinical-nlp-and-foundation-models.svg) ![Evaluation + Bias mechanisms + Mitigation](assets/badges/focus-evaluation-bias-mechanisms-mitigation.svg) ![Race and ethnicity + Sex and gender](assets/badges/attributes-race-and-ethnicity-sex-and-gender.svg) ![Paper only](assets/badges/assets-paper-only.svg) ![Primary full text](assets/badges/evidence-primary-full-text.svg)
