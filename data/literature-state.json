@@ -5732,7 +5732,7 @@
       "pmid": "",
       "published": "2026-10-28",
       "seeded": false,
-      "source": "arxiv",
+      "source": "catalog",
       "source_id": "2610.38215",
       "sources": [
         "arxiv",
@@ -5761,7 +5761,7 @@
       "pmid": "",
       "published": "2026-10-28",
       "seeded": false,
-      "source": "europepmc",
+      "source": "catalog",
       "source_id": "PPR1351995",
       "sources": [
         "catalog",
@@ -5934,7 +5934,7 @@
       "pmid": "",
       "published": "2026-10-30",
       "seeded": false,
-      "source": "arxiv",
+      "source": "catalog",
       "source_id": "2611.00298",
       "sources": [
         "arxiv",
@@ -8229,7 +8229,7 @@
       "pmid": "42962674",
       "published": "2026-10-30",
       "seeded": false,
-      "source": "pubmed",
+      "source": "catalog",
       "source_id": "42962674",
       "sources": [
         "catalog",

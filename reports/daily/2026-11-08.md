@@ -8,11 +8,11 @@
 
 ## 检索覆盖
 
-- arxiv / 查询 4744eb3faccd：5 条；完整
+- arxiv / 查询 4744eb3faccd：3 条；完整
 - arxiv / 查询 42b91404506f：0 条；完整
-- europepmc / 查询 249ba7c65421：19 条；完整
+- europepmc / 查询 249ba7c65421：6 条；完整
 - europepmc / 查询 b614de0bf8b6：0 条；完整
-- pubmed / 查询 29bd77c2182f：35 条；完整
+- pubmed / 查询 29bd77c2182f：30 条；完整
 - pubmed / 查询 d4312ff2e61d：4 条；完整
 
 模型分析失败 7 次，保留候选并等待重试。

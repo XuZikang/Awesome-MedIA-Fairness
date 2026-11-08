@@ -13,17 +13,17 @@
     {
       "complete": true,
       "query_id": "4744eb3faccd",
-      "records": 5,
-      "since": "2026-10-28",
+      "records": 3,
+      "since": "2026-11-01",
       "source": "arxiv",
-      "total": 5,
+      "total": 3,
       "until": "2026-11-08"
     },
     {
       "complete": true,
       "query_id": "42b91404506f",
       "records": 0,
-      "since": "2026-10-28",
+      "since": "2026-11-01",
       "source": "arxiv",
       "total": 0,
       "until": "2026-11-08"
@@ -31,17 +31,17 @@
     {
       "complete": true,
       "query_id": "249ba7c65421",
-      "records": 19,
-      "since": "2026-10-28",
+      "records": 6,
+      "since": "2026-11-01",
       "source": "europepmc",
-      "total": 19,
+      "total": 6,
       "until": "2026-11-08"
     },
     {
       "complete": true,
       "query_id": "b614de0bf8b6",
       "records": 0,
-      "since": "2026-10-28",
+      "since": "2026-11-01",
       "source": "europepmc",
       "total": 0,
       "until": "2026-11-08"
@@ -49,17 +49,17 @@
     {
       "complete": true,
       "query_id": "29bd77c2182f",
-      "records": 35,
-      "since": "2026-10-28",
+      "records": 30,
+      "since": "2026-11-01",
       "source": "pubmed",
-      "total": 35,
+      "total": 30,
       "until": "2026-11-08"
     },
     {
       "complete": true,
       "query_id": "d4312ff2e61d",
       "records": 4,
-      "since": "2026-10-28",
+      "since": "2026-11-01",
       "source": "pubmed",
       "total": 4,
       "until": "2026-11-08"
