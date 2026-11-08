@@ -1,14 +1,14 @@
 {
   "analysis": {
-    "available_reviews": 1,
-    "failures": 0,
+    "available_reviews": 0,
+    "failures": 7,
     "mode": "model",
-    "pending": 2,
-    "reviewed": 1
+    "pending": 4,
+    "reviewed": 0
   },
-  "candidates": 3,
+  "candidates": 4,
   "changed_today": 3,
-  "date": "2026-11-04",
+  "date": "2026-11-08",
   "sources": [
     {
       "complete": true,
@@ -17,7 +17,7 @@
       "since": "2026-10-28",
       "source": "arxiv",
       "total": 5,
-      "until": "2026-11-04"
+      "until": "2026-11-08"
     },
     {
       "complete": true,
@@ -26,7 +26,7 @@
       "since": "2026-10-28",
       "source": "arxiv",
       "total": 0,
-      "until": "2026-11-04"
+      "until": "2026-11-08"
     },
     {
       "complete": true,
@@ -35,7 +35,7 @@
       "since": "2026-10-28",
       "source": "europepmc",
       "total": 19,
-      "until": "2026-11-04"
+      "until": "2026-11-08"
     },
     {
       "complete": true,
@@ -44,31 +44,25 @@
       "since": "2026-10-28",
       "source": "europepmc",
       "total": 0,
-      "until": "2026-11-04"
+      "until": "2026-11-08"
     },
     {
       "complete": true,
       "query_id": "29bd77c2182f",
-      "records": 34,
+      "records": 35,
       "since": "2026-10-28",
       "source": "pubmed",
-      "total": 34,
-      "until": "2026-11-04"
+      "total": 35,
+      "until": "2026-11-08"
     },
     {
       "complete": true,
       "query_id": "d4312ff2e61d",
-      "records": 3,
+      "records": 4,
       "since": "2026-10-28",
       "source": "pubmed",
-      "total": 3,
-      "until": "2026-11-04"
+      "total": 4,
+      "until": "2026-11-08"
     }
-  ],
-  "policy_validation": {
-    "cases": 3,
-    "validated_model_analyses": 2,
-    "failed_quote_validation": 1,
-    "failed_case_resolution": "Manual full-text check; human hold retained"
-  }
+  ]
 }

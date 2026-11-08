@@ -245,6 +245,10 @@
       "p-bbc3b6330d6af062be13"
     ],
     [
+      "doi:10.1007/s10508-026-03518-x",
+      "p-5e807a99c95186c7bc80"
+    ],
+    [
       "doi:10.1007/s12072-026-11156-7",
       "p-41c2f5e12d24a76bab3e"
     ],
@@ -625,12 +629,20 @@
       "p-1607ccec012a87a0fdca"
     ],
     [
+      "pmcid:11015191",
+      "p-5e807a99c95186c7bc80"
+    ],
+    [
       "pmcid:12595527",
       "p-41c2f5e12d24a76bab3e"
     ],
     [
       "pmcid:pmc13723367",
       "p-747c407c5696b151b802"
+    ],
+    [
+      "pmcid:pmc13731530",
+      "p-fda1af6a735d35a7ab7d"
     ],
     [
       "pmid:32457147",
@@ -855,6 +867,10 @@
     [
       "pmid:42975702",
       "p-fda1af6a735d35a7ab7d"
+    ],
+    [
+      "pmid:42980982",
+      "p-5e807a99c95186c7bc80"
     ],
     [
       "title:aclinicaldecisionsupportsystemforecgdiagnosissurpassingcommercialstandardsthroughdualstreamfeaturefusion",
@@ -1501,6 +1517,10 @@
       "p-103f68f94a2d8f3acdd1"
     ],
     [
+      "title:visualsexualhealthcommunicationassistedbyaithecaseofsyntheticmenstruationimages",
+      "p-5e807a99c95186c7bc80"
+    ],
+    [
       "title:whatsfairisfairpresentingjustefabanethicalframeworkforoperationalizingmedicalethicsandsocialjusticeintheintegrationofclinicalmachinelearning",
       "p-9655b13245a51f06cf0d"
     ],
@@ -1628,9 +1648,8 @@
     ],
     [
       "p-103ada15cebbb7f64a8f",
-      "a97852727e5106a09cec1cab4ea562913f77d45b2aa83e24a2ab65cafb8801fa",
+      "b4a9caa2757ec3f9fe2d879d29848e8a855f0bf6a826e3974b86bba8edb834f3",
       {
-        "article_type": "review",
         "criteria": {
           "algorithm": {
             "met": true,
@@ -1641,8 +1660,8 @@
             "quote": ""
           },
           "fairness": {
-            "met": false,
-            "quote": ""
+            "met": true,
+            "quote": "Implementation challenges include algorithmic bias, data drift, human-AI interaction"
           },
           "groups": {
             "met": false,
@@ -1650,13 +1669,13 @@
           },
           "medical": {
             "met": true,
-            "quote": "Artificial intelligence (AI) is transforming positron emission tomography (PET) across the clinical workflow."
+            "quote": "Artificial intelligence (AI) is transforming positron emission tomography (PET) across the clinical workflow"
           }
         },
-        "decision": "exclude",
+        "decision": "related",
         "evidence_level": "abstract",
         "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/42957403/",
-        "limitations_zh": "仅有摘要；未定义受保护群体或亚组，未报告公平性指标、偏倚机制或缓解评估；对算法偏倚仅一笔带过。",
+        "limitations_zh": "仅有摘要，属综述；未提供明确受保护群体、亚组分析或实证公平性评估，无法验证方法细节与结果。",
         "metadata": {
           "Attributes": [
             "Not specified"
@@ -1668,7 +1687,7 @@
             "Primary abstract"
           ],
           "Focus": [
-            "Evaluation"
+            "Bias mechanisms"
           ],
           "Stage": [
             "Not verified"
@@ -1676,21 +1695,13 @@
         },
         "model": "qoder-cn/dfmodel",
         "provider": "qoder-cn-medical-fairness",
-        "reason_zh": "综述仅泛泛提及算法偏倚，未针对PET任务提供具体的亚组指标、机制或缓解比较，也无群体定义或实证评估，属于偶然提及，故排除。",
-        "review_scope": {
-          "detailed_fairness": {
-            "met": false,
-            "quote": ""
-          },
-          "specific_task": {
-            "met": true,
-            "quote": "Food and Drug Administration-cleared deep learning reconstruction, and commercial lesion detection"
-          }
-        },
+        "reason_zh": "PET医学影像AI综述，摘要仅泛提算法偏倚等挑战，未定义敏感群体或开展实证公平性评估；按综述归为相关。",
         "reviewed_on": "2026-11-04",
-        "summary_zh": "该文综述AI在PET成像中的临床应用，包括自动排程与协议、深度学习重建、病灶检测和自动报告，并将算法偏倚列为实施挑战之一，但未提供任何具体的公平性分析。",
+        "summary_zh": "该文综述AI在PET成像临床流程中的应用，包括自动预约与协议、深度学习重建、病灶检测及大语言模型报告，并讨论算法偏倚、数据漂移和监管等实施挑战。",
         "text_truncated": false,
-        "topics": [],
+        "topics": [
+          "Bias Mechanisms and Measurement"
+        ],
         "warning": ""
       }
     ],
@@ -2282,6 +2293,8 @@
           ]
         },
         "model": "qoder-cn/dfmodel",
+        "paper_version": "10d39b13948e22089fe89fea5732fcd1a49df79c2ff3c3f34637721041a11af1",
+        "policy_version": "2-methodology-first",
         "provider": "qoder-cn-medical-fairness",
         "reason_zh": "全文为原始研究，完成糖尿病30天再入院机器学习预测，并按种族、性别和年龄报告召回差距，符合任务特定公平性评估的纳入标准。",
         "review_scope": {
@@ -4754,12 +4767,12 @@
     ]
   ],
   "checkpoints": {
-    "arxiv:42b91404506f": "2026-11-04",
-    "arxiv:4744eb3faccd": "2026-11-04",
-    "europepmc:249ba7c65421": "2026-11-04",
-    "europepmc:b614de0bf8b6": "2026-11-04",
-    "pubmed:29bd77c2182f": "2026-11-04",
-    "pubmed:d4312ff2e61d": "2026-11-04"
+    "arxiv:42b91404506f": "2026-11-08",
+    "arxiv:4744eb3faccd": "2026-11-08",
+    "europepmc:249ba7c65421": "2026-11-08",
+    "europepmc:b614de0bf8b6": "2026-11-08",
+    "pubmed:29bd77c2182f": "2026-11-08",
+    "pubmed:d4312ff2e61d": "2026-11-08"
   },
   "format_version": 1,
   "papers": [
@@ -5751,6 +5764,7 @@
       "source": "europepmc",
       "source_id": "PPR1351995",
       "sources": [
+        "catalog",
         "europepmc"
       ],
       "title": "Explainable Machine Learning for 30-Day Hospital Readmission Risk Prediction in Patients with Diabetes: A Comparative Analysis of Model Performance and Algorithmic Fairness",
@@ -6009,19 +6023,20 @@
         "Potts E",
         "Magrabi F"
       ],
-      "doi": "10.1071/ah26110",
+      "doi": "10.1071/AH26110",
       "first_seen": "2026-11-04",
       "id": "p-3e7581d5cf989529b639",
       "is_open_access": false,
-      "last_changed": "2026-11-04",
+      "last_changed": "2026-11-08",
       "pmcid": "",
       "pmid": "42906928",
       "published": "2026-11-01",
       "seeded": false,
-      "source": "europepmc",
+      "source": "pubmed",
       "source_id": "42906928",
       "sources": [
-        "europepmc"
+        "europepmc",
+        "pubmed"
       ],
       "title": "Governing artificial intelligence in Australian healthcare organisations - a qualitative study of staff perspectives.",
       "updated": "2026-10-23",
@@ -6540,6 +6555,35 @@
       "year": "2026"
     },
     {
+      "abstract_hash": "8846b849089d10645f1d902684cafe34735fd1758c97cb258619ed77563f9d0b",
+      "abstract_source": "pubmed",
+      "abstract_updated": "2026-11-04",
+      "arxiv_id": "",
+      "authors": [
+        "Nicola Döring",
+        "Anastasiia Shevtsova"
+      ],
+      "doi": "10.1007/s10508-026-03518-x",
+      "first_seen": "2026-11-08",
+      "id": "p-5e807a99c95186c7bc80",
+      "is_open_access": false,
+      "last_changed": "2026-11-08",
+      "pmcid": "11015191",
+      "pmid": "42980982",
+      "published": "2026-11-03",
+      "seeded": false,
+      "source": "pubmed",
+      "source_id": "42980982",
+      "sources": [
+        "pubmed"
+      ],
+      "title": "Visual Sexual Health Communication Assisted by AI: The Case of Synthetic Menstruation Images.",
+      "updated": "2026-11-04",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42980982/",
+      "version": "",
+      "year": "2026"
+    },
+    {
       "abstract_hash": "",
       "arxiv_id": "2310.05055",
       "authors": [
@@ -6672,6 +6716,7 @@
       "source": "pubmed",
       "source_id": "42447641",
       "sources": [
+        "catalog",
         "pubmed"
       ],
       "title": "The pediatric transfer gap: How adult-ICU-trained machine-learning models degrade on pediatric intensive care patients.",
@@ -6807,6 +6852,7 @@
       "source": "pubmed",
       "source_id": "42721913",
       "sources": [
+        "catalog",
         "pubmed"
       ],
       "title": "Sex, gender and artificial intelligence in cardiovascular medicine 4.0.",
@@ -7235,6 +7281,7 @@
       "source": "pubmed",
       "source_id": "40298212",
       "sources": [
+        "catalog",
         "pubmed"
       ],
       "title": "Assessing Variability in ChatGPT Responses: A Case Study on Simulating Online User Inputs.",
@@ -7608,6 +7655,7 @@
       "source": "pubmed",
       "source_id": "42701888",
       "sources": [
+        "catalog",
         "pubmed"
       ],
       "title": "Editorial Commentary: Calling Balls and Strikes: For Artificial Intelligence Models to Accurately Predict Rotator Cuff Retear, We Must Carefully Define the Strike Zone.",
@@ -8184,6 +8232,7 @@
       "source": "pubmed",
       "source_id": "42962674",
       "sources": [
+        "catalog",
         "pubmed"
       ],
       "title": "Subgroup deployment-readiness audit of calibration and clinical utility in perioperative infection prediction.",
@@ -8800,6 +8849,7 @@
       "source": "pubmed",
       "source_id": "42751787",
       "sources": [
+        "catalog",
         "pubmed"
       ],
       "title": "Responsible AI for Acute Stroke Management.",
@@ -9129,7 +9179,7 @@
     {
       "abstract_hash": "57c554069baa49b8ab4bb2ef2289e611566cd4fec399d4ed7124606a97e50e56",
       "abstract_source": "pubmed",
-      "abstract_updated": "2026-11-03",
+      "abstract_updated": "2026-11-04",
       "arxiv_id": "",
       "authors": [
         "Hasham Khaleel Al Musawi"
@@ -9138,7 +9188,7 @@
       "first_seen": "2026-11-04",
       "id": "p-f51c76f9a365032f9da6",
       "is_open_access": false,
-      "last_changed": "2026-11-04",
+      "last_changed": "2026-11-08",
       "pmcid": "",
       "pmid": "42804281",
       "published": "2026-09-28",
@@ -9149,7 +9199,7 @@
         "pubmed"
       ],
       "title": "The symbiotic shift: How AI is reshaping rehabilitation and the future of work.",
-      "updated": "2026-11-03",
+      "updated": "2026-11-04",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42804281/",
       "version": "",
       "year": "2026"
@@ -9297,7 +9347,7 @@
     {
       "abstract_hash": "56a32e6e5c81546566c1e709aba0b877c214d65505960e3e12817ff55f5bbaf1",
       "abstract_source": "pubmed",
-      "abstract_updated": "2026-11-03",
+      "abstract_updated": "2026-11-06",
       "arxiv_id": "",
       "authors": [
         "Rahul K Goyal",
@@ -9313,18 +9363,19 @@
       "first_seen": "2026-11-04",
       "id": "p-fda1af6a735d35a7ab7d",
       "is_open_access": false,
-      "last_changed": "2026-11-04",
-      "pmcid": "10439178",
+      "last_changed": "2026-11-08",
+      "pmcid": "PMC13731530",
       "pmid": "42975702",
       "published": "2026-11-03",
       "seeded": false,
       "source": "pubmed",
       "source_id": "42975702",
       "sources": [
+        "catalog",
         "pubmed"
       ],
       "title": "Skin color representation in orthopedic literature.",
-      "updated": "2026-11-03",
+      "updated": "2026-11-06",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42975702/",
       "version": "",
       "year": "2026"
