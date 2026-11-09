@@ -1,14 +1,14 @@
 {
   "analysis": {
-    "available_reviews": 0,
-    "failures": 7,
+    "available_reviews": 7,
+    "failures": 0,
     "mode": "model",
-    "pending": 4,
-    "reviewed": 0
+    "pending": 1,
+    "reviewed": 7
   },
-  "candidates": 4,
-  "changed_today": 3,
-  "date": "2026-11-08",
+  "candidates": 8,
+  "changed_today": 7,
+  "date": "2026-11-09",
   "sources": [
     {
       "complete": true,
@@ -17,7 +17,7 @@
       "since": "2026-11-01",
       "source": "arxiv",
       "total": 3,
-      "until": "2026-11-08"
+      "until": "2026-11-09"
     },
     {
       "complete": true,
@@ -26,7 +26,7 @@
       "since": "2026-11-01",
       "source": "arxiv",
       "total": 0,
-      "until": "2026-11-08"
+      "until": "2026-11-09"
     },
     {
       "complete": true,
@@ -35,7 +35,7 @@
       "since": "2026-11-01",
       "source": "europepmc",
       "total": 6,
-      "until": "2026-11-08"
+      "until": "2026-11-09"
     },
     {
       "complete": true,
@@ -44,16 +44,16 @@
       "since": "2026-11-01",
       "source": "europepmc",
       "total": 0,
-      "until": "2026-11-08"
+      "until": "2026-11-09"
     },
     {
       "complete": true,
       "query_id": "29bd77c2182f",
-      "records": 30,
+      "records": 34,
       "since": "2026-11-01",
       "source": "pubmed",
-      "total": 30,
-      "until": "2026-11-08"
+      "total": 34,
+      "until": "2026-11-09"
     },
     {
       "complete": true,
@@ -62,7 +62,7 @@
       "since": "2026-11-01",
       "source": "pubmed",
       "total": 4,
-      "until": "2026-11-08"
+      "until": "2026-11-09"
     }
   ]
 }

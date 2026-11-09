@@ -317,6 +317,10 @@
       "p-d39e326704b43f57948f"
     ],
     [
+      "doi:10.1016/j.ijnurstu.2026.105744",
+      "p-b0cb7b51a7ac9f9fa2a2"
+    ],
+    [
       "doi:10.1016/j.jid.2026.08.008",
       "p-ca287a15e23f038adaf1"
     ],
@@ -347,6 +351,10 @@
     [
       "doi:10.1016/j.patter.2023.100790",
       "p-3e0c5f9b847a8ac26a68"
+    ],
+    [
+      "doi:10.1016/j.pmn.2026.10.003",
+      "p-5a21404654990f140f62"
     ],
     [
       "doi:10.1016/j.rcl.2026.07.010",
@@ -473,6 +481,10 @@
       "p-bbc3b4510635ce49b275"
     ],
     [
+      "doi:10.1111/adj.70086",
+      "p-04e0b05b25ec362e22ad"
+    ],
+    [
       "doi:10.1111/camh.70094",
       "p-791ad6693c5fab805032"
     ],
@@ -543,6 +555,10 @@
     [
       "doi:10.1186/s13195-023-01225-6",
       "p-938fa8c0c293b242a146"
+    ],
+    [
+      "doi:10.1186/s40798-026-01137-3",
+      "p-b130f0cb3376203a6985"
     ],
     [
       "doi:10.12688/wellcomeopenres.27597.1",
@@ -637,12 +653,20 @@
       "p-41c2f5e12d24a76bab3e"
     ],
     [
+      "pmcid:6602402",
+      "p-b130f0cb3376203a6985"
+    ],
+    [
       "pmcid:pmc13723367",
       "p-747c407c5696b151b802"
     ],
     [
       "pmcid:pmc13731530",
       "p-fda1af6a735d35a7ab7d"
+    ],
+    [
+      "pmcid:pmc13741335",
+      "p-fafce843d0071edb38ce"
     ],
     [
       "pmid:32457147",
@@ -873,6 +897,22 @@
       "p-5e807a99c95186c7bc80"
     ],
     [
+      "pmid:42995404",
+      "p-04e0b05b25ec362e22ad"
+    ],
+    [
+      "pmid:42998122",
+      "p-b130f0cb3376203a6985"
+    ],
+    [
+      "pmid:42998514",
+      "p-b0cb7b51a7ac9f9fa2a2"
+    ],
+    [
+      "pmid:42998968",
+      "p-5a21404654990f140f62"
+    ],
+    [
       "title:aclinicaldecisionsupportsystemforecgdiagnosissurpassingcommercialstandardsthroughdualstreamfeaturefusion",
       "p-2e2b2ef426e2412e7968"
     ],
@@ -907,6 +947,10 @@
     [
       "title:aifairnessviadomainadaptation",
       "p-79d16cda7aeba6a0c10d"
+    ],
+    [
+      "title:aiforpostoperativepainandopioidstewardshipinpediatricsurgeryasystematicreview",
+      "p-5a21404654990f140f62"
     ],
     [
       "title:aiintegrationfortransformingcareofpatientswithliverdiseases",
@@ -999,6 +1043,10 @@
     [
       "title:artificialintelligenceintegrationinalliedhealthprofessionsacomprehensivereviewofeducationalresearchandclinicalapplications",
       "p-3e28ee0d19df84b9f3d4"
+    ],
+    [
+      "title:artificialintelligencemediatedcyberincivilityinhealthprofessionseducationanevolutionaryconceptanalysis",
+      "p-b0cb7b51a7ac9f9fa2a2"
     ],
     [
       "title:artificialintelligenceworkandstructuralinequalitywhyhumancentricairequiresinstitutionalarchitecturenotjustethics",
@@ -1123,6 +1171,10 @@
     [
       "title:diagnosingfailuresoffairnesstransferacrossdistributionshiftinrealworldmedicalsettings",
       "p-3efb42cffdfe3c8f1c57"
+    ],
+    [
+      "title:digitalscribesindentistryopportunitiesrisksandpracticalconsiderations",
+      "p-04e0b05b25ec362e22ad"
     ],
     [
       "title:disparitiesindermatologyaiperformanceonadiversecuratedclinicalimageset",
@@ -1409,6 +1461,10 @@
       "p-28764d10539b6fe0cf0c"
     ],
     [
+      "title:sexequitablemachinelearningpredictionofanklereinjuryinindividualswithchronicankleinstabilitya2yearprospectivecohortstudywithfairnessaudit",
+      "p-b130f0cb3376203a6985"
+    ],
+    [
       "title:sexgenderandartificialintelligenceincardiovascularmedicine40",
       "p-719d950501ac09bbdb7d"
     ],
@@ -1530,6 +1586,78 @@
     ]
   ],
   "analyses": [
+    [
+      "p-04e0b05b25ec362e22ad",
+      "0d729777f87b3c274460485e6ecc102cc15bc3ab4b223cadd0afacb1006ef051",
+      {
+        "article_type": "review",
+        "criteria": {
+          "algorithm": {
+            "met": true,
+            "quote": "using speech recognition and artificial intelligence (AI) technologies"
+          },
+          "evaluation": {
+            "met": false,
+            "quote": ""
+          },
+          "fairness": {
+            "met": true,
+            "quote": "equity concerns related to algorithmic bias"
+          },
+          "groups": {
+            "met": false,
+            "quote": ""
+          },
+          "medical": {
+            "met": true,
+            "quote": "digital scribes in Australian dental practice"
+          }
+        },
+        "decision": "exclude",
+        "evidence_level": "abstract",
+        "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/42995404/",
+        "limitations_zh": "仅有摘要；为叙述性综述，未报告具体亚组指标、公平性评估框架或缓解方法；公平性仅作为潜在伦理风险一句带过。",
+        "metadata": {
+          "Attributes": [
+            "Not specified"
+          ],
+          "Domain": [
+            "Clinical NLP and foundation models"
+          ],
+          "Evidence": [
+            "Primary abstract"
+          ],
+          "Focus": [
+            "Evaluation"
+          ],
+          "Stage": [
+            "Not verified"
+          ]
+        },
+        "model": "qoder-cn/dfmodel",
+        "paper_version": "ae3c45e365e4c553bd26bf99ff63dd9a67af0d8caaa49375db60817b9ee1413c",
+        "policy_version": "2-methodology-first",
+        "provider": "qoder-cn-medical-fairness",
+        "reason_zh": "摘要仅一次提及算法偏倚/公平关切，属于附带伦理治理讨论；未给出牙科场景的具体亚组指标、机制分析或评估，且摘要级证据不能建议纳入。",
+        "review_scope": {
+          "detailed_fairness": {
+            "met": false,
+            "quote": ""
+          },
+          "specific_task": {
+            "met": true,
+            "quote": "generate clinical records from clinician-patient conversations"
+          }
+        },
+        "reviewed_on": "2026-11-09",
+        "summary_zh": "该叙述性综述讨论澳大利亚牙科中数字抄写员的益处、风险与实施考虑，包括文档负担、术语识别、自动化偏差及算法偏倚等公平关切，但未提供具体亚组分析或公平性评估。",
+        "text_truncated": false,
+        "topics": [
+          "Clinical NLP and Foundation Models"
+        ],
+        "warning": ""
+      }
+    ],
     [
       "p-064ee08a8e0905727f10",
       "921bf3fb658250b93f508f4756085ddc7a20ed18db644d590eb8494ea197679b",
@@ -2558,8 +2686,9 @@
     ],
     [
       "p-3e7581d5cf989529b639",
-      "a7a7774ada483e41aa35976505ccea857c02489682812bce4194652ab5f6dba3",
+      "712f86a4ac45498c3280f30ecc73dde295909861285a3822999496bee18bd9d7",
       {
+        "article_type": "other",
         "criteria": {
           "algorithm": {
             "met": false,
@@ -2582,10 +2711,10 @@
             "quote": ""
           }
         },
-        "decision": "related",
+        "decision": "exclude",
         "evidence_level": "abstract",
         "evidence_url": "https://europepmc.org/article/MED/42906928",
-        "limitations_zh": "仅有摘要；为员工观点定性研究，未评估具体AI/ML算法，未定义受保护群体或开展公平性测量；不能据此推断算法性能差异或临床获益。",
+        "limitations_zh": "仅有摘要；研究未评估具体医疗算法、敏感群体或公平性指标，公平仅作为治理原则被附带提及，缺少算法公平性的实证或测量证据。",
         "metadata": {
           "Attributes": [
             "Not specified"
@@ -2596,16 +2725,30 @@
           "Evidence": [
             "Primary abstract"
           ],
-          "Focus": [],
+          "Focus": [
+            "Evaluation"
+          ],
           "Stage": [
-            "Not verified"
+            "Not applicable"
           ]
         },
         "model": "qoder-cn/dfmodel",
+        "paper_version": "044685b296e106e607b4c374c13925348424f6d7499acfbc6cf5231c6548f23a",
+        "policy_version": "2-methodology-first",
         "provider": "qoder-cn-medical-fairness",
-        "reason_zh": "属医疗AI治理与伦理的视角研究，提及公平但非算法公平性实证评估，缺乏临床任务、具体算法、群体定义和测量，故列为相关。",
-        "reviewed_on": "2026-11-04",
-        "summary_zh": "该定性研究访谈澳大利亚某医疗机构的23名工作人员，归纳AI治理的五个组织域：风险评估、基础设施与数据、伦理、能力与文化、治理结构，强调生命周期监督与公平透明。",
+        "reason_zh": "摘要为员工对AI治理的定性访谈，仅泛泛提及公平和透明度，未针对具体疾病或临床任务、特定算法、敏感群体或公平性测量开展分析；属于一般治理与伦理讨论，按规则排除。",
+        "review_scope": {
+          "detailed_fairness": {
+            "met": false,
+            "quote": ""
+          },
+          "specific_task": {
+            "met": false,
+            "quote": ""
+          }
+        },
+        "reviewed_on": "2026-11-09",
+        "summary_zh": "该定性研究访谈澳大利亚一家医疗服务机构的23名员工，归纳AI治理的五个组织层面领域：风险评估、基础设施与数据、伦理、能力与文化、治理结构，并强调生命周期监督、数据治理、同意、公平与透明度。",
         "text_truncated": false,
         "topics": [],
         "warning": ""
@@ -2913,6 +3056,78 @@
       }
     ],
     [
+      "p-5a21404654990f140f62",
+      "857219cba8f03aaaf254a70f6ea3b2c9173729dc407f8ef47f06d845da40678a",
+      {
+        "article_type": "review",
+        "criteria": {
+          "algorithm": {
+            "met": true,
+            "quote": "AI, machine learning, deep learning, computer vision, multimodal sensing"
+          },
+          "evaluation": {
+            "met": false,
+            "quote": ""
+          },
+          "fairness": {
+            "met": false,
+            "quote": ""
+          },
+          "groups": {
+            "met": false,
+            "quote": ""
+          },
+          "medical": {
+            "met": true,
+            "quote": "pediatric postoperative pain management and opioid stewardship"
+          }
+        },
+        "decision": "exclude",
+        "evidence_level": "abstract",
+        "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/42998968/",
+        "limitations_zh": "仅摘要可用，未提供全文方法、各研究亚组结果或任何算法公平性分析；公平性仅在结论中作为未来需求被提及。",
+        "metadata": {
+          "Attributes": [
+            "Not specified"
+          ],
+          "Domain": [
+            "Physiological signals"
+          ],
+          "Evidence": [
+            "Primary abstract"
+          ],
+          "Focus": [
+            "Evaluation"
+          ],
+          "Stage": [
+            "Not verified"
+          ]
+        },
+        "model": "qoder-cn/dfmodel",
+        "paper_version": "27de4305316a66f5093255592e60813bfab944530d317fb69aa068dc71274ccd",
+        "policy_version": "2-methodology-first",
+        "provider": "qoder-cn-medical-fairness",
+        "reason_zh": "该综述虽明确儿科术后疼痛任务，但未对算法公平性进行具体分析，仅在结论中呼吁公平性评估，属于附带提及，不符合综述纳入条件。",
+        "review_scope": {
+          "detailed_fairness": {
+            "met": false,
+            "quote": ""
+          },
+          "specific_task": {
+            "met": true,
+            "quote": "pediatric postoperative pain management and opioid stewardship"
+          }
+        },
+        "reviewed_on": "2026-11-09",
+        "summary_zh": "系统综述儿童术后疼痛与阿片类药物管理中的AI应用，涵盖自动疼痛评估、风险预测和PCA监测；报告性能差异较大且多为内部验证，缺乏临床影响研究，并指出需外部验证与公平性评估。",
+        "text_truncated": false,
+        "topics": [
+          "EHR, Physiological Signals and Healthcare"
+        ],
+        "warning": ""
+      }
+    ],
+    [
       "p-5c95d2dbcd135df1a0e0",
       "4dfe93c73ff545f434af12b72e8c50a3cbf11e81c038e45842b995611392d575",
       {
@@ -2966,6 +3181,82 @@
         "summary_zh": "对1991–2026年法医科学专门期刊中的人工智能文献进行文献计量与科学图谱分析，纳入1127篇文献，刻画其增长、国家分布与主题结构，并统计外部验证、校准、可采性、对抗安全以及偏见/公平等术语在题录中的出现比例。",
         "text_truncated": false,
         "topics": [],
+        "warning": ""
+      }
+    ],
+    [
+      "p-5e807a99c95186c7bc80",
+      "1236d767f43a579cb15e9d703261dfc46ea7fc803034bfa466c9de6812a83f9c",
+      {
+        "article_type": "evaluation",
+        "criteria": {
+          "algorithm": {
+            "met": true,
+            "quote": "Our study applied 15 AI image generators"
+          },
+          "evaluation": {
+            "met": true,
+            "quote": "resulting in a sample of N = 600 AI outputs generated in Autumn 2025"
+          },
+          "fairness": {
+            "met": true,
+            "quote": "lack of diversity of human representation (RQ3), stereotypical portrayals of women (RQ4)"
+          },
+          "groups": {
+            "met": true,
+            "quote": "lack of diversity in some human attributes (e.g., body type) but not in others (e.g., skin tone"
+          },
+          "medical": {
+            "met": true,
+            "quote": "Public communication about sexual and reproductive health and rights (SRHR)"
+          }
+        },
+        "decision": "hold",
+        "evidence_level": "abstract",
+        "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/42980982/",
+        "limitations_zh": "仅有摘要，无法核查编码方案、统计比较、公平性指标定义与完整结果；研究属健康传播，非临床算法，患者与临床结局证据缺失。",
+        "metadata": {
+          "Attributes": [
+            "Sex and gender",
+            "Skin tone",
+            "Other"
+          ],
+          "Domain": [
+            "Other biomedical"
+          ],
+          "Evidence": [
+            "Primary abstract"
+          ],
+          "Focus": [
+            "Bias mechanisms",
+            "Evaluation"
+          ],
+          "Stage": [
+            "Evaluation"
+          ]
+        },
+        "model": "qoder-cn/dfmodel",
+        "paper_version": "3d9c2ddcd73e44cfa90660d8e649efac20cb692943147723d7b685a8a37b06a2",
+        "policy_version": "2-methodology-first",
+        "provider": "qoder-cn-medical-fairness",
+        "reason_zh": "摘要显示其为健康传播场景的生成图像公平性审计，含多样性与刻板印象测量，但仅有摘要，无法确认是否满足医学算法公平范围及详细方法，故暂缓。",
+        "review_scope": {
+          "detailed_fairness": {
+            "met": false,
+            "quote": ""
+          },
+          "specific_task": {
+            "met": false,
+            "quote": ""
+          }
+        },
+        "reviewed_on": "2026-11-09",
+        "summary_zh": "该研究审计15个AI图像生成器在月经健康传播中的输出，人工编码600张图像，考察生成失败、视觉缺陷、人物多样性、女性刻板印象、符号使用与情感倾向。",
+        "text_truncated": false,
+        "topics": [
+          "Fairness Evaluation and Benchmarking",
+          "Bias Mechanisms and Measurement"
+        ],
         "warning": ""
       }
     ],
@@ -3633,6 +3924,154 @@
         "text_truncated": false,
         "topics": [
           "Bias Mechanisms and Measurement"
+        ],
+        "warning": ""
+      }
+    ],
+    [
+      "p-b0cb7b51a7ac9f9fa2a2",
+      "1f1554c6e4c67d7c09508a1f44348764d63179f54e7feb1fb11ffedf23a8cc79",
+      {
+        "article_type": "review",
+        "criteria": {
+          "algorithm": {
+            "met": true,
+            "quote": "generative artificial intelligence systems lack consciousness yet can produce biased or inaccurate outputs"
+          },
+          "evaluation": {
+            "met": false,
+            "quote": ""
+          },
+          "fairness": {
+            "met": true,
+            "quote": "including algorithmic bias, hallucination, and false information"
+          },
+          "groups": {
+            "met": false,
+            "quote": ""
+          },
+          "medical": {
+            "met": false,
+            "quote": ""
+          }
+        },
+        "decision": "exclude",
+        "evidence_level": "abstract",
+        "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/42998514/",
+        "limitations_zh": "仅有摘要；属概念分析/综述，未聚焦具体疾病或临床任务，未给出明确受保护群体、亚组指标或实证公平性评估；无法核验全文细节。",
+        "metadata": {
+          "Attributes": [
+            "Not specified"
+          ],
+          "Domain": [
+            "Other biomedical"
+          ],
+          "Evidence": [
+            "Primary abstract"
+          ],
+          "Focus": [
+            "Bias mechanisms",
+            "Theory and measurement"
+          ],
+          "Stage": [
+            "Not applicable"
+          ]
+        },
+        "model": "qoder-cn/dfmodel",
+        "paper_version": "c7b9e49df5a5ffc8b80abaaa08bd9ed20656b0de85ae08ef53c4cc469c71b4aa",
+        "policy_version": "2-methodology-first",
+        "provider": "qoder-cn-medical-fairness",
+        "reason_zh": "综述/概念分析仅在健康职业教育语境讨论AI偏见与失礼行为，未指明具体医学疾病或任务，也未提供该场景的详细公平性分析（亚组指标、机制评估或缓解比较）；且无定义群体与实证测量，故排除。",
+        "review_scope": {
+          "detailed_fairness": {
+            "met": false,
+            "quote": ""
+          },
+          "specific_task": {
+            "met": false,
+            "quote": ""
+          }
+        },
+        "reviewed_on": "2026-11-09",
+        "summary_zh": "该文为Rodgers演化概念分析，基于32项研究提出“AI介导的失礼行为”概念，涉及算法偏见、幻觉、表征偏差与刻板印象，讨论健康职业教育中生成式AI的伦理与课程治理。",
+        "text_truncated": false,
+        "topics": [
+          "Bias Mechanisms and Measurement"
+        ],
+        "warning": ""
+      }
+    ],
+    [
+      "p-b130f0cb3376203a6985",
+      "3ebcd4e6a8436133daebc8ac243d459877a687a9843e736d9475cf755a1cd9e7",
+      {
+        "article_type": "methodology",
+        "criteria": {
+          "algorithm": {
+            "met": true,
+            "quote": "develop and internally validate sex-equitable machine learning (ML) models"
+          },
+          "evaluation": {
+            "met": true,
+            "quote": "equalized-odds gap of 0.384 that was reduced by 57%"
+          },
+          "fairness": {
+            "met": true,
+            "quote": "audit sex-stratified model performance"
+          },
+          "groups": {
+            "met": true,
+            "quote": "50 male, 50 female"
+          },
+          "medical": {
+            "met": true,
+            "quote": "predicting 2-year ankle reinjury in individuals with CAI"
+          }
+        },
+        "decision": "hold",
+        "evidence_level": "abstract",
+        "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/42998122/",
+        "limitations_zh": "仅有摘要，无法核查全文方法、样本偏倚、阈值选择与公平性审计细节；作者亦指出需外部验证。",
+        "metadata": {
+          "Attributes": [
+            "Sex and gender"
+          ],
+          "Domain": [
+            "Other biomedical"
+          ],
+          "Evidence": [
+            "Primary abstract"
+          ],
+          "Focus": [
+            "Evaluation",
+            "Mitigation"
+          ],
+          "Stage": [
+            "Post-processing"
+          ]
+        },
+        "model": "qoder-cn/dfmodel",
+        "paper_version": "f806e804284bf2da64de2c9f8b7990a593aeb91568e903d8ce7b47bb7cfab15e",
+        "policy_version": "2-methodology-first",
+        "provider": "qoder-cn-medical-fairness",
+        "reason_zh": "摘要显示其满足医学任务、算法评估、性别公平问题、分组定义及经验性公平审计五项标准；但证据级别仅为摘要，按规则不能建议纳入，暂置hold待全文核查。",
+        "review_scope": {
+          "detailed_fairness": {
+            "met": false,
+            "quote": ""
+          },
+          "specific_task": {
+            "met": false,
+            "quote": ""
+          }
+        },
+        "reviewed_on": "2026-11-09",
+        "summary_zh": "该研究开发并内部验证预测慢性踝关节不稳者2年再损伤的机器学习模型，开展性别公平性审计，比较全局与性别特异性Youden阈值，报告等化赔率差距由0.384降至0.164，但差异影响比仍为0.683。",
+        "text_truncated": false,
+        "topics": [
+          "Fairness Evaluation and Benchmarking",
+          "Post-processing Mitigation",
+          "EHR, Physiological Signals and Healthcare"
         ],
         "warning": ""
       }
@@ -4647,16 +5086,17 @@
     ],
     [
       "p-fafce843d0071edb38ce",
-      "cf076947dc090cd27a76fa00b64d35c66009cf7080f9a05bc279d10408a3d117",
+      "bb3549feea8565fbe6db10d49837856de69dd7d501ce66a6c444003ea7f37148",
       {
+        "article_type": "other",
         "criteria": {
           "algorithm": {
-            "met": false,
-            "quote": ""
+            "met": true,
+            "quote": "doctors supported by AI-based risk predictions"
           },
           "evaluation": {
-            "met": true,
-            "quote": "Participants rated their likelihood of taking recommended clinical actions (behavioral intentions) across 6 clinical scenarios"
+            "met": false,
+            "quote": ""
           },
           "fairness": {
             "met": false,
@@ -4664,43 +5104,53 @@
           },
           "groups": {
             "met": true,
-            "quote": "We also evaluate how sociodemographic characteristics affect these perceptions"
+            "quote": "how sociodemographic characteristics affect these perceptions"
           },
           "medical": {
             "met": true,
-            "quote": "AI is increasingly being implemented as a form of clinical decision support (CDS)"
+            "quote": "likelihood of taking recommended clinical actions (behavioral intentions) across 6 clinical scenarios"
           }
         },
-        "decision": "related",
+        "decision": "exclude",
         "evidence_level": "abstract",
         "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/42970578/",
-        "limitations_zh": "仅有摘要；未报告受保护属性分层的模型性能或任何公平性度量；“公平”仅作为定性反馈主题出现，无法核实全文的方法、数据与亚组结果。",
+        "limitations_zh": "仅有摘要；研究测量患者对AI决策支持的态度与信任，未评估算法本身的公平性，缺少亚组性能指标、偏倚机制或缓解方法对比，公平仅作为质性主题出现。",
         "metadata": {
           "Attributes": [
-            "Not specified"
+            "Socioeconomic status"
           ],
           "Domain": [
-            "Healthcare operations"
+            "EHR and clinical prediction"
           ],
           "Evidence": [
             "Primary abstract"
           ],
           "Focus": [
-            "Theory and measurement"
+            "Evaluation"
           ],
           "Stage": [
             "Not applicable"
           ]
         },
         "model": "qoder-cn/dfmodel",
+        "paper_version": "5b97bb680ffe5eaab16f1fd2ac53cdd9c96fcd11da2847b3a3ef70965530de68",
+        "policy_version": "2-methodology-first",
         "provider": "qoder-cn-medical-fairness",
-        "reason_zh": "该研究调查患者对AI临床决策支持的态度与部分社会人口学差异，属患者认知层面研究；缺少明确的算法公平性、偏倚编码或缓解问题，也未实施公平性测量，故判为相关而非纳入。",
-        "reviewed_on": "2026-11-04",
-        "summary_zh": "摘要报告一项美国1185名成人的横断面调查，比较医生单独、医生加风险计算器、医生加AI风险预测三种推荐来源下患者的行动意愿、信任与偏好，并考察社会人口学特征的影响。研究未针对模型开展算法公平性评估。",
+        "reason_zh": "摘要显示为患者态度调查：虽涉及临床场景、AI风险预测及社会人口学差异，但未提出或测量算法公平性问题，无亚组性能或偏倚评估，公平仅作为质性反馈主题之一，不属于医学算法公平研究。",
+        "review_scope": {
+          "detailed_fairness": {
+            "met": false,
+            "quote": ""
+          },
+          "specific_task": {
+            "met": false,
+            "quote": ""
+          }
+        },
+        "reviewed_on": "2026-11-09",
+        "summary_zh": "该研究为横断面问卷（1185名美国成年人），比较医生单独、医生+风险计算器、医生+AI风险预测三种决策支持来源下患者的行动意向与信任，并分析社会人口学特征的差异，发现患者对AI支持工具的信任低于传统工具。",
         "text_truncated": false,
-        "topics": [
-          "EHR, Physiological Signals and Healthcare"
-        ],
+        "topics": [],
         "warning": ""
       }
     ],
@@ -4767,15 +5217,46 @@
     ]
   ],
   "checkpoints": {
-    "arxiv:42b91404506f": "2026-11-08",
-    "arxiv:4744eb3faccd": "2026-11-08",
-    "europepmc:249ba7c65421": "2026-11-08",
-    "europepmc:b614de0bf8b6": "2026-11-08",
-    "pubmed:29bd77c2182f": "2026-11-08",
-    "pubmed:d4312ff2e61d": "2026-11-08"
+    "arxiv:42b91404506f": "2026-11-09",
+    "arxiv:4744eb3faccd": "2026-11-09",
+    "europepmc:249ba7c65421": "2026-11-09",
+    "europepmc:b614de0bf8b6": "2026-11-09",
+    "pubmed:29bd77c2182f": "2026-11-09",
+    "pubmed:d4312ff2e61d": "2026-11-09"
   },
   "format_version": 1,
   "papers": [
+    {
+      "abstract_hash": "fc9deef2bdfdad71908dfadc81dbf5109d5c9deb5ab7afac08295e5eff1fb49b",
+      "abstract_source": "pubmed",
+      "abstract_updated": "2026-11-06",
+      "arxiv_id": "",
+      "authors": [
+        "Bree Jones",
+        "Andrew Gikas",
+        "Tami Yap",
+        "Rishi Ramani"
+      ],
+      "doi": "10.1111/adj.70086",
+      "first_seen": "2026-11-09",
+      "id": "p-04e0b05b25ec362e22ad",
+      "is_open_access": false,
+      "last_changed": "2026-11-09",
+      "pmcid": "",
+      "pmid": "42995404",
+      "published": "2026-11-06",
+      "seeded": false,
+      "source": "pubmed",
+      "source_id": "42995404",
+      "sources": [
+        "pubmed"
+      ],
+      "title": "Digital Scribes in Dentistry: Opportunities, Risks and Practical Considerations.",
+      "updated": "2026-11-06",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42995404/",
+      "version": "",
+      "year": "2026"
+    },
     {
       "abstract_hash": "",
       "arxiv_id": "",
@@ -6027,7 +6508,7 @@
       "first_seen": "2026-11-04",
       "id": "p-3e7581d5cf989529b639",
       "is_open_access": false,
-      "last_changed": "2026-11-08",
+      "last_changed": "2026-11-09",
       "pmcid": "",
       "pmid": "42906928",
       "published": "2026-11-01",
@@ -6518,6 +6999,34 @@
       "title": "Responsible Credit-Line Increase: A Fairness-Aware, Explainable, and Governed Machine-Learning Framework for Socio-Technical Lending Systems",
       "updated": "2026-10-31",
       "url": "https://europepmc.org/article/PPR/PPR1353923",
+      "version": "",
+      "year": "2026"
+    },
+    {
+      "abstract_hash": "3bc3729bf594a20a5911e760fbc58d08de92186509d3339c0785066f0b9c711e",
+      "abstract_source": "pubmed",
+      "abstract_updated": "2026-11-07",
+      "arxiv_id": "",
+      "authors": [
+        "Atefeh Shamsi"
+      ],
+      "doi": "10.1016/j.pmn.2026.10.003",
+      "first_seen": "2026-11-09",
+      "id": "p-5a21404654990f140f62",
+      "is_open_access": false,
+      "last_changed": "2026-11-09",
+      "pmcid": "",
+      "pmid": "42998968",
+      "published": "2026-11-07",
+      "seeded": false,
+      "source": "pubmed",
+      "source_id": "42998968",
+      "sources": [
+        "pubmed"
+      ],
+      "title": "AI for Postoperative Pain and Opioid Stewardship in Pediatric Surgery: A Systematic Review.",
+      "updated": "2026-11-07",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42998968/",
       "version": "",
       "year": "2026"
     },
@@ -7718,6 +8227,71 @@
       "url": "https://doi.org/10.1007/978-3-030-87199-4_39",
       "version": "",
       "year": "2021"
+    },
+    {
+      "abstract_hash": "3435e0d923f378adcc1ff3fbf8c743ea089e6919b46e7b2eeaa4d5b942f896bb",
+      "abstract_source": "pubmed",
+      "abstract_updated": "2026-11-07",
+      "arxiv_id": "",
+      "authors": [
+        "Jennie C De Gagne",
+        "Paige S Randall",
+        "Hee Sun Kang"
+      ],
+      "doi": "10.1016/j.ijnurstu.2026.105744",
+      "first_seen": "2026-11-09",
+      "id": "p-b0cb7b51a7ac9f9fa2a2",
+      "is_open_access": false,
+      "last_changed": "2026-11-09",
+      "pmcid": "",
+      "pmid": "42998514",
+      "published": "2026-11-03",
+      "seeded": false,
+      "source": "pubmed",
+      "source_id": "42998514",
+      "sources": [
+        "pubmed"
+      ],
+      "title": "Artificial intelligence-mediated cyberincivility in health professions education: An evolutionary concept analysis.",
+      "updated": "2026-11-07",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42998514/",
+      "version": "",
+      "year": "2026"
+    },
+    {
+      "abstract_hash": "db00b4bdf9a7078fe4f368419d4a51441f41cc348223b758bbde7f634859914a",
+      "abstract_source": "pubmed",
+      "abstract_updated": "2026-11-07",
+      "arxiv_id": "",
+      "authors": [
+        "Ui-Jae Hwang",
+        "S Jun Son",
+        "Siu-Ngor Fu",
+        "Arnold Y L Wong",
+        "Dustin Bruening",
+        "Brent Feland",
+        "Matthew Seeley",
+        "J Ty Hopkins"
+      ],
+      "doi": "10.1186/s40798-026-01137-3",
+      "first_seen": "2026-11-09",
+      "id": "p-b130f0cb3376203a6985",
+      "is_open_access": false,
+      "last_changed": "2026-11-09",
+      "pmcid": "6602402",
+      "pmid": "42998122",
+      "published": "2026-11-07",
+      "seeded": false,
+      "source": "pubmed",
+      "source_id": "42998122",
+      "sources": [
+        "pubmed"
+      ],
+      "title": "Sex-Equitable Machine Learning Prediction of Ankle Reinjury in Individuals with Chronic Ankle Instability: A 2-Year Prospective Cohort Study with Fairness Audit.",
+      "updated": "2026-11-07",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42998122/",
+      "version": "",
+      "year": "2026"
     },
     {
       "abstract_hash": "",
@@ -9312,7 +9886,7 @@
     {
       "abstract_hash": "45674dbd19d968cecc3f382fc18cddec4181ad9f0094885cd664fdd841304cc8",
       "abstract_source": "pubmed",
-      "abstract_updated": "2026-11-02",
+      "abstract_updated": "2026-11-08",
       "arxiv_id": "",
       "authors": [
         "Sippo Rossi",
@@ -9328,8 +9902,8 @@
       "first_seen": "2026-11-04",
       "id": "p-fafce843d0071edb38ce",
       "is_open_access": false,
-      "last_changed": "2026-11-04",
-      "pmcid": "",
+      "last_changed": "2026-11-09",
+      "pmcid": "PMC13741335",
       "pmid": "42970578",
       "published": "2026-11-02",
       "seeded": false,
@@ -9339,7 +9913,7 @@
         "pubmed"
       ],
       "title": "Investigating Patient Trust and Intention to Act in AI-Supported Clinical Decisions: Cross-Sectional Survey.",
-      "updated": "2026-11-02",
+      "updated": "2026-11-08",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42970578/",
       "version": "",
       "year": "2026"
