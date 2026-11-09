@@ -13,6 +13,7 @@ class ScreeningPolicyTests(unittest.TestCase):
         p={'id':'p-abc','title':'A clinical AI review','abstract_hash':'unchanged','updated':'2026-11-03'}
         ledger={'p-abc':{'decision':'reject','content_version':content_version(p)}}
         self.assertEqual(current_human_decision({**p,'updated':'2026-11-08'},ledger)['decision'],'reject')
+        self.assertEqual(current_human_decision({**p,'pmcid':'PMC12345','doi':'10.1000/newidentifier'},ledger)['decision'],'reject')
         self.assertEqual(current_human_decision({**p,'abstract_hash':'new content'},ledger),{})
 
     def test_cataloged_work_is_not_sent_for_model_review_again(self):

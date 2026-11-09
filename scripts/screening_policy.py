@@ -24,7 +24,7 @@ def current_human_decision(paper, ledger):
 
 def content_version(paper):
     """Database refresh timestamps alone do not invalidate human decisions."""
-    fields={k:paper.get(k,'') for k in ('title','abstract_hash','version','doi','pmcid')}
+    fields={k:paper.get(k,'') for k in ('title','abstract_hash','version')}
     return hashlib.sha256(json.dumps(fields,sort_keys=True).encode()).hexdigest()
 
 

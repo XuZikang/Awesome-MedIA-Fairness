@@ -41,33 +41,6 @@
 
 模型建议：待分析／原分析已过期
 
-## p-3e7581d5cf989529b639
-
-文章：[Governing artificial intelligence in Australian healthcare organisations - a qualitative study of staff perspectives.](https://europepmc.org/article/MED/42906928)
-
-审核决定：待审核
-审核备注：
-证据版本：712f86a4ac45498c3280f30ecc73dde295909861285a3822999496bee18bd9d7
-
-模型建议：exclude
-
-中文概述：该定性研究访谈澳大利亚一家医疗服务机构的23名员工，归纳AI治理的五个组织层面领域：风险评估、基础设施与数据、伦理、能力与文化、治理结构，并强调生命周期监督、数据治理、同意、公平与透明度。
-
-纳入判断：摘要为员工对AI治理的定性访谈，仅泛泛提及公平和透明度，未针对具体疾病或临床任务、特定算法、敏感群体或公平性测量开展分析；属于一般治理与伦理讨论，按规则排除。
-
-限制：仅有摘要；研究未评估具体医疗算法、敏感群体或公平性指标，公平仅作为治理原则被附带提及，缺少算法公平性的实证或测量证据。
-
-建议分类：Not applicable
-
-证据：
-- algorithm：
-- evaluation：
-- fairness：
-- groups：
-- medical：
-
-[分析原文](https://europepmc.org/article/MED/42906928)
-
 ## p-5a21404654990f140f62
 
 文章：[AI for Postoperative Pain and Opioid Stewardship in Pediatric Surgery: A Systematic Review.](https://pubmed.ncbi.nlm.nih.gov/42998968/)
@@ -175,30 +148,3 @@
 - medical：predicting 2-year ankle reinjury in individuals with CAI
 
 [分析原文](https://pubmed.ncbi.nlm.nih.gov/42998122/)
-
-## p-fafce843d0071edb38ce
-
-文章：[Investigating Patient Trust and Intention to Act in AI-Supported Clinical Decisions: Cross-Sectional Survey.](https://pubmed.ncbi.nlm.nih.gov/42970578/)
-
-审核决定：待审核
-审核备注：
-证据版本：bb3549feea8565fbe6db10d49837856de69dd7d501ce66a6c444003ea7f37148
-
-模型建议：exclude
-
-中文概述：该研究为横断面问卷（1185名美国成年人），比较医生单独、医生+风险计算器、医生+AI风险预测三种决策支持来源下患者的行动意向与信任，并分析社会人口学特征的差异，发现患者对AI支持工具的信任低于传统工具。
-
-纳入判断：摘要显示为患者态度调查：虽涉及临床场景、AI风险预测及社会人口学差异，但未提出或测量算法公平性问题，无亚组性能或偏倚评估，公平仅作为质性反馈主题之一，不属于医学算法公平研究。
-
-限制：仅有摘要；研究测量患者对AI决策支持的态度与信任，未评估算法本身的公平性，缺少亚组性能指标、偏倚机制或缓解方法对比，公平仅作为质性主题出现。
-
-建议分类：Not applicable
-
-证据：
-- algorithm：doctors supported by AI-based risk predictions
-- evaluation：
-- fairness：
-- groups：how sociodemographic characteristics affect these perceptions
-- medical：likelihood of taking recommended clinical actions (behavioral intentions) across 6 clinical scenarios
-
-[分析原文](https://pubmed.ncbi.nlm.nih.gov/42970578/)

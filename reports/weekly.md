@@ -4,10 +4,10 @@
 
 ## Bias Mechanisms and Measurement
 
-- [Artificial intelligence-mediated cyberincivility in health professions education: An evolutionary concept analysis.](https://pubmed.ncbi.nlm.nih.gov/42998514/) · 机器建议排除，待抽查 · `p-b0cb7b51a7ac9f9fa2a2`
-  该文为Rodgers演化概念分析，基于32项研究提出“AI介导的失礼行为”概念，涉及算法偏见、幻觉、表征偏差与刻板印象，讨论健康职业教育中生成式AI的伦理与课程治理。
 - [Visual Sexual Health Communication Assisted by AI: The Case of Synthetic Menstruation Images.](https://pubmed.ncbi.nlm.nih.gov/42980982/) · 待核验 · `p-5e807a99c95186c7bc80`
   该研究审计15个AI图像生成器在月经健康传播中的输出，人工编码600张图像，考察生成失败、视觉缺陷、人物多样性、女性刻板印象、符号使用与情感倾向。
+- [Artificial intelligence-mediated cyberincivility in health professions education: An evolutionary concept analysis.](https://pubmed.ncbi.nlm.nih.gov/42998514/) · 机器建议排除，待抽查 · `p-b0cb7b51a7ac9f9fa2a2`
+  该文为Rodgers演化概念分析，基于32项研究提出“AI介导的失礼行为”概念，涉及算法偏见、幻觉、表征偏差与刻板印象，讨论健康职业教育中生成式AI的伦理与课程治理。
 
 ## Clinical NLP and Foundation Models
 
@@ -33,10 +33,3 @@
 
 - [Sex-Equitable Machine Learning Prediction of Ankle Reinjury in Individuals with Chronic Ankle Instability: A 2-Year Prospective Cohort Study with Fairness Audit.](https://pubmed.ncbi.nlm.nih.gov/42998122/) · 待核验 · `p-b130f0cb3376203a6985`
   该研究开发并内部验证预测慢性踝关节不稳者2年再损伤的机器学习模型，开展性别公平性审计，比较全局与性别特异性Youden阈值，报告等化赔率差距由0.384降至0.164，但差异影响比仍为0.683。
-
-## 待分类
-
-- [Investigating Patient Trust and Intention to Act in AI-Supported Clinical Decisions: Cross-Sectional Survey.](https://pubmed.ncbi.nlm.nih.gov/42970578/) · 机器建议排除，待抽查 · `p-fafce843d0071edb38ce`
-  该研究为横断面问卷（1185名美国成年人），比较医生单独、医生+风险计算器、医生+AI风险预测三种决策支持来源下患者的行动意向与信任，并分析社会人口学特征的差异，发现患者对AI支持工具的信任低于传统工具。
-- [Governing artificial intelligence in Australian healthcare organisations - a qualitative study of staff perspectives.](https://europepmc.org/article/MED/42906928) · 机器建议排除，待抽查 · `p-3e7581d5cf989529b639`
-  该定性研究访谈澳大利亚一家医疗服务机构的23名员工，归纳AI治理的五个组织层面领域：风险评估、基础设施与数据、伦理、能力与文化、治理结构，并强调生命周期监督、数据治理、同意、公平与透明度。

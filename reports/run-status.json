@@ -1,13 +1,13 @@
 {
   "analysis": {
-    "available_reviews": 7,
+    "available_reviews": 5,
     "failures": 0,
     "mode": "model",
     "pending": 1,
     "reviewed": 7
   },
-  "candidates": 8,
-  "changed_today": 7,
+  "candidates": 6,
+  "changed_today": 5,
   "date": "2026-11-09",
   "sources": [
     {
