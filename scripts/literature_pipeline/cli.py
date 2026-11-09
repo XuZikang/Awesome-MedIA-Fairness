@@ -173,7 +173,7 @@ def seed_catalog(db, path, day):
         ingest(db, paper, day, seeded=True)
 
 
-def review_pending(db, day, limit, full_text, decisions=None):
+def review_pending(db, day, limit, full_text, decisions=None, catalog_records=None):
     endpoint = os.environ.get("LITERATURE_LLM_ENDPOINT", "")
     model = os.environ.get("LITERATURE_LLM_MODEL", "")
     key = os.environ.get("LITERATURE_LLM_API_KEY", "")
@@ -190,6 +190,9 @@ def review_pending(db, day, limit, full_text, decisions=None):
     count = failures = 0
     for paper in papers:
         if paper.get("seeded") or not paper.get("abstract"):
+            continue
+        from scripts.publish_catalog import same_record
+        if any(same_record(paper,record) for record in (catalog_records or [])):
             continue
         from scripts.screening_policy import current_human_decision
         if current_human_decision(paper,decisions or {}).get('decision') in {'reject','approve'}:
@@ -393,10 +396,10 @@ def main(argv=None):
                     print(f"  {status.get('records', 0)} records; complete={status['complete']}" + (f"; {status['error']}" if status.get("error") else ""), flush=True)
         ledger_file=args.catalog.parent/'data/curation-decisions.json'
         decisions=json.loads(ledger_file.read_text()) if ledger_file.exists() else {}
-        review_status = {"mode": "metadata_only", "reviewed": 0, "failures": 0} if args.metadata_only else review_pending(db, day, limit, not args.no_full_text, decisions)
-        export_state(db, args.state)
         catalog_data=args.catalog.parent/'data/catalog.json'
         records=json.loads(catalog_data.read_text()) if catalog_data.exists() else []
+        review_status = {"mode": "metadata_only", "reviewed": 0, "failures": 0} if args.metadata_only else review_pending(db, day, limit, not args.no_full_text, decisions, records)
+        export_state(db, args.state)
         candidates, changed = render(db, args.output, day, statuses, review_status, decisions, records)
         publication = {"added": 0, "failures": 0}
         if args.publish_root:

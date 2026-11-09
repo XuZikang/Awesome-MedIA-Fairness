@@ -2,12 +2,32 @@ import json
 import tempfile
 import unittest
 from pathlib import Path
-from scripts.screening_policy import paper_version,current_human_decision
+from unittest.mock import patch
+from scripts.screening_policy import paper_version,content_version,current_human_decision
 from scripts.literature_pipeline.analysis import route,validate_review
 from scripts.review_workflow import read_decisions,import_human_decisions
 from tests.test_literature_pipeline import analysis
 
 class ScreeningPolicyTests(unittest.TestCase):
+    def test_metadata_refresh_does_not_reopen_human_rejection(self):
+        p={'id':'p-abc','title':'A clinical AI review','abstract_hash':'unchanged','updated':'2026-11-03'}
+        ledger={'p-abc':{'decision':'reject','content_version':content_version(p)}}
+        self.assertEqual(current_human_decision({**p,'updated':'2026-11-08'},ledger)['decision'],'reject')
+        self.assertEqual(current_human_decision({**p,'abstract_hash':'new content'},ledger),{})
+
+    def test_cataloged_work_is_not_sent_for_model_review_again(self):
+        from scripts.literature_pipeline.cli import connect,ingest,review_pending
+        from tests.test_literature_pipeline import record
+        with tempfile.TemporaryDirectory() as d:
+            db=connect(Path(d)/'state.sqlite3')
+            try:
+                ingest(db,record(),'2026-11-09')
+                catalog=[{'title':'Publisher title variant','arxiv_id':record()['arxiv_id']}]
+                with patch.dict('os.environ',{'LITERATURE_LLM_ENDPOINT':'http://127.0.0.1:3425/v1/chat/completions','LITERATURE_LLM_MODEL':'qoder-cn/dfmodel'}),patch('scripts.literature_pipeline.cli.review') as model:
+                    self.assertEqual(review_pending(db,'2026-11-09',10,True,catalog_records=catalog)['reviewed'],0)
+                    model.assert_not_called()
+            finally:db.close()
+
     def test_original_methods_rank_above_reviews(self):
         method={'title':'A novel fairness calibration algorithm for clinical prediction','abstract':'We propose a subgroup fairness metric and mitigation method.'}
         review={'title':'A review of fairness calibration in clinical prediction','abstract':'This review discusses a subgroup fairness metric and mitigation method.'}

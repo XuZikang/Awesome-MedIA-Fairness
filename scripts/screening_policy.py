@@ -17,7 +17,15 @@ def paper_version(paper):
 
 def current_human_decision(paper, ledger):
     value=ledger.get(paper.get('id'),{})
+    if value.get('content_version'):
+        return value if value['content_version']==content_version(paper) else {}
     return value if value.get('paper_version')==paper_version(paper) else {}
+
+
+def content_version(paper):
+    """Database refresh timestamps alone do not invalidate human decisions."""
+    fields={k:paper.get(k,'') for k in ('title','abstract_hash','version','doi','pmcid')}
+    return hashlib.sha256(json.dumps(fields,sort_keys=True).encode()).hexdigest()
 
 
 def priority_adjustment(paper):

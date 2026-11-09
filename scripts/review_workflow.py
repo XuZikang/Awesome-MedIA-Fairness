@@ -5,7 +5,7 @@ import re
 import hashlib
 from pathlib import Path
 from scripts.literature_pipeline.analysis import review_fingerprint
-from scripts.screening_policy import paper_version, current_human_decision
+from scripts.screening_policy import paper_version, content_version, current_human_decision
 
 DECISIONS = {'待审核':'pending','通过':'approve','纳入':'approve','排除':'reject','暂缓':'hold',
              'pending':'pending','approve':'approve','reject':'reject','hold':'hold'}
@@ -43,7 +43,7 @@ def import_human_decisions(review_file, state_file, ledger_file):
         if decision['decision']!='pending' and pid in analyses and decision['fingerprint']!=analyses[pid]:
             raise ValueError('Human decision refers to a different analysis version: '+pid)
     for pid,decision in decisions.items():
-        ledger[pid]={**decision,'paper_version':paper_version(papers[pid]),'title':papers[pid]['title'],
+        ledger[pid]={**decision,'paper_version':paper_version(papers[pid]),'content_version':content_version(papers[pid]),'title':papers[pid]['title'],
                      'source_review_sha256':source_hash}
     ledger_path.write_text(json.dumps(ledger,ensure_ascii=False,indent=2)+'\n')
     return ledger
