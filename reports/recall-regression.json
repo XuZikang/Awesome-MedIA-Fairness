@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "id": "10.1038/s41467-020-19784-9",
+      "title": "Training confounder-free deep learning models for medical applications",
+      "matched_groups": [
+        "bias-mechanisms"
+      ],
+      "passed": true
+    },
+    {
+      "id": "2610.32362",
+      "title": "Detection and Validation of Hidden Subgroup Disparities in Clinical AI",
+      "matched_groups": [
+        "fairness-in-abstract",
+        "bias-mechanisms"
+      ],
+      "passed": true
+    },
+    {
+      "id": "2610.22618",
+      "title": "Trajectory-Guided Steering: Mitigating Spurious Feature Bias in Clinical Classification",
+      "matched_groups": [
+        "bias-mechanisms"
+      ],
+      "passed": true
+    },
+    {
+      "id": "2311.02189",
+      "title": "FairSeg: A Large-Scale Medical Image Segmentation Dataset for Fairness Learning Using Segment Anything Model with Fair Error-Bound Scaling",
+      "matched_groups": [
+        "fairness-in-abstract"
+      ],
+      "passed": true
+    },
+    {
+      "id": "2306.09264",
+      "title": "Harvard Glaucoma Fairness: A Retinal Nerve Disease Dataset for Fairness Learning and Fair Identity Normalization",
+      "matched_groups": [
+        "fairness-in-abstract"
+      ],
+      "passed": true
+    },
+    {
+      "id": "10.1007/s11548-026-03805-x",
+      "title": "Improving the fairness and robustness of deep learning classification models through bias mitigation and post hoc calibration.",
+      "matched_groups": [
+        "fairness-in-abstract",
+        "bias-mechanisms"
+      ],
+      "passed": true
+    },
+    {
+      "id": "negative-nonmedical",
+      "title": "Fairness in mortgage approval",
+      "matched_groups": [],
+      "passed": true
+    },
+    {
+      "id": "negative-no-fairness",
+      "title": "Clinical image compression",
+      "matched_groups": [],
+      "passed": true
+    }
+  ],
+  "basis": "Public human-approved catalog annotations, not verbatim complete paper abstracts; local lexical regression only.",
+  "limitation": "Local query-vocabulary regression; not proof of API/index completeness or final relevance."
+}

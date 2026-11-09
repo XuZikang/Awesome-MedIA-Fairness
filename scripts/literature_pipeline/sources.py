@@ -179,10 +179,11 @@ def _tag(node: ET.Element) -> str:
 
 
 def _children(node: ET.Element, name: str) -> list[ET.Element]:
-    return [child for child in node.iter() if _tag(child) == name]
+    return [child for child in node.iter() if _tag(child) == name] if node is not None else []
 
 
 def _first(node: ET.Element, *names: str) -> ET.Element | None:
+    if node is None:return None
     for name in names:
         for child in node.iter():
             if _tag(child) == name:
@@ -228,6 +229,8 @@ def _parse_arxiv(payload: bytes) -> tuple[list[dict[str, Any]], int]:
                 year=_year(published),
                 doi=_text(_first(entry, "doi")),
                 arxiv_id=identifier,
+                journal_ref=_text(_first(entry,"journal_ref")),
+                publication_kind="preprint",
                 url=f"https://arxiv.org/abs/{identifier}",
                 source="arxiv",
                 source_id=identifier,
@@ -297,6 +300,9 @@ def _parse_europepmc(payload: bytes) -> tuple[list[dict[str, Any]], int, str]:
                 source_id=source_id,
                 is_open_access=oa,
                 publication_types=[_text(node) for node in _children(result,'pubType') if _text(node)],
+                journal_title=_text(_first(_first(result,'journalInfo'), 'title')) if _first(result,'journalInfo') is not None else '',
+                journal_issns=[_text(node) for node in _children(result,'issn')+_children(result,'essn') if _text(node)],
+                publication_kind='preprint' if source_name=='PPR' else 'journal-article',
             )
         )
     total_node = _first(root, "hitCount")
@@ -452,6 +458,9 @@ def _parse_pubmed(payload: bytes) -> list[dict[str, Any]]:
             _record(
                 title=title,
                 abstract=" ".join(part for part in abstract_parts if part),
+                journal_title=_text(_first(_first(article_meta,"Journal"),"Title")),
+                journal_issns=[_text(n) for n in _children(_first(article_meta,"Journal"),"ISSN")] if _first(article_meta,"Journal") is not None else [],
+                publication_kind="journal-article",
                 authors=authors,
                 published=published,
                 updated=updated,
@@ -577,3 +586,13 @@ def fetch_source(
 
 
 __all__ = ["SourceError", "fetch_source", "USER_AGENT"]
+
+
+def fetch_arxiv_identities(ids, timeout=25):
+    """Refresh explicit DOI/journal-reference metadata by known ID, not title search."""
+    if any(not re.fullmatch(r"(?:\d{4}\.\d{4,5}|[a-z-]+/\d{7})",i) for i in ids):
+        raise ValueError("Invalid arXiv identity")
+    url="https://export.arxiv.org/api/query?"+urllib.parse.urlencode({"id_list":",".join(ids),"max_results":len(ids)})
+    records,total=_parse_arxiv(_request(url,"arxiv",timeout))
+    if {p["arxiv_id"] for p in records}!=set(ids):raise SourceError("arXiv identity response incomplete")
+    return records

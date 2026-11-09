@@ -1,124 +1,110 @@
 {
   "analysis": {
     "available_reviews": 0,
-    "failures": 8,
+    "failures": 1,
     "mode": "model",
-    "pending": 29,
+    "pending": 39,
+    "provider_status": "unavailable",
     "reviewed": 0
   },
-  "candidates": 29,
-  "changed_today": 28,
+  "candidates": 39,
+  "changed_today": 38,
   "date": "2026-11-09",
+  "human_review": {
+    "automatic_inclusion": false,
+    "catalog_total": 139,
+    "pending": 39
+  },
+  "publication_tracking": {
+    "checked": 5,
+    "failures": 0,
+    "formal_links": 0,
+    "identity_conflicts": 0,
+    "pending_checks": 224
+  },
+  "recall_regression": {
+    "cases": 8,
+    "passed": true
+  },
+  "retrieval_progress": "Complete",
   "sources": [
     {
       "complete": true,
-      "lane": "methodology",
-      "query_id": "4d95054412d0",
-      "records": 11,
-      "since": "2026-10-10",
+      "group": 0,
+      "lane": "recall",
+      "query": "((ti:\"fairness\" OR abs:\"fairness\") OR (ti:\"equity\" OR abs:\"equity\") OR (ti:\"equalized odds\" OR abs:\"equalized odds\") OR (ti:\"equal opportunity\" OR abs:\"equal opportunity\") OR (ti:\"demographic parity\" OR abs:\"demographic parity\") OR (ti:\"subgroup disparities\" OR abs:\"subgroup disparities\") OR (ti:\"subgroup disparity\" OR abs:\"subgroup disparity\") OR (ti:\"racial bias\" OR abs:\"racial bias\") OR (ti:\"gender bias\" OR abs:\"gender bias\") OR (ti:\"sex bias\" OR abs:\"sex bias\") OR (ti:\"skin tone bias\" OR abs:\"skin tone bias\")) AND ((ti:\"medical\" OR abs:\"medical\") OR (ti:\"clinical\" OR abs:\"clinical\") OR (ti:\"healthcare\" OR abs:\"healthcare\") OR (ti:\"patient\" OR abs:\"patient\") OR (ti:\"radiology\" OR abs:\"radiology\") OR (ti:\"dermatology\" OR abs:\"dermatology\") OR (ti:\"ophthalmology\" OR abs:\"ophthalmology\") OR (ti:\"neuroimaging\" OR abs:\"neuroimaging\") OR (ti:\"hospitalization\" OR abs:\"hospitalization\") OR (ti:\"cardiac\" OR abs:\"cardiac\") OR (ti:\"retinal\" OR abs:\"retinal\") OR (ti:\"MRI\" OR abs:\"MRI\") OR (ti:\"CT\" OR abs:\"CT\") OR (ti:\"X-ray\" OR abs:\"X-ray\") OR (ti:\"ECG\" OR abs:\"ECG\") OR (ti:\"EEG\" OR abs:\"EEG\") OR (ti:\"Alzheimer\" OR abs:\"Alzheimer\") OR (ti:\"CheXpert\" OR abs:\"CheXpert\") OR (ti:\"MIMIC-CXR\" OR abs:\"MIMIC-CXR\") OR (ti:\"ADNI\" OR abs:\"ADNI\") OR (ti:\"Harvard-FairSeg\" OR abs:\"Harvard-FairSeg\") OR (ti:\"Harvard-GF\" OR abs:\"Harvard-GF\") OR (ti:\"i2b2\" OR abs:\"i2b2\") OR (ti:\"Fitzpatrick17k\" OR abs:\"Fitzpatrick17k\") OR (ti:\"DDI\" OR abs:\"DDI\") OR (ti:\"All of Us\" OR abs:\"All of Us\")) AND ((ti:\"algorithm\" OR abs:\"algorithm\") OR (ti:\"machine learning\" OR abs:\"machine learning\") OR (ti:\"deep learning\" OR abs:\"deep learning\") OR (ti:\"artificial intelligence\" OR abs:\"artificial intelligence\") OR (ti:\"AI\" OR abs:\"AI\") OR (ti:\"neural network\" OR abs:\"neural network\") OR (ti:\"foundation model\" OR abs:\"foundation model\") OR (ti:\"language model\" OR abs:\"language model\") OR (ti:\"classifier\" OR abs:\"classifier\") OR (ti:\"classification\" OR abs:\"classification\") OR (ti:\"predictive model\" OR abs:\"predictive model\") OR (ti:\"prediction model\" OR abs:\"prediction model\") OR (ti:\"XGBoost\" OR abs:\"XGBoost\") OR (ti:\"representation learning\" OR abs:\"representation learning\") OR (ti:\"CheXpert\" OR abs:\"CheXpert\") OR (ti:\"MIMIC-CXR\" OR abs:\"MIMIC-CXR\") OR (ti:\"ADNI\" OR abs:\"ADNI\") OR (ti:\"Harvard-FairSeg\" OR abs:\"Harvard-FairSeg\") OR (ti:\"Harvard-GF\" OR abs:\"Harvard-GF\") OR (ti:\"i2b2\" OR abs:\"i2b2\") OR (ti:\"Fitzpatrick17k\" OR abs:\"Fitzpatrick17k\") OR (ti:\"DDI\" OR abs:\"DDI\") OR (ti:\"All of Us\" OR abs:\"All of Us\"))",
+      "query_id": "ab649b821460",
+      "records": 4,
+      "since": "2026-11-02",
       "source": "arxiv",
-      "total": 11,
-      "until": "2026-11-09"
+      "total": 4,
+      "until": "2026-11-08"
     },
     {
       "complete": true,
-      "lane": "methodology",
-      "query_id": "1d928560eb85",
-      "records": 8,
-      "since": "2026-10-10",
+      "group": 1,
+      "lane": "recall",
+      "query": "((ti:\"confounder-free\" OR abs:\"confounder-free\") OR (ti:\"confound removal\" OR abs:\"confound removal\") OR (ti:\"confounding\" OR abs:\"confounding\") OR (ti:\"shortcut learning\" OR abs:\"shortcut learning\") OR (ti:\"counterfactual augmentation\" OR abs:\"counterfactual augmentation\") OR (ti:\"bias mitigation\" OR abs:\"bias mitigation\") OR (ti:\"debiasing\" OR abs:\"debiasing\") OR (ti:\"hidden subgroup\" OR abs:\"hidden subgroup\") OR (ti:\"spurious feature bias\" OR abs:\"spurious feature bias\") OR (ti:\"gender-swap inconsistency\" OR abs:\"gender-swap inconsistency\")) AND ((ti:\"medical\" OR abs:\"medical\") OR (ti:\"clinical\" OR abs:\"clinical\") OR (ti:\"healthcare\" OR abs:\"healthcare\") OR (ti:\"patient\" OR abs:\"patient\") OR (ti:\"radiology\" OR abs:\"radiology\") OR (ti:\"dermatology\" OR abs:\"dermatology\") OR (ti:\"ophthalmology\" OR abs:\"ophthalmology\") OR (ti:\"neuroimaging\" OR abs:\"neuroimaging\") OR (ti:\"hospitalization\" OR abs:\"hospitalization\") OR (ti:\"cardiac\" OR abs:\"cardiac\") OR (ti:\"retinal\" OR abs:\"retinal\") OR (ti:\"MRI\" OR abs:\"MRI\") OR (ti:\"CT\" OR abs:\"CT\") OR (ti:\"X-ray\" OR abs:\"X-ray\") OR (ti:\"ECG\" OR abs:\"ECG\") OR (ti:\"EEG\" OR abs:\"EEG\") OR (ti:\"Alzheimer\" OR abs:\"Alzheimer\") OR (ti:\"CheXpert\" OR abs:\"CheXpert\") OR (ti:\"MIMIC-CXR\" OR abs:\"MIMIC-CXR\") OR (ti:\"ADNI\" OR abs:\"ADNI\") OR (ti:\"Harvard-FairSeg\" OR abs:\"Harvard-FairSeg\") OR (ti:\"Harvard-GF\" OR abs:\"Harvard-GF\") OR (ti:\"i2b2\" OR abs:\"i2b2\") OR (ti:\"Fitzpatrick17k\" OR abs:\"Fitzpatrick17k\") OR (ti:\"DDI\" OR abs:\"DDI\") OR (ti:\"All of Us\" OR abs:\"All of Us\")) AND ((ti:\"algorithm\" OR abs:\"algorithm\") OR (ti:\"machine learning\" OR abs:\"machine learning\") OR (ti:\"deep learning\" OR abs:\"deep learning\") OR (ti:\"artificial intelligence\" OR abs:\"artificial intelligence\") OR (ti:\"AI\" OR abs:\"AI\") OR (ti:\"neural network\" OR abs:\"neural network\") OR (ti:\"foundation model\" OR abs:\"foundation model\") OR (ti:\"language model\" OR abs:\"language model\") OR (ti:\"classifier\" OR abs:\"classifier\") OR (ti:\"classification\" OR abs:\"classification\") OR (ti:\"predictive model\" OR abs:\"predictive model\") OR (ti:\"prediction model\" OR abs:\"prediction model\") OR (ti:\"XGBoost\" OR abs:\"XGBoost\") OR (ti:\"representation learning\" OR abs:\"representation learning\") OR (ti:\"CheXpert\" OR abs:\"CheXpert\") OR (ti:\"MIMIC-CXR\" OR abs:\"MIMIC-CXR\") OR (ti:\"ADNI\" OR abs:\"ADNI\") OR (ti:\"Harvard-FairSeg\" OR abs:\"Harvard-FairSeg\") OR (ti:\"Harvard-GF\" OR abs:\"Harvard-GF\") OR (ti:\"i2b2\" OR abs:\"i2b2\") OR (ti:\"Fitzpatrick17k\" OR abs:\"Fitzpatrick17k\") OR (ti:\"DDI\" OR abs:\"DDI\") OR (ti:\"All of Us\" OR abs:\"All of Us\"))",
+      "query_id": "889f8ece294d",
+      "records": 3,
+      "since": "2026-11-02",
       "source": "arxiv",
-      "total": 8,
-      "until": "2026-11-09"
-    },
-    {
-      "complete": true,
-      "lane": "methodology",
-      "query_id": "1bb76ffa3406",
-      "records": 8,
-      "since": "2026-10-10",
-      "source": "arxiv",
-      "total": 8,
-      "until": "2026-11-09"
-    },
-    {
-      "complete": true,
-      "lane": "methodology",
-      "query_id": "d71eee65c043",
-      "records": 3,
-      "since": "2026-10-10",
-      "source": "europepmc",
       "total": 3,
-      "until": "2026-11-09"
+      "until": "2026-11-08"
     },
     {
       "complete": true,
-      "lane": "methodology",
-      "query_id": "0013545bb3c4",
-      "records": 10,
-      "since": "2026-10-10",
+      "group": 0,
+      "lane": "recall",
+      "query": "(TITLE_ABS:\"fairness\" OR TITLE_ABS:\"equity\" OR TITLE_ABS:\"equalized odds\" OR TITLE_ABS:\"equal opportunity\" OR TITLE_ABS:\"demographic parity\" OR TITLE_ABS:\"subgroup disparities\" OR TITLE_ABS:\"subgroup disparity\" OR TITLE_ABS:\"racial bias\" OR TITLE_ABS:\"gender bias\" OR TITLE_ABS:\"sex bias\" OR TITLE_ABS:\"skin tone bias\") AND (TITLE_ABS:\"medical\" OR TITLE_ABS:\"clinical\" OR TITLE_ABS:\"healthcare\" OR TITLE_ABS:\"patient\" OR TITLE_ABS:\"radiology\" OR TITLE_ABS:\"dermatology\" OR TITLE_ABS:\"ophthalmology\" OR TITLE_ABS:\"neuroimaging\" OR TITLE_ABS:\"hospitalization\" OR TITLE_ABS:\"cardiac\" OR TITLE_ABS:\"retinal\" OR TITLE_ABS:\"MRI\" OR TITLE_ABS:\"CT\" OR TITLE_ABS:\"X-ray\" OR TITLE_ABS:\"ECG\" OR TITLE_ABS:\"EEG\" OR TITLE_ABS:\"Alzheimer\" OR TITLE_ABS:\"CheXpert\" OR TITLE_ABS:\"MIMIC-CXR\" OR TITLE_ABS:\"ADNI\" OR TITLE_ABS:\"Harvard-FairSeg\" OR TITLE_ABS:\"Harvard-GF\" OR TITLE_ABS:\"i2b2\" OR TITLE_ABS:\"Fitzpatrick17k\" OR TITLE_ABS:\"DDI\" OR TITLE_ABS:\"All of Us\") AND (TITLE_ABS:\"algorithm\" OR TITLE_ABS:\"machine learning\" OR TITLE_ABS:\"deep learning\" OR TITLE_ABS:\"artificial intelligence\" OR TITLE_ABS:\"AI\" OR TITLE_ABS:\"neural network\" OR TITLE_ABS:\"foundation model\" OR TITLE_ABS:\"language model\" OR TITLE_ABS:\"classifier\" OR TITLE_ABS:\"classification\" OR TITLE_ABS:\"predictive model\" OR TITLE_ABS:\"prediction model\" OR TITLE_ABS:\"XGBoost\" OR TITLE_ABS:\"representation learning\" OR TITLE_ABS:\"CheXpert\" OR TITLE_ABS:\"MIMIC-CXR\" OR TITLE_ABS:\"ADNI\" OR TITLE_ABS:\"Harvard-FairSeg\" OR TITLE_ABS:\"Harvard-GF\" OR TITLE_ABS:\"i2b2\" OR TITLE_ABS:\"Fitzpatrick17k\" OR TITLE_ABS:\"DDI\" OR TITLE_ABS:\"All of Us\")",
+      "query_id": "f392a780813e",
+      "records": 4,
+      "since": "2026-11-02",
       "source": "europepmc",
-      "total": 10,
-      "until": "2026-11-09"
+      "total": 4,
+      "until": "2026-11-08"
     },
     {
       "complete": true,
-      "lane": "methodology",
-      "query_id": "c227ae0068a5",
-      "records": 2,
-      "since": "2026-10-10",
+      "group": 1,
+      "lane": "recall",
+      "query": "(TITLE_ABS:\"confounder-free\" OR TITLE_ABS:\"confound removal\" OR TITLE_ABS:\"confounding\" OR TITLE_ABS:\"shortcut learning\" OR TITLE_ABS:\"counterfactual augmentation\" OR TITLE_ABS:\"bias mitigation\" OR TITLE_ABS:\"debiasing\" OR TITLE_ABS:\"hidden subgroup\" OR TITLE_ABS:\"spurious feature bias\" OR TITLE_ABS:\"gender-swap inconsistency\") AND (TITLE_ABS:\"medical\" OR TITLE_ABS:\"clinical\" OR TITLE_ABS:\"healthcare\" OR TITLE_ABS:\"patient\" OR TITLE_ABS:\"radiology\" OR TITLE_ABS:\"dermatology\" OR TITLE_ABS:\"ophthalmology\" OR TITLE_ABS:\"neuroimaging\" OR TITLE_ABS:\"hospitalization\" OR TITLE_ABS:\"cardiac\" OR TITLE_ABS:\"retinal\" OR TITLE_ABS:\"MRI\" OR TITLE_ABS:\"CT\" OR TITLE_ABS:\"X-ray\" OR TITLE_ABS:\"ECG\" OR TITLE_ABS:\"EEG\" OR TITLE_ABS:\"Alzheimer\" OR TITLE_ABS:\"CheXpert\" OR TITLE_ABS:\"MIMIC-CXR\" OR TITLE_ABS:\"ADNI\" OR TITLE_ABS:\"Harvard-FairSeg\" OR TITLE_ABS:\"Harvard-GF\" OR TITLE_ABS:\"i2b2\" OR TITLE_ABS:\"Fitzpatrick17k\" OR TITLE_ABS:\"DDI\" OR TITLE_ABS:\"All of Us\") AND (TITLE_ABS:\"algorithm\" OR TITLE_ABS:\"machine learning\" OR TITLE_ABS:\"deep learning\" OR TITLE_ABS:\"artificial intelligence\" OR TITLE_ABS:\"AI\" OR TITLE_ABS:\"neural network\" OR TITLE_ABS:\"foundation model\" OR TITLE_ABS:\"language model\" OR TITLE_ABS:\"classifier\" OR TITLE_ABS:\"classification\" OR TITLE_ABS:\"predictive model\" OR TITLE_ABS:\"prediction model\" OR TITLE_ABS:\"XGBoost\" OR TITLE_ABS:\"representation learning\" OR TITLE_ABS:\"CheXpert\" OR TITLE_ABS:\"MIMIC-CXR\" OR TITLE_ABS:\"ADNI\" OR TITLE_ABS:\"Harvard-FairSeg\" OR TITLE_ABS:\"Harvard-GF\" OR TITLE_ABS:\"i2b2\" OR TITLE_ABS:\"Fitzpatrick17k\" OR TITLE_ABS:\"DDI\" OR TITLE_ABS:\"All of Us\")",
+      "query_id": "4fbe2719fd72",
+      "records": 4,
+      "since": "2026-11-02",
       "source": "europepmc",
-      "total": 2,
-      "until": "2026-11-09"
+      "total": 4,
+      "until": "2026-11-08"
     },
     {
       "complete": true,
-      "lane": "review_supplement",
-      "query_id": "98f731ea147a",
-      "records": 3,
-      "since": "2026-10-10",
-      "source": "europepmc",
-      "total": 3,
-      "until": "2026-11-09"
-    },
-    {
-      "complete": true,
-      "lane": "methodology",
-      "query_id": "6d3220d57721",
-      "records": 7,
-      "since": "2026-10-10",
+      "group": 0,
+      "lane": "recall",
+      "query": "((fairness[Title/Abstract]) OR (equity[Title/Abstract]) OR (equalized[Title/Abstract] AND odds[Title/Abstract]) OR (equal[Title/Abstract] AND opportunity[Title/Abstract]) OR (demographic[Title/Abstract] AND parity[Title/Abstract]) OR (subgroup[Title/Abstract] AND disparities[Title/Abstract]) OR (subgroup[Title/Abstract] AND disparity[Title/Abstract]) OR (racial[Title/Abstract] AND bias[Title/Abstract]) OR (gender[Title/Abstract] AND bias[Title/Abstract]) OR (sex[Title/Abstract] AND bias[Title/Abstract]) OR (skin[Title/Abstract] AND tone[Title/Abstract] AND bias[Title/Abstract])) AND ((medical[Title/Abstract]) OR (clinical[Title/Abstract]) OR (healthcare[Title/Abstract]) OR (patient[Title/Abstract]) OR (radiology[Title/Abstract]) OR (dermatology[Title/Abstract]) OR (ophthalmology[Title/Abstract]) OR (neuroimaging[Title/Abstract]) OR (hospitalization[Title/Abstract]) OR (cardiac[Title/Abstract]) OR (retinal[Title/Abstract]) OR (MRI[Title/Abstract]) OR (CT[Title/Abstract]) OR (X[Title/Abstract] AND ray[Title/Abstract]) OR (ECG[Title/Abstract]) OR (EEG[Title/Abstract]) OR (Alzheimer[Title/Abstract]) OR (CheXpert[Title/Abstract]) OR (MIMIC[Title/Abstract] AND CXR[Title/Abstract]) OR (ADNI[Title/Abstract]) OR (Harvard[Title/Abstract] AND GF[Title/Abstract]) OR (i2b2[Title/Abstract]) OR (Fitzpatrick17k[Title/Abstract]) OR (DDI[Title/Abstract])) AND ((algorithm[Title/Abstract]) OR (machine[Title/Abstract] AND learning[Title/Abstract]) OR (deep[Title/Abstract] AND learning[Title/Abstract]) OR (artificial[Title/Abstract] AND intelligence[Title/Abstract]) OR (AI[Title/Abstract]) OR (neural[Title/Abstract] AND network[Title/Abstract]) OR (foundation[Title/Abstract] AND model[Title/Abstract]) OR (language[Title/Abstract] AND model[Title/Abstract]) OR (classifier[Title/Abstract]) OR (classification[Title/Abstract]) OR (predictive[Title/Abstract] AND model[Title/Abstract]) OR (prediction[Title/Abstract] AND model[Title/Abstract]) OR (XGBoost[Title/Abstract]) OR (representation[Title/Abstract] AND learning[Title/Abstract]) OR (CheXpert[Title/Abstract]) OR (MIMIC[Title/Abstract] AND CXR[Title/Abstract]) OR (ADNI[Title/Abstract]) OR (Harvard[Title/Abstract] AND GF[Title/Abstract]) OR (i2b2[Title/Abstract]) OR (Fitzpatrick17k[Title/Abstract]) OR (DDI[Title/Abstract]))",
+      "query_id": "12b1793035a0",
+      "records": 32,
+      "since": "2026-11-02",
       "source": "pubmed",
-      "total": 7,
-      "until": "2026-11-09"
+      "total": 32,
+      "until": "2026-11-08"
     },
     {
       "complete": true,
-      "lane": "methodology",
-      "query_id": "a53b390db83d",
-      "records": 11,
-      "since": "2026-10-10",
+      "group": 1,
+      "lane": "recall",
+      "query": "((confounder[Title/Abstract] AND free[Title/Abstract]) OR (confound[Title/Abstract] AND removal[Title/Abstract]) OR (confounding[Title/Abstract]) OR (shortcut[Title/Abstract] AND learning[Title/Abstract]) OR (counterfactual[Title/Abstract] AND augmentation[Title/Abstract]) OR (bias[Title/Abstract] AND mitigation[Title/Abstract]) OR (debiasing[Title/Abstract]) OR (hidden[Title/Abstract] AND subgroup[Title/Abstract]) OR (spurious[Title/Abstract] AND feature[Title/Abstract] AND bias[Title/Abstract]) OR (gender[Title/Abstract] AND swap[Title/Abstract] AND inconsistency[Title/Abstract])) AND ((medical[Title/Abstract]) OR (clinical[Title/Abstract]) OR (healthcare[Title/Abstract]) OR (patient[Title/Abstract]) OR (radiology[Title/Abstract]) OR (dermatology[Title/Abstract]) OR (ophthalmology[Title/Abstract]) OR (neuroimaging[Title/Abstract]) OR (hospitalization[Title/Abstract]) OR (cardiac[Title/Abstract]) OR (retinal[Title/Abstract]) OR (MRI[Title/Abstract]) OR (CT[Title/Abstract]) OR (X[Title/Abstract] AND ray[Title/Abstract]) OR (ECG[Title/Abstract]) OR (EEG[Title/Abstract]) OR (Alzheimer[Title/Abstract]) OR (CheXpert[Title/Abstract]) OR (MIMIC[Title/Abstract] AND CXR[Title/Abstract]) OR (ADNI[Title/Abstract]) OR (Harvard[Title/Abstract] AND GF[Title/Abstract]) OR (i2b2[Title/Abstract]) OR (Fitzpatrick17k[Title/Abstract]) OR (DDI[Title/Abstract])) AND ((algorithm[Title/Abstract]) OR (machine[Title/Abstract] AND learning[Title/Abstract]) OR (deep[Title/Abstract] AND learning[Title/Abstract]) OR (artificial[Title/Abstract] AND intelligence[Title/Abstract]) OR (AI[Title/Abstract]) OR (neural[Title/Abstract] AND network[Title/Abstract]) OR (foundation[Title/Abstract] AND model[Title/Abstract]) OR (language[Title/Abstract] AND model[Title/Abstract]) OR (classifier[Title/Abstract]) OR (classification[Title/Abstract]) OR (predictive[Title/Abstract] AND model[Title/Abstract]) OR (prediction[Title/Abstract] AND model[Title/Abstract]) OR (XGBoost[Title/Abstract]) OR (representation[Title/Abstract] AND learning[Title/Abstract]) OR (CheXpert[Title/Abstract]) OR (MIMIC[Title/Abstract] AND CXR[Title/Abstract]) OR (ADNI[Title/Abstract]) OR (Harvard[Title/Abstract] AND GF[Title/Abstract]) OR (i2b2[Title/Abstract]) OR (Fitzpatrick17k[Title/Abstract]) OR (DDI[Title/Abstract]))",
+      "query_id": "77caa6b8d3e4",
+      "records": 15,
+      "since": "2026-11-02",
       "source": "pubmed",
-      "total": 11,
-      "until": "2026-11-09"
-    },
-    {
-      "complete": true,
-      "lane": "methodology",
-      "query_id": "76fa0a7789bf",
-      "records": 3,
-      "since": "2026-10-10",
-      "source": "pubmed",
-      "total": 3,
-      "until": "2026-11-09"
-    },
-    {
-      "complete": true,
-      "lane": "review_supplement",
-      "query_id": "4e705cd230bc",
-      "records": 2,
-      "since": "2026-10-10",
-      "source": "pubmed",
-      "total": 2,
-      "until": "2026-11-09"
+      "total": 15,
+      "until": "2026-11-08"
     }
-  ]
+  ],
+  "venue_policy": {
+    "eligible": 8,
+    "ineligible": 16,
+    "pending": 24,
+    "preprint": 7
+  }
 }

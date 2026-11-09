@@ -21,6 +21,8 @@ def sync_catalog(db, root, approval_file=None):
         raise ValueError('An explicit human-reviewed approval file is required')
     from scripts.review_workflow import read_decisions
     approvals=read_decisions(approval_file)
+    from scripts.venue_policy import assess_venue,load_policy
+    venue_policy=load_policy()
     root = Path(root)
     path = root/'data/catalog.json'
     records = json.loads(path.read_text())
@@ -36,6 +38,11 @@ def sync_catalog(db, root, approval_file=None):
         if any(same_record(paper, existing) for existing in records): continue
         approval=approvals.get(paper['id'],{})
         if approval.get('decision')!='approve':continue
+        venue=assess_venue(paper,venue_policy)
+        if venue['status'] not in {'eligible','preprint'}:
+            failures+=1
+            notes += ['## '+paper['title'],'','人工已通过，但出版渠道门槛尚未满足：'+venue['reason_zh'],'']
+            continue
         previous = analyses.get(paper['id'])
         if not previous:
             failures += 1
@@ -62,14 +69,15 @@ def sync_catalog(db, root, approval_file=None):
             metadata['Assets'] = ['Paper only']
             metadata['Evidence'] = ['Primary full text' if evidence['level']=='full_text' else 'Primary abstract']
             metadata['Stage'] = ['Evaluation' if annotation['method']=='Fairness Evaluation' else 'Not verified' if annotation['method']=='Stage pending' else annotation['method']]
-            record = {key:paper[key] for key in ('title','doi','arxiv_id','pmid','authors') if paper.get(key)}
+            record = {key:paper[key] for key in ('title','doi','arxiv_id','pmid','authors','journal_title','journal_issns','conference','publication_kind','formal_publications') if paper.get(key)}
             record.update(year=publication_date[:4], publication_date=publication_date,
-                          venue='arXiv' if paper.get('arxiv_id') else 'Paper', kind='survey' if result.get('article_type') in {'review','commentary'} else 'main',
+                          venue='arXiv' if paper.get('arxiv_id') else (paper.get('journal_title') or paper.get('conference') or 'Paper'), kind='survey' if result.get('article_type') in {'review','commentary'} else 'main',
                           links={'Paper':paper['url']}, metadata=metadata, method=annotation['method'],
                           tldr_en=annotation['tldr_en'], verified=True,
                           sources=[{'url':evidence['url'], 'section':'Automated full-text screening'}])
             record['sources'][0]['section']='Human-approved '+('full-text' if evidence['level']=='full_text' else 'abstract')+' review'
             if result.get('article_type')=='commentary':record['publication_type']='Commentary'
+            record['venue_assessment']=venue
             records.append(record);added += 1
             record['human_review']={'decision':'approve','review_fingerprint':fp,'note':approval.get('note',''),
                                     'overrides_machine_screening':result.get('decision')!='suggest_include'}
@@ -84,7 +92,7 @@ def sync_catalog(db, root, approval_file=None):
     from scripts.render_catalog import validate_records
     validate_records(records)
     path.write_text(json.dumps(records,ensure_ascii=False,indent=2)+'\n')
-    render_catalog(root)
+    if records:render_catalog(root)
     if notes:
         report = root/'reports/catalog-screening.md'
         previous = report.read_text() if report.exists() else '# 主目录人工审核与收录证据\n\n仅将明确通过且证据版本匹配的文章加入 README。\n\n'

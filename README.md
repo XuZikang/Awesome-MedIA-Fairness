@@ -15,6 +15,8 @@ Studies must address algorithmic fairness, subgroup disparities, bias mechanisms
 
 Original methodology and empirical fairness audits take priority. New reviews and commentaries must analyze fairness in a specific medical disease or task in depth; incidental mentions of bias, ethics or fairness are insufficient. See the [screening policy](docs/screening-policy.md).
 
+New formal publications must meet the [venue policy](docs/venue-policy.md): CAS major-category zones 1–2 for journals or CCF A/B main conferences. Unverified publication identities remain pending; preprints retain their status and cannot bypass a verified formal-version restriction.
+
 </details>
 
 ## 🧬 Taxonomy

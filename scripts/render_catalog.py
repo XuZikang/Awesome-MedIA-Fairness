@@ -52,6 +52,8 @@ def sort_key(p):
 
 
 def validate_records(records):
+    from scripts.venue_catalog import validate_catalog_venues
+    validate_catalog_venues(records)
     seen=set()
     for p in records:
         key=norm(p['title'])
@@ -86,6 +88,7 @@ def main(root=None):
         '<details>','<summary>Scope and inclusion criteria</summary>','',
         'Studies must address algorithmic fairness, subgroup disparities, bias mechanisms, fairness measurement or mitigation in a medical task. Negative findings are eligible. Predicting a protected attribute does not by itself establish downstream discrimination. General fairness foundations are listed separately.','',
         'Original methodology and empirical fairness audits take priority. New reviews and commentaries must analyze fairness in a specific medical disease or task in depth; incidental mentions of bias, ethics or fairness are insufficient. See the [screening policy](docs/screening-policy.md).','',
+        'New formal publications must meet the [venue policy](docs/venue-policy.md): CAS major-category zones 1–2 for journals or CCF A/B main conferences. Unverified publication identities remain pending; preprints retain their status and cannot bypass a verified formal-version restriction.','',
         '</details>','',
         '## 🧬 Taxonomy','',
         'The methodology follows [Addressing fairness issues in deep learning-based medical image analysis: a systematic review](https://doi.org/10.1038/s41746-024-01276-5). Surveys and empirical studies share the same taxonomy; surveys carry an additional badge.','',

@@ -1,0 +1,60 @@
+{
+  "basis": "Public human-approved catalog annotations, not verbatim complete paper abstracts; local lexical regression only.",
+  "cases": [
+    {
+      "id": "10.1038/s41467-020-19784-9",
+      "title": "Training confounder-free deep learning models for medical applications",
+      "abstract": "Deep learning models for medical imaging can learn spurious associations when confounders such as age or sex affect the relationship between images and outcomes. The paper introduces an end-to-end training approach that derives features invariant to confounders while accounting for correlations between confounders and prediction outcomes, evaluated on HIV diagnosis from MRI, adolescent sex differences in NCANDA, and pediatric bone age from X-ray images. The abstract reports that the method predicted accurately while reducing confounder-associated bias, but the available abstract does not provide quantitative effect sizes or statistical comparisons.",
+      "url": "https://doi.org/10.1038/s41467-020-19784-9",
+      "expected_recall": true,
+      "expected_group": "bias-mechanisms"
+    },
+    {
+      "id": "2610.32362",
+      "title": "Detection and Validation of Hidden Subgroup Disparities in Clinical AI",
+      "abstract": "This study evaluates learned subgroup discovery for detecting hidden performance disparities in cardiomegaly classification from chest radiographs. It analyzes 223,228 images and compares discovered groups with metadata-defined groups using performance gaps and semantic coherence. Discovered groups expose larger accuracy differences than metadata-only analysis, and subgroup annotations support a proof-of-concept mitigation experiment.",
+      "url": "https://arxiv.org/abs/2610.32362",
+      "expected_recall": true
+    },
+    {
+      "id": "2610.22618",
+      "title": "Trajectory-Guided Steering: Mitigating Spurious Feature Bias in Clinical Classification",
+      "abstract": "Trajectory-Guided Steering addresses spurious-feature reliance in clinical text classification, including diagnosis changes caused by gender-token substitutions. It uses layerwise prediction trajectories to select and steer individual predictions at inference time without updating base-model parameters or requiring counterfactual training pairs. Across 16 i2b2 tasks, the reported correction fixes 17.7% of errors while breaking 1.3% of correct predictions and reduces gender-swap inconsistency.",
+      "url": "https://arxiv.org/abs/2610.22618",
+      "expected_recall": true
+    },
+    {
+      "id": "2311.02189",
+      "title": "FairSeg: A Large-Scale Medical Image Segmentation Dataset for Fairness Learning Using Segment Anything Model with Fair Error-Bound Scaling",
+      "abstract": "FairSeg addresses the lack of medical image segmentation datasets designed for fairness research. It introduces Harvard-FairSeg and a fair error-bound scaling approach that reweights SAM training losses across identity groups. The contribution combines a subgroup-aware benchmark with an explicit training-time mitigation method targeting hard cases.",
+      "url": "https://arxiv.org/abs/2311.02189",
+      "expected_recall": true
+    },
+    {
+      "id": "2306.09264",
+      "title": "Harvard Glaucoma Fairness: A Retinal Nerve Disease Dataset for Fairness Learning and Fair Identity Normalization",
+      "abstract": "The paper addresses the scarcity of dedicated public medical imaging datasets for fairness learning in glaucoma detection. It introduces Harvard-GF, a 2D/3D retinal nerve disease dataset with balanced racial groups, and proposes an equity-scaled performance measure while evaluating a fair identity normalization approach. The abstract reports that the fair identity normalization approach showed superior performance against several fairness learning methods across racial, gender, and ethnicity tasks, supporting the dataset's utility for fairness comparisons.",
+      "url": "https://arxiv.org/abs/2306.09264",
+      "expected_recall": true
+    },
+    {
+      "id": "10.1007/s11548-026-03805-x",
+      "title": "Improving the fairness and robustness of deep learning classification models through bias mitigation and post hoc calibration.",
+      "abstract": "This study examines age-related bias and probability reliability in deep-learning classification of Alzheimer disease from structural MRI. It compares adversarial CF-Net and penalty-based metadata normalization within a shared CNN and separately evaluates four post hoc calibration methods across three cohorts. Metadata normalization improves stability and reduces age dependence particularly in cognitively normal and mild-cognitive-impairment groups, while age associations persist in the Alzheimer group and calibration addresses probability reliability.",
+      "url": "https://doi.org/10.1007/s11548-026-03805-x",
+      "expected_recall": true
+    },
+    {
+      "id": "negative-nonmedical",
+      "title": "Fairness in mortgage approval",
+      "abstract": "A demographic-parity audit of bank loan models.",
+      "expected_recall": false
+    },
+    {
+      "id": "negative-no-fairness",
+      "title": "Clinical image compression",
+      "abstract": "An efficient encoder reduces memory consumption in medical imaging.",
+      "expected_recall": false
+    }
+  ]
+}

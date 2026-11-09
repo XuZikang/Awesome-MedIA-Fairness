@@ -9,6 +9,7 @@ flock -n 9 || { echo "Another literature update is running"; exit 1; }
 test -z "$(git status --porcelain --untracked-files=no)"
 python3 -m unittest discover -s tests -q
 python3 scripts/validate_catalog.py
+python3 -m scripts.recall > .local/recall-preflight.json
 
 git fetch origin refs/heads/main:refs/remotes/origin/main
 # The service updates source code before opening this shell script.

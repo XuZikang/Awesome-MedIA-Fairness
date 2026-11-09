@@ -36,5 +36,13 @@
     ],
     "review_supplement": "Fairness-central reviews only; detailed disease/task analysis still required",
     "approval": "Human review required before README inclusion"
+  },
+  "recall_config": "recall.json",
+  "publication_tracking": {
+    "enabled": true,
+    "max_records_per_run": 20,
+    "recheck_days": 7,
+    "timeout_seconds": 25,
+    "title_search": true
   }
 }

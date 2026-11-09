@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "purpose": "High-recall supplement: fairness need not appear in the title and no specific method family is mandatory. Medical and computational/dataset context remain required; semantic screening and human approval follow.",
+  "medical_context": [
+    "medical",
+    "clinical",
+    "healthcare",
+    "patient",
+    "radiology",
+    "dermatology",
+    "ophthalmology",
+    "neuroimaging",
+    "hospitalization",
+    "cardiac",
+    "retinal",
+    "MRI",
+    "CT",
+    "X-ray",
+    "ECG",
+    "EEG",
+    "Alzheimer"
+  ],
+  "dataset_aliases": [
+    "CheXpert",
+    "MIMIC-CXR",
+    "ADNI",
+    "Harvard-FairSeg",
+    "Harvard-GF",
+    "i2b2",
+    "Fitzpatrick17k",
+    "DDI",
+    "All of Us"
+  ],
+  "groups": [
+    {
+      "name": "fairness-in-abstract",
+      "terms": [
+        "fairness",
+        "equity",
+        "equalized odds",
+        "equal opportunity",
+        "demographic parity",
+        "subgroup disparities",
+        "subgroup disparity",
+        "racial bias",
+        "gender bias",
+        "sex bias",
+        "skin tone bias"
+      ]
+    },
+    {
+      "name": "bias-mechanisms",
+      "terms": [
+        "confounder-free",
+        "confound removal",
+        "confounding",
+        "shortcut learning",
+        "counterfactual augmentation",
+        "bias mitigation",
+        "debiasing",
+        "hidden subgroup",
+        "spurious feature bias",
+        "gender-swap inconsistency"
+      ]
+    }
+  ],
+  "source_omitted_dataset_aliases": {
+    "pubmed": [
+      "Harvard-FairSeg",
+      "All of Us"
+    ]
+  },
+  "source_notes": {
+    "pubmed": "PubMed rejects these unindexed/stopword-heavy dataset expressions; the same papers remain searchable through clinical/fairness context and other sources."
+  },
+  "algorithm_context": [
+    "algorithm",
+    "machine learning",
+    "deep learning",
+    "artificial intelligence",
+    "AI",
+    "neural network",
+    "foundation model",
+    "language model",
+    "classifier",
+    "classification",
+    "predictive model",
+    "prediction model",
+    "XGBoost",
+    "representation learning"
+  ]
+}

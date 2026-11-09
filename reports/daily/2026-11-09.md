@@ -2,98 +2,33 @@
 
 机器整理的候选与收录建议；未代表人工审核或实验复现。
 
-候选库：29 篇；当日发现、更新或完成分析：28 篇。
+候选库：39 篇；当日发现、更新或完成分析：38 篇。
 
-已有有效中文分析：0 篇；待分析或缺少摘要证据：29 篇。
+已有有效中文分析：0 篇；待分析或缺少摘要证据：39 篇。
 
 ## 检索覆盖
 
-- arxiv / 查询 4d95054412d0：11 条；完整
-- arxiv / 查询 1d928560eb85：8 条；完整
-- arxiv / 查询 1bb76ffa3406：8 条；完整
-- europepmc / 查询 d71eee65c043：3 条；完整
-- europepmc / 查询 0013545bb3c4：10 条；完整
-- europepmc / 查询 c227ae0068a5：2 条；完整
-- europepmc / 查询 98f731ea147a：3 条；完整
-- pubmed / 查询 6d3220d57721：7 条；完整
-- pubmed / 查询 a53b390db83d：11 条；完整
-- pubmed / 查询 76fa0a7789bf：3 条；完整
-- pubmed / 查询 4e705cd230bc：2 条；完整
+- arxiv / 查询 ab649b821460：4 条；完整
+- arxiv / 查询 889f8ece294d：3 条；完整
+- europepmc / 查询 f392a780813e：4 条；完整
+- europepmc / 查询 4fbe2719fd72：4 条；完整
+- pubmed / 查询 12b1793035a0：32 条；完整
+- pubmed / 查询 77caa6b8d3e4：15 条；完整
 
-模型分析失败 8 次，保留候选并等待重试。
+模型分析失败 1 次，保留候选并等待重试。
 
 ## 当日候选
 
-### [Algorithmic Bias from the Perspectives of Healthcare Professionals](https://arxiv.org/abs/2610.38006)
+### [Investigating Patient Trust and Intention to Act in AI-Supported Clinical Decisions: Cross-Sectional Survey.](https://pubmed.ncbi.nlm.nih.gov/42970578/)
 
-- 标识：`p-0f04eeaa9bee15404b6b`；发表：2026-10-27；发现：2026-11-09
-- 主题：Fairness Evaluation and Benchmarking、Bias Mechanisms and Measurement（规则建议）
-- 状态：待模型分析／人工核验
-
-### [Detection and Validation of Hidden Subgroup Disparities in Clinical AI](https://arxiv.org/abs/2610.32362)
-
-- 标识：`p-25f166919d5808c5e366`；发表：2026-10-23；发现：2026-11-09
-- 主题：Fairness Evaluation and Benchmarking、Bias Mechanisms and Measurement（规则建议）
-- 状态：待模型分析／人工核验
-
-### [Fairness or Fallacy? Mapping the Landscape of AI Bias in Disease Detection](https://arxiv.org/abs/2610.26215)
-
-- 标识：`p-3e31b3ad8d1cc28d1bbc`；发表：2026-10-19；发现：2026-11-09
+- 标识：`p-fafce843d0071edb38ce`；发表：2026-11-02；发现：2026-11-04
 - 主题：Fairness Evaluation and Benchmarking（规则建议）
 - 状态：待模型分析／人工核验
 
-### [Debiased medication recommendation through fusing frequent pattern and temporal medical records.](https://pubmed.ncbi.nlm.nih.gov/42214931/)
+### [DINOv3-SAM: Fusing Semantic and Anatomical Foundation Models for Robust Medical Image Classification.](https://europepmc.org/article/MED/42972189)
 
-- 标识：`p-4531cd0838fbf818d5b0`；发表：2026-05-25；发现：2026-11-09
-- 主题：Fairness Evaluation and Benchmarking、Bias Mechanisms and Measurement、Post-processing Mitigation（规则建议）
-- 状态：待模型分析／人工核验
-
-### [Decision-Architecture Dependence and Patient-Gender-Conditioned Allocation in Large-Language-Model-Assisted Nursing Allocation: A Multi-Model Counterfactual Audit.](https://europepmc.org/article/MED/42940596)
-
-- 标识：`p-47f59ce8e66d8459e0e2`；发表：2026-10-21；发现：2026-11-09
-- 主题：Fairness Evaluation and Benchmarking、Bias Mechanisms and Measurement、Clinical NLP and Foundation Models（规则建议）
-- 状态：待模型分析／人工核验
-
-### [Responsible Quantum Machine Learning for Medical Imaging: A Fairness Audit Across Sensitive Subgroups](https://arxiv.org/abs/2610.37819)
-
-- 标识：`p-59068cc978cafdc33230`；发表：2026-10-27；发现：2026-11-09
-- 主题：Fairness Evaluation and Benchmarking（规则建议）
-- 状态：待模型分析／人工核验
-
-### [Improving the fairness and robustness of deep learning classification models through bias mitigation and post hoc calibration.](https://europepmc.org/article/MED/42891802)
-
-- 标识：`p-8aeef9186465b5deed36`；发表：2026-10-17；发现：2026-11-09
+- 标识：`p-025d4680a20363b0f28f`；发表：2026-11-02；发现：2026-11-09
 - 主题：Fairness Evaluation and Benchmarking、Bias Mechanisms and Measurement、In-processing Mitigation（规则建议）
-- 状态：待模型分析／人工核验
-
-### [Refocusing algorithmic fairness on feature-level bias: A diagnostic approach using dutch EHR data.](https://europepmc.org/article/MED/42932339)
-
-- 标识：`p-f4567d6da1046873aea0`；发表：2026-10-26；发现：2026-11-09
-- 主题：Fairness Evaluation and Benchmarking、Bias Mechanisms and Measurement、EHR, Physiological Signals and Healthcare（规则建议）
-- 状态：待模型分析／人工核验
-
-### [Causal Humility: Governing the Authority of Fairness Claims Under Causal Uncertainty](https://arxiv.org/abs/2610.25709)
-
-- 标识：`p-b3eae538180f8f9919dd`；发表：2026-10-19；发现：2026-11-09
-- 主题：Fairness Evaluation and Benchmarking、Bias Mechanisms and Measurement（规则建议）
-- 状态：待模型分析／人工核验
-
-### [Can Large Language Models Preserve Diagnostic Accuracy Despite Patient Self-Diagnosis and Framing Bias in Hypothetical Upper-Extremity Scenarios?](https://pubmed.ncbi.nlm.nih.gov/42640232/)
-
-- 标识：`p-007c99a4b780ee55450d`；发表：2026-08-24；发现：2026-11-09
-- 主题：Fairness Evaluation and Benchmarking、Clinical NLP and Foundation Models（规则建议）
-- 状态：待模型分析／人工核验
-
-### [Wearable-Derived Data for Patient Frailty: Extending Hospital Frailty Risk Score While Confronting Bias and Inequities.](https://pubmed.ncbi.nlm.nih.gov/42420655/)
-
-- 标识：`p-146fd2d3e9607bbd9129`；发表：2026-07-08；发现：2026-11-09
-- 主题：Fairness Evaluation and Benchmarking、Bias Mechanisms and Measurement、Pre-processing Mitigation（规则建议）
-- 状态：待模型分析／人工核验
-
-### [Trajectory-Guided Steering: Mitigating Spurious Feature Bias in Clinical Classification](https://arxiv.org/abs/2610.22618)
-
-- 标识：`p-45778789f12c424e7649`；发表：2026-10-15；发现：2026-11-09
-- 主题：Fairness Evaluation and Benchmarking、Clinical NLP and Foundation Models（规则建议）
 - 状态：待模型分析／人工核验
 
 ### [ARBITER: retrieval-augmented generation for automated PROBAST+AI risk-of-bias assessment of HIV, HBV and HCV prediction models: a proof-of-concept validation study](https://europepmc.org/article/PPR/PPR1351930)
@@ -102,22 +37,52 @@
 - 主题：Fairness Evaluation and Benchmarking、Pre-processing Mitigation、EHR, Physiological Signals and Healthcare（规则建议）
 - 状态：待模型分析／人工核验
 
-### [Automation Bias and Deskilling in Radiology AI: A Confidence-stratified Triage Model for Workflow Integration.](https://europepmc.org/article/MED/42949520)
+### [Development and validation of early warning scores predicting 24 h mortality addressing intercurrent medical interventions in Denmark: a multicentre retrospective cohort study of 2·08 million hospital encounters.](https://pubmed.ncbi.nlm.nih.gov/42988715/)
 
-- 标识：`p-7068da05f7ca4dd4f330`；发表：2026-10-28；发现：2026-11-09
-- 主题：Fairness Evaluation and Benchmarking、Bias Mechanisms and Measurement、Post-processing Mitigation（规则建议）
+- 标识：`p-515324d349beb4aea4b7`；发表：2026-11-05；发现：2026-11-09
+- 主题：Fairness Evaluation and Benchmarking、Bias Mechanisms and Measurement、EHR, Physiological Signals and Healthcare（规则建议）
 - 状态：待模型分析／人工核验
 
-### [From Canon to Nikon: Camera Domain Shift and Potential Equity Implications in Retinal AI](https://arxiv.org/abs/2610.29104)
+### [Multidimensional Suicide Risk Assessment with Machine Learning using Electronic Health Records](https://arxiv.org/abs/2611.03357)
 
-- 标识：`p-983161c15d18a6bd2e5a`；发表：2026-10-21；发现：2026-11-09
+- 标识：`p-6d9033437f6ce32b7bb5`；发表：2026-11-02；发现：2026-11-09
+- 主题：Bias Mechanisms and Measurement、Pre-processing Mitigation、EHR, Physiological Signals and Healthcare（规则建议）
+- 状态：待模型分析／人工核验
+
+### [Federated Transfer Learning for Medical Image Classification under Mixed Skew](https://arxiv.org/abs/2611.05035)
+
+- 标识：`p-b5b2be7d553a996ce538`；发表：2026-11-03；发现：2026-11-09
+- 主题：Fairness Evaluation and Benchmarking、In-processing Mitigation（规则建议）
+- 状态：待模型分析／人工核验
+
+### [Association between biological age acceleration and the risk of aortic valve stenosis: An observational epidemiologic and Mendelian randomization study.](https://pubmed.ncbi.nlm.nih.gov/42998401/)
+
+- 标识：`p-92a449ec5369eaed3e6f`；发表：2026-11-07；发现：2026-11-09
+- 主题：Bias Mechanisms and Measurement（规则建议）
+- 状态：待模型分析／人工核验
+
+### [Metadata-Conditioned Audio Transformers for Adaptive Respiratory Sound Classification](https://arxiv.org/abs/2611.03769)
+
+- 标识：`p-98740313fc34ef7175fb`；发表：2026-11-02；发现：2026-11-09
+- 主题：Fairness Evaluation and Benchmarking、Bias Mechanisms and Measurement、In-processing Mitigation（规则建议）
+- 状态：待模型分析／人工核验
+
+### [Causal Humility: Governing the Authority of Fairness Claims Under Causal Uncertainty](https://arxiv.org/abs/2610.25709)
+
+- 标识：`p-b3eae538180f8f9919dd`；发表：2026-10-19；发现：2026-11-09
 - 主题：Fairness Evaluation and Benchmarking、Bias Mechanisms and Measurement（规则建议）
 - 状态：待模型分析／人工核验
 
-### [When to Stop Asking: Factor Coverage Bias and LLM Determinability Judgments with Underspecified Information in Medicine](https://arxiv.org/abs/2610.25819)
+### [Application of Explainable Machine Learning for Individualized Risk Stratification and Surgical Optimization in Geriatric Intertrochanteric Fractures.](https://pubmed.ncbi.nlm.nih.gov/42980212/)
 
-- 标识：`p-9cba83191a3299c02316`；发表：2026-10-19；发现：2026-11-09
-- 主题：Fairness Evaluation and Benchmarking、Pre-processing Mitigation、Clinical NLP and Foundation Models（规则建议）
+- 标识：`p-4403cfa217b51b32b9c0`；发表：2026-11-03；发现：2026-11-09
+- 主题：Bias Mechanisms and Measurement、In-processing Mitigation（规则建议）
+- 状态：待模型分析／人工核验
+
+### [Context is all you need: A causal framework for governing bias in clinical AI.](https://pubmed.ncbi.nlm.nih.gov/42993732/)
+
+- 标识：`p-4d615fab90a24703edd1`；发表：2026-11-06；发现：2026-11-09
+- 主题：Fairness Evaluation and Benchmarking、Bias Mechanisms and Measurement（规则建议）
 - 状态：待模型分析／人工核验
 
 ### [Background Bias Assessment and Mitigation in Plant Disease Detection Using EfficientNet-B0 with Image Processing](https://arxiv.org/abs/2611.00049)
@@ -126,40 +91,34 @@
 - 主题：Fairness Evaluation and Benchmarking、Bias Mechanisms and Measurement（规则建议）
 - 状态：待模型分析／人工核验
 
-### [Gender Associations in LLM-Mediated ADHD Self-Diagnosis](https://arxiv.org/abs/2610.33697)
+### [C3E-RRG:Confounder-Aware Causal Evidence Coupling and Evolution for Chest X-Ray Report Generation.](https://europepmc.org/article/MED/42970651)
 
-- 标识：`p-b8664efa92d96d1cf84f`；发表：2026-10-24；发现：2026-11-09
-- 主题：Fairness Evaluation and Benchmarking、Clinical NLP and Foundation Models（规则建议）
-- 状态：待模型分析／人工核验
-
-### [A Framework for Identifying and Understanding Cognitive Biases in Artificial Intelligence-Assisted Radiology.](https://europepmc.org/article/MED/42949357)
-
-- 标识：`p-bc07a18a7cd288dd8094`；发表：2026-10-28；发现：2026-11-09
+- 标识：`p-d62b2748ad6ed04dbe11`；发表：2026-11-02；发现：2026-11-09
 - 主题：Fairness Evaluation and Benchmarking、Bias Mechanisms and Measurement（规则建议）
 - 状态：待模型分析／人工核验
 
-### [Algorithmic design choices as determinants of health equity: a causal simulation study of healthcare resource allocation](https://europepmc.org/article/PPR/PPR1355869)
+### [Leveraging AI-ECG Technology for Early Notification and Tracking of AF Development (LATENT): A Randomized Controlled Trial.](https://pubmed.ncbi.nlm.nih.gov/42998297/)
 
-- 标识：`p-dd8b25f1e5426bb19b9c`；发表：2026-11-01；发现：2026-11-09
-- 主题：Fairness Evaluation and Benchmarking、Bias Mechanisms and Measurement、Post-processing Mitigation、EHR, Physiological Signals and Healthcare（规则建议）
+- 标识：`p-263284ee8b9a724f7139`；发表：2026-11-07；发现：2026-11-09
+- 主题：Fairness Evaluation and Benchmarking、EHR, Physiological Signals and Healthcare（规则建议）
 - 状态：待模型分析／人工核验
 
-### [Resource allocation under uncertainty and equity constraints in Parkinson's disease care: An econometrically grounded machine learning framework.](https://pubmed.ncbi.nlm.nih.gov/42976191/)
+### [Confronting the Twin Divides: Data Bias and Infrastructure Gaps in AI-Driven Nutrition for the Global South.](https://pubmed.ncbi.nlm.nih.gov/42988168/)
 
-- 标识：`p-28114085d45cd4565fde`；发表：2026-11-03；发现：2026-11-09
-- 主题：Fairness Evaluation and Benchmarking、Bias Mechanisms and Measurement、Pre-processing Mitigation（规则建议）
+- 标识：`p-2e0706f35cfba2dd0a08`；发表：2026-11-05；发现：2026-11-09
+- 主题：Fairness Evaluation and Benchmarking（规则建议）
 - 状态：待模型分析／人工核验
 
-### [Toward equitable fidelity measurement of evidence-based psychosocial interventions.](https://europepmc.org/article/MED/42956225)
+### [Weight-space programming for auditing clinical decision networks](https://arxiv.org/abs/2611.05341)
 
-- 标识：`p-90e758f61454cf309cc5`；发表：2026-11-01；发现：2026-11-09
-- 主题：Bias Mechanisms and Measurement（规则建议）
+- 标识：`p-50b0d41fc4e4a86d358b`；发表：2026-11-03；发现：2026-11-09
+- 主题：Bias Mechanisms and Measurement、In-processing Mitigation、Post-processing Mitigation、Clinical NLP and Foundation Models（规则建议）
 - 状态：待模型分析／人工核验
 
-### [AI-based bone age assessment versus forensic expert panel: agreement, sex bias, and ethical implications.](https://pubmed.ncbi.nlm.nih.gov/42412185/)
+### [Vision Paper: Why Distributed LLM Post-Training and Decentralized Alignment Are Now Essential](https://arxiv.org/abs/2611.05841)
 
-- 标识：`p-e632f7ecdcaf4149d588`；发表：2026-07-07；发现：2026-11-09
-- 主题：Fairness Evaluation and Benchmarking、Post-processing Mitigation（规则建议）
+- 标识：`p-661da0b4bcd2cc1ecf87`；发表：2026-11-04；发现：2026-11-09
+- 主题：In-processing Mitigation（规则建议）
 - 状态：待模型分析／人工核验
 
 ### [Paradoxical inflation of prediction model performance measures in minority patient subgroups: the role of upstream bias.](https://europepmc.org/article/MED/42907563)
@@ -168,10 +127,52 @@
 - 主题：Fairness Evaluation and Benchmarking、Bias Mechanisms and Measurement（规则建议）
 - 状态：待模型分析／人工核验
 
-### [Beyond Accuracy: Investigating Pseudo-Learning and Bias Propagation in MRI Brain Tumour Classification](https://europepmc.org/article/PPR/PPR1347529)
+### [Toward equitable fidelity measurement of evidence-based psychosocial interventions.](https://europepmc.org/article/MED/42956225)
 
-- 标识：`p-e93b14a2fee91d9b2317`；发表：2026-10-22；发现：2026-11-09
-- 主题：Fairness Evaluation and Benchmarking、Bias Mechanisms and Measurement、In-processing Mitigation（规则建议）
+- 标识：`p-90e758f61454cf309cc5`；发表：2026-11-01；发现：2026-11-09
+- 主题：Bias Mechanisms and Measurement（规则建议）
+- 状态：待模型分析／人工核验
+
+### [Systemic ethics framework for artificial intelligence in nursing and healthcare.](https://pubmed.ncbi.nlm.nih.gov/42989488/)
+
+- 标识：`p-a13199f8b00c3ef3f702`；发表：2026-11-05；发现：2026-11-09
+- 主题：Pre-processing Mitigation（规则建议）
+- 状态：待模型分析／人工核验
+
+### [Backbone-Informed Adaptation after EEG Pretraining: A Capacity-Controlled Study](https://arxiv.org/abs/2611.07192)
+
+- 标识：`p-ad9e9680fe3ed43e22f2`；发表：2026-11-04；发现：2026-11-09
+- 主题：Fairness Evaluation and Benchmarking、EHR, Physiological Signals and Healthcare（规则建议）
+- 状态：待模型分析／人工核验
+
+### [Acute Myocardial Injury in Patients Presenting With Upper Gastrointestinal Bleeding: Prevalence, Predictors, Troponin Dynamics, and In-Hospital Outcomes.](https://pubmed.ncbi.nlm.nih.gov/42997480/)
+
+- 标识：`p-ee074914150093fabc5d`；发表：2026-11-06；发现：2026-11-09
+- 主题：Bias Mechanisms and Measurement（规则建议）
+- 状态：待模型分析／人工核验
+
+### [Critical Validation of Deep Learning-Based Cervical Vertebral Fracture Detection on Computed Tomography Localizer Radiographs.](https://europepmc.org/article/MED/42970201)
+
+- 标识：`p-1346d065a32670a53db3`；发表：2026-11-02；发现：2026-11-09
+- 主题：Fairness Evaluation and Benchmarking、Bias Mechanisms and Measurement（规则建议）
+- 状态：待模型分析／人工核验
+
+### [Same day discharge following bimaxillary osteotomy surgery a single center retrospective study.](https://pubmed.ncbi.nlm.nih.gov/42993311/)
+
+- 标识：`p-d6abeded64d1a68e9115`；发表：2026-11-06；发现：2026-11-09
+- 主题：Bias Mechanisms and Measurement（规则建议）
+- 状态：待模型分析／人工核验
+
+### [A Qualitative Study of African Americans' Experiences with Healthcare: Developing Cultural Competency Training for Cancer Care.](https://pubmed.ncbi.nlm.nih.gov/42995326/)
+
+- 标识：`p-a633a59806919d28b53e`；发表：2026-11-07；发现：2026-11-09
+- 主题：Fairness Evaluation and Benchmarking（规则建议）
+- 状态：待模型分析／人工核验
+
+### [Green AI for Telehealth.](https://europepmc.org/article/MED/42969789)
+
+- 标识：`p-7b736b8d23744e060972`；发表：2026-11-02；发现：2026-11-09
+- 主题：待分类（规则建议）
 - 状态：待模型分析／人工核验
 
 ### [Operationalizing fair AI in healthcare: a scoping review of bias mitigation, monitoring, auditing, and governance strategies.](https://europepmc.org/article/MED/42948540)
@@ -180,14 +181,68 @@
 - 主题：Fairness Evaluation and Benchmarking、Bias Mechanisms and Measurement、Pre-processing Mitigation（规则建议）
 - 状态：待模型分析／人工核验
 
-### [Reporting of Fairness and Equity in Studies of Regulator-cleared Commercial AI for Acute Stroke CT: A Systematic Review.](https://europepmc.org/article/MED/42907264)
+### [Artificial Intelligence for Cardiovascular Health Behavior Change: A Narrative Review of Patient-Facing Tools.](https://pubmed.ncbi.nlm.nih.gov/42978091/)
 
-- 标识：`p-8dce8465449c9e0cb987`；发表：2026-10-21；发现：2026-11-09
-- 主题：Fairness Evaluation and Benchmarking（规则建议）
+- 标识：`p-7177fc75cf105ecbb6ba`；发表：2026-11-03；发现：2026-11-09
+- 主题：Bias Mechanisms and Measurement、Pre-processing Mitigation（规则建议）
 - 状态：待模型分析／人工核验
 
 ### [Bias Mitigation Across the Healthcare Artificial Intelligence Lifecycle: A Structured Narrative Review](https://europepmc.org/article/PMC/PMC13662775)
 
 - 标识：`p-de1d8f363bb788b48fb8`；发表：2026-10-16；发现：2026-11-09
 - 主题：Fairness Evaluation and Benchmarking（规则建议）
+- 状态：待模型分析／人工核验
+
+### [Multi-omics data integration in bioinformatics: methods, applications, and the path toward biological reasoning.](https://pubmed.ncbi.nlm.nih.gov/42995320/)
+
+- 标识：`p-171787f0269c1c87c800`；发表：2026-11-07；发现：2026-11-09
+- 主题：Bias Mechanisms and Measurement（规则建议）
+- 状态：待模型分析／人工核验
+
+### [Green Pathology: start small, think big. Awareness paper by the Advisory Board of the European Society of Pathology.](https://pubmed.ncbi.nlm.nih.gov/42983055/)
+
+- 标识：`p-2bad63dad27f37ed4849`；发表：2026-11-05；发现：2026-11-09
+- 主题：待分类（规则建议）
+- 状态：待模型分析／人工核验
+
+### [Utilising digital technologies for mycetoma management: A comprehensive review of advances and opportunities.](https://pubmed.ncbi.nlm.nih.gov/42993714/)
+
+- 标识：`p-2cdd0fa40c0fdda31e91`；发表：2026-11-06；发现：2026-11-09
+- 主题：EHR, Physiological Signals and Healthcare（规则建议）
+- 状态：待模型分析／人工核验
+
+### [Data, AI and healthcare equity: why Africa is being left behind and how synthetic data can close the gap.](https://pubmed.ncbi.nlm.nih.gov/42986603/)
+
+- 标识：`p-35418e9ff44987d99dbe`；发表：2026-11-05；发现：2026-11-09
+- 主题：Fairness Evaluation and Benchmarking（规则建议）
+- 状态：待模型分析／人工核验
+
+### [Distinguishing artificial intelligence from robotic execution in total knee arthroplasty: a narrative review and evidence map.](https://pubmed.ncbi.nlm.nih.gov/42989357/)
+
+- 标识：`p-890a1e7b312acb803ad3`；发表：2026-11-06；发现：2026-11-09
+- 主题：Bias Mechanisms and Measurement（规则建议）
+- 状态：待模型分析／人工核验
+
+### [Chest physiotherapy for pneumonia in children.](https://pubmed.ncbi.nlm.nih.gov/42992515/)
+
+- 标识：`p-9ca0cac29da6ce5f1c90`；发表：2026-11-06；发现：2026-11-09
+- 主题：Fairness Evaluation and Benchmarking、Bias Mechanisms and Measurement、Pre-processing Mitigation（规则建议）
+- 状态：待模型分析／人工核验
+
+### [Prognostic accuracy of the maternal serum IGFBP4/SHBG ratio for spontaneous preterm birth in asymptomatic pregnancies: a systematic review.](https://pubmed.ncbi.nlm.nih.gov/42971281/)
+
+- 标识：`p-a75fcd8d53770af74dd9`；发表：2026-11-02；发现：2026-11-09
+- 主题：Fairness Evaluation and Benchmarking、Bias Mechanisms and Measurement、Pre-processing Mitigation、Post-processing Mitigation、Clinical NLP and Foundation Models（规则建议）
+- 状态：待模型分析／人工核验
+
+### [Perspective. Precision Nutrition at a Crossroads: From Biological Prediction to Contextual Implementation.](https://pubmed.ncbi.nlm.nih.gov/42994801/)
+
+- 标识：`p-6f63b3f380ed1aa84ab0`；发表：2026-11-06；发现：2026-11-09
+- 主题：待分类（规则建议）
+- 状态：待模型分析／人工核验
+
+### [Role of Telemedicine in Congenital Heart Disease Care Models in Low- and Middle-Income Countries: A Scientific Statement From the American Heart Association.](https://pubmed.ncbi.nlm.nih.gov/42831398/)
+
+- 标识：`p-03c4871fffd64213d701`；发表：2026-10-05；发现：2026-11-09
+- 主题：EHR, Physiological Signals and Healthcare（规则建议）
 - 状态：待模型分析／人工核验

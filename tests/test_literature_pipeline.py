@@ -114,7 +114,7 @@ class PipelineTests(unittest.TestCase):
         import types
         mock_sources = types.ModuleType("scripts.literature_pipeline.sources")
         mock_sources.fetch_source = lambda *a, **k: {"records": [record()], "complete": False, "total": 1000}
-        arguments = ["--sources", "arxiv", "--metadata-only", "--db", str(self.root / "cli.sqlite3"),
+        arguments = ["--sources", "arxiv", "--metadata-only", "--no-publication-tracking", "--db", str(self.root / "cli.sqlite3"),
                      "--state", str(self.root / "state.json"), "--output", str(self.root / "reports"), "--until", "2026-11-04"]
         with patch.dict("sys.modules", {"scripts.literature_pipeline.sources": mock_sources}):
             self.assertEqual(main(arguments), 2)
@@ -131,12 +131,14 @@ class PipelineTests(unittest.TestCase):
             observed.append((since, until))
             return {"records": [], "complete": False, "total": 1000}
         mock_sources.fetch_source = fetch
-        arguments = ["--sources", "arxiv", "--metadata-only", "--db", str(self.root / "cli.sqlite3"),
+        arguments = ["--sources", "arxiv", "--metadata-only", "--no-publication-tracking", "--db", str(self.root / "cli.sqlite3"),
                      "--state", str(self.root / "state.json"), "--output", str(self.root / "reports")]
         with patch.dict("sys.modules", {"scripts.literature_pipeline.sources": mock_sources}):
             self.assertEqual(main(arguments + ["--until", "2026-11-04"]), 2)
             self.assertEqual(main(arguments + ["--until", "2026-11-11"]), 2)
         query_count = len(json.loads((ROOT / "config/literature.json").read_text())["sources"]["arxiv"])
+        from scripts.recall import load_config,queries
+        query_count += len(queries(load_config())["arxiv"])
         self.assertEqual(observed, [("2026-10-05", "2026-11-04")] * query_count + [("2026-10-05", "2026-11-11")] * query_count)
 
     def test_required_model_configuration_cannot_fall_back_to_metadata(self):

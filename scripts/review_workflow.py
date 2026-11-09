@@ -68,7 +68,7 @@ def write_review_packet(db, output, day, catalog):
     papers=[json.loads(payload) for payload, in db.execute('SELECT payload FROM papers')]
     papers.sort(key=lambda p:(-route(p)['priority'],p['first_seen'],p['id']))
     for p in papers:
-        if p.get('seeded') or any(same_record(p,q) for q in records):continue
+        if p.get('seeded') or any(same_record(p,q) for q in records) or p.get('venue_assessment',{}).get('status')=='ineligible':continue
         human=current_human_decision(p,ledger)
         if human.get('decision')=='reject':continue
         old=analyses.get(p['id']);result=None
@@ -82,6 +82,11 @@ def write_review_packet(db, output, day, catalog):
                   '文章：['+p['title'].replace('\n',' ')+']('+p['url']+')','',
                   '审核决定：'+labels[decision], '审核备注：'+saved.get('note',''), '证据版本：'+fp,'',
                   '模型建议：'+(result['decision'] if result else '待分析／原分析已过期'),'']
+        venue=p.get('venue_assessment',{})
+        if venue:lines += ['渠道核查：'+venue.get('status','pending')+'；'+venue.get('reason_zh','待核实'),'']
+        if p.get('discovery_lanes'):lines += ['发现通道：'+', '.join(p['discovery_lanes']),'']
+        if p.get('formal_publications'):
+            lines += ['正式版本线索：'+'；'.join('['+r['title']+']('+r['url']+')' for r in p['formal_publications']),'']
         if result:
             lines += ['中文概述：'+result['summary_zh'],'','纳入判断：'+result['reason_zh'],'','限制：'+result['limitations_zh'],'',
                       '建议分类：'+', '.join(result['metadata']['Stage']),'', '证据：']

@@ -22,3 +22,5 @@ Do not upload patient data, private documents, credentials or third-party full p
 Screening prioritizes original methodology and task-specific fairness audits. Reviews and commentaries require a concrete medical disease/task and detailed fairness analysis; incidental fairness mentions are insufficient. See [screening-policy.md](docs/screening-policy.md).
 
 For imaging records, use only explicitly supported modality values (for example MRI, CT, X-ray, OCT, dermoscopy or fundus photography). Multiple modalities may be selected when the study actually uses them. Use `Medical imaging (modality unspecified)` when the available source cannot establish the modality; do not label a study from incidental background mentions. Keep actual paper/code/data links in `links`; Assets remains internal bookkeeping.
+
+Future additions must satisfy the [prospective venue policy](docs/venue-policy.md), as well as explicit maintainer approval and source-grounded topic screening. Run `python3 -m scripts.recall` before publication. Keep publication-identity candidates separate from confirmed relationships; do not merge on shared authors or a title search alone.
