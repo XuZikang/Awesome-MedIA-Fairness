@@ -21,6 +21,21 @@ def formal(identifier='10.1234/final',title='Renamed clinical study'):
 
 
 class RecallSafeguards(unittest.TestCase):
+    def test_source_timeout_retains_every_query_window_without_claiming_execution(self):
+        with tempfile.TemporaryDirectory() as d:
+            root=Path(d);config={'initial_days':30,'overlap_days':7,'max_records_per_query':10,'max_analyses_per_run':1,
+                                'sources':{'pubmed':['first query','second query']}}
+            file=root/'config.json';file.write_text(json.dumps(config))
+            with patch('scripts.literature_pipeline.sources.fetch_source',side_effect=TimeoutError()) as fetch:
+                result=main(['--config',str(file),'--db',str(root/'db'),'--state',str(root/'state.json'),
+                             '--output',str(root/'reports'),'--metadata-only','--until','2026-11-08'])
+            self.assertEqual(result,2);self.assertEqual(fetch.call_count,1)
+            status=json.loads((root/'reports/run-status.json').read_text())
+            self.assertTrue(status['sources'][0]['attempted']);self.assertFalse(status['sources'][1]['attempted'])
+            self.assertFalse(any(s['complete'] for s in status['sources']))
+            state=json.loads((root/'state.json').read_text())
+            self.assertTrue(all(k.startswith('pending-') for k in state['checkpoints']))
+
     def test_approved_sentinels_and_negative_controls(self):
         result=recall.check();self.assertTrue(result['passed']);self.assertEqual(len(result['cases']),8)
 

@@ -33,3 +33,5 @@ python3 scripts/validate_catalog.py
 ```
 
 主CLI默认启用配置中的补漏与身份追踪。`--metadata-only`跳过模型与全文调用，但仍可读取书目元数据；独立检索测试可用`--no-publication-tracking`。`--fixture`不会发起检索或身份联网请求，适合离线回归。
+
+同一来源在完整重试后仍超时或遭受限流时，本轮暂停其剩余查询；每个未执行查询记录 `attempted: false` 并保留待补区间，其他来源继续。查询表达式错误不会被误当作整个来源不可用。

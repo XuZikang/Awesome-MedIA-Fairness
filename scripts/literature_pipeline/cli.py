@@ -8,6 +8,7 @@ import os
 import re
 import sqlite3
 import sys
+import urllib.error
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
@@ -30,6 +31,17 @@ def write_atomic(path, text):
     temporary = path.with_name(path.name + ".tmp")
     temporary.write_text(text, encoding="utf-8")
     temporary.replace(path)
+
+
+def source_transport_unavailable(exc):
+    """A host timeout/rate limit is different from a rejected query expression."""
+    seen=set()
+    while exc is not None and id(exc) not in seen:
+        seen.add(id(exc))
+        if isinstance(exc,TimeoutError) or getattr(exc,'code',None)==429:return True
+        if isinstance(exc,urllib.error.URLError) and isinstance(exc.reason,(TimeoutError,ConnectionError)):return True
+        exc=exc.__cause__
+    return False
 
 
 def aliases(paper):
@@ -422,6 +434,7 @@ def main(argv=None):
             for source, queries in source_queries.items():
                 if args.sources and source not in args.sources:
                     continue
+                source_unavailable=False
                 for query,lane in queries:
                     query_id = hashlib.sha256(query.encode()).hexdigest()[:12]
                     checkpoint_key = source + ":" + query_id
@@ -440,6 +453,12 @@ def main(argv=None):
                     status = {"source": source, "query_id": query_id, "since": since.isoformat(), "until": day, "complete": False,'lane':lane}
                     print(f"Searching {source}/{query_id}: {since.isoformat()} to {day}", flush=True)
                     try:
+                        if source_unavailable:
+                            status['attempted']=False
+                            status['error']='Source unavailable after exhausted transport retries; this query was not attempted, window retained'
+                            statuses.append(status)
+                            continue
+                        status['attempted']=True
                         result = fetch_source(source, query, since.isoformat(), day, max_records=maximum, email=os.environ.get("NCBI_EMAIL", ""))
                         for record in result["records"]:
                             record['discovery_lanes']=[lane]
@@ -454,6 +473,7 @@ def main(argv=None):
                                     db.execute("DELETE FROM checkpoints WHERE key IN (?, ?)", (pending_key, pending_end_key))
                     except Exception as exc:
                         status["error"] = type(exc).__name__ + ": source query failed; retry retained"
+                        source_unavailable=source_transport_unavailable(exc)
                     statuses.append(status)
                     print(f"  {status.get('records', 0)} records; complete={status['complete']}" + (f"; {status['error']}" if status.get("error") else ""), flush=True)
         tracking_status={'checked':0,'failures':0,'formal_links':0,'identity_conflicts':0,'pending_checks':0}
