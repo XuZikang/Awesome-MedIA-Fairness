@@ -9,9 +9,10 @@ from scripts.catalog_schema import ALLOWED, MAIN_HEADING
 from scripts.catalog_editorial import METHODS, validate_annotation
 
 ROOT = Path(__file__).resolve().parents[1]
+DISPLAY_FIELDS = ('Domain','Focus','Stage','Attributes','Assets')
 REPO = 'https://github.com/XuZikang/Awesome-MedIA-Fairness'
 COLORS = {'Fairness Evaluation':'2563eb','Pre-processing':'b45309','In-processing':'9333ea','Post-processing':'15803d','Stage pending':'64748b',
-          'Domain':'0369a1','Focus':'0e7490','Attributes':'be185d','Assets':'0f766e','Evidence':'475569','Survey':'92400e','Commentary':'92400e'}
+          'Domain':'0369a1','Focus':'0e7490','Stage':'2563eb','Attributes':'be185d','Assets':'0f766e','Evidence':'475569','Survey':'92400e','Commentary':'92400e'}
 
 
 def md(value):
@@ -31,16 +32,15 @@ def badge(label, family):
 def entry(p):
     method=p['method'];m=p['metadata']
     venue=re.sub(r"[^\w .&/+-]",'',p.get('venue','Paper'))[:65].strip() or 'Paper'
-    tags=[badge(method,method)]
+    controls=[]
+    for field in DISPLAY_FIELDS:
+        controls.append('**'+field+':** '+' '.join(badge(v,v if field=='Stage' and v in METHODS else field) for v in m[field]))
     if p.get('kind')=='survey':
         label='Commentary' if p.get('publication_type')=='Commentary' else 'Survey'
-        tags.append(badge(label,label))
-    for field in ('Domain','Focus','Attributes','Assets','Evidence'):
-        tags.append(badge(' + '.join(m[field]),field))
+        controls.append(badge(label,label))
     labels={'Paper':'Paper','Code':'Code','Weights':'Weights','Project':'Project','Data':'Data'}
     links=' '.join(f'[[{labels[k]}]({v})]' for k,v in p['links'].items() if k in labels)
-    lines=[f"- (*{venue}'{p['year'][-2:]}*) **{md(p['title'])}** "+' '.join(tags), '', '  '+links, '',
-           '  **Metadata:** '+' · '.join(f"`{k}: {' + '.join(m[k])}`" for k in ALLOWED), '',
+    lines=[f"- (*{venue}'{p['year'][-2:]}*) **{md(p['title'])}**", '', '  '+' · '.join(controls), '', '  '+links, '',
            '  **TLDR:** '+' '.join(md(sentence) for sentence in p['tldr_en']), '',
            '  **Date:** '+p['publication_date'], '']
     return '\n'.join(lines)
@@ -92,9 +92,9 @@ def main(root=None):
         '| '+badge('Post-processing','Post-processing')+' | Interventions after model training, such as output adjustment, calibration or reviewed model adaptation; predictor freezing must be established from the specific protocol. |','',
         '`Stage pending` is an evidence-status bucket for mitigation records whose intervention stage is not yet established, not an additional methodology. Within each category, records run newest to oldest. The latest catalog year is divided by month; missing months remain explicitly unverified. Dates retain the precision supplied by the original record, rather than the discovery date.','',
         '| Field | Controlled values |\n|---|---|']
-    for field,values in ALLOWED.items():
-        lines.append('| **'+field+'** | '+', '.join(badge(v,v if v in METHODS else field)+' `'+v+'`' for v in sorted(values))+' |')
-    lines+=['','Title badges use distinct colors for methodology, domain, focus, attributes, available assets and evidence level. Metadata and evidence labels describe the available record; a metadata or abstract check is not a full-methods audit.','',MAIN_HEADING,'']
+    for field in DISPLAY_FIELDS:
+        lines.append('| **'+field+'** | '+' '.join(badge(v,v if field=='Stage' and v in METHODS else field) for v in sorted(ALLOWED[field]))+' |')
+    lines+=['','Colored control values appear on a separate line below each paper title. One badge represents one value; surveys and commentaries carry an additional type badge.','',MAIN_HEADING,'']
     for method in METHODS:
         group=[p for p in records if p['method']==method]
         if not group and method=='Stage pending':continue

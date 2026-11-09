@@ -4,7 +4,7 @@ import json
 import re
 import hashlib
 from pathlib import Path
-from scripts.literature_pipeline.analysis import review_fingerprint
+from scripts.literature_pipeline.analysis import review_fingerprint, route
 from scripts.screening_policy import paper_version, content_version, current_human_decision
 
 DECISIONS = {'待审核':'pending','通过':'approve','纳入':'approve','排除':'reject','暂缓':'hold',
@@ -63,8 +63,11 @@ def write_review_packet(db, output, day, catalog):
            '请只修改每篇的“审核决定”和“审核备注”：待审核 / 通过 / 排除 / 暂缓。编号和证据版本请保留。',
            '填写后将此 Markdown 文件交给助手，或在聊天中按编号给出决定；只有明确通过的文章才会进入 README。',
            '模型建议不是你的审核决定；证据不足的通过项仍需补核原文。','']
-    for (payload,) in db.execute('SELECT payload FROM papers ORDER BY id'):
-        p=json.loads(payload)
+    shortlist=output/('methodology-priority-'+day+'.md')
+    if shortlist.exists():lines += ['优先阅读：[方法学候选导读]('+shortlist.name+')（基于原始摘要的辅助整理，待你审核）。','']
+    papers=[json.loads(payload) for payload, in db.execute('SELECT payload FROM papers')]
+    papers.sort(key=lambda p:(-route(p)['priority'],p['first_seen'],p['id']))
+    for p in papers:
         if p.get('seeded') or any(same_record(p,q) for q in records):continue
         human=current_human_decision(p,ledger)
         if human.get('decision')=='reject':continue

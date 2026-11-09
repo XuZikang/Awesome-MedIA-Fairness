@@ -93,8 +93,48 @@
       "p-6f28fb186e3dcea2f8ba"
     ],
     [
+      "arxiv_id:2610.22618",
+      "p-45778789f12c424e7649"
+    ],
+    [
+      "arxiv_id:2610.25709",
+      "p-b3eae538180f8f9919dd"
+    ],
+    [
+      "arxiv_id:2610.25819",
+      "p-9cba83191a3299c02316"
+    ],
+    [
+      "arxiv_id:2610.26215",
+      "p-3e31b3ad8d1cc28d1bbc"
+    ],
+    [
+      "arxiv_id:2610.29104",
+      "p-983161c15d18a6bd2e5a"
+    ],
+    [
+      "arxiv_id:2610.32362",
+      "p-25f166919d5808c5e366"
+    ],
+    [
+      "arxiv_id:2610.33697",
+      "p-b8664efa92d96d1cf84f"
+    ],
+    [
+      "arxiv_id:2610.37819",
+      "p-59068cc978cafdc33230"
+    ],
+    [
+      "arxiv_id:2610.38006",
+      "p-0f04eeaa9bee15404b6b"
+    ],
+    [
       "arxiv_id:2610.38215",
       "p-2fcb4e34b5f7daab4c8d"
+    ],
+    [
+      "arxiv_id:2611.00049",
+      "p-af26ec6de648c002a857"
     ],
     [
       "arxiv_id:2611.00298",
@@ -237,6 +277,10 @@
       "p-fda1af6a735d35a7ab7d"
     ],
     [
+      "doi:10.1007/s00414-026-03919-6",
+      "p-e632f7ecdcaf4149d588"
+    ],
+    [
       "doi:10.1007/s10140-021-01953-y",
       "p-e57fec541d02d9ab897e"
     ],
@@ -249,6 +293,14 @@
       "p-5e807a99c95186c7bc80"
     ],
     [
+      "doi:10.1007/s11548-026-03805-x",
+      "p-8aeef9186465b5deed36"
+    ],
+    [
+      "doi:10.1007/s11606-026-10576-3",
+      "p-146fd2d3e9607bbd9129"
+    ],
+    [
       "doi:10.1007/s12072-026-11156-7",
       "p-41c2f5e12d24a76bab3e"
     ],
@@ -259,6 +311,10 @@
     [
       "doi:10.1007/s43441-026-01033-8",
       "p-1607ccec012a87a0fdca"
+    ],
+    [
+      "doi:10.1016/j.acra.2026.09.075",
+      "p-8dce8465449c9e0cb987"
     ],
     [
       "doi:10.1016/j.ajp.2026.105154",
@@ -321,6 +377,10 @@
       "p-b0cb7b51a7ac9f9fa2a2"
     ],
     [
+      "doi:10.1016/j.jhsa.2026.07.014",
+      "p-007c99a4b780ee55450d"
+    ],
+    [
       "doi:10.1016/j.jid.2026.08.008",
       "p-ca287a15e23f038adaf1"
     ],
@@ -349,6 +409,10 @@
       "p-064ee08a8e0905727f10"
     ],
     [
+      "doi:10.1016/j.neunet.2026.109168",
+      "p-4531cd0838fbf818d5b0"
+    ],
+    [
       "doi:10.1016/j.patter.2023.100790",
       "p-3e0c5f9b847a8ac26a68"
     ],
@@ -367,6 +431,10 @@
     [
       "doi:10.1016/s2589-7500(22)00063-2",
       "p-6d07dc6c06181b7e7311"
+    ],
+    [
+      "doi:10.1037/amp0001736",
+      "p-90e758f61454cf309cc5"
     ],
     [
       "doi:10.1038/s41467-020-19784-9",
@@ -417,6 +485,10 @@
       "p-ce3d33590cf86aae18f9"
     ],
     [
+      "doi:10.1038/s44401-026-00158-0",
+      "p-7ce27dede71de2b2c84e"
+    ],
+    [
       "doi:10.1071/ah26110",
       "p-3e7581d5cf989529b639"
     ],
@@ -459,6 +531,10 @@
     [
       "doi:10.1097/sap.0000000000004878",
       "p-2d408dda7b908686a6ac"
+    ],
+    [
+      "doi:10.1109/cspa68262.2026.11517900",
+      "p-af26ec6de648c002a857"
     ],
     [
       "doi:10.1109/cvprw.2019.00335",
@@ -525,6 +601,10 @@
       "p-cfd3a56d56237ac61c14"
     ],
     [
+      "doi:10.1148/ryai.260591",
+      "p-7068da05f7ca4dd4f330"
+    ],
+    [
       "doi:10.1161/strokeaha.126.053795",
       "p-e63a02248d4e14119359"
     ],
@@ -569,6 +649,18 @@
       "p-747c407c5696b151b802"
     ],
     [
+      "doi:10.1371/journal.pdig.0001105",
+      "p-f4567d6da1046873aea0"
+    ],
+    [
+      "doi:10.1371/journal.pone.0360944",
+      "p-28114085d45cd4565fde"
+    ],
+    [
+      "doi:10.20944/preprints202610.2138.v1",
+      "p-e93b14a2fee91d9b2317"
+    ],
+    [
       "doi:10.20944/preprints202610.2774.v1",
       "p-f65a2a15eb4c53ba6488"
     ],
@@ -579,6 +671,10 @@
     [
       "doi:10.21203/rs.3.rs-10547287/v1",
       "p-39172eeeef221e79bbcc"
+    ],
+    [
+      "doi:10.21203/rs.3.rs-10756052/v1",
+      "p-48b9e5d40beb02d005ae"
     ],
     [
       "doi:10.21203/rs.3.rs-11016438/v1",
@@ -621,16 +717,32 @@
       "p-fafce843d0071edb38ce"
     ],
     [
+      "doi:10.2214/ajr.26.35826",
+      "p-bc07a18a7cd288dd8094"
+    ],
+    [
       "doi:10.3389/fcvm.2022.859310",
       "p-26f10a837eb94581328d"
+    ],
+    [
+      "doi:10.3389/fdgth.2026.1888744",
+      "p-73c317778f11b9f63bbd"
     ],
     [
       "doi:10.3390/cancers15071932",
       "p-de521ec2dd4e703a5e45"
     ],
     [
+      "doi:10.3390/healthcare14203549",
+      "p-47f59ce8e66d8459e0e2"
+    ],
+    [
       "doi:10.59275/j.melba.2025-6747",
       "p-ebade3496d18caa2dcf0"
+    ],
+    [
+      "doi:10.64898/2026.10.30.26366732",
+      "p-dd8b25f1e5426bb19b9c"
     ],
     [
       "doi:10.7326/m18-1990",
@@ -657,8 +769,36 @@
       "p-b130f0cb3376203a6985"
     ],
     [
+      "pmcid:pmc13662775",
+      "p-de1d8f363bb788b48fb8"
+    ],
+    [
+      "pmcid:pmc13687106",
+      "p-7ce27dede71de2b2c84e"
+    ],
+    [
+      "pmcid:pmc13704475",
+      "p-47f59ce8e66d8459e0e2"
+    ],
+    [
+      "pmcid:pmc13704874",
+      "p-f4567d6da1046873aea0"
+    ],
+    [
+      "pmcid:pmc13711374",
+      "p-73c317778f11b9f63bbd"
+    ],
+    [
       "pmcid:pmc13723367",
       "p-747c407c5696b151b802"
+    ],
+    [
+      "pmcid:pmc13728010",
+      "p-146fd2d3e9607bbd9129"
+    ],
+    [
+      "pmcid:pmc13730354",
+      "p-28114085d45cd4565fde"
     ],
     [
       "pmcid:pmc13731530",
@@ -753,6 +893,18 @@
       "p-791ad6693c5fab805032"
     ],
     [
+      "pmid:42214931",
+      "p-4531cd0838fbf818d5b0"
+    ],
+    [
+      "pmid:42412185",
+      "p-e632f7ecdcaf4149d588"
+    ],
+    [
+      "pmid:42420655",
+      "p-146fd2d3e9607bbd9129"
+    ],
+    [
       "pmid:42434887",
       "p-2ace6f04876029d3419e"
     ],
@@ -795,6 +947,10 @@
     [
       "pmid:42617285",
       "p-5c95d2dbcd135df1a0e0"
+    ],
+    [
+      "pmid:42640232",
+      "p-007c99a4b780ee55450d"
     ],
     [
       "pmid:42667695",
@@ -841,8 +997,40 @@
       "p-3e28ee0d19df84b9f3d4"
     ],
     [
+      "pmid:42891802",
+      "p-8aeef9186465b5deed36"
+    ],
+    [
       "pmid:42906928",
       "p-3e7581d5cf989529b639"
+    ],
+    [
+      "pmid:42907264",
+      "p-8dce8465449c9e0cb987"
+    ],
+    [
+      "pmid:42907563",
+      "p-7ce27dede71de2b2c84e"
+    ],
+    [
+      "pmid:42932339",
+      "p-f4567d6da1046873aea0"
+    ],
+    [
+      "pmid:42940596",
+      "p-47f59ce8e66d8459e0e2"
+    ],
+    [
+      "pmid:42948540",
+      "p-73c317778f11b9f63bbd"
+    ],
+    [
+      "pmid:42949357",
+      "p-bc07a18a7cd288dd8094"
+    ],
+    [
+      "pmid:42949520",
+      "p-7068da05f7ca4dd4f330"
     ],
     [
       "pmid:42950829",
@@ -851,6 +1039,10 @@
     [
       "pmid:42955499",
       "p-bbc3b6330d6af062be13"
+    ],
+    [
+      "pmid:42956225",
+      "p-90e758f61454cf309cc5"
     ],
     [
       "pmid:42957403",
@@ -893,6 +1085,10 @@
       "p-fda1af6a735d35a7ab7d"
     ],
     [
+      "pmid:42976191",
+      "p-28114085d45cd4565fde"
+    ],
+    [
       "pmid:42980982",
       "p-5e807a99c95186c7bc80"
     ],
@@ -933,12 +1129,20 @@
       "p-21e427cb86622249579c"
     ],
     [
+      "title:aframeworkforidentifyingandunderstandingcognitivebiasesinartificialintelligenceassistedradiology",
+      "p-bc07a18a7cd288dd8094"
+    ],
+    [
       "title:aframeworkfortaskagnosticcounterfactualfairnessintransformersthroughactivationsteering",
       "p-3d7d2c77176c61d55abc"
     ],
     [
       "title:aialgorithmsandexternalvalidationpromisespitfallsandapracticalblueprint",
       "p-cf9833bc80232d798aba"
+    ],
+    [
+      "title:aibasedboneageassessmentversusforensicexpertpanelagreementsexbiasandethicalimplications",
+      "p-e632f7ecdcaf4149d588"
     ],
     [
       "title:aidrivenmultiomicsbiomarkersforprecisiononcologynavigatingthetranslationalgapandregulatoryhurdles",
@@ -963,6 +1167,14 @@
     [
       "title:algorithmicbiasconcernsandacceptanceofaisupportedlegaldecisionmakinginbangladesh",
       "p-f65a2a15eb4c53ba6488"
+    ],
+    [
+      "title:algorithmicbiasfromtheperspectivesofhealthcareprofessionals",
+      "p-0f04eeaa9bee15404b6b"
+    ],
+    [
+      "title:algorithmicdesignchoicesasdeterminantsofhealthequityacausalsimulationstudyofhealthcareresourceallocation",
+      "p-dd8b25f1e5426bb19b9c"
     ],
     [
       "title:algorithmicencodingofprotectedcharacteristicsinchestxraydiseasedetectionmodels",
@@ -1011,6 +1223,10 @@
     [
       "title:apenaltyapproachfornormalizingfeaturedistributionstobuildconfounderfreemodels",
       "p-d2aa9572dd44b68fe757"
+    ],
+    [
+      "title:arbiterretrievalaugmentedgenerationforautomatedprobastairiskofbiasassessmentofhivhbvandhcvpredictionmodelsaproofofconceptvalidationstudy",
+      "p-48b9e5d40beb02d005ae"
     ],
     [
       "title:aresexbasedphysiologicaldifferencesthecauseofgenderbiasforchestxraydiagnosis",
@@ -1085,6 +1301,18 @@
       "p-b67b84cbf7e763e4e6fe"
     ],
     [
+      "title:automationbiasanddeskillinginradiologyaiaconfidencestratifiedtriagemodelforworkflowintegration",
+      "p-7068da05f7ca4dd4f330"
+    ],
+    [
+      "title:backgroundbiasassessmentandmitigationinplantdiseasedetectionusingefficientnetb0withimageprocessing",
+      "p-af26ec6de648c002a857"
+    ],
+    [
+      "title:beyondaccuracyinvestigatingpseudolearningandbiaspropagationinmribraintumourclassification",
+      "p-e93b14a2fee91d9b2317"
+    ],
+    [
       "title:biasinmachinelearningmodelscanbesignificantlymitigatedbycarefultrainingevidencefromneuroimagingstudies",
       "p-c32f29e50aca8640eddf"
     ],
@@ -1097,12 +1325,24 @@
       "p-2ace6f04876029d3419e"
     ],
     [
+      "title:biasmitigationacrossthehealthcareartificialintelligencelifecycleastructurednarrativereview",
+      "p-de1d8f363bb788b48fb8"
+    ],
+    [
       "title:biasrecognitionandmitigationstrategiesinartificialintelligencehealthcareapplications",
       "p-09bfed64bef4c8072b37"
     ],
     [
+      "title:canlargelanguagemodelspreservediagnosticaccuracydespitepatientselfdiagnosisandframingbiasinhypotheticalupperextremityscenarios",
+      "p-007c99a4b780ee55450d"
+    ],
+    [
       "title:canyouseeitdiagnosticblindspotsinpigmentedskinareviewoftheliteratureinplasticsurgeryandburns",
       "p-2d408dda7b908686a6ac"
+    ],
+    [
+      "title:causalhumilitygoverningtheauthorityoffairnessclaimsundercausaluncertainty",
+      "p-b3eae538180f8f9919dd"
     ],
     [
       "title:chexclusionfairnessgapsindeepchestxrayclassifiers",
@@ -1129,12 +1369,20 @@
       "p-4cdbb2df2923fd9ce2c7"
     ],
     [
+      "title:debiasedmedicationrecommendationthroughfusingfrequentpatternandtemporalmedicalrecords",
+      "p-4531cd0838fbf818d5b0"
+    ],
+    [
       "title:debiasingdeepchestxrayclassifiersusingintraandpostprocessingmethods",
       "p-74db318deea8bfd85d95"
     ],
     [
       "title:debiasingskinlesiondatasetsandmodelsnotsofast",
       "p-189371b813dc53a1b7e1"
+    ],
+    [
+      "title:decisionarchitecturedependenceandpatientgenderconditionedallocationinlargelanguagemodelassistednursingallocationamultimodelcounterfactualaudit",
+      "p-47f59ce8e66d8459e0e2"
     ],
     [
       "title:deconstructingbiasonskinlesiondatasets",
@@ -1167,6 +1415,10 @@
     [
       "title:detectingshortcutsinmedicalimagesacasestudyinchestxrays",
       "p-a86be289be4b793ca3eb"
+    ],
+    [
+      "title:detectionandvalidationofhiddensubgroupdisparitiesinclinicalai",
+      "p-25f166919d5808c5e366"
     ],
     [
       "title:diagnosingfailuresoffairnesstransferacrossdistributionshiftinrealworldmedicalsettings",
@@ -1277,6 +1529,10 @@
       "p-9bc081c3edad7cd8e980"
     ],
     [
+      "title:fairnessorfallacymappingthelandscapeofaibiasindiseasedetection",
+      "p-3e31b3ad8d1cc28d1bbc"
+    ],
+    [
       "title:fairnessrelatedperformanceandexplainabilityeffectsindeeplearningmodelsforbrainimageanalysis",
       "p-3b2166fdea4fbc0199d4"
     ],
@@ -1297,8 +1553,16 @@
       "p-c3ff0dcccd35b47eaa4a"
     ],
     [
+      "title:fromcanontonikoncameradomainshiftandpotentialequityimplicationsinretinalai",
+      "p-983161c15d18a6bd2e5a"
+    ],
+    [
       "title:fromheadandnecktumourandlymphnodesegmentationtosurvivalpredictiononpetctanendtoendframeworkfeaturinguncertaintyfairnessandmultiregionmultimodalradiomics",
       "p-de521ec2dd4e703a5e45"
+    ],
+    [
+      "title:genderassociationsinllmmediatedadhdselfdiagnosis",
+      "p-b8664efa92d96d1cf84f"
     ],
     [
       "title:genderimbalanceinmedicalimagingdatasetsproducesbiasedclassifiersforcomputeraideddiagnosis",
@@ -1335,6 +1599,10 @@
     [
       "title:improvingmodelfairnessinimagebasedcomputeraideddiagnosis",
       "p-05ce6d87457d2db0fe6f"
+    ],
+    [
+      "title:improvingthefairnessandrobustnessofdeeplearningclassificationmodelsthroughbiasmitigationandposthoccalibration",
+      "p-8aeef9186465b5deed36"
     ],
     [
       "title:improvingthefairnessofchestxrayclassifiers",
@@ -1389,6 +1657,14 @@
       "p-eb9d63530da3d7022d2e"
     ],
     [
+      "title:operationalizingfairaiinhealthcareascopingreviewofbiasmitigationmonitoringauditingandgovernancestrategies",
+      "p-73c317778f11b9f63bbd"
+    ],
+    [
+      "title:paradoxicalinflationofpredictionmodelperformancemeasuresinminoritypatientsubgroupstheroleofupstreambias",
+      "p-7ce27dede71de2b2c84e"
+    ],
+    [
       "title:patientattitudestowardartificialintelligencedrivendermatology",
       "p-ca287a15e23f038adaf1"
     ],
@@ -1413,12 +1689,24 @@
       "p-e57fec541d02d9ab897e"
     ],
     [
+      "title:refocusingalgorithmicfairnessonfeaturelevelbiasadiagnosticapproachusingdutchehrdata",
+      "p-f4567d6da1046873aea0"
+    ],
+    [
       "title:reimaginingalgorithmicfairnessinindiaandbeyond",
       "p-1a1fd9e1c9b840dc0638"
     ],
     [
+      "title:reportingoffairnessandequityinstudiesofregulatorclearedcommercialaiforacutestrokectasystematicreview",
+      "p-8dce8465449c9e0cb987"
+    ],
+    [
       "title:representationlearningwithstatisticalindependencetomitigatebias",
       "p-bbc3b4510635ce49b275"
+    ],
+    [
+      "title:resourceallocationunderuncertaintyandequityconstraintsinparkinsonsdiseasecareaneconometricallygroundedmachinelearningframework",
+      "p-28114085d45cd4565fde"
     ],
     [
       "title:responsibleaiforacutestrokemanagement",
@@ -1431,6 +1719,10 @@
     [
       "title:responsiblecreditlineincreaseafairnessawareexplainableandgovernedmachinelearningframeworkforsociotechnicallendingsystems",
       "p-59d12037c0f5cd6ad9d2"
+    ],
+    [
+      "title:responsiblequantummachinelearningformedicalimagingafairnessauditacrosssensitivesubgroups",
+      "p-59068cc978cafdc33230"
     ],
     [
       "title:rethinkingfairnessinmedicalimagingmaximizinggroupspecificperformancewithapplicationtoskindiseasediagnosis",
@@ -1529,6 +1821,10 @@
       "p-f51c76f9a365032f9da6"
     ],
     [
+      "title:towardequitablefidelitymeasurementofevidencebasedpsychosocialinterventions",
+      "p-90e758f61454cf309cc5"
+    ],
+    [
       "title:towardmultimodalphysiologicalassessmentofclinicalperformanceinsimulationbasedmedicaleducationamachinelearningapproach",
       "p-bbc3b6330d6af062be13"
     ],
@@ -1539,6 +1835,10 @@
     [
       "title:trainingconfounderfreedeeplearningmodelsformedicalapplications",
       "p-c12e599b0a2f6f675632"
+    ],
+    [
+      "title:trajectoryguidedsteeringmitigatingspuriousfeaturebiasinclinicalclassification",
+      "p-45778789f12c424e7649"
     ],
     [
       "title:transformingonehealthantimicrobialresistancesurveillanceinresourcelimitedcountriesrlcsfrompointofcarediagnosticstoaidrivendecisionsupport",
@@ -1577,8 +1877,16 @@
       "p-5e807a99c95186c7bc80"
     ],
     [
+      "title:wearablederiveddataforpatientfrailtyextendinghospitalfrailtyriskscorewhileconfrontingbiasandinequities",
+      "p-146fd2d3e9607bbd9129"
+    ],
+    [
       "title:whatsfairisfairpresentingjustefabanethicalframeworkforoperationalizingmedicalethicsandsocialjusticeintheintegrationofclinicalmachinelearning",
       "p-9655b13245a51f06cf0d"
+    ],
+    [
+      "title:whentostopaskingfactorcoveragebiasandllmdeterminabilityjudgmentswithunderspecifiedinformationinmedicine",
+      "p-9cba83191a3299c02316"
     ],
     [
       "title:wherewhyandhowisbiaslearnedinmedicalimageanalysismodelsastudyofbiasencodingwithinconvolutionalnetworksusingsyntheticdata",
@@ -5217,15 +5525,60 @@
     ]
   ],
   "checkpoints": {
+    "arxiv:1bb76ffa3406": "2026-11-09",
+    "arxiv:1d928560eb85": "2026-11-09",
     "arxiv:42b91404506f": "2026-11-09",
     "arxiv:4744eb3faccd": "2026-11-09",
+    "arxiv:4d95054412d0": "2026-11-09",
+    "europepmc:0013545bb3c4": "2026-11-09",
     "europepmc:249ba7c65421": "2026-11-09",
+    "europepmc:98f731ea147a": "2026-11-09",
     "europepmc:b614de0bf8b6": "2026-11-09",
+    "europepmc:c227ae0068a5": "2026-11-09",
+    "europepmc:d71eee65c043": "2026-11-09",
     "pubmed:29bd77c2182f": "2026-11-09",
+    "pubmed:4e705cd230bc": "2026-11-09",
+    "pubmed:6d3220d57721": "2026-11-09",
+    "pubmed:76fa0a7789bf": "2026-11-09",
+    "pubmed:a53b390db83d": "2026-11-09",
     "pubmed:d4312ff2e61d": "2026-11-09"
   },
   "format_version": 1,
   "papers": [
+    {
+      "abstract_hash": "d42329a7a806a67eaaa0e8375a6b24ae51e2941471edb971311b27a6d36e5a6d",
+      "abstract_source": "pubmed",
+      "abstract_updated": "2026-11-02",
+      "arxiv_id": "",
+      "authors": [
+        "Emily H Jaarsma",
+        "David Ring",
+        "John Wickman",
+        "Alexander Drost"
+      ],
+      "doi": "10.1016/j.jhsa.2026.07.014",
+      "first_seen": "2026-11-09",
+      "id": "p-007c99a4b780ee55450d",
+      "is_open_access": false,
+      "last_changed": "2026-11-09",
+      "pmcid": "",
+      "pmid": "42640232",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "published": "2026-08-24",
+      "seeded": false,
+      "source": "pubmed",
+      "source_id": "42640232",
+      "sources": [
+        "pubmed"
+      ],
+      "title": "Can Large Language Models Preserve Diagnostic Accuracy Despite Patient Self-Diagnosis and Framing Bias in Hypothetical Upper-Extremity Scenarios?",
+      "updated": "2026-11-02",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42640232/",
+      "version": "",
+      "year": "2026"
+    },
     {
       "abstract_hash": "fc9deef2bdfdad71908dfadc81dbf5109d5c9deb5ab7afac08295e5eff1fb49b",
       "abstract_source": "pubmed",
@@ -5481,6 +5834,35 @@
       "year": "2024"
     },
     {
+      "abstract_hash": "7da1652d2a26d4a744efe0ce9a5f755fee26b50bc1d0ea6553c3b368d7505694",
+      "abstract_source": "arxiv",
+      "abstract_updated": "2026-10-27T21:57:13Z",
+      "arxiv_id": "2610.38006",
+      "authors": [
+        "Jennifer Xu",
+        "Tamara Babaian"
+      ],
+      "doi": "",
+      "first_seen": "2026-11-09",
+      "id": "p-0f04eeaa9bee15404b6b",
+      "is_open_access": true,
+      "last_changed": "2026-11-09",
+      "pmcid": "",
+      "pmid": "",
+      "published": "2026-10-27",
+      "seeded": false,
+      "source": "arxiv",
+      "source_id": "2610.38006",
+      "sources": [
+        "arxiv"
+      ],
+      "title": "Algorithmic Bias from the Perspectives of Healthcare Professionals",
+      "updated": "2026-10-27T21:57:13Z",
+      "url": "https://arxiv.org/abs/2610.38006",
+      "version": "1",
+      "year": "2026"
+    },
+    {
       "abstract_hash": "cfbb267ec1b8ca2cd52a95d01416b9c2eb52068c0cfb5b671dd0b20b65a12dcd",
       "abstract_source": "pubmed",
       "abstract_updated": "2026-10-29",
@@ -5616,6 +5998,40 @@
       "url": "https://doi.org/10.1038/s41551-023-01056-8",
       "version": "",
       "year": "2023"
+    },
+    {
+      "abstract_hash": "871683f5aa41ef6dbea882a537d225f61f7aac9dc0982766c3862d84178e2e28",
+      "abstract_source": "pubmed",
+      "abstract_updated": "2026-11-05",
+      "arxiv_id": "",
+      "authors": [
+        "Milit S Patel",
+        "Patrick Emedom-Nnamdi",
+        "Kaitlyn Lapen",
+        "Edward Christopher Dee"
+      ],
+      "doi": "10.1007/s11606-026-10576-3",
+      "first_seen": "2026-11-09",
+      "id": "p-146fd2d3e9607bbd9129",
+      "is_open_access": false,
+      "last_changed": "2026-11-09",
+      "pmcid": "PMC13728010",
+      "pmid": "42420655",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "published": "2026-07-08",
+      "seeded": false,
+      "source": "pubmed",
+      "source_id": "42420655",
+      "sources": [
+        "pubmed"
+      ],
+      "title": "Wearable-Derived Data for Patient Frailty: Extending Hospital Frailty Risk Score While Confronting Bias and Inequities.",
+      "updated": "2026-11-05",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42420655/",
+      "version": "",
+      "year": "2026"
     },
     {
       "abstract_hash": "a8f5435c3315a59437cb30b0eff438c15d56f327c825e9b1720de706d4e94af7",
@@ -5886,6 +6302,40 @@
       "year": "2024"
     },
     {
+      "abstract_hash": "67c020715a2e532ee9f63f697d2303a3a5f022e37c915d9fb9e264a74b49bc89",
+      "abstract_source": "arxiv",
+      "abstract_updated": "2026-10-23T08:54:15Z",
+      "arxiv_id": "2610.32362",
+      "authors": [
+        "Alceu Bissoto",
+        "Trung-Dung Hoang",
+        "Tim Flühmann",
+        "Nina Weng",
+        "Susu Sun",
+        "Christian F. Baumgartner",
+        "Lisa M. Koch"
+      ],
+      "doi": "",
+      "first_seen": "2026-11-09",
+      "id": "p-25f166919d5808c5e366",
+      "is_open_access": true,
+      "last_changed": "2026-11-09",
+      "pmcid": "",
+      "pmid": "",
+      "published": "2026-10-23",
+      "seeded": false,
+      "source": "arxiv",
+      "source_id": "2610.32362",
+      "sources": [
+        "arxiv"
+      ],
+      "title": "Detection and Validation of Hidden Subgroup Disparities in Clinical AI",
+      "updated": "2026-10-23T08:54:15Z",
+      "url": "https://arxiv.org/abs/2610.32362",
+      "version": "1",
+      "year": "2026"
+    },
+    {
       "abstract_hash": "",
       "arxiv_id": "",
       "authors": [
@@ -5915,6 +6365,38 @@
       "url": "https://doi.org/10.3389/fcvm.2022.859310",
       "version": "",
       "year": "2022"
+    },
+    {
+      "abstract_hash": "1739e26dde295f4add50ef2f5abc3f011e9354bf6aac62d24321c96155a33179",
+      "abstract_source": "pubmed",
+      "abstract_updated": "2026-11-05",
+      "arxiv_id": "",
+      "authors": [
+        "Shekoofeh Sadat Momahhed",
+        "Atefehsadat Haghighathoseini"
+      ],
+      "doi": "10.1371/journal.pone.0360944",
+      "first_seen": "2026-11-09",
+      "id": "p-28114085d45cd4565fde",
+      "is_open_access": false,
+      "last_changed": "2026-11-09",
+      "pmcid": "PMC13730354",
+      "pmid": "42976191",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "published": "2026-11-03",
+      "seeded": false,
+      "source": "pubmed",
+      "source_id": "42976191",
+      "sources": [
+        "pubmed"
+      ],
+      "title": "Resource allocation under uncertainty and equity constraints in Parkinson's disease care: An econometrically grounded machine learning framework.",
+      "updated": "2026-11-05",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42976191/",
+      "version": "",
+      "year": "2026"
     },
     {
       "abstract_hash": "",
@@ -6213,7 +6695,7 @@
       "pmid": "",
       "published": "2026-10-28",
       "seeded": false,
-      "source": "catalog",
+      "source": "arxiv",
       "source_id": "2610.38215",
       "sources": [
         "arxiv",
@@ -6415,7 +6897,7 @@
       "pmid": "",
       "published": "2026-10-30",
       "seeded": false,
-      "source": "catalog",
+      "source": "arxiv",
       "source_id": "2611.00298",
       "sources": [
         "arxiv",
@@ -6490,6 +6972,40 @@
       "updated": "2026-11-03",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42865081/",
       "version": "",
+      "year": "2026"
+    },
+    {
+      "abstract_hash": "9dd22f7b49b08fbea9c9b83644a53f4988ddd0de1c9275db6294bdd516b933bf",
+      "abstract_source": "arxiv",
+      "abstract_updated": "2026-10-19T11:41:10Z",
+      "arxiv_id": "2610.26215",
+      "authors": [
+        "Ghulam Mudassir",
+        "Hameed Ullah Khan",
+        "Ahmad Sami Al-Shamayleh",
+        "Muhammad Faizan Khan",
+        "Muhammad Muqtasid",
+        "Moamin Abughazala",
+        "Adnan Akhunzada"
+      ],
+      "doi": "",
+      "first_seen": "2026-11-09",
+      "id": "p-3e31b3ad8d1cc28d1bbc",
+      "is_open_access": true,
+      "last_changed": "2026-11-09",
+      "pmcid": "",
+      "pmid": "",
+      "published": "2026-10-19",
+      "seeded": false,
+      "source": "arxiv",
+      "source_id": "2610.26215",
+      "sources": [
+        "arxiv"
+      ],
+      "title": "Fairness or Fallacy? Mapping the Landscape of AI Bias in Disease Detection",
+      "updated": "2026-10-19T11:41:10Z",
+      "url": "https://arxiv.org/abs/2610.26215",
+      "version": "1",
       "year": "2026"
     },
     {
@@ -6652,6 +7168,72 @@
       "year": "2026"
     },
     {
+      "abstract_hash": "9d6f09f06885b37ce574a9b539be8488b6ad35fc799d7a94f231cc07197ee18d",
+      "abstract_source": "pubmed",
+      "abstract_updated": "2026-08-11",
+      "arxiv_id": "",
+      "authors": [
+        "Xiaobo Li",
+        "Xiaodi Hou",
+        "Simiao Wang",
+        "Shilong Wang",
+        "Xiaokun Zhang",
+        "Yijia Zhang"
+      ],
+      "doi": "10.1016/j.neunet.2026.109168",
+      "first_seen": "2026-11-09",
+      "id": "p-4531cd0838fbf818d5b0",
+      "is_open_access": false,
+      "last_changed": "2026-11-09",
+      "pmcid": "",
+      "pmid": "42214931",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "published": "2026-05-25",
+      "seeded": false,
+      "source": "pubmed",
+      "source_id": "42214931",
+      "sources": [
+        "pubmed"
+      ],
+      "title": "Debiased medication recommendation through fusing frequent pattern and temporal medical records.",
+      "updated": "2026-08-11",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42214931/",
+      "version": "",
+      "year": "2026"
+    },
+    {
+      "abstract_hash": "6748fc2f73007eb32fb297dd405ff8d8fa5bafcde312d81a71eed086c467bec6",
+      "abstract_source": "arxiv",
+      "abstract_updated": "2026-10-15T20:22:04Z",
+      "arxiv_id": "2610.22618",
+      "authors": [
+        "Fardin Ahsan Sakib",
+        "Ziwei Zhu",
+        "Ozlem Uzuner"
+      ],
+      "doi": "",
+      "first_seen": "2026-11-09",
+      "id": "p-45778789f12c424e7649",
+      "is_open_access": true,
+      "last_changed": "2026-11-09",
+      "pmcid": "",
+      "pmid": "",
+      "published": "2026-10-15",
+      "seeded": false,
+      "source": "arxiv",
+      "source_id": "2610.22618",
+      "sources": [
+        "arxiv"
+      ],
+      "title": "Trajectory-Guided Steering: Mitigating Spurious Feature Bias in Clinical Classification",
+      "updated": "2026-10-15T20:22:04Z",
+      "url": "https://arxiv.org/abs/2610.22618",
+      "version": "1",
+      "year": "2026"
+    },
+    {
       "abstract_hash": "",
       "arxiv_id": "",
       "authors": [
@@ -6684,6 +7266,81 @@
       "url": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR66",
       "version": "",
       "year": "2023"
+    },
+    {
+      "abstract_hash": "04aac9def51110c0a62b9abdd29f636b2bab4de033ba6c82e115a1ad28cf7d1c",
+      "abstract_source": "europepmc",
+      "abstract_updated": "2026-10-28",
+      "arxiv_id": "",
+      "authors": [
+        "Li Z",
+        "Zhu W",
+        "Jiang L",
+        "Wei X",
+        "Zhou J",
+        "Yang W",
+        "Zhong B",
+        "Hu Q"
+      ],
+      "doi": "10.3390/healthcare14203549",
+      "first_seen": "2026-11-09",
+      "id": "p-47f59ce8e66d8459e0e2",
+      "is_open_access": true,
+      "last_changed": "2026-11-09",
+      "pmcid": "PMC13704475",
+      "pmid": "42940596",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "published": "2026-10-21",
+      "seeded": false,
+      "source": "pubmed",
+      "source_id": "42940596",
+      "sources": [
+        "europepmc",
+        "pubmed"
+      ],
+      "title": "Decision-Architecture Dependence and Patient-Gender-Conditioned Allocation in Large-Language-Model-Assisted Nursing Allocation: A Multi-Model Counterfactual Audit.",
+      "updated": "2026-10-28",
+      "url": "https://europepmc.org/article/MED/42940596",
+      "version": "",
+      "year": "2026"
+    },
+    {
+      "abstract_hash": "082b90d33f97fcc3cc89ad769002b47cf88e75890eb23b63efabec4b1a374c0d",
+      "abstract_source": "europepmc",
+      "abstract_updated": "2026-10-29",
+      "arxiv_id": "",
+      "authors": [
+        "Leber W",
+        "Steele J",
+        "Huo Z",
+        "Wu J",
+        "Panovska-Griffiths J"
+      ],
+      "doi": "10.21203/rs.3.rs-10756052/v1",
+      "first_seen": "2026-11-09",
+      "id": "p-48b9e5d40beb02d005ae",
+      "is_open_access": true,
+      "last_changed": "2026-11-09",
+      "pmcid": "",
+      "pmid": "",
+      "publication_types": [
+        "Preprint",
+        "preprint"
+      ],
+      "published": "2026-10-28",
+      "seeded": false,
+      "source": "europepmc",
+      "source_id": "PPR1351930",
+      "sources": [
+        "europepmc"
+      ],
+      "title": "ARBITER: retrieval-augmented generation for automated PROBAST+AI risk-of-bias assessment of HIV, HBV and HCV prediction models: a proof-of-concept validation study",
+      "updated": "2026-10-29",
+      "url": "https://europepmc.org/article/PPR/PPR1351930",
+      "version": "",
+      "year": "2026"
     },
     {
       "abstract_hash": "",
@@ -6944,6 +7601,38 @@
       "year": "2026"
     },
     {
+      "abstract_hash": "f9c6b3b04099b1d551ba5e51138d563a36520d9fa5c5b5eaeebd152153c26291",
+      "abstract_source": "arxiv",
+      "abstract_updated": "2026-10-27T18:33:17Z",
+      "arxiv_id": "2610.37819",
+      "authors": [
+        "Giovanni dos Santos Franco",
+        "Felipe Mahlow",
+        "Ellison Fernando Cardoso",
+        "José Adenaldo Santos Bittencourt",
+        "Felipe Fanchini"
+      ],
+      "doi": "",
+      "first_seen": "2026-11-09",
+      "id": "p-59068cc978cafdc33230",
+      "is_open_access": true,
+      "last_changed": "2026-11-09",
+      "pmcid": "",
+      "pmid": "",
+      "published": "2026-10-27",
+      "seeded": false,
+      "source": "arxiv",
+      "source_id": "2610.37819",
+      "sources": [
+        "arxiv"
+      ],
+      "title": "Responsible Quantum Machine Learning for Medical Imaging: A Fairness Audit Across Sensitive Subgroups",
+      "updated": "2026-10-27T18:33:17Z",
+      "url": "https://arxiv.org/abs/2610.37819",
+      "version": "1",
+      "year": "2026"
+    },
+    {
       "abstract_hash": "",
       "arxiv_id": "",
       "authors": [
@@ -7081,9 +7770,10 @@
       "pmid": "42980982",
       "published": "2026-11-03",
       "seeded": false,
-      "source": "pubmed",
+      "source": "catalog",
       "source_id": "42980982",
       "sources": [
+        "catalog",
         "pubmed"
       ],
       "title": "Visual Sexual Health Communication Assisted by AI: The Case of Synthetic Menstruation Images.",
@@ -7222,7 +7912,7 @@
       "pmid": "42447641",
       "published": "2026-07-09",
       "seeded": false,
-      "source": "pubmed",
+      "source": "catalog",
       "source_id": "42447641",
       "sources": [
         "catalog",
@@ -7336,6 +8026,41 @@
       "year": "2022"
     },
     {
+      "abstract_hash": "386302a245921217c80fa246969fc103c37ee6027aecdb7d0b4de715b64fdbdd",
+      "abstract_source": "europepmc",
+      "abstract_updated": "2026-10-29",
+      "arxiv_id": "",
+      "authors": [
+        "Karunanayake N",
+        "Schefflein J",
+        "Zhao B",
+        "Schwartz LH"
+      ],
+      "doi": "10.1148/ryai.260591",
+      "first_seen": "2026-11-09",
+      "id": "p-7068da05f7ca4dd4f330",
+      "is_open_access": false,
+      "last_changed": "2026-11-09",
+      "pmcid": "",
+      "pmid": "42949520",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "published": "2026-10-28",
+      "seeded": false,
+      "source": "pubmed",
+      "source_id": "42949520",
+      "sources": [
+        "europepmc",
+        "pubmed"
+      ],
+      "title": "Automation Bias and Deskilling in Radiology AI: A Confidence-stratified Triage Model for Workflow Integration.",
+      "updated": "2026-10-29",
+      "url": "https://europepmc.org/article/MED/42949520",
+      "version": "",
+      "year": "2026"
+    },
+    {
       "abstract_hash": "a5dafa0f74f38a33da7d3db7c3e634d79d59037bf6e01e096a5bb18b6da0b768",
       "abstract_source": "pubmed",
       "abstract_updated": "2026-10-26",
@@ -7358,7 +8083,7 @@
       "pmid": "42721913",
       "published": "2026-08-29",
       "seeded": false,
-      "source": "pubmed",
+      "source": "catalog",
       "source_id": "42721913",
       "sources": [
         "catalog",
@@ -7397,6 +8122,42 @@
       "url": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR48",
       "version": "",
       "year": "2023"
+    },
+    {
+      "abstract_hash": "facefd6ab1bb7f26524243ce3937f642d301ac2a1896086850103d21900dcb15",
+      "abstract_source": "europepmc",
+      "abstract_updated": "2026-10-29",
+      "arxiv_id": "",
+      "authors": [
+        "Rebocho AT",
+        "Marques SS",
+        "Santos JP",
+        "Pinto CS"
+      ],
+      "doi": "10.3389/fdgth.2026.1888744",
+      "first_seen": "2026-11-09",
+      "id": "p-73c317778f11b9f63bbd",
+      "is_open_access": true,
+      "last_changed": "2026-11-09",
+      "pmcid": "PMC13711374",
+      "pmid": "42948540",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "published": "2026-10-13",
+      "seeded": false,
+      "source": "pubmed",
+      "source_id": "42948540",
+      "sources": [
+        "europepmc",
+        "pubmed"
+      ],
+      "title": "Operationalizing fair AI in healthcare: a scoping review of bias mitigation, monitoring, auditing, and governance strategies.",
+      "updated": "2026-10-29",
+      "url": "https://europepmc.org/article/MED/42948540",
+      "version": "",
+      "year": "2026"
     },
     {
       "abstract_hash": "",
@@ -7582,6 +8343,43 @@
       "year": "2022"
     },
     {
+      "abstract_hash": "173818e1613146a1d0ae751def66a7f76dd9cd49bbe4c67e1692b88b93aff6fd",
+      "abstract_source": "europepmc",
+      "abstract_updated": "2026-10-23",
+      "arxiv_id": "",
+      "authors": [
+        "Ladhania R",
+        "Ho AZ",
+        "Dhillon P",
+        "Brummett CM",
+        "Singh K",
+        "Fernandez AC"
+      ],
+      "doi": "10.1038/s44401-026-00158-0",
+      "first_seen": "2026-11-09",
+      "id": "p-7ce27dede71de2b2c84e",
+      "is_open_access": true,
+      "last_changed": "2026-11-09",
+      "pmcid": "PMC13687106",
+      "pmid": "42907563",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "published": "2026-10-21",
+      "seeded": false,
+      "source": "pubmed",
+      "source_id": "42907563",
+      "sources": [
+        "europepmc",
+        "pubmed"
+      ],
+      "title": "Paradoxical inflation of prediction model performance measures in minority patient subgroups: the role of upstream bias.",
+      "updated": "2026-10-24",
+      "url": "https://europepmc.org/article/MED/42907563",
+      "version": "",
+      "year": "2026"
+    },
+    {
       "abstract_hash": "",
       "arxiv_id": "",
       "authors": [
@@ -7744,6 +8542,111 @@
       "year": "2022"
     },
     {
+      "abstract_hash": "47e22fcd8868981aa4465e19a38579c2e408fe3ea81690efdc26ffcfeec8bae3",
+      "abstract_source": "europepmc",
+      "abstract_updated": "2026-10-19",
+      "arxiv_id": "",
+      "authors": [
+        "Ramedani M",
+        "Terli JC",
+        "Martensen OH",
+        "Strauß T",
+        "Buerger K",
+        "Dechent P",
+        "Düzel E",
+        "Fliessbach K",
+        "Gemenetzi M",
+        "Glanz W",
+        "Hellmann-Regen J",
+        "Hetzer S",
+        "Incesoy EI",
+        "Janowitz D",
+        "Kronmüller MT",
+        "Laske C",
+        "Lüsebrink F",
+        "Perneczky R",
+        "Peters O",
+        "Preis L",
+        "Priller J",
+        "Rauchmann BS",
+        "Rostamzadeh A",
+        "Schneider A",
+        "Schott BH",
+        "Sodenkamp S",
+        "Spottke A",
+        "Spruth EJ",
+        "Stöcklein S",
+        "Wiltfang J",
+        "Jessen F",
+        "Teipel SJ",
+        "Dyrba M"
+      ],
+      "doi": "10.1007/s11548-026-03805-x",
+      "first_seen": "2026-11-09",
+      "id": "p-8aeef9186465b5deed36",
+      "is_open_access": false,
+      "last_changed": "2026-11-09",
+      "pmcid": "",
+      "pmid": "42891802",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "published": "2026-10-17",
+      "seeded": false,
+      "source": "pubmed",
+      "source_id": "42891802",
+      "sources": [
+        "europepmc",
+        "pubmed"
+      ],
+      "title": "Improving the fairness and robustness of deep learning classification models through bias mitigation and post hoc calibration.",
+      "updated": "2026-10-19",
+      "url": "https://europepmc.org/article/MED/42891802",
+      "version": "",
+      "year": "2026"
+    },
+    {
+      "abstract_hash": "f5d9810e49f15fa8177d386d35579c1e3e12b5f8114a408301535797599f9fce",
+      "abstract_source": "europepmc",
+      "abstract_updated": "2026-10-23",
+      "arxiv_id": "",
+      "authors": [
+        "Adiniaev Y",
+        "Omar M",
+        "Timor TM",
+        "Daniel O",
+        "Adiniaev Y",
+        "Barash Y",
+        "Brook OR",
+        "Klang E",
+        "Gorenshtein A"
+      ],
+      "doi": "10.1016/j.acra.2026.09.075",
+      "first_seen": "2026-11-09",
+      "id": "p-8dce8465449c9e0cb987",
+      "is_open_access": false,
+      "last_changed": "2026-11-09",
+      "pmcid": "",
+      "pmid": "42907264",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "published": "2026-10-21",
+      "seeded": false,
+      "source": "pubmed",
+      "source_id": "42907264",
+      "sources": [
+        "europepmc",
+        "pubmed"
+      ],
+      "title": "Reporting of Fairness and Equity in Studies of Regulator-cleared Commercial AI for Acute Stroke CT: A Systematic Review.",
+      "updated": "2026-10-23",
+      "url": "https://europepmc.org/article/MED/42907264",
+      "version": "",
+      "year": "2026"
+    },
+    {
       "abstract_hash": "",
       "arxiv_id": "",
       "authors": [
@@ -7787,7 +8690,7 @@
       "pmid": "40298212",
       "published": "2025-04-29",
       "seeded": false,
-      "source": "pubmed",
+      "source": "catalog",
       "source_id": "40298212",
       "sources": [
         "catalog",
@@ -7798,6 +8701,49 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/40298212/",
       "version": "",
       "year": "2025"
+    },
+    {
+      "abstract_hash": "d819f9469094d28e73b68f73e62c010c98279686aa7a1ca356d2e72ca6f3dfa3",
+      "abstract_source": "europepmc",
+      "abstract_updated": "2026-10-30",
+      "arxiv_id": "",
+      "authors": [
+        "Becker-Haimes EM",
+        "Jamison J",
+        "Creed TA",
+        "Pellecchia M",
+        "Jager-Hyman S",
+        "Sanchez AL",
+        "Imel Z",
+        "Atkins DC",
+        "Worley JA",
+        "Oquendo MA",
+        "Cappella E",
+        "Wolk CB"
+      ],
+      "doi": "10.1037/amp0001736",
+      "first_seen": "2026-11-09",
+      "id": "p-90e758f61454cf309cc5",
+      "is_open_access": false,
+      "last_changed": "2026-11-09",
+      "pmcid": "",
+      "pmid": "42956225",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "published": "2026-11-01",
+      "seeded": false,
+      "source": "pubmed",
+      "source_id": "42956225",
+      "sources": [
+        "europepmc",
+        "pubmed"
+      ],
+      "title": "Toward equitable fidelity measurement of evidence-based psychosocial interventions.",
+      "updated": "2026-10-30",
+      "url": "https://europepmc.org/article/MED/42956225",
+      "version": "",
+      "year": "2026"
     },
     {
       "abstract_hash": "",
@@ -7862,6 +8808,34 @@
       "url": "https://doi.org/10.1145/3593013.3594096",
       "version": "",
       "year": "2023"
+    },
+    {
+      "abstract_hash": "d46fa3e97a4a09b247ac5677c560b44c368530404b31a7029c53db613e385c76",
+      "abstract_source": "arxiv",
+      "abstract_updated": "2026-10-21T02:47:39Z",
+      "arxiv_id": "2610.29104",
+      "authors": [
+        "Lisa Y. W. Tang"
+      ],
+      "doi": "",
+      "first_seen": "2026-11-09",
+      "id": "p-983161c15d18a6bd2e5a",
+      "is_open_access": true,
+      "last_changed": "2026-11-09",
+      "pmcid": "",
+      "pmid": "",
+      "published": "2026-10-21",
+      "seeded": false,
+      "source": "arxiv",
+      "source_id": "2610.29104",
+      "sources": [
+        "arxiv"
+      ],
+      "title": "From Canon to Nikon: Camera Domain Shift and Potential Equity Implications in Retinal AI",
+      "updated": "2026-10-21T02:47:39Z",
+      "url": "https://arxiv.org/abs/2610.29104",
+      "version": "1",
+      "year": "2026"
     },
     {
       "abstract_hash": "",
@@ -8034,6 +9008,40 @@
       "year": "2023"
     },
     {
+      "abstract_hash": "534c1176490451e39957227cf994ef4965ce2d8b47822a70474967985b2c4f7e",
+      "abstract_source": "arxiv",
+      "abstract_updated": "2026-10-19T05:34:11Z",
+      "arxiv_id": "2610.25819",
+      "authors": [
+        "Yusuke Watanabe",
+        "Yohei Kobashi",
+        "Taisei Tosaki",
+        "Takeshi Kojima",
+        "Yusuke Iwasawa",
+        "Yasushi Okuno",
+        "Yutaka Matsuo"
+      ],
+      "doi": "",
+      "first_seen": "2026-11-09",
+      "id": "p-9cba83191a3299c02316",
+      "is_open_access": true,
+      "last_changed": "2026-11-09",
+      "pmcid": "",
+      "pmid": "",
+      "published": "2026-10-19",
+      "seeded": false,
+      "source": "arxiv",
+      "source_id": "2610.25819",
+      "sources": [
+        "arxiv"
+      ],
+      "title": "When to Stop Asking: Factor Coverage Bias and LLM Determinability Judgments with Underspecified Information in Medicine",
+      "updated": "2026-10-19T05:34:11Z",
+      "url": "https://arxiv.org/abs/2610.25819",
+      "version": "1",
+      "year": "2026"
+    },
+    {
       "abstract_hash": "",
       "arxiv_id": "",
       "authors": [
@@ -8161,7 +9169,7 @@
       "pmid": "42701888",
       "published": "2026-09-06",
       "seeded": false,
-      "source": "pubmed",
+      "source": "catalog",
       "source_id": "42701888",
       "sources": [
         "catalog",
@@ -8198,6 +9206,36 @@
       "url": "https://doi.org/10.1016/j.ebiom.2023.104467",
       "version": "",
       "year": "2023"
+    },
+    {
+      "abstract_hash": "e67c8f15ecf255ae40b0de9e02603c266b9e6c016440f8ab8640909589f78d6e",
+      "abstract_source": "arxiv",
+      "abstract_updated": "2026-10-10T17:55:32Z",
+      "arxiv_id": "2611.00049",
+      "authors": [
+        "Majed Molhi",
+        "Nishi Gupta",
+        "Ali Algumaei"
+      ],
+      "doi": "10.1109/CSPA68262.2026.11517900",
+      "first_seen": "2026-11-09",
+      "id": "p-af26ec6de648c002a857",
+      "is_open_access": true,
+      "last_changed": "2026-11-09",
+      "pmcid": "",
+      "pmid": "",
+      "published": "2026-10-10",
+      "seeded": false,
+      "source": "arxiv",
+      "source_id": "2611.00049",
+      "sources": [
+        "arxiv"
+      ],
+      "title": "Background Bias Assessment and Mitigation in Plant Disease Detection Using EfficientNet-B0 with Image Processing",
+      "updated": "2026-10-10T17:55:32Z",
+      "url": "https://arxiv.org/abs/2611.00049",
+      "version": "1",
+      "year": "2026"
     },
     {
       "abstract_hash": "",
@@ -8280,17 +9318,52 @@
       "last_changed": "2026-11-09",
       "pmcid": "6602402",
       "pmid": "42998122",
+      "publication_types": [
+        "Journal Article"
+      ],
       "published": "2026-11-07",
       "seeded": false,
       "source": "pubmed",
       "source_id": "42998122",
       "sources": [
+        "catalog",
         "pubmed"
       ],
       "title": "Sex-Equitable Machine Learning Prediction of Ankle Reinjury in Individuals with Chronic Ankle Instability: A 2-Year Prospective Cohort Study with Fairness Audit.",
       "updated": "2026-11-07",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42998122/",
       "version": "",
+      "year": "2026"
+    },
+    {
+      "abstract_hash": "ea3483ef9a8076ebd2d46cddc43be1eb8f759323c7c64b69032076e34d93b05e",
+      "abstract_source": "arxiv",
+      "abstract_updated": "2026-10-19T02:54:18Z",
+      "arxiv_id": "2610.25709",
+      "authors": [
+        "Khadija Zanna",
+        "Rodrigo Ferreira",
+        "Frederick L. Oswald",
+        "Akane Sano"
+      ],
+      "doi": "",
+      "first_seen": "2026-11-09",
+      "id": "p-b3eae538180f8f9919dd",
+      "is_open_access": true,
+      "last_changed": "2026-11-09",
+      "pmcid": "",
+      "pmid": "",
+      "published": "2026-10-19",
+      "seeded": false,
+      "source": "arxiv",
+      "source_id": "2610.25709",
+      "sources": [
+        "arxiv"
+      ],
+      "title": "Causal Humility: Governing the Authority of Fairness Claims Under Causal Uncertainty",
+      "updated": "2026-10-19T02:54:18Z",
+      "url": "https://arxiv.org/abs/2610.25709",
+      "version": "1",
       "year": "2026"
     },
     {
@@ -8321,6 +9394,35 @@
       "url": "https://www.nature.com/articles/s41746-024-01276-5#ref-CR42",
       "version": "",
       "year": "2023"
+    },
+    {
+      "abstract_hash": "c23c251c0fb6bd13bddb091f192188b605200c7c2da99677c1a37cf3a63ae885",
+      "abstract_source": "arxiv",
+      "abstract_updated": "2026-10-24T14:24:11Z",
+      "arxiv_id": "2610.33697",
+      "authors": [
+        "Matilde Elene Hansen",
+        "Ross Deans Kristensen-McLachlan"
+      ],
+      "doi": "",
+      "first_seen": "2026-11-09",
+      "id": "p-b8664efa92d96d1cf84f",
+      "is_open_access": true,
+      "last_changed": "2026-11-09",
+      "pmcid": "",
+      "pmid": "",
+      "published": "2026-10-24",
+      "seeded": false,
+      "source": "arxiv",
+      "source_id": "2610.33697",
+      "sources": [
+        "arxiv"
+      ],
+      "title": "Gender Associations in LLM-Mediated ADHD Self-Diagnosis",
+      "updated": "2026-10-24T14:24:11Z",
+      "url": "https://arxiv.org/abs/2610.33697",
+      "version": "1",
+      "year": "2026"
     },
     {
       "abstract_hash": "",
@@ -8441,6 +9543,41 @@
       "title": "Toward multimodal physiological assessment of clinical performance in simulation-based medical education: a machine learning approach.",
       "updated": "2026-10-30",
       "url": "https://europepmc.org/article/MED/42955499",
+      "version": "",
+      "year": "2026"
+    },
+    {
+      "abstract_hash": "b78d8e695007903259039eb06f7de578fb40378a21b87a4779d44e463eb5cfea",
+      "abstract_source": "europepmc",
+      "abstract_updated": "2026-10-29",
+      "arxiv_id": "",
+      "authors": [
+        "Armstrong BA",
+        "Cheuy L",
+        "Kottler N",
+        "Larson DB"
+      ],
+      "doi": "10.2214/AJR.26.35826",
+      "first_seen": "2026-11-09",
+      "id": "p-bc07a18a7cd288dd8094",
+      "is_open_access": false,
+      "last_changed": "2026-11-09",
+      "pmcid": "",
+      "pmid": "42949357",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "published": "2026-10-28",
+      "seeded": false,
+      "source": "pubmed",
+      "source_id": "42949357",
+      "sources": [
+        "europepmc",
+        "pubmed"
+      ],
+      "title": "A Framework for Identifying and Understanding Cognitive Biases in Artificial Intelligence-Assisted Radiology.",
+      "updated": "2026-10-29",
+      "url": "https://europepmc.org/article/MED/42949357",
       "version": "",
       "year": "2026"
     },
@@ -8801,9 +9938,12 @@
       "last_changed": "2026-11-04",
       "pmcid": "",
       "pmid": "42962674",
+      "publication_types": [
+        "Journal Article"
+      ],
       "published": "2026-10-30",
       "seeded": false,
-      "source": "catalog",
+      "source": "pubmed",
       "source_id": "42962674",
       "sources": [
         "catalog",
@@ -9160,6 +10300,74 @@
       "year": "2023"
     },
     {
+      "abstract_hash": "a546b4e0b7fcba78379c6308f5f81d8496584581430751c4cc6c1131f844bebb",
+      "abstract_source": "europepmc",
+      "abstract_updated": "2026-11-03",
+      "arxiv_id": "",
+      "authors": [
+        "Reed C",
+        "Espinoza ME"
+      ],
+      "doi": "10.64898/2026.10.30.26366732",
+      "first_seen": "2026-11-09",
+      "id": "p-dd8b25f1e5426bb19b9c",
+      "is_open_access": true,
+      "last_changed": "2026-11-09",
+      "pmcid": "",
+      "pmid": "",
+      "publication_types": [
+        "Preprint"
+      ],
+      "published": "2026-11-01",
+      "seeded": false,
+      "source": "europepmc",
+      "source_id": "PPR1355869",
+      "sources": [
+        "europepmc"
+      ],
+      "title": "Algorithmic design choices as determinants of health equity: a causal simulation study of healthcare resource allocation",
+      "updated": "2026-11-03",
+      "url": "https://europepmc.org/article/PPR/PPR1355869",
+      "version": "",
+      "year": "2026"
+    },
+    {
+      "abstract_hash": "",
+      "arxiv_id": "",
+      "authors": [
+        "Tseng W",
+        "Holbrook K",
+        "Edpuganti R",
+        "Girgis M",
+        "Chen D",
+        "Babu B"
+      ],
+      "doi": "",
+      "first_seen": "2026-11-09",
+      "id": "p-de1d8f363bb788b48fb8",
+      "is_open_access": true,
+      "last_changed": "2026-11-09",
+      "pmcid": "PMC13662775",
+      "pmid": "",
+      "publication_types": [
+        "review-article",
+        "Review",
+        "Journal Article"
+      ],
+      "published": "2026-10-16",
+      "seeded": false,
+      "source": "europepmc",
+      "source_id": "PMC13662775",
+      "sources": [
+        "europepmc"
+      ],
+      "title": "Bias Mitigation Across the Healthcare Artificial Intelligence Lifecycle: A Structured Narrative Review",
+      "updated": "2026-10-16",
+      "url": "https://europepmc.org/article/PMC/PMC13662775",
+      "version": "",
+      "year": "2026"
+    },
+    {
       "abstract_hash": "",
       "arxiv_id": "",
       "authors": [
@@ -9397,6 +10605,39 @@
       "year": "2021"
     },
     {
+      "abstract_hash": "b5c310955c94ddfc8d0f4cb156a5f2296b67ca02ad983798c97d4a9db1ee8cdf",
+      "abstract_source": "pubmed",
+      "abstract_updated": "2026-11-05",
+      "arxiv_id": "",
+      "authors": [
+        "Beytullah Ural",
+        "Ahmet Nezih Kök",
+        "Talip Vural"
+      ],
+      "doi": "10.1007/s00414-026-03919-6",
+      "first_seen": "2026-11-09",
+      "id": "p-e632f7ecdcaf4149d588",
+      "is_open_access": false,
+      "last_changed": "2026-11-09",
+      "pmcid": "",
+      "pmid": "42412185",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "published": "2026-07-07",
+      "seeded": false,
+      "source": "pubmed",
+      "source_id": "42412185",
+      "sources": [
+        "pubmed"
+      ],
+      "title": "AI-based bone age assessment versus forensic expert panel: agreement, sex bias, and ethical implications.",
+      "updated": "2026-11-05",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42412185/",
+      "version": "",
+      "year": "2026"
+    },
+    {
       "abstract_hash": "a3f151c10cc3d41e58016ce23cd44b0daacdb99a0bb51b71de4015a69dcb3d8b",
       "abstract_source": "pubmed",
       "abstract_updated": "2026-10-26",
@@ -9420,7 +10661,7 @@
       "pmid": "42751787",
       "published": "2026-09-17",
       "seeded": false,
-      "source": "pubmed",
+      "source": "catalog",
       "source_id": "42751787",
       "sources": [
         "catalog",
@@ -9566,6 +10807,39 @@
       "url": "https://arxiv.org/abs/2202.02832",
       "version": "",
       "year": "2021"
+    },
+    {
+      "abstract_hash": "0beb4e6d1da47b0929a7a9076b4fc79c5a4ba3b845555f671251e35bbf01cdcf",
+      "abstract_source": "europepmc",
+      "abstract_updated": "2026-10-23",
+      "arxiv_id": "",
+      "authors": [
+        "Gajbhiye LN",
+        "Kamble SS"
+      ],
+      "doi": "10.20944/preprints202610.2138.v1",
+      "first_seen": "2026-11-09",
+      "id": "p-e93b14a2fee91d9b2317",
+      "is_open_access": true,
+      "last_changed": "2026-11-09",
+      "pmcid": "",
+      "pmid": "",
+      "publication_types": [
+        "Preprint",
+        "preprint"
+      ],
+      "published": "2026-10-22",
+      "seeded": false,
+      "source": "europepmc",
+      "source_id": "PPR1347529",
+      "sources": [
+        "europepmc"
+      ],
+      "title": "Beyond Accuracy: Investigating Pseudo-Learning and Bias Propagation in MRI Brain Tumour Classification",
+      "updated": "2026-10-23",
+      "url": "https://europepmc.org/article/PPR/PPR1347529",
+      "version": "",
+      "year": "2026"
     },
     {
       "abstract_hash": "",
@@ -9747,6 +11021,42 @@
       "title": "The Age of AI Strategic Decision-Making: The Business Analytics in the Corporate Divisions as the Competitive Advantage",
       "updated": "2026-10-31",
       "url": "https://europepmc.org/article/PPR/PPR1353951",
+      "version": "",
+      "year": "2026"
+    },
+    {
+      "abstract_hash": "e72a31ea27a8e312571ceeee8d13c463ec3e10eb89184ac67bd3a8673e530694",
+      "abstract_source": "europepmc",
+      "abstract_updated": "2026-10-27",
+      "arxiv_id": "",
+      "authors": [
+        "Parsons CS",
+        "Girwar SM",
+        "Azimi S",
+        "Spruit MR",
+        "Haas MR"
+      ],
+      "doi": "10.1371/journal.pdig.0001105",
+      "first_seen": "2026-11-09",
+      "id": "p-f4567d6da1046873aea0",
+      "is_open_access": true,
+      "last_changed": "2026-11-09",
+      "pmcid": "PMC13704874",
+      "pmid": "42932339",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "published": "2026-10-26",
+      "seeded": false,
+      "source": "pubmed",
+      "source_id": "42932339",
+      "sources": [
+        "europepmc",
+        "pubmed"
+      ],
+      "title": "Refocusing algorithmic fairness on feature-level bias: A diagnostic approach using dutch EHR data.",
+      "updated": "2026-10-28",
+      "url": "https://europepmc.org/article/MED/42932339",
       "version": "",
       "year": "2026"
     },
@@ -9942,7 +11252,7 @@
       "pmid": "42975702",
       "published": "2026-11-03",
       "seeded": false,
-      "source": "pubmed",
+      "source": "catalog",
       "source_id": "42975702",
       "sources": [
         "catalog",

@@ -4,7 +4,7 @@ The weekly pipeline searches arXiv, Europe PMC and PubMed, deduplicates identifi
 
 ## Catalog and methodology
 
-`data/catalog.json` is the authoritative, public catalog. Each record preserves the original title, primary paper/resource links and available publication-date precision. The renderer `python3 -m scripts.render_catalog` is deterministic and requires no network, private cache or model. It produces colored local SVG badges and one complete entry per paper; surveys are integrated and marked with a Survey badge.
+`data/catalog.json` is the authoritative, public catalog. Each record preserves the original title, primary paper/resource links and available publication-date precision. The renderer `python3 -m scripts.render_catalog` is deterministic and requires no network, private cache or model. It produces colored local SVG badges on a separate line below each title, with one badge per Domain/Focus/Stage/Attributes/Assets value; the README omits Evidence display and duplicate plain-text values in the taxonomy table. It produces one complete entry per paper; surveys are integrated and marked with a Survey badge.
 
 The methodology follows Xu et al. (2024): Fairness Evaluation, and Unfairness Mitigation through Pre-processing, In-processing or Post-processing. A separate Stage pending container avoids guessing an unknown mitigation stage. One primary placement reflects the paper's main contribution, while secondary contributions remain in metadata and three English TLDR sentences. Within each category, dates descend from newest to oldest; the latest catalog year has month subheadings. Missing month information is shown as unverified, never replaced by discovery time.
 
@@ -63,3 +63,7 @@ See [the Chinese review guide](review-workflow.md). Open `reports/review-latest.
 ## Screening priority and review scope
 
 The [maintainer screening policy](screening-policy.md) prioritizes original methodology and empirical fairness audits. Reviews/commentaries are down-ranked and need both a specific medical disease/task and substantive detailed fairness analysis, each supported by source evidence. Incidental mentions are excluded from recommendations. The policy version invalidates machine caches without erasing stable human decisions. Explicit human approvals may override machine scope suggestions, with evidence level and article type recorded honestly. Unchanged rejected papers are skipped in model review and future review packets.
+
+## Methodology search lanes
+
+`config/literature.json` contains nine primary query families for mitigation, evaluation/benchmarks and bias mechanisms across arXiv, Europe PMC and PubMed. Queries explicitly combine medical context, algorithmic content and a central fairness subject; publication-type and title exclusions reduce review-heavy results. Two separate supplementary review queries search fairness-centered reviews. Article-type metadata further lowers review priority. New query text creates new query IDs and performs the configured initial lookback before advancing independent watermarks; identical records still deduplicate against the existing database and human decisions.

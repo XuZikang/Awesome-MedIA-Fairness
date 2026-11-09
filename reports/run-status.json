@@ -1,67 +1,123 @@
 {
   "analysis": {
-    "available_reviews": 5,
-    "failures": 0,
+    "available_reviews": 0,
+    "failures": 8,
     "mode": "model",
-    "pending": 1,
-    "reviewed": 7
+    "pending": 29,
+    "reviewed": 0
   },
-  "candidates": 6,
-  "changed_today": 5,
+  "candidates": 29,
+  "changed_today": 28,
   "date": "2026-11-09",
   "sources": [
     {
       "complete": true,
-      "query_id": "4744eb3faccd",
-      "records": 3,
-      "since": "2026-11-01",
+      "lane": "methodology",
+      "query_id": "4d95054412d0",
+      "records": 11,
+      "since": "2026-10-10",
       "source": "arxiv",
+      "total": 11,
+      "until": "2026-11-09"
+    },
+    {
+      "complete": true,
+      "lane": "methodology",
+      "query_id": "1d928560eb85",
+      "records": 8,
+      "since": "2026-10-10",
+      "source": "arxiv",
+      "total": 8,
+      "until": "2026-11-09"
+    },
+    {
+      "complete": true,
+      "lane": "methodology",
+      "query_id": "1bb76ffa3406",
+      "records": 8,
+      "since": "2026-10-10",
+      "source": "arxiv",
+      "total": 8,
+      "until": "2026-11-09"
+    },
+    {
+      "complete": true,
+      "lane": "methodology",
+      "query_id": "d71eee65c043",
+      "records": 3,
+      "since": "2026-10-10",
+      "source": "europepmc",
       "total": 3,
       "until": "2026-11-09"
     },
     {
       "complete": true,
-      "query_id": "42b91404506f",
-      "records": 0,
-      "since": "2026-11-01",
-      "source": "arxiv",
-      "total": 0,
-      "until": "2026-11-09"
-    },
-    {
-      "complete": true,
-      "query_id": "249ba7c65421",
-      "records": 6,
-      "since": "2026-11-01",
+      "lane": "methodology",
+      "query_id": "0013545bb3c4",
+      "records": 10,
+      "since": "2026-10-10",
       "source": "europepmc",
-      "total": 6,
+      "total": 10,
       "until": "2026-11-09"
     },
     {
       "complete": true,
-      "query_id": "b614de0bf8b6",
-      "records": 0,
-      "since": "2026-11-01",
+      "lane": "methodology",
+      "query_id": "c227ae0068a5",
+      "records": 2,
+      "since": "2026-10-10",
       "source": "europepmc",
-      "total": 0,
+      "total": 2,
       "until": "2026-11-09"
     },
     {
       "complete": true,
-      "query_id": "29bd77c2182f",
-      "records": 34,
-      "since": "2026-11-01",
-      "source": "pubmed",
-      "total": 34,
+      "lane": "review_supplement",
+      "query_id": "98f731ea147a",
+      "records": 3,
+      "since": "2026-10-10",
+      "source": "europepmc",
+      "total": 3,
       "until": "2026-11-09"
     },
     {
       "complete": true,
-      "query_id": "d4312ff2e61d",
-      "records": 4,
-      "since": "2026-11-01",
+      "lane": "methodology",
+      "query_id": "6d3220d57721",
+      "records": 7,
+      "since": "2026-10-10",
       "source": "pubmed",
-      "total": 4,
+      "total": 7,
+      "until": "2026-11-09"
+    },
+    {
+      "complete": true,
+      "lane": "methodology",
+      "query_id": "a53b390db83d",
+      "records": 11,
+      "since": "2026-10-10",
+      "source": "pubmed",
+      "total": 11,
+      "until": "2026-11-09"
+    },
+    {
+      "complete": true,
+      "lane": "methodology",
+      "query_id": "76fa0a7789bf",
+      "records": 3,
+      "since": "2026-10-10",
+      "source": "pubmed",
+      "total": 3,
+      "until": "2026-11-09"
+    },
+    {
+      "complete": true,
+      "lane": "review_supplement",
+      "query_id": "4e705cd230bc",
+      "records": 2,
+      "since": "2026-10-10",
+      "source": "pubmed",
+      "total": 2,
       "until": "2026-11-09"
     }
   ]

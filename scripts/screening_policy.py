@@ -30,7 +30,11 @@ def content_version(paper):
 
 def priority_adjustment(paper):
     text=(paper.get('title','')+' '+paper.get('abstract','')).lower()
-    review=bool(re.search(r'\breview\b|\bperspective\b|editorial commentary|scoping synthesis',paper.get('title','').lower()) or
-                re.search(r'\b(?:this|our|narrative|scoping|systematic) review\b',text))
+    types=' '.join(paper.get('publication_types',[])).lower()
+    review=bool(re.search(r'review|meta-analysis|editorial|comment',types) or re.search(r'\breview\b|\bperspective\b|editorial commentary|scoping synthesis',paper.get('title','').lower()) or
+                re.search(r'\b(?:this|our|narrative|scoping|systematic) review\b|\bwe (?:systematically )?review\b',text))
     methodology=bool(re.search(r'propos|novel|benchmark|fairness.metric|calibrat|mitigat|debias|audit|causal|framework',text))
-    return (4 if methodology else 0)-(8 if review else 0)
+    experimental=bool(re.search(r'neural|classifier|classification|regression|transformer|prediction|threshold|regulariz|representation learning|resampl|reweight',text))
+    measured=bool(re.search(r'experimen|evaluat|benchmark|dataset|cohort|empirical|cross.validation',text))
+    attitudes=bool(re.search(r'perceived fairness|intended acceptance|survey and interviews|staff perspectives',text))
+    return (4 if methodology else 0)+(3 if experimental and measured else 0)-(8 if review else 0)-(4 if attitudes else 0)

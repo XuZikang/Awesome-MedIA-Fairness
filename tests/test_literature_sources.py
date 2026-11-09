@@ -96,6 +96,7 @@ class LiteratureSourceTests(unittest.TestCase):
             <title>Cell state dynamics</title><firstPublicationDate>2026-02-02</firstPublicationDate>
             <firstIndexDate>2026-02-03</firstIndexDate><isOpenAccess>Y</isOpenAccess>
             <authorList><author><fullName>Grace Hopper</fullName></author></authorList>
+            <pubTypeList><pubType>Journal Article</pubType></pubTypeList>
             <abstractText>Forecasts cell states.</abstractText>
           </result></resultList>
         </responseWrapper>
@@ -108,6 +109,7 @@ class LiteratureSourceTests(unittest.TestCase):
         self.assertEqual(paper["pmid"], "123")
         self.assertEqual(paper["pmcid"], "PMC999")
         self.assertEqual(paper["authors"], ["Grace Hopper"])
+        self.assertEqual(paper['publication_types'],['Journal Article'])
         self.assertTrue(paper["is_open_access"])
         self.assertEqual(paper["url"], "https://europepmc.org/article/MED/123")
 
@@ -144,6 +146,7 @@ class LiteratureSourceTests(unittest.TestCase):
             <ArticleDate><Year>2026</Year><Month>03</Month><Day>04</Day></ArticleDate>
             <DateRevised><Year>2026</Year><Month>03</Month><Day>05</Day></DateRevised>
             <Abstract><AbstractText Label="BACKGROUND">A forecast.</AbstractText></Abstract>
+            <PublicationTypeList><PublicationType>Journal Article</PublicationType></PublicationTypeList>
           </Article></MedlineCitation>
           <PubmedData><ArticleIdList><ArticleId IdType="doi">10.1234/test</ArticleId><ArticleId IdType="pmc">PMC42</ArticleId></ArticleIdList></PubmedData>
         </PubmedArticle></PubmedArticleSet>
@@ -158,6 +161,7 @@ class LiteratureSourceTests(unittest.TestCase):
         self.assertEqual(paper["published"], "2026-03-04")
         self.assertEqual(paper["updated"], "2026-03-05")
         self.assertEqual(paper["authors"], ["Marie Curie"])
+        self.assertEqual(paper['publication_types'],['Journal Article'])
         self.assertFalse(paper["is_open_access"])
         search_request = mock_urlopen.call_args_list[0].args[0]
         self.assertIn("a%40example.org", search_request.full_url)

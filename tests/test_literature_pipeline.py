@@ -136,7 +136,8 @@ class PipelineTests(unittest.TestCase):
         with patch.dict("sys.modules", {"scripts.literature_pipeline.sources": mock_sources}):
             self.assertEqual(main(arguments + ["--until", "2026-11-04"]), 2)
             self.assertEqual(main(arguments + ["--until", "2026-11-11"]), 2)
-        self.assertEqual(observed, [("2026-10-05", "2026-11-04")] * 2 + [("2026-10-05", "2026-11-11")] * 2)
+        query_count = len(json.loads((ROOT / "config/literature.json").read_text())["sources"]["arxiv"])
+        self.assertEqual(observed, [("2026-10-05", "2026-11-04")] * query_count + [("2026-10-05", "2026-11-11")] * query_count)
 
     def test_required_model_configuration_cannot_fall_back_to_metadata(self):
         with patch.dict("os.environ", {}, clear=True), self.assertRaises(SystemExit) as caught:

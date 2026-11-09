@@ -296,6 +296,7 @@ def _parse_europepmc(payload: bytes) -> tuple[list[dict[str, Any]], int, str]:
                 source="europepmc",
                 source_id=source_id,
                 is_open_access=oa,
+                publication_types=[_text(node) for node in _children(result,'pubType') if _text(node)],
             )
         )
     total_node = _first(root, "hitCount")
@@ -461,6 +462,7 @@ def _parse_pubmed(payload: bytes) -> list[dict[str, Any]]:
                 url=f"https://pubmed.ncbi.nlm.nih.gov/{pmid}/" if pmid else "",
                 source="pubmed",
                 source_id=pmid,
+                publication_types=[_text(node) for node in _children(article_meta,'PublicationType') if _text(node)],
                 is_open_access=is_open_access,
             )
         )

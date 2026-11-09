@@ -6,7 +6,7 @@ Edit `data/catalog.json`, then run `python3 -m scripts.render_catalog`. Do not e
 
 Choose one primary methodology from Fairness Evaluation, Pre-processing, In-processing or Post-processing, following the 2024 systematic review. Use Stage pending if a mitigation intervention is not established. Keep secondary contributions in metadata, with only the controlled labels from `scripts/catalog_schema.py`. Read the primary abstract and relevant methods; do not infer clinical benefit, positive gains, intersectionality or predictor freezing from a title.
 
-Supply `tldr_en` as exactly three English sentences: the problem, the method/study design, and the supported result or interpretation. Explain evidence limitations honestly. The generated README is entirely English, has colored title badges, a separate metadata paragraph, and newest-first dates with month subheadings in the latest year. Chinese classification evidence and maintainer judgments belong in `reports/`.
+Supply `tldr_en` as exactly three English sentences: the problem, the method/study design, and the supported result or interpretation. Explain evidence limitations honestly. The generated README is entirely English, has five groups of colored control values below each title (Domain, Focus, Stage, Attributes and Assets), and newest-first dates with month subheadings in the latest year. Chinese classification evidence and maintainer judgments belong in `reports/`.
 
 Run:
 

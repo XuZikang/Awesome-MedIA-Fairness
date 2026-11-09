@@ -358,7 +358,11 @@ def main(argv=None):
             statuses.append({"source": "fixture", "query_id": "offline", "complete": True, "records": len(json.loads(args.fixture.read_text()))})
         else:
             from scripts.literature_pipeline.sources import fetch_source
-            for source, queries in config["sources"].items():
+            source_queries={source:list(queries) for source,queries in config['sources'].items()}
+            supplements=config.get('supplementary_sources',{})
+            for source,queries in supplements.items():
+                source_queries.setdefault(source,[]).extend(queries)
+            for source, queries in source_queries.items():
                 if args.sources and source not in args.sources:
                     continue
                 for query in queries:
@@ -376,7 +380,8 @@ def main(argv=None):
                     with db:
                         db.execute("INSERT OR REPLACE INTO checkpoints VALUES (?, ?)", (pending_key, min(since.isoformat(), pending[0] if pending else since.isoformat())))
                         db.execute("INSERT OR REPLACE INTO checkpoints VALUES (?, ?)", (pending_end_key, max(day, pending_end[0] if pending_end else day)))
-                    status = {"source": source, "query_id": query_id, "since": since.isoformat(), "until": day, "complete": False}
+                    lane='review_supplement' if query in supplements.get(source,[]) else 'methodology'
+                    status = {"source": source, "query_id": query_id, "since": since.isoformat(), "until": day, "complete": False,'lane':lane}
                     print(f"Searching {source}/{query_id}: {since.isoformat()} to {day}", flush=True)
                     try:
                         result = fetch_source(source, query, since.isoformat(), day, max_records=maximum, email=os.environ.get("NCBI_EMAIL", ""))

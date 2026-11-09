@@ -1,26 +1,46 @@
 from __future__ import annotations
 
+import re
 import unittest
 
 from scripts.catalog_schema import ALLOWED, MAIN_HEADING, RESOURCE_HEADING, TOPICS
 from scripts.validate_catalog import CatalogValidator, IssueFormValidator
 
 
+def _slug(label: str, family: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", f"{family}-{label}".lower()).strip("-")
+
+
+def _badge(label: str, family: str) -> str:
+    return f"![{label}](assets/badges/{_slug(label, family)}.svg)"
+
+
 def _taxonomy() -> str:
     rows = []
-    for field, values in ALLOWED.items():
-        rows.append(f"| **{field}** | " + ", ".join(f"`{value}`" for value in sorted(values)) + " |")
+    for field in ("Domain", "Focus", "Stage", "Attributes", "Assets"):
+        values = " ".join(_badge(value, field) for value in sorted(ALLOWED[field]))
+        rows.append(f"| **{field}** | {values} |")
     legend = "\n".join(
         [
-            "Directory categories: Fairness Evaluation; Pre-processing;",
-            "In-processing; Post-processing.",
+            "Directory categories:",
+            f"| {_badge('Fairness Evaluation', 'Fairness Evaluation')} | Evaluation and subgroup auditing. |",
+            f"| {_badge('Pre-processing', 'Pre-processing')} | Data and sampling interventions. |",
+            f"| {_badge('In-processing', 'In-processing')} | Training and representation interventions. |",
+            f"| {_badge('Post-processing', 'Post-processing')} | Output and calibration interventions. |",
         ]
     )
     return "\n".join(
         [
             "## 🧬 Taxonomy",
             "",
-            "| Field | Values |",
+            "| Method | Definition |",
+            "|---|---|",
+            f"| {_badge('Fairness Evaluation', 'Fairness Evaluation')} | Evaluation. |",
+            f"| {_badge('Pre-processing', 'Pre-processing')} | Pre-processing. |",
+            f"| {_badge('In-processing', 'In-processing')} | In-processing. |",
+            f"| {_badge('Post-processing', 'Post-processing')} | Post-processing. |",
+            "",
+            "| Field | Controlled values |",
             "|---|---|",
             *rows,
             "",
@@ -30,14 +50,32 @@ def _taxonomy() -> str:
     )
 
 
+def _control_line(stage: str, assets: str, annotation: str | None = None) -> str:
+    focus = "Evaluation" if stage == "Evaluation" else "Mitigation"
+    values = {
+        "Domain": ["Medical imaging"],
+        "Focus": [focus],
+        "Stage": [stage],
+        "Attributes": ["Sex and gender"],
+        "Assets": [part.strip() for part in assets.split("+")],
+    }
+    line = "  " + " · ".join(
+        f"**{field}:** " + " ".join(_badge(value, field) for value in field_values)
+        for field, field_values in values.items()
+    )
+    if annotation:
+        line += " · " + _badge(annotation, annotation)
+    return line
+
+
 def _entry(
     title: str,
     year: int,
     doi: str,
     stage: str,
-    badge: str,
     assets: str = "Paper only",
     date: str | None = None,
+    annotation: str | None = None,
 ) -> str:
     links = [f"[[📝 Paper](https://doi.org/{doi})]"]
     if "Code" in assets:
@@ -48,17 +86,13 @@ def _entry(
         links.append("[[🌐 Project](https://example.org/project)]")
     if "Data" in assets:
         links.append("[[📊 Data](https://example.org/data)]")
-    focus = "Evaluation" if stage == "Evaluation" else "Mitigation"
     return "\n".join(
         [
-            f"- (*Journal'{str(year)[-2:]}*) **{title}** ![method](assets/badges/{badge}.svg)",
+            f"- (*Journal'{str(year)[-2:]}*) **{title}**",
+            "",
+            _control_line(stage, assets, annotation),
             "",
             "  " + " ".join(links),
-            "",
-            "  **Metadata:** `Domain: Medical imaging` · "
-            f"`Focus: {focus}` · `Stage: {stage}` · "
-            "`Attributes: Sex and gender` · "
-            f"`Assets: {assets}` · `Evidence: Primary full text`",
             "",
             "  **TLDR:** This paper studies a medical fairness method. It compares subgroup outcomes. It reports an evaluated result.",
             "",
@@ -71,22 +105,22 @@ def _readme(include_pending: bool = True) -> str:
     evaluation = "\n\n".join(
         [
             "### Fairness Evaluation\n\n#### 2025\n\n##### 2025-11\n\n"
-            + _entry("Fairness Evaluation Example", 2025, "10.1000/fairness-a", "Evaluation", "evaluation", "Code + Data", "2025-11-04"),
+            + _entry("Fairness Evaluation Example", 2025, "10.1000/fairness-a", "Evaluation", "Code + Data", "2025-11-04"),
             "##### 2025-10\n\n"
-            + _entry("Fairness Evaluation Second", 2025, "10.1000/fairness-b", "Evaluation", "evaluation", date="2025-10"),
+            + _entry("Fairness Evaluation Second", 2025, "10.1000/fairness-b", "Evaluation", date="2025-10"),
         ]
     )
     preprocessing = "### Unfairness Mitigation: Pre-processing\n\n#### 2024\n\n" + _entry(
-        "Pre-processing Example", 2024, "10.1000/fairness-c", "Pre-processing", "preprocessing", date="2024"
+        "Pre-processing Example", 2024, "10.1000/fairness-c", "Pre-processing", date="2024"
     )
     inprocessing = "### Unfairness Mitigation: In-processing\n\n#### 2023\n\n" + _entry(
-        "In-processing Example", 2023, "10.1000/fairness-d", "In-processing", "inprocessing", date="2023"
+        "In-processing Example", 2023, "10.1000/fairness-d", "In-processing", date="2023"
     )
     postprocessing = "### Unfairness Mitigation: Post-processing\n\n#### 2022\n\n" + _entry(
-        "Post-processing Example", 2022, "10.1000/fairness-e", "Post-processing", "postprocessing", date="2022"
+        "Post-processing Example", 2022, "10.1000/fairness-e", "Post-processing", date="2022"
     )
     pending = "### Unfairness Mitigation: Stage pending\n\n#### 2025\n\n##### Month unverified\n\n" + _entry(
-        "Stage Pending Example", 2025, "10.1000/fairness-f", "Not verified", "pending", date="2025"
+        "Stage Pending Example", 2025, "10.1000/fairness-f", "Not verified", date="2025"
     )
     resources = "\n\n".join(
         [
@@ -206,25 +240,78 @@ class CatalogValidatorTests(unittest.TestCase):
         )
         self.assertEqual([(entry.title, entry.section) for entry in entries], [("Legacy", "2022")])
 
-    def test_missing_metadata_is_reported(self) -> None:
-        mutated = _readme().replace("  **Metadata:**", "  **Removed metadata:**", 1)
+    def test_title_has_no_inline_badge(self) -> None:
+        main = _readme().split(MAIN_HEADING, 1)[1].split(RESOURCE_HEADING, 1)[0]
+        title_line = next(line for line in main.splitlines() if line.startswith("- (*"))
+        self.assertNotIn("![", title_line)
+        self.assertEqual(CatalogValidator(_readme()).validate(), [])
+
+    def test_control_line_has_five_fields_and_individual_badges(self) -> None:
+        main = _readme().split(MAIN_HEADING, 1)[1].split(RESOURCE_HEADING, 1)[0]
+        entry = CatalogValidator.entries(main)[0]
+        control = entry.block.splitlines()[2]
+        for field in ("Domain", "Focus", "Stage", "Attributes", "Assets"):
+            self.assertIn(f"**{field}:**", control)
+        self.assertNotIn("**Evidence:**", control)
+        self.assertIn("![Code](assets/badges/assets-code.svg)", control)
+        self.assertIn("![Data](assets/badges/assets-data.svg)", control)
+
+    def test_missing_control_values_are_reported(self) -> None:
+        mutated = _readme().replace("  **Domain:**", "  **Removed domain:**", 1)
         errors = CatalogValidator(mutated).validate()
-        self.assertTrue(any("expected one exact Metadata line" in error for error in errors))
+        self.assertTrue(any("expected one exact five-field control-values line" in error for error in errors))
 
     def test_invalid_controlled_value_is_reported(self) -> None:
-        mutated = _readme().replace("`Domain: Medical imaging`", "`Domain: Galaxy`", 1)
+        mutated = _readme().replace(
+            "  **Domain:** ![Medical imaging](assets/badges/domain-medical-imaging.svg)",
+            "  **Domain:** ![Galaxy](assets/badges/domain-galaxy.svg)",
+            1,
+        )
         errors = CatalogValidator(mutated).validate()
         self.assertTrue(any("invalid Domain values" in error for error in errors))
 
     def test_domain_must_be_single_select(self) -> None:
         mutated = _readme().replace(
-            "`Domain: Medical imaging`", "`Domain: Medical imaging + Other biomedical`", 1
+            "  **Domain:** ![Medical imaging](assets/badges/domain-medical-imaging.svg)",
+            "  **Domain:** ![Medical imaging](assets/badges/domain-medical-imaging.svg) ![Other biomedical](assets/badges/domain-other-biomedical.svg)",
+            1,
         )
         errors = CatalogValidator(mutated).validate()
         self.assertTrue(any("Domain must contain exactly one value" in error for error in errors))
 
+    def test_evidence_is_hidden_from_entries(self) -> None:
+        mutated = _readme().replace(
+            "**Assets:** ![Code](assets/badges/assets-code.svg) ![Data](assets/badges/assets-data.svg)",
+            "**Assets:** ![Code](assets/badges/assets-code.svg) ![Data](assets/badges/assets-data.svg) · **Evidence:** ![Primary full text](assets/badges/evidence-primary-full-text.svg)",
+            1,
+        )
+        errors = CatalogValidator(mutated).validate()
+        self.assertTrue(any("Evidence must remain hidden" in error for error in errors))
+
+    def test_taxonomy_rejects_repeated_inline_value_text(self) -> None:
+        mutated = _readme().replace(
+            "| **Domain** | ![Clinical NLP and foundation models]",
+            "| **Domain** | Medical imaging ![Clinical NLP and foundation models]",
+            1,
+        )
+        errors = CatalogValidator(mutated).validate()
+        self.assertTrue(any("value cell must contain badges only" in error for error in errors))
+
+    def test_taxonomy_hides_evidence_row(self) -> None:
+        mutated = _readme().replace(
+            MAIN_HEADING,
+            "| **Evidence** | ![Primary full text](assets/badges/evidence-primary-full-text.svg) |\n\n" + MAIN_HEADING,
+            1,
+        )
+        errors = CatalogValidator(mutated).validate()
+        self.assertTrue(any("Taxonomy must hide the Evidence field" in error for error in errors))
+
     def test_asset_mismatch_is_reported(self) -> None:
-        mutated = _readme().replace("`Assets: Code + Data`", "`Assets: Paper only`", 1)
+        mutated = _readme().replace(
+            "**Assets:** ![Code](assets/badges/assets-code.svg) ![Data](assets/badges/assets-data.svg)",
+            "**Assets:** ![Paper only](assets/badges/assets-paper-only.svg)",
+            1,
+        )
         errors = CatalogValidator(mutated).validate()
         self.assertTrue(any("expected 'Code + Data' from links" in error for error in errors))
 
@@ -249,9 +336,13 @@ class CatalogValidatorTests(unittest.TestCase):
         self.assertTrue(any("Legacy By Topic" in error for error in errors))
 
     def test_badge_must_be_local_svg(self) -> None:
-        mutated = _readme().replace("![method](assets/badges/evaluation.svg)", "![method](https://example.org/badge.svg)", 1)
+        mutated = _readme().replace(
+            "  **Domain:** ![Medical imaging](assets/badges/domain-medical-imaging.svg)",
+            "  **Domain:** ![Medical imaging](https://example.org/badge.svg)",
+            1,
+        )
         errors = CatalogValidator(mutated).validate()
-        self.assertTrue(any("local SVG badge" in error for error in errors))
+        self.assertTrue(any("local SVG badges" in error for error in errors))
 
     def test_tldr_requires_three_english_sentences(self) -> None:
         mutated = _readme().replace(" It reports an evaluated result.", "", 1)
@@ -265,7 +356,9 @@ class CatalogValidatorTests(unittest.TestCase):
 
     def test_pending_stage_requires_unknown_stage_value(self) -> None:
         mutated = _readme().replace(
-            "`Stage: Not verified`", "`Stage: Evaluation`", 1
+            "**Stage:** ![Not verified](assets/badges/stage-not-verified.svg)",
+            "**Stage:** ![Evaluation](assets/badges/stage-evaluation.svg)",
+            1,
         )
         errors = CatalogValidator(mutated).validate()
         self.assertTrue(any("Stage pending entries require" in error for error in errors))
