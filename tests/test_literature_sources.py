@@ -45,6 +45,19 @@ def arxiv_feed(total: int, entries: str) -> bytes:
 
 
 class LiteratureSourceTests(unittest.TestCase):
+    def test_pubmed_does_not_use_identifiers_from_cited_references(self):
+        payload=b'''<PubmedArticleSet><PubmedArticle>
+        <MedlineCitation><PMID>123</PMID><Article><ArticleTitle>Fairness audit</ArticleTitle></Article></MedlineCitation>
+        <PubmedData><ArticleIdList><ArticleId IdType="doi">10.1000/own</ArticleId></ArticleIdList>
+        <ReferenceList><Reference><ArticleIdList><ArticleId IdType="doi">10.1000/cited</ArticleId>
+        <ArticleId IdType="pmc">PMC999</ArticleId></ArticleIdList></Reference></ReferenceList></PubmedData>
+        </PubmedArticle></PubmedArticleSet>'''
+        paper=sources._parse_pubmed(payload)[0]
+        self.assertEqual(paper['doi'],'10.1000/own')
+        self.assertEqual(paper['pmcid'],'')
+        no_own_doi=payload.replace(b'<ArticleId IdType="doi">10.1000/own</ArticleId>',b'')
+        self.assertEqual(sources._parse_pubmed(no_own_doi)[0]['doi'],'')
+
     def setUp(self):
         sources._LAST_REQUEST.clear()
 

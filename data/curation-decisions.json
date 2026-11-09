@@ -495,5 +495,55 @@
     "title": "Skin color representation in orthopedic literature.",
     "source_review_sha256": "50b463591dfd3b24577c8190fa1c4db155caa22c22c574e25b0df1db534cdec7",
     "content_version": "e25f344641289e7cb27843094626d5a555587d9b96c5f60fe1b354aebe6d2207"
+  },
+  "p-04e0b05b25ec362e22ad": {
+    "decision": "reject",
+    "fingerprint": "0d729777f87b3c274460485e6ecc102cc15bc3ab4b223cadd0afacb1006ef051",
+    "note": "用户于2026-11-09明确排除。",
+    "paper_version": "ae3c45e365e4c553bd26bf99ff63dd9a67af0d8caaa49375db60817b9ee1413c",
+    "content_version": "5349ae0a9b22e548d9a5440b0b599d95516117171133c3170fd58d2c329413a6",
+    "title": "Digital Scribes in Dentistry: Opportunities, Risks and Practical Considerations.",
+    "source_review_sha256": "23a5e3e48331254cf82828d284caeeace685b2fc852e480e8b80543c6c5a61bc",
+    "reviewed_on": "2026-11-09"
+  },
+  "p-5a21404654990f140f62": {
+    "decision": "reject",
+    "fingerprint": "857219cba8f03aaaf254a70f6ea3b2c9173729dc407f8ef47f06d845da40678a",
+    "note": "用户于2026-11-09明确排除。",
+    "paper_version": "27de4305316a66f5093255592e60813bfab944530d317fb69aa068dc71274ccd",
+    "content_version": "d4169d0e5a758d437d77a34d8029448e23c8742908f7d83be089b1836024079a",
+    "title": "AI for Postoperative Pain and Opioid Stewardship in Pediatric Surgery: A Systematic Review.",
+    "source_review_sha256": "23a5e3e48331254cf82828d284caeeace685b2fc852e480e8b80543c6c5a61bc",
+    "reviewed_on": "2026-11-09"
+  },
+  "p-5e807a99c95186c7bc80": {
+    "decision": "approve",
+    "fingerprint": "1236d767f43a579cb15e9d703261dfc46ea7fc803034bfa466c9de6812a83f9c",
+    "note": "用户于2026-11-09明确批准纳入。",
+    "paper_version": "3d9c2ddcd73e44cfa90660d8e649efac20cb692943147723d7b685a8a37b06a2",
+    "content_version": "bbf9517bdd238cd98f92e210ef4d32b94bf5e6efdc982f89ac59fae62fae010a",
+    "title": "Visual Sexual Health Communication Assisted by AI: The Case of Synthetic Menstruation Images.",
+    "source_review_sha256": "23a5e3e48331254cf82828d284caeeace685b2fc852e480e8b80543c6c5a61bc",
+    "reviewed_on": "2026-11-09"
+  },
+  "p-b0cb7b51a7ac9f9fa2a2": {
+    "decision": "reject",
+    "fingerprint": "1f1554c6e4c67d7c09508a1f44348764d63179f54e7feb1fb11ffedf23a8cc79",
+    "note": "用户于2026-11-09明确排除。",
+    "paper_version": "c7b9e49df5a5ffc8b80abaaa08bd9ed20656b0de85ae08ef53c4cc469c71b4aa",
+    "content_version": "66e98011847e13ee7d2f430640d8e3b1d5da108f0d2825a5e52ffab790b510f3",
+    "title": "Artificial intelligence-mediated cyberincivility in health professions education: An evolutionary concept analysis.",
+    "source_review_sha256": "23a5e3e48331254cf82828d284caeeace685b2fc852e480e8b80543c6c5a61bc",
+    "reviewed_on": "2026-11-09"
+  },
+  "p-b130f0cb3376203a6985": {
+    "decision": "approve",
+    "fingerprint": "3ebcd4e6a8436133daebc8ac243d459877a687a9843e736d9475cf755a1cd9e7",
+    "note": "用户于2026-11-09明确批准纳入。",
+    "paper_version": "f806e804284bf2da64de2c9f8b7990a593aeb91568e903d8ce7b47bb7cfab15e",
+    "content_version": "ed562104858853b8c99b80b956de90b37b5a2f7dc14c9b9391f22beee5892580",
+    "title": "Sex-Equitable Machine Learning Prediction of Ankle Reinjury in Individuals with Chronic Ankle Instability: A 2-Year Prospective Cohort Study with Fairness Audit.",
+    "source_review_sha256": "23a5e3e48331254cf82828d284caeeace685b2fc852e480e8b80543c6c5a61bc",
+    "reviewed_on": "2026-11-09"
   }
 }

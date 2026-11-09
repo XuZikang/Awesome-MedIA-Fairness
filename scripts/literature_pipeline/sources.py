@@ -406,13 +406,18 @@ def _parse_pubmed(payload: bytes) -> list[dict[str, Any]]:
         citation = _first(article, "MedlineCitation") or article
         article_meta = _first(citation, "Article") or citation
         pmid = _text(_first(citation, "PMID"))
+        # ReferenceList also contains ArticleId elements: only the paper's own
+        # PubmedData/ArticleIdList can identify this article.
+        pubmed_data = next((node for node in list(article) if _tag(node)=="PubmedData"), None)
+        own_ids = next((node for node in list(pubmed_data) if _tag(node)=="ArticleIdList"), None) if pubmed_data is not None else None
+        identifiers = list(own_ids) if own_ids is not None else []
         pmcid = ""
-        for identifier in _children(article, "ArticleId"):
+        for identifier in identifiers:
             if (identifier.attrib.get("IdType") or "").lower() == "pmc":
                 pmcid = _text(identifier)
                 break
         doi = ""
-        for identifier in _children(article, "ArticleId"):
+        for identifier in identifiers:
             if (identifier.attrib.get("IdType") or "").lower() == "doi":
                 doi = _text(identifier)
                 break

@@ -6688,5 +6688,132 @@
       "note": "用户明确纳入；全文已确认医疗任务、模型对比及种族、性别、年龄的召回差距审计。",
       "source_review_sha256": "852b2998a5b95e238f9d5dfa585e72fe0a7549bf100bc59d2563e41da7e6a176"
     }
+  },
+  {
+    "title": "Visual Sexual Health Communication Assisted by AI: The Case of Synthetic Menstruation Images.",
+    "authors": [
+      "Nicola Döring",
+      "Anastasiia Shevtsova"
+    ],
+    "doi": "10.1007/s10508-026-03518-x",
+    "pmid": "42980982",
+    "year": "2026",
+    "venue": "Archives of Sexual Behavior",
+    "publication_date": "2026-11-03",
+    "kind": "main",
+    "publication_type": "Original research",
+    "method": "Fairness Evaluation",
+    "metadata": {
+      "Attributes": [
+        "Sex and gender",
+        "Skin tone",
+        "Other"
+      ],
+      "Domain": [
+        "Other biomedical"
+      ],
+      "Evidence": [
+        "Primary full text"
+      ],
+      "Focus": [
+        "Bias mechanisms",
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Assets": [
+        "Project"
+      ]
+    },
+    "tldr_en": [
+      "This study audits representational diversity and stereotypical depictions in AI-generated images for menstrual health communication.",
+      "It manually codes 600 outputs from 15 generators using a reliability-tested codebook across prompts in two languages.",
+      "The authors report frequent visual flaws and limited body-type diversity, while skin-tone diversity is not similarly restricted and stereotypical portrayals are not predominant."
+    ],
+    "verified": true,
+    "links": {
+      "Paper": "https://doi.org/10.1007/s10508-026-03518-x",
+      "Project": "https://osf.io/h5pn3/"
+    },
+    "sources": [
+      {
+        "url": "https://link.springer.com/article/10.1007/s10508-026-03518-x",
+        "section": "Human-approved primary publisher methods and results"
+      }
+    ],
+    "human_review": {
+      "decision": "approve",
+      "reviewed_on": "2026-11-09",
+      "review_fingerprint": "1236d767f43a579cb15e9d703261dfc46ea7fc803034bfa466c9de6812a83f9c",
+      "note": "用户于2026-11-09明确批准纳入。",
+      "source_review_sha256": "23a5e3e48331254cf82828d284caeeace685b2fc852e480e8b80543c6c5a61bc",
+      "overrides_machine_screening": true
+    }
+  },
+  {
+    "title": "Sex-Equitable Machine Learning Prediction of Ankle Reinjury in Individuals with Chronic Ankle Instability: A 2-Year Prospective Cohort Study with Fairness Audit.",
+    "authors": [
+      "Ui-Jae Hwang",
+      "S Jun Son",
+      "Siu-Ngor Fu",
+      "Arnold Y L Wong",
+      "Dustin Bruening",
+      "Brent Feland",
+      "Matthew Seeley",
+      "J Ty Hopkins"
+    ],
+    "doi": "10.1186/s40798-026-01137-3",
+    "pmid": "42998122",
+    "year": "2026",
+    "venue": "Sports Medicine - Open",
+    "publication_date": "2026-11-07",
+    "kind": "main",
+    "publication_type": "Original research",
+    "method": "Post-processing",
+    "metadata": {
+      "Attributes": [
+        "Sex and gender"
+      ],
+      "Domain": [
+        "EHR and clinical prediction"
+      ],
+      "Evidence": [
+        "Primary full text"
+      ],
+      "Focus": [
+        "Evaluation",
+        "Mitigation"
+      ],
+      "Stage": [
+        "Post-processing"
+      ],
+      "Assets": [
+        "Paper only"
+      ]
+    },
+    "tldr_en": [
+      "This prospective cohort study develops machine-learning models for two-year ankle reinjury prediction in people with chronic ankle instability and audits sex-related performance differences.",
+      "It compares six algorithms using nested cross-validation and evaluates out-of-fold global versus sex-specific Youden thresholds with equalized-odds and disproportionate-impact measures.",
+      "Sex-specific thresholding reduces the reported equalized-odds gap without retraining, but the disproportionate-impact ratio remains below the study benchmark and external validation is still required."
+    ],
+    "verified": true,
+    "links": {
+      "Paper": "https://doi.org/10.1186/s40798-026-01137-3"
+    },
+    "sources": [
+      {
+        "url": "https://link.springer.com/article/10.1186/s40798-026-01137-3",
+        "section": "Human-approved primary publisher methods and results"
+      }
+    ],
+    "human_review": {
+      "decision": "approve",
+      "reviewed_on": "2026-11-09",
+      "review_fingerprint": "3ebcd4e6a8436133daebc8ac243d459877a687a9843e736d9475cf755a1cd9e7",
+      "note": "用户于2026-11-09明确批准纳入。",
+      "source_review_sha256": "23a5e3e48331254cf82828d284caeeace685b2fc852e480e8b80543c6c5a61bc",
+      "overrides_machine_screening": true
+    }
   }
 ]

@@ -4,7 +4,7 @@ A collection of research on **medical algorithm fairness**, covering medical ima
 
 [![Catalog validation](https://github.com/XuZikang/Awesome-MedIA-Fairness/actions/workflows/validate-catalog.yml/badge.svg)](https://github.com/XuZikang/Awesome-MedIA-Fairness/actions/workflows/validate-catalog.yml) [![Link health](https://github.com/XuZikang/Awesome-MedIA-Fairness/actions/workflows/check-links.yml/badge.svg)](https://github.com/XuZikang/Awesome-MedIA-Fairness/actions/workflows/check-links.yml)
 
-**117 papers**, including surveys and perspectives, organized by methodology. Each paper has one primary placement; secondary contributions remain in its metadata and TLDR.
+**119 papers**, including surveys and perspectives, organized by methodology. Each paper has one primary placement; secondary contributions remain in its metadata and TLDR.
 
 ## 🎯 Scope
 
@@ -54,6 +54,17 @@ Title badges use distinct colors for methodology, domain, focus, attributes, ava
 #### 2026
 
 ##### 2026-11
+
+- (*Archives of Sexual Behavior'26*) **Visual Sexual Health Communication Assisted by AI: The Case of Synthetic Menstruation Images.** ![Fairness Evaluation](assets/badges/fairness-evaluation-fairness-evaluation.svg) ![Other biomedical](assets/badges/domain-other-biomedical.svg) ![Bias mechanisms + Evaluation](assets/badges/focus-bias-mechanisms-evaluation.svg) ![Sex and gender + Skin tone + Other](assets/badges/attributes-sex-and-gender-skin-tone-other.svg) ![Project](assets/badges/assets-project.svg) ![Primary full text](assets/badges/evidence-primary-full-text.svg)
+
+  [[Paper](https://doi.org/10.1007/s10508-026-03518-x)] [[Project](https://osf.io/h5pn3/)]
+
+  **Metadata:** `Domain: Other biomedical` · `Focus: Bias mechanisms + Evaluation` · `Stage: Evaluation` · `Attributes: Sex and gender + Skin tone + Other` · `Assets: Project` · `Evidence: Primary full text`
+
+  **TLDR:** This study audits representational diversity and stereotypical depictions in AI-generated images for menstrual health communication. It manually codes 600 outputs from 15 generators using a reliability-tested codebook across prompts in two languages. The authors report frequent visual flaws and limited body-type diversity, while skin-tone diversity is not similarly restricted and stereotypical portrayals are not predominant.
+
+  **Date:** 2026-11-03
+
 
 - (*Archives of Orthopaedic and Trauma Surgery'26*) **Skin color representation in orthopedic literature.** ![Fairness Evaluation](assets/badges/fairness-evaluation-fairness-evaluation.svg) ![Medical imaging](assets/badges/domain-medical-imaging.svg) ![Evaluation + Dataset](assets/badges/focus-evaluation-dataset.svg) ![Skin tone](assets/badges/attributes-skin-tone.svg) ![Paper only](assets/badges/assets-paper-only.svg) ![Primary abstract](assets/badges/evidence-primary-abstract.svg)
 
@@ -1355,6 +1366,19 @@ Title badges use distinct colors for methodology, domain, focus, attributes, ava
 ### Unfairness Mitigation: Post-processing
 
 #### 2026
+
+##### 2026-11
+
+- (*Sports Medicine - Open'26*) **Sex-Equitable Machine Learning Prediction of Ankle Reinjury in Individuals with Chronic Ankle Instability: A 2-Year Prospective Cohort Study with Fairness Audit.** ![Post-processing](assets/badges/post-processing-post-processing.svg) ![EHR and clinical prediction](assets/badges/domain-ehr-and-clinical-prediction.svg) ![Evaluation + Mitigation](assets/badges/focus-evaluation-mitigation.svg) ![Sex and gender](assets/badges/attributes-sex-and-gender.svg) ![Paper only](assets/badges/assets-paper-only.svg) ![Primary full text](assets/badges/evidence-primary-full-text.svg)
+
+  [[Paper](https://doi.org/10.1186/s40798-026-01137-3)]
+
+  **Metadata:** `Domain: EHR and clinical prediction` · `Focus: Evaluation + Mitigation` · `Stage: Post-processing` · `Attributes: Sex and gender` · `Assets: Paper only` · `Evidence: Primary full text`
+
+  **TLDR:** This prospective cohort study develops machine-learning models for two-year ankle reinjury prediction in people with chronic ankle instability and audits sex-related performance differences. It compares six algorithms using nested cross-validation and evaluates out-of-fold global versus sex-specific Youden thresholds with equalized-odds and disproportionate-impact measures. Sex-specific thresholding reduces the reported equalized-odds gap without retraining, but the disproportionate-impact ratio remains below the study benchmark and external validation is still required.
+
+  **Date:** 2026-11-07
+
 
 ##### 2026-10
 
