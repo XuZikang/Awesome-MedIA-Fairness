@@ -17,8 +17,11 @@ def _badge(label: str, family: str) -> str:
 
 def _taxonomy() -> str:
     rows = []
-    for field in ("Domain", "Focus", "Stage", "Attributes", "Assets"):
-        values = " ".join(_badge(value, field) for value in sorted(ALLOWED[field]))
+    for field in ("Domain", "Focus", "Stage", "Attributes"):
+        values = " ".join(
+            _badge(value, value if field == "Stage" and value in {"Pre-processing", "In-processing", "Post-processing"} else field)
+            for value in sorted(ALLOWED[field])
+        )
         rows.append(f"| **{field}** | {values} |")
     legend = "\n".join(
         [
@@ -50,19 +53,22 @@ def _taxonomy() -> str:
     )
 
 
-def _control_line(stage: str, assets: str, annotation: str | None = None) -> str:
+def _control_line(stage: str, assets: str, annotation: str | None = None, domains: tuple[str, ...] = ("MRI",)) -> str:
     focus = "Evaluation" if stage == "Evaluation" else "Mitigation"
     values = {
-        "Domain": ["Medical imaging"],
+        "Domain": list(domains),
         "Focus": [focus],
         "Stage": [stage],
         "Attributes": ["Sex and gender"],
-        "Assets": [part.strip() for part in assets.split("+")],
     }
-    line = "  " + " · ".join(
-        f"**{field}:** " + " ".join(_badge(value, field) for value in field_values)
+    groups = [
+        " ".join(
+            _badge(value, value if field == "Stage" and value in {"Pre-processing", "In-processing", "Post-processing"} else field)
+            for value in field_values
+        )
         for field, field_values in values.items()
-    )
+    ]
+    line = "  " + " · ".join(groups[:3]) + "<br>" + groups[3]
     if annotation:
         line += " · " + _badge(annotation, annotation)
     return line
@@ -77,15 +83,15 @@ def _entry(
     date: str | None = None,
     annotation: str | None = None,
 ) -> str:
-    links = [f"[[📝 Paper](https://doi.org/{doi})]"]
+    links = [f"[📝 Paper](https://doi.org/{doi})"]
     if "Code" in assets:
-        links.append("[[💻 Code](https://github.com/example/code)]")
+        links.append("[💻 Code](https://github.com/example/code)")
     if "Weights" in assets:
-        links.append("[[🌐 Weights](https://example.org/weights)]")
+        links.append("[🌐 Weights](https://example.org/weights)")
     if "Project" in assets:
-        links.append("[[🌐 Project](https://example.org/project)]")
+        links.append("[🌐 Project](https://example.org/project)")
     if "Data" in assets:
-        links.append("[[📊 Data](https://example.org/data)]")
+        links.append("[📊 Data](https://example.org/data)")
     return "\n".join(
         [
             f"- (*Journal'{str(year)[-2:]}*) **{title}**",
@@ -183,7 +189,7 @@ def _issue_form() -> str:
         ("attributes", "Attributes"),
         ("evidence", "Evidence"),
     ]:
-        multiple = field_id in {"focus", "stage", "attributes"}
+        multiple = field_id in {"domain", "focus", "stage", "attributes"}
         fields += [
             "  - type: dropdown",
             f"    id: {field_id}",
@@ -246,52 +252,96 @@ class CatalogValidatorTests(unittest.TestCase):
         self.assertNotIn("![", title_line)
         self.assertEqual(CatalogValidator(_readme()).validate(), [])
 
-    def test_control_line_has_five_fields_and_individual_badges(self) -> None:
+    def test_control_line_has_four_badge_groups_and_no_labels(self) -> None:
         main = _readme().split(MAIN_HEADING, 1)[1].split(RESOURCE_HEADING, 1)[0]
         entry = CatalogValidator.entries(main)[0]
         control = entry.block.splitlines()[2]
-        for field in ("Domain", "Focus", "Stage", "Attributes", "Assets"):
-            self.assertIn(f"**{field}:**", control)
-        self.assertNotIn("**Evidence:**", control)
-        self.assertIn("![Code](assets/badges/assets-code.svg)", control)
-        self.assertIn("![Data](assets/badges/assets-data.svg)", control)
+        self.assertIn("![MRI](assets/badges/domain-mri.svg)", control)
+        self.assertIn("![Evaluation](assets/badges/focus-evaluation.svg)", control)
+        self.assertIn("![Evaluation](assets/badges/stage-evaluation.svg)<br>", control)
+        self.assertIn("![Sex and gender](assets/badges/attributes-sex-and-gender.svg)", control)
+        self.assertNotIn("**", control)
+        self.assertNotIn("assets-badges", control)
 
     def test_missing_control_values_are_reported(self) -> None:
-        mutated = _readme().replace("  **Domain:**", "  **Removed domain:**", 1)
+        mutated = _readme().replace(
+            "  ![MRI](assets/badges/domain-mri.svg)",
+            "  **Domain:** ![MRI](assets/badges/domain-mri.svg)",
+            1,
+        )
         errors = CatalogValidator(mutated).validate()
-        self.assertTrue(any("expected one exact five-field control-values line" in error for error in errors))
+        self.assertTrue(any("bold field labels" in error for error in errors))
 
     def test_invalid_controlled_value_is_reported(self) -> None:
         mutated = _readme().replace(
-            "  **Domain:** ![Medical imaging](assets/badges/domain-medical-imaging.svg)",
-            "  **Domain:** ![Galaxy](assets/badges/domain-galaxy.svg)",
+            "  ![MRI](assets/badges/domain-mri.svg)",
+            "  ![Galaxy](assets/badges/domain-galaxy.svg)",
             1,
         )
         errors = CatalogValidator(mutated).validate()
         self.assertTrue(any("invalid Domain values" in error for error in errors))
 
-    def test_domain_must_be_single_select(self) -> None:
+    def test_badge_family_must_match_control_field(self) -> None:
         mutated = _readme().replace(
-            "  **Domain:** ![Medical imaging](assets/badges/domain-medical-imaging.svg)",
-            "  **Domain:** ![Medical imaging](assets/badges/domain-medical-imaging.svg) ![Other biomedical](assets/badges/domain-other-biomedical.svg)",
+            "  ![MRI](assets/badges/domain-mri.svg)",
+            "  ![MRI](assets/badges/focus-mri.svg)",
             1,
         )
         errors = CatalogValidator(mutated).validate()
-        self.assertTrue(any("Domain must contain exactly one value" in error for error in errors))
+        self.assertTrue(any("does not match Domain value" in error for error in errors))
 
-    def test_evidence_is_hidden_from_entries(self) -> None:
+    def test_multiple_imaging_modalities_are_allowed(self) -> None:
         mutated = _readme().replace(
-            "**Assets:** ![Code](assets/badges/assets-code.svg) ![Data](assets/badges/assets-data.svg)",
-            "**Assets:** ![Code](assets/badges/assets-code.svg) ![Data](assets/badges/assets-data.svg) · **Evidence:** ![Primary full text](assets/badges/evidence-primary-full-text.svg)",
+            "  ![MRI](assets/badges/domain-mri.svg) · ![Evaluation](assets/badges/focus-evaluation.svg)",
+            "  ![MRI](assets/badges/domain-mri.svg) ![CT](assets/badges/domain-ct.svg) · ![Evaluation](assets/badges/focus-evaluation.svg)",
+            1,
+        )
+        self.assertEqual(CatalogValidator(mutated).validate(), [])
+
+    def test_mixed_modality_and_nonimaging_domain_is_rejected(self) -> None:
+        mutated = _readme().replace(
+            "  ![MRI](assets/badges/domain-mri.svg) ·",
+            "  ![MRI](assets/badges/domain-mri.svg) ![EHR and clinical prediction](assets/badges/domain-ehr-and-clinical-prediction.svg) ·", 1)
+        self.assertTrue(any("multiple domains must be concrete" in e for e in CatalogValidator(mutated).validate()))
+
+    def test_perspective_annotation_badge_is_allowed(self) -> None:
+        mutated = _readme().replace(
+            "<br>![Sex and gender](assets/badges/attributes-sex-and-gender.svg)",
+            "<br>![Sex and gender](assets/badges/attributes-sex-and-gender.svg) · ![Perspective](assets/badges/perspective-perspective.svg)",
+            1,
+        )
+        self.assertEqual(CatalogValidator(mutated).validate(), [])
+
+    def test_legacy_double_bracket_links_remain_accepted(self) -> None:
+        mutated = _readme().replace(
+            "[📝 Paper](https://doi.org/10.1000/fairness-a)",
+            "[[📝 Paper](https://doi.org/10.1000/fairness-a)]",
+            1,
+        )
+        self.assertEqual(CatalogValidator(mutated).validate(), [])
+
+    def test_assets_badge_is_hidden_from_entries(self) -> None:
+        mutated = _readme().replace(
+            "  ![MRI](assets/badges/domain-mri.svg) · ![Evaluation](assets/badges/focus-evaluation.svg) · ![Evaluation](assets/badges/stage-evaluation.svg)<br>![Sex and gender](assets/badges/attributes-sex-and-gender.svg)",
+            "  ![MRI](assets/badges/domain-mri.svg) · ![Evaluation](assets/badges/focus-evaluation.svg) · ![Evaluation](assets/badges/stage-evaluation.svg)<br>![Sex and gender](assets/badges/attributes-sex-and-gender.svg) · ![Code](assets/badges/assets-code.svg)",
             1,
         )
         errors = CatalogValidator(mutated).validate()
-        self.assertTrue(any("Evidence must remain hidden" in error for error in errors))
+        self.assertTrue(any("Assets badges must remain hidden" in error for error in errors))
+
+    def test_evidence_badge_is_hidden_from_entries(self) -> None:
+        mutated = _readme().replace(
+            "  ![MRI](assets/badges/domain-mri.svg) · ![Evaluation](assets/badges/focus-evaluation.svg) · ![Evaluation](assets/badges/stage-evaluation.svg)<br>![Sex and gender](assets/badges/attributes-sex-and-gender.svg)",
+            "  ![MRI](assets/badges/domain-mri.svg) · ![Evaluation](assets/badges/focus-evaluation.svg) · ![Evaluation](assets/badges/stage-evaluation.svg)<br>![Sex and gender](assets/badges/attributes-sex-and-gender.svg) · ![Primary full text](assets/badges/evidence-primary-full-text.svg)",
+            1,
+        )
+        errors = CatalogValidator(mutated).validate()
+        self.assertTrue(any("Evidence badges must remain hidden" in error for error in errors))
 
     def test_taxonomy_rejects_repeated_inline_value_text(self) -> None:
         mutated = _readme().replace(
-            "| **Domain** | ![Clinical NLP and foundation models]",
-            "| **Domain** | Medical imaging ![Clinical NLP and foundation models]",
+            "| **Domain** | ",
+            "| **Domain** | MRI ",
             1,
         )
         errors = CatalogValidator(mutated).validate()
@@ -306,14 +356,14 @@ class CatalogValidatorTests(unittest.TestCase):
         errors = CatalogValidator(mutated).validate()
         self.assertTrue(any("Taxonomy must hide the Evidence field" in error for error in errors))
 
-    def test_asset_mismatch_is_reported(self) -> None:
+    def test_taxonomy_hides_assets_row(self) -> None:
         mutated = _readme().replace(
-            "**Assets:** ![Code](assets/badges/assets-code.svg) ![Data](assets/badges/assets-data.svg)",
-            "**Assets:** ![Paper only](assets/badges/assets-paper-only.svg)",
+            MAIN_HEADING,
+            "| **Assets** | ![Code](assets/badges/assets-code.svg) |\n\n" + MAIN_HEADING,
             1,
         )
         errors = CatalogValidator(mutated).validate()
-        self.assertTrue(any("expected 'Code + Data' from links" in error for error in errors))
+        self.assertTrue(any("Taxonomy must hide the Assets field" in error for error in errors))
 
     def test_year_mismatch_is_reported(self) -> None:
         mutated = _readme().replace("(*Journal'25*)", "(*Journal'24*)", 1)
@@ -337,8 +387,8 @@ class CatalogValidatorTests(unittest.TestCase):
 
     def test_badge_must_be_local_svg(self) -> None:
         mutated = _readme().replace(
-            "  **Domain:** ![Medical imaging](assets/badges/domain-medical-imaging.svg)",
-            "  **Domain:** ![Medical imaging](https://example.org/badge.svg)",
+            "  ![MRI](assets/badges/domain-mri.svg)",
+            "  ![MRI](https://example.org/badge.svg)",
             1,
         )
         errors = CatalogValidator(mutated).validate()
@@ -356,8 +406,8 @@ class CatalogValidatorTests(unittest.TestCase):
 
     def test_pending_stage_requires_unknown_stage_value(self) -> None:
         mutated = _readme().replace(
-            "**Stage:** ![Not verified](assets/badges/stage-not-verified.svg)",
-            "**Stage:** ![Evaluation](assets/badges/stage-evaluation.svg)",
+            "  ![MRI](assets/badges/domain-mri.svg) · ![Mitigation](assets/badges/focus-mitigation.svg) · ![Not verified](assets/badges/stage-not-verified.svg)<br>![Sex and gender](assets/badges/attributes-sex-and-gender.svg)",
+            "  ![MRI](assets/badges/domain-mri.svg) · ![Mitigation](assets/badges/focus-mitigation.svg) · ![Evaluation](assets/badges/stage-evaluation.svg)<br>![Sex and gender](assets/badges/attributes-sex-and-gender.svg)",
             1,
         )
         errors = CatalogValidator(mutated).validate()
@@ -375,9 +425,14 @@ class IssueFormValidatorTests(unittest.TestCase):
         self.assertEqual(IssueFormValidator("README without topic headings", _issue_form()).validate(), [])
 
     def test_schema_option_drift_is_reported(self) -> None:
-        mutated = _issue_form().replace("        - Medical imaging", "        - Galaxy", 1)
+        mutated = _issue_form().replace("        - MRI", "        - Galaxy", 1)
         errors = IssueFormValidator("README without topic headings", mutated).validate()
         self.assertTrue(any("field 'domain' options differ" in error for error in errors))
+
+    def test_domain_issue_field_allows_multiple_modalities(self) -> None:
+        form = _issue_form()
+        block = form[form.index("    id: domain") : form.index("    id: focus")]
+        self.assertIn("      multiple: true", block)
 
     def test_missing_required_field_is_reported(self) -> None:
         mutated = _issue_form().replace("    id: qualification", "    id: removed_qualification", 1)

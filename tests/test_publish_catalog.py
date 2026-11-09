@@ -86,6 +86,7 @@ class PublicationTests(unittest.TestCase):
                     self.assertEqual(sync_catalog(db,root,approval_file)['added'],0)
                 published=json.loads((root/'data/catalog.json').read_text())
                 self.assertEqual(published[0]['title'],p['title'])
+                self.assertEqual(published[0]['metadata']['Domain'],['Medical imaging (modality unspecified)'])
                 self.assertEqual(len(published[0]['tldr_en']),3)
                 self.assertNotIn('abstract',published[0])
                 self.assertIn('全文证据',(root/'reports/catalog-screening.md').read_text())

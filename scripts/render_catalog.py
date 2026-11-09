@@ -5,14 +5,14 @@ import json
 import re
 from pathlib import Path
 from scripts.build_catalog import norm
-from scripts.catalog_schema import ALLOWED, MAIN_HEADING
+from scripts.catalog_schema import ALLOWED, IMAGING_DOMAINS, MAIN_HEADING
 from scripts.catalog_editorial import METHODS, validate_annotation
 
 ROOT = Path(__file__).resolve().parents[1]
-DISPLAY_FIELDS = ('Domain','Focus','Stage','Attributes','Assets')
+DISPLAY_FIELDS = ('Domain','Focus','Stage','Attributes')
 REPO = 'https://github.com/XuZikang/Awesome-MedIA-Fairness'
 COLORS = {'Fairness Evaluation':'2563eb','Pre-processing':'b45309','In-processing':'9333ea','Post-processing':'15803d','Stage pending':'64748b',
-          'Domain':'0369a1','Focus':'0e7490','Stage':'2563eb','Attributes':'be185d','Assets':'0f766e','Evidence':'475569','Survey':'92400e','Commentary':'92400e'}
+          'Domain':'0369a1','Focus':'0e7490','Stage':'2563eb','Attributes':'be185d','Assets':'0f766e','Evidence':'475569','Survey':'92400e','Commentary':'92400e','Perspective':'92400e'}
 
 
 def md(value):
@@ -34,12 +34,12 @@ def entry(p):
     venue=re.sub(r"[^\w .&/+-]",'',p.get('venue','Paper'))[:65].strip() or 'Paper'
     controls=[]
     for field in DISPLAY_FIELDS:
-        controls.append('**'+field+':** '+' '.join(badge(v,v if field=='Stage' and v in METHODS else field) for v in m[field]))
+        controls.append(' '.join(badge(v,v if field=='Stage' and v in METHODS else field) for v in m[field]))
     if p.get('kind')=='survey':
-        label='Commentary' if p.get('publication_type')=='Commentary' else 'Survey'
+        label=p['publication_type'] if p.get('publication_type') in {'Commentary','Perspective'} else 'Survey'
         controls.append(badge(label,label))
     labels={'Paper':'Paper','Code':'Code','Weights':'Weights','Project':'Project','Data':'Data'}
-    links=' '.join(f'[[{labels[k]}]({v})]' for k,v in p['links'].items() if k in labels)
+    links=' '.join(f'[{labels[k]}]({v})' for k,v in p['links'].items() if k in labels)
     lines=[f"- (*{venue}'{p['year'][-2:]}*) **{md(p['title'])}**", '', '  '+' · '.join(controls[:3])+'<br>'+' · '.join(controls[3:]), '', '  '+links, '',
            '  **TLDR:** '+' '.join(md(sentence) for sentence in p['tldr_en']), '',
            '  **Date:** '+p['publication_date'], '']
@@ -65,6 +65,10 @@ def validate_records(records):
         for field,allowed in ALLOWED.items():
             if not p['metadata'].get(field) or not set(p['metadata'][field])<=allowed:raise ValueError('Invalid '+field+': '+p['title'])
         if not p['links']['Paper'].startswith('https://'):raise ValueError('Missing primary record')
+        domains=p['metadata']['Domain']
+        if len(domains)>1 and (not set(domains).issubset(IMAGING_DOMAINS) or 'Medical imaging (modality unspecified)' in domains):raise ValueError('Multiple domains must be concrete imaging modalities: '+p['title'])
+        actual_assets=[k for k in ('Code','Weights','Project','Data') if p['links'].get(k)] or ['Paper only']
+        if p['metadata']['Assets']!=actual_assets:raise ValueError('Assets differ from resource links: '+p['title'])
 
 
 def main(root=None):
@@ -91,12 +95,12 @@ def main(root=None):
         '| '+badge('In-processing','In-processing')+' | Interventions on learning objectives, representations, model training or optimization. |',
         '| '+badge('Post-processing','Post-processing')+' | Interventions after model training, such as output adjustment, calibration or reviewed model adaptation; predictor freezing must be established from the specific protocol. |','',
         '`Stage pending` is an evidence-status bucket for mitigation records whose intervention stage is not yet established, not an additional methodology. Within each category, records run newest to oldest. The latest catalog year is divided by month; missing months remain explicitly unverified. Dates retain the precision supplied by the original record, rather than the discovery date.','',
-        '<details>','<summary>Tag legend — Domain · Focus · Stage · Attributes · Assets</summary>','',
+        '<details>','<summary>Tag legend — modalities, research focus, stage and attributes</summary>','',
         '| Field | Controlled values |\n|---|---|']
     for field in DISPLAY_FIELDS:
         lines.append('| **'+field+'** | '+' '.join(badge(v,v if field=='Stage' and v in METHODS else field) for v in sorted(ALLOWED[field]))+' |')
     lines+=['','</details>','',MAIN_HEADING,'',
-        'Browse by methodology below. The latest year is expanded and grouped by month; expand an earlier year to read its papers. Tags below each title describe the domain, focus, stage, attributes and available assets.','',
+        'Browse by methodology below. The latest year is expanded and grouped by month; expand an earlier year to read its papers. Colored tags below each title show the modality or clinical domain, research focus, intervention stage and attributes. Paper and available resource links appear separately.','',
         '| Methodology | Papers | Latest records |','|---|---:|---|']
     anchors={'Fairness Evaluation':'fairness-evaluation','Pre-processing':'unfairness-mitigation-pre-processing','In-processing':'unfairness-mitigation-in-processing','Post-processing':'unfairness-mitigation-post-processing','Stage pending':'unfairness-mitigation-stage-pending'}
     for method in METHODS:

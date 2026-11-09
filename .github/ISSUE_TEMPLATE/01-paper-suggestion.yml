@@ -52,13 +52,27 @@ body:
     id: domain
     attributes:
       label: Primary domain
+      multiple: true
       options:
+        - CT
+        - Clinical photography
         - Clinical NLP and foundation models
+        - Dermoscopy
         - EHR and clinical prediction
+        - Endoscopy
+        - Fundus photography
         - Healthcare operations
-        - Medical imaging
+        - Histopathology
+        - MRI
+        - Mammography
+        - Medical imaging (modality unspecified)
+        - OCT
         - Other biomedical
+        - PET
         - Physiological signals
+        - Scanning laser ophthalmoscopy
+        - Ultrasound
+        - X-ray
     validations:
       required: true
 

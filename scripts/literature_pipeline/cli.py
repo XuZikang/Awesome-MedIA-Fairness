@@ -163,13 +163,13 @@ def seed_catalog(db, path, day):
     else:
         main = text.split("## 📝 Fairness Papers", 1)[1].split("## 🧭 By Topic", 1)[0]
     for entry in CatalogValidator.entries(main):
-        urls = re.findall(r"\]\((https://.*?)\)\]", entry.block)
+        urls = re.findall(r"\]\((https://.*?)(?:\)\]|\)(?=\s|$))", entry.block)
         def find(pattern):
             match = re.search(pattern, entry.block, re.I)
             return match.group(1) if match else ""
         paper = {"title": entry.title, "url": urls[0], "source": "catalog", "year": entry.section,
                  "arxiv_id": find(r"arxiv\.org/(?:abs|pdf)/(\d{4}\.\d{4,5})"),
-                 "doi": find(r"doi\.org/(10\.[^\s]+?)\)\]"), "pmid": find(r"pubmed\.ncbi\.nlm\.nih\.gov/(\d+)")}
+                 "doi": find(r"doi\.org/(10\.[^\s]+?)(?:\)\]|\)(?=\s|$))"), "pmid": find(r"pubmed\.ncbi\.nlm\.nih\.gov/(\d+)")}
         ingest(db, paper, day, seeded=True)
 
 

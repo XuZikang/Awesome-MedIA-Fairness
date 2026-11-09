@@ -13,7 +13,7 @@ from urllib.parse import unquote
 if __package__ in {None, ""}:
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from scripts.catalog_schema import ALLOWED, MAIN_HEADING, RESOURCE_HEADING, TOPICS
+from scripts.catalog_schema import ALLOWED, IMAGING_DOMAINS, MAIN_HEADING, RESOURCE_HEADING, TOPICS
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -21,9 +21,9 @@ README = ROOT / "README.md"
 ISSUE_FORM = ROOT / ".github" / "ISSUE_TEMPLATE" / "01-paper-suggestion.yml"
 
 METADATA_FIELDS = ("Domain", "Focus", "Stage", "Attributes", "Assets", "Evidence")
-# Evidence remains an internal controlled value and an issue-form field, but is
-# intentionally hidden from the rendered paper entries and taxonomy table.
-DISPLAY_FIELDS = ("Domain", "Focus", "Stage", "Attributes", "Assets")
+# Assets and Evidence remain internal controlled values and issue-form fields,
+# but are intentionally hidden from rendered paper entries and taxonomy.
+DISPLAY_FIELDS = ("Domain", "Focus", "Stage", "Attributes")
 RESOURCE_CATEGORIES = ("Datasets", "Benchmarks", "Toolkits")
 METHOD_CATEGORIES = (
     "Fairness Evaluation",
@@ -54,20 +54,20 @@ BADGE_WITH_ALT_RE = re.compile(
     r"!\[([^\]]+)\]\((assets/badges/[^)\s]+\.svg)\)"
 )
 CONTROL_RE = re.compile(
-    r"^  \*\*Domain:\*\* (?P<Domain>.*?) · "
-    r"\*\*Focus:\*\* (?P<Focus>.*?) · "
-    r"\*\*Stage:\*\* (?P<Stage>.*?)(?: · |<br>)"
-    r"\*\*Attributes:\*\* (?P<Attributes>.*?) · "
-    r"\*\*Assets:\*\* (?P<Assets>.*?)"
-    r"(?: · (?P<annotation>!\[(?:Survey|Commentary)\]\(assets/badges/"
-    r"(?:survey-survey|commentary-commentary)\.svg\)))?$",
+    r"^  (?P<Domain>.*?) · "
+    r"(?P<Focus>.*?) · "
+    r"(?P<Stage>.*?)<br>"
+    r"(?P<Attributes>.*?)"
+    r"(?: · (?P<annotation>!\[(?:Survey|Commentary|Perspective)\]\(assets/badges/"
+    r"(?:survey-survey|commentary-commentary|perspective-perspective)\.svg\)))?$",
     re.MULTILINE,
 )
 TLDR_RE = re.compile(r"^  \*\*TLDR:\*\* (.+)$", re.MULTILINE)
 DATE_RE = re.compile(r"^  \*\*Date:\*\* (\d{4}(?:-\d{2}(?:-\d{2})?)?)$", re.MULTILINE)
 # Ignore Markdown images (the local SVG badges) while collecting paper/resource links.
 LINK_RE = re.compile(r"(?<!!)\[[^\]]+\]\(([^)\s]+)(?:\s+\"[^\"]*\")?\)")
-LINK_LABEL_RE = re.compile(r"\[\[([^\]]+)\]\(([^)\s]+)")
+# Accept the current single-link form and the archived double-bracket form.
+LINK_LABEL_RE = re.compile(r"(?<!\!)\[\[?([^\]]+)\]\(([^)\s]+)")
 PLACEHOLDER_LINKS = {"https://example.org/paper", "https://github.com/org/repo"}
 
 
@@ -87,6 +87,17 @@ def _normal_title(title: str) -> str:
 
 def _parts(raw_value: str) -> list[str]:
     return [part.strip() for part in raw_value.split(" + ")]
+
+
+def _badge_slug(label: str, family: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", f"{family}-{label}".lower()).strip("-")
+
+
+def _expected_badge_path(field: str, label: str) -> str:
+    # The renderer reuses the methodology family for its three intervention
+    # stage badges; all other control values use their field family.
+    family = label if field == "Stage" and label in {"Pre-processing", "In-processing", "Post-processing"} else field
+    return f"assets/badges/{_badge_slug(label, family)}.svg"
 
 
 def _line_index(block: str, match: re.Match[str]) -> int:
@@ -205,14 +216,14 @@ class CatalogValidator:
         for field, values in rows:
             field = field.strip()
             if field not in DISPLAY_FIELDS:
-                if field == "Evidence":
-                    self.error("Taxonomy must hide the Evidence field")
+                if field in {"Assets", "Evidence"}:
+                    self.error(f"Taxonomy must hide the {field} field")
                 else:
                     self.error(f"Taxonomy contains unknown field row: {field}")
                 continue
             if field in parsed:
                 self.error(f"Taxonomy contains duplicate {field} rows")
-            labels = self._badge_values(f"Taxonomy {field}", values)
+            labels = self._badge_values(f"Taxonomy {field}", values, field)
             parsed[field] = set(labels)
 
         for field in DISPLAY_FIELDS:
@@ -358,14 +369,22 @@ class CatalogValidator:
         elif not lines[4].startswith("  "):
             self.error(f"{entry.title}: links line must start with two spaces")
         elif not LINK_LABEL_RE.search(lines[4]):
-            self.error(f"{entry.title}: links line is missing the double-bracket paper/resource links")
+            self.error(f"{entry.title}: links line is missing paper/resource links")
 
         if len(lines) >= 7 and lines[5] != "":
             self.error(f"{entry.title}: links and TLDR must be separated by a blank line")
         if len(lines) >= 7 and not TLDR_RE.match(lines[6]):
             self.error(f"{entry.title}: expected TLDR immediately after the links")
-        if len(lines) >= 3 and "**Evidence:**" in lines[2]:
-            self.error(f"{entry.title}: Evidence must remain hidden from paper entries")
+        if len(lines) >= 3:
+            if re.search(r"\*\*(?:Domain|Focus|Stage|Attributes|Assets|Evidence):\*\*", lines[2]):
+                self.error(f"{entry.title}: control values must not contain bold field labels")
+            visible_badges = {label for label, _ in BADGE_WITH_ALT_RE.findall(lines[2])}
+            hidden_assets = visible_badges & ALLOWED["Assets"]
+            hidden_evidence = visible_badges & ALLOWED["Evidence"]
+            if hidden_assets:
+                self.error(f"{entry.title}: Assets badges must remain hidden: {sorted(hidden_assets)}")
+            if hidden_evidence:
+                self.error(f"{entry.title}: Evidence badges must remain hidden: {sorted(hidden_evidence)}")
         if "Provenance" in entry.block or "Why it qualifies" in entry.block:
             self.error(f"{entry.title}: legacy Provenance/Why it qualifies text is not allowed")
         if re.search(r"^\s*\*\*Metadata:\*\*", entry.block, re.MULTILINE):
@@ -373,7 +392,7 @@ class CatalogValidator:
         if re.search(r"^\s*\*\*Evidence:\*\*", entry.block, re.MULTILINE):
             self.error(f"{entry.title}: Evidence must remain hidden from paper entries")
 
-    def _badge_values(self, context: str, raw_value: str) -> list[str]:
+    def _badge_values(self, context: str, raw_value: str, field: str = "") -> list[str]:
         """Return alt labels from a badge-only group and report inline text."""
         matches = list(BADGE_WITH_ALT_RE.finditer(raw_value))
         residual = BADGE_WITH_ALT_RE.sub("", raw_value)
@@ -385,6 +404,13 @@ class CatalogValidator:
         if re.search(r"[^\s,;]", residual):
             self.error(f"{context}: value cell must contain badges only, without repeated inline text")
         values = [match.group(1).strip() for match in matches]
+        if field:
+            for match, value in zip(matches, values):
+                if match.group(2) != _expected_badge_path(field, value):
+                    self.error(
+                        f"{context}: badge path {match.group(2)!r} does not match "
+                        f"{field} value {value!r}"
+                    )
         if any(not value for value in values):
             self.error(f"{context}: badge alt labels must not be empty")
         if len(values) != len(set(values)):
@@ -405,40 +431,33 @@ class CatalogValidator:
 
         values: dict[str, list[str]] = {}
         for field in DISPLAY_FIELDS:
-            labels = self._badge_values(f"{entry.title}: {field}", match.group(field))
+            labels = self._badge_values(f"{entry.title}: {field}", match.group(field), field)
             values[field] = labels
             invalid = set(labels) - ALLOWED[field]
             if invalid:
                 self.error(f"{entry.title}: invalid {field} values: {sorted(invalid)}")
-            if field == "Domain" and len(labels) != 1:
-                self.error(f"{entry.title}: Domain must contain exactly one value")
             if not labels:
                 self.error(f"{entry.title}: empty {field} value")
+
+        domains = values["Domain"]
+        if len(domains) > 1 and (not set(domains).issubset(IMAGING_DOMAINS) or "Medical imaging (modality unspecified)" in domains):
+            self.error(f"{entry.title}: multiple domains must be concrete imaging modalities")
 
         annotation = match.group("annotation")
         if annotation:
             annotation_match = BADGE_WITH_ALT_RE.fullmatch(annotation)
             annotation_label = annotation_match.group(1)  # type: ignore[union-attr]
-            if annotation_label not in {"Survey", "Commentary"}:
+            if annotation_label not in {"Survey", "Commentary", "Perspective"}:
                 self.error(f"{entry.title}: invalid annotation badge")
             expected_path = {
                 "Survey": "assets/badges/survey-survey.svg",
                 "Commentary": "assets/badges/commentary-commentary.svg",
+                "Perspective": "assets/badges/perspective-perspective.svg",
             }.get(annotation_label)
             if annotation_match and annotation_match.group(2) != expected_path:
                 self.error(f"{entry.title}: annotation badge path does not match its label")
 
         labels = [label for label, _ in LINK_LABEL_RE.findall(entry.block)]
-        expected_assets = [
-            asset for asset in ("Code", "Weights", "Project", "Data")
-            if any(re.search(rf"\b{re.escape(asset)}\b", label) for label in labels)
-        ]
-        if not expected_assets:
-            expected_assets.append("Paper only")
-        if values["Assets"] != expected_assets:
-            actual = " + ".join(values["Assets"])
-            expected = " + ".join(expected_assets)
-            self.error(f"{entry.title}: Assets is '{actual}', expected '{expected}' from links")
         if not any(re.search(r"\bPaper\b", label) for label in labels):
             self.error(f"{entry.title}: entry must include a Paper link")
 
@@ -478,7 +497,7 @@ class CatalogValidator:
         match = CONTROL_RE.search(entry.block)
         if not match:
             return
-        stage = set(self._badge_values(f"{entry.title}: Stage", match.group("Stage")))
+        stage = set(self._badge_values(f"{entry.title}: Stage", match.group("Stage"), "Stage"))
         if entry.category == "Unfairness Mitigation: Stage pending":
             if not stage.intersection({"Not verified", "Not applicable"}):
                 self.error(f"{entry.title}: Stage pending entries require Not verified or Not applicable stage")
@@ -559,8 +578,8 @@ class IssueFormValidator:
         "confirmation": "checkboxes",
     }
     OPTIONAL_FIELDS = {"resources"}
-    MULTISELECT_FIELDS = {"focus", "stage", "attributes", "topics"}
-    SINGLE_SELECT_FIELDS = {"domain", "evidence", "publication_status"}
+    MULTISELECT_FIELDS = {"domain", "focus", "stage", "attributes", "topics"}
+    SINGLE_SELECT_FIELDS = {"evidence", "publication_status"}
     FIELD_RE = re.compile(
         r"^  - type: ([^\n]+)\n    id: ([^\n]+)\n(.*?)(?=^  - type:|\Z)",
         re.MULTILINE | re.DOTALL,

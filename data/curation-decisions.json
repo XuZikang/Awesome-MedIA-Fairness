@@ -611,5 +611,159 @@
     "reviewed_on": "2026-11-09",
     "review_method": "manual-primary-source",
     "source_review_sha256": "2e1c1a2c154e5c4de3a4562c64dd4e9f8b523fc3c8f7379c284fb41a77e45064"
+  },
+  "p-0f04eeaa9bee15404b6b": {
+    "decision": "approve",
+    "fingerprint": "6886e15015de1172e4dc9b4604a99b20420e49fa98f52a90b87c043a954ab3c1",
+    "note": "面向医护人员的问卷和访谈属于原始实证调查，而不是文献综述；它评估主观公平感知和采纳意向，不是模型亚组误差实验。本次按用户明确决定纳入，不据此降低自动方法学优先级。",
+    "paper_version": "cfc6211b4e809eb597664710222213500814de8ec9ce3a63764bf5befd8c8ded",
+    "content_version": "0973cf43a9c7fb0d3114a48c569e89feb044cab125897540c5d5646cad2f2e63",
+    "title": "Algorithmic Bias from the Perspectives of Healthcare Professionals",
+    "reviewed_on": "2026-11-09",
+    "review_method": "manual-primary-abstract",
+    "source_review_sha256": "e58ca4ad0c3657c8e6cbcf33004ed9302c2961fbb57e830cd9d04526f735cc07"
+  },
+  "p-3e31b3ad8d1cc28d1bbc": {
+    "decision": "approve",
+    "fingerprint": "1c729a177ef3f1d876b182a6840883237c0a99af288e03f726cf240efa996e47",
+    "note": "文献综述，摘要可确认疾病检测中的偏差识别与缓解分类，但不能据摘要列出每种影像模态或某种疾病上的详细分析。本次用户明确批准纳入，保留Review类型；不让这一例外放宽未来综述自动门槛。",
+    "paper_version": "11d80829cb52e45dda7169710598c796ec41420d7024290e311e6df62c5a89cb",
+    "content_version": "056f25dff93cf7494e8bc8883dd75d1803d41d0378c93a96ea7337d00212e9b2",
+    "title": "Fairness or Fallacy? Mapping the Landscape of AI Bias in Disease Detection",
+    "reviewed_on": "2026-11-09",
+    "review_method": "manual-primary-abstract",
+    "source_review_sha256": "e58ca4ad0c3657c8e6cbcf33004ed9302c2961fbb57e830cd9d04526f735cc07"
+  },
+  "p-4531cd0838fbf818d5b0": {
+    "decision": "approve",
+    "fingerprint": "884b55f2554ba257c4be988e29bdaf3865be1d88b4e23db8661459868047529f",
+    "note": "频繁模式、时序记录融合和药物重校准嵌入推荐网络，主贡献归入In-processing，不因名称recalibration而误标为训练后概率校准。Other指药物频次偏差，并非已证明人口属性公平；用户明确批准作为相邻方法纳入。",
+    "paper_version": "bc38e7f59b447eac788eea45fee45a0c31c63e04eda07aea21dcfbc27671839a",
+    "content_version": "166f6992247aa58471b06da8fd362e9563bd59e25a54506239346089c26b44c6",
+    "title": "Debiased medication recommendation through fusing frequent pattern and temporal medical records.",
+    "reviewed_on": "2026-11-09",
+    "review_method": "manual-primary-abstract",
+    "source_review_sha256": "e58ca4ad0c3657c8e6cbcf33004ed9302c2961fbb57e830cd9d04526f735cc07"
+  },
+  "p-007c99a4b780ee55450d": {
+    "decision": "approve",
+    "fingerprint": "271dfa40c7ee0f4970e7c3b5656b1d0f439575833a7aab8b7b2d373a9de7e3c9",
+    "note": "原始情境实验评估锚定、确认和迎合相关认知偏差；不能把模拟病例上的诊断准确率理解为人口亚组公平性或临床安全验证。按用户明确批准纳入。",
+    "paper_version": "a8fde7ea063e907b0c924136fbf3a52cece9d90fe28f53621fb0fd85b28a629d",
+    "content_version": "5b2484f4e3c0179d96ec97eb0733379c26c7b2f99c3539cf2fd9f5f763d2d834",
+    "title": "Can Large Language Models Preserve Diagnostic Accuracy Despite Patient Self-Diagnosis and Framing Bias in Hypothetical Upper-Extremity Scenarios?",
+    "reviewed_on": "2026-11-09",
+    "review_method": "manual-primary-abstract",
+    "source_review_sha256": "e58ca4ad0c3657c8e6cbcf33004ed9302c2961fbb57e830cd9d04526f735cc07"
+  },
+  "p-146fd2d3e9607bbd9129": {
+    "decision": "approve",
+    "fingerprint": "9da4b3b566756b949bfd7a6c5542ea28d27335c68901afef1230dea19b6f32f5",
+    "note": "原文明确Perspective，聚焦frailty/HFRS具体任务中的设备测量偏差、种族差异和模型审计建议；属于框架讨论，无前瞻性公平性验证，保留观点类型。",
+    "paper_version": "7b1418de2170fd1cb7cebba0d96fefb9b94af103c79198667f5c029a2c0e872e",
+    "content_version": "0c166d2784d8c5090097adb72f61819d86898b00308570e0807c49b8a4ff6663",
+    "title": "Wearable-Derived Data for Patient Frailty: Extending Hospital Frailty Risk Score While Confronting Bias and Inequities.",
+    "reviewed_on": "2026-11-09",
+    "review_method": "manual-primary-abstract",
+    "source_review_sha256": "e58ca4ad0c3657c8e6cbcf33004ed9302c2961fbb57e830cd9d04526f735cc07"
+  },
+  "p-7068da05f7ca4dd4f330": {
+    "decision": "approve",
+    "fingerprint": "5f72a7462d7b526f74e58dabbcc51cfd53bfb5f1f0c164258173ed3975c3487e",
+    "note": "摘要提出工作流概念模型与研究议程，非已验证偏差缓解算法；置信度分流也不能仅因发生在AI输出之后就归入已验证Post-processing。主要作为认知偏差框架放入Evaluation，按用户批准保留。",
+    "paper_version": "ce2522bce0c5fc4f51ae93f698b7be45f42cb8229ab154adb599dea3d926c30b",
+    "content_version": "acbc511dbee9ac02e724b01272c8b3d8d318a9c957aca52d3e60db04e4198e42",
+    "title": "Automation Bias and Deskilling in Radiology AI: A Confidence-stratified Triage Model for Workflow Integration.",
+    "reviewed_on": "2026-11-09",
+    "review_method": "manual-primary-abstract",
+    "source_review_sha256": "e58ca4ad0c3657c8e6cbcf33004ed9302c2961fbb57e830cd9d04526f735cc07"
+  },
+  "p-983161c15d18a6bd2e5a": {
+    "decision": "approve",
+    "fingerprint": "d2262bba54ea333293b96aa7bfe0a6cfc2e536af6b8312d2d80b34f053e52489",
+    "note": "原文方法明确BRSET fundus photographs，Domain为Fundus photography；主要比较相机平台域偏移，Other标记设备来源，不假设Site and geography或已测量人口差异。按用户批准纳入。",
+    "paper_version": "9178d8406b6985f2936141c5176e8e049aa1713053904bf7f13757e6010cd8c2",
+    "content_version": "4c2e5d99045380663fe7875eb31b278cf55ba0174cbf41e096adbb13f3bf1c49",
+    "title": "From Canon to Nikon: Camera Domain Shift and Potential Equity Implications in Retinal AI",
+    "reviewed_on": "2026-11-09",
+    "review_method": "manual-primary-abstract",
+    "source_review_sha256": "e58ca4ad0c3657c8e6cbcf33004ed9302c2961fbb57e830cd9d04526f735cc07"
+  },
+  "p-9cba83191a3299c02316": {
+    "decision": "approve",
+    "fingerprint": "eeb97e8d48aa6ae22fbbeea64de96a0093b7173a8a632a112518671d490981e3",
+    "note": "控制配对基准针对医学信息不足时的可判定性认知偏差，不是受保护群体公平性审计；Evaluation/Benchmark为主要方法贡献，按用户明确批准作为相邻证据纳入。",
+    "paper_version": "4ca2843efb34d77bb9c095cc961361bc286d27baf8d81d53b5c7ba49238d5790",
+    "content_version": "93d74aae87c25b0e7911787e8772597ab408b1b139fee25cb5e8f754d6241695",
+    "title": "When to Stop Asking: Factor Coverage Bias and LLM Determinability Judgments with Underspecified Information in Medicine",
+    "reviewed_on": "2026-11-09",
+    "review_method": "manual-primary-abstract",
+    "source_review_sha256": "e58ca4ad0c3657c8e6cbcf33004ed9302c2961fbb57e830cd9d04526f735cc07"
+  },
+  "p-b8664efa92d96d1cf84f": {
+    "decision": "approve",
+    "fingerprint": "19a5251d9f5b296486ead1b7175aace4c62bf1dded713035ef05f572dca492b8",
+    "note": "具体ADHD自诊断任务的性别关联对照，归入公平性评估；所谓激活过度纠偏机制是作者解释，不等同于内部机制已被识别或诊断误差已公平。",
+    "paper_version": "ac5481747993264fc3dce596257e59ccd2444dee57e1bf9561dc2085d51e1574",
+    "content_version": "ff8cdb359a0379020c7091ce037396d014bb342dad63c6125e5b6a766176ea2d",
+    "title": "Gender Associations in LLM-Mediated ADHD Self-Diagnosis",
+    "reviewed_on": "2026-11-09",
+    "review_method": "manual-primary-abstract",
+    "source_review_sha256": "e58ca4ad0c3657c8e6cbcf33004ed9302c2961fbb57e830cd9d04526f735cc07"
+  },
+  "p-bc07a18a7cd288dd8094": {
+    "decision": "approve",
+    "fingerprint": "70d6ca3af5f947789a56289556ee800a395670cc3b66d21c6620df22b865336f",
+    "note": "原文明确Perspective与conceptual framework，以七种情境组织读者-AI交互认知偏差；未提供新方法有效性实验，标注观点类型，不包装为已验证缓解。",
+    "paper_version": "05d1880f742aa724d7c2a01c43dd19e3c9224142932cd3fbd57a123e4e5e0cf3",
+    "content_version": "cbe4196d07c09940ff3c87a8d3c2bc1a38220613a65a9a5d8e1ccb35170f31b0",
+    "title": "A Framework for Identifying and Understanding Cognitive Biases in Artificial Intelligence-Assisted Radiology.",
+    "reviewed_on": "2026-11-09",
+    "review_method": "manual-primary-abstract",
+    "source_review_sha256": "e58ca4ad0c3657c8e6cbcf33004ed9302c2961fbb57e830cd9d04526f735cc07"
+  },
+  "p-dd8b25f1e5426bb19b9c": {
+    "decision": "approve",
+    "fingerprint": "e9f27e21321902583ca1f79befcb9c947d0e6db233485636d623ed4f89ab7e51",
+    "note": "逐项改变阈值、特征集合和训练目标，主要贡献为资源分配公平性设计评估框架；不把标题causal simulation自动当作随机试验因果证据，预印本未误写成已发表期刊研究。",
+    "paper_version": "573e89ff1c8c1a29bd6576ddcc5f9ec83ba73620c384add34634f066bb4c02d4",
+    "content_version": "a995418bf2d13771a11de94ebf939cc8162f2b7dd25fc6770defbd6c66e6c6c3",
+    "title": "Algorithmic design choices as determinants of health equity: a causal simulation study of healthcare resource allocation",
+    "reviewed_on": "2026-11-09",
+    "review_method": "manual-primary-abstract",
+    "source_review_sha256": "e58ca4ad0c3657c8e6cbcf33004ed9302c2961fbb57e830cd9d04526f735cc07"
+  },
+  "p-e632f7ecdcaf4149d588": {
+    "decision": "approve",
+    "fingerprint": "83df8bae99fe143a138049aeaaaffd1a8eef77112f1fa3e45d283d1b2d1f4990",
+    "note": "手腕平片明确为X-ray；评估按性别分层的BoneXpert与法医学专家参考一致性，而非以已知实际年龄为真值的独立验证。保留法律阈值判定局限，不提出法律结论。",
+    "paper_version": "81f454267fa70b66fe77eeb81889d22f67906ec3f24cdeb446dba9818eeac21b",
+    "content_version": "65c66d9cf366818d0f67f66347074d61feffaee865f0ba5c4bdde3e6324a22bf",
+    "title": "AI-based bone age assessment versus forensic expert panel: agreement, sex bias, and ethical implications.",
+    "reviewed_on": "2026-11-09",
+    "review_method": "manual-primary-abstract",
+    "source_review_sha256": "e58ca4ad0c3657c8e6cbcf33004ed9302c2961fbb57e830cd9d04526f735cc07"
+  },
+  "p-e93b14a2fee91d9b2317": {
+    "decision": "approve",
+    "fingerprint": "ba350efa91ca7a5400d016f7e6457d6d4fbfd246eebd98b08ea7d004ecb2dcdb",
+    "note": "MRI脑肿瘤分类中的模型和数据偏差分析，未确认人口属性群体，不能因bias一词宣称人口公平性结果。作者明确提醒测试集不同不可直接比较；按用户批准作为相邻研究纳入，保留预印本状态。",
+    "paper_version": "dd1a234807900b51af0c50abd0b73dfd0feee925b82383f4e4f098b772910d9a",
+    "content_version": "03e01d0e808e2a7c77598b90e1a4eb7177ddf041ed08c4d70e21e6fb03bacd3c",
+    "title": "Beyond Accuracy: Investigating Pseudo-Learning and Bias Propagation in MRI Brain Tumour Classification",
+    "reviewed_on": "2026-11-09",
+    "review_method": "manual-primary-abstract",
+    "source_review_sha256": "e58ca4ad0c3657c8e6cbcf33004ed9302c2961fbb57e830cd9d04526f735cc07"
+  },
+  "p-8dce8465449c9e0cb987": {
+    "decision": "approve",
+    "fingerprint": "1a731189093bf8e5375cd4e6f202c20bfbcaf3c46fce65c7347f9a9911689c06",
+    "note": "具体acute stroke CT任务的系统综述，详细审查亚组性能和训练人群报告，符合任务特定综述筛选原则。Attributes包含该综述明确审核的维度，不代表所有纳入研究均测量或发现这些维度的差异。",
+    "paper_version": "a93e888ce1e6230a1fb14abf110c595a388114138be9c38bc4720d53c77581a4",
+    "content_version": "a4ee2db587b7fe70fb4fc48fb2c375994bbc06851e51da3fa86b6e75f2398995",
+    "title": "Reporting of Fairness and Equity in Studies of Regulator-cleared Commercial AI for Acute Stroke CT: A Systematic Review.",
+    "reviewed_on": "2026-11-09",
+    "review_method": "manual-primary-abstract",
+    "source_review_sha256": "e58ca4ad0c3657c8e6cbcf33004ed9302c2961fbb57e830cd9d04526f735cc07"
   }
 }

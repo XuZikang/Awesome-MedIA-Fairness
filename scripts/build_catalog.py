@@ -13,7 +13,7 @@ from collections import Counter
 from html.parser import HTMLParser
 from pathlib import Path
 
-from scripts.catalog_schema import ALLOWED, TOPICS
+from scripts.catalog_schema import ALLOWED, TOPICS, IMAGING_DOMAINS
 
 ROOT = Path(__file__).resolve().parents[1]
 CACHE = ROOT / '.local/sources'
@@ -59,7 +59,7 @@ def identity(p):
 
 def metadata(title, labels=''):
     s=(title+' '+labels).lower()
-    domain='Medical imaging'
+    domain='Medical imaging (modality unspecified)'
     if re.search(r'language model|medical text|clinical text|clinical nlp',s):domain='Clinical NLP and foundation models'
     elif re.search(r'\behr\b|electronic health|clinical prediction|health of populations',s):domain='EHR and clinical prediction'
     elif re.search(r'\beeg\b|\becg\b|electroencephal|electrocardio',s):domain='Physiological signals'
@@ -84,7 +84,7 @@ def topics(meta):
         if stage in meta['Stage'] or 'Multi-stage' in meta['Stage']:result.append(topic)
     if 'Mitigation' in meta['Focus'] and not set(meta['Stage']) & {'Pre-processing','In-processing','Post-processing','Multi-stage'}:result.append(TOPICS[-1])
     if meta['Domain']==['Clinical NLP and foundation models']:result.append(TOPICS[5])
-    elif meta['Domain']!=['Medical imaging']:result.append(TOPICS[6])
+    elif not set(meta['Domain']).issubset(IMAGING_DOMAINS):result.append(TOPICS[6])
     return result or [TOPICS[0]]
 
 def legacy():

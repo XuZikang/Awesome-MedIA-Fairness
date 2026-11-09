@@ -19,7 +19,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "MRI"
       ],
       "Focus": [
         "Benchmark",
@@ -77,7 +77,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "MRI"
       ],
       "Focus": [
         "Benchmark",
@@ -131,7 +131,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "X-ray"
       ],
       "Focus": [
         "Benchmark",
@@ -200,7 +200,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "MRI"
       ],
       "Focus": [
         "Benchmark",
@@ -268,7 +268,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "X-ray"
       ],
       "Focus": [
         "Benchmark",
@@ -322,7 +322,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "X-ray"
       ],
       "Focus": [
         "Bias mechanisms",
@@ -383,7 +383,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "MRI"
       ],
       "Focus": [
         "Benchmark",
@@ -452,7 +452,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Dermoscopy"
       ],
       "Focus": [
         "Benchmark",
@@ -524,7 +524,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "X-ray"
       ],
       "Focus": [
         "Benchmark",
@@ -584,7 +584,13 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "X-ray",
+        "MRI",
+        "CT",
+        "OCT",
+        "Fundus photography",
+        "Dermoscopy",
+        "Clinical photography"
       ],
       "Focus": [
         "Benchmark",
@@ -645,7 +651,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Dermoscopy"
       ],
       "Focus": [
         "Benchmark",
@@ -700,7 +706,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Mammography"
       ],
       "Focus": [
         "Evaluation"
@@ -751,7 +757,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Medical imaging (modality unspecified)"
       ],
       "Focus": [
         "Evaluation"
@@ -805,7 +811,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "OCT"
       ],
       "Focus": [
         "Dataset",
@@ -884,7 +890,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "MRI"
       ],
       "Focus": [
         "Evaluation",
@@ -944,7 +950,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Medical imaging (modality unspecified)"
       ],
       "Focus": [
         "Bias mechanisms",
@@ -1004,7 +1010,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Medical imaging (modality unspecified)"
       ],
       "Focus": [
         "Evaluation",
@@ -1073,7 +1079,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Clinical photography"
       ],
       "Focus": [
         "Mitigation"
@@ -1133,7 +1139,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "X-ray"
       ],
       "Focus": [
         "Benchmark",
@@ -1255,7 +1261,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Dermoscopy"
       ],
       "Focus": [
         "Mitigation"
@@ -1305,7 +1311,9 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "CT",
+        "MRI",
+        "X-ray"
       ],
       "Focus": [
         "Evaluation",
@@ -1363,7 +1371,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "MRI"
       ],
       "Focus": [
         "Mitigation"
@@ -1428,7 +1436,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Dermoscopy"
       ],
       "Focus": [
         "Evaluation",
@@ -1487,7 +1495,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Dermoscopy"
       ],
       "Focus": [
         "Mitigation"
@@ -1538,7 +1546,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "X-ray"
       ],
       "Focus": [
         "Evaluation",
@@ -1592,7 +1600,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Medical imaging (modality unspecified)"
       ],
       "Focus": [
         "Evaluation"
@@ -1641,7 +1649,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "X-ray"
       ],
       "Focus": [
         "Evaluation",
@@ -1701,7 +1709,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Clinical photography"
       ],
       "Focus": [
         "Mitigation"
@@ -1758,7 +1766,8 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Clinical photography",
+        "Dermoscopy"
       ],
       "Focus": [
         "Mitigation"
@@ -1816,7 +1825,8 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Clinical photography",
+        "Dermoscopy"
       ],
       "Focus": [
         "Evaluation",
@@ -1873,7 +1883,8 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Clinical photography",
+        "Dermoscopy"
       ],
       "Focus": [
         "Mitigation"
@@ -1937,7 +1948,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "X-ray"
       ],
       "Focus": [
         "Mitigation"
@@ -1993,7 +2004,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "MRI"
       ],
       "Focus": [
         "Benchmark",
@@ -2061,7 +2072,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "MRI"
       ],
       "Focus": [
         "Benchmark",
@@ -2118,7 +2129,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Dermoscopy"
       ],
       "Focus": [
         "Benchmark",
@@ -2182,7 +2193,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "X-ray"
       ],
       "Focus": [
         "Benchmark",
@@ -2238,7 +2249,8 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "MRI",
+        "PET"
       ],
       "Focus": [
         "Benchmark",
@@ -2296,7 +2308,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "MRI"
       ],
       "Focus": [
         "Benchmark",
@@ -2350,7 +2362,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "MRI"
       ],
       "Focus": [
         "Benchmark",
@@ -2409,7 +2421,8 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "CT",
+        "PET"
       ],
       "Focus": [
         "Benchmark",
@@ -2471,7 +2484,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "MRI"
       ],
       "Focus": [
         "Benchmark",
@@ -2528,7 +2541,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "X-ray"
       ],
       "Focus": [
         "Evaluation"
@@ -2575,7 +2588,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Medical imaging (modality unspecified)"
       ],
       "Focus": [
         "Evaluation"
@@ -2630,7 +2643,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "X-ray"
       ],
       "Focus": [
         "Evaluation"
@@ -2683,7 +2696,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "MRI"
       ],
       "Focus": [
         "Evaluation"
@@ -2739,7 +2752,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "X-ray"
       ],
       "Focus": [
         "Bias mechanisms",
@@ -2793,7 +2806,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Dermoscopy"
       ],
       "Focus": [
         "Evaluation"
@@ -2857,7 +2870,8 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Clinical photography",
+        "X-ray"
       ],
       "Focus": [
         "Mitigation"
@@ -2913,7 +2927,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Dermoscopy"
       ],
       "Focus": [
         "Mitigation"
@@ -2966,7 +2980,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Dermoscopy"
       ],
       "Focus": [
         "Mitigation"
@@ -3018,7 +3032,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "MRI"
       ],
       "Focus": [
         "Mitigation"
@@ -3070,7 +3084,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Medical imaging (modality unspecified)"
       ],
       "Focus": [
         "Mitigation"
@@ -3131,7 +3145,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Medical imaging (modality unspecified)"
       ],
       "Focus": [
         "Mitigation"
@@ -3192,7 +3206,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "MRI"
       ],
       "Focus": [
         "Mitigation"
@@ -3250,7 +3264,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Fundus photography"
       ],
       "Focus": [
         "Evaluation",
@@ -3305,7 +3319,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "MRI"
       ],
       "Focus": [
         "Mitigation"
@@ -3362,7 +3376,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "MRI"
       ],
       "Focus": [
         "Mitigation"
@@ -3414,7 +3428,8 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Mammography",
+        "X-ray"
       ],
       "Focus": [
         "Mitigation"
@@ -3470,7 +3485,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "X-ray"
       ],
       "Focus": [
         "Mitigation"
@@ -3524,7 +3539,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Medical imaging (modality unspecified)"
       ],
       "Focus": [
         "Mitigation"
@@ -3587,7 +3602,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Medical imaging (modality unspecified)"
       ],
       "Focus": [
         "Mitigation"
@@ -3650,7 +3665,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "MRI"
       ],
       "Focus": [
         "Mitigation"
@@ -3703,7 +3718,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "MRI"
       ],
       "Focus": [
         "Mitigation"
@@ -3758,7 +3773,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "MRI"
       ],
       "Focus": [
         "Mitigation"
@@ -3811,7 +3826,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "MRI"
       ],
       "Focus": [
         "Mitigation"
@@ -3866,7 +3881,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Medical imaging (modality unspecified)"
       ],
       "Focus": [
         "Mitigation"
@@ -3922,7 +3937,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "MRI"
       ],
       "Focus": [
         "Mitigation"
@@ -3973,7 +3988,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Other biomedical"
       ],
       "Focus": [
         "Evaluation"
@@ -4017,7 +4032,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Other biomedical"
       ],
       "Focus": [
         "Evaluation"
@@ -4069,7 +4084,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Other biomedical"
       ],
       "Focus": [
         "Evaluation"
@@ -4124,7 +4139,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Medical imaging (modality unspecified)"
       ],
       "Focus": [
         "Evaluation"
@@ -4177,7 +4192,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Other biomedical"
       ],
       "Focus": [
         "Mitigation"
@@ -4230,7 +4245,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Other biomedical"
       ],
       "Focus": [
         "Evaluation"
@@ -4330,7 +4345,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Other biomedical"
       ],
       "Focus": [
         "Evaluation"
@@ -4382,7 +4397,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Other biomedical"
       ],
       "Focus": [
         "Evaluation"
@@ -4434,7 +4449,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Other biomedical"
       ],
       "Focus": [
         "Evaluation"
@@ -4485,7 +4500,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Other biomedical"
       ],
       "Focus": [
         "Evaluation"
@@ -4537,7 +4552,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Other biomedical"
       ],
       "Focus": [
         "Evaluation"
@@ -4581,7 +4596,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Medical imaging (modality unspecified)"
       ],
       "Focus": [
         "Evaluation"
@@ -4631,7 +4646,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Other biomedical"
       ],
       "Focus": [
         "Evaluation"
@@ -4682,7 +4697,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Other biomedical"
       ],
       "Focus": [
         "Evaluation"
@@ -4744,7 +4759,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "MRI"
       ],
       "Focus": [
         "Bias mechanisms",
@@ -4796,7 +4811,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Medical imaging (modality unspecified)"
       ],
       "Focus": [
         "Bias mechanisms",
@@ -4856,7 +4871,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "MRI"
       ],
       "Focus": [
         "Bias mechanisms",
@@ -4920,7 +4935,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "MRI"
       ],
       "Focus": [
         "Bias mechanisms",
@@ -4977,7 +4992,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Other biomedical"
       ],
       "Focus": [
         "Bias mechanisms",
@@ -5032,7 +5047,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "X-ray"
       ],
       "Focus": [
         "Bias mechanisms",
@@ -5089,7 +5104,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Medical imaging (modality unspecified)"
       ],
       "Focus": [
         "Bias mechanisms",
@@ -5160,7 +5175,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Medical imaging (modality unspecified)"
       ],
       "Focus": [
         "Bias mechanisms",
@@ -5212,7 +5227,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "X-ray"
       ],
       "Focus": [
         "Evaluation"
@@ -5263,7 +5278,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "MRI"
       ],
       "Focus": [
         "Evaluation"
@@ -5314,7 +5329,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Clinical photography"
       ],
       "Focus": [
         "Evaluation"
@@ -5384,7 +5399,8 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Dermoscopy",
+        "Clinical photography"
       ],
       "Focus": [
         "Bias mechanisms",
@@ -5437,7 +5453,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Medical imaging (modality unspecified)"
       ],
       "Focus": [
         "Evaluation"
@@ -5495,7 +5511,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "MRI"
       ],
       "Focus": [
         "Evaluation"
@@ -5548,7 +5564,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Histopathology"
       ],
       "Focus": [
         "Evaluation"
@@ -5608,7 +5624,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Medical imaging (modality unspecified)"
       ],
       "Focus": [
         "Evaluation"
@@ -5661,7 +5677,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Scanning laser ophthalmoscopy"
       ],
       "Focus": [
         "Dataset",
@@ -5715,7 +5731,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "X-ray"
       ],
       "Focus": [
         "Evaluation"
@@ -5777,7 +5793,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "MRI"
       ],
       "Focus": [
         "Evaluation"
@@ -5833,7 +5849,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Medical imaging (modality unspecified)"
       ],
       "Focus": [
         "Evaluation"
@@ -5897,7 +5913,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Medical imaging (modality unspecified)"
       ],
       "Focus": [
         "Evaluation"
@@ -5948,7 +5964,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Medical imaging (modality unspecified)"
       ],
       "Focus": [
         "Evaluation"
@@ -6002,7 +6018,7 @@
     ],
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Medical imaging (modality unspecified)"
       ],
       "Focus": [
         "Benchmark",
@@ -6406,7 +6422,7 @@
     },
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Medical imaging (modality unspecified)"
       ],
       "Focus": [
         "Bias mechanisms"
@@ -6534,7 +6550,7 @@
     },
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Medical imaging (modality unspecified)"
       ],
       "Focus": [
         "Evaluation",
@@ -6599,7 +6615,7 @@
     },
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Medical imaging (modality unspecified)"
       ],
       "Focus": [
         "Evaluation",
@@ -6836,7 +6852,7 @@
     "method": "Fairness Evaluation",
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "X-ray"
       ],
       "Focus": [
         "Evaluation",
@@ -7049,7 +7065,7 @@
     "method": "In-processing",
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "MRI"
       ],
       "Focus": [
         "Mitigation",
@@ -7111,7 +7127,8 @@
     "method": "Fairness Evaluation",
     "metadata": {
       "Domain": [
-        "Medical imaging"
+        "Clinical photography",
+        "X-ray"
       ],
       "Focus": [
         "Evaluation",
@@ -7219,6 +7236,856 @@
       "note": "用户于2026-11-09明确批准纳入；主控核对原始证据并编写英文摘要。",
       "review_method": "manual-primary-source",
       "source_review_sha256": "2e1c1a2c154e5c4de3a4562c64dd4e9f8b523fc3c8f7379c284fb41a77e45064"
+    }
+  },
+  {
+    "title": "Algorithmic Bias from the Perspectives of Healthcare Professionals",
+    "authors": [
+      "Jennifer Xu",
+      "Tamara Babaian"
+    ],
+    "arxiv_id": "2610.38006",
+    "year": "2026",
+    "publication_date": "2026-10-27",
+    "venue": "arXiv",
+    "kind": "main",
+    "publication_type": "Original research",
+    "method": "Fairness Evaluation",
+    "metadata": {
+      "Domain": [
+        "Healthcare operations"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "tldr_en": [
+      "This empirical study examines healthcare professionals’ perceptions of algorithmic bias, fairness and adoption in clinical information systems.",
+      "It combines survey responses and interviews across clinical and administrative roles to relate perceived fairness to algorithm assessment and intended acceptance.",
+      "Views differ by professional role and task, providing stakeholder evidence rather than a measurement of diagnostic model disparities."
+    ],
+    "verified": true,
+    "links": {
+      "Paper": "https://arxiv.org/abs/2610.38006"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2610.38006",
+        "section": "Human-approved primary abstract check"
+      }
+    ],
+    "human_review": {
+      "decision": "approve",
+      "reviewed_on": "2026-11-09",
+      "review_fingerprint": "6886e15015de1172e4dc9b4604a99b20420e49fa98f52a90b87c043a954ab3c1",
+      "note": "面向医护人员的问卷和访谈属于原始实证调查，而不是文献综述；它评估主观公平感知和采纳意向，不是模型亚组误差实验。本次按用户明确决定纳入，不据此降低自动方法学优先级。",
+      "review_method": "manual-primary-abstract",
+      "source_review_sha256": "e58ca4ad0c3657c8e6cbcf33004ed9302c2961fbb57e830cd9d04526f735cc07"
+    }
+  },
+  {
+    "title": "Fairness or Fallacy? Mapping the Landscape of AI Bias in Disease Detection",
+    "authors": [
+      "Ghulam Mudassir",
+      "Hameed Ullah Khan",
+      "Ahmad Sami Al-Shamayleh",
+      "Muhammad Faizan Khan",
+      "Muhammad Muqtasid",
+      "Moamin Abughazala",
+      "Adnan Akhunzada"
+    ],
+    "arxiv_id": "2610.26215",
+    "year": "2026",
+    "publication_date": "2026-10-19",
+    "venue": "arXiv",
+    "kind": "survey",
+    "publication_type": "Review",
+    "method": "Fairness Evaluation",
+    "metadata": {
+      "Domain": [
+        "Medical imaging (modality unspecified)"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "tldr_en": [
+      "This review maps bias identification and mitigation approaches in AI-based disease detection.",
+      "It synthesizes 23 selected articles from seven digital libraries and organizes them by input data, model architecture and algorithmic, demographic, model or deployment bias.",
+      "The synthesis identifies research gaps in diagnostic AI and motivates attention to explainability and data diversity, without establishing new experimental fairness gains."
+    ],
+    "verified": true,
+    "links": {
+      "Paper": "https://arxiv.org/abs/2610.26215"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2610.26215",
+        "section": "Human-approved primary abstract check"
+      }
+    ],
+    "human_review": {
+      "decision": "approve",
+      "reviewed_on": "2026-11-09",
+      "review_fingerprint": "1c729a177ef3f1d876b182a6840883237c0a99af288e03f726cf240efa996e47",
+      "note": "文献综述，摘要可确认疾病检测中的偏差识别与缓解分类，但不能据摘要列出每种影像模态或某种疾病上的详细分析。本次用户明确批准纳入，保留Review类型；不让这一例外放宽未来综述自动门槛。",
+      "review_method": "manual-primary-abstract",
+      "source_review_sha256": "e58ca4ad0c3657c8e6cbcf33004ed9302c2961fbb57e830cd9d04526f735cc07"
+    }
+  },
+  {
+    "title": "Debiased medication recommendation through fusing frequent pattern and temporal medical records.",
+    "authors": [
+      "Xiaobo Li",
+      "Xiaodi Hou",
+      "Simiao Wang",
+      "Shilong Wang",
+      "Xiaokun Zhang",
+      "Yijia Zhang"
+    ],
+    "doi": "10.1016/j.neunet.2026.109168",
+    "pmid": "42214931",
+    "year": "2026",
+    "publication_date": "2026-05-25",
+    "venue": "Neural Networks",
+    "kind": "main",
+    "publication_type": "Original research",
+    "method": "In-processing",
+    "metadata": {
+      "Domain": [
+        "EHR and clinical prediction"
+      ],
+      "Focus": [
+        "Mitigation"
+      ],
+      "Stage": [
+        "In-processing"
+      ],
+      "Attributes": [
+        "Other"
+      ],
+      "Assets": [
+        "Code"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "tldr_en": [
+      "DMRNet addresses medication-frequency bias in recommendation systems that favor common prescriptions over rare drugs.",
+      "It integrates frequent-pattern mining, temporal-record fusion and drug recalibration within a learned recommendation network, with a cross-view prediction mechanism.",
+      "Experiments on two benchmark datasets report improved recommendation performance, but frequency balance is distinct from demonstrated fairness across demographic patient groups."
+    ],
+    "verified": true,
+    "links": {
+      "Paper": "https://doi.org/10.1016/j.neunet.2026.109168",
+      "Code": "https://github.com/Lxb0102/DMRNet"
+    },
+    "sources": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42214931/",
+        "section": "Human-approved primary abstract check"
+      }
+    ],
+    "human_review": {
+      "decision": "approve",
+      "reviewed_on": "2026-11-09",
+      "review_fingerprint": "884b55f2554ba257c4be988e29bdaf3865be1d88b4e23db8661459868047529f",
+      "note": "频繁模式、时序记录融合和药物重校准嵌入推荐网络，主贡献归入In-processing，不因名称recalibration而误标为训练后概率校准。Other指药物频次偏差，并非已证明人口属性公平；用户明确批准作为相邻方法纳入。",
+      "review_method": "manual-primary-abstract",
+      "source_review_sha256": "e58ca4ad0c3657c8e6cbcf33004ed9302c2961fbb57e830cd9d04526f735cc07"
+    }
+  },
+  {
+    "title": "Can Large Language Models Preserve Diagnostic Accuracy Despite Patient Self-Diagnosis and Framing Bias in Hypothetical Upper-Extremity Scenarios?",
+    "authors": [
+      "Emily H Jaarsma",
+      "David Ring",
+      "John Wickman",
+      "Alexander Drost"
+    ],
+    "doi": "10.1016/j.jhsa.2026.07.014",
+    "pmid": "42640232",
+    "year": "2026",
+    "publication_date": "2026-08-24",
+    "venue": "Journal of Hand Surgery",
+    "kind": "main",
+    "publication_type": "Original research",
+    "method": "Fairness Evaluation",
+    "metadata": {
+      "Domain": [
+        "Clinical NLP and foundation models"
+      ],
+      "Focus": [
+        "Evaluation",
+        "Bias mechanisms"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "tldr_en": [
+      "This vignette study tests whether patient self-diagnosis and symptom framing influence GPT-5 diagnostic choices for upper-extremity conditions.",
+      "It randomizes 180 hypothetical scenarios across five diagnoses and examines diagnostic accuracy and departures from patient-proposed diagnoses using multivariable regression.",
+      "The model identifies the intended diagnosis in 92% of scenarios and appears relatively resistant to the tested self-diagnosis framing, but this does not establish real-world or demographic fairness."
+    ],
+    "verified": true,
+    "links": {
+      "Paper": "https://doi.org/10.1016/j.jhsa.2026.07.014"
+    },
+    "sources": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42640232/",
+        "section": "Human-approved primary abstract check"
+      }
+    ],
+    "human_review": {
+      "decision": "approve",
+      "reviewed_on": "2026-11-09",
+      "review_fingerprint": "271dfa40c7ee0f4970e7c3b5656b1d0f439575833a7aab8b7b2d373a9de7e3c9",
+      "note": "原始情境实验评估锚定、确认和迎合相关认知偏差；不能把模拟病例上的诊断准确率理解为人口亚组公平性或临床安全验证。按用户明确批准纳入。",
+      "review_method": "manual-primary-abstract",
+      "source_review_sha256": "e58ca4ad0c3657c8e6cbcf33004ed9302c2961fbb57e830cd9d04526f735cc07"
+    }
+  },
+  {
+    "title": "Wearable-Derived Data for Patient Frailty: Extending Hospital Frailty Risk Score While Confronting Bias and Inequities.",
+    "authors": [
+      "Milit S Patel",
+      "Patrick Emedom-Nnamdi",
+      "Kaitlyn Lapen",
+      "Edward Christopher Dee"
+    ],
+    "doi": "10.1007/s11606-026-10576-3",
+    "pmid": "42420655",
+    "year": "2026",
+    "publication_date": "2026-07-08",
+    "venue": "Journal of General Internal Medicine",
+    "kind": "survey",
+    "publication_type": "Perspective",
+    "method": "Fairness Evaluation",
+    "metadata": {
+      "Domain": [
+        "Physiological signals"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Race and ethnicity"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "tldr_en": [
+      "This perspective considers how wearable-derived mobility, activity and physiological data could extend the Hospital Frailty Risk Score.",
+      "It proposes an equity-oriented integration framework with demographic validation, device-access considerations, calibration and continuous deployment monitoring.",
+      "The contribution is a frailty-specific governance and evaluation proposal addressing measurement bias and racial inequities, rather than a validated wearable prediction system."
+    ],
+    "verified": true,
+    "links": {
+      "Paper": "https://doi.org/10.1007/s11606-026-10576-3"
+    },
+    "sources": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42420655/",
+        "section": "Human-approved primary abstract check"
+      }
+    ],
+    "human_review": {
+      "decision": "approve",
+      "reviewed_on": "2026-11-09",
+      "review_fingerprint": "9da4b3b566756b949bfd7a6c5542ea28d27335c68901afef1230dea19b6f32f5",
+      "note": "原文明确Perspective，聚焦frailty/HFRS具体任务中的设备测量偏差、种族差异和模型审计建议；属于框架讨论，无前瞻性公平性验证，保留观点类型。",
+      "review_method": "manual-primary-abstract",
+      "source_review_sha256": "e58ca4ad0c3657c8e6cbcf33004ed9302c2961fbb57e830cd9d04526f735cc07"
+    }
+  },
+  {
+    "title": "Automation Bias and Deskilling in Radiology AI: A Confidence-stratified Triage Model for Workflow Integration.",
+    "authors": [
+      "Karunanayake N",
+      "Schefflein J",
+      "Zhao B",
+      "Schwartz LH"
+    ],
+    "doi": "10.1148/ryai.260591",
+    "pmid": "42949520",
+    "year": "2026",
+    "publication_date": "2026-10-28",
+    "venue": "Radiology: Artificial Intelligence",
+    "kind": "survey",
+    "publication_type": "Perspective",
+    "method": "Fairness Evaluation",
+    "metadata": {
+      "Domain": [
+        "Medical imaging (modality unspecified)"
+      ],
+      "Focus": [
+        "Evaluation",
+        "Bias mechanisms"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "tldr_en": [
+      "This perspective examines automation bias and loss of radiologist expertise during routine AI-assisted interpretation.",
+      "It proposes confidence-stratified triage streams that vary AI-output timing, uncertainty displays, checklists and blinded audits according to local calibration and potential harm.",
+      "The workflow offers a research agenda for reducing overreliance and deskilling, but its effectiveness and demographic fairness have not been demonstrated."
+    ],
+    "verified": true,
+    "links": {
+      "Paper": "https://doi.org/10.1148/ryai.260591"
+    },
+    "sources": [
+      {
+        "url": "https://europepmc.org/article/MED/42949520",
+        "section": "Human-approved primary abstract check"
+      }
+    ],
+    "human_review": {
+      "decision": "approve",
+      "reviewed_on": "2026-11-09",
+      "review_fingerprint": "5f72a7462d7b526f74e58dabbcc51cfd53bfb5f1f0c164258173ed3975c3487e",
+      "note": "摘要提出工作流概念模型与研究议程，非已验证偏差缓解算法；置信度分流也不能仅因发生在AI输出之后就归入已验证Post-processing。主要作为认知偏差框架放入Evaluation，按用户批准保留。",
+      "review_method": "manual-primary-abstract",
+      "source_review_sha256": "e58ca4ad0c3657c8e6cbcf33004ed9302c2961fbb57e830cd9d04526f735cc07"
+    }
+  },
+  {
+    "title": "From Canon to Nikon: Camera Domain Shift and Potential Equity Implications in Retinal AI",
+    "authors": [
+      "Lisa Y. W. Tang"
+    ],
+    "arxiv_id": "2610.29104",
+    "year": "2026",
+    "publication_date": "2026-10-21",
+    "venue": "arXiv",
+    "kind": "main",
+    "publication_type": "Original research",
+    "method": "Fairness Evaluation",
+    "metadata": {
+      "Domain": [
+        "Fundus photography"
+      ],
+      "Focus": [
+        "Evaluation",
+        "Bias mechanisms"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Other"
+      ],
+      "Assets": [
+        "Code"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "tldr_en": [
+      "This study examines camera-associated domain shift in retinal fundus AI and its potential implications for equitable screening.",
+      "Using a Brazilian cohort of 8,524 patients, it evaluates frozen retinal-model features across two camera platforms, 12 tasks, four resolutions and five classifiers.",
+      "Camera-associated performance varies across tasks and is not consistently resolved by resolution or classifier choice, while direct demographic disparities remain unestablished."
+    ],
+    "verified": true,
+    "links": {
+      "Paper": "https://arxiv.org/abs/2610.29104",
+      "Code": "https://anonymous.4open.science/r/Canon2Nikon/README.md"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2610.29104",
+        "section": "Human-approved primary abstract check"
+      }
+    ],
+    "human_review": {
+      "decision": "approve",
+      "reviewed_on": "2026-11-09",
+      "review_fingerprint": "d2262bba54ea333293b96aa7bfe0a6cfc2e536af6b8312d2d80b34f053e52489",
+      "note": "原文方法明确BRSET fundus photographs，Domain为Fundus photography；主要比较相机平台域偏移，Other标记设备来源，不假设Site and geography或已测量人口差异。按用户批准纳入。",
+      "review_method": "manual-primary-abstract",
+      "source_review_sha256": "e58ca4ad0c3657c8e6cbcf33004ed9302c2961fbb57e830cd9d04526f735cc07"
+    }
+  },
+  {
+    "title": "When to Stop Asking: Factor Coverage Bias and LLM Determinability Judgments with Underspecified Information in Medicine",
+    "authors": [
+      "Yusuke Watanabe",
+      "Yohei Kobashi",
+      "Taisei Tosaki",
+      "Takeshi Kojima",
+      "Yusuke Iwasawa",
+      "Yasushi Okuno",
+      "Yutaka Matsuo"
+    ],
+    "arxiv_id": "2610.25819",
+    "year": "2026",
+    "publication_date": "2026-10-19",
+    "venue": "arXiv",
+    "kind": "main",
+    "publication_type": "Original research",
+    "method": "Fairness Evaluation",
+    "metadata": {
+      "Domain": [
+        "Clinical NLP and foundation models"
+      ],
+      "Focus": [
+        "Evaluation",
+        "Benchmark",
+        "Bias mechanisms"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "tldr_en": [
+      "This study investigates factor coverage bias when medical LLMs judge whether incomplete information is sufficient for a decision.",
+      "It builds a paired benchmark that adds decision-relevant factors or irrelevant text while holding the true determinability of each case unchanged.",
+      "Relevant added factors bias models toward treating augmented cases as determinable even with more reasoning, identifying a trustworthiness failure distinct from context length or demographic fairness."
+    ],
+    "verified": true,
+    "links": {
+      "Paper": "https://arxiv.org/abs/2610.25819"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2610.25819",
+        "section": "Human-approved primary abstract check"
+      }
+    ],
+    "human_review": {
+      "decision": "approve",
+      "reviewed_on": "2026-11-09",
+      "review_fingerprint": "eeb97e8d48aa6ae22fbbeea64de96a0093b7173a8a632a112518671d490981e3",
+      "note": "控制配对基准针对医学信息不足时的可判定性认知偏差，不是受保护群体公平性审计；Evaluation/Benchmark为主要方法贡献，按用户明确批准作为相邻证据纳入。",
+      "review_method": "manual-primary-abstract",
+      "source_review_sha256": "e58ca4ad0c3657c8e6cbcf33004ed9302c2961fbb57e830cd9d04526f735cc07"
+    }
+  },
+  {
+    "title": "Gender Associations in LLM-Mediated ADHD Self-Diagnosis",
+    "authors": [
+      "Matilde Elene Hansen",
+      "Ross Deans Kristensen-McLachlan"
+    ],
+    "arxiv_id": "2610.33697",
+    "year": "2026",
+    "publication_date": "2026-10-24",
+    "venue": "arXiv",
+    "kind": "main",
+    "publication_type": "Original research",
+    "method": "Fairness Evaluation",
+    "metadata": {
+      "Domain": [
+        "Clinical NLP and foundation models"
+      ],
+      "Focus": [
+        "Evaluation",
+        "Bias mechanisms"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Sex and gender"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "tldr_en": [
+      "This study evaluates gender-associated ADHD responses in LLM-mediated self-diagnosis.",
+      "It adapts the Context Association Test to compare GPT-4o outputs under explicit and implicit gender cueing in a zero-shot setting.",
+      "Explicit cues amplify some subtype associations while implicit cues track proxy-aligned patterns, but the proposed over-correction mechanism is an interpretation rather than a demonstrated internal process."
+    ],
+    "verified": true,
+    "links": {
+      "Paper": "https://arxiv.org/abs/2610.33697"
+    },
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2610.33697",
+        "section": "Human-approved primary abstract check"
+      }
+    ],
+    "human_review": {
+      "decision": "approve",
+      "reviewed_on": "2026-11-09",
+      "review_fingerprint": "19a5251d9f5b296486ead1b7175aace4c62bf1dded713035ef05f572dca492b8",
+      "note": "具体ADHD自诊断任务的性别关联对照，归入公平性评估；所谓激活过度纠偏机制是作者解释，不等同于内部机制已被识别或诊断误差已公平。",
+      "review_method": "manual-primary-abstract",
+      "source_review_sha256": "e58ca4ad0c3657c8e6cbcf33004ed9302c2961fbb57e830cd9d04526f735cc07"
+    }
+  },
+  {
+    "title": "A Framework for Identifying and Understanding Cognitive Biases in Artificial Intelligence-Assisted Radiology.",
+    "authors": [
+      "Armstrong BA",
+      "Cheuy L",
+      "Kottler N",
+      "Larson DB"
+    ],
+    "doi": "10.2214/AJR.26.35826",
+    "pmid": "42949357",
+    "year": "2026",
+    "publication_date": "2026-10-28",
+    "venue": "AJR American Journal of Roentgenology",
+    "kind": "survey",
+    "publication_type": "Perspective",
+    "method": "Fairness Evaluation",
+    "metadata": {
+      "Domain": [
+        "Medical imaging (modality unspecified)"
+      ],
+      "Focus": [
+        "Evaluation",
+        "Bias mechanisms"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "tldr_en": [
+      "This perspective develops a conceptual framework for cognitive biases in AI-assisted radiology.",
+      "It applies dual-process theory to seven decision scenarios involving image viewing, findings interpretation and contextual integration, relating AI timing and agreement to reader behavior.",
+      "The framework generates hypotheses and workflow-design strategies for calibrated reliance, without providing new evidence that these strategies reduce diagnostic or demographic disparities."
+    ],
+    "verified": true,
+    "links": {
+      "Paper": "https://doi.org/10.2214/AJR.26.35826"
+    },
+    "sources": [
+      {
+        "url": "https://europepmc.org/article/MED/42949357",
+        "section": "Human-approved primary abstract check"
+      }
+    ],
+    "human_review": {
+      "decision": "approve",
+      "reviewed_on": "2026-11-09",
+      "review_fingerprint": "70d6ca3af5f947789a56289556ee800a395670cc3b66d21c6620df22b865336f",
+      "note": "原文明确Perspective与conceptual framework，以七种情境组织读者-AI交互认知偏差；未提供新方法有效性实验，标注观点类型，不包装为已验证缓解。",
+      "review_method": "manual-primary-abstract",
+      "source_review_sha256": "e58ca4ad0c3657c8e6cbcf33004ed9302c2961fbb57e830cd9d04526f735cc07"
+    }
+  },
+  {
+    "title": "Algorithmic design choices as determinants of health equity: a causal simulation study of healthcare resource allocation",
+    "authors": [
+      "Reed C",
+      "Espinoza ME"
+    ],
+    "doi": "10.64898/2026.10.30.26366732",
+    "year": "2026",
+    "publication_date": "2026-11-01",
+    "venue": "medRxiv",
+    "kind": "main",
+    "publication_type": "Original research",
+    "method": "Fairness Evaluation",
+    "metadata": {
+      "Domain": [
+        "Healthcare operations"
+      ],
+      "Focus": [
+        "Evaluation",
+        "Bias mechanisms"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Race and ethnicity",
+        "Socioeconomic status"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "tldr_en": [
+      "This simulation study tests how algorithmic design choices shape equity in healthcare resource allocation.",
+      "Using linked All of Us data from 201,216 adults, it varies selection thresholds, feature sets and prediction targets and evaluates need-conditioned allocation and subgroup error disparities.",
+      "Training-target changes have the most consistent equity effects in the reported simulations, but observational data and self-reported need limit causal and deployment claims."
+    ],
+    "verified": true,
+    "links": {
+      "Paper": "https://doi.org/10.64898/2026.10.30.26366732"
+    },
+    "sources": [
+      {
+        "url": "https://europepmc.org/article/PPR/PPR1355869",
+        "section": "Human-approved primary abstract check"
+      }
+    ],
+    "human_review": {
+      "decision": "approve",
+      "reviewed_on": "2026-11-09",
+      "review_fingerprint": "e9f27e21321902583ca1f79befcb9c947d0e6db233485636d623ed4f89ab7e51",
+      "note": "逐项改变阈值、特征集合和训练目标，主要贡献为资源分配公平性设计评估框架；不把标题causal simulation自动当作随机试验因果证据，预印本未误写成已发表期刊研究。",
+      "review_method": "manual-primary-abstract",
+      "source_review_sha256": "e58ca4ad0c3657c8e6cbcf33004ed9302c2961fbb57e830cd9d04526f735cc07"
+    }
+  },
+  {
+    "title": "AI-based bone age assessment versus forensic expert panel: agreement, sex bias, and ethical implications.",
+    "authors": [
+      "Beytullah Ural",
+      "Ahmet Nezih Kök",
+      "Talip Vural"
+    ],
+    "doi": "10.1007/s00414-026-03919-6",
+    "pmid": "42412185",
+    "year": "2026",
+    "publication_date": "2026-07-07",
+    "venue": "International Journal of Legal Medicine",
+    "kind": "main",
+    "publication_type": "Original research",
+    "method": "Fairness Evaluation",
+    "metadata": {
+      "Domain": [
+        "X-ray"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Sex and gender"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "tldr_en": [
+      "This retrospective study compares automated hand-wrist bone-age assessment with a forensic expert panel and examines sex-related agreement differences.",
+      "It evaluates BoneXpert on 128 cases using agreement analyses and minimum-age threshold comparisons within a forensic reference framework.",
+      "Overall agreement is high and underestimation is concentrated in female cases, but panel agreement does not validate chronological age or justify stand-alone forensic use."
+    ],
+    "verified": true,
+    "links": {
+      "Paper": "https://doi.org/10.1007/s00414-026-03919-6"
+    },
+    "sources": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42412185/",
+        "section": "Human-approved primary abstract check"
+      }
+    ],
+    "human_review": {
+      "decision": "approve",
+      "reviewed_on": "2026-11-09",
+      "review_fingerprint": "83df8bae99fe143a138049aeaaaffd1a8eef77112f1fa3e45d283d1b2d1f4990",
+      "note": "手腕平片明确为X-ray；评估按性别分层的BoneXpert与法医学专家参考一致性，而非以已知实际年龄为真值的独立验证。保留法律阈值判定局限，不提出法律结论。",
+      "review_method": "manual-primary-abstract",
+      "source_review_sha256": "e58ca4ad0c3657c8e6cbcf33004ed9302c2961fbb57e830cd9d04526f735cc07"
+    }
+  },
+  {
+    "title": "Beyond Accuracy: Investigating Pseudo-Learning and Bias Propagation in MRI Brain Tumour Classification",
+    "authors": [
+      "Gajbhiye LN",
+      "Kamble SS"
+    ],
+    "doi": "10.20944/preprints202610.2138.v1",
+    "year": "2026",
+    "publication_date": "2026-10-22",
+    "venue": "Preprints.org",
+    "kind": "main",
+    "publication_type": "Original research",
+    "method": "Fairness Evaluation",
+    "metadata": {
+      "Domain": [
+        "MRI"
+      ],
+      "Focus": [
+        "Evaluation",
+        "Bias mechanisms"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Not specified"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "tldr_en": [
+      "This preprint examines pseudo-learning and dataset bias in MRI-based brain-tumour classification.",
+      "It compares three EfficientNet-based training configurations using class-level metrics and Grad-CAM on two public datasets.",
+      "The final model reports high accuracy on an 800-image test set, but differing test sets prevent direct comparisons and neither reduced shortcut learning nor demographic fairness is established."
+    ],
+    "verified": true,
+    "links": {
+      "Paper": "https://doi.org/10.20944/preprints202610.2138.v1"
+    },
+    "sources": [
+      {
+        "url": "https://europepmc.org/article/PPR/PPR1347529",
+        "section": "Human-approved primary abstract check"
+      }
+    ],
+    "human_review": {
+      "decision": "approve",
+      "reviewed_on": "2026-11-09",
+      "review_fingerprint": "ba350efa91ca7a5400d016f7e6457d6d4fbfd246eebd98b08ea7d004ecb2dcdb",
+      "note": "MRI脑肿瘤分类中的模型和数据偏差分析，未确认人口属性群体，不能因bias一词宣称人口公平性结果。作者明确提醒测试集不同不可直接比较；按用户批准作为相邻研究纳入，保留预印本状态。",
+      "review_method": "manual-primary-abstract",
+      "source_review_sha256": "e58ca4ad0c3657c8e6cbcf33004ed9302c2961fbb57e830cd9d04526f735cc07"
+    }
+  },
+  {
+    "title": "Reporting of Fairness and Equity in Studies of Regulator-cleared Commercial AI for Acute Stroke CT: A Systematic Review.",
+    "authors": [
+      "Adiniaev Y",
+      "Omar M",
+      "Timor TM",
+      "Daniel O",
+      "Adiniaev Y",
+      "Barash Y",
+      "Brook OR",
+      "Klang E",
+      "Gorenshtein A"
+    ],
+    "doi": "10.1016/j.acra.2026.09.075",
+    "pmid": "42907264",
+    "year": "2026",
+    "publication_date": "2026-10-21",
+    "venue": "Academic Radiology",
+    "kind": "survey",
+    "publication_type": "Systematic review",
+    "method": "Fairness Evaluation",
+    "metadata": {
+      "Domain": [
+        "CT"
+      ],
+      "Focus": [
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Attributes": [
+        "Sex and gender",
+        "Race and ethnicity",
+        "Age",
+        "Socioeconomic status",
+        "Site and geography"
+      ],
+      "Assets": [
+        "Paper only"
+      ],
+      "Evidence": [
+        "Primary abstract"
+      ]
+    },
+    "tldr_en": [
+      "This systematic review audits fairness and equity reporting in evaluations of regulator-cleared commercial AI for acute stroke CT.",
+      "It reviews 13 studies spanning nine vendors and four CT tasks against eight prespecified reporting items with independent screening and extraction.",
+      "Only one study reports sociodemographic subgroup performance, so missing reporting limits fairness assessment and does not establish that the evaluated products are inequitable."
+    ],
+    "verified": true,
+    "links": {
+      "Paper": "https://doi.org/10.1016/j.acra.2026.09.075"
+    },
+    "sources": [
+      {
+        "url": "https://europepmc.org/article/MED/42907264",
+        "section": "Human-approved primary abstract check"
+      }
+    ],
+    "human_review": {
+      "decision": "approve",
+      "reviewed_on": "2026-11-09",
+      "review_fingerprint": "1a731189093bf8e5375cd4e6f202c20bfbcaf3c46fce65c7347f9a9911689c06",
+      "note": "具体acute stroke CT任务的系统综述，详细审查亚组性能和训练人群报告，符合任务特定综述筛选原则。Attributes包含该综述明确审核的维度，不代表所有纳入研究均测量或发现这些维度的差异。",
+      "review_method": "manual-primary-abstract",
+      "source_review_sha256": "e58ca4ad0c3657c8e6cbcf33004ed9302c2961fbb57e830cd9d04526f735cc07"
     }
   }
 ]

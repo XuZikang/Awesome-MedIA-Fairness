@@ -6,7 +6,7 @@ Edit `data/catalog.json`, then run `python3 -m scripts.render_catalog`. Do not e
 
 Choose one primary methodology from Fairness Evaluation, Pre-processing, In-processing or Post-processing, following the 2024 systematic review. Use Stage pending if a mitigation intervention is not established. Keep secondary contributions in metadata, with only the controlled labels from `scripts/catalog_schema.py`. Read the primary abstract and relevant methods; do not infer clinical benefit, positive gains, intersectionality or predictor freezing from a title.
 
-Supply `tldr_en` as exactly three English sentences: the problem, the method/study design, and the supported result or interpretation. Explain evidence limitations honestly. The generated README is entirely English, has five groups of colored control values in two rows below each title (Domain, Focus, Stage, Attributes and Assets), and newest-first dates with month subheadings in the latest year. Chinese classification evidence and maintainer judgments belong in `reports/`.
+Supply `tldr_en` as exactly three English sentences: the problem, the method/study design, and the supported result or interpretation. Explain evidence limitations honestly. The generated README is entirely English, has colored values in two rows below each title, without field-name prefixes or Assets/Evidence badges, and newest-first dates with month subheadings in the latest year. Chinese classification evidence and maintainer judgments belong in `reports/`.
 
 Run:
 
@@ -20,3 +20,5 @@ git diff --check
 Do not upload patient data, private documents, credentials or third-party full papers. New catalog annotations are CC BY 4.0; automation code is MIT. Source works retain their own rights.
 
 Screening prioritizes original methodology and task-specific fairness audits. Reviews and commentaries require a concrete medical disease/task and detailed fairness analysis; incidental fairness mentions are insufficient. See [screening-policy.md](docs/screening-policy.md).
+
+For imaging records, use only explicitly supported modality values (for example MRI, CT, X-ray, OCT, dermoscopy or fundus photography). Multiple modalities may be selected when the study actually uses them. Use `Medical imaging (modality unspecified)` when the available source cannot establish the modality; do not label a study from incidental background mentions. Keep actual paper/code/data links in `links`; Assets remains internal bookkeeping.

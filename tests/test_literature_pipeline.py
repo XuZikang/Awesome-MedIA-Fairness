@@ -25,7 +25,7 @@ def record(**changes):
 def analysis():
     return {"decision": "suggest_include", "summary_zh": "患者状态预测。", "limitations_zh": "仅为测试数据。", "reason_zh": "有动态预测与评估。",
             "article_type":"evaluation", "review_scope":{k:{"met":False,"quote":""} for k in ('specific_task','detailed_fairness')},
-            "topics": [TOPICS[2]], "metadata": {"Domain": ["Medical imaging"], "Focus": ["Evaluation"], "Stage": ["Evaluation"], "Attributes": ["Sex and gender"]},
+            "topics": [TOPICS[2]], "metadata": {"Domain": ["MRI"], "Focus": ["Evaluation"], "Stage": ["Evaluation"], "Attributes": ["Sex and gender"]},
             "criteria": {key: {"met": True, "quote": "medical model evaluates subgroup disparities"} for key in ("medical", "algorithm", "fairness", "groups", "evaluation")}}
 
 
@@ -231,6 +231,14 @@ class ReviewEvidenceTests(unittest.TestCase):
         validate_review(result, "A medical model evaluates subgroup disparities.", "full_text")
         result["metadata"]["Stage"] = ["Action-conditioned"]
         with self.assertRaisesRegex(ValueError, "invalid metadata"):
+            validate_review(result, "A medical model evaluates subgroup disparities.", "full_text")
+
+    def test_multiple_imaging_modalities_are_valid_metadata(self):
+        result = analysis()
+        result["metadata"]["Domain"] = ["MRI", "CT"]
+        validate_review(result, "A medical model evaluates subgroup disparities.", "full_text")
+        result["metadata"]["Domain"] = ["MRI", "EHR and clinical prediction"]
+        with self.assertRaisesRegex(ValueError, "multiple domains must be imaging modalities"):
             validate_review(result, "A medical model evaluates subgroup disparities.", "full_text")
 
     def test_missing_evidence_and_invalid_taxonomy_rejected(self):

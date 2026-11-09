@@ -57,6 +57,8 @@ def sync_catalog(db, root, approval_file=None):
             annotation = annotate(paper, evidence['text'])
             publication_date = str(paper.get('published') or paper['year'])[:10]
             metadata = {key:list(value) for key,value in result['metadata'].items()}
+            # Preserve an explicitly approved legacy analysis without inventing a modality.
+            metadata['Domain'] = ['Medical imaging (modality unspecified)' if v == 'Medical imaging' else v for v in metadata['Domain']]
             metadata['Assets'] = ['Paper only']
             metadata['Evidence'] = ['Primary full text' if evidence['level']=='full_text' else 'Primary abstract']
             metadata['Stage'] = ['Evaluation' if annotation['method']=='Fairness Evaluation' else 'Not verified' if annotation['method']=='Stage pending' else annotation['method']]
