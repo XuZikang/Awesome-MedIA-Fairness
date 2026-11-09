@@ -40,7 +40,7 @@ def entry(p):
         controls.append(badge(label,label))
     labels={'Paper':'Paper','Code':'Code','Weights':'Weights','Project':'Project','Data':'Data'}
     links=' '.join(f'[[{labels[k]}]({v})]' for k,v in p['links'].items() if k in labels)
-    lines=[f"- (*{venue}'{p['year'][-2:]}*) **{md(p['title'])}**", '', '  '+' · '.join(controls), '', '  '+links, '',
+    lines=[f"- (*{venue}'{p['year'][-2:]}*) **{md(p['title'])}**", '', '  '+' · '.join(controls[:3])+'<br>'+' · '.join(controls[3:]), '', '  '+links, '',
            '  **TLDR:** '+' '.join(md(sentence) for sentence in p['tldr_en']), '',
            '  **Date:** '+p['publication_date'], '']
     return '\n'.join(lines)
@@ -77,12 +77,12 @@ def main(root=None):
         'A collection of research on **medical algorithm fairness**, covering medical imaging, clinical prediction, physiological signals and clinical foundation models.','',
         '[![Catalog validation]('+REPO+'/actions/workflows/validate-catalog.yml/badge.svg)]('+REPO+'/actions/workflows/validate-catalog.yml) '+
         '[![Link health]('+REPO+'/actions/workflows/check-links.yml/badge.svg)]('+REPO+'/actions/workflows/check-links.yml)','',
-        f"**{len(records)} papers**, including surveys and perspectives, organized by methodology. Each paper has one primary placement; secondary contributions remain in its metadata and TLDR.",'',
-        '## 🎯 Scope','',
+        f"**{len(records)} papers** · Evaluation & mitigation · Human-reviewed additions",'',
+        '**Browse:** [Papers](#-papers) · [Taxonomy](#-taxonomy) · [Resources](#-datasets-benchmarks-and-toolkits) · [Weekly review](reports/review-latest.md) · [Contributing](#-contributing)','',
+        '<details>','<summary>Scope and inclusion criteria</summary>','',
         'Studies must address algorithmic fairness, subgroup disparities, bias mechanisms, fairness measurement or mitigation in a medical task. Negative findings are eligible. Predicting a protected attribute does not by itself establish downstream discrimination. General fairness foundations are listed separately.','',
         'Original methodology and empirical fairness audits take priority. New reviews and commentaries must analyze fairness in a specific medical disease or task in depth; incidental mentions of bias, ethics or fairness are insufficient. See the [screening policy](docs/screening-policy.md).','',
-        '## 📌 Contents','',
-        '- [Taxonomy](#-taxonomy)\n- [Papers](#-papers)\n  - [Fairness Evaluation](#fairness-evaluation)\n  - [Pre-processing](#unfairness-mitigation-pre-processing)\n  - [In-processing](#unfairness-mitigation-in-processing)\n  - [Post-processing](#unfairness-mitigation-post-processing)\n- [Datasets, Benchmarks and Toolkits](#-datasets-benchmarks-and-toolkits)\n- [Contributing](#-contributing)','',
+        '</details>','',
         '## 🧬 Taxonomy','',
         'The methodology follows [Addressing fairness issues in deep learning-based medical image analysis: a systematic review](https://doi.org/10.1038/s41746-024-01276-5). Surveys and empirical studies share the same taxonomy; surveys carry an additional badge.','',
         '| Method | Definition |\n|---|---|',
@@ -91,23 +91,39 @@ def main(root=None):
         '| '+badge('In-processing','In-processing')+' | Interventions on learning objectives, representations, model training or optimization. |',
         '| '+badge('Post-processing','Post-processing')+' | Interventions after model training, such as output adjustment, calibration or reviewed model adaptation; predictor freezing must be established from the specific protocol. |','',
         '`Stage pending` is an evidence-status bucket for mitigation records whose intervention stage is not yet established, not an additional methodology. Within each category, records run newest to oldest. The latest catalog year is divided by month; missing months remain explicitly unverified. Dates retain the precision supplied by the original record, rather than the discovery date.','',
+        '<details>','<summary>Tag legend — Domain · Focus · Stage · Attributes · Assets</summary>','',
         '| Field | Controlled values |\n|---|---|']
     for field in DISPLAY_FIELDS:
         lines.append('| **'+field+'** | '+' '.join(badge(v,v if field=='Stage' and v in METHODS else field) for v in sorted(ALLOWED[field]))+' |')
-    lines+=['','Colored control values appear on a separate line below each paper title. One badge represents one value; surveys and commentaries carry an additional type badge.','',MAIN_HEADING,'']
+    lines+=['','</details>','',MAIN_HEADING,'',
+        'Browse by methodology below. The latest year is expanded and grouped by month; expand an earlier year to read its papers. Tags below each title describe the domain, focus, stage, attributes and available assets.','',
+        '| Methodology | Papers | Latest records |','|---|---:|---|']
+    anchors={'Fairness Evaluation':'fairness-evaluation','Pre-processing':'unfairness-mitigation-pre-processing','In-processing':'unfairness-mitigation-in-processing','Post-processing':'unfairness-mitigation-post-processing','Stage pending':'unfairness-mitigation-stage-pending'}
+    for method in METHODS:
+        group=[p for p in records if p['method']==method]
+        if not group:continue
+        newest=max(group,key=sort_key)['publication_date']
+        lines.append(f'| [{method}](#{anchors[method]}) | {len(group)} | {newest} |')
+    lines+=['']
     for method in METHODS:
         group=[p for p in records if p['method']==method]
         if not group and method=='Stage pending':continue
         heading=method if method=='Fairness Evaluation' else 'Unfairness Mitigation: '+method
         lines+=['### '+heading,'']
         for year in sorted({p['year'] for p in group},reverse=True):
+            older=year!=latest
+            if older:
+                count=sum(p['year']==year for p in group)
+                lines+=['<details>',f'<summary>{year} · {count} papers</summary>','']
             lines+=['#### '+year,'']
             month=None
             for p in sorted((p for p in group if p['year']==year),key=sort_key,reverse=True):
                 current=p['publication_date'][:7] if len(p['publication_date'])>=7 else 'Month unverified'
                 if year==latest and current!=month:
                     lines+=['##### '+current,''];month=current
-                lines+=[entry(p),'']
+                lines+=[entry(p).rstrip(),'']
+            if older:lines+=['</details>','']
+        lines+=['<p><a href="#-papers">↑ All categories</a></p>','', '---','']
     lines += [resources(),'## 🔗 Related Repositories','',
         '- [MEDFAIR](https://github.com/ys-zong/MEDFAIR)\n- [FairMedFM](https://github.com/FairMedFM/FairMedFM)\n- [AI Fairness 360](https://github.com/Trusted-AI/AIF360)','',
         '## 🔀 Cross-References','', 'General fairness foundations, outside the medical catalog:','']

@@ -56,7 +56,7 @@ BADGE_WITH_ALT_RE = re.compile(
 CONTROL_RE = re.compile(
     r"^  \*\*Domain:\*\* (?P<Domain>.*?) · "
     r"\*\*Focus:\*\* (?P<Focus>.*?) · "
-    r"\*\*Stage:\*\* (?P<Stage>.*?) · "
+    r"\*\*Stage:\*\* (?P<Stage>.*?)(?: · |<br>)"
     r"\*\*Attributes:\*\* (?P<Attributes>.*?) · "
     r"\*\*Assets:\*\* (?P<Assets>.*?)"
     r"(?: · (?P<annotation>!\[(?:Survey|Commentary)\]\(assets/badges/"
