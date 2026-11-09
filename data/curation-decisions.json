@@ -545,5 +545,71 @@
     "title": "Sex-Equitable Machine Learning Prediction of Ankle Reinjury in Individuals with Chronic Ankle Instability: A 2-Year Prospective Cohort Study with Fairness Audit.",
     "source_review_sha256": "23a5e3e48331254cf82828d284caeeace685b2fc852e480e8b80543c6c5a61bc",
     "reviewed_on": "2026-11-09"
+  },
+  "p-25f166919d5808c5e366": {
+    "decision": "approve",
+    "fingerprint": "dbf08f2c97bb6cdff0795e0bdc1287d938216eee0044f89a2a79cfd26de75315",
+    "note": "用户于2026-11-09明确批准纳入；主控核对原始证据并编写英文摘要。",
+    "paper_version": "8beddce91d59396758711943257d6bb313ce36f02cb86b85140a556bc14a954e",
+    "content_version": "d4308811951a2efff47cf4a67085595b1e93835cfb8c5b1a5f6c29b492ec5fbd",
+    "title": "Detection and Validation of Hidden Subgroup Disparities in Clinical AI",
+    "reviewed_on": "2026-11-09",
+    "review_method": "manual-primary-source",
+    "source_review_sha256": "2e1c1a2c154e5c4de3a4562c64dd4e9f8b523fc3c8f7379c284fb41a77e45064"
+  },
+  "p-45778789f12c424e7649": {
+    "decision": "approve",
+    "fingerprint": "32b1bc735b5c101fa3cf3e849d1e7f98dce9a59ca550500aafb5ab189d55f73b",
+    "note": "用户于2026-11-09明确批准纳入；主控核对原始证据并编写英文摘要。",
+    "paper_version": "a49abb6751ba549b9ce061f84c4f1d9ab8039b85297c3b5bcb6cb43452759d8c",
+    "content_version": "e218effff579a16b001203737ff706c3cb551a67f5c96e41a7a766a7cda08135",
+    "title": "Trajectory-Guided Steering: Mitigating Spurious Feature Bias in Clinical Classification",
+    "reviewed_on": "2026-11-09",
+    "review_method": "manual-primary-source",
+    "source_review_sha256": "2e1c1a2c154e5c4de3a4562c64dd4e9f8b523fc3c8f7379c284fb41a77e45064"
+  },
+  "p-f4567d6da1046873aea0": {
+    "decision": "approve",
+    "fingerprint": "1fb62141d5b950d7e0240bf4c94e53279e189a5c573d726ff52894f9f2e95b40",
+    "note": "用户于2026-11-09明确批准纳入；主控核对原始证据并编写英文摘要。",
+    "paper_version": "f99cd9642782b3422378a38a1814734ac6602a0ed772259bf6f3a7a049ae57ca",
+    "content_version": "ed55af161f3d79a6ba098d865efaba00dc01af3fb1e9185b6804c9d2b753625e",
+    "title": "Refocusing algorithmic fairness on feature-level bias: A diagnostic approach using dutch EHR data.",
+    "reviewed_on": "2026-11-09",
+    "review_method": "manual-primary-source",
+    "source_review_sha256": "2e1c1a2c154e5c4de3a4562c64dd4e9f8b523fc3c8f7379c284fb41a77e45064"
+  },
+  "p-8aeef9186465b5deed36": {
+    "decision": "approve",
+    "fingerprint": "c59178b6680da6122d7ee7151c85dfc0f9bb55da5770bf5ea99936950959468a",
+    "note": "用户于2026-11-09明确批准纳入；主控核对原始证据并编写英文摘要。",
+    "paper_version": "0ec7852a680a170b584ab5d6a26ba64683fa01e1e64b0f99c6f743b718479e37",
+    "content_version": "e168b550ff86a64290d8d425d47e9141d49949cbfaec2748cef1f14b1d1eb8f4",
+    "title": "Improving the fairness and robustness of deep learning classification models through bias mitigation and post hoc calibration.",
+    "reviewed_on": "2026-11-09",
+    "review_method": "manual-primary-source",
+    "source_review_sha256": "2e1c1a2c154e5c4de3a4562c64dd4e9f8b523fc3c8f7379c284fb41a77e45064"
+  },
+  "p-59068cc978cafdc33230": {
+    "decision": "approve",
+    "fingerprint": "1449e6c2ebb733993eaa6bc7566491963e0679520e31b25f25a70fa1de547032",
+    "note": "用户于2026-11-09明确批准纳入；主控核对原始证据并编写英文摘要。",
+    "paper_version": "8896c3228de7ebe52a7657133dc3d67813d80f167c8f3388d644c5365ad1bd47",
+    "content_version": "0cf90900b934711ae41e38519dd46df9058cf9a3794a71f3b6e829dc6924f178",
+    "title": "Responsible Quantum Machine Learning for Medical Imaging: A Fairness Audit Across Sensitive Subgroups",
+    "reviewed_on": "2026-11-09",
+    "review_method": "manual-primary-source",
+    "source_review_sha256": "2e1c1a2c154e5c4de3a4562c64dd4e9f8b523fc3c8f7379c284fb41a77e45064"
+  },
+  "p-47f59ce8e66d8459e0e2": {
+    "decision": "approve",
+    "fingerprint": "ddd790c1ee716ea0c98f265a98861ea9259123e06b432c80b635e1c22576203f",
+    "note": "用户于2026-11-09明确批准纳入；主控核对原始证据并编写英文摘要。",
+    "paper_version": "ff6a9c4ca1fdf5aa57c537a7ce6e726a19536dd647203b798b6066487b8bcc81",
+    "content_version": "7008977c98435077f7ddb3b6b0bbcff009bbc825e3b9766e83732d3aa095b135",
+    "title": "Decision-Architecture Dependence and Patient-Gender-Conditioned Allocation in Large-Language-Model-Assisted Nursing Allocation: A Multi-Model Counterfactual Audit.",
+    "reviewed_on": "2026-11-09",
+    "review_method": "manual-primary-source",
+    "source_review_sha256": "2e1c1a2c154e5c4de3a4562c64dd4e9f8b523fc3c8f7379c284fb41a77e45064"
   }
 }

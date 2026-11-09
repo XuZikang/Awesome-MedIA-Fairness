@@ -4,7 +4,7 @@ A collection of research on **medical algorithm fairness**, covering medical ima
 
 [![Catalog validation](https://github.com/XuZikang/Awesome-MedIA-Fairness/actions/workflows/validate-catalog.yml/badge.svg)](https://github.com/XuZikang/Awesome-MedIA-Fairness/actions/workflows/validate-catalog.yml) [![Link health](https://github.com/XuZikang/Awesome-MedIA-Fairness/actions/workflows/check-links.yml/badge.svg)](https://github.com/XuZikang/Awesome-MedIA-Fairness/actions/workflows/check-links.yml)
 
-**119 papers** · Evaluation & mitigation · Human-reviewed additions
+**125 papers** · Evaluation & mitigation · Human-reviewed additions
 
 **Browse:** [Papers](#-papers) · [Taxonomy](#-taxonomy) · [Resources](#-datasets-benchmarks-and-toolkits) · [Weekly review](reports/review-latest.md) · [Contributing](#-contributing)
 
@@ -49,10 +49,10 @@ Browse by methodology below. The latest year is expanded and grouped by month; e
 
 | Methodology | Papers | Latest records |
 |---|---:|---|
-| [Fairness Evaluation](#fairness-evaluation) | 78 | 2026-11-03 |
+| [Fairness Evaluation](#fairness-evaluation) | 82 | 2026-11-03 |
 | [Pre-processing](#unfairness-mitigation-pre-processing) | 14 | 2026-03 |
-| [In-processing](#unfairness-mitigation-in-processing) | 22 | 2024 |
-| [Post-processing](#unfairness-mitigation-post-processing) | 5 | 2026-11-07 |
+| [In-processing](#unfairness-mitigation-in-processing) | 23 | 2026-10-17 |
+| [Post-processing](#unfairness-mitigation-post-processing) | 6 | 2026-11-07 |
 
 ### Fairness Evaluation
 
@@ -121,6 +121,46 @@ Browse by methodology below. The latest year is expanded and grouped by month; e
   **TLDR:** This study audits demographic disparities in clinical multi-agent language-model systems. It evaluates five model families and four aggregation topologies on emergency cases with counterfactual demographic swaps. The abstract reports that aggregation does not neutralize the disparity and that apparently corrective late-stage interventions can leave it unchanged or amplify it.
 
   **Date:** 2026-10-28
+
+- (*arXiv'26*) **Responsible Quantum Machine Learning for Medical Imaging: A Fairness Audit Across Sensitive Subgroups**
+
+  **Domain:** ![Medical imaging](assets/badges/domain-medical-imaging.svg) · **Focus:** ![Evaluation](assets/badges/focus-evaluation.svg) ![Mitigation](assets/badges/focus-mitigation.svg) · **Stage:** ![Evaluation](assets/badges/stage-evaluation.svg) ![In-processing](assets/badges/in-processing-in-processing.svg)<br>**Attributes:** ![Skin tone](assets/badges/attributes-skin-tone.svg) ![Age](assets/badges/attributes-age.svg) · **Assets:** ![Paper only](assets/badges/assets-paper-only.svg)
+
+  [[Paper](https://arxiv.org/abs/2610.37819)]
+
+  **TLDR:** This study audits subgroup fairness of classical and simulated quantum classifiers for dermatology and chest-radiograph classification. It compares baseline models with equalized-odds regularization and gradient reversal on DDI and CheXpert-derived data, including non-inferiority checks against each baseline. Fairness effects vary by model and dataset, and some smaller subgroup gaps accompany unacceptable discrimination loss; all quantum experiments use classical simulation and establish no quantum advantage.
+
+  **Date:** 2026-10-27
+
+- (*PLOS Digital Health'26*) **Refocusing algorithmic fairness on feature-level bias: A diagnostic approach using dutch EHR data.**
+
+  **Domain:** ![EHR and clinical prediction](assets/badges/domain-ehr-and-clinical-prediction.svg) · **Focus:** ![Evaluation](assets/badges/focus-evaluation.svg) ![Bias mechanisms](assets/badges/focus-bias-mechanisms.svg) · **Stage:** ![Evaluation](assets/badges/stage-evaluation.svg)<br>**Attributes:** ![Other](assets/badges/attributes-other.svg) ![Socioeconomic status](assets/badges/attributes-socioeconomic-status.svg) · **Assets:** ![Paper only](assets/badges/assets-paper-only.svg)
+
+  [[Paper](https://doi.org/10.1371/journal.pdig.0001105)]
+
+  **TLDR:** FL-BIAS examines feature-level mechanisms behind fairness disparities in hospitalization prediction using Dutch primary-care records linked to sociodemographic data. It combines logistic regression and XGBoost with subgroup metrics, Shapley analyses and exploratory mediation analysis in a cohort of 112,872 patients. Feature-level analyses reveal contextual differences obscured by aggregate fairness metrics, while unobserved confounding limits causal interpretation of the mediation findings.
+
+  **Date:** 2026-10-26
+
+- (*arXiv'26*) **Detection and Validation of Hidden Subgroup Disparities in Clinical AI**
+
+  **Domain:** ![Medical imaging](assets/badges/domain-medical-imaging.svg) · **Focus:** ![Evaluation](assets/badges/focus-evaluation.svg) ![Bias mechanisms](assets/badges/focus-bias-mechanisms.svg) ![Mitigation](assets/badges/focus-mitigation.svg) · **Stage:** ![Evaluation](assets/badges/stage-evaluation.svg)<br>**Attributes:** ![Other](assets/badges/attributes-other.svg) · **Assets:** ![Paper only](assets/badges/assets-paper-only.svg)
+
+  [[Paper](https://arxiv.org/abs/2610.32362)]
+
+  **TLDR:** This study evaluates learned subgroup discovery for detecting hidden performance disparities in cardiomegaly classification from chest radiographs. It analyzes 223,228 images and compares discovered groups with metadata-defined groups using performance gaps and semantic coherence. Discovered groups expose larger accuracy differences than metadata-only analysis, and subgroup annotations support a proof-of-concept mitigation experiment.
+
+  **Date:** 2026-10-23
+
+- (*Healthcare'26*) **Decision-Architecture Dependence and Patient-Gender-Conditioned Allocation in Large-Language-Model-Assisted Nursing Allocation: A Multi-Model Counterfactual Audit.**
+
+  **Domain:** ![Healthcare operations](assets/badges/domain-healthcare-operations.svg) · **Focus:** ![Evaluation](assets/badges/focus-evaluation.svg) ![Bias mechanisms](assets/badges/focus-bias-mechanisms.svg) · **Stage:** ![Evaluation](assets/badges/stage-evaluation.svg)<br>**Attributes:** ![Sex and gender](assets/badges/attributes-sex-and-gender.svg) · **Assets:** ![Paper only](assets/badges/assets-paper-only.svg)
+
+  [[Paper](https://doi.org/10.3390/healthcare14203549)]
+
+  **TLDR:** This study audits gender-conditioned nursing allocation and decision-architecture sensitivity in three large-language-model configurations. It counterbalances professionally equivalent male and female nurses across candidate labels and varies patient gender in intimate-care tasks, analyzing 540 valid outputs. The tested configurations show Candidate-A dependence and patient-gender-conditioned allocation without a generalized gender-task pattern, but bundled labeling and ordering changes prevent isolating a pure position effect.
+
+  **Date:** 2026-10-21
 
 ##### 2026-09
 
@@ -1102,6 +1142,20 @@ Browse by methodology below. The latest year is expanded and grouped by month; e
 
 ### Unfairness Mitigation: In-processing
 
+#### 2026
+
+##### 2026-10
+
+- (*International Journal of Computer Assisted Radiology and Surgery'26*) **Improving the fairness and robustness of deep learning classification models through bias mitigation and post hoc calibration.**
+
+  **Domain:** ![Medical imaging](assets/badges/domain-medical-imaging.svg) · **Focus:** ![Mitigation](assets/badges/focus-mitigation.svg) ![Evaluation](assets/badges/focus-evaluation.svg) · **Stage:** ![In-processing](assets/badges/in-processing-in-processing.svg) ![Post-processing](assets/badges/post-processing-post-processing.svg)<br>**Attributes:** ![Age](assets/badges/attributes-age.svg) · **Assets:** ![Paper only](assets/badges/assets-paper-only.svg)
+
+  [[Paper](https://doi.org/10.1007/s11548-026-03805-x)]
+
+  **TLDR:** This study examines age-related bias and probability reliability in deep-learning classification of Alzheimer disease from structural MRI. It compares adversarial CF-Net and penalty-based metadata normalization within a shared CNN and separately evaluates four post hoc calibration methods across three cohorts. Metadata normalization improves stability and reduces age dependence particularly in cognitively normal and mild-cognitive-impairment groups, while age associations persist in the Alzheimer group and calibration addresses probability reliability.
+
+  **Date:** 2026-10-17
+
 <details>
 <summary>2024 · 2 papers</summary>
 
@@ -1388,6 +1442,16 @@ Browse by methodology below. The latest year is expanded and grouped by month; e
   **TLDR:** This paper studies counterfactual fairness interventions in transformer activations. It introduces MICF, a mechanistic-interpretability framework for identifying sensitive mechanisms and steering activations, including a clinical prediction application. The intervention targets a pretrained model at inference time rather than optimizing a new fairness training objective.
 
   **Date:** 2026-10-30
+
+- (*arXiv'26*) **Trajectory-Guided Steering: Mitigating Spurious Feature Bias in Clinical Classification**
+
+  **Domain:** ![Clinical NLP and foundation models](assets/badges/domain-clinical-nlp-and-foundation-models.svg) · **Focus:** ![Mitigation](assets/badges/focus-mitigation.svg) ![Evaluation](assets/badges/focus-evaluation.svg) · **Stage:** ![Post-processing](assets/badges/post-processing-post-processing.svg)<br>**Attributes:** ![Sex and gender](assets/badges/attributes-sex-and-gender.svg) · **Assets:** ![Paper only](assets/badges/assets-paper-only.svg)
+
+  [[Paper](https://arxiv.org/abs/2610.22618)]
+
+  **TLDR:** Trajectory-Guided Steering addresses spurious-feature reliance in clinical text classification, including diagnosis changes caused by gender-token substitutions. It uses layerwise prediction trajectories to select and steer individual predictions at inference time without updating base-model parameters or requiring counterfactual training pairs. Across 16 i2b2 tasks, the reported correction fixes 17.7% of errors while breaking 1.3% of correct predictions and reduces gender-swap inconsistency.
+
+  **Date:** 2026-10-15
 
 <details>
 <summary>2023 · 1 papers</summary>

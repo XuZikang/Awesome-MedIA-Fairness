@@ -95,7 +95,9 @@ def _line_index(block: str, match: re.Match[str]) -> int:
 
 def _sentences(text: str) -> list[str]:
     """Split simple English prose at terminal punctuation for the TLDR contract."""
-    return [part.strip() for part in re.findall(r"[^.!?]+[.!?](?=\s|$)", text.strip())]
+    # Decimal percentages are part of a sentence, not sentence boundaries.
+    protected = re.sub(r"(?<=\d)\.(?=\d)", "\ufff0", text.strip())
+    return [part.strip().replace("\ufff0", ".") for part in re.findall(r"[^.!?]+[.!?](?=\s|$)", protected)]
 
 
 class CatalogValidator:

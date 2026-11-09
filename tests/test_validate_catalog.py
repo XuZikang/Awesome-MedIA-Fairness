@@ -4,7 +4,7 @@ import re
 import unittest
 
 from scripts.catalog_schema import ALLOWED, MAIN_HEADING, RESOURCE_HEADING, TOPICS
-from scripts.validate_catalog import CatalogValidator, IssueFormValidator
+from scripts.validate_catalog import CatalogValidator, IssueFormValidator, _sentences
 
 
 def _slug(label: str, family: str) -> str:
@@ -387,3 +387,10 @@ class IssueFormValidatorTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class DecimalSummaryTests(unittest.TestCase):
+    def test_three_sentences_preserve_decimal_results(self):
+        sentences = ["This study audits gender bias.", "It compares clinical predictions.",
+                     "It fixes 17.7% of errors while breaking 1.3% of correct predictions."]
+        self.assertEqual(_sentences(" ".join(sentences)), sentences)

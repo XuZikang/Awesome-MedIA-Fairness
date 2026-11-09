@@ -6,26 +6,6 @@
 
 优先阅读：[方法学候选导读](methodology-priority-2026-11-09.md)（基于原始摘要的辅助整理，待你审核）。
 
-## p-8aeef9186465b5deed36
-
-文章：[Improving the fairness and robustness of deep learning classification models through bias mitigation and post hoc calibration.](https://europepmc.org/article/MED/42891802)
-
-审核决定：待审核
-审核备注：
-证据版本：待取得有效分析
-
-模型建议：待分析／原分析已过期
-
-## p-59068cc978cafdc33230
-
-文章：[Responsible Quantum Machine Learning for Medical Imaging: A Fairness Audit Across Sensitive Subgroups](https://arxiv.org/abs/2610.37819)
-
-审核决定：待审核
-审核备注：
-证据版本：待取得有效分析
-
-模型建议：待分析／原分析已过期
-
 ## p-b3eae538180f8f9919dd
 
 文章：[Causal Humility: Governing the Authority of Fairness Claims Under Causal Uncertainty](https://arxiv.org/abs/2610.25709)
@@ -46,29 +26,9 @@
 
 模型建议：待分析／原分析已过期
 
-## p-45778789f12c424e7649
-
-文章：[Trajectory-Guided Steering: Mitigating Spurious Feature Bias in Clinical Classification](https://arxiv.org/abs/2610.22618)
-
-审核决定：待审核
-审核备注：
-证据版本：待取得有效分析
-
-模型建议：待分析／原分析已过期
-
 ## p-af26ec6de648c002a857
 
 文章：[Background Bias Assessment and Mitigation in Plant Disease Detection Using EfficientNet-B0 with Image Processing](https://arxiv.org/abs/2611.00049)
-
-审核决定：待审核
-审核备注：
-证据版本：待取得有效分析
-
-模型建议：待分析／原分析已过期
-
-## p-47f59ce8e66d8459e0e2
-
-文章：[Decision-Architecture Dependence and Patient-Gender-Conditioned Allocation in Large-Language-Model-Assisted Nursing Allocation: A Multi-Model Counterfactual Audit.](https://europepmc.org/article/MED/42940596)
 
 审核决定：待审核
 审核备注：
@@ -126,29 +86,9 @@
 
 模型建议：待分析／原分析已过期
 
-## p-25f166919d5808c5e366
-
-文章：[Detection and Validation of Hidden Subgroup Disparities in Clinical AI](https://arxiv.org/abs/2610.32362)
-
-审核决定：待审核
-审核备注：
-证据版本：待取得有效分析
-
-模型建议：待分析／原分析已过期
-
 ## p-3e31b3ad8d1cc28d1bbc
 
 文章：[Fairness or Fallacy? Mapping the Landscape of AI Bias in Disease Detection](https://arxiv.org/abs/2610.26215)
-
-审核决定：待审核
-审核备注：
-证据版本：待取得有效分析
-
-模型建议：待分析／原分析已过期
-
-## p-f4567d6da1046873aea0
-
-文章：[Refocusing algorithmic fairness on feature-level bias: A diagnostic approach using dutch EHR data.](https://europepmc.org/article/MED/42932339)
 
 审核决定：待审核
 审核备注：
