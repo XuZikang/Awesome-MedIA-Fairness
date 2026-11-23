@@ -4,6 +4,8 @@
 填写后将此 Markdown 文件交给助手，或在聊天中按编号给出决定；只有明确通过的文章才会进入 README。
 模型建议不是你的审核决定；证据不足的通过项仍需补核原文。
 
+已完成的人工决定见 [11 月 23 日审核记录](review-approval-2026-11-23.md)。
+
 ## p-fafce843d0071edb38ce
 
 文章：[Investigating Patient Trust and Intention to Act in AI-Supported Clinical Decisions: Cross-Sectional Survey.](https://pubmed.ncbi.nlm.nih.gov/42970578/)
@@ -97,37 +99,6 @@
 
 [分析原文](https://europepmc.org/article/PPR/PPR1363752)
 
-## p-23fbf7871016e3d2bd55
-
-文章：[Learning through Capacity Awareness to Minimize Hospital Readmissions](https://arxiv.org/abs/2611.11493)
-
-审核决定：待审核
-审核备注：
-证据版本：10d0583d24c53656a95456a98638b601e12fcc772d8c684ade7717d6037fab88
-
-模型建议：suggest_include
-
-渠道核查：preprint；预印本不继承 CAS/CCF 等级，仅作为人工审核候选；未提供正式版本关联。
-
-发现通道：recall
-
-中文概述：提出并验证“按容量出院至目标床位”策略：在随机到达下扩大住院时长观测支撑，缓解出院决策导致的删失偏差，使再入院风险模型反复重训更准确；基于单家医院数据校准仿真，报告预测误差及风险调整后再入院成本差异下降。
-
-纳入判断：全文明确将再入院风险预测与出院决策结合，针对弱势群体的删失偏差，定义种族分组并实施仿真测量与政策比较，满足五项纳入标准。
-
-限制：核心证据为理论与基于单家医院数据的校准仿真，非前瞻性临床部署；收敛依赖风险模型正确设定或已知逆概率加权，且数据受使用协议限制不可公开。
-
-建议分类：Pre-processing
-
-证据：
-- algorithm：periodically retrained readmission risk predictors
-- evaluation：we perform 25-50 Monte Carlo simulations for each experiment
-- fairness：can exhibit censoring bias for vulnerable patients
-- groups：by group (Caucasian and African American)
-- medical：hospital discharge decisions informed by readmission risk
-
-[分析原文](https://arxiv.org/html/2611.11493v1)
-
 ## p-53d198d32447f559a258
 
 文章：[Reliable Skin-Tone Fairness in Dermatology AI: From Lesion-Level Leakage to Tone-Adaptive Learning](https://europepmc.org/article/PPR/PPR1345750)
@@ -158,68 +129,6 @@
 - medical：dermatology AI, particularly for darker skin where reduced lesion visibility and limited representation
 
 [分析原文](https://europepmc.org/article/PPR/PPR1345750)
-
-## p-632a58ca416c3eee080e
-
-文章：[Beyond Mean Absolute Error: Ancestry-Stratified Calibration and Explainability for Warfarin Dosing Models.](https://europepmc.org/article/MED/42930805)
-
-审核决定：待审核
-审核备注：
-证据版本：700d87b4b602a97840f53b4c48beb32f829736598d0a6ab0471469725ac3ce67
-
-模型建议：suggest_include
-
-渠道核查：pending；期刊或会议未在已核验的 CAS/CCF 注册表中精确匹配，保留待核验。
-
-发现通道：recall
-
-中文概述：该文基于IWPC华法林剂量数据构建可复现机器学习评估流程，比较九类模型与特征消融，并按种族标签进行留一组验证、MAPIE/NGBoost置信区间校准和SHAP解释分析，揭示总体校准良好但黑人/非裔标签覆盖不足及祖先相关特征归因差异。
-
-纳入判断：全文显示该文针对华法林稳定剂量预测这一临床任务，系统评估多种ML模型，并明确实施按祖先标签的留一组验证、亚组校准覆盖率和分层SHAP分析，提供了具体公平性测量与机制证据，符合纳入标准。
-
-限制：研究为回顾性分析，缺少CYP2C9*5/*6/*8/*11和rs12777823等关键变异；祖先标签碎片化且部分亚组样本小；未评估出血/血栓临床结局或前瞻验证；部分消融与亚组结果为无置信区间的点估计。
-
-建议分类：Evaluation
-
-证据：
-- algorithm：Nine model architectures are trained on each of the three feature sets (clinical, genetic, combined) on identical splits.
-- evaluation：Empirical coverage is reported overall and per ancestry subgroup, for both methods.
-- fairness：MAPIE is well-calibrated overall but hides a per-ancestry fairness gap.
-- groups：Groups are the Race (Reported) label in IWPC-6256 (14 labels clear the threshold)
-- medical：predicting the stable dose from demographics, comorbidities, medications, and genotype
-
-[分析原文](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13706061/fullTextXML)
-
-## p-68330d1b4300cb158380
-
-文章：[A Dynamic Inventory Rationing Model for Last-Mile Delivery of Medication in Liberia's Community Health Program](https://arxiv.org/abs/2610.32051)
-
-审核决定：待审核
-审核备注：
-证据版本：58c7166869838dc5f5f409573a4fbb92354e93b35db3c6c1a1d84a2acecfe91c
-
-模型建议：suggest_include
-
-渠道核查：preprint；预印本不继承 CAS/CCF 等级，仅作为人工审核候选；未提供正式版本关联。
-
-发现通道：recall
-
-中文概述：研究利比里亚社区健康项目中疟疾药物的动态分配，采用反射布朗运动近似和深度分裂神经网络求解库存配给策略，并在目标中加入按需求加权的α-公平效用。基于Lofa County数据与模拟评估，与公平优先等基准比较运营成本与公平性权衡。
-
-纳入判断：五项证据均满足：针对儿童疟疾药物配给，使用深度神经网络策略并以α-公平效用约束，明确比较不同地点群体的成本与公平性；属医疗健康运营中的算法公平方法学，故建议纳入。
-
-限制：公平性主要按CHAs与健康机构的地理位置定义，未涉及种族、性别等患者属性；证据来自单一地区校准的仿真，缺乏临床部署或真实患者结局验证。
-
-建议分类：In-processing
-
-证据：
-- algorithm：using deep neural networks to approximate the value function and its gradient
-- evaluation：our policy reduces operating costs by about 6% relative to the strongest benchmark
-- fairness：The allocation problem must balance these considerations while accounting for fairness across locations.
-- groups：across the populations served by the CHAs and the health facility
-- medical：Focusing on malaria cases among children under the age of five
-
-[分析原文](https://arxiv.org/html/2610.32051v1)
 
 ## p-802f852b1e8f331fe15d
 
@@ -407,37 +316,6 @@
 
 [分析原文](https://europepmc.org/article/MED/42914067)
 
-## p-b1c2129f71ee9b811d2f
-
-文章：[Data augmentation for the generalizability and transportability of fairness in a clinical heart failure algorithm](https://arxiv.org/abs/2611.15618)
-
-审核决定：待审核
-审核备注：
-证据版本：9082df337aa0967113364bd9ddbf9c4478b86dfd5fd27890be60ec03f67cac4e
-
-模型建议：suggest_include
-
-渠道核查：pending；正式发表身份追踪仍处于待重试、身份复核或冲突状态，不能由历史关联覆盖。
-
-发现通道：methodology, recall
-
-中文概述：该研究评估合成数据增强及重加权/过采样对心衰住院死亡分类公平性的影响，使用模拟实验和MIMIC-IV与Stanford STARR真实数据，考察跨时间泛化与跨中心可迁移性，并按种族/族裔分组报告AUC、精确率和召回率。
-
-纳入判断：全文以心衰住院死亡预测为临床任务，训练LR/RF/MP并比较SMOTE、CTGAN、重加权和过采样，按种族/族裔分组进行模拟与真实数据公平性评估；属于原始实证方法学评估，符合五项纳入标准。
-
-限制：真实数据仅来自两家医疗中心且非全国代表性；仅分析表格型EHR和SMOTE/CTGAN等有限增强方法，未覆盖影像等高维场景。
-
-建议分类：Pre-processing
-
-证据：
-- algorithm：We trained LR, RF, and MP algorithms to estimate in-hospital mortality.
-- evaluation：We present an empirical evaluation of synthetic data augmentation for fairness in tabular data using simulation studies
-- fairness：we investigate whether data augmentation improves fairness
-- groups：Race and ethnicity information was used for our data augmentation methods and evaluation
-- medical：estimating the in-hospital mortality of patients hospitalized with heart failure
-
-[分析原文](https://arxiv.org/html/2611.15618v1)
-
 ## p-c081b58879d4f9838b0c
 
 文章：[Explainable, Uncertainty-Aware Ensemble Learning for Brain Tumor Classification from MRI with a Simulated Fairness Audit](https://europepmc.org/article/PPR/PPR1365579)
@@ -592,37 +470,6 @@
 - medical：Deep learning models for skin lesion segmentation and classification
 
 [分析原文](https://europepmc.org/article/PPR/PPR1370450)
-
-## p-52131ebbc4ad7c4a8714
-
-文章：[Same Model, Different People: Numerical Execution Contracts and the Reproducibility of Fairness Audits](https://arxiv.org/abs/2611.23657)
-
-审核决定：待审核
-审核备注：
-证据版本：a2df2f1c6adf5aaf7c133403b8774d1bf4f3048433cb05c7566ddfce3c171205
-
-模型建议：suggest_include
-
-渠道核查：preprint；预印本不继承 CAS/CCF 等级，仅作为人工审核候选；未提供正式版本关联。
-
-发现通道：recall
-
-中文概述：该文将固定模型的数值执行契约（FP64/FP32/TF32/FP8等）视为决策函数的一部分，在收入、就业、房贷和30天再入院任务上评估公平性审计结论的可复现性；提出审计稳定性协议，报告不同契约下统计量与通过/失败判定的范围。再入院任务按种族、性别和年龄分层，显示低精度部署可改变诊断性公平判定，但未证明FP8更公平。
-
-纳入判断：文章明确以30天再入院风险预测为临床任务，审计多种模型并系统测量数值执行契约对人口学公平指标及审计判定的影响；包含种族/性别/年龄分层实证和稳定性协议，属于医学算法公平性评测方法贡献。
-
-限制：全文证据；临床仅一个公开糖尿病再入院数据集（1999–2008），4B模型在该任务近随机；多数改变判定的契约同时改变引擎、内核或权重，不能单独归因于算术精度；未观察临床部署或患者结局。
-
-建议分类：Evaluation
-
-证据：
-- algorithm：It audits three tabular model families and two open-weight language models
-- evaluation：At the frozen thresholds, strict FP32 changed none of the 4B model’s 204,204 decisions on three GPUs.
-- fairness：the demographic-parity gap, the highest minus the lowest selection rate; the equalized-odds gap
-- groups：Groups are race and sex for ACS, derived race, ethnicity and sex for HMDA, and race, sex and age band for Diabetes.
-- medical：The label is readmission within 30 days, the outcome that readmission risk models predict
-
-[分析原文](https://arxiv.org/html/2611.23657v1)
 
 ## p-fd455cc2a36673f35d55
 
@@ -809,68 +656,6 @@
 - medical：The outcome was all-cause mortality within 24 h of the initial NEWS recording.
 
 [分析原文](https://pubmed.ncbi.nlm.nih.gov/42988715/)
-
-## p-6d9033437f6ce32b7bb5
-
-文章：[Multidimensional Suicide Risk Assessment with Machine Learning using Electronic Health Records](https://arxiv.org/abs/2611.03357)
-
-审核决定：待审核
-审核备注：
-证据版本：fce6ab3e70f8c21fa9657c2ce4a061bb5f8f78808da3cd0aae492ee60dcdf3df
-
-模型建议：suggest_include
-
-渠道核查：preprint；预印本不继承 CAS/CCF 等级，仅作为人工审核候选；未提供正式版本关联。
-
-发现通道：recall
-
-中文概述：该文基于MIMIC-IV构建多维EHR特征，用年龄匹配重采样、类别加权与等渗校准比较LR、RF和XGBoost对自杀相关结局的预测，并按年龄组报告性能差异及SHAP解释。
-
-纳入判断：文章在明确的自杀风险临床预测任务中，报告了按年龄组的性能下降并采用年龄匹配重采样减少年龄混杂，属于特定任务下的子群公平性评测与预处理偏倚缓解，故建议纳入。
-
-限制：年龄匹配队列人为设定25%阳性率，结果不能代表真实部署表现；仅分析年龄一个属性，未评估种族、性别等交叉差异，且为单数据集回顾性研究，缺乏外部验证。
-
-建议分类：Pre-processing
-
-证据：
-- algorithm：Logistic regression, random forest, and XGBoost classifiers are evaluated
-- evaluation：Table V reports the test size, precision, recall, and F1 score for the calibrated XGBoost classifier within each age group.
-- fairness：Performance decreases for older age groups, with the largest declines occurring among patients aged 76 years or older.
-- groups：The age groups are 18–25, 26–35, 36–45, 46–55, 56–65, 66–75, 76–85, and 86+
-- medical：Suicide prevention remains a critical public health challenge
-
-[分析原文](https://arxiv.org/html/2611.03357v1)
-
-## p-b5b2be7d553a996ce538
-
-文章：[Federated Transfer Learning for Medical Image Classification under Mixed Skew](https://arxiv.org/abs/2611.05035)
-
-审核决定：待审核
-审核备注：
-证据版本：9b9fc2dd1b795d77ea23ce00bcc35531a62ea0afd1245670b5c9f880e6eca8f6
-
-模型建议：suggest_include
-
-渠道核查：pending；正式发表身份追踪仍处于待重试、身份复核或冲突状态，不能由历史关联覆盖。
-
-发现通道：recall
-
-中文概述：论文提出PAFP个性化联邦迁移学习框架，在FedISIC皮肤病变分类中通过客户端特征对齐模块缓解混合偏斜，并以客户端间平衡准确率方差衡量跨中心公平性，报告其同时提升无权重平均准确率并显著降低客户端间性能差异。
-
-纳入判断：论文在医学皮肤病变分类任务中提出PAFP算法，显式报告客户端间平衡准确率方差作为跨中心性能差异指标，并实证展示其降低该差异；满足医学任务、算法、公平性、分组与实证评估五项标准。
-
-限制：仅在一个皮肤镜数据集上验证；公平性仅以客户端间平衡准确率方差衡量，未涉及人口学敏感属性；概念漂移与数量偏斜未显式处理，且自然图像预训练可能混淆增益来源。
-
-建议分类：In-processing
-
-证据：
-- algorithm：We propose the Personalized Aligner Federated Pretrained (PAFP) framework, a pFL approach based on a pre-trained model
-- evaluation：we report the mean and standard deviation of the balanced accuracy over 5 independent runs
-- fairness：reducing inter-client performance variance roughly six-fold relative to the strongest baseline, yielding accuracy and cross-client equity jointly
-- groups：inter-client variance of balanced accuracy, computed within each run
-- medical：federated skin-lesion classification problem
-
-[分析原文](https://arxiv.org/html/2611.05035v1)
 
 ## p-009e12912fe734931786
 
@@ -1432,37 +1217,6 @@
 
 [分析原文](https://europepmc.org/article/PPR/PPR1365698)
 
-## p-b273b58f11d479fd36a7
-
-文章：[Contrastive fine-tuning against stain and scanner bias improves robustness and downstream performance across pathology foundation models](https://arxiv.org/abs/2611.10093)
-
-审核决定：待审核
-审核备注：
-证据版本：490a4b2e2068ba46bee99d091e723f614a0d8d57343d98540d60313a195b0381
-
-模型建议：suggest_include
-
-渠道核查：pending；正式发表身份追踪仍处于待重试、身份复核或冲突状态，不能由历史关联覆盖。
-
-发现通道：methodology
-
-中文概述：SPECTRA在PLISM配准的多扫描仪/多染色全切片图上，用LoRA适配器与对比学习对齐同一组织区域，抑制扫描仪和染色偏倚；在7个病理基础模型上提升PathoROB跨中心稳健性、留出检索、HEST和CPTAC，多数THUNDER分类任务改善，但校准及TCGA-uniform退化。
-
-纳入判断：该文为原创方法学研究，明确针对病理基础模型编码的扫描仪/中心偏倚，提出LoRA对比微调干预，并在PathoROB、PLISM、HEST、CPTAC、THUNDER上实证评估；分组为采集条件/中心而非人口学属性，但属于医学影像site/scanner bias机制与in-processing mitigation，故建议纳入。
-
-限制：全文主要将扫描仪、染色和中心差异作为技术偏倚，未按种族、性别等人口学属性分析差异；仅用单一TMA数据集PLISM训练，且PathoROB用于选checkpoint会使该指标增益偏乐观；缺乏患者级临床验证。
-
-建议分类：In-processing
-
-证据：
-- algorithm：We apply SPECTRA to a diverse set of pathology foundation models
-- evaluation：Mean RI increases in all cases
-- fairness：their representations have been shown to encode scanner- and site-specific biases
-- groups：we hold out two scanners (GT450, S210) and three stains (HRH, KR, MY)
-- medical：digital pathology-based cancer diagnosis, biomarker prediction, or prognostic assessment
-
-[分析原文](https://arxiv.org/html/2611.10093v1)
-
 ## p-b450c1e3be8d7e77257b
 
 文章：[When multi-institutional dataset aggregation masks shortcut-like behavior in Foundation Models for medical imaging.](https://pubmed.ncbi.nlm.nih.gov/42641372/)
@@ -1524,37 +1278,6 @@
 - medical：detection and staging of osteonecrosis of the femoral head
 
 [分析原文](https://europepmc.org/article/MED/42934014)
-
-## p-bfafc53ba370c5e0077a
-
-文章：[Breath-Dx: A Time Series Classification Benchmark for Disease Screening with eNose](https://arxiv.org/abs/2611.15348)
-
-审核决定：待审核
-审核备注：
-证据版本：54ef11797afa5fd2bdbc42ead7b07e9b324bf5fa4575db2f284447499b7f0ea7
-
-模型建议：suggest_include
-
-渠道核查：preprint；预印本不继承 CAS/CCF 等级，仅作为人工审核候选；未提供正式版本关联。
-
-发现通道：recall
-
-中文概述：Breath-Dx 发布 S-OH 呼气电子鼻数据集（1234 例、9 个诊断组、17 通道时序），构建首个 eNose 疾病筛查时序分类基准，在按周划分的时间切分下比较 10 种方法，量化传感器漂移造成的 0.05–0.12 AUC 下降，并报告年龄与性别分层 AUC 及仅人口学基线，主张人口学混杂须显式校正。
-
-纳入判断：全文证据显示：该工作在呼气 eNose 疾病筛查这一具体临床任务上评估 10 种分类算法，并实施了性别与年龄分层 AUC 及仅人口学基线比较，属任务特定的经验性亚组差异测量，符合基准与公平评估类研究；但缺少缓解方法、交叉性分析与明确的公平性定性，覆盖有限。
-
-限制：公平性分析仅作为基准的次要环节：只按年龄、性别分层报告 AUC，未涉及交叉性、其他敏感属性或任何缓解方法；作者把分层差异主要解释为暴露混杂与疾病表现差异，未明确框定为公平性问题，也未讨论部署层面的公平影响，子组样本量与不确定性报告不足。
-
-建议分类：Evaluation
-
-证据：
-- algorithm：We systematically evaluate 10 methods spanning four families
-- evaluation：Table VI presents results of demographic-only models and subgroup analysis.
-- fairness：For hepatitis (B18), classification is substantially better in women (AUC=0.763) than in men (AUC=0.552).
-- groups：Split the cohort into male (n=457) and female (n=567) subgroups
-- medical：a portable, non-invasive route for disease screening via exhaled breath analysis
-
-[分析原文](https://arxiv.org/html/2611.15348v1)
 
 ## p-c4d939a39c87bfe230c4
 
@@ -1839,8 +1562,8 @@
 
 文章：[Preoperative Mortality Risk Prediction and Equity Using Preoperative Score to Predict Postoperative Mortality in a Diverse US Surgical Population: Retrospective Cohort Study.](https://europepmc.org/article/MED/43050561)
 
-审核决定：待审核
-审核备注：
+审核决定：通过
+审核备注：精简表 18。人工已通过。JMIR Perioperative Medicine 的中科院大类分区待核。
 证据版本：a272060680441dfdd461e4f20ae4f6d789dbbac39e4d2251329049a47a852bdf
 
 模型建议：suggest_include
@@ -1865,37 +1588,6 @@
 - medical：estimates postoperative mortality using only preoperative variables, including age, comorbidities, and surgical procedure type
 
 [分析原文](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13781298/fullTextXML)
-
-## p-67ee09e54a621a213502
-
-文章：[Let Samples Sing in Chorus: Mitigating Spurious Correlations via Cross-view Consensus](https://arxiv.org/abs/2611.22668)
-
-审核决定：待审核
-审核备注：
-证据版本：019da0c84640513ae427368496e2f71d674cff11a56eb96452369fec55ac2261
-
-模型建议：suggest_include
-
-渠道核查：preprint；预印本不继承 CAS/CCF 等级，仅作为人工审核候选；未提供正式版本关联。
-
-发现通道：recall
-
-中文概述：提出CHORD多视图去偏框架，通过多个表征视图提出类内分区，并在目标表征空间验证反转样本，无需组标注即可重训分类头；在CheXpert胸片二分类上报告WGA 71.43%，高于ERM的31.21%。
-
-纳入判断：文本明确在CheXpert胸片二分类上评估CHORD，使用SubPopBench分组并以WGA衡量，报告WGA 71.43%对ERM 31.21%，具备医学任务、算法、公平性、分组与实证五要素；虽为通用方法但有明确医学任务评估。
-
-限制：医学证据仅限CheXpert单一胸片基准，且仅引用SubPopBench分组构造，原文未列明具体敏感属性或逐组公平性指标；方法为通用去偏框架，未见外部临床验证。
-
-建议分类：Post-processing
-
-证据：
-- algorithm：we propose CHORD (Cross-view Harmonic Outlier Reversal for Debiasing), a multi-view framework
-- evaluation：CHORD obtains a WGA of 71.43%
-- fairness：Deep models often rely on spurious correlations that fail on underrepresented groups.
-- groups：we adopt the binary task and group construction of SubPopBench
-- medical：CheXpert [ 23 ] contains over 200,000 chest radiographs; we adopt the binary task
-
-[分析原文](https://arxiv.org/html/2611.22668v1)
 
 ## p-8e1089bbb872533b5f51
 
@@ -2051,37 +1743,6 @@
 - medical：Aortic valve stenosis (AVS) is the most prevalent valvular heart disease worldwide
 
 [分析原文](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13769574/fullTextXML)
-
-## p-98740313fc34ef7175fb
-
-文章：[Metadata-Conditioned Audio Transformers for Adaptive Respiratory Sound Classification](https://arxiv.org/abs/2611.03769)
-
-审核决定：待审核
-审核备注：
-证据版本：6aa91b8e7d793dcf5411da7994cc6198f52db112f9c45400d3d7d3cf0a814327
-
-模型建议：suggest_include
-
-渠道核查：pending；正式发表身份追踪仍处于待重试、身份复核或冲突状态，不能由历史关联覆盖。
-
-发现通道：recall
-
-中文概述：该文面向ICBHI呼吸音分类，指出设备、听诊部位与患者人口学特征带来采集异质性偏差，并在音频频谱Transformer上提出门控残差融合、FiLM及TAFiLM、SoftFiLM等元数据条件化机制；用GEE统计量化设备/部位/年龄/BMI等偏差，官方划分上二分类达72.40%、四分类64.11%。
-
-纳入判断：满足五条证据：属呼吸音临床分类任务；评估AST算法；明确提出采集异质性与人口学混杂造成的分布偏差及编码/缓解问题；界定了设备、部位、年龄、BMI、性别等分组属性并有GEE测量协议；实施了统计测量与消融实验。方法为原创性的在训练阶段条件化缓解，故按偏差机制测量与In-processing缓解纳入；亚组性能差距缺失列入局限。
-
-限制：偏差分析停留在数据层与类别关联，未按设备、性别、年龄等亚组报告模型性能差距或公平性指标；模型通过设备特征代理病理的编码论断为基于前人工作的推论，缓解效果以总体分数提升体现，缺少下游不平等的直接证据。
-
-建议分类：In-processing
-
-证据：
-- algorithm：We propose a family of metadata-conditioning mechanisms for the Audio Spectrogram Transformer
-- evaluation：All statistical tests use Generalized Estimating Equation (GEE) models clustered by patient to account for repeated measures.
-- fairness：This heterogeneity introduces acquisition-induced distributional bias that confound the underlying pathological signatures.
-- groups：diverse patient demographics including sex, age, BMI, and breathing cycle duration
-- medical：Respiratory sound classification from auscultation recordings is confounded by heterogeneous acquisition conditions
-
-[分析原文](https://arxiv.org/html/2611.03769v1)
 
 ## p-05c60193f5811117e901
 
@@ -2302,37 +1963,6 @@
 
 [分析原文](https://arxiv.org/html/2610.17739v1)
 
-## p-a4a7bbf75b916beed02c
-
-文章：[SPARCL: Spatially Adaptive Regional Coverage for Active Learning in Chest X-ray Analysis](https://arxiv.org/abs/2610.17808)
-
-审核决定：待审核
-审核备注：
-证据版本：c6f35ffa20454fbae8d2d038f04405b71d9520bc998d1271ec37d7a5295ba751
-
-模型建议：suggest_include
-
-渠道核查：pending；正式发表身份追踪仍处于待重试、身份复核或冲突状态，不能由历史关联覆盖。
-
-发现通道：recall
-
-中文概述：提出SPARCL主动学习采样策略，用不确定性加空间覆盖选择CXR病灶标注样本，并引入SI/PC区域级指标评估解剖区域间的空间公平性与盲点；在多数据集上验证标注效率和空间一致性。
-
-纳入判断：全文明确将区域级Dice差异表述为解剖公平/空间可靠性，提出SI/PC测量并实证比较多种主动学习策略；满足医学任务、算法评估、公平问题、定义区域分组和测量评估五项标准。
-
-限制：公平性仅指解剖/空间区域差异，未涉及人口学敏感属性；内部钙化数据私有，外部验证有限；区域指标并非传统群体公平指标。
-
-建议分类：Pre-processing
-
-证据：
-- algorithm：We compare SPARCL against 10 strategies across four categories.
-- evaluation：Spatial reliability at a fixed 20% annotation budget on the in-house calcification dataset
-- fairness：to quantify anatomical fairness across AL rounds
-- groups：Anat-Zone Worst is the lowest pooled Dice over the seven lung zones
-- medical：Pixel-level annotation for chest X-ray (CXR) lesion segmentation is expensive
-
-[分析原文](https://arxiv.org/html/2610.17808v2)
-
 ## p-c1f95a81a24c991508ae
 
 文章：[PVminerLLM: structured extraction of patient voice from patient-generated text using large language models.](https://europepmc.org/article/MED/42952888)
@@ -2426,37 +2056,6 @@
 
 [分析原文](https://arxiv.org/html/2610.18771v1)
 
-## p-e412b17d428839c2de6b
-
-文章：[Addressing Bias Early in the AI Lifecycle: Social Determinants of Health in Functional and Cognitive Assessment Labels of Nursing Home Residents](https://arxiv.org/abs/2611.11535)
-
-审核决定：待审核
-审核备注：
-证据版本：19897c02d9774398f940182410f0613e4292f5f341e33e60ebeaa240b423f56d
-
-模型建议：suggest_include
-
-渠道核查：preprint；预印本不继承 CAS/CCF 等级，仅作为人工审核候选；未提供正式版本关联。
-
-发现通道：methodology, recall
-
-中文概述：该研究对西班牙12家养老院2407名居民的Barthel指数、MMSE和GDS评估标签进行训练前公平性审计，按性别、教育程度、职业经历和婚姻状况计算DI与SPD及bootstrap置信区间，发现三类量表均存在标签分布差异，并讨论真实健康差异、测量属性与入院选择等竞争解释。
-
-纳入判断：全文提供具体临床任务和原始标签公平性审计，实施DI/SPD与置信区间测量，覆盖多个SDoH属性；虽无模型训练，但直接针对下游AI训练标签的偏倚机制，符合任务特异性公平审计。
-
-限制：未训练或评估下游AI模型，仅审计观察标签；横断面、双变量分析、多重比较未校正、缺失值完整病例分析，且无法区分差异机制；结果限于单一地区与三类量表。
-
-建议分类：Evaluation
-
-证据：
-- algorithm：clinical assessments are subsequently used as target variables for AI models
-- evaluation：Using electronic health records of 2,407 residents from 12 nursing homes
-- fairness：two group fairness metrics, Disparate Impact (DI) and Statistical Parity Difference (SPD)
-- groups：four social determinants of health (SDoH)—sex, educational attainment, lifetime work activity and marital status
-- medical：functional and cognitive status in a cohort of 2,407 nursing home residents
-
-[分析原文](https://arxiv.org/html/2611.11535v1)
-
 ## p-11142b1729015cc61ea3
 
 文章：[Responsible Artificial Intelligence: Guiding Principles for Orthopaedic Surgery.](https://europepmc.org/article/MED/43037611)
@@ -2519,37 +2118,6 @@
 
 [分析原文](https://arxiv.org/html/2611.18439v1)
 
-## p-62eefc78443f96579d03
-
-文章：[Who Pays for Byzantine Robustness? Validity, Data-Share Dictatorships, and Fairness When Only a Few Hospitals Collaborate](https://arxiv.org/abs/2611.22904)
-
-审核决定：待审核
-审核备注：
-证据版本：22d6448742148c5122974395268673c6f420ffbee55112ffeef9912a4a37d431
-
-模型建议：suggest_include
-
-渠道核查：preprint；预印本不继承 CAS/CCF 等级，仅作为人工审核候选；未提供正式版本关联。
-
-发现通道：methodology
-
-中文概述：该文审计小型临床联邦学习联盟中拜占庭鲁棒聚合的公平性，在3个FLamby数据集上比较8种聚合规则并运行54,214次实验。发现仅按客户端数量判断有效性会漏掉数据份额独裁；加权中位数、GeoMed与CC在单中心占比过半时崩溃；留出对照把性能下降分解为诚实数据损失与真实攻击损害；无权重规则会惩罚更新最异常的医院。
-
-纳入判断：全文明确给出临床FL任务、8种聚合算法的实证审计、医院间影响与性能差异问题、医院分组及54,214次实证运行，五项标准均满足，故建议纳入。
-
-限制：证据为全文；仅3个数据集且n=4或6，模型多为线性或逻辑回归以及冻结特征，TCGA死亡样本少使区域指标噪声大；未按人口学属性评估公平性，并假设医院报告真实样本量。
-
-建议分类：Evaluation
-
-证据：
-- algorithm：We conduct an empirical audit of eight standard aggregation rules
-- evaluation：we execute 54,214 training runs
-- fairness：penalizing the smallest hospital on Heart (Switzerland, 6% share)
-- groups：Cleveland 40.9% (199/104), Hungary 35.4% (172/89), VA 17.5% (85/45), Switzerland 6.2% (30/16)
-- medical：three realistic cross-silo medical datasets from the FLamby benchmark
-
-[分析原文](https://arxiv.org/html/2611.22904v1)
-
 ## p-7abe2e1b40324a466501
 
 文章：[Correcting historical bias in machine learning predictions of healthcare utilization in India.](https://europepmc.org/article/MED/43050464)
@@ -2611,68 +2179,6 @@
 - medical：
 
 [分析原文](https://arxiv.org/html/2610.25709v1)
-
-## p-2179b7a81c385b0a7262
-
-文章：[Explanation-Aware Fairness Beyond Output Parity: Joint Output-Attribution Regularization for Medical Image Classification](https://arxiv.org/abs/2611.13052)
-
-审核决定：待审核
-审核备注：
-证据版本：199ed1cf4368ae6f8c25fd55c505622f83d8361fab92bd4b05e2ce51bb498491
-
-模型建议：suggest_include
-
-渠道核查：preprint；预印本不继承 CAS/CCF 等级，仅作为人工审核候选；未提供正式版本关联。
-
-发现通道：recall
-
-中文概述：提出面向医学图像分类的输出-归因联合公平正则化：证明线性分类头下输出差异可因归因差异相互抵消而被掩盖，并引入归因差异惩罚。基于960个DINOv2-LoRA模型，在HAM10000性别公平和Harvard-GF种族公平任务上评估，报告Pareto超体积提升及同效用约束下更低的均衡赔率差与归因差异。
-
-纳入判断：全文为原创方法学研究，明确针对皮肤病变分类和青光眼检测，提出算法公平正则化并实施多模型、多数据集的公平性与效用权衡评估，满足五项证据标准。
-
-限制：理论分解依赖线性分类头；仅覆盖两个二分类医学影像任务与性别/种族属性；结果基于预设正则化网格，未验证非线性预测头及更多模态或属性。
-
-建议分类：In-processing
-
-证据：
-- algorithm：Across 960 DINOv2-LoRA models on HAM10000 and Harvard-GF datasets for gender and race fairness
-- evaluation：960 trained models across five HAM10000 folds and five Harvard-GF training seeds
-- fairness：Can attribution-level fairness provide complementary information to output-only regularization
-- groups：gender as the sensitive attribute (Female and Male)
-- medical：skin-lesion classification with gender and glaucoma detection with race
-
-[分析原文](https://arxiv.org/html/2611.13052v1)
-
-## p-432b82ceb99f2cb71535
-
-文章：[Do Large Language Models Show Racial and Sex Bias in Pain Management? A Counterfactual Audit of GPT, Claude, Gemini, Llama, DeepSeek and Qwen](https://arxiv.org/abs/2611.14935)
-
-审核决定：待审核
-审核备注：
-证据版本：ebc4069f27cb9738f61efe7fc39ae50797303a9e9edc524b7169cd11346a140a
-
-模型建议：suggest_include
-
-渠道核查：preprint；预印本不继承 CAS/CCF 等级，仅作为人工审核候选；未提供正式版本关联。
-
-发现通道：methodology, recall
-
-中文概述：审计4个开源权重模型及24种配置的17个LLM在疼痛严重度与阿片处方上的种族和性别公平性，采用明示标签与姓名线索的反事实比较；未发现经多重校正存活的差异，少数存活差异偏向黑人患者，并提出配对种子、多姓名与噪声下限等审计要点。
-
-纳入判断：全文开展疼痛管理与阿片处方的反事实审计，明确评估17个LLM在种族/性别线索下的输出，并实施大规模统计、等效性与噪声下限分析；为原始任务特异性公平性评估。
-
-限制：探索性、非预注册；自编病例仅6例且未经临床审阅；阿片决策区间较宽；单提示/温度与JSON约束；姓名效度未验证；审计协议未做消融。
-
-建议分类：Evaluation
-
-证据：
-- algorithm：24 configurations of 17 proprietary and open-weight models
-- evaluation：Every one of the 574 severity differences in the study
-- fairness：racial and sex disparities in pain assessment
-- groups：every combination of four races and two sexes
-- medical：whether LLMs assess pain or recommend opioids differently by the patient’s race or sex
-
-[分析原文](https://arxiv.org/html/2611.14935v1)
 
 ## p-fe3978ecbe1170a7faa8
 
@@ -2935,37 +2441,6 @@
 - medical：
 
 [分析原文](https://europepmc.org/article/MED/42209435)
-
-## p-420641074c513dea13da
-
-文章：[Can General-Purpose Generative AI Supply Training Data for Medical Vision Models? A Multimodal Retrospective Study](https://arxiv.org/abs/2611.10484)
-
-审核决定：待审核
-审核备注：
-证据版本：2579de1d0ec7d54211e2fe75a159f7549ad2f7fc560f94d9d6285138a7e50877
-
-模型建议：suggest_include
-
-渠道核查：preprint；预印本不继承 CAS/CCF 等级，仅作为人工审核候选；未提供正式版本关联。
-
-发现通道：recall
-
-中文概述：该多模态回顾性研究评估通用生成式模型（Nano Banana）合成医学图像用于训练、亚组增强与模型审计；在胸片、CT、眼底和颈动脉超声任务中比较合成数据与真实数据模型，并针对代表性不足的年龄与BMI亚组做定向合成增强，报告诊断性能、校准、决策曲线及亚组改善。
-
-纳入判断：原文明确以合成数据增强代表性不足的年龄/BMI亚组，并报告亚组层面的性能变化，属医学影像中的预加工公平性缓解与偏差测量；同时讨论生成器诱导偏差与属性保真度，满足五项证据标准。
-
-限制：证据为单一预印本全文；合成数据规模小、任务与模态有限，未设非劣效检验；公平性主要体现为年龄/BMI亚组性能增强，缺少种族、性别等多属性的系统公平性评估，且专家读者数量有限。
-
-建议分类：Pre-processing
-
-证据：
-- algorithm：models trained exclusively on synthetic images were externally validated on real-world datasets and compared with models trained with real images
-- evaluation：When synthetic data from both underrepresented age groups were added, subgroup performance improved for both the
-- fairness：We also investigated whether synthetic data could improve fairness and accuracy of a medical AI model by augmenting underrepresented real-world data.
-- groups：The age prediction cohort is categorized into three groups
-- medical：pneumonia recognition on chest x-ray (CXR) images, renal calculus detection on CT, and retinal detachment recognition on fundus photographs
-
-[分析原文](https://arxiv.org/html/2611.10484v1)
 
 ## p-6006fe0002047d48542a
 
@@ -3589,37 +3064,6 @@
 
 [分析原文](https://europepmc.org/article/MED/43036953)
 
-## p-fb8ea8b84e0769171023
-
-文章：[The Predictability Bias of Joint-Embedding Predictive Learning in Medical Imaging](https://arxiv.org/abs/2610.13237)
-
-审核决定：待审核
-审核备注：
-证据版本：7cd851df1a21d6efa5f46bb8dae810687e6c0e1690f3fab6f13ce7e575548146
-
-模型建议：suggest_include
-
-渠道核查：preprint；预印本不继承 CAS/CCF 等级，仅作为人工审核候选；未提供正式版本关联。
-
-发现通道：methodology
-
-中文概述：提出“可预测性偏置”：JEPA 的点预测偏好可见上下文可解释的解剖结构，而忽略不可预测的局部病变；训练 TAP-JEPA 并在 113,611 例 CT 上复放掩码、教师与预测器，发现病理判别力下降大于解剖、病理表征向匹配对照偏移，且下游决策对病理 token 依赖很弱。
-
-纳入判断：全文把可预测性偏置定义为算法偏差并实施复放审计，报告病理与解剖的 Skill 差异及病理—对照位移；满足医学任务、算法评估、偏差测量、临床分组比较与实证评估五项标准。无人口学公平属性，故按非受保护分组处理。
-
-限制：仅审计单一 CT JEPA 检查点，未涉及人口学敏感属性或临床结局；缺少正式缓解实验；病理与匹配对照属临床分组而非受保护群体。
-
-建议分类：Evaluation
-
-证据：
-- algorithm：We trained TAP-JEPA , a ViT-B/3D model, for 240 epochs on 113,611 thoraco-abdomino-pelvic CT volumes
-- evaluation：We then audit the learned predictive pathway by replaying the exact masking, teacher, and predictor computations used during training.
-- fairness：Prediction lowers the mean Skill (prevalence-normalized average precision) from 0.388 to 0.271 for pathology, but only from 0.921 to 0.873 for anatomy.
-- groups：separating pathology from matched control regions in the same organ
-- medical：In computed tomography (CT), recurrent anatomy is predictable from context, whereas the sporadic, localized pathology that determines clinical interpretation often is not.
-
-[分析原文](https://arxiv.org/html/2610.13237v1)
-
 ## p-263284ee8b9a724f7139
 
 文章：[Leveraging AI-ECG Technology for Early Notification and Tracking of AF Development (LATENT): A Randomized Controlled Trial.](https://pubmed.ncbi.nlm.nih.gov/42998297/)
@@ -3748,8 +3192,8 @@
 
 文章：[Paradoxical inflation of prediction model performance measures in minority patient subgroups: the role of upstream bias.](https://europepmc.org/article/MED/42907563)
 
-审核决定：待审核
-审核备注：
+审核决定：通过
+审核备注：精简表 13。人工已通过。npj Health Systems 的中科院大类分区待核。
 证据版本：3d8d3bf0421f806e5a49eafa6afaf9d581942179de4fb1449d775157c4ddc645
 
 模型建议：suggest_include
@@ -5666,37 +5110,6 @@
 
 [分析原文](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13723951/fullTextXML)
 
-## p-b4814a974815c91c634d
-
-文章：[Feature Scaling Beats Architecture Choice in Offline Respiratory Screening for Low-Resource Clinics](https://arxiv.org/abs/2610.33030)
-
-审核决定：待审核
-审核备注：
-证据版本：b62cab84a42eeb7d1e66da726ad1a666a3d26e16edaeae6d6d15f3a83734add1
-
-模型建议：suggest_include
-
-渠道核查：pending；正式发表身份追踪仍处于待重试、身份复核或冲突状态，不能由历史关联覆盖。
-
-发现通道：recall
-
-中文概述：该文在呼吸音五分类任务上以患者分组交叉验证比较SVM、随机森林与CRNN，发现标准化使SVM宏召回提高27点，而录音来源（采样率）与类别强相关，模型学习了来源捷径；并提出按采样率的类别召回诊断以揭示基准偏倚。
-
-纳入判断：全文显示该研究在呼吸音分类中实施患者分组评测，测量录音来源与类别的强关联及分采样率召回差异，并给出可复用诊断，属算法偏倚机制与评测证据，满足五项标准。
-
-限制：来源偏倚的分采样率分析为事后探索，少数层仅4–7名患者，且数据集无地理或人口学标签，无法评估非洲患者；模型未做临床验证，来源与类别仍纠缠。
-
-建议分类：Evaluation
-
-证据：
-- algorithm：SVM over 30 summary features (MFCC, ZCR and RMS statistics)
-- evaluation：using pre-registered patient-grouped cross-validation (25 runs per configuration)
-- fairness：what a source shortcut predicts: the models learned recording provenance as well as disease
-- groups：a rate-by-class table and within-class recall by rate
-- medical：five-class respiratory-sound corpus of 1,211 clips (asthma, COPD, pneumonia, Bronchial, healthy)
-
-[分析原文](https://arxiv.org/html/2610.33030v1)
-
 ## p-b6013b3588eaf73c1be0
 
 文章：[Fitting Dynamic Conditional Densities to Cross-Sectional Returns with Persistent Tail Intensities](https://arxiv.org/abs/2610.32011)
@@ -6670,37 +6083,6 @@
 
 [分析原文](https://pubmed.ncbi.nlm.nih.gov/42913471/)
 
-## p-6cf6a4f28a4f1d1be98c
-
-文章：[Health-System-Wide Mapping of Demographic Information in Routine Clinical Histopathology](https://arxiv.org/abs/2611.09851)
-
-审核决定：待审核
-审核备注：
-证据版本：a576da8f8afea5526b38f29f9d843d92bf886c9879bc8b2ac45f0a81986e67ed
-
-模型建议：suggest_include
-
-渠道核查：preprint；预印本不继承 CAS/CCF 等级，仅作为人工审核候选；未提供正式版本关联。
-
-发现通道：recall
-
-中文概述：该研究以病理基础模型特征与注意力多示例学习为工具，在25个器官、约130万张H&E全切片、69个器官—人口学组合上系统测量性别、年龄组与自述种族的可预测性，并以人群均衡训练、诊断文本聚类分层评估和聚类约束分组训练为对照，量化残存的人口学信号并给出候选组织形态解释。
-
-纳入判断：这是计算病理中原原创性的系统测量研究：在明确人口学子组上，用基础模型加多示例学习实证评估人口学信息的可编码性，并设计多组训练与分层评估对照。五项证据均满足，属公平性测量与偏倚机制工作，且非综述或评论。
-
-限制：单中心回顾性队列；仅测量信号可预测性，未定位具体组织形态特征，也不能证明下游临床模型的差异性能；诊断聚类依赖大模型抽取文本，S2与S3比较混有训练暴露差异。
-
-建议分类：Evaluation
-
-证据：
-- algorithm：using pathology foundation-model representations and multiple-instance learning
-- evaluation：with pan-organ mean AUROCs of 0.828 for sex, 0.733 for age group, and 0.662 for self-reported race
-- fairness：to systematically map information associated with sex, age group, and self-reported race
-- groups：we evaluated sex, age group, and self-reported race across 69 organ–demographic combinations
-- medical：analyzed 1.3 million hematoxylin and eosin whole-slide images from 257,322 patients across 25 organs
-
-[分析原文](https://arxiv.org/html/2611.09851v1)
-
 ## p-79ee704c380a3242315c
 
 文章：[Evaluating four consumer artificial intelligence chatbots on smartphone dermatology images: diagnostic accuracy, the contribution of clinical context, and skin-tone equity](https://europepmc.org/article/PPR/PPR1365867)
@@ -7074,37 +6456,6 @@
 - medical：
 
 [分析原文](https://pubmed.ncbi.nlm.nih.gov/42648007/)
-
-## p-3bb3cbfd2b5d0a436236
-
-文章：[Technological Integration in Triage With AI and Machine Learning Compared With Conventional Triage and Narrative Synthesis of Telehealth for Patient Prioritization in Emergency and Acute Care Settings: Systematic Review and Meta-Analysis.](https://europepmc.org/article/MED/42896140)
-
-审核决定：待审核
-审核备注：
-证据版本：24d67961fcf44bd5f00ba518b8e963c837c5ee74107b2763826c24a9dc64cae8
-
-模型建议：suggest_include
-
-渠道核查：eligible；精确匹配到 CAS 1/2 区期刊或 CCF A/B 主会记录。
-
-发现通道：recall
-
-中文概述：该系统综述与荟萃分析评估AI/ML急诊分诊及远程分诊技术，汇总成人ED危重结局AUC，并叙事综合运营、实施、公平与经济学证据；公平部分包含按年龄、性别、种族/族裔、语言和社会经济地位的亚组表现及探索性公平建模。
-
-纳入判断：文章明确针对成人急诊分诊AI预测，并报告亚组表现和具体的公平影响建模框架，符合综述对特定任务和详细公平分析的双重要求；但公平证据为次要且探索性，证据强度有限。
-
-限制：公平分析为次要结局，亚组数据有限，公平建模为假设性投影；未提供原始亚组公平指标或缓解方法比较。
-
-建议分类：Evaluation
-
-证据：
-- algorithm：AI-assisted triage systems demonstrated high pooled discriminative performance
-- evaluation：Equity modeling was informed by subgroup-stratified performance differences reported in implementation studies, translating subgroup-specific sensitivity changes into avoided FNs per 10,000 visits within each subgroup
-- fairness：Equity considerations are particularly important in AI- and telehealth-enabled triage.
-- groups：subgroup performance by age, sex, race/ethnicity, language, and socioeconomic status
-- medical：AI-assisted prediction of critical care requirements or clinical deterioration
-
-[分析原文](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13679870/fullTextXML)
 
 ## p-6ddbcaab5d3278c65a4a
 
@@ -8244,37 +7595,6 @@
 
 [分析原文](https://europepmc.org/article/MED/43008935)
 
-## p-2fbe7831b9b180641cb4
-
-文章：[Generative Artificial Intelligence in Health Research and Care: A Narrative Review of Applications and Implications for Alzheimer's Disease and Related Dementia.](https://europepmc.org/article/MED/42939080)
-
-审核决定：待审核
-审核备注：
-证据版本：d41ddff22810644a077b017bb87b4590ba81ef5faebd27478e94dc1bfb8524a7
-
-模型建议：suggest_include
-
-渠道核查：pending；期刊或会议未在已核验的 CAS/CCF 注册表中精确匹配，保留待核验。
-
-发现通道：recall
-
-中文概述：该叙述性综述梳理生成式AI与LLM在ADRD筛查、照护、合成影像数据及多模态建模中的应用，并专章讨论数据与模型偏倚、语音识别种族差异、MRI跨人群迁移性能下降、亚组审计及数据重加权/对抗去偏等缓解措施，兼及监管与全球公平议题。
-
-纳入判断：该综述明确以ADRD为医学任务，并在第5节及全球视角中给出语音识别种族差异、认知测验群体偏倚、MRI跨人群迁移F1下降、亚组审计与去偏方法等具体公平性分析，满足综述纳入的两项条件；但属于综述而非原始方法学研究。
-
-限制：全文为叙述性综述，未开展原始实验；公平性证据多为二手汇总，所纳入研究普遍样本小、回顾性，部分缺乏外部验证，偏倚讨论较为分散。
-
-建议分类：Multi-stage
-
-证据：
-- algorithm：Bias in generative AI arises from unrepresentative training data and flawed models.
-- evaluation：MRI classifiers trained on ADNI (83% White participants) transferred to a Korean cohort with a zero-shot MCI-class F1 of only 0.34
-- fairness：applying fairness-aware methods (such as data reweighting and adversarial debiasing)
-- groups：higher word error rates for black speakers than for white speakers
-- medical：Alzheimer’s disease and related dementia (ADRD) research and care
-
-[分析原文](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13701688/fullTextXML)
-
 ## p-38be472f7cef8bd16935
 
 文章：[Toward a Common Language for Trustworthy AI in Healthcare](https://europepmc.org/article/PPR/PPR1345874)
@@ -9256,37 +8576,6 @@
 - medical：Cancer screening programmes have substantially reduced cancer mortality in high-income settings
 
 [分析原文](https://pubmed.ncbi.nlm.nih.gov/42772653/)
-
-## p-44e0164e5e89e0f3c26d
-
-文章：[Non-Invasive Blood Glucose Monitoring Using Machine Learning and Optical Approaches: A Systematic Literature Review and a Proposed Framework for Reproducible and Clinically Reliable Research.](https://europepmc.org/article/MED/42944435)
-
-审核决定：待审核
-审核备注：
-证据版本：7f6114e6e74bd8bbd23ca93ff302b6fb09b8cf22bb76b32cda49a77b8acb1b78
-
-模型建议：suggest_include
-
-渠道核查：pending；期刊或会议未在已核验的 CAS/CCF 注册表中精确匹配，保留待核验。
-
-发现通道：recall
-
-中文概述：本文系统综述三十七项基于人工智能与光学传感的无创血糖监测研究，提出可复现的研究框架，并用作者自定评分评估捷径学习风险。文中讨论以体重指数、年龄、性别作为模型输入的风险，以及黑色素对光吸收与散射的独立影响，建议记录肤色并开展跨肤色、体型的公平性评估与亚组分析；同时指出小样本、非受试者级划分与缺乏实时验证会削弱泛化。
-
-纳入判断：该文针对无创血糖监测这一具体临床任务，提供实质性算法公平分析：指出黑色素与人口学输入导致的捷径学习机制，并提出肤色记录、亚组分析与跨肤色评估框架；但属文献综合而非原始实验，故按综述类纳入。
-
-限制：评分工具为作者自定而非经验证工具，未由两名评审独立评分；未报告按肤色等亚组的公平性定量结果，公平性内容多属框架建议而非实证比较；所提框架未经前瞻性检验。
-
-建议分类：Evaluation
-
-证据：
-- algorithm：at least one machine-learning, deep-learning, or comparable mathematical algorithm used for glucose estimation
-- evaluation：we rated 62% of the studies as High risk of shortcut learning
-- fairness：fairness evaluation across skin tones and body types
-- groups：it can differ by age group, sex, ethnicity, or skin pigmentation
-- medical：Diabetes Mellitus (DM) is a condition characterised by elevated blood glucose levels
-
-[分析原文](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13708778/fullTextXML)
 
 ## p-463e6a0b4bc2a1c37160
 

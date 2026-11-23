@@ -765,5 +765,230 @@
     "reviewed_on": "2026-11-09",
     "review_method": "manual-primary-abstract",
     "source_review_sha256": "e58ca4ad0c3657c8e6cbcf33004ed9302c2961fbb57e830cd9d04526f735cc07"
+  },
+  "p-2179b7a81c385b0a7262": {
+    "decision": "approve",
+    "fingerprint": "199ed1cf4368ae6f8c25fd55c505622f83d8361fab92bd4b05e2ce51bb498491",
+    "note": "精简表 01。人工已通过，按预印本收录。",
+    "paper_version": "cb592f2651d305e754363264752fb7178fd9350c2e82d718d18e829c59fac4a7",
+    "content_version": "4b890b644084f33ce804b7a2f9d14b32916dea4e9ce08dd3a2b415cbfad5fbc5",
+    "title": "Explanation-Aware Fairness Beyond Output Parity: Joint Output-Attribution Regularization for Medical Image Classification",
+    "source_review_sha256": "99655431ba6898edfa08040e93694593b156353bfeb28eea56c596a5ee152264"
+  },
+  "p-b1c2129f71ee9b811d2f": {
+    "decision": "approve",
+    "fingerprint": "9082df337aa0967113364bd9ddbf9c4478b86dfd5fd27890be60ec03f67cac4e",
+    "note": "精简表 02。人工已通过，按预印本收录。",
+    "paper_version": "17471d24cf4877eb9fbe63da04ed44a8dfc38d8b6d9d5d24f2270e9a7788ce3e",
+    "content_version": "8541cf0b28f65769917b79d5cddacd25d9d8cb904325c29302dd4288134a88c6",
+    "title": "Data augmentation for the generalizability and transportability of fairness in a clinical heart failure algorithm",
+    "source_review_sha256": "99655431ba6898edfa08040e93694593b156353bfeb28eea56c596a5ee152264"
+  },
+  "p-67ee09e54a621a213502": {
+    "decision": "approve",
+    "fingerprint": "019da0c84640513ae427368496e2f71d674cff11a56eb96452369fec55ac2261",
+    "note": "精简表 03。人工已通过，按预印本收录。",
+    "paper_version": "c2d6ab33f67dbad5e0ccd7b8e45287041a493fde84ac8cc0de155e5ef488a91c",
+    "content_version": "2843ce5885482e4c7dc85832bc39ca46eec9dd635adad4f3930b3594444e3db7",
+    "title": "Let Samples Sing in Chorus: Mitigating Spurious Correlations via Cross-view Consensus",
+    "source_review_sha256": "99655431ba6898edfa08040e93694593b156353bfeb28eea56c596a5ee152264"
+  },
+  "p-52131ebbc4ad7c4a8714": {
+    "decision": "approve",
+    "fingerprint": "a2df2f1c6adf5aaf7c133403b8774d1bf4f3048433cb05c7566ddfce3c171205",
+    "note": "精简表 04。人工已通过，按预印本收录。",
+    "paper_version": "23e4a6d9f88f3e55ac0ce959683753108f0b31a94941e1604bfd7a077ed3d4fb",
+    "content_version": "a41d907736c0f677ebf878aecfdd1e77c3ecd999ea3740fb22fdd90ede8ba09f",
+    "title": "Same Model, Different People: Numerical Execution Contracts and the Reproducibility of Fairness Audits",
+    "source_review_sha256": "99655431ba6898edfa08040e93694593b156353bfeb28eea56c596a5ee152264"
+  },
+  "p-23fbf7871016e3d2bd55": {
+    "decision": "approve",
+    "fingerprint": "10d0583d24c53656a95456a98638b601e12fcc772d8c684ade7717d6037fab88",
+    "note": "精简表 05。人工已通过，按预印本收录。",
+    "paper_version": "df7478059f6840bf60ae9984e32909417eee285707722afa856beea65a0130cf",
+    "content_version": "c4d6f82bef468023612cfbf3ba245bbdd5136e6c2cd3fc62a4b81827cabae546",
+    "title": "Learning through Capacity Awareness to Minimize Hospital Readmissions",
+    "source_review_sha256": "99655431ba6898edfa08040e93694593b156353bfeb28eea56c596a5ee152264"
+  },
+  "p-bfafc53ba370c5e0077a": {
+    "decision": "reject",
+    "fingerprint": "54ef11797afa5fd2bdbc42ead7b07e9b324bf5fa4575db2f284447499b7f0ea7",
+    "note": "精简表 06。用户排除。",
+    "paper_version": "d94f9d7ec9940675dfb6dcdb144d63c31686d04254d418d29fae1ba488a7abef",
+    "content_version": "c1d505d414f7606e1f06020bdb3da638f0b790bc28771f57ea2fadfde429b377",
+    "title": "Breath-Dx: A Time Series Classification Benchmark for Disease Screening with eNose",
+    "source_review_sha256": "99655431ba6898edfa08040e93694593b156353bfeb28eea56c596a5ee152264"
+  },
+  "p-b5b2be7d553a996ce538": {
+    "decision": "reject",
+    "fingerprint": "9b9fc2dd1b795d77ea23ce00bcc35531a62ea0afd1245670b5c9f880e6eca8f6",
+    "note": "精简表 07。用户排除。",
+    "paper_version": "4b1c4f86fbd50893e272304082acf5ecac80057fc4efe572f316de84637657a9",
+    "content_version": "e59b1b40e22beac53c6f8482e1eeecc7aa17dc01aa2a73d0d500f65f165b05b0",
+    "title": "Federated Transfer Learning for Medical Image Classification under Mixed Skew",
+    "source_review_sha256": "99655431ba6898edfa08040e93694593b156353bfeb28eea56c596a5ee152264"
+  },
+  "p-b273b58f11d479fd36a7": {
+    "decision": "reject",
+    "fingerprint": "490a4b2e2068ba46bee99d091e723f614a0d8d57343d98540d60313a195b0381",
+    "note": "精简表 08。用户排除。",
+    "paper_version": "f5ab2da2ab363c862c4c004e4602049fb24e1e06b9ff7a7565cc3faf037c6f46",
+    "content_version": "7f250f378ce4008f7ef8759409c67672b9d22ce29fe5cbd571ce34a37511406f",
+    "title": "Contrastive fine-tuning against stain and scanner bias improves robustness and downstream performance across pathology foundation models",
+    "source_review_sha256": "99655431ba6898edfa08040e93694593b156353bfeb28eea56c596a5ee152264"
+  },
+  "p-98740313fc34ef7175fb": {
+    "decision": "reject",
+    "fingerprint": "6aa91b8e7d793dcf5411da7994cc6198f52db112f9c45400d3d7d3cf0a814327",
+    "note": "精简表 09。用户排除。",
+    "paper_version": "f457343edf769b5b3fdec59abf21ac32bd14e27b56a5807ed0c2cc03956fda20",
+    "content_version": "df6bbf274a7cae0e2f3bac4afe64ac2ddaeed8b9f83fa56e091db12d1b47575c",
+    "title": "Metadata-Conditioned Audio Transformers for Adaptive Respiratory Sound Classification",
+    "source_review_sha256": "99655431ba6898edfa08040e93694593b156353bfeb28eea56c596a5ee152264"
+  },
+  "p-420641074c513dea13da": {
+    "decision": "reject",
+    "fingerprint": "2579de1d0ec7d54211e2fe75a159f7549ad2f7fc560f94d9d6285138a7e50877",
+    "note": "精简表 10。用户排除。",
+    "paper_version": "5d3038ab0559e47f1ef070853696d512f82e0aac438b5acb26120b640d92e50c",
+    "content_version": "d8b3412524c7b969c12a6a093406705bc3ecf0c3366718e1114355252a5014d7",
+    "title": "Can General-Purpose Generative AI Supply Training Data for Medical Vision Models? A Multimodal Retrospective Study",
+    "source_review_sha256": "99655431ba6898edfa08040e93694593b156353bfeb28eea56c596a5ee152264"
+  },
+  "p-a4a7bbf75b916beed02c": {
+    "decision": "reject",
+    "fingerprint": "c6f35ffa20454fbae8d2d038f04405b71d9520bc998d1271ec37d7a5295ba751",
+    "note": "精简表 11。用户排除。",
+    "paper_version": "9e43c30dfabf26bd50fcb94733ad8a665b16e63219513b6bdce11840f736221a",
+    "content_version": "e3e2066541e9e211049312c0826ac11f3ee28ab9bf9f79d6c14b56d445dff7c5",
+    "title": "SPARCL: Spatially Adaptive Regional Coverage for Active Learning in Chest X-ray Analysis",
+    "source_review_sha256": "99655431ba6898edfa08040e93694593b156353bfeb28eea56c596a5ee152264"
+  },
+  "p-68330d1b4300cb158380": {
+    "decision": "reject",
+    "fingerprint": "58c7166869838dc5f5f409573a4fbb92354e93b35db3c6c1a1d84a2acecfe91c",
+    "note": "精简表 12。用户排除。",
+    "paper_version": "502dcfbdf463e0b882c2142b5b4f42601516349eb5a905c87143c12682694dd2",
+    "content_version": "dad34ae640ab8197b4917dd85e5a5c495efd189608ebd3d1a2074e3f4321ed92",
+    "title": "A Dynamic Inventory Rationing Model for Last-Mile Delivery of Medication in Liberia's Community Health Program",
+    "source_review_sha256": "99655431ba6898edfa08040e93694593b156353bfeb28eea56c596a5ee152264"
+  },
+  "p-7ce27dede71de2b2c84e": {
+    "decision": "approve",
+    "fingerprint": "3d8d3bf0421f806e5a49eafa6afaf9d581942179de4fb1449d775157c4ddc645",
+    "note": "精简表 13。人工已通过。npj Health Systems 的中科院大类分区待核。",
+    "paper_version": "9f8ec1b394e841b79f4f23e2c390b0258f18fb4ddf322ebfc0a87ce7ef25d5bd",
+    "content_version": "574a1ff989db4467eb5a375a00537d9fa63e41b08305ac8e6c976d5be59f428b",
+    "title": "Paradoxical inflation of prediction model performance measures in minority patient subgroups: the role of upstream bias.",
+    "source_review_sha256": "99655431ba6898edfa08040e93694593b156353bfeb28eea56c596a5ee152264"
+  },
+  "p-632a58ca416c3eee080e": {
+    "decision": "reject",
+    "fingerprint": "700d87b4b602a97840f53b4c48beb32f829736598d0a6ab0471469725ac3ce67",
+    "note": "精简表 14。用户排除。",
+    "paper_version": "fc1b76ba1489264b30cd55d7fb8658a458573c316af825df1d8dd941d2afe07c",
+    "content_version": "bc049685ef6d02038344455f0a70d1bb9df24266ef821d7a8f93aa88ca036b8c",
+    "title": "Beyond Mean Absolute Error: Ancestry-Stratified Calibration and Explainability for Warfarin Dosing Models.",
+    "source_review_sha256": "99655431ba6898edfa08040e93694593b156353bfeb28eea56c596a5ee152264"
+  },
+  "p-432b82ceb99f2cb71535": {
+    "decision": "approve",
+    "fingerprint": "ebc4069f27cb9738f61efe7fc39ae50797303a9e9edc524b7169cd11346a140a",
+    "note": "精简表 15。人工已通过，按预印本收录。",
+    "paper_version": "d2fa715a6fb68861504888b3832271307632e9eed206b0e1336a406949c235fc",
+    "content_version": "f1712b03f85101d2acfe39536a80a2c36359c356575cee01cacdb38f8dd41ed0",
+    "title": "Do Large Language Models Show Racial and Sex Bias in Pain Management? A Counterfactual Audit of GPT, Claude, Gemini, Llama, DeepSeek and Qwen",
+    "source_review_sha256": "99655431ba6898edfa08040e93694593b156353bfeb28eea56c596a5ee152264"
+  },
+  "p-62eefc78443f96579d03": {
+    "decision": "reject",
+    "fingerprint": "22d6448742148c5122974395268673c6f420ffbee55112ffeef9912a4a37d431",
+    "note": "精简表 16。用户排除。",
+    "paper_version": "e7e967af51c88834d5a30dbee5c1a36fa7716936941a3495046482de8f6b1235",
+    "content_version": "23071d7cf5703a458ac64ea967b19ee582bce969afceb0ccb76cb79a9fc50b7c",
+    "title": "Who Pays for Byzantine Robustness? Validity, Data-Share Dictatorships, and Fairness When Only a Few Hospitals Collaborate",
+    "source_review_sha256": "99655431ba6898edfa08040e93694593b156353bfeb28eea56c596a5ee152264"
+  },
+  "p-6d9033437f6ce32b7bb5": {
+    "decision": "approve",
+    "fingerprint": "fce6ab3e70f8c21fa9657c2ce4a061bb5f8f78808da3cd0aae492ee60dcdf3df",
+    "note": "精简表 17。人工已通过，按预印本收录。",
+    "paper_version": "7bcdf6bf85a60103e99218af09cbc8547945a3275d016281418942e6c95a8602",
+    "content_version": "39340c0450720158c6fc4149bc7a20d8efff447313d4cbcb93b8fb3a4e89fc7f",
+    "title": "Multidimensional Suicide Risk Assessment with Machine Learning using Electronic Health Records",
+    "source_review_sha256": "99655431ba6898edfa08040e93694593b156353bfeb28eea56c596a5ee152264"
+  },
+  "p-46c871af6f5cd511e575": {
+    "decision": "approve",
+    "fingerprint": "a272060680441dfdd461e4f20ae4f6d789dbbac39e4d2251329049a47a852bdf",
+    "note": "精简表 18。人工已通过。JMIR Perioperative Medicine 的中科院大类分区待核。",
+    "paper_version": "bdb45025c94e2ff0a38ca2ec7ccab86d322a0f2939215f6ddd113d22b4f8a85e",
+    "content_version": "55373ce7879c7cb0eb901e30c8fe5b89d311d620c22af423a0c1d88d13fe4796",
+    "title": "Preoperative Mortality Risk Prediction and Equity Using Preoperative Score to Predict Postoperative Mortality in a Diverse US Surgical Population: Retrospective Cohort Study.",
+    "source_review_sha256": "99655431ba6898edfa08040e93694593b156353bfeb28eea56c596a5ee152264"
+  },
+  "p-e412b17d428839c2de6b": {
+    "decision": "reject",
+    "fingerprint": "19897c02d9774398f940182410f0613e4292f5f341e33e60ebeaa240b423f56d",
+    "note": "精简表 19。用户排除。",
+    "paper_version": "ccd97f3d19a68c844bbc7b44c4ee5a1c81091270836594c3402258645b6e057c",
+    "content_version": "94118e186e3e0eeed15dc5dfbdf78ae3153db77bdcb5e1c2ad12b137a404946f",
+    "title": "Addressing Bias Early in the AI Lifecycle: Social Determinants of Health in Functional and Cognitive Assessment Labels of Nursing Home Residents",
+    "source_review_sha256": "99655431ba6898edfa08040e93694593b156353bfeb28eea56c596a5ee152264"
+  },
+  "p-6cf6a4f28a4f1d1be98c": {
+    "decision": "approve",
+    "fingerprint": "a576da8f8afea5526b38f29f9d843d92bf886c9879bc8b2ac45f0a81986e67ed",
+    "note": "精简表 20。人工已通过，按预印本收录。",
+    "paper_version": "90fb28f0156c50af8035129496e0760680e4ffa3b47d48e193b9195267098f4a",
+    "content_version": "43f037d0042201c4c1efd2d0bdd77d68616c03f98dff03325075eb771cad030e",
+    "title": "Health-System-Wide Mapping of Demographic Information in Routine Clinical Histopathology",
+    "source_review_sha256": "99655431ba6898edfa08040e93694593b156353bfeb28eea56c596a5ee152264"
+  },
+  "p-fb8ea8b84e0769171023": {
+    "decision": "reject",
+    "fingerprint": "7cd851df1a21d6efa5f46bb8dae810687e6c0e1690f3fab6f13ce7e575548146",
+    "note": "精简表 21。用户排除。",
+    "paper_version": "58c6df9192b8a0cdb4268e04f4d3377c647e67d5f5f99df191bc5e19e64378ec",
+    "content_version": "3d3a124ba2c92027f82383519edcce3c40d8f89215037568faeab770523bd63d",
+    "title": "The Predictability Bias of Joint-Embedding Predictive Learning in Medical Imaging",
+    "source_review_sha256": "99655431ba6898edfa08040e93694593b156353bfeb28eea56c596a5ee152264"
+  },
+  "p-b4814a974815c91c634d": {
+    "decision": "reject",
+    "fingerprint": "b62cab84a42eeb7d1e66da726ad1a666a3d26e16edaeae6d6d15f3a83734add1",
+    "note": "精简表 22。用户排除。",
+    "paper_version": "c9319dbdffe3544e4c74471280c1abc6b5d9dc8f753ab9dcf6bbfb6a3c78a89a",
+    "content_version": "ffee7866d6310cec182b705491060d6dbbccbb1e2be775230dfba86f7251157d",
+    "title": "Feature Scaling Beats Architecture Choice in Offline Respiratory Screening for Low-Resource Clinics",
+    "source_review_sha256": "99655431ba6898edfa08040e93694593b156353bfeb28eea56c596a5ee152264"
+  },
+  "p-3bb3cbfd2b5d0a436236": {
+    "decision": "reject",
+    "fingerprint": "24d67961fcf44bd5f00ba518b8e963c837c5ee74107b2763826c24a9dc64cae8",
+    "note": "精简表 23。用户排除。",
+    "paper_version": "44fa07dbfb7af605b34dc313ba0c74b0360841c29ed16e7626f63948a2100201",
+    "content_version": "58da656574df0ba1c40364157bf9790c58a311f7bbc119339ec9220f31446cd7",
+    "title": "Technological Integration in Triage With AI and Machine Learning Compared With Conventional Triage and Narrative Synthesis of Telehealth for Patient Prioritization in Emergency and Acute Care Settings: Systematic Review and Meta-Analysis.",
+    "source_review_sha256": "99655431ba6898edfa08040e93694593b156353bfeb28eea56c596a5ee152264"
+  },
+  "p-2fbe7831b9b180641cb4": {
+    "decision": "reject",
+    "fingerprint": "d41ddff22810644a077b017bb87b4590ba81ef5faebd27478e94dc1bfb8524a7",
+    "note": "精简表 24。用户排除。",
+    "paper_version": "de8364d7413fa8613a6096357b5f232be61b84e233810239bd19477bc85591b6",
+    "content_version": "ead5ec4f58a838958f6d29d48519223f4048134440da33e8dec3cf2cf63e9b2a",
+    "title": "Generative Artificial Intelligence in Health Research and Care: A Narrative Review of Applications and Implications for Alzheimer's Disease and Related Dementia.",
+    "source_review_sha256": "99655431ba6898edfa08040e93694593b156353bfeb28eea56c596a5ee152264"
+  },
+  "p-44e0164e5e89e0f3c26d": {
+    "decision": "reject",
+    "fingerprint": "7f6114e6e74bd8bbd23ca93ff302b6fb09b8cf22bb76b32cda49a77b8acb1b78",
+    "note": "精简表 25。用户排除。",
+    "paper_version": "7fa0148831a1638f522ba3c74955605b605e2a8698a0de94cdecca5b82e2b41f",
+    "content_version": "a5c2845314fd52b4cba85284b94fa6350c2441e02225c1b6a4f78311e65418b5",
+    "title": "Non-Invasive Blood Glucose Monitoring Using Machine Learning and Optical Approaches: A Systematic Literature Review and a Proposed Framework for Reproducible and Clinically Reliable Research.",
+    "source_review_sha256": "99655431ba6898edfa08040e93694593b156353bfeb28eea56c596a5ee152264"
   }
 }

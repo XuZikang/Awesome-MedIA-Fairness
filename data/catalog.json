@@ -8087,5 +8087,600 @@
       "review_method": "manual-primary-abstract",
       "source_review_sha256": "e58ca4ad0c3657c8e6cbcf33004ed9302c2961fbb57e830cd9d04526f735cc07"
     }
+  },
+  {
+    "title": "Explanation-Aware Fairness Beyond Output Parity: Joint Output-Attribution Regularization for Medical Image Classification",
+    "arxiv_id": "2611.13052",
+    "authors": [
+      "Gökhan Özbulak",
+      "Oscar Jimenez-del-Toro",
+      "Lilian Berton",
+      "André Anjos"
+    ],
+    "publication_kind": "preprint",
+    "year": "2026",
+    "publication_date": "2026-11-09",
+    "venue": "arXiv",
+    "kind": "main",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2611.13052"
+    },
+    "metadata": {
+      "Attributes": [
+        "Race and ethnicity",
+        "Sex and gender"
+      ],
+      "Domain": [
+        "Dermoscopy",
+        "OCT"
+      ],
+      "Evidence": [
+        "Primary full text"
+      ],
+      "Focus": [
+        "Bias mechanisms",
+        "Evaluation",
+        "Mitigation",
+        "Theory and measurement"
+      ],
+      "Stage": [
+        "In-processing"
+      ],
+      "Assets": [
+        "Paper only"
+      ]
+    },
+    "method": "In-processing",
+    "tldr_en": [
+      "This study addresses demographic disparities in medical image classifiers whose output scores can hide differences in feature attribution.",
+      "It adds an attribution disparity penalty to equalized odds objectives and evaluates the joint regularizers on HAM10000 and Harvard-GF.",
+      "Across both datasets the joint objectives improved the reported accuracy and fairness trade-off relative to the corresponding output-only objectives."
+    ],
+    "verified": true,
+    "sources": [
+      {
+        "url": "https://arxiv.org/html/2611.13052v1",
+        "section": "Human-approved full-text review"
+      }
+    ],
+    "venue_assessment": {
+      "status": "preprint",
+      "reason_zh": "预印本不继承 CAS/CCF 等级，仅作为人工审核候选；未提供正式版本关联。",
+      "evidence": [
+        {
+          "source": "paper",
+          "kind": "preprint",
+          "doi": ""
+        }
+      ],
+      "eligible_for_human_review": true,
+      "automatic_inclusion": false,
+      "formal_assessments": []
+    },
+    "human_review": {
+      "decision": "approve",
+      "review_fingerprint": "199ed1cf4368ae6f8c25fd55c505622f83d8361fab92bd4b05e2ce51bb498491",
+      "note": "精简表 01。人工已通过，按预印本收录。",
+      "overrides_machine_screening": false
+    }
+  },
+  {
+    "title": "Data augmentation for the generalizability and transportability of fairness in a clinical heart failure algorithm",
+    "arxiv_id": "2611.15618",
+    "authors": [
+      "I. Elizabeth Kumar",
+      "Sherri Rose"
+    ],
+    "publication_kind": "preprint",
+    "year": "2026",
+    "publication_date": "2026-11-11",
+    "venue": "arXiv",
+    "kind": "main",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2611.15618"
+    },
+    "metadata": {
+      "Attributes": [
+        "Race and ethnicity"
+      ],
+      "Domain": [
+        "EHR and clinical prediction"
+      ],
+      "Evidence": [
+        "Primary full text"
+      ],
+      "Focus": [
+        "Evaluation",
+        "Mitigation"
+      ],
+      "Stage": [
+        "Pre-processing"
+      ],
+      "Assets": [
+        "Paper only"
+      ]
+    },
+    "method": "Pre-processing",
+    "tldr_en": [
+      "This study asks whether fairness gains from synthetic data augmentation transfer across time and hospitals for inpatient heart failure mortality prediction.",
+      "It compares synthetic augmentation with oversampling and reweighting in simulations and in two clinical datasets.",
+      "The fairness effects depend on the downstream model and how closely deployment resembles training, so the study calls for testing transportability empirically."
+    ],
+    "verified": true,
+    "sources": [
+      {
+        "url": "https://arxiv.org/html/2611.15618v1",
+        "section": "Human-approved full-text review"
+      }
+    ],
+    "venue_assessment": {
+      "status": "preprint",
+      "reason_zh": "预印本不继承 CAS/CCF 等级，仅作为人工审核候选；未提供正式版本关联。",
+      "evidence": [
+        {
+          "source": "paper",
+          "kind": "preprint",
+          "doi": ""
+        }
+      ],
+      "eligible_for_human_review": true,
+      "automatic_inclusion": false,
+      "formal_assessments": []
+    },
+    "human_review": {
+      "decision": "approve",
+      "review_fingerprint": "9082df337aa0967113364bd9ddbf9c4478b86dfd5fd27890be60ec03f67cac4e",
+      "note": "精简表 02。人工已通过，按预印本收录。",
+      "overrides_machine_screening": false
+    }
+  },
+  {
+    "title": "Let Samples Sing in Chorus: Mitigating Spurious Correlations via Cross-view Consensus",
+    "arxiv_id": "2611.22668",
+    "authors": [
+      "Weiwei Li",
+      "Junzhuo Liu",
+      "Tong Chu",
+      "Hengfu Yu",
+      "Yinjie Lei",
+      "Wen Li"
+    ],
+    "publication_kind": "preprint",
+    "year": "2026",
+    "publication_date": "2026-11-17",
+    "venue": "arXiv",
+    "kind": "main",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2611.22668",
+      "Code": "https://github.com/davelee-uestc/chord_debiasing_public"
+    },
+    "metadata": {
+      "Attributes": [
+        "Not specified"
+      ],
+      "Domain": [
+        "X-ray"
+      ],
+      "Evidence": [
+        "Primary full text"
+      ],
+      "Focus": [
+        "Bias mechanisms",
+        "Mitigation"
+      ],
+      "Stage": [
+        "Post-processing"
+      ],
+      "Assets": [
+        "Code"
+      ]
+    },
+    "method": "Post-processing",
+    "tldr_en": [
+      "CHORD aims to reduce reliance on spurious correlations without using group labels during training.",
+      "It proposes candidate groups in multiple feature spaces, tests them in the target representation and retrains the classifier head with the encoder frozen.",
+      "On CheXpert it increased worst-group accuracy from 31.21% to 71.43%, with lower mean accuracy than standard empirical risk minimization."
+    ],
+    "verified": true,
+    "sources": [
+      {
+        "url": "https://arxiv.org/html/2611.22668v1",
+        "section": "Human-approved full-text review"
+      }
+    ],
+    "venue_assessment": {
+      "status": "preprint",
+      "reason_zh": "预印本不继承 CAS/CCF 等级，仅作为人工审核候选；未提供正式版本关联。",
+      "evidence": [
+        {
+          "source": "paper",
+          "kind": "preprint",
+          "doi": ""
+        }
+      ],
+      "eligible_for_human_review": true,
+      "automatic_inclusion": false,
+      "formal_assessments": []
+    },
+    "human_review": {
+      "decision": "approve",
+      "review_fingerprint": "019da0c84640513ae427368496e2f71d674cff11a56eb96452369fec55ac2261",
+      "note": "精简表 03。人工已通过，按预印本收录。",
+      "overrides_machine_screening": false
+    }
+  },
+  {
+    "title": "Same Model, Different People: Numerical Execution Contracts and the Reproducibility of Fairness Audits",
+    "arxiv_id": "2611.23657",
+    "authors": [
+      "Erzheng Zhang",
+      "Agnes Chu"
+    ],
+    "publication_kind": "preprint",
+    "year": "2026",
+    "publication_date": "2026-11-18",
+    "venue": "arXiv",
+    "kind": "main",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2611.23657"
+    },
+    "metadata": {
+      "Attributes": [
+        "Race and ethnicity",
+        "Sex and gender",
+        "Age"
+      ],
+      "Domain": [
+        "EHR and clinical prediction"
+      ],
+      "Evidence": [
+        "Primary full text"
+      ],
+      "Focus": [
+        "Evaluation",
+        "Theory and measurement"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Assets": [
+        "Paper only"
+      ]
+    },
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This study tests whether arithmetic precision and deployment configurations alter the reproducibility of fairness audits.",
+      "It varies numerical execution settings while controlling audit inputs and includes a 30-day diabetes readmission task among four benchmarks.",
+      "Some deployment settings changed flagged encounters and diagnostic audit decisions across the experiments, motivating a protocol that records execution settings and sampling uncertainty."
+    ],
+    "verified": true,
+    "sources": [
+      {
+        "url": "https://arxiv.org/html/2611.23657v1",
+        "section": "Human-approved full-text review"
+      }
+    ],
+    "venue_assessment": {
+      "status": "preprint",
+      "reason_zh": "预印本不继承 CAS/CCF 等级，仅作为人工审核候选；未提供正式版本关联。",
+      "evidence": [
+        {
+          "source": "paper",
+          "kind": "preprint",
+          "doi": ""
+        }
+      ],
+      "eligible_for_human_review": true,
+      "automatic_inclusion": false,
+      "formal_assessments": []
+    },
+    "human_review": {
+      "decision": "approve",
+      "review_fingerprint": "a2df2f1c6adf5aaf7c133403b8774d1bf4f3048433cb05c7566ddfce3c171205",
+      "note": "精简表 04。人工已通过，按预印本收录。",
+      "overrides_machine_screening": false
+    }
+  },
+  {
+    "title": "Learning through Capacity Awareness to Minimize Hospital Readmissions",
+    "arxiv_id": "2611.11493",
+    "authors": [
+      "Lydia T. Liu",
+      "Kara Schechtman",
+      "Pengyi Shi",
+      "Angela Zhou"
+    ],
+    "publication_kind": "preprint",
+    "year": "2026",
+    "publication_date": "2026-11-08",
+    "venue": "arXiv",
+    "kind": "main",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2611.11493"
+    },
+    "metadata": {
+      "Attributes": [
+        "Race and ethnicity"
+      ],
+      "Domain": [
+        "EHR and clinical prediction"
+      ],
+      "Evidence": [
+        "Primary full text"
+      ],
+      "Focus": [
+        "Bias mechanisms",
+        "Evaluation",
+        "Mitigation"
+      ],
+      "Stage": [
+        "Pre-processing"
+      ],
+      "Assets": [
+        "Paper only"
+      ]
+    },
+    "method": "Pre-processing",
+    "tldr_en": [
+      "This study examines how hospital discharge decisions censor the data used to retrain readmission risk models.",
+      "It introduces a capacity-aware discharge policy that changes which lengths of stay are observed and evaluates its feedback effects through synthetic and hospital-calibrated simulations.",
+      "The simulations report lower prediction error and smaller risk-adjusted readmission cost gaps under the proposed policy."
+    ],
+    "verified": true,
+    "sources": [
+      {
+        "url": "https://arxiv.org/html/2611.11493v1",
+        "section": "Human-approved full-text review"
+      }
+    ],
+    "venue_assessment": {
+      "status": "preprint",
+      "reason_zh": "预印本不继承 CAS/CCF 等级，仅作为人工审核候选；未提供正式版本关联。",
+      "evidence": [
+        {
+          "source": "paper",
+          "kind": "preprint",
+          "doi": ""
+        }
+      ],
+      "eligible_for_human_review": true,
+      "automatic_inclusion": false,
+      "formal_assessments": []
+    },
+    "human_review": {
+      "decision": "approve",
+      "review_fingerprint": "10d0583d24c53656a95456a98638b601e12fcc772d8c684ade7717d6037fab88",
+      "note": "精简表 05。人工已通过，按预印本收录。",
+      "overrides_machine_screening": false
+    }
+  },
+  {
+    "title": "Do Large Language Models Show Racial and Sex Bias in Pain Management? A Counterfactual Audit of GPT, Claude, Gemini, Llama, DeepSeek and Qwen",
+    "arxiv_id": "2611.14935",
+    "authors": [
+      "Richard J. Young",
+      "Alice M. Matthews"
+    ],
+    "publication_kind": "preprint",
+    "year": "2026",
+    "publication_date": "2026-11-11",
+    "venue": "arXiv",
+    "kind": "main",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2611.14935"
+    },
+    "metadata": {
+      "Attributes": [
+        "Race and ethnicity",
+        "Sex and gender",
+        "Intersectional"
+      ],
+      "Domain": [
+        "Clinical NLP and foundation models"
+      ],
+      "Evidence": [
+        "Primary full text"
+      ],
+      "Focus": [
+        "Bias mechanisms",
+        "Evaluation",
+        "Theory and measurement"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Assets": [
+        "Paper only"
+      ]
+    },
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This study audits racial and sex differences in language model responses to acute pain cases.",
+      "It compares matched cases using explicit demographic labels or name cues across multiple models and deployment configurations.",
+      "The main comparisons found no differences after multiplicity correction, while uncertainty around opioid prescribing differences remained wider than for pain severity."
+    ],
+    "verified": true,
+    "sources": [
+      {
+        "url": "https://arxiv.org/html/2611.14935v1",
+        "section": "Human-approved full-text review"
+      }
+    ],
+    "venue_assessment": {
+      "status": "preprint",
+      "reason_zh": "预印本不继承 CAS/CCF 等级，仅作为人工审核候选；未提供正式版本关联。",
+      "evidence": [
+        {
+          "source": "paper",
+          "kind": "preprint",
+          "doi": ""
+        }
+      ],
+      "eligible_for_human_review": true,
+      "automatic_inclusion": false,
+      "formal_assessments": []
+    },
+    "human_review": {
+      "decision": "approve",
+      "review_fingerprint": "ebc4069f27cb9738f61efe7fc39ae50797303a9e9edc524b7169cd11346a140a",
+      "note": "精简表 15。人工已通过，按预印本收录。",
+      "overrides_machine_screening": false
+    }
+  },
+  {
+    "title": "Multidimensional Suicide Risk Assessment with Machine Learning using Electronic Health Records",
+    "arxiv_id": "2611.03357",
+    "authors": [
+      "Nathan Scollar",
+      "Kemal Davaslioglu",
+      "Nathan Conger",
+      "Sastry Kompella",
+      "Yalin E. Sagduyu",
+      "Nathaniel D. Bastian"
+    ],
+    "publication_kind": "preprint",
+    "year": "2026",
+    "publication_date": "2026-11-02",
+    "venue": "arXiv",
+    "kind": "main",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2611.03357"
+    },
+    "metadata": {
+      "Attributes": [
+        "Age"
+      ],
+      "Domain": [
+        "EHR and clinical prediction"
+      ],
+      "Evidence": [
+        "Primary full text"
+      ],
+      "Focus": [
+        "Evaluation",
+        "Mitigation",
+        "Bias mechanisms"
+      ],
+      "Stage": [
+        "Pre-processing"
+      ],
+      "Assets": [
+        "Paper only"
+      ]
+    },
+    "method": "Pre-processing",
+    "tldr_en": [
+      "This study uses electronic health records to classify a composite suicide-related outcome and examines performance across age groups.",
+      "It compares classifiers after age-matched resampling and also evaluates class weighting and calibration under the original class imbalance.",
+      "Recall remained lower in the oldest groups under age-matched evaluation, where test samples were small."
+    ],
+    "verified": true,
+    "sources": [
+      {
+        "url": "https://arxiv.org/html/2611.03357v1",
+        "section": "Human-approved full-text review"
+      }
+    ],
+    "venue_assessment": {
+      "status": "preprint",
+      "reason_zh": "预印本不继承 CAS/CCF 等级，仅作为人工审核候选；未提供正式版本关联。",
+      "evidence": [
+        {
+          "source": "paper",
+          "kind": "preprint",
+          "doi": ""
+        }
+      ],
+      "eligible_for_human_review": true,
+      "automatic_inclusion": false,
+      "formal_assessments": []
+    },
+    "human_review": {
+      "decision": "approve",
+      "review_fingerprint": "fce6ab3e70f8c21fa9657c2ce4a061bb5f8f78808da3cd0aae492ee60dcdf3df",
+      "note": "精简表 17。人工已通过，按预印本收录。",
+      "overrides_machine_screening": false
+    }
+  },
+  {
+    "title": "Health-System-Wide Mapping of Demographic Information in Routine Clinical Histopathology",
+    "arxiv_id": "2611.09851",
+    "authors": [
+      "Shengjia Chen",
+      "Ruchika Verma",
+      "Kevin Clare",
+      "Paula Restrepo",
+      "Jannes Jegminat",
+      "Eugenia Alleva",
+      "Kuan-lin Huang",
+      "Aryeh Stock",
+      "Brandon Veremis",
+      "Thomas Fuchs",
+      "Gabriele Campanella"
+    ],
+    "publication_kind": "preprint",
+    "year": "2026",
+    "publication_date": "2026-11-06",
+    "venue": "arXiv",
+    "kind": "main",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2611.09851"
+    },
+    "metadata": {
+      "Attributes": [
+        "Race and ethnicity",
+        "Sex and gender",
+        "Age"
+      ],
+      "Domain": [
+        "Histopathology"
+      ],
+      "Evidence": [
+        "Primary full text"
+      ],
+      "Focus": [
+        "Bias mechanisms",
+        "Evaluation"
+      ],
+      "Stage": [
+        "Evaluation"
+      ],
+      "Assets": [
+        "Paper only"
+      ]
+    },
+    "method": "Fairness Evaluation",
+    "tldr_en": [
+      "This study maps how much demographic information can be recovered from routine histopathology images.",
+      "It uses pathology foundation model features and multiple-instance learning across 25 organs, with balancing and diagnosis-aware comparisons.",
+      "Demographic signals persisted in several organs after these controls, identifying potential sources of shortcut learning for downstream audits."
+    ],
+    "verified": true,
+    "sources": [
+      {
+        "url": "https://arxiv.org/html/2611.09851v1",
+        "section": "Human-approved full-text review"
+      }
+    ],
+    "venue_assessment": {
+      "status": "preprint",
+      "reason_zh": "预印本不继承 CAS/CCF 等级，仅作为人工审核候选；未提供正式版本关联。",
+      "evidence": [
+        {
+          "source": "paper",
+          "kind": "preprint",
+          "doi": ""
+        }
+      ],
+      "eligible_for_human_review": true,
+      "automatic_inclusion": false,
+      "formal_assessments": []
+    },
+    "human_review": {
+      "decision": "approve",
+      "review_fingerprint": "a576da8f8afea5526b38f29f9d843d92bf886c9879bc8b2ac45f0a81986e67ed",
+      "note": "精简表 20。人工已通过，按预印本收录。",
+      "overrides_machine_screening": false
+    }
   }
 ]

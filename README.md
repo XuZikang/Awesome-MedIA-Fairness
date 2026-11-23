@@ -4,7 +4,7 @@ A collection of research on **medical algorithm fairness**, covering medical ima
 
 [![Catalog validation](https://github.com/XuZikang/Awesome-MedIA-Fairness/actions/workflows/validate-catalog.yml/badge.svg)](https://github.com/XuZikang/Awesome-MedIA-Fairness/actions/workflows/validate-catalog.yml) [![Link health](https://github.com/XuZikang/Awesome-MedIA-Fairness/actions/workflows/check-links.yml/badge.svg)](https://github.com/XuZikang/Awesome-MedIA-Fairness/actions/workflows/check-links.yml)
 
-**139 papers** · Evaluation & mitigation · Human-reviewed additions
+**147 papers** · Evaluation & mitigation · Human-reviewed additions
 
 **Browse:** [Papers](#-papers) · [Taxonomy](#-taxonomy) · [Resources](#-datasets-benchmarks-and-toolkits) · [Weekly review](reports/review-latest.md) · [Contributing](#-contributing)
 
@@ -50,16 +50,46 @@ Browse by methodology below. The latest year is expanded and grouped by month; e
 
 | Methodology | Papers | Latest records |
 |---|---:|---|
-| [Fairness Evaluation](#fairness-evaluation) | 95 | 2026-11-03 |
-| [Pre-processing](#unfairness-mitigation-pre-processing) | 14 | 2026-03 |
-| [In-processing](#unfairness-mitigation-in-processing) | 24 | 2026-10-17 |
-| [Post-processing](#unfairness-mitigation-post-processing) | 6 | 2026-11-07 |
+| [Fairness Evaluation](#fairness-evaluation) | 98 | 2026-11-18 |
+| [Pre-processing](#unfairness-mitigation-pre-processing) | 17 | 2026-11-11 |
+| [In-processing](#unfairness-mitigation-in-processing) | 25 | 2026-11-09 |
+| [Post-processing](#unfairness-mitigation-post-processing) | 7 | 2026-11-17 |
 
 ### Fairness Evaluation
 
 #### 2026
 
 ##### 2026-11
+
+- (*arXiv'26*) **Same Model, Different People: Numerical Execution Contracts and the Reproducibility of Fairness Audits**
+
+  ![EHR and clinical prediction](assets/badges/domain-ehr-and-clinical-prediction.svg) · ![Evaluation](assets/badges/focus-evaluation.svg) ![Theory and measurement](assets/badges/focus-theory-and-measurement.svg) · ![Evaluation](assets/badges/stage-evaluation.svg)<br>![Race and ethnicity](assets/badges/attributes-race-and-ethnicity.svg) ![Sex and gender](assets/badges/attributes-sex-and-gender.svg) ![Age](assets/badges/attributes-age.svg)
+
+  [Paper](https://arxiv.org/abs/2611.23657)
+
+  **TLDR:** This study tests whether arithmetic precision and deployment configurations alter the reproducibility of fairness audits. It varies numerical execution settings while controlling audit inputs and includes a 30-day diabetes readmission task among four benchmarks. Some deployment settings changed flagged encounters and diagnostic audit decisions across the experiments, motivating a protocol that records execution settings and sampling uncertainty.
+
+  **Date:** 2026-11-18
+
+- (*arXiv'26*) **Do Large Language Models Show Racial and Sex Bias in Pain Management? A Counterfactual Audit of GPT, Claude, Gemini, Llama, DeepSeek and Qwen**
+
+  ![Clinical NLP and foundation models](assets/badges/domain-clinical-nlp-and-foundation-models.svg) · ![Bias mechanisms](assets/badges/focus-bias-mechanisms.svg) ![Evaluation](assets/badges/focus-evaluation.svg) ![Theory and measurement](assets/badges/focus-theory-and-measurement.svg) · ![Evaluation](assets/badges/stage-evaluation.svg)<br>![Race and ethnicity](assets/badges/attributes-race-and-ethnicity.svg) ![Sex and gender](assets/badges/attributes-sex-and-gender.svg) ![Intersectional](assets/badges/attributes-intersectional.svg)
+
+  [Paper](https://arxiv.org/abs/2611.14935)
+
+  **TLDR:** This study audits racial and sex differences in language model responses to acute pain cases. It compares matched cases using explicit demographic labels or name cues across multiple models and deployment configurations. The main comparisons found no differences after multiplicity correction, while uncertainty around opioid prescribing differences remained wider than for pain severity.
+
+  **Date:** 2026-11-11
+
+- (*arXiv'26*) **Health-System-Wide Mapping of Demographic Information in Routine Clinical Histopathology**
+
+  ![Histopathology](assets/badges/domain-histopathology.svg) · ![Bias mechanisms](assets/badges/focus-bias-mechanisms.svg) ![Evaluation](assets/badges/focus-evaluation.svg) · ![Evaluation](assets/badges/stage-evaluation.svg)<br>![Race and ethnicity](assets/badges/attributes-race-and-ethnicity.svg) ![Sex and gender](assets/badges/attributes-sex-and-gender.svg) ![Age](assets/badges/attributes-age.svg)
+
+  [Paper](https://arxiv.org/abs/2611.09851)
+
+  **TLDR:** This study maps how much demographic information can be recovered from routine histopathology images. It uses pathology foundation model features and multiple-instance learning across 25 organs, with balancing and diagnosis-aware comparisons. Demographic signals persisted in several organs after these controls, identifying potential sources of shortcut learning for downstream audits.
+
+  **Date:** 2026-11-06
 
 - (*Archives of Sexual Behavior'26*) **Visual Sexual Health Communication Assisted by AI: The Case of Synthetic Menstruation Images.**
 
@@ -1083,6 +1113,38 @@ Browse by methodology below. The latest year is expanded and grouped by month; e
 
 #### 2026
 
+##### 2026-11
+
+- (*arXiv'26*) **Data augmentation for the generalizability and transportability of fairness in a clinical heart failure algorithm**
+
+  ![EHR and clinical prediction](assets/badges/domain-ehr-and-clinical-prediction.svg) · ![Evaluation](assets/badges/focus-evaluation.svg) ![Mitigation](assets/badges/focus-mitigation.svg) · ![Pre-processing](assets/badges/pre-processing-pre-processing.svg)<br>![Race and ethnicity](assets/badges/attributes-race-and-ethnicity.svg)
+
+  [Paper](https://arxiv.org/abs/2611.15618)
+
+  **TLDR:** This study asks whether fairness gains from synthetic data augmentation transfer across time and hospitals for inpatient heart failure mortality prediction. It compares synthetic augmentation with oversampling and reweighting in simulations and in two clinical datasets. The fairness effects depend on the downstream model and how closely deployment resembles training, so the study calls for testing transportability empirically.
+
+  **Date:** 2026-11-11
+
+- (*arXiv'26*) **Learning through Capacity Awareness to Minimize Hospital Readmissions**
+
+  ![EHR and clinical prediction](assets/badges/domain-ehr-and-clinical-prediction.svg) · ![Bias mechanisms](assets/badges/focus-bias-mechanisms.svg) ![Evaluation](assets/badges/focus-evaluation.svg) ![Mitigation](assets/badges/focus-mitigation.svg) · ![Pre-processing](assets/badges/pre-processing-pre-processing.svg)<br>![Race and ethnicity](assets/badges/attributes-race-and-ethnicity.svg)
+
+  [Paper](https://arxiv.org/abs/2611.11493)
+
+  **TLDR:** This study examines how hospital discharge decisions censor the data used to retrain readmission risk models. It introduces a capacity-aware discharge policy that changes which lengths of stay are observed and evaluates its feedback effects through synthetic and hospital-calibrated simulations. The simulations report lower prediction error and smaller risk-adjusted readmission cost gaps under the proposed policy.
+
+  **Date:** 2026-11-08
+
+- (*arXiv'26*) **Multidimensional Suicide Risk Assessment with Machine Learning using Electronic Health Records**
+
+  ![EHR and clinical prediction](assets/badges/domain-ehr-and-clinical-prediction.svg) · ![Evaluation](assets/badges/focus-evaluation.svg) ![Mitigation](assets/badges/focus-mitigation.svg) ![Bias mechanisms](assets/badges/focus-bias-mechanisms.svg) · ![Pre-processing](assets/badges/pre-processing-pre-processing.svg)<br>![Age](assets/badges/attributes-age.svg)
+
+  [Paper](https://arxiv.org/abs/2611.03357)
+
+  **TLDR:** This study uses electronic health records to classify a composite suicide-related outcome and examines performance across age groups. It compares classifiers after age-matched resampling and also evaluates class weighting and calibration under the original class imbalance. Recall remained lower in the oldest groups under age-matched evaluation, where test samples were small.
+
+  **Date:** 2026-11-02
+
 ##### 2026-03
 
 - (*Medical Image Analysis'26*) **Rethinking fairness in medical imaging: Maximizing group-specific performance with application to skin disease diagnosis**
@@ -1274,6 +1336,18 @@ Browse by methodology below. The latest year is expanded and grouped by month; e
 ### Unfairness Mitigation: In-processing
 
 #### 2026
+
+##### 2026-11
+
+- (*arXiv'26*) **Explanation-Aware Fairness Beyond Output Parity: Joint Output-Attribution Regularization for Medical Image Classification**
+
+  ![Dermoscopy](assets/badges/domain-dermoscopy.svg) ![OCT](assets/badges/domain-oct.svg) · ![Bias mechanisms](assets/badges/focus-bias-mechanisms.svg) ![Evaluation](assets/badges/focus-evaluation.svg) ![Mitigation](assets/badges/focus-mitigation.svg) ![Theory and measurement](assets/badges/focus-theory-and-measurement.svg) · ![In-processing](assets/badges/in-processing-in-processing.svg)<br>![Race and ethnicity](assets/badges/attributes-race-and-ethnicity.svg) ![Sex and gender](assets/badges/attributes-sex-and-gender.svg)
+
+  [Paper](https://arxiv.org/abs/2611.13052)
+
+  **TLDR:** This study addresses demographic disparities in medical image classifiers whose output scores can hide differences in feature attribution. It adds an attribution disparity penalty to equalized odds objectives and evaluates the joint regularizers on HAM10000 and Harvard-GF. Across both datasets the joint objectives improved the reported accuracy and fairness trade-off relative to the corresponding output-only objectives.
+
+  **Date:** 2026-11-09
 
 ##### 2026-10
 
@@ -1563,6 +1637,16 @@ Browse by methodology below. The latest year is expanded and grouped by month; e
 #### 2026
 
 ##### 2026-11
+
+- (*arXiv'26*) **Let Samples Sing in Chorus: Mitigating Spurious Correlations via Cross-view Consensus**
+
+  ![X-ray](assets/badges/domain-x-ray.svg) · ![Bias mechanisms](assets/badges/focus-bias-mechanisms.svg) ![Mitigation](assets/badges/focus-mitigation.svg) · ![Post-processing](assets/badges/post-processing-post-processing.svg)<br>![Not specified](assets/badges/attributes-not-specified.svg)
+
+  [Paper](https://arxiv.org/abs/2611.22668) [Code](https://github.com/davelee-uestc/chord_debiasing_public)
+
+  **TLDR:** CHORD aims to reduce reliance on spurious correlations without using group labels during training. It proposes candidate groups in multiple feature spaces, tests them in the target representation and retrains the classifier head with the encoder frozen. On CheXpert it increased worst-group accuracy from 31.21% to 71.43%, with lower mean accuracy than standard empirical risk minimization.
+
+  **Date:** 2026-11-17
 
 - (*Sports Medicine - Open'26*) **Sex-Equitable Machine Learning Prediction of Ankle Reinjury in Individuals with Chronic Ankle Instability: A 2-Year Prospective Cohort Study with Fairness Audit.**
 
