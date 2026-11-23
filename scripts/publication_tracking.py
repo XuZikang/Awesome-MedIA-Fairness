@@ -65,7 +65,7 @@ def resolve(paper, fetch=crossref_record):
     No title search, fuzzy matching, or same-author-only merging is performed.
     """
     found=[];issues=[]
-    explicit=doi(paper.get('formal_publication_doi',''))
+    explicit=doi(paper.get('formal_publication_doi') or paper.get('published_doi',''))
     original=doi(paper.get('doi',''))
     if paper.get('arxiv_id') and original and not original.startswith('10.48550/'):
         explicit=explicit or original
@@ -74,14 +74,14 @@ def resolve(paper, fetch=crossref_record):
         record=fetch(identifier)
         evidence='https://api.crossref.org/works/'+urllib.parse.quote(identifier,safe='')
         is_formal=record.get('type') in {'journal-article','proceedings-article'}
-        if paper.get('arxiv_id') and is_formal and identifier==explicit:
+        if explicit and is_formal and identifier==explicit:
             same_title=normal((record.get('title') or [''])[0])==normal(paper['title'])
             source_author=_first_author((paper.get('authors') or [''])[0])
             target_author=_first_author((record.get('author') or [{}])[0])
             if same_title and source_author and source_author==target_author:
-                found.append(formal_record(record,evidence,'explicit_arxiv_doi_and_corroborated_metadata'))
+                found.append(formal_record(record,evidence,'explicit_arxiv_doi_and_corroborated_metadata' if paper.get('arxiv_id') else 'explicit_preprint_doi_and_corroborated_metadata'))
             else:
-                issues.append({'doi':identifier,'reason':'arXiv DOI link requires manual identity confirmation; title/first author differ or are missing','evidence':evidence})
+                issues.append({'doi':identifier,'reason':'Preprint DOI link requires manual identity confirmation; title/first author differ or are missing','evidence':evidence})
         elif is_formal and not paper.get('arxiv_id'):
             # Looking up the article's own DOI enriches venue metadata only.
             found.append(formal_record(record,evidence,'own_registered_doi'))
@@ -106,7 +106,7 @@ def resolve(paper, fetch=crossref_record):
 def confirmed_aliases(paper):
     result=[]
     for item in paper.get('formal_publications',[]):
-        if item.get('confidence') not in {'registered_is_preprint_of','explicit_arxiv_doi_and_corroborated_metadata','own_registered_doi','registered_has_preprint'}:continue
+        if item.get('confidence') not in {'registered_is_preprint_of','explicit_arxiv_doi_and_corroborated_metadata','explicit_preprint_doi_and_corroborated_metadata','own_registered_doi','registered_has_preprint'}:continue
         if item.get('doi'):result.append('doi:'+doi(item['doi']))
         for identifier in item.get('preprint_dois',[]):
             if identifier.startswith('10.48550/arxiv.'):
@@ -121,7 +121,11 @@ def track(db, day, config, fetch=crossref_record, arxiv_fetch=None, search=None)
     rows=[json.loads(row[0]) for row in db.execute('SELECT payload FROM papers')]
     cutoff=(date.fromisoformat(day)-timedelta(days=age)).isoformat()
     due=[p for p in rows if (p.get('doi') or p.get('arxiv_id')) and p.get('publication_tracking',{}).get('checked_on','')<=cutoff]
-    due.sort(key=lambda p:(max(p.get('publication_tracking',{}).get('checked_on',''),p.get('publication_tracking',{}).get('last_attempt','')),not bool(p.get('arxiv_id')),p['id']))
+    due.sort(key=lambda p: (not bool(p.get('published_doi') and not p.get('publication_tracking', {}).get('last_attempt')
+                                    and not p.get('formal_publications')),
+                           max(p.get('publication_tracking', {}).get('checked_on', ''),
+                               p.get('publication_tracking', {}).get('last_attempt', '')),
+                           not bool(p.get('arxiv_id')), p['id']))
     due_count=len(due)
     due=due[:maximum];fresh={};arxiv_error=None
     arxiv_ids=[p['arxiv_id'] for p in due if p.get('arxiv_id')]

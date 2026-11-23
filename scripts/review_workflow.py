@@ -32,7 +32,7 @@ def import_human_decisions(review_file, state_file, ledger_file):
     decisions=read_decisions(review_file)
     state=json.loads(Path(state_file).read_text())
     papers={p['id']:p for p in state['papers']}
-    analyses={pid:fp for pid,fp,result in state['analyses']}
+    analyses={pid:(fp,result) for pid,fp,result in state['analyses']}
     ledger_path=Path(ledger_file)
     ledger=json.loads(ledger_path.read_text()) if ledger_path.exists() else {}
     source_hash=hashlib.sha256(Path(review_file).read_bytes()).hexdigest()
@@ -40,60 +40,97 @@ def import_human_decisions(review_file, state_file, ledger_file):
         if pid not in papers:raise ValueError('Unknown paper ID in human review: '+pid)
         if decision['decision']=='approve' and pid not in analyses:
             raise ValueError('Approved paper has no reviewed evidence version: '+pid)
-        if decision['decision']!='pending' and pid in analyses and decision['fingerprint']!=analyses[pid]:
+        if decision['decision']!='pending' and pid in analyses and decision['fingerprint']!=analyses[pid][0]:
             raise ValueError('Human decision refers to a different analysis version: '+pid)
+        if decision['decision']=='approve':
+            result=analyses[pid][1]
+            paper=papers[pid]
+            if result.get('content_version') and result['content_version'] != content_version(paper):
+                raise ValueError('Human approval refers to a previous article version: '+pid)
+            if not result.get('content_version') and result.get('paper_version') and result['paper_version'] != paper_version(paper):
+                raise ValueError('Human approval refers to a previous article version: '+pid)
     for pid,decision in decisions.items():
+        if decision['decision']=='pending':
+            continue
         ledger[pid]={**decision,'paper_version':paper_version(papers[pid]),'content_version':content_version(papers[pid]),'title':papers[pid]['title'],
                      'source_review_sha256':source_hash}
     ledger_path.write_text(json.dumps(ledger,ensure_ascii=False,indent=2)+'\n')
     return ledger
 
 
-def write_review_packet(db, output, day, catalog):
+def write_review_packet(db, output, day, catalog, *, archive=True):
     from scripts.publish_catalog import same_record
-    output=Path(output);output.mkdir(parents=True,exist_ok=True)
-    source=Path(catalog).parent/'data/catalog.json'
-    records=json.loads(source.read_text()) if source.exists() else []
-    ledger_file=source.parent/'curation-decisions.json'
-    ledger=json.loads(ledger_file.read_text()) if ledger_file.exists() else {}
-    analyses={pid:(fp,json.loads(payload)) for pid,fp,payload in db.execute('SELECT paper_id,fingerprint,payload FROM analyses')}
-    path=output/('review-'+day+'.md')
-    prior=read_decisions(path) if path.exists() else {}
-    lines=['# 每周文献人工审核单 · '+day,'',
-           '请只修改每篇的“审核决定”和“审核备注”：待审核 / 通过 / 排除 / 暂缓。编号和证据版本请保留。',
-           '填写后将此 Markdown 文件交给助手，或在聊天中按编号给出决定；只有明确通过的文章才会进入 README。',
-           '模型建议不是你的审核决定；证据不足的通过项仍需补核原文。','']
-    shortlist=output/('methodology-priority-'+day+'.md')
-    if shortlist.exists():lines += ['优先阅读：[方法学候选导读]('+shortlist.name+')（基于原始摘要的辅助整理，待你审核）。','']
-    papers=[json.loads(payload) for payload, in db.execute('SELECT payload FROM papers')]
-    papers.sort(key=lambda p:(-route(p)['priority'],p['first_seen'],p['id']))
-    for p in papers:
-        if p.get('seeded') or any(same_record(p,q) for q in records) or p.get('venue_assessment',{}).get('status')=='ineligible':continue
-        human=current_human_decision(p,ledger)
-        if human.get('decision')=='reject':continue
-        old=analyses.get(p['id']);result=None
-        if old and old[0]==review_fingerprint(p,old[1].get('model',''),old[1].get('provider','')):result=old[1]
-        fp=old[0] if result else '待取得有效分析'
-        saved=human or prior.get(p['id'],{})
-        decision=saved.get('decision','pending') if saved.get('fingerprint')==fp else 'pending'
-        if human.get('decision')=='hold':decision='hold'
-        labels={'pending':'待审核','approve':'通过','reject':'排除','hold':'暂缓'}
-        lines += ['## '+p['id'],'',
-                  '文章：['+p['title'].replace('\n',' ')+']('+p['url']+')','',
-                  '审核决定：'+labels[decision], '审核备注：'+saved.get('note',''), '证据版本：'+fp,'',
-                  '模型建议：'+(result['decision'] if result else '待分析／原分析已过期'),'']
-        venue=p.get('venue_assessment',{})
-        if venue:lines += ['渠道核查：'+venue.get('status','pending')+'；'+venue.get('reason_zh','待核实'),'']
-        if p.get('discovery_lanes'):lines += ['发现通道：'+', '.join(p['discovery_lanes']),'']
-        if p.get('formal_publications'):
-            lines += ['正式版本线索：'+'；'.join('['+r['title']+']('+r['url']+')' for r in p['formal_publications']),'']
-        if result:
-            lines += ['中文概述：'+result['summary_zh'],'','纳入判断：'+result['reason_zh'],'','限制：'+result['limitations_zh'],'',
-                      '建议分类：'+', '.join(result['metadata']['Stage']),'', '证据：']
-            lines += ['- '+name+'：'+item['quote'] for name,item in result['criteria'].items()]
-            lines += ['', '[分析原文]('+result['evidence_url']+')','']
-        if human.get('followup_zh'):
-            lines += ['人工原文补查：'+human['followup_zh'],'']
-    path.write_text('\n'.join(lines).rstrip()+'\n')
-    (output/'review-latest.md').write_text('\n'.join(lines).rstrip()+'\n')
+
+    output = Path(output)
+    output.mkdir(parents=True, exist_ok=True)
+    source = Path(catalog).parent / 'data/catalog.json'
+    records = json.loads(source.read_text()) if source.exists() else []
+    ledger_file = source.parent / 'curation-decisions.json'
+    ledger = json.loads(ledger_file.read_text()) if ledger_file.exists() else {}
+    analyses = {pid: (fp, json.loads(payload)) for pid, fp, payload in
+                db.execute('SELECT paper_id,fingerprint,payload FROM analyses')}
+    path = output / ('review-' + day + '.md')
+    prior = read_decisions(path) if path.exists() else {}
+    lines = [f'# 文献人工审核单 · {day}', '',
+             '初筛推荐且渠道符合条件的候选，方法学优先。预印本单独标注。',
+             '可按编号回复通过／排除／暂缓，也可填写审核决定与备注并保留编号、证据版本。通过后进入全文精读。',
+             '[排除抽查](screening-exclusions.md) · [证据、渠道与已通过的待办](screening-pending.md)', '']
+    exclusions = ['# 初筛排除抽查', '', '保留机器判断和渠道依据。人工排除由审核台账单独保存。', '']
+    pending = ['# 初筛与收录待办', '', '等待分析、证据、渠道核验、人工暂缓或通过后处理的候选。', '']
+    papers = [json.loads(payload) for payload, in db.execute('SELECT payload FROM papers')]
+
+    def sort_key(paper):
+        result = analyses.get(paper['id'], ('', {}))[1]
+        kind = result.get('article_type')
+        return (kind != 'methodology', kind in {'review', 'commentary'},
+                -route(paper)['priority'], paper['first_seen'], paper['id'])
+
+    papers.sort(key=sort_key)
+    count = 0
+    for paper in papers:
+        if paper.get('seeded') or any(same_record(paper, record) for record in records):
+            continue
+        human = current_human_decision(paper, ledger)
+        if human.get('decision') == 'reject':
+            continue
+        pid = paper['id']
+        old = analyses.get(pid)
+        if old and old[0] != review_fingerprint(paper, old[1].get('model', ''), old[1].get('provider', '')):
+            old = None
+        fp, result = old if old else ('待取得有效分析', {})
+        venue = paper.get('venue_assessment', {})
+        status = venue.get('status', 'pending')
+        model = result.get('decision', '待分析')
+        title = ' '.join(paper['title'].split()).replace('[', r'\[').replace(']', r'\]')
+        link = f'[{title}]({paper["url"]})'
+        reason = result.get('reason_zh', '')
+        channel = venue.get('reason_zh', '渠道待核')
+        if human.get('decision') in {'approve', 'hold'}:
+            label = '人工通过后待处理' if human['decision'] == 'approve' else '人工暂缓'
+            pending += [f'- `{pid}` {link} · {label} · {channel}']
+        elif status == 'ineligible' or model == 'exclude':
+            basis = channel if status == 'ineligible' else reason
+            exclusions += [f'- `{pid}` {link} · {basis} · [证据]({result.get("evidence_url") or paper["url"]})']
+        elif model != 'suggest_include' or status not in {'eligible', 'preprint'}:
+            pending += [f'- `{pid}` {link} · {model} · {channel}' + (f' · {reason}' if reason else '')]
+        else:
+            saved = prior.get(pid, {})
+            decision = saved.get('decision') if saved.get('fingerprint') == fp else 'pending'
+            label = {'pending': '待审核', 'approve': '通过', 'reject': '排除', 'hold': '暂缓'}[decision]
+            rank = next((item for item in venue.get('evidence', []) if item.get('rank')), {})
+            rank_text = (f'CAS {rank["rank"]} 区' if rank.get('source') == 'cas' else f'CCF {rank["rank"]}') if rank else ''
+            if paper.get('conference_status') in {'accepted', 'accepted-main'}:
+                rank_text = (rank_text or channel) + '，会议已列录用，正式出版待核'
+            lines += [f'## {pid}', '', f'文章：{link}', '',
+                      f'审核决定：{label}', '审核备注：' + (saved.get('note', '') if saved.get('fingerprint') == fp else ''), f'证据版本：{fp}', '',
+                      f'渠道：{rank_text or channel} · 类型：{result.get("article_type", "待定")} · 证据：{result["evidence_level"]}',
+                      '', result['summary_zh'], '', f'判断：{reason}', '',
+                      f'[初筛证据]({result["evidence_url"]})', '']
+            count += 1
+    lines.insert(2, f'共 {count} 篇。')
+    for name, content in [('review-latest.md', lines), ('screening-exclusions.md', exclusions),
+                          ('screening-pending.md', pending)]:
+        (output / name).write_text('\n'.join(content).rstrip() + '\n')
+    if archive:
+        path.write_text('\n'.join(lines).rstrip() + '\n')
     return path

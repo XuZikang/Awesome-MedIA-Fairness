@@ -11,7 +11,7 @@ from scripts.publish_catalog import same_record, sync_catalog
 
 
 class PublicationTests(unittest.TestCase):
-    def test_human_approved_abstract_override_preserves_real_evidence_level(self):
+    def test_human_approved_abstract_waits_for_full_text(self):
         from tests.test_literature_pipeline import record,analysis
         with tempfile.TemporaryDirectory() as d:
             root=Path(d);(root/'data').mkdir();(root/'reports').mkdir()
@@ -28,12 +28,10 @@ class PublicationTests(unittest.TestCase):
                 editorial={'tldr_en':['This study audits a clinical prediction task.', 'It compares models across patient subgroups.', 'The abstract reports differences between the groups.'],
                            'method':'Fairness Evaluation','reason_zh':'具体任务的公平性评估。','evidence_quotes':[]}
                 with patch('scripts.publish_catalog.fetch_evidence',return_value={'level':'abstract','text':'Original abstract evidence.','url':p['url']}), \
-                     patch('scripts.publish_catalog.annotate',return_value=editorial),patch('scripts.publish_catalog.render_catalog'):
-                    self.assertEqual(sync_catalog(db,root,approval)['added'],1)
-                q=json.loads((root/'data/catalog.json').read_text())[0]
-                self.assertEqual(q['metadata']['Evidence'],['Primary abstract'])
-                self.assertTrue(q['human_review']['overrides_machine_screening'])
-                self.assertNotIn('full-text',q['sources'][0]['section'])
+                     patch('scripts.publish_catalog.annotate',return_value=editorial) as annotate,patch('scripts.publish_catalog.render_catalog'):
+                    self.assertEqual(sync_catalog(db,root,approval),{'added':0,'failures':1})
+                    annotate.assert_not_called()
+                self.assertEqual(json.loads((root/'data/catalog.json').read_text()),[])
             finally:db.close()
 
     def test_publication_refuses_missing_human_approval(self):
@@ -72,6 +70,7 @@ class PublicationTests(unittest.TestCase):
                 editorial={'tldr_en':['This paper measures clinical model fairness.', 'It compares explicitly defined patient subgroups.', 'The analysis reports subgroup performance differences.'],
                            'method':'Fairness Evaluation','reason_zh':'分类依据为亚组评估。','evidence_quotes':[]}
                 with patch('scripts.publish_catalog.fetch_evidence',return_value={'level':'full_text','text':'paper text','url':p['url']}), \
+                     patch('scripts.publish_catalog.review',return_value=result) as read_full, \
                      patch('scripts.publish_catalog.annotate',return_value=editorial), patch('scripts.publish_catalog.render_catalog'):
                     save({**result,'evidence_level':'abstract'})
                     self.assertEqual(sync_catalog(db,root,approval_file)['added'],0)
@@ -84,6 +83,7 @@ class PublicationTests(unittest.TestCase):
                     approval_file.write_text(approval_file.read_text().replace('审核决定：暂缓','审核决定：通过'))
                     self.assertEqual(sync_catalog(db,root,approval_file),{'added':1,'failures':0})
                     self.assertEqual(sync_catalog(db,root,approval_file)['added'],0)
+                    read_full.assert_called_once()
                 published=json.loads((root/'data/catalog.json').read_text())
                 self.assertEqual(published[0]['title'],p['title'])
                 self.assertEqual(published[0]['metadata']['Domain'],['Medical imaging (modality unspecified)'])

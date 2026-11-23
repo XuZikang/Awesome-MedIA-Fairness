@@ -3,6 +3,43 @@
   "overlap_days": 7,
   "max_records_per_query": 500,
   "max_analyses_per_run": 100,
+  "discovery": {
+    "medrxiv": {
+      "initial_days": 9,
+      "max_records": 3500,
+      "timeout": 20
+    },
+    "conference": {
+      "initial_days": 30,
+      "events": [
+        {
+          "provider": "miccai",
+          "conference": "MICCAI",
+          "event_date": "2026-09-21",
+          "event_window_days": 65,
+          "url": "https://papers.miccai.org/miccai-2026/",
+          "conference_status": "published",
+          "medical": true,
+          "detail_limit": 100
+        },
+        {
+          "provider": "acl_anthology",
+          "conference": "EMNLP",
+          "event_date": "2026-10-24",
+          "url": "https://aclanthology.org/volumes/2026.emnlp-main/",
+          "conference_status": "format_pending"
+        },
+        {
+          "provider": "neurips",
+          "conference": "NeurIPS",
+          "event_date": "2026-12-06",
+          "url": "https://neurips.cc/Downloads/2026",
+          "conference_status": "accepted",
+          "detail_limit": 100
+        }
+      ]
+    }
+  },
   "sources": {
     "arxiv": [
       "((ti:fair OR ti:fairness OR ti:bias OR ti:biases OR ti:biased OR ti:unbiased OR ti:debias OR ti:debiasing OR ti:debiased OR ti:equitable OR ti:equity) OR ((all:fairness OR all:\"algorithmic bias\" OR all:\"demographic bias\" OR all:\"racial bias\" OR all:\"sex bias\" OR all:\"gender bias\" OR all:\"bias mitigation\" OR all:debias OR all:debiasing OR all:debiased OR all:\"equalized odds\" OR all:\"equal opportunity\" OR all:\"counterfactual fairness\" OR all:\"subgroup disparity\") AND (ti:sex OR ti:gender OR ti:race OR ti:\"skin tone\" OR ti:demographic OR ti:subgroup))) AND (all:medical OR all:clinical OR all:healthcare OR all:biomedical OR all:patient OR all:patients OR all:radiology OR all:radiological OR all:dermatology OR all:dermatological OR all:ophthalmology OR all:ophthalmic OR all:cardiovascular OR all:pathology OR all:MRI OR all:EHR OR all:ECG OR all:EEG) AND (all:\"machine learning\" OR all:\"deep learning\" OR all:\"artificial intelligence\" OR all:\"neural network\" OR all:\"language model\" OR all:\"foundation model\" OR all:algorithm OR all:algorithms OR all:\"prediction model\") AND (all:mitigation OR all:mitigate OR all:mitigating OR all:debias OR all:debiasing OR all:debiased OR all:reweighting OR all:reweighted OR all:resampling OR all:adversarial OR all:disentanglement OR all:disentangled OR all:\"fairness constraint\" OR all:threshold OR all:thresholds OR all:thresholding OR all:recalibration OR all:recalibrating) ANDNOT (ti:\"systematic review\" OR ti:\"scoping review\" OR ti:\"narrative review\" OR ti:\"a review\" OR ti:\"a survey\")",

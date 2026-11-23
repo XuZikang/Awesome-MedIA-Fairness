@@ -25,7 +25,7 @@ USER_AGENT = (
 _RETRIES = 3
 _RETRY_WAIT = 1.0
 _PAGE_SIZE = 100
-_SOURCE_INTERVAL = {"arxiv": 3.0, "pubmed": 0.35, "europepmc": 0.0}
+_SOURCE_INTERVAL = {"arxiv": 3.0, "pubmed": 0.35, "europepmc": 0.0, "conference": 0.35}
 _LAST_REQUEST: dict[str, float] = {}
 
 

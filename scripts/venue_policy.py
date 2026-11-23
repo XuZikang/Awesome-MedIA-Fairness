@@ -17,7 +17,7 @@ from typing import Any, Dict, Iterable, List, Mapping, Optional, Sequence, Tuple
 DEFAULT_POLICY = Path(__file__).resolve().parents[1] / "config" / "venue-policy.json"
 KNOWN_FORMAL_CONFIDENCE = {
     "registered_is_preprint_of",
-    "explicit_arxiv_doi_and_corroborated_metadata",
+    "explicit_arxiv_doi_and_corroborated_metadata", "explicit_preprint_doi_and_corroborated_metadata",
     "own_registered_doi",
     "registered_has_preprint",
 }
@@ -421,6 +421,9 @@ def assess_venue(paper: Mapping[str, Any], policy: Optional[Mapping[str, Any]] =
         return _result("pending", "文章记录不是对象，无法核验发表场所。", [])
     policy = load_policy() if policy is None else policy
     prepared = _prepare_policy(policy)
+
+    if paper.get('conference_status') == 'format_pending':
+        return _result('pending', '主会议论文集已核实，长文或正式论文类型仍待核实。', [])
 
     if _is_preprint(paper):
         formal = _formal_publications(paper)

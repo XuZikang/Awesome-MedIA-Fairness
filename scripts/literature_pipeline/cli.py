@@ -55,6 +55,9 @@ def aliases(paper):
             if field == "arxiv_id":
                 value = re.sub(r"v\d+$", "", value)
             values.append(field + ":" + value)
+    if paper.get("source") == "conference" and paper.get("url", "").startswith("https://"):
+        # A primary list's stable paper URL is a source identity, independent of its title.
+        values.append("conference_url:" + paper["url"].rstrip("/"))
     # Exact normalized titles only. Fuzzy similarity must never silently merge papers.
     title = re.sub(r"[^\w]", "", paper["title"].casefold())
     if title:
@@ -137,8 +140,11 @@ def ingest(db, incoming, day, seeded=False):
             if value and field not in {"id", "first_seen", "last_changed", "seeded", "abstract", "sources", "version", "updated", "discovery_lanes"}:
                 if field in {"title", "url", "authors", "published", "year"} and merged.get(field):
                     continue
+                if field in {"conference_status", "publication_kind"} and old.get("conference_status") in {
+                        "published", "published-main"} and paper.get("conference_status") in {"accepted", "accepted-main"}:
+                    continue
                 merged[field] = value
-        priority = {"arxiv": 3, "europepmc": 2, "pubmed": 1}
+        priority = {"arxiv": 3, "medrxiv": 3, "europepmc": 2, "pubmed": 1, "conference": 1}
         owner = old.get("abstract_source", "")
         source = incoming.get("source", "")
         newer = str(incoming.get("updated", "")) >= old.get("abstract_updated", "")
@@ -226,12 +232,12 @@ def review_pending(db, day, limit, full_text, decisions=None, catalog_records=No
             previous_result = json.loads(previous[1])
             retry_days = 1 if previous_result.get("warning") else 7
             retry_after = (date.fromisoformat(previous_result["reviewed_on"]) + timedelta(days=retry_days)).isoformat()
-            if previous_result.get("evidence_level") == "full_text" or day < retry_after:
+            if previous_result.get("evidence_level") == "full_text" or previous_result.get("phase") == "initial" or day < retry_after:
                 continue
         if count + failures >= limit:
             break
         try:
-            evidence = fetch_evidence(paper) if full_text else {"text": normalize(paper["abstract"]), "level": "abstract", "url": paper["url"], "warning": ""}
+            evidence = fetch_evidence(paper) if full_text else {"text": normalize(paper["abstract"]), "level": "abstract", "url": paper["url"], "warning": "", "phase": "initial"}
             result = review(paper, evidence, endpoint, model, key)
             result["reviewed_on"] = day
             result["provider"] = provider
@@ -271,9 +277,12 @@ def enrich_run_status(db, output, decisions, records, tracking, recall):
     status['publication_tracking']=tracking
     status['recall_regression']={'passed':recall['passed'],'cases':len(recall['cases'])} if recall else {'enabled':False}
     status['venue_policy']=dict(counts)
-    status['human_review']={'pending':sum(current_human_decision(p,decisions).get('decision')!='approve'
-                                         and p.get('venue_assessment',{}).get('status')!='ineligible' for p in active),
-                            'catalog_total':len(records),'automatic_inclusion':False}
+    from scripts.review_workflow import read_decisions
+    packet = read_decisions(Path(output) / 'review-latest.md')
+    status['human_review'] = {
+        'pending': sum(entry['decision'] == 'pending' for entry in packet.values()),
+        'approved_waiting': sum(current_human_decision(p, decisions).get('decision') == 'approve' for p in active),
+        'catalog_total': len(records), 'automatic_inclusion': False}
     status['retrieval_progress']='Complete' if all(s['complete'] for s in status['sources']) else 'Partial; failed query watermarks retained'
     write_atomic(status_path,stable_json(status))
     lines=['# 出版渠道资格检查','','仅依据可核实的中科院大类1/2区或CCF A/B会议规则；渠道资格不替代主题证据或人工批准。',
@@ -350,26 +359,40 @@ def render(db, output, day, statuses, review_status, decisions=None, catalog_rec
                 weekly += ["  " + markdown(result["summary_zh"])]
         weekly += [""]
     write_atomic(output / "weekly.md", "\n".join(weekly))
-    proposals = ["# 主目录筛选判断证据", "", "机器建议及中文证据，仅供审核；必须由维护者明确通过后才加入主 README。请填写 review-latest.md 或按文章编号回复助手。", ""]
+    proposals = ["# 初筛推荐证据", "", "人工决定以 [审核单](review-latest.md) 为准。"
+                 "以下为初筛依据，最终方法分类由通过后的全文精读生成。", ""]
     for paper in candidates:
         result = current_analysis(paper)
-        if not result or result["decision"] != "suggest_include":
+        if (not result or result['decision'] != 'suggest_include'
+                or paper.get('venue_assessment', {}).get('status') not in {'eligible', 'preprint'}
+                or current_human_decision(paper, decisions or {}).get('decision') in {'approve', 'hold'}):
             continue
-        metadata = result["metadata"]
-        year = str(paper.get("year") or paper.get("published", "")[:4])
-        if not re.fullmatch(r"\d{4}", year):
-            continue
-        venue = "arXiv" if paper.get("arxiv_id") else "Paper"
-        proposals += [f"## {markdown(paper['title'])}", "", f"年度：{year}；主题：{'、'.join(result['topics'])}", "", "```markdown",
-            f"- (*{venue}'{year[-2:]}*) **{markdown(paper['title'])}**", f"  [[📝 Paper]({paper['url']})]",
-            "  **Metadata:** " + " · ".join(f"`{field}: {' + '.join(metadata[field])}`" for field in ("Domain", "Focus", "Stage", "Attributes")) + " · `Assets: Paper only` · `Evidence: Primary full text`",
-            "  > **Why it qualifies:** " + markdown(result["reason_zh"]), "```", "", "### 方法证据", ""]
-        proposals += [f"- {name}：{markdown(value['quote'])}" for name, value in result["criteria"].items()]
-        proposals += ["", f"[全文证据]({result['evidence_url']})", ""]
+        proposals += [f"## {markdown(paper['title'])}", "", markdown(result['reason_zh']), "",
+                      f"证据层级：{result['evidence_level']}", ""]
+        proposals += [f"- {name}：{markdown(value['quote'])}" for name, value in result['criteria'].items()]
+        proposals += ["", f"[初筛证据]({result['evidence_url']})", ""]
     write_atomic(output / "catalog-proposals.md", "\n".join(proposals))
     write_atomic(output / "run-status.json", stable_json({"date": day, "sources": statuses, "analysis": review_status,
                   "candidates": len(candidates), "changed_today": len(today)}))
     return len(candidates), len(today)
+
+
+def supplement_matches(record, recall_config, *, medical_venue=False):
+    """Broad lexical gate before sending newly added list items to the model."""
+    text = normalize(record['title'] + ' ' + record.get('abstract', '')).casefold()
+    context = (recall_config.get('medical_context', []) + recall_config.get('dataset_aliases', []) +
+               ['medical', 'clinical', 'healthcare', 'patients', 'medicine', 'hospital', 'ophthalmic', 'glaucoma', 'health care', 'histopathology',
+                'dermoscopy', 'retinopathy', 'radiograph', 'electrocardiogram', 'EHR',
+                'cancer', 'diagnosis', 'disease', 'surgery', 'echocardiography', 'biomedical'])
+    terms = [term for group in recall_config.get('groups', []) for term in group['terms']]
+    terms += ['fair', 'bias', 'biased', 'disparity', 'disparities', 'debias', 'biases', 'subgroup',
+              'underserved', 'underrepresented', 'spurious correlation', 'protected attribute']
+
+    def matches(words):
+        return any(re.search(r'(?<!\w)' + re.escape(word.casefold()) + r'(?!\w)', text)
+                   for word in words)
+
+    return (medical_venue or matches(context)) and matches(terms)
 
 
 def main(argv=None):
@@ -383,10 +406,10 @@ def main(argv=None):
     parser.add_argument("--approval-file", type=Path, help="Markdown review packet with explicit human approvals and matching evidence versions")
     parser.add_argument("--since", type=date.fromisoformat)
     parser.add_argument("--until", type=date.fromisoformat, default=datetime.now(timezone.utc).date()-timedelta(days=1))
-    parser.add_argument("--sources", nargs="+", choices=["arxiv", "europepmc", "pubmed"])
+    parser.add_argument("--sources", nargs="+", choices=["arxiv", "europepmc", "pubmed", "medrxiv", "conference"])
     parser.add_argument("--max-records", type=int)
     parser.add_argument("--review-limit", type=int)
-    parser.add_argument("--no-full-text", action="store_true")
+    parser.add_argument("--no-full-text", action="store_true", help=argparse.SUPPRESS)
     parser.add_argument("--no-publication-tracking", action="store_true", help="Skip bounded publication identity metadata checks")
     parser.add_argument("--fixture", type=Path, help="Offline JSON record list; skips all literature API calls")
     parser.add_argument("--metadata-only", action="store_true", help="Never call the model or full-text endpoints")
@@ -394,6 +417,13 @@ def main(argv=None):
     args = parser.parse_args(argv)
     if args.publish_root and not args.approval_file:
         parser.error('--publish-root requires --approval-file with explicit human decisions')
+    if args.publish_root:
+        from scripts.publish_catalog import apply_review
+        result = apply_review(args.publish_root, args.approval_file, args.state)
+        print(f"Catalog additions: {result['added']}; approved items pending: {result['failures']}")
+        return 2 if result['failures'] else 0
+    if args.approval_file:
+        parser.error('--approval-file requires --publish-root or use scripts.publish_catalog')
     if args.since and args.since > args.until:
         parser.error("--since must be <= --until")
     if args.require_model and (args.metadata_only or not os.environ.get("LITERATURE_LLM_ENDPOINT") or not os.environ.get("LITERATURE_LLM_MODEL")):
@@ -431,6 +461,14 @@ def main(argv=None):
             if recall_config:
                 for source,queries in recall_queries(recall_config).items():
                     source_queries.setdefault(source,[]).extend((q,'recall') for q in queries)
+            discovery = config.get('discovery', {})
+            if discovery.get('medrxiv'):
+                source_queries['medrxiv'] = [(json.dumps(discovery['medrxiv'], sort_keys=True), 'medrxiv')]
+            if discovery.get('conference'):
+                settings = discovery['conference']
+                source_queries['conference'] = [
+                    (json.dumps({**settings, 'events': [event]}, sort_keys=True), 'conference_list')
+                    for event in settings.get('events', [])]
             for source, queries in source_queries.items():
                 if args.sources and source not in args.sources:
                     continue
@@ -439,7 +477,10 @@ def main(argv=None):
                     query_id = hashlib.sha256(query.encode()).hexdigest()[:12]
                     checkpoint_key = source + ":" + query_id
                     previous = db.execute("SELECT value FROM checkpoints WHERE key=?", (checkpoint_key,)).fetchone()
-                    since = args.since or (date.fromisoformat(previous[0]) - timedelta(days=config["overlap_days"]) if previous and previous[0] <= day else args.until - timedelta(days=config["initial_days"]))
+                    initial_days = config["initial_days"]
+                    if source in {'medrxiv', 'conference'}:
+                        initial_days = json.loads(query).get('initial_days', initial_days)
+                    since = args.since or (date.fromisoformat(previous[0]) - timedelta(days=config["overlap_days"]) if previous and previous[0] <= day else args.until - timedelta(days=initial_days))
                     pending_key = "pending-start:" + checkpoint_key
                     pending_end_key = "pending-end:" + checkpoint_key
                     pending = db.execute("SELECT value FROM checkpoints WHERE key=?", (pending_key,)).fetchone()
@@ -459,7 +500,28 @@ def main(argv=None):
                             statuses.append(status)
                             continue
                         status['attempted']=True
-                        result = fetch_source(source, query, since.isoformat(), day, max_records=maximum, email=os.environ.get("NCBI_EMAIL", ""))
+                        if source in {'medrxiv', 'conference'}:
+                            settings = json.loads(query)
+                            if source == 'medrxiv':
+                                from scripts.literature_pipeline.discovery import fetch_medrxiv
+                                items, complete, total = fetch_medrxiv(since.isoformat(), day, settings)
+                                items = [paper for paper in items if supplement_matches(paper, recall_config or {})]
+                            else:
+                                from scripts.literature_pipeline.official_lists import fetch_official_list
+                                event = settings['events'][0]
+                                def matches(paper):
+                                    return supplement_matches(paper, recall_config or {},
+                                                              medical_venue=event.get('medical', False))
+                                if event.get('provider'):
+                                    items, complete, total = fetch_official_list(since.isoformat(), day, event, matches)
+                                else:
+                                    from scripts.literature_pipeline.discovery import fetch_conference
+                                    items, complete, total = fetch_conference(since.isoformat(), day, settings)
+                                    items = [paper for paper in items if matches(paper)
+                                             and paper.get('conference_status') in {'accepted-main', 'published-main'}]
+                            result = {"records": items, "complete": complete, "total": total}
+                        else:
+                            result = fetch_source(source, query, since.isoformat(), day, max_records=maximum, email=os.environ.get("NCBI_EMAIL", ""))
                         for record in result["records"]:
                             record['discovery_lanes']=[lane]
                             ingest(db, record, day)
@@ -473,7 +535,7 @@ def main(argv=None):
                                     db.execute("DELETE FROM checkpoints WHERE key IN (?, ?)", (pending_key, pending_end_key))
                     except Exception as exc:
                         status["error"] = type(exc).__name__ + ": source query failed; retry retained"
-                        source_unavailable=source_transport_unavailable(exc)
+                        source_unavailable=source != 'conference' and source_transport_unavailable(exc)
                     statuses.append(status)
                     print(f"  {status.get('records', 0)} records; complete={status['complete']}" + (f"; {status['error']}" if status.get("error") else ""), flush=True)
         tracking_status={'checked':0,'failures':0,'formal_links':0,'identity_conflicts':0,'pending_checks':0}
@@ -492,17 +554,9 @@ def main(argv=None):
         decisions=json.loads(ledger_file.read_text()) if ledger_file.exists() else {}
         catalog_data=args.catalog.parent/'data/catalog.json'
         records=json.loads(catalog_data.read_text()) if catalog_data.exists() else []
-        review_status = {"mode": "metadata_only", "reviewed": 0, "failures": 0} if args.metadata_only else review_pending(db, day, limit, not args.no_full_text, decisions, records)
+        review_status = {"mode": "metadata_only", "reviewed": 0, "failures": 0} if args.metadata_only else review_pending(db, day, limit, False, decisions, records)
         export_state(db, args.state)
         candidates, changed = render(db, args.output, day, statuses, review_status, decisions, records)
-        publication = {"added": 0, "failures": 0}
-        if args.publish_root:
-            from scripts.publish_catalog import sync_catalog
-            publication = sync_catalog(db, args.publish_root, args.approval_file)
-            marker = args.output / 'run-status.json'
-            status = json.loads(marker.read_text())
-            status['catalog_publication'] = publication
-            write_atomic(marker, stable_json(status))
         from scripts.review_workflow import write_review_packet
         write_review_packet(db, args.output, day, args.catalog)
         from scripts.publication_tracking import write_report as tracking_report
@@ -513,7 +567,7 @@ def main(argv=None):
         enrich_run_status(db,args.output,decisions,records,tracking_status,recall_result)
         print(f"Literature run: {candidates} candidates; {changed} changed/reviewed today; mode={review_status['mode']}.")
         print(f"Reports: {args.output.resolve()}")
-        return 2 if any(not status["complete"] for status in statuses) or review_status["failures"] or publication['failures'] or tracking_status['failures'] else 0
+        return 2 if any(not status["complete"] for status in statuses) or review_status["failures"] or tracking_status['failures'] else 0
     finally:
         db.close()
 

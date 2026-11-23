@@ -5,14 +5,16 @@ import hashlib
 import json
 import os
 import re
+import subprocess
 import time
 import urllib.error
 import urllib.request
+from urllib.parse import urlsplit
 import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
 
 from scripts.catalog_schema import ALLOWED, IMAGING_DOMAINS, TOPICS
-from scripts.screening_policy import POLICY_VERSION, POLICY_PROMPT, priority_adjustment, paper_version
+from scripts.screening_policy import POLICY_VERSION, POLICY_PROMPT, priority_adjustment, paper_version, content_version
 
 ROUTING = {
     TOPICS[0]: r"fair|bias|dispar|subgroup|benchmark",
@@ -50,6 +52,10 @@ class TextParser(HTMLParser):
     def handle_starttag(self, tag, attrs):
         if tag in {"script", "style", "nav", "header", "footer"}:
             self.skip += 1
+        if not self.skip and tag == "a":
+            href = dict(attrs).get("href") or ""
+            if href.startswith("https://github.com/"):
+                self.parts.append(href)
 
     def handle_endtag(self, tag):
         if tag in {"script", "style", "nav", "header", "footer"}:
@@ -60,44 +66,80 @@ class TextParser(HTMLParser):
             self.parts.append(data)
 
 
+def _full_text_routes(paper):
+    pmcid = paper.get("pmcid", "")
+    if paper.get("is_open_access") and re.fullmatch(r"PMC\d+", pmcid):
+        yield "xml", f"https://www.ebi.ac.uk/europepmc/webservices/rest/{pmcid}/fullTextXML"
+    arxiv_id = paper.get("arxiv_id", "")
+    if re.fullmatch(r"\d{4}\.\d{4,5}", arxiv_id):
+        version = paper.get("version", "")
+        identifier = arxiv_id + (f"v{version}" if version.isdigit() else "")
+        yield "arxiv_html", f"https://arxiv.org/html/{identifier}"
+        yield "pdf", f"https://arxiv.org/pdf/{identifier}"
+    doi = paper.get("doi", "")
+    version = paper.get("version", "")
+    if (re.fullmatch(r"10\.(?:1101|64898)/[A-Za-z0-9.]+", doi) and version.isdigit()
+            and ("medrxiv" in paper.get("sources", []) or paper.get("source") == "medrxiv")):
+        yield "medrxiv_html", f"https://www.medrxiv.org/content/{doi}v{version}.full"
+        yield "pdf", f"https://www.medrxiv.org/content/{doi}v{version}.full.pdf"
+    pdf = paper.get("full_text_pdf", "")
+    target = urlsplit(pdf)
+    if (target.scheme == "https" and target.netloc in {"openaccess.thecvf.com", "proceedings.mlr.press", "papers.miccai.org", "aclanthology.org",
+                                                        "papers.neurips.cc", "proceedings.neurips.cc"}
+            and target.path.endswith(".pdf") and not target.query and not target.fragment):
+        yield "pdf", pdf
+    forum = urlsplit(paper.get("url", ""))
+    if forum.netloc == "openreview.net" and forum.scheme == "https" and forum.path == "/forum":
+        if re.fullmatch(r"id=[A-Za-z0-9_-]+", forum.query):
+            yield "pdf", f"https://openreview.net/pdf?{forum.query}"
+
+
 def fetch_evidence(paper, timeout=30):
-    """Only use a known primary full-text route; failures preserve abstract status."""
+    """Retrieve a primary article body via known open-access providers."""
     abstract = normalize(paper.get("abstract", ""))
     result = {"text": abstract, "level": "abstract", "url": paper.get("url", ""), "warning": ""}
-    url = ""
-    if paper.get("pmcid") and paper.get("is_open_access"):
-        pmcid = paper["pmcid"]
-        if re.fullmatch(r"PMC\d+", pmcid):
-            url = f"https://www.ebi.ac.uk/europepmc/webservices/rest/{pmcid}/fullTextXML"
-    elif re.fullmatch(r"\d{4}\.\d{4,5}", paper.get("arxiv_id", "")):
-        version = paper.get("version", "")
-        suffix = "v" + version if version.isdigit() else ""
-        url = f"https://arxiv.org/html/{paper['arxiv_id']}{suffix}"
-    if not url:
-        return result
-    try:
-        request = urllib.request.Request(url, headers={"User-Agent": "HealthcareLiteraturePipeline/0.1"})
-        with urllib.request.urlopen(request, timeout=timeout) as response:
-            body = response.read(6_000_001)
-            if len(body) > 6_000_000:
-                raise ValueError("full text exceeds 6 MB limit")
-        if url.endswith("fullTextXML"):
-            root = ET.fromstring(body)
-            body_node = root.find(".//body")
-            if body_node is None:
-                raise ValueError("article body missing")
-            text = normalize(" ".join(body_node.itertext()))
-        else:
-            parser = TextParser()
-            parser.feed(body.decode("utf-8"))
-            text = normalize(" ".join(parser.parts))
-            if "ltx_document" not in body.decode("utf-8"):
-                raise ValueError("not an arXiv article HTML page")
-        if len(text) < 1500:
-            raise ValueError("full text too short")
-        result.update(text=text, level="full_text", url=url)
-    except Exception as exc:
-        result["warning"] = f"Full-text access failed ({type(exc).__name__}); abstract retained."
+    for kind, url in _full_text_routes(paper):
+        try:
+            request = urllib.request.Request(url, headers={"User-Agent": "HealthcareLiteraturePipeline/0.1"})
+            with urllib.request.urlopen(request, timeout=timeout) as response:
+                limit = 20_000_000 if kind == "pdf" else 6_000_000
+                body = response.read(limit + 1)
+            if len(body) > limit:
+                raise ValueError("full text exceeds size limit")
+            if kind == "xml":
+                body_node = ET.fromstring(body).find(".//body")
+                if body_node is None:
+                    raise ValueError("article body missing")
+                parts = []
+                for element in body_node.iter():
+                    if element.text:
+                        parts.append(element.text)
+                    href = element.attrib.get("{http://www.w3.org/1999/xlink}href", "")
+                    if href.startswith("https://github.com/"):
+                        parts.append(href)
+                    if element.tail:
+                        parts.append(element.tail)
+                text = " ".join(parts)
+            elif kind == "pdf":
+                if not body.startswith(b"%PDF-"):
+                    raise ValueError("article PDF unavailable")
+                text = subprocess.run(["pdftotext", "-layout", "-", "-"], input=body,
+                                      stdout=subprocess.PIPE, stderr=subprocess.DEVNULL,
+                                      timeout=timeout, check=True).stdout.decode("utf-8")
+            else:
+                html = body.decode("utf-8")
+                marker = "ltx_document" if kind == "arxiv_html" else "article full-text"
+                if marker not in html:
+                    raise ValueError("full article HTML unavailable")
+                parser = TextParser()
+                parser.feed(html)
+                text = " ".join(parser.parts)
+            text = normalize(text)
+            if len(text) < 1500:
+                raise ValueError("full text too short")
+            return {"text": text, "level": "full_text", "url": url, "warning": ""}
+        except (OSError, ValueError, subprocess.SubprocessError, ET.ParseError) as exc:
+            result["warning"] = f"Full-text access failed ({type(exc).__name__}); abstract retained."
     return result
 
 
@@ -111,6 +153,12 @@ def review_fingerprint(paper, model="", provider=""):
 
 def review(paper, evidence, endpoint, model, key, timeout=90):
     """No tools or publication authority are given to the reviewing model."""
+    target = urlsplit(endpoint)
+    if not model or (target.scheme != "https" and
+                     not (target.scheme == "http" and target.hostname in {"localhost", "127.0.0.1", "::1"})):
+        raise ValueError("Review requires a configured HTTPS or loopback model endpoint")
+    if target.username or target.password or target.query:
+        raise ValueError("Model endpoint must not contain credentials/query parameters")
     text = normalize(evidence["text"])[:100_000]
     schema = {
         "summary_zh": "简明中文贡献概述，不超过180字",
@@ -147,6 +195,15 @@ def review(paper, evidence, endpoint, model, key, timeout=90):
         "Abstract-only evidence cannot suggest_include. All decisions are machine proposals, not human approval. "
         "Schema/allowed values: " + json.dumps(schema, ensure_ascii=False)
     )
+    initial = evidence.get("phase") == "initial"
+    if initial:
+        instructions = instructions.replace(
+            "Abstract-only evidence cannot suggest_include.",
+            "This is an abstract-only screening for human review. Use suggest_include to shortlist "
+            "when all five criteria have explicit evidence in the abstract. Use hold for an unclear "
+            "but plausible contribution, and exclude for clearly off-topic work. "
+            "Stage and labels are provisional and must be confirmed from the full paper after human approval."
+        )
     payload = {"model": model, "messages": [{"role": "system", "content": instructions},
         {"role": "user", "content": json.dumps({"title": paper["title"], "evidence_level": evidence["level"], "article_text": text}, ensure_ascii=False)}],
         "temperature": 0, "max_tokens": 5000, "response_format": {"type": "json_object"}}
@@ -181,7 +238,7 @@ def review(paper, evidence, endpoint, model, key, timeout=90):
                 result.setdefault('metadata',{})[field]=value
                 if isinstance(value,str) and value in ALLOWED[field]:
                     result['metadata'][field]=[value]
-            validate_review(result, text, evidence["level"])
+            validate_review(result, text, evidence["level"], initial=initial)
             break
         except ValueError as exc:
             if attempt == 2:
@@ -201,12 +258,13 @@ def review(paper, evidence, endpoint, model, key, timeout=90):
     result["criteria"] = {name: {"met": value["met"], "quote": value["quote"]} for name, value in result["criteria"].items()}
     result['review_scope']={name:{'met':value['met'],'quote':value['quote']} for name,value in result['review_scope'].items()}
     result.update(evidence_level=evidence["level"], evidence_url=evidence["url"], model=model,
-                  paper_version=paper_version(paper), policy_version=REVIEW_VERSION,
-                  text_truncated=len(normalize(evidence["text"])) > len(text), warning=evidence["warning"])
+                  paper_version=paper_version(paper), content_version=content_version(paper), policy_version=REVIEW_VERSION,
+                  text_truncated=len(normalize(evidence["text"])) > len(text), warning=evidence["warning"],
+                  phase="initial" if initial else "full_review")
     return result
 
 
-def validate_review(result, text, level):
+def validate_review(result, text, level, *, initial=False):
     if 'article_type' not in result or 'review_scope' not in result:
         raise ValueError('article_type and review_scope evidence are required')
     if 'article_type' in result:
@@ -264,7 +322,7 @@ def validate_review(result, text, level):
         if criterion["met"] and not quote.strip():
             raise ValueError("missing evidence: " + name)
     if result["decision"] == "suggest_include":
-        if level != "full_text" or not all(criteria[name]["met"] for name in criteria):
-            raise ValueError("inclusion requires full-text evidence for all criteria")
+        if (level != "full_text" and not (initial and level == "abstract")) or not all(item["met"] for item in criteria.values()):
+            raise ValueError("inclusion requires full-text evidence for all criteria" if not initial else "shortlisting requires evidence for all criteria")
         if not result["topics"] or any(not metadata[field] for field in ("Domain", "Focus", "Stage", "Attributes")):
             raise ValueError("inclusion requires metadata and topic")

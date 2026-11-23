@@ -1,6 +1,6 @@
 # Automated literature discovery and catalog updates
 
-The weekly pipeline searches arXiv, Europe PMC and PubMed, deduplicates identifiers and titles, and uses the existing Qoder DeepSeek endpoint for Chinese screening and English catalog annotations. **Weekly runs publish candidates and Chinese review packets only. New papers enter `README.md` only after explicit maintainer approval.** Chinese reasoning, exact evidence spans and run diagnostics remain in `reports/` on the same branch. The historical `literature-data` branch is retained as an archive and receives no new production updates.
+The weekly pipeline searches arXiv, Europe PMC, PubMed, medRxiv and configured official conference lists, deduplicates identifiers and titles, and uses the existing Qoder DeepSeek endpoint for both screening and editorial review. **Weekly runs publish candidates and Chinese review packets only. New papers enter `README.md` only after explicit maintainer approval.** Chinese reasoning, exact evidence spans and run diagnostics remain in `reports/` on the same branch. The historical `literature-data` branch is retained as an archive and receives no new production updates.
 
 ## Catalog and methodology
 
@@ -12,9 +12,9 @@ Historical labels and metadata are evidence-limited. Primary abstract/metadata r
 
 ## Screening and human-approved inclusion
 
-New machine additions require current full-text-supported screening with all five criteria: a medical task, an identifiable algorithm, an explicit fairness question, group definitions or an individual/counterfactual fairness protocol, and implemented evaluation. Null or unsuccessful results remain eligible. Encoding a sensitive attribute is not alone proof of unequal downstream performance. Abstract-only, unrelated and evidence-insufficient candidates stay in the Chinese screening reports.
+**Stage 1: discover, screen and verify venues.** The weekly job reads titles and abstracts with Qoder. It assesses the medical task, algorithm, fairness question, group or individual fairness definition, and evaluation. A positive initial result is a recommendation for human review. Verified CAS 1/2 journals and CCF A/B main proceedings are eligible. A plain preprint is identified as such and can be reviewed. Channel or evidence uncertainty stays in `reports/screening-pending.md`. Machine and venue exclusions go to `reports/screening-exclusions.md` for spot checks. The concise, methodology-first queue is `reports/review-latest.md`.
 
-After the maintainer submits a reviewed Markdown packet, `scripts/publish_catalog.py` requires an explicit approval file, accepts only approved paper IDs with matching evidence fingerprints, checks identifiers against the whole catalog, retrieves primary full text, and calls `scripts/catalog_editorial.py` for three English TLDR sentences and one primary methodology. Quotes are checked against supplied source spans; Chinese reasons are retained separately. The renderer validates structured records before publication. Model screening and summaries remain machine interpretations that the maintainer can correct by editing the JSON and rerendering.
+**Stage 2: apply explicit decisions and prepare publication.** Pass the reviewed Markdown packet to `scripts.publish_catalog`. The command saves approvals, holds and rejections in the durable ledger. Only approvals with a matching evidence version proceed to primary full text. Qoder checks the fairness evidence again, assigns one main methodology and writes the three-sentence English TLDR. It proposes code links from the paper and the pipeline checks that a linked GitHub repository is public and tied to the study. The resulting audit states whether public code was verified in the evidence checked. Full-text, channel or code verification failures retain the approval and leave the record pending. The final catalog is validated before any push.
 
 Queries, overlap, per-query caps and the default 100-analysis budget are in `config/literature.json`. Failed query windows are retained and retried rather than marked complete. Failed English annotations are not promoted and cause a nonzero run status; other completed results are preserved. Full article bodies and abstracts stay out of public state.
 
@@ -44,7 +44,11 @@ python3 -m scripts.literature_pipeline.cli --metadata-only
 python3 -m scripts.literature_pipeline.cli --require-model
 
 # Explicit application after the maintainer submits approvals
-python3 -m scripts.literature_pipeline.cli --require-model --publish-root . --approval-file /path/to/reviewed.md
+python3 -m scripts.publish_catalog --approval-file /path/to/reviewed.md
+
+# On the Linux deployment checkout, with its existing model environment loaded:
+# Validate, commit and push reviewed changes from an isolated worktree.
+bash scripts/run_approved_literature.sh /path/to/reviewed.md
 
 # Deterministic render and validation
 python3 -m scripts.render_catalog
@@ -52,7 +56,7 @@ python3 scripts/validate_catalog.py
 python3 -m unittest discover -s tests -q
 ```
 
-Set `LITERATURE_LLM_ENDPOINT`, `LITERATURE_LLM_MODEL`, optional `LITERATURE_LLM_API_KEY`, and a stable `LITERATURE_LLM_CACHE_NAMESPACE` in the local environment. `--require-model` refuses missing configuration or a zero analysis budget. HTTPS is required outside loopback. Article text is sent to the configured model provider. Official OA XML/arXiv HTML are used without paywall bypass.
+Set `LITERATURE_LLM_ENDPOINT`, `LITERATURE_LLM_MODEL`, optional `LITERATURE_LLM_API_KEY`, and a stable `LITERATURE_LLM_CACHE_NAMESPACE` in the local environment. `--require-model` refuses missing configuration or a zero analysis budget. HTTPS is required outside loopback. Article text is sent to the configured model provider. Official open-access XML/HTML and PDFs are used. PDF reading requires `pdftotext` (Poppler).
 
 Public files: `data/catalog.json`, `data/literature-state.json`, `reports/latest.md`, `reports/weekly.md`, `reports/catalog-proposals.md`, `reports/catalog-screening.md`, and `reports/run-status.json`. Private `.local/literature.sqlite3` retains fetched abstracts and review caches. Public JSON restores an empty database; copy private SQLite separately for full local continuity. Never run simultaneous processes against the same database.
 
@@ -62,13 +66,17 @@ See [the Chinese review guide](review-workflow.md). Open `reports/review-latest.
 
 ## Screening priority and review scope
 
-The [maintainer screening policy](screening-policy.md) prioritizes original methodology and empirical fairness audits. Reviews/commentaries are down-ranked and need both a specific medical disease/task and substantive detailed fairness analysis, each supported by source evidence. Incidental mentions are excluded from recommendations. The policy version invalidates machine caches without erasing stable human decisions. Explicit human approvals may override machine scope suggestions, with evidence level and article type recorded honestly. Unchanged rejected papers are skipped in model review and future review packets.
+The [maintainer screening policy](screening-policy.md) prioritizes original methodology and empirical fairness audits. Reviews/commentaries are down-ranked and need both a specific medical disease/task and substantive detailed fairness analysis, each supported by source evidence. Incidental mentions are excluded from recommendations. The policy version invalidates machine caches without erasing stable human decisions. A human can request full-text assessment of an excluded paper. Final publication requires sufficient full-text evidence and the applicable venue gate. Unchanged rejected papers are skipped in model review and future review packets.
 
 ## Methodology search lanes
 
 `config/literature.json` contains nine primary query families for mitigation, evaluation/benchmarks and bias mechanisms across arXiv, Europe PMC and PubMed. Queries explicitly combine medical context, algorithmic content and a central fairness subject; publication-type and title exclusions reduce review-heavy results. Two separate supplementary review queries search fairness-centered reviews. Article-type metadata further lowers review priority. New query text creates new query IDs and performs the configured initial lookback before advancing independent watermarks; identical records still deduplicate against the existing database and human decisions.
 
 Domain values distinguish imaging modalities, and may contain multiple values for studies that use multiple inputs. The model prompt, cache version, issue form and README validator share the modality vocabulary. Historical machine analyses retain their original schema as audit evidence; stale schema versions are not reused for new model analyses. Human decisions remain tied to article content, so changing display labels does not erase approval or rejection.
+
+## medRxiv and conference discovery
+
+medRxiv uses its official paginated date feed, with a broad medical-fairness keyword filter before the model receives the candidate. Conference discovery starts with the MICCAI 2026 open-access list, EMNLP 2026 main proceedings in the ACL Anthology and the NeurIPS 2026 official downloads list. The configured dates determine when each list is checked. MICCAI and NeurIPS detail pages enrich title matches. EMNLP embeds abstracts, while papers without a verified regular-paper format remain pending. A conference list establishes the stated publication or acceptance status, and a program listing or workshop alone does not establish a CCF main-conference publication. Refresh the configured editions as organizers release new lists. Each source and list retains its own completion and retry window.
 
 ## Recall and publication identity safeguards
 
